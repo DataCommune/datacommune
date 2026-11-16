@@ -1,0 +1,754 @@
+departement,date_commencement,date_decision,annee,nb_logements,sdp_creee,nom_dossier,type_dossier,n_commune,nom_commune,nature_construction,designation
+93,N/C,2020-11-12,2020,2,0,COR07-nom_dossier-0001,COR07-type_dossier-0001,93901,COR07-nom_commune-0001,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2021-07-01,2021,1,32,COR07-nom_dossier-0002,COR07-type_dossier-0001,93901,COR07-nom_commune-0001,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2022-05-04,2022,1,0,COR07-nom_dossier-0003,COR07-type_dossier-0001,93901,COR07-nom_commune-0001,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2023-12-20,2023,1,0,COR07-nom_dossier-0004,COR07-type_dossier-0001,93901,COR07-nom_commune-0001,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2017-04-27,2017,2,165,COR07-nom_dossier-0005,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0001,COR07-designation-0002
+93,2020-06-02 00:00:00,2017-06-16,2017,2,182,COR07-nom_dossier-0006,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-06-10 00:00:00,2017-10-04,2017,6,237,COR07-nom_dossier-0007,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-07-09 00:00:00,2017-10-27,2017,60,4261,COR07-nom_dossier-0008,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0003,COR07-designation-0002
+93,2018-04-01 00:00:00,2017-12-07,2017,1,128,COR07-nom_dossier-0009,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0002,COR07-designation-0002
+93,2018-09-20 00:00:00,2018-03-02,2017,1,146,COR07-nom_dossier-0010,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-10-19 00:00:00,2018-01-31,2017,1,78,COR07-nom_dossier-0011,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-09-01 00:00:00,2018-06-08,2018,6,453,COR07-nom_dossier-0012,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2018-06-14,2018,3,0,COR07-nom_dossier-0013,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0003,COR07-designation-0002
+93,2018-09-24 00:00:00,2018-07-17,2018,1,160,COR07-nom_dossier-0014,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-07-22 00:00:00,2019-03-20,2018,4,395,COR07-nom_dossier-0015,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-12-16 00:00:00,2019-02-13,2018,71,5027,COR07-nom_dossier-0016,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-12-02 00:00:00,2019-02-27,2018,62,4375,COR07-nom_dossier-0017,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2019-01-22,2018,2,203,COR07-nom_dossier-0018,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-03-02 00:00:00,2019-03-11,2018,17,1204,COR07-nom_dossier-0019,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2019-05-02,2019,1,55,COR07-nom_dossier-0020,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0003,COR07-designation-0002
+93,2021-06-23 00:00:00,2019-09-05,2019,1,50,COR07-nom_dossier-0021,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-02-27 00:00:00,2019-10-15,2019,6,7,COR07-nom_dossier-0022,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2019-11-12,2019,2,207,COR07-nom_dossier-0023,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0001,COR07-designation-0002
+93,2021-04-07 00:00:00,2020-08-17,2019,8,533,COR07-nom_dossier-0024,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0003,COR07-designation-0002
+93,2023-02-15 00:00:00,2020-08-17,2019,43,3414,COR07-nom_dossier-0025,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2020-06-04,2019,8,547,COR07-nom_dossier-0026,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0001,COR07-designation-0002
+93,2021-06-01 00:00:00,2020-09-11,2020,1,97,COR07-nom_dossier-0027,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2020-10-02,2020,1,144,COR07-nom_dossier-0028,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2020-12-10,2020,1,86,COR07-nom_dossier-0029,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2021-04-12,2020,11,899,COR07-nom_dossier-0030,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0003,COR07-designation-0001
+93,2021-03-01 00:00:00,2021-02-19,2020,1,158,COR07-nom_dossier-0031,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0003,COR07-designation-0001
+93,N/C,2021-03-23,2021,2,254,COR07-nom_dossier-0032,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0003,COR07-designation-0001
+93,2024-03-25 00:00:00,2021-08-10,2021,64,4412,COR07-nom_dossier-0033,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0003,COR07-designation-0001
+93,N/C,2021-06-17,2021,3,226,COR07-nom_dossier-0034,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0003,COR07-designation-0001
+93,2023-09-20 00:00:00,2021-08-30,2021,4,318,COR07-nom_dossier-0035,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0003,COR07-designation-0001
+93,2021-07-09 00:00:00,2021-06-18,2021,4,298,COR07-nom_dossier-0036,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0003,COR07-designation-0001
+93,N/C,2021-10-18,2021,42,2978,COR07-nom_dossier-0037,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0003,COR07-designation-0001
+93,2022-12-30 00:00:00,2022-04-14,2021,150,2534,COR07-nom_dossier-0038,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2022-01-24,2021,5,277,COR07-nom_dossier-0039,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0003,COR07-designation-0001
+93,N/C,2022-03-23,2021,15,1051,COR07-nom_dossier-0040,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0001,COR07-designation-0001
+93,2022-08-01 00:00:00,2022-02-02,2021,25,1758,COR07-nom_dossier-0041,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2022-05-09,2021,102,3736,COR07-nom_dossier-0042,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0002,COR07-designation-0001
+93,2022-12-20 00:00:00,2022-08-22,2021,249,17953,COR07-nom_dossier-0043,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0004,COR07-designation-0001
+93,N/C,2022-03-28,2021,30,1149,COR07-nom_dossier-0044,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0002,COR07-designation-0003
+93,N/C,2022-09-16,2021,4,272,COR07-nom_dossier-0045,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0001,COR07-designation-0001
+93,2023-03-01 00:00:00,2022-10-13,2022,5,496,COR07-nom_dossier-0046,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2022-12-15,2022,192,13860,COR07-nom_dossier-0047,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0001,COR07-designation-0001
+93,2022-11-28 00:00:00,2022-11-18,2022,1,88,COR07-nom_dossier-0048,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2022-06-21,2022,1,0,COR07-nom_dossier-0049,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2022-11-02,2022,1,102,COR07-nom_dossier-0050,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0001,COR07-designation-0001
+93,2024-03-13 00:00:00,2023-11-23,2022,1,43,COR07-nom_dossier-0051,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2023-08-21,2023,1,127,COR07-nom_dossier-0052,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2023-10-18,2023,82,5765,COR07-nom_dossier-0053,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2023-09-14,2023,1,147,COR07-nom_dossier-0054,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0001,COR07-designation-0001
+93,2024-07-16 00:00:00,2024-02-13,2023,70,4752,COR07-nom_dossier-0055,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0001,COR07-designation-0002
+93,2024-07-16 00:00:00,2024-02-20,2023,128,8585,COR07-nom_dossier-0056,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0001,COR07-designation-0002
+93,2024-09-16 00:00:00,2023-12-19,2023,1,124,COR07-nom_dossier-0057,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2024-07-26,2023,5,364,COR07-nom_dossier-0058,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0001,COR07-designation-0001
+93,2024-12-18 00:00:00,2024-08-28,2024,4,1189,COR07-nom_dossier-0059,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2024-11-06,2024,2,209,COR07-nom_dossier-0060,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2025-08-13,2024,76,5315,COR07-nom_dossier-0061,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0001,COR07-designation-0001
+93,2025-02-17 00:00:00,2025-01-23,2024,1,171,COR07-nom_dossier-0062,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2025-07-25,2024,74,5183,COR07-nom_dossier-0063,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0001,COR07-designation-0001
+93,2025-12-18 00:00:00,2025-08-04,2024,44,3502,COR07-nom_dossier-0064,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0001,COR07-designation-0001
+93,2025-12-18 00:00:00,2025-07-25,2024,46,3568,COR07-nom_dossier-0065,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2025-10-09,2025,88,6769,COR07-nom_dossier-0066,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2025-10-09,2025,55,4221,COR07-nom_dossier-0067,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2025-07-21,2025,1,28,COR07-nom_dossier-0068,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2026-05-06,2026,1,43,COR07-nom_dossier-0069,COR07-type_dossier-0002,93901,COR07-nom_commune-0001,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2026-04-10,2026,1,30,COR07-nom_dossier-0070,COR07-type_dossier-0001,93902,COR07-nom_commune-0002,COR07-nature_construction-0002,COR07-designation-0001
+93,2018-10-16 00:00:00,2017-10-24,2014,12,744,COR07-nom_dossier-0071,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-10-10 00:00:00,2019-09-26,2015,8,443,COR07-nom_dossier-0072,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2017-02-23,2016,5,291,COR07-nom_dossier-0073,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0003,COR07-designation-0002
+93,2017-07-19 00:00:00,2017-04-13,2016,53,3769,COR07-nom_dossier-0074,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0003,COR07-designation-0002
+93,2017-03-30 00:00:00,2017-01-24,2016,1,92,COR07-nom_dossier-0075,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0003,COR07-designation-0002
+93,2018-04-10 00:00:00,2017-07-06,2016,64,5282,COR07-nom_dossier-0076,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0003,COR07-designation-0002
+93,2018-06-27 00:00:00,2017-05-16,2017,1,106,COR07-nom_dossier-0077,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0003,COR07-designation-0002
+93,2018-06-22 00:00:00,2017-05-15,2017,1,90,COR07-nom_dossier-0078,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0003,COR07-designation-0002
+93,2017-08-21 00:00:00,2017-05-22,2017,1,222,COR07-nom_dossier-0079,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0003,COR07-designation-0002
+93,2021-06-29 00:00:00,2017-09-18,2017,27,2097,COR07-nom_dossier-0080,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0003,COR07-designation-0002
+93,2018-06-23 00:00:00,2017-09-21,2017,48,3227,COR07-nom_dossier-0081,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2017-07-27,2017,2,190,COR07-nom_dossier-0082,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2017-08-21,2017,1,120,COR07-nom_dossier-0083,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-07-21 00:00:00,2017-08-21,2017,1,128,COR07-nom_dossier-0084,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0003,COR07-designation-0002
+93,2018-05-02 00:00:00,2017-09-29,2017,1,119,COR07-nom_dossier-0085,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2018-04-12,2017,4,672,COR07-nom_dossier-0086,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-09-25 00:00:00,2018-01-18,2017,2,54,COR07-nom_dossier-0087,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-04-01 00:00:00,2018-01-18,2017,1,220,COR07-nom_dossier-0088,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0003,COR07-designation-0002
+93,2018-02-08 00:00:00,2018-02-07,2017,1,0,COR07-nom_dossier-0089,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0002,COR07-designation-0002
+93,2020-02-27 00:00:00,2018-03-19,2017,1,169,COR07-nom_dossier-0090,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0003,COR07-designation-0002
+93,2018-08-10 00:00:00,2018-02-26,2017,1,72,COR07-nom_dossier-0091,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0003,COR07-designation-0002
+93,2018-08-01 00:00:00,2018-02-28,2017,1,59,COR07-nom_dossier-0092,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0003,COR07-designation-0002
+93,2018-11-29 00:00:00,2018-03-09,2018,1,128,COR07-nom_dossier-0093,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-08-16 00:00:00,2018-05-07,2018,1,117,COR07-nom_dossier-0094,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0003,COR07-designation-0002
+93,2021-05-28 00:00:00,2018-06-22,2018,1,375,COR07-nom_dossier-0095,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-04-26 00:00:00,2018-07-06,2018,1,190,COR07-nom_dossier-0096,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-03-22 00:00:00,2018-08-03,2018,2,195,COR07-nom_dossier-0097,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0002
+93,2019-03-25 00:00:00,2018-09-17,2018,1,0,COR07-nom_dossier-0098,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0002,COR07-designation-0002
+93,2019-04-29 00:00:00,2019-02-11,2018,45,3000,COR07-nom_dossier-0099,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2018-11-23,2018,1,50,COR07-nom_dossier-0100,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0004,COR07-designation-0002
+93,2020-01-22 00:00:00,2019-01-28,2018,24,2000,COR07-nom_dossier-0101,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0002
+93,2021-03-05 00:00:00,2019-01-28,2018,1,34,COR07-nom_dossier-0102,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2019-04-17,2018,1,70,COR07-nom_dossier-0103,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0002,COR07-designation-0002
+93,2024-05-22 00:00:00,2019-06-28,2018,9,763,COR07-nom_dossier-0104,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0002
+93,2020-06-10 00:00:00,2019-04-08,2018,1,171,COR07-nom_dossier-0105,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0002
+93,2021-07-02 00:00:00,2019-07-03,2019,1,28,COR07-nom_dossier-0106,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0002,COR07-designation-0002
+93,2020-02-07 00:00:00,2019-11-08,2019,25,1560,COR07-nom_dossier-0107,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0002
+93,2019-10-15 00:00:00,2019-06-19,2019,1,32,COR07-nom_dossier-0108,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0002,COR07-designation-0002
+93,2019-12-16 00:00:00,2019-06-18,2019,1,170,COR07-nom_dossier-0109,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0002
+93,2021-03-05 00:00:00,2020-02-06,2019,63,3641,COR07-nom_dossier-0110,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0002
+93,2020-01-27 00:00:00,2019-08-12,2019,2,109,COR07-nom_dossier-0111,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0002
+93,2019-08-05 00:00:00,2019-07-26,2019,1,30,COR07-nom_dossier-0112,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0002,COR07-designation-0002
+93,2021-01-19 00:00:00,2019-12-06,2019,179,4371,COR07-nom_dossier-0113,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0002
+93,2020-05-04 00:00:00,2019-09-27,2019,1,113,COR07-nom_dossier-0114,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0002
+93,2021-06-15 00:00:00,2019-12-03,2019,47,2705,COR07-nom_dossier-0115,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0002
+93,N/C,2020-03-20,2019,60,4055,COR07-nom_dossier-0116,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0002
+93,2022-06-08 00:00:00,2019-12-06,2019,1,88,COR07-nom_dossier-0117,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0002
+93,N/C,2019-12-10,2019,1,14,COR07-nom_dossier-0118,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2020-01-21,2019,4,64,COR07-nom_dossier-0119,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2020-05-19,2019,1,104,COR07-nom_dossier-0120,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0002,COR07-designation-0002
+93,2022-03-28 00:00:00,2020-07-31,2019,16,987,COR07-nom_dossier-0121,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0002
+93,2020-03-10 00:00:00,2020-02-13,2019,1,70,COR07-nom_dossier-0122,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-04-15 00:00:00,2020-05-12,2019,2,0,COR07-nom_dossier-0123,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2020-10-02,2020,1,118,COR07-nom_dossier-0124,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0002
+93,2022-06-01 00:00:00,2021-01-27,2020,5,242,COR07-nom_dossier-0125,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0002
+93,2022-03-04 00:00:00,2020-12-29,2020,15,885,COR07-nom_dossier-0126,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0003,COR07-designation-0002
+93,2021-11-02 00:00:00,2020-11-13,2020,1,94,COR07-nom_dossier-0127,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0003,COR07-designation-0002
+93,2022-05-30 00:00:00,2021-06-11,2020,28,2027,COR07-nom_dossier-0128,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0002
+93,2023-09-15 00:00:00,2021-02-10,2020,3,232,COR07-nom_dossier-0129,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0003,COR07-designation-0002
+93,2021-06-07 00:00:00,2021-01-22,2020,1,129,COR07-nom_dossier-0130,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0003,COR07-designation-0002
+93,2021-10-15 00:00:00,2021-04-09,2020,63,3960,COR07-nom_dossier-0131,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0002
+93,2023-02-01 00:00:00,2021-08-06,2020,42,3092,COR07-nom_dossier-0132,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0002
+93,N/C,2021-02-10,2020,1,303,COR07-nom_dossier-0133,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0002
+93,2021-12-23 00:00:00,2021-07-01,2020,11,691,COR07-nom_dossier-0134,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0002,COR07-designation-0002
+93,2022-02-03 00:00:00,2021-07-02,2021,2,167,COR07-nom_dossier-0135,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0002
+93,N/C,2021-10-04,2021,1,186,COR07-nom_dossier-0136,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0003,COR07-designation-0002
+93,2023-11-13 00:00:00,2021-10-04,2021,51,2839,COR07-nom_dossier-0137,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0003,COR07-designation-0002
+93,2023-01-24 00:00:00,2021-10-06,2021,40,2758,COR07-nom_dossier-0138,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0003,COR07-designation-0002
+93,2021-12-15 00:00:00,2021-11-26,2021,2,141,COR07-nom_dossier-0139,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2021-11-05,2021,68,4985,COR07-nom_dossier-0140,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0003,COR07-designation-0002
+93,2024-03-20 00:00:00,2022-01-10,2021,3,181,COR07-nom_dossier-0141,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0003,COR07-designation-0002
+93,2024-09-16 00:00:00,2022-03-29,2021,30,1877,COR07-nom_dossier-0142,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2022-05-06,2021,1,133,COR07-nom_dossier-0143,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2022-06-21,2021,1,100,COR07-nom_dossier-0144,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0002,COR07-designation-0001
+93,2023-02-16 00:00:00,2022-07-21,2022,1,137,COR07-nom_dossier-0145,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0002,COR07-designation-0001
+93,2023-01-02 00:00:00,2022-08-18,2022,1,64,COR07-nom_dossier-0146,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0001
+93,2022-10-10 00:00:00,2022-07-15,2022,1,269,COR07-nom_dossier-0147,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0001
+93,2026-03-02 00:00:00,2022-07-07,2022,3,88,COR07-nom_dossier-0148,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2023-02-09,2022,160,5873,COR07-nom_dossier-0149,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0003
+93,N/C,2023-02-09,2022,160,3476,COR07-nom_dossier-0149,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0001
+93,2022-12-22 00:00:00,2022-12-22,2022,15,999,COR07-nom_dossier-0150,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2022-12-14,2022,1,213,COR07-nom_dossier-0151,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0001
+93,2024-12-12 00:00:00,2023-06-20,2022,1,151,COR07-nom_dossier-0152,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2023-09-07,2023,1,274,COR07-nom_dossier-0153,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2023-10-30,2023,12,815,COR07-nom_dossier-0154,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0001
+93,2023-12-20 00:00:00,2023-09-27,2023,65,4691,COR07-nom_dossier-0155,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0001
+93,2025-06-16 00:00:00,2023-12-22,2023,222,14884,COR07-nom_dossier-0156,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0001
+93,2024-02-12 00:00:00,2024-01-30,2023,4,68,COR07-nom_dossier-0157,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2024-08-16,2023,93,5931,COR07-nom_dossier-0158,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2024-09-18,2023,54,3643,COR07-nom_dossier-0159,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0001
+93,2025-05-26 00:00:00,2024-08-08,2024,1,47,COR07-nom_dossier-0160,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0002,COR07-designation-0001
+93,2025-01-21 00:00:00,2024-07-05,2024,1,99,COR07-nom_dossier-0161,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0001
+93,2024-08-20 00:00:00,2024-07-02,2024,5,0,COR07-nom_dossier-0162,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2025-01-17,2024,34,2279,COR07-nom_dossier-0163,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0001
+93,2024-10-10 00:00:00,2024-08-08,2024,1,42,COR07-nom_dossier-0164,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2025-02-19,2024,89,6581,COR07-nom_dossier-0165,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2025-02-26,2024,1,224,COR07-nom_dossier-0166,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0002
+93,N/C,2025-09-18,2024,84,5580,COR07-nom_dossier-0167,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2025-04-23,2025,3,0,COR07-nom_dossier-0168,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2025-08-18,2025,134,8799,COR07-nom_dossier-0169,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2025-08-27,2025,1,108,COR07-nom_dossier-0170,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2026-03-03,2025,128,8517,COR07-nom_dossier-0171,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0002
+93,N/C,2025-12-09,2025,1,167,COR07-nom_dossier-0172,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0001
+93,2026-04-01 00:00:00,2026-03-23,2025,1,70,COR07-nom_dossier-0173,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2026-05-20,2026,1,216,COR07-nom_dossier-0174,COR07-type_dossier-0002,93902,COR07-nom_commune-0002,COR07-nature_construction-0001,COR07-designation-0001
+93,2018-04-16 00:00:00,2017-12-18,2017,10,914,COR07-nom_dossier-0175,COR07-type_dossier-0002,93903,COR07-nom_commune-0003,COR07-nature_construction-0003,COR07-designation-0002
+93,2022-05-10 00:00:00,2022-05-05,2022,1,0,COR07-nom_dossier-0176,COR07-type_dossier-0002,93903,COR07-nom_commune-0003,COR07-nature_construction-0002,COR07-designation-0001
+93,2024-03-27 00:00:00,2023-09-15,2023,8,556,COR07-nom_dossier-0177,COR07-type_dossier-0002,93903,COR07-nom_commune-0003,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2017-01-03,2016,1,38,COR07-nom_dossier-0178,COR07-type_dossier-0001,93904,COR07-nom_commune-0004,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2018-03-13,2018,1,0,COR07-nom_dossier-0179,COR07-type_dossier-0001,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2018-12-07,2018,1,36,COR07-nom_dossier-0180,COR07-type_dossier-0001,93904,COR07-nom_commune-0004,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2019-05-03,2019,1,0,COR07-nom_dossier-0181,COR07-type_dossier-0001,93904,COR07-nom_commune-0004,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2023-11-09,2023,2,17,COR07-nom_dossier-0182,COR07-type_dossier-0001,93904,COR07-nom_commune-0004,COR07-nature_construction-0002,COR07-designation-0001
+93,2015-12-08 00:00:00,2020-01-30,2014,28,1901,COR07-nom_dossier-0183,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2019-03-06,2015,145,13907,COR07-nom_dossier-0184,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0002
+93,2017-01-16 00:00:00,2017-01-04,2016,30,1866,COR07-nom_dossier-0185,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0002
+93,2017-08-16 00:00:00,2017-01-03,2016,1,121,COR07-nom_dossier-0186,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0002
+93,2017-04-01 00:00:00,2017-01-03,2016,1,125,COR07-nom_dossier-0187,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-05-02 00:00:00,2019-10-30,2016,3,290,COR07-nom_dossier-0188,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2017-01-20,2016,7,390,COR07-nom_dossier-0189,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2017-01-25,2016,1,62,COR07-nom_dossier-0190,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2017-05-17,2016,4,137,COR07-nom_dossier-0191,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2017-09-05,2016,137,9355,COR07-nom_dossier-0192,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0002
+93,2017-05-10 00:00:00,2017-04-14,2017,8,249,COR07-nom_dossier-0193,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2017-04-03,2017,1,130,COR07-nom_dossier-0194,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2017-05-17,2017,3,154,COR07-nom_dossier-0195,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2017-07-25,2017,3,350,COR07-nom_dossier-0196,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2017-06-22,2017,9,111,COR07-nom_dossier-0197,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0002,COR07-designation-0002
+93,2018-11-28 00:00:00,2017-09-26,2017,2,110,COR07-nom_dossier-0198,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0002
+93,N/C,2018-03-07,2017,4,154,COR07-nom_dossier-0199,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2018-01-23,2017,1,215,COR07-nom_dossier-0200,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-06-22 00:00:00,2018-05-11,2017,4,300,COR07-nom_dossier-0201,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0002
+93,2018-10-05 00:00:00,2018-02-14,2017,1,141,COR07-nom_dossier-0202,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0002
+93,2018-07-22 00:00:00,2018-03-02,2017,6,344,COR07-nom_dossier-0203,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0002
+93,2018-05-14 00:00:00,2018-03-12,2018,1,86,COR07-nom_dossier-0204,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0002
+93,2018-05-18 00:00:00,2018-05-02,2018,1,159,COR07-nom_dossier-0205,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-02-25 00:00:00,2018-06-18,2018,1,89,COR07-nom_dossier-0206,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2018-11-20,2018,61,7451,COR07-nom_dossier-0207,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0002
+93,2018-09-17 00:00:00,2018-06-29,2018,3,480,COR07-nom_dossier-0208,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0002
+93,N/C,2018-05-29,2018,2,107,COR07-nom_dossier-0209,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2018-11-27,2018,36,2561,COR07-nom_dossier-0210,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-03-09 00:00:00,2019-01-08,2018,1,118,COR07-nom_dossier-0211,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-08-03 00:00:00,2019-01-04,2018,1,75,COR07-nom_dossier-0212,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0002,COR07-designation-0002
+93,2019-02-22 00:00:00,2019-01-23,2018,1,0,COR07-nom_dossier-0213,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2019-02-27,2019,1,26,COR07-nom_dossier-0214,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2019-06-12,2019,12,706,COR07-nom_dossier-0215,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-04-27 00:00:00,2019-06-26,2019,10,745,COR07-nom_dossier-0216,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-10-05 00:00:00,2019-05-03,2019,1,42,COR07-nom_dossier-0217,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0002,COR07-designation-0002
+93,2019-10-25 00:00:00,2019-10-15,2019,9,869,COR07-nom_dossier-0218,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0002
+93,N/C,2019-05-21,2019,1,240,COR07-nom_dossier-0219,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-09-27 00:00:00,2019-06-20,2019,11,33,COR07-nom_dossier-0220,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2019-08-02,2019,61,3910,COR07-nom_dossier-0221,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-09-10 00:00:00,2019-08-12,2019,1,123,COR07-nom_dossier-0222,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2020-09-01,2019,1,131,COR07-nom_dossier-0223,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2019-08-22,2019,1,90,COR07-nom_dossier-0224,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2019-11-06,2019,6,405,COR07-nom_dossier-0225,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2020-01-08,2019,1,148,COR07-nom_dossier-0226,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2022-01-17,2019,1,60,COR07-nom_dossier-0227,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0002
+93,N/C,2020-11-19,2020,20,914,COR07-nom_dossier-0228,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0002
+93,2021-10-25 00:00:00,2021-01-15,2020,105,6757,COR07-nom_dossier-0229,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0002
+93,2022-04-11 00:00:00,2021-01-15,2020,15,994,COR07-nom_dossier-0230,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0002
+93,2021-02-12 00:00:00,2021-01-28,2020,37,2588,COR07-nom_dossier-0231,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0002
+93,2021-12-10 00:00:00,2021-07-13,2020,70,4732,COR07-nom_dossier-0232,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2020-11-12,2020,1,100,COR07-nom_dossier-0233,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0002
+93,2021-04-15 00:00:00,2021-01-20,2020,1,197,COR07-nom_dossier-0234,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0001
+93,2021-06-21 00:00:00,2021-02-10,2020,1,35,COR07-nom_dossier-0235,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0002,COR07-designation-0001
+93,2022-06-29 00:00:00,2021-03-04,2020,1,94,COR07-nom_dossier-0236,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0001
+93,2021-11-08 00:00:00,2021-08-24,2021,182,5540,COR07-nom_dossier-0237,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2021-05-17,2021,1,356,COR07-nom_dossier-0238,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0001
+93,2022-01-15 00:00:00,2021-09-13,2021,24,1635,COR07-nom_dossier-0239,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0003,COR07-designation-0001
+93,2023-01-15 00:00:00,2021-10-19,2021,1,267,COR07-nom_dossier-0240,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2021-11-15,2021,1,167,COR07-nom_dossier-0241,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0001
+93,2023-09-18 00:00:00,2022-01-17,2021,2,197,COR07-nom_dossier-0242,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0001
+93,2024-05-06 00:00:00,2022-02-18,2021,1,192,COR07-nom_dossier-0243,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2022-03-29,2021,3,0,COR07-nom_dossier-0244,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2022-03-28,2021,5,371,COR07-nom_dossier-0245,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0001
+93,2022-11-08 00:00:00,2022-05-17,2021,65,4173,COR07-nom_dossier-0246,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0001
+93,2023-05-22 00:00:00,2022-10-24,2022,2,64,COR07-nom_dossier-0247,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0001
+93,2023-04-03 00:00:00,2022-09-30,2022,1,99,COR07-nom_dossier-0248,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2022-06-27,2022,1,98,COR07-nom_dossier-0249,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0001
+93,2022-09-02 00:00:00,2022-07-28,2022,2,38,COR07-nom_dossier-0250,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0002,COR07-designation-0003
+93,2023-12-22 00:00:00,2023-05-17,2022,90,5943,COR07-nom_dossier-0251,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2023-01-04,2022,39,2727,COR07-nom_dossier-0252,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0002
+93,N/C,2022-11-07,2022,2,142,COR07-nom_dossier-0253,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0004,COR07-designation-0001
+93,N/C,2023-02-07,2022,3,0,COR07-nom_dossier-0254,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0002,COR07-designation-0001
+93,2023-02-17 00:00:00,2023-02-09,2022,2,132,COR07-nom_dossier-0255,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0001
+93,2024-12-26 00:00:00,2023-09-05,2022,126,7065,COR07-nom_dossier-0256,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0002
+93,N/C,2023-03-09,2022,3,171,COR07-nom_dossier-0257,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0004,COR07-designation-0001
+93,N/C,2023-04-21,2022,1,86,COR07-nom_dossier-0258,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2023-05-10,2022,1,98,COR07-nom_dossier-0259,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2023-01-24,2022,2,227,COR07-nom_dossier-0260,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2023-04-24,2022,69,4756,COR07-nom_dossier-0261,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0001
+93,2025-04-08 00:00:00,2023-10-03,2022,59,3889,COR07-nom_dossier-0262,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0002
+93,N/C,2023-07-12,2023,1,77,COR07-nom_dossier-0263,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2023-05-16,2023,1,226,COR07-nom_dossier-0264,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0003
+93,2025-12-22 00:00:00,2023-05-16,2023,1,226,COR07-nom_dossier-0265,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0001
+93,2024-01-04 00:00:00,2023-08-16,2023,17,1222,COR07-nom_dossier-0266,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2023-06-15,2023,3,184,COR07-nom_dossier-0267,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2023-05-24,2023,3,235,COR07-nom_dossier-0268,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0001
+93,2024-11-25 00:00:00,2023-09-12,2023,2,203,COR07-nom_dossier-0269,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2024-03-19,2023,9,0,COR07-nom_dossier-0270,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2024-10-11,2023,42,2879,COR07-nom_dossier-0271,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2024-03-19,2023,1,145,COR07-nom_dossier-0272,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2024-02-28,2024,1,159,COR07-nom_dossier-0273,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0001
+93,2025-07-07 00:00:00,2024-07-19,2024,2,207,COR07-nom_dossier-0274,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0002,COR07-designation-0002
+93,2024-11-19 00:00:00,2024-04-16,2024,1,70,COR07-nom_dossier-0275,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0002,COR07-designation-0002
+93,2024-12-02 00:00:00,2024-05-24,2024,1,125,COR07-nom_dossier-0276,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0002
+93,N/C,2024-08-21,2024,9,649,COR07-nom_dossier-0277,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2024-12-19,2024,115,2933,COR07-nom_dossier-0278,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2024-11-06,2024,1,134,COR07-nom_dossier-0279,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0002
+93,N/C,2024-11-13,2024,33,2228,COR07-nom_dossier-0280,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2024-12-10,2024,1,40,COR07-nom_dossier-0281,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2025-04-30,2024,15,813,COR07-nom_dossier-0282,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0001
+93,2025-01-02 00:00:00,2024-12-18,2024,1,0,COR07-nom_dossier-0283,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2024-12-05,2024,2,145,COR07-nom_dossier-0284,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2024-12-19,2024,3,379,COR07-nom_dossier-0285,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2025-03-13,2024,4,206,COR07-nom_dossier-0286,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2025-02-12,2024,1,91,COR07-nom_dossier-0287,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0001
+93,2025-09-10 00:00:00,2025-01-24,2024,1,150,COR07-nom_dossier-0288,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0002
+93,2026-05-11 00:00:00,2025-07-17,2024,70,4457,COR07-nom_dossier-0289,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0002
+93,N/C,2025-09-24,2024,116,3148,COR07-nom_dossier-0290,COR07-type_dossier-0002,93904,COR07-nom_commune-0004,COR07-nature_construction-0001,COR07-designation-0002
+93,N/C,2019-09-04,2019,2,17,COR07-nom_dossier-0291,COR07-type_dossier-0001,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2020-02-04,2019,1,0,COR07-nom_dossier-0292,COR07-type_dossier-0001,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2020-02-04,2019,2,0,COR07-nom_dossier-0293,COR07-type_dossier-0001,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2020-03-02,2020,1,0,COR07-nom_dossier-0294,COR07-type_dossier-0001,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2020-10-09,2020,1,0,COR07-nom_dossier-0295,COR07-type_dossier-0001,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2020-10-22,2020,1,0,COR07-nom_dossier-0296,COR07-type_dossier-0001,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2021-05-03,2021,1,0,COR07-nom_dossier-0297,COR07-type_dossier-0001,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0001
+93,N/C,2022-01-13,2021,1,0,COR07-nom_dossier-0298,COR07-type_dossier-0001,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2022-02-24,2021,1,0,COR07-nom_dossier-0299,COR07-type_dossier-0001,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0001
+93,N/C,2022-03-25,2022,1,0,COR07-nom_dossier-0300,COR07-type_dossier-0001,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0001
+93,N/C,2022-03-30,2022,1,0,COR07-nom_dossier-0301,COR07-type_dossier-0001,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2022-09-15,2022,1,0,COR07-nom_dossier-0302,COR07-type_dossier-0001,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2023-08-18,2023,2,0,COR07-nom_dossier-0303,COR07-type_dossier-0001,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2023-08-07,2023,1,50,COR07-nom_dossier-0304,COR07-type_dossier-0001,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2023-11-06,2023,1,0,COR07-nom_dossier-0305,COR07-type_dossier-0001,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2024-01-02,2023,2,0,COR07-nom_dossier-0306,COR07-type_dossier-0001,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2024-01-08,2023,1,6,COR07-nom_dossier-0307,COR07-type_dossier-0001,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2024-04-19,2024,1,0,COR07-nom_dossier-0308,COR07-type_dossier-0001,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2025-03-24,2025,1,0,COR07-nom_dossier-0309,COR07-type_dossier-0001,93905,COR07-nom_commune-0006,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2025-05-26,2025,1,0,COR07-nom_dossier-0310,COR07-type_dossier-0001,93905,COR07-nom_commune-0006,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2025-12-19,2025,1,14,COR07-nom_dossier-0311,COR07-type_dossier-0001,93905,COR07-nom_commune-0006,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2025-12-19,2025,1,0,COR07-nom_dossier-0312,COR07-type_dossier-0001,93905,COR07-nom_commune-0006,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2026-06-08,2026,1,0,COR07-nom_dossier-0313,COR07-type_dossier-0001,93905,COR07-nom_commune-0006,COR07-nature_construction-0002,COR07-designation-0001
+93,2014-08-26 00:00:00,2018-07-17,2012,8,596,COR07-nom_dossier-0314,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2018-03-30,2014,74,5346,COR07-nom_dossier-0315,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-01-08 00:00:00,2019-05-24,2016,14,953,COR07-nom_dossier-0316,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2019-10-17,2016,8,0,COR07-nom_dossier-0317,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0002
+93,2018-03-16 00:00:00,2017-09-08,2016,124,8772,COR07-nom_dossier-0318,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,2017-02-27 00:00:00,2017-02-21,2016,2,0,COR07-nom_dossier-0319,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,2021-12-06 00:00:00,2017-01-12,2016,2,122,COR07-nom_dossier-0320,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,2018-07-11 00:00:00,2017-06-02,2016,81,5433,COR07-nom_dossier-0321,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2017-05-16,2016,77,5464,COR07-nom_dossier-0322,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,2017-06-01 00:00:00,2017-03-13,2016,250,6828,COR07-nom_dossier-0323,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,2022-01-31 00:00:00,2017-02-24,2016,46,3092,COR07-nom_dossier-0324,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,2017-10-24 00:00:00,2017-04-28,2016,13,65,COR07-nom_dossier-0325,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,2017-10-24 00:00:00,2017-03-17,2016,5,46,COR07-nom_dossier-0326,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,2017-06-14 00:00:00,2017-04-20,2016,3,43,COR07-nom_dossier-0327,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0002
+93,2017-12-04 00:00:00,2017-06-29,2016,148,10264,COR07-nom_dossier-0328,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,2018-03-30 00:00:00,2017-05-29,2016,20,1295,COR07-nom_dossier-0329,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-04-08 00:00:00,2018-11-02,2016,1,95,COR07-nom_dossier-0330,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-04-08 00:00:00,2018-11-02,2016,1,95,COR07-nom_dossier-0331,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2017-03-13,2016,1,95,COR07-nom_dossier-0332,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,2017-09-21 00:00:00,2017-03-31,2016,1,90,COR07-nom_dossier-0333,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,2017-09-15 00:00:00,2017-03-31,2017,1,88,COR07-nom_dossier-0334,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,2018-07-23 00:00:00,2017-10-16,2017,79,6100,COR07-nom_dossier-0335,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2017-10-06,2017,2,99,COR07-nom_dossier-0336,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,2018-01-09 00:00:00,2017-10-02,2017,151,10349,COR07-nom_dossier-0337,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,2017-09-26 00:00:00,2017-05-31,2017,1,195,COR07-nom_dossier-0338,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-11-01 00:00:00,2017-09-22,2017,1,0,COR07-nom_dossier-0339,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0002
+93,2018-01-22 00:00:00,2017-07-26,2017,1,60,COR07-nom_dossier-0340,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2017-11-21,2017,4,7,COR07-nom_dossier-0341,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0002
+93,2019-07-12 00:00:00,2017-11-21,2017,24,2077,COR07-nom_dossier-0342,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-04-08 00:00:00,2017-12-28,2017,28,2275,COR07-nom_dossier-0343,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-05-02 00:00:00,2017-12-06,2017,18,1365,COR07-nom_dossier-0344,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2017-07-04,2017,1,38,COR07-nom_dossier-0345,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2018-03-23,2017,28,1718,COR07-nom_dossier-0346,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,2018-04-05 00:00:00,2017-12-13,2017,3,120,COR07-nom_dossier-0347,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-02-01 00:00:00,2017-11-29,2017,2,315,COR07-nom_dossier-0348,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2017-12-18,2017,2,196,COR07-nom_dossier-0349,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2017-12-04,2017,16,1103,COR07-nom_dossier-0350,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2017-11-03,2017,1,124,COR07-nom_dossier-0351,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-05-15 00:00:00,2019-02-22,2017,27,189,COR07-nom_dossier-0352,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0002
+93,2020-07-10 00:00:00,2018-07-23,2018,50,3751,COR07-nom_dossier-0353,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2018-12-21,2018,2,127,COR07-nom_dossier-0354,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-11-30 00:00:00,2020-02-04,2018,2,165,COR07-nom_dossier-0355,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2018-08-09,2018,53,3613,COR07-nom_dossier-0356,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,2018-12-18 00:00:00,2018-07-23,2018,1,173,COR07-nom_dossier-0357,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,2018-12-18 00:00:00,2018-07-23,2018,1,144,COR07-nom_dossier-0358,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2018-09-14,2018,2,230,COR07-nom_dossier-0359,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,2018-12-05 00:00:00,2018-07-26,2018,1,86,COR07-nom_dossier-0360,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2018-07-19,2018,1,70,COR07-nom_dossier-0361,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-09-30 00:00:00,2018-12-13,2018,203,14287,COR07-nom_dossier-0362,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2018-12-20,2018,35,2571,COR07-nom_dossier-0363,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2018-10-05,2018,2,34,COR07-nom_dossier-0364,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0002
+93,2019-04-08 00:00:00,2018-12-04,2018,2,19,COR07-nom_dossier-0365,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2019-01-07,2018,1,29,COR07-nom_dossier-0366,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2019-01-04,2018,1,2,COR07-nom_dossier-0367,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0002
+93,2018-12-28 00:00:00,2019-01-18,2018,6,32,COR07-nom_dossier-0368,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0002
+93,2019-12-31 00:00:00,2019-06-26,2018,152,4054,COR07-nom_dossier-0369,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2019-03-12,2018,1,98,COR07-nom_dossier-0370,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0002
+93,2022-06-22 00:00:00,2019-11-19,2018,44,2972,COR07-nom_dossier-0371,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-09-30 00:00:00,2019-05-28,2019,8,271,COR07-nom_dossier-0372,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-11-13 00:00:00,2019-06-26,2019,52,3638,COR07-nom_dossier-0373,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2019-05-03,2019,1,0,COR07-nom_dossier-0374,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0002
+93,2019-09-01 00:00:00,2019-09-16,2019,2,58,COR07-nom_dossier-0375,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-12-17 00:00:00,2019-09-25,2019,70,4923,COR07-nom_dossier-0376,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-06-30 00:00:00,2019-09-25,2019,42,1963,COR07-nom_dossier-0377,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-12-31 00:00:00,2019-09-25,2019,73,5403,COR07-nom_dossier-0378,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-12-01 00:00:00,2019-10-10,2019,1,0,COR07-nom_dossier-0379,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2019-12-16,2019,35,2298,COR07-nom_dossier-0380,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,2022-11-18 00:00:00,2019-11-26,2019,1,127,COR07-nom_dossier-0381,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-10-01 00:00:00,2019-12-30,2019,1,179,COR07-nom_dossier-0382,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,2021-09-15 00:00:00,2020-01-16,2019,2,263,COR07-nom_dossier-0383,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,2021-01-25 00:00:00,2020-03-30,2019,10,686,COR07-nom_dossier-0384,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2020-01-16,2019,1,69,COR07-nom_dossier-0385,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2020-07-30,2019,20,1356,COR07-nom_dossier-0386,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2021-03-23,2019,271,14374,COR07-nom_dossier-0387,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,2021-07-22 00:00:00,2020-10-09,2019,30,2016,COR07-nom_dossier-0388,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2021-01-06,2020,2,209,COR07-nom_dossier-0389,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2021-01-18,2020,1,180,COR07-nom_dossier-0390,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0001
+93,N/C,2021-05-21,2020,292,20792,COR07-nom_dossier-0391,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0001
+93,2024-04-03 00:00:00,2021-05-21,2020,189,13334,COR07-nom_dossier-0392,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0001
+93,N/C,2021-01-22,2020,1,113,COR07-nom_dossier-0393,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0001
+93,2021-06-18 00:00:00,2021-02-19,2020,2,0,COR07-nom_dossier-0394,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0001
+93,2021-10-21 00:00:00,2021-07-08,2021,41,2787,COR07-nom_dossier-0395,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0001
+93,N/C,2021-10-18,2021,22,1436,COR07-nom_dossier-0396,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0001,COR07-designation-0001
+93,2023-03-06 00:00:00,2021-07-23,2021,2,199,COR07-nom_dossier-0397,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0001
+93,N/C,2021-06-17,2021,6,466,COR07-nom_dossier-0398,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0001
+93,N/C,2021-09-14,2021,1,49,COR07-nom_dossier-0399,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2022-01-03,2021,1,14,COR07-nom_dossier-0400,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0001
+93,2023-10-02 00:00:00,2022-09-22,2021,87,7058,COR07-nom_dossier-0401,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2022-04-09,2021,8,570,COR07-nom_dossier-0402,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0001
+93,N/C,2021-11-17,2021,1,144,COR07-nom_dossier-0403,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0001
+93,2022-03-05 00:00:00,2021-12-20,2021,5,510,COR07-nom_dossier-0404,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0001
+93,N/C,2022-01-03,2021,1,37,COR07-nom_dossier-0405,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0003,COR07-designation-0001
+93,N/C,2022-03-15,2021,1,105,COR07-nom_dossier-0406,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2022-06-09,2021,2,190,COR07-nom_dossier-0407,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0004,COR07-designation-0001
+93,N/C,2022-10-24,2022,1,185,COR07-nom_dossier-0408,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2022-10-17,2022,5,94,COR07-nom_dossier-0409,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0001
+93,2024-09-15 00:00:00,2022-09-22,2022,1,62,COR07-nom_dossier-0410,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2025-07-01,2022,1,184,COR07-nom_dossier-0411,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0001,COR07-designation-0001
+93,2024-05-29 00:00:00,2022-11-17,2022,53,0,COR07-nom_dossier-0412,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2022-10-06,2022,1,74,COR07-nom_dossier-0413,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0002
+93,2023-01-26 00:00:00,2023-01-24,2022,1,0,COR07-nom_dossier-0414,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2023-01-16,2022,1,155,COR07-nom_dossier-0415,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2023-03-03,2022,4,240,COR07-nom_dossier-0416,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2023-08-01,2022,14,1003,COR07-nom_dossier-0417,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0001,COR07-designation-0001
+93,2026-02-02 00:00:00,2023-05-09,2023,4,262,COR07-nom_dossier-0418,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2023-06-09,2023,3,138,COR07-nom_dossier-0419,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2023-06-19,2023,1,51,COR07-nom_dossier-0420,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0001
+93,2024-04-02 00:00:00,2023-12-27,2023,191,14039,COR07-nom_dossier-0421,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0001,COR07-designation-0002
+93,2025-01-02 00:00:00,2023-11-15,2023,2,0,COR07-nom_dossier-0422,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0001
+93,2024-02-12 00:00:00,2023-11-29,2023,1,53,COR07-nom_dossier-0423,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2023-10-17,2023,1,0,COR07-nom_dossier-0424,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2023-11-20,2023,2,22,COR07-nom_dossier-0425,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0001
+93,2024-02-13 00:00:00,2023-10-11,2023,1,118,COR07-nom_dossier-0426,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2024-05-06,2023,53,3631,COR07-nom_dossier-0427,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0001,COR07-designation-0002
+93,2025-07-07 00:00:00,2024-05-13,2024,7,394,COR07-nom_dossier-0428,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0002
+93,2025-01-27 00:00:00,2024-09-12,2024,106,7552,COR07-nom_dossier-0429,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2024-08-29,2024,3,283,COR07-nom_dossier-0430,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0001,COR07-designation-0001
+93,2025-08-04 00:00:00,2024-11-06,2024,1,249,COR07-nom_dossier-0431,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2025-03-20,2024,59,4326,COR07-nom_dossier-0432,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0001,COR07-designation-0001
+93,2024-12-09 00:00:00,2024-09-24,2024,1,104,COR07-nom_dossier-0433,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0004,COR07-designation-0002
+93,N/C,2024-10-03,2024,1,66,COR07-nom_dossier-0434,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2024-10-15,2024,18,1134,COR07-nom_dossier-0435,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0004,COR07-designation-0001
+93,2026-04-20 00:00:00,2024-11-12,2024,2,142,COR07-nom_dossier-0436,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2024-11-27,2024,150,4260,COR07-nom_dossier-0437,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0001,COR07-designation-0002
+93,N/C,2025-04-14,2024,50,3609,COR07-nom_dossier-0438,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2025-05-23,2024,8,675,COR07-nom_dossier-0439,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0004,COR07-designation-0001
+93,N/C,2025-03-20,2024,65,4620,COR07-nom_dossier-0440,COR07-type_dossier-0002,93905,COR07-nom_commune-0005,COR07-nature_construction-0001,COR07-designation-0001
+93,2026-03-19 00:00:00,2025-06-11,2025,1,185,COR07-nom_dossier-0441,COR07-type_dossier-0002,93905,COR07-nom_commune-0006,COR07-nature_construction-0001,COR07-designation-0001
+93,2025-12-10 00:00:00,2025-07-01,2025,1,108,COR07-nom_dossier-0442,COR07-type_dossier-0002,93905,COR07-nom_commune-0006,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2025-08-26,2025,1,81,COR07-nom_dossier-0443,COR07-type_dossier-0002,93905,COR07-nom_commune-0006,COR07-nature_construction-0004,COR07-designation-0001
+93,N/C,2025-06-26,2025,3,125,COR07-nom_dossier-0444,COR07-type_dossier-0002,93905,COR07-nom_commune-0006,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2025-07-21,2025,1,60,COR07-nom_dossier-0445,COR07-type_dossier-0002,93905,COR07-nom_commune-0006,COR07-nature_construction-0002,COR07-designation-0001
+93,2026-02-16 00:00:00,2025-10-07,2025,2,280,COR07-nom_dossier-0446,COR07-type_dossier-0002,93905,COR07-nom_commune-0006,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2025-12-22,2025,285,10256,COR07-nom_dossier-0447,COR07-type_dossier-0002,93905,COR07-nom_commune-0006,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2025-10-06,2025,1,42,COR07-nom_dossier-0448,COR07-type_dossier-0002,93905,COR07-nom_commune-0006,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2025-12-01,2025,1,106,COR07-nom_dossier-0449,COR07-type_dossier-0002,93905,COR07-nom_commune-0006,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2026-03-13,2025,10,83,COR07-nom_dossier-0450,COR07-type_dossier-0002,93905,COR07-nom_commune-0006,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2026-06-05,2026,15,1048,COR07-nom_dossier-0451,COR07-type_dossier-0002,93905,COR07-nom_commune-0006,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2026-06-09,2026,21,1509,COR07-nom_dossier-0452,COR07-type_dossier-0002,93905,COR07-nom_commune-0006,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2026-05-04,2026,1,100,COR07-nom_dossier-0453,COR07-type_dossier-0002,93905,COR07-nom_commune-0006,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2020-01-08,2019,1,0,COR07-nom_dossier-0454,COR07-type_dossier-0001,93906,COR07-nom_commune-0007,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2021-03-23,2021,3,0,COR07-nom_dossier-0455,COR07-type_dossier-0001,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0001
+93,N/C,2021-04-26,2021,1,0,COR07-nom_dossier-0456,COR07-type_dossier-0001,93906,COR07-nom_commune-0007,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2022-08-03,2022,2,0,COR07-nom_dossier-0457,COR07-type_dossier-0001,93906,COR07-nom_commune-0007,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2023-05-12,2023,1,0,COR07-nom_dossier-0458,COR07-type_dossier-0001,93906,COR07-nom_commune-0007,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2024-08-12,2024,1,0,COR07-nom_dossier-0459,COR07-type_dossier-0001,93906,COR07-nom_commune-0007,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2024-08-27,2024,1,0,COR07-nom_dossier-0460,COR07-type_dossier-0001,93906,COR07-nom_commune-0007,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2025-03-07,2024,1,0,COR07-nom_dossier-0461,COR07-type_dossier-0001,93906,COR07-nom_commune-0007,COR07-nature_construction-0002,COR07-designation-0003
+93,N/C,2025-08-25,2025,2,0,COR07-nom_dossier-0462,COR07-type_dossier-0001,93906,COR07-nom_commune-0007,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2026-03-11,2025,1,0,COR07-nom_dossier-0463,COR07-type_dossier-0001,93906,COR07-nom_commune-0007,COR07-nature_construction-0002,COR07-designation-0001
+93,2017-09-25 00:00:00,2017-03-27,2015,150,4271,COR07-nom_dossier-0464,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-11-29 00:00:00,2017-07-19,2016,498,37740,COR07-nom_dossier-0465,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2017-04-26,2016,1,0,COR07-nom_dossier-0466,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0002,COR07-designation-0002
+93,2018-01-15 00:00:00,2017-07-21,2016,80,5387,COR07-nom_dossier-0467,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2017-10-01 00:00:00,2017-05-11,2017,1,46,COR07-nom_dossier-0468,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0002,COR07-designation-0002
+93,2018-09-18 00:00:00,2017-08-01,2017,16,1101,COR07-nom_dossier-0469,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-06-29 00:00:00,2017-11-24,2017,70,2394,COR07-nom_dossier-0470,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2017-08-29,2017,1,0,COR07-nom_dossier-0471,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2017-11-24,2017,4,292,COR07-nom_dossier-0472,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-09-26 00:00:00,2018-08-01,2017,117,8300,COR07-nom_dossier-0473,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-06-29 00:00:00,2017-11-17,2017,40,3007,COR07-nom_dossier-0474,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-02-07 00:00:00,2018-03-12,2017,42,3315,COR07-nom_dossier-0475,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2018-12-14 00:00:00,2018-05-17,2017,88,6409,COR07-nom_dossier-0476,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2018-12-14 00:00:00,2018-05-17,2017,127,8651,COR07-nom_dossier-0477,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-07-08 00:00:00,2018-05-14,2017,181,12948,COR07-nom_dossier-0478,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2018-01-29 00:00:00,2017-11-24,2017,1,0,COR07-nom_dossier-0479,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2017-11-24,2017,4,274,COR07-nom_dossier-0480,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-06-02 00:00:00,2018-04-12,2017,20,1423,COR07-nom_dossier-0481,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-12-09 00:00:00,2018-07-19,2017,57,4053,COR07-nom_dossier-0482,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2018-12-12 00:00:00,2018-04-30,2017,51,3773,COR07-nom_dossier-0483,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-12-09 00:00:00,2018-07-19,2017,57,4079,COR07-nom_dossier-0484,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-02-25 00:00:00,2018-10-22,2018,120,8712,COR07-nom_dossier-0485,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-02-25 00:00:00,2018-10-22,2018,94,7053,COR07-nom_dossier-0486,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-02-25 00:00:00,2018-10-22,2018,65,4541,COR07-nom_dossier-0487,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-02-25 00:00:00,2018-10-22,2018,32,2487,COR07-nom_dossier-0488,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-03-19 00:00:00,2019-01-30,2018,1,72,COR07-nom_dossier-0489,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0002,COR07-designation-0002
+93,2019-03-13 00:00:00,2018-11-13,2018,1,65,COR07-nom_dossier-0490,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2018-11-23,2018,1,43,COR07-nom_dossier-0491,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0002,COR07-designation-0002
+93,2019-12-09 00:00:00,2019-04-05,2018,14,1303,COR07-nom_dossier-0492,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2021-01-26 00:00:00,2019-10-10,2018,227,16189,COR07-nom_dossier-0493,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-11-27 00:00:00,2019-01-16,2018,1,0,COR07-nom_dossier-0494,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0002,COR07-designation-0002
+93,2020-06-16 00:00:00,2019-04-05,2018,103,7937,COR07-nom_dossier-0495,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2019-07-22,2018,21,1764,COR07-nom_dossier-0496,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2022-04-19 00:00:00,2019-05-20,2018,11,995,COR07-nom_dossier-0497,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-09-01 00:00:00,2020-01-17,2018,1,180,COR07-nom_dossier-0498,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2023-05-02 00:00:00,2019-09-27,2018,65,4533,COR07-nom_dossier-0499,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-07-01 00:00:00,2019-06-07,2018,1,0,COR07-nom_dossier-0500,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0002,COR07-designation-0002
+93,2019-04-25 00:00:00,2019-04-24,2019,8,7,COR07-nom_dossier-0501,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0002,COR07-designation-0002
+93,2019-11-22 00:00:00,2019-05-09,2019,1,34,COR07-nom_dossier-0502,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2019-05-20,2019,1,81,COR07-nom_dossier-0503,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2021-09-30 00:00:00,2019-07-25,2019,10,673,COR07-nom_dossier-0504,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-12-16 00:00:00,2019-07-29,2019,70,5195,COR07-nom_dossier-0505,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-12-16 00:00:00,2019-07-29,2019,47,3464,COR07-nom_dossier-0506,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-12-17 00:00:00,2019-12-10,2019,255,16623,COR07-nom_dossier-0507,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-12-16 00:00:00,2019-07-29,2019,62,4749,COR07-nom_dossier-0508,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-01-31 00:00:00,2019-07-29,2019,68,5103,COR07-nom_dossier-0509,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2022-04-20 00:00:00,2021-07-27,2019,22,2381,COR07-nom_dossier-0510,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2022-04-20 00:00:00,2021-07-27,2019,90,6583,COR07-nom_dossier-0511,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-07-20 00:00:00,2020-03-04,2019,1,82,COR07-nom_dossier-0512,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2021-03-30 00:00:00,2020-06-26,2019,48,4157,COR07-nom_dossier-0513,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-01-06 00:00:00,2019-11-18,2019,1,49,COR07-nom_dossier-0514,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-11-25 00:00:00,2020-03-11,2019,29,2156,COR07-nom_dossier-0515,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-12-21 00:00:00,2020-10-07,2019,555,31868,COR07-nom_dossier-0516,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2021-05-27 00:00:00,2020-12-14,2019,59,4557,COR07-nom_dossier-0517,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-08-22 00:00:00,2020-08-17,2019,1,47,COR07-nom_dossier-0518,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2021-11-04 00:00:00,2021-01-11,2019,15,959,COR07-nom_dossier-0519,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2021-02-15 00:00:00,2020-08-26,2019,309,8265,COR07-nom_dossier-0520,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-11-02 00:00:00,2020-08-31,2019,1,81,COR07-nom_dossier-0521,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2021-03-11,2019,58,4324,COR07-nom_dossier-0522,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2020-02-28,2020,1,32,COR07-nom_dossier-0523,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2021-11-22 00:00:00,2021-01-26,2020,2,111,COR07-nom_dossier-0524,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2020-07-06,2020,224,4911,COR07-nom_dossier-0525,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2022-03-14 00:00:00,2020-08-27,2020,207,4184,COR07-nom_dossier-0526,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2021-07-07 00:00:00,2021-01-20,2020,60,4757,COR07-nom_dossier-0527,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2021-07-07 00:00:00,2021-01-20,2020,49,3456,COR07-nom_dossier-0528,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2021-07-07 00:00:00,2021-01-20,2020,28,1953,COR07-nom_dossier-0529,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2021-07-07 00:00:00,2021-01-20,2020,33,2684,COR07-nom_dossier-0530,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2021-07-07 00:00:00,2021-01-20,2020,60,4473,COR07-nom_dossier-0531,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2021-07-07 00:00:00,2021-01-20,2020,59,4208,COR07-nom_dossier-0532,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2024-05-29 00:00:00,2020-12-09,2020,78,5969,COR07-nom_dossier-0533,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2020-12-30,2020,12,1047,COR07-nom_dossier-0534,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2021-05-27 00:00:00,2020-11-05,2020,1,52,COR07-nom_dossier-0535,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0002
+93,2021-06-21 00:00:00,2021-06-14,2020,4,0,COR07-nom_dossier-0536,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0002,COR07-designation-0002
+93,2022-05-02 00:00:00,2021-01-08,2020,1,179,COR07-nom_dossier-0537,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0001
+93,2023-07-17 00:00:00,2022-02-24,2020,24,1949,COR07-nom_dossier-0538,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0001
+93,2021-11-29 00:00:00,2021-07-21,2021,1,247,COR07-nom_dossier-0539,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0001
+93,2022-12-15 00:00:00,2022-05-12,2021,1,36,COR07-nom_dossier-0540,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0001
+93,2024-05-13 00:00:00,2022-02-08,2021,203,67,COR07-nom_dossier-0541,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0001
+93,2022-04-06 00:00:00,2022-04-04,2021,2,59,COR07-nom_dossier-0542,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0002,COR07-designation-0001
+93,2023-05-30 00:00:00,2022-05-27,2021,5,175,COR07-nom_dossier-0543,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0002,COR07-designation-0001
+93,2022-07-19 00:00:00,2021-12-09,2021,1,166,COR07-nom_dossier-0544,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0001
+93,N/C,2022-01-06,2021,1,47,COR07-nom_dossier-0545,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0001
+93,2022-11-24 00:00:00,2022-01-28,2021,30,2510,COR07-nom_dossier-0546,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0001
+93,2022-12-14 00:00:00,2022-05-11,2021,44,3169,COR07-nom_dossier-0547,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0001
+93,2022-11-21 00:00:00,2022-05-11,2021,104,6868,COR07-nom_dossier-0548,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0003,COR07-designation-0001
+93,N/C,2022-09-07,2021,1,210,COR07-nom_dossier-0549,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0001
+93,2024-01-08 00:00:00,2022-08-24,2021,301,12949,COR07-nom_dossier-0550,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2022-11-24,2021,13,1178,COR07-nom_dossier-0551,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0001
+93,2023-01-06 00:00:00,2022-08-24,2021,22,1545,COR07-nom_dossier-0552,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0004,COR07-designation-0002
+93,2024-11-12 00:00:00,2023-07-21,2021,153,0,COR07-nom_dossier-0553,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0001
+93,2025-11-19 00:00:00,2022-12-12,2022,6,692,COR07-nom_dossier-0554,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0001
+93,2023-08-16 00:00:00,2023-02-07,2022,4,408,COR07-nom_dossier-0555,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0001
+93,2022-11-02 00:00:00,2022-11-02,2022,1,121,COR07-nom_dossier-0556,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0002
+93,N/C,2023-03-21,2022,67,4746,COR07-nom_dossier-0557,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2022-10-10,2022,61,4371,COR07-nom_dossier-0558,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2022-10-17,2022,66,4486,COR07-nom_dossier-0559,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2022-10-14,2022,66,4915,COR07-nom_dossier-0560,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2022-10-28,2022,62,4536,COR07-nom_dossier-0561,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2022-10-17,2022,62,4497,COR07-nom_dossier-0562,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0001
+93,2024-11-22 00:00:00,2022-11-23,2022,2,0,COR07-nom_dossier-0563,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0002,COR07-designation-0001
+93,2023-03-21 00:00:00,2023-03-21,2022,1,78,COR07-nom_dossier-0564,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2023-06-30,2022,150,11539,COR07-nom_dossier-0565,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2024-08-28,2022,79,5722,COR07-nom_dossier-0566,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2023-09-12,2022,11,844,COR07-nom_dossier-0567,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0001
+93,2025-01-01 00:00:00,2023-05-26,2022,2,34,COR07-nom_dossier-0568,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0002,COR07-designation-0001
+93,2025-05-21 00:00:00,2023-12-27,2022,16,1147,COR07-nom_dossier-0569,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2023-05-26,2022,1,59,COR07-nom_dossier-0570,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2023-10-17,2022,60,4591,COR07-nom_dossier-0571,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2023-10-17,2022,63,4697,COR07-nom_dossier-0572,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0001
+93,2024-01-26 00:00:00,2023-05-31,2022,60,4110,COR07-nom_dossier-0573,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0001
+93,2025-01-23 00:00:00,2023-12-12,2023,1,54,COR07-nom_dossier-0574,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2024-04-03,2023,3,529,COR07-nom_dossier-0575,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0001
+93,2023-12-26 00:00:00,2023-08-09,2023,223,5498,COR07-nom_dossier-0576,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0001
+93,2024-12-19 00:00:00,2023-11-27,2023,23,1694,COR07-nom_dossier-0577,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0004,COR07-designation-0001
+93,N/C,2024-07-23,2023,1,108,COR07-nom_dossier-0578,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0001
+93,2025-12-19 00:00:00,2024-05-03,2023,167,4335,COR07-nom_dossier-0579,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0003
+93,2025-12-19 00:00:00,2024-04-08,2023,62,4551,COR07-nom_dossier-0580,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0001
+93,2026-02-09 00:00:00,2024-01-09,2023,1,100,COR07-nom_dossier-0581,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0004,COR07-designation-0002
+93,2024-09-09 00:00:00,2024-02-26,2023,5,520,COR07-nom_dossier-0582,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0001
+93,2024-12-16 00:00:00,2024-04-18,2023,13,870,COR07-nom_dossier-0583,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2024-06-14,2023,6,346,COR07-nom_dossier-0584,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0001
+93,2026-02-13 00:00:00,2024-09-17,2024,28,70,COR07-nom_dossier-0585,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2024-11-08,2024,28,2209,COR07-nom_dossier-0586,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0002
+93,N/C,2025-12-16,2024,30,1869,COR07-nom_dossier-0587,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2025-04-16,2024,18,1199,COR07-nom_dossier-0588,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2025-04-02,2024,6,409,COR07-nom_dossier-0589,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2025-09-30,2024,13,797,COR07-nom_dossier-0590,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0002
+93,N/C,2025-04-18,2024,70,5012,COR07-nom_dossier-0591,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2025-08-05,2025,1,134,COR07-nom_dossier-0592,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2025-11-25,2025,1,260,COR07-nom_dossier-0593,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0001
+93,2026-04-27 00:00:00,2026-02-05,2025,1,54,COR07-nom_dossier-0594,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2026-01-20,2025,1,0,COR07-nom_dossier-0595,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2026-05-12,2025,926,28020,COR07-nom_dossier-0596,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0003
+93,2025-12-11 00:00:00,2025-12-09,2025,1,7,COR07-nom_dossier-0597,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2025-11-04,2025,1,0,COR07-nom_dossier-0598,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2026-04-27,2025,12,570,COR07-nom_dossier-0599,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0004,COR07-designation-0003
+93,N/C,2026-05-22,2025,163,12376,COR07-nom_dossier-0600,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2026-04-20,2025,1,67,COR07-nom_dossier-0601,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2026-06-17,2025,1,0,COR07-nom_dossier-0602,COR07-type_dossier-0002,93906,COR07-nom_commune-0007,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2017-05-09,2017,1,25,COR07-nom_dossier-0603,COR07-type_dossier-0001,93907,COR07-nom_commune-0008,COR07-nature_construction-0001,COR07-designation-0002
+93,N/C,2018-03-07,2017,1,0,COR07-nom_dossier-0604,COR07-type_dossier-0001,93907,COR07-nom_commune-0008,COR07-nature_construction-0005,COR07-designation-0002
+93,2020-09-09 00:00:00,2020-07-15,2020,1,35,COR07-nom_dossier-0605,COR07-type_dossier-0001,93907,COR07-nom_commune-0008,COR07-nature_construction-0005,COR07-designation-0002
+93,N/C,2021-03-09,2021,1,17,COR07-nom_dossier-0606,COR07-type_dossier-0001,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0001
+93,N/C,2021-04-01,2021,4,0,COR07-nom_dossier-0607,COR07-type_dossier-0001,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0001
+93,N/C,2026-06-24,2026,2,38,COR07-nom_dossier-0608,COR07-type_dossier-0001,93907,COR07-nom_commune-0008,COR07-nature_construction-0002,COR07-designation-0001
+93,2005-11-22 00:00:00,2023-04-12,2005,1,160,COR07-nom_dossier-0609,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,2009-10-01 00:00:00,2022-07-12,2009,1,160,COR07-nom_dossier-0610,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,2015-01-05 00:00:00,2020-10-14,2012,26,1737,COR07-nom_dossier-0611,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,2017-08-31 00:00:00,2017-02-27,2016,1,117,COR07-nom_dossier-0612,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2017-01-25,2016,1,22,COR07-nom_dossier-0613,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2020-02-21,2016,30,2064,COR07-nom_dossier-0614,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2017-03-01,2016,1,58,COR07-nom_dossier-0615,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2017-04-05,2017,1,54,COR07-nom_dossier-0616,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0002,COR07-designation-0002
+93,2017-10-18 00:00:00,2017-05-30,2017,1,83,COR07-nom_dossier-0617,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,2017-10-07 00:00:00,2017-07-11,2017,1,26,COR07-nom_dossier-0618,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,2022-07-26 00:00:00,2021-05-07,2017,22,1422,COR07-nom_dossier-0619,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2017-08-03,2017,1,88,COR07-nom_dossier-0620,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,2018-06-13 00:00:00,2017-10-25,2017,1,85,COR07-nom_dossier-0621,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,2017-05-03 00:00:00,2017-07-12,2017,1,281,COR07-nom_dossier-0622,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,2017-11-23 00:00:00,2017-07-31,2017,3,166,COR07-nom_dossier-0623,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-06-25 00:00:00,2017-09-05,2017,1,132,COR07-nom_dossier-0624,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-05-09 00:00:00,2017-10-04,2017,1,89,COR07-nom_dossier-0625,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2017-12-06,2017,3,131,COR07-nom_dossier-0626,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2017-12-07,2017,1,107,COR07-nom_dossier-0627,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2018-02-20,2017,2,2,COR07-nom_dossier-0628,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2018-01-15,2017,1,45,COR07-nom_dossier-0629,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2018-02-21,2017,1,107,COR07-nom_dossier-0630,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2018-03-26,2018,4,177,COR07-nom_dossier-0631,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2018-05-22,2018,3,10,COR07-nom_dossier-0632,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-11-23 00:00:00,2018-07-16,2018,1,182,COR07-nom_dossier-0633,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-02-01 00:00:00,2018-06-25,2018,30,812,COR07-nom_dossier-0634,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-02-07 00:00:00,2018-09-18,2018,6,300,COR07-nom_dossier-0635,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2021-07-05,2018,11,751,COR07-nom_dossier-0636,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2021-07-05,2018,31,2651,COR07-nom_dossier-0637,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-11-09 00:00:00,2020-10-21,2018,6,205,COR07-nom_dossier-0638,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2018-09-18,2018,1,74,COR07-nom_dossier-0639,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-07-27 00:00:00,2018-10-22,2018,4,104,COR07-nom_dossier-0640,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2018-10-12,2018,2,102,COR07-nom_dossier-0641,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-07-01 00:00:00,2019-03-07,2018,2,142,COR07-nom_dossier-0642,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,2019-09-30 00:00:00,2019-07-26,2018,2,173,COR07-nom_dossier-0643,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2019-05-17,2018,1,25,COR07-nom_dossier-0644,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2020-08-03,2019,1,37,COR07-nom_dossier-0645,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0002,COR07-designation-0002
+93,2019-09-26 00:00:00,2019-05-17,2019,1,144,COR07-nom_dossier-0646,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-11-16 00:00:00,2019-10-17,2019,14,732,COR07-nom_dossier-0647,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-05-26 00:00:00,2019-07-08,2019,1,42,COR07-nom_dossier-0648,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2019-11-26,2019,2,236,COR07-nom_dossier-0649,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0002,COR07-designation-0002
+93,2021-08-18 00:00:00,2019-07-08,2019,1,34,COR07-nom_dossier-0650,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,2023-05-16 00:00:00,2020-02-21,2019,1,158,COR07-nom_dossier-0651,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2019-11-15,2019,5,270,COR07-nom_dossier-0652,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2019-08-26,2019,1,178,COR07-nom_dossier-0653,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-08-10 00:00:00,2019-11-27,2019,3,2,COR07-nom_dossier-0654,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2019-11-14,2019,4,223,COR07-nom_dossier-0655,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-08-31 00:00:00,2019-11-14,2019,1,71,COR07-nom_dossier-0656,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2020-02-03,2019,1,64,COR07-nom_dossier-0657,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0002,COR07-designation-0002
+93,2020-07-23 00:00:00,2020-07-20,2019,59,3654,COR07-nom_dossier-0658,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-05-25 00:00:00,2019-12-16,2019,1,136,COR07-nom_dossier-0659,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-02-06 00:00:00,2020-01-03,2019,4,112,COR07-nom_dossier-0660,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-05-20 00:00:00,2020-01-22,2019,1,194,COR07-nom_dossier-0661,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0001,COR07-designation-0002
+93,2021-09-06 00:00:00,2020-02-12,2019,4,249,COR07-nom_dossier-0662,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2020-02-05,2019,1,210,COR07-nom_dossier-0663,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2020-02-18,2019,3,246,COR07-nom_dossier-0664,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,2021-02-27 00:00:00,2020-11-23,2019,2,136,COR07-nom_dossier-0665,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0002,COR07-designation-0002
+93,2021-06-02 00:00:00,2021-05-05,2019,54,3992,COR07-nom_dossier-0666,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,2020-07-09 00:00:00,2020-02-07,2019,1,113,COR07-nom_dossier-0667,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,2021-05-05 00:00:00,2020-12-29,2020,13,363,COR07-nom_dossier-0668,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0002,COR07-designation-0002
+93,2020-10-06 00:00:00,2020-08-04,2020,1,99,COR07-nom_dossier-0669,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,2021-03-25 00:00:00,2021-01-26,2020,26,1705,COR07-nom_dossier-0670,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,2021-03-15 00:00:00,2020-08-26,2020,2,207,COR07-nom_dossier-0671,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2020-08-26,2020,1,123,COR07-nom_dossier-0672,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0002,COR07-designation-0002
+93,N/C,2020-10-06,2020,1,147,COR07-nom_dossier-0673,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2020-11-27,2020,4,385,COR07-nom_dossier-0674,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0001
+93,2024-08-01 00:00:00,2020-12-07,2020,1,68,COR07-nom_dossier-0675,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0002,COR07-designation-0001
+93,2022-03-21 00:00:00,2021-11-09,2020,69,4585,COR07-nom_dossier-0676,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0001
+93,2021-02-27 00:00:00,2020-11-27,2020,2,145,COR07-nom_dossier-0677,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0001
+93,2021-09-10 00:00:00,2021-08-30,2020,58,3823,COR07-nom_dossier-0678,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0001
+93,2023-02-01 00:00:00,2022-05-24,2020,6,365,COR07-nom_dossier-0679,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0001
+93,N/C,2021-05-21,2021,1,56,COR07-nom_dossier-0680,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0002,COR07-designation-0001
+93,2021-07-22 00:00:00,2021-03-09,2021,1,100,COR07-nom_dossier-0681,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0001
+93,N/C,2021-10-29,2021,1,145,COR07-nom_dossier-0682,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0001
+93,2022-05-13 00:00:00,2021-07-05,2021,1,161,COR07-nom_dossier-0683,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0001
+93,2021-10-25 00:00:00,2021-07-05,2021,2,141,COR07-nom_dossier-0684,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0001
+93,2023-07-24 00:00:00,2021-09-08,2021,55,3638,COR07-nom_dossier-0685,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0001
+93,2024-03-04 00:00:00,2021-10-29,2021,2,282,COR07-nom_dossier-0686,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2021-10-22,2021,105,7188,COR07-nom_dossier-0687,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0001
+93,N/C,2022-01-04,2021,20,1467,COR07-nom_dossier-0688,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0001,COR07-designation-0001
+93,2022-12-17 00:00:00,2022-07-11,2021,154,10675,COR07-nom_dossier-0689,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0001,COR07-designation-0001
+93,2023-02-09 00:00:00,2022-03-25,2021,2,219,COR07-nom_dossier-0690,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2022-04-12,2021,4,312,COR07-nom_dossier-0691,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0003,COR07-designation-0001
+93,2023-07-24 00:00:00,2022-07-12,2021,47,3089,COR07-nom_dossier-0692,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0001,COR07-designation-0001
+93,2023-10-27 00:00:00,2022-07-12,2021,36,2375,COR07-nom_dossier-0693,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0001,COR07-designation-0001
+93,2022-09-18 00:00:00,2022-06-17,2022,1,91,COR07-nom_dossier-0694,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0001,COR07-designation-0002
+93,N/C,2022-08-26,2022,5,259,COR07-nom_dossier-0695,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0002,COR07-designation-0002
+93,2023-02-14 00:00:00,2022-11-04,2022,3,216,COR07-nom_dossier-0696,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2022-07-13,2022,1,76,COR07-nom_dossier-0697,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2022-08-29,2022,2,225,COR07-nom_dossier-0698,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2023-03-16,2022,4,293,COR07-nom_dossier-0699,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0001,COR07-designation-0003
+93,N/C,2022-12-19,2022,2,38,COR07-nom_dossier-0700,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2023-03-17,2022,1,85,COR07-nom_dossier-0701,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2023-03-16,2023,1,32,COR07-nom_dossier-0702,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0002,COR07-designation-0001
+93,2024-01-10 00:00:00,2023-10-30,2023,1,72,COR07-nom_dossier-0703,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0001,COR07-designation-0002
+93,N/C,2023-06-09,2023,5,392,COR07-nom_dossier-0704,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2023-06-13,2023,4,97,COR07-nom_dossier-0705,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0002,COR07-designation-0003
+93,2024-09-30 00:00:00,2023-05-31,2023,1,115,COR07-nom_dossier-0706,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0001,COR07-designation-0002
+93,N/C,2023-10-30,2023,1,149,COR07-nom_dossier-0707,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2024-01-08,2023,1,73,COR07-nom_dossier-0708,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0001,COR07-designation-0002
+93,N/C,2023-12-22,2023,6,423,COR07-nom_dossier-0709,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2024-04-05,2023,1,205,COR07-nom_dossier-0710,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2023-12-22,2023,1,149,COR07-nom_dossier-0711,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2024-03-22,2023,3,176,COR07-nom_dossier-0712,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0001,COR07-designation-0001
+93,2025-05-02 00:00:00,2024-05-30,2023,30,1384,COR07-nom_dossier-0713,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0001,COR07-designation-0003
+93,N/C,2024-11-07,2024,50,3422,COR07-nom_dossier-0714,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0001,COR07-designation-0001
+93,2025-01-02 00:00:00,2024-10-07,2024,2,195,COR07-nom_dossier-0715,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2024-08-12,2024,1,200,COR07-nom_dossier-0716,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2025-01-13,2024,6,551,COR07-nom_dossier-0717,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0001,COR07-designation-0001
+93,2025-07-24 00:00:00,2025-01-17,2024,3,0,COR07-nom_dossier-0718,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2024-10-04,2024,1,120,COR07-nom_dossier-0719,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2025-09-16,2024,56,3661,COR07-nom_dossier-0720,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0001,COR07-designation-0002
+93,N/C,2025-11-13,2024,54,3317,COR07-nom_dossier-0721,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2025-04-17,2024,58,3990,COR07-nom_dossier-0722,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2025-11-25,2024,192,12940,COR07-nom_dossier-0723,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2025-07-15,2025,1,0,COR07-nom_dossier-0724,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2025-06-04,2025,1,37,COR07-nom_dossier-0725,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0002,COR07-designation-0003
+93,N/C,2026-01-15,2025,2,0,COR07-nom_dossier-0726,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2026-03-18,2025,1,120,COR07-nom_dossier-0727,COR07-type_dossier-0002,93907,COR07-nom_commune-0008,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2019-07-19,2019,1,0,COR07-nom_dossier-0728,COR07-type_dossier-0001,93908,COR07-nom_commune-0009,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2022-01-17,2021,1,0,COR07-nom_dossier-0729,COR07-type_dossier-0001,93908,COR07-nom_commune-0009,COR07-nature_construction-0002,COR07-designation-0001
+93,2018-06-07 00:00:00,2017-12-26,2017,1,123,COR07-nom_dossier-0730,COR07-type_dossier-0002,93908,COR07-nom_commune-0009,COR07-nature_construction-0003,COR07-designation-0002
+93,2018-03-19 00:00:00,2018-03-01,2017,1,63,COR07-nom_dossier-0731,COR07-type_dossier-0002,93908,COR07-nom_commune-0009,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2018-04-18,2018,3,185,COR07-nom_dossier-0732,COR07-type_dossier-0002,93908,COR07-nom_commune-0009,COR07-nature_construction-0002,COR07-designation-0002
+93,2019-10-21 00:00:00,2018-04-09,2018,1,121,COR07-nom_dossier-0733,COR07-type_dossier-0002,93908,COR07-nom_commune-0009,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2018-05-15,2018,1,120,COR07-nom_dossier-0734,COR07-type_dossier-0002,93908,COR07-nom_commune-0009,COR07-nature_construction-0002,COR07-designation-0002
+93,2019-03-04 00:00:00,2018-10-12,2018,50,3107,COR07-nom_dossier-0735,COR07-type_dossier-0002,93908,COR07-nom_commune-0009,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2019-05-10,2018,6,187,COR07-nom_dossier-0736,COR07-type_dossier-0002,93908,COR07-nom_commune-0009,COR07-nature_construction-0002,COR07-designation-0002
+93,2019-12-30 00:00:00,2019-09-27,2019,64,4504,COR07-nom_dossier-0737,COR07-type_dossier-0002,93908,COR07-nom_commune-0009,COR07-nature_construction-0003,COR07-designation-0002
+93,2023-01-11 00:00:00,2020-06-16,2019,12,744,COR07-nom_dossier-0738,COR07-type_dossier-0002,93908,COR07-nom_commune-0009,COR07-nature_construction-0003,COR07-designation-0002
+93,N/C,2021-01-25,2020,1,147,COR07-nom_dossier-0739,COR07-type_dossier-0002,93908,COR07-nom_commune-0009,COR07-nature_construction-0003,COR07-designation-0001
+93,2021-06-14 00:00:00,2021-02-11,2020,1,0,COR07-nom_dossier-0740,COR07-type_dossier-0002,93908,COR07-nom_commune-0009,COR07-nature_construction-0002,COR07-designation-0001
+93,2021-12-07 00:00:00,2021-09-13,2021,1,109,COR07-nom_dossier-0741,COR07-type_dossier-0002,93908,COR07-nom_commune-0009,COR07-nature_construction-0003,COR07-designation-0001
+93,2022-04-25 00:00:00,2021-10-11,2021,2,194,COR07-nom_dossier-0742,COR07-type_dossier-0002,93908,COR07-nom_commune-0009,COR07-nature_construction-0003,COR07-designation-0001
+93,2023-01-12 00:00:00,2022-01-19,2021,8,590,COR07-nom_dossier-0743,COR07-type_dossier-0002,93908,COR07-nom_commune-0009,COR07-nature_construction-0001,COR07-designation-0001
+93,2024-01-08 00:00:00,2023-11-03,2023,2,64,COR07-nom_dossier-0744,COR07-type_dossier-0002,93908,COR07-nom_commune-0009,COR07-nature_construction-0002,COR07-designation-0001
+93,2024-02-12 00:00:00,2024-02-14,2023,300,6614,COR07-nom_dossier-0745,COR07-type_dossier-0002,93908,COR07-nom_commune-0009,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2024-02-09,2023,1,116,COR07-nom_dossier-0746,COR07-type_dossier-0002,93908,COR07-nom_commune-0009,COR07-nature_construction-0001,COR07-designation-0002
+93,2024-09-09 00:00:00,2024-07-29,2023,1,71,COR07-nom_dossier-0747,COR07-type_dossier-0002,93908,COR07-nom_commune-0009,COR07-nature_construction-0002,COR07-designation-0001
+93,2025-11-04 00:00:00,2025-06-02,2024,67,4859,COR07-nom_dossier-0748,COR07-type_dossier-0002,93908,COR07-nom_commune-0009,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2026-02-02,2025,1,0,COR07-nom_dossier-0749,COR07-type_dossier-0002,93908,COR07-nom_commune-0009,COR07-nature_construction-0002,COR07-designation-0001
+93,N/C,2026-04-01,2025,4,313,COR07-nom_dossier-0750,COR07-type_dossier-0002,93908,COR07-nom_commune-0009,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2026-06-08,2026,1,118,COR07-nom_dossier-0751,COR07-type_dossier-0002,93908,COR07-nom_commune-0009,COR07-nature_construction-0001,COR07-designation-0001
+93,N/C,2026-05-15,2026,1,335,COR07-nom_dossier-0752,COR07-type_dossier-0002,93908,COR07-nom_commune-0009,COR07-nature_construction-0001,COR07-designation-0003

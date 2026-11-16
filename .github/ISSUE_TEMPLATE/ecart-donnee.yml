@@ -1,0 +1,23 @@
+name: Écart de donnée
+description: Une valeur affichée diffère de sa source, manque ou paraît fausse.
+labels: ["donnée"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page concernée
+      description: L'adresse de la page (commune, adresse, document DPE…). Pour une adresse de particulier, donnez seulement la commune et le thème.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source et jeu de données
+      description: Tel qu'affiché sous la valeur (par exemple « DVF, DGFiP / Etalab, 2025 »).
+  - type: textarea
+    id: ecart
+    attributes:
+      label: Ce qui est affiché, ce qui est attendu
+      description: Et où vous avez lu la valeur attendue (lien vers la source si possible).
+    validations:
+      required: true

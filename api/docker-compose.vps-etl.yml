@@ -1,0 +1,86 @@
+# VPS ingestion overlay — active ONLY during ETL window.
+#
+# Usage:
+#   docker compose -p datacommune-api \
+#     -f docker-compose.yml -f docker-compose.vps-etl.yml up -d
+#
+# Imports follow the hosted scope stored in the database (`python -m app.scope set`).
+# DEBUG=true is kept as it was; its former reason (an environment department
+# subset refused under DEBUG=false) no longer exists — to reexamine in phase 5.
+# Switch to docker-compose.vps.yml after data_quality.run exits 0 (permanent-mode overlay).
+#
+# OMITS: caddy, cloudflared (no public exposure needed during ETL — they are provided by
+# docker-compose.vps.yml).
+#
+# Does NOT expose PostgreSQL port externally (DEPLOY-05).
+
+services:
+  db:
+    restart: unless-stopped
+    shm_size: '2gb'
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    command:
+      - "postgres"
+      - "-c"
+      - "shared_buffers=1GB"
+      - "-c"
+      - "effective_cache_size=2GB"
+      - "-c"
+      - "random_page_cost=1.1"
+      - "-c"
+      - "effective_io_concurrency=200"
+      - "-c"
+      - "work_mem=16MB"
+      - "-c"
+      - "maintenance_work_mem=256MB"
+      - "-c"
+      - "max_wal_size=1GB"
+      - "-c"
+      - "wal_buffers=32MB"
+      # Query-level statistics (migration 086 creates the extension). Kept in
+      # sync with docker-compose.vps.yml so switching overlays never silently
+      # unloads the library.
+      - "-c"
+      - "shared_preload_libraries=pg_stat_statements"
+
+  api:
+    image: datacommune-api:${IMAGE_TAG:-dev}
+    restart: unless-stopped
+    depends_on:
+      init-volumes:
+        condition: service_completed_successfully
+    environment:
+      DATABASE_URL: postgresql+asyncpg://${POSTGRES_USER:-datacommune}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-datacommune}
+      API_BASE_URL: https://api.datacommune.fr
+      ETL_TEMP_DIR: /etl_tmp
+      DEBUG: "true"
+      LOG_FORMAT: "text"
+      ADMIN_USERNAME: ${ADMIN_USERNAME:-admin}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD}
+      SMOKE_TEST_API_KEY: ${SMOKE_TEST_API_KEY:-}
+      STRIPE_SECRET_KEY: ${STRIPE_SECRET_KEY}
+      STRIPE_WEBHOOK_SECRET: ${STRIPE_WEBHOOK_SECRET}
+      RESEND_API_KEY: ${RESEND_API_KEY}
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY}
+      API_KEY_HMAC_SECRET: ${API_KEY_HMAC_SECRET}
+      CORS_ORIGINS: '["https://datacommune.fr","https://www.datacommune.fr","https://dev.datacommune.fr"]'
+      TRUST_PROXY_HEADERS: "true"
+      # Hosted scope: configured in the database (`python -m app.scope set`),
+      # never through an environment variable (D-23).
+    volumes:
+      - etl_tmp:/etl_tmp
+
+  # One-shot init: fix volume ownership for non-root containers (uid 1000)
+  init-volumes:
+    image: busybox:latest
+    restart: "no"
+    volumes:
+      - etl_tmp:/etl_tmp
+    command: ["sh", "-c", "chown 1000:1000 /etl_tmp"]
+
+volumes:
+  pgdata:
+  etl_tmp:

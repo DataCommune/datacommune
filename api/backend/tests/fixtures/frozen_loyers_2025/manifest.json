@@ -1,0 +1,58 @@
+{
+  "provenance": "Official public communal aggregate rental sources, frozen acquisition receipt; no individual records",
+  "acquired_at_utc": "2026-09-08T21:42:18.967490+00:00",
+  "files": [
+    {
+      "housing_type": "appartement",
+      "resource_id": "55b34088-0964-415f-9df7-d87dd98a09be",
+      "requested_url": "https://www.data.gouv.fr/fr/datasets/r/55b34088-0964-415f-9df7-d87dd98a09be",
+      "final_url": "https://static.data.gouv.fr/resources/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025/20251211-145010/pred-app-mef-dhup.csv",
+      "last_modified": "Thu, 11 Dec 2025 14:50:10 GMT",
+      "bytes": 4774352,
+      "sha256": "eda84e03a269faff3335f7ab6061d1f1e9f45adc89c0a4c32632df20a5de4010",
+      "row_count": 34900,
+      "gzip_name": "appartement.csv.gz",
+      "gzip_bytes": 835361,
+      "gzip_sha256": "5e73ebbb7fbbf682fe23c2329bdbbfc34b9ccf004194704bc701306233529af0"
+    },
+    {
+      "housing_type": "maison",
+      "resource_id": "129f764d-b613-44e4-952c-5ff50a8c9b73",
+      "requested_url": "https://www.data.gouv.fr/fr/datasets/r/129f764d-b613-44e4-952c-5ff50a8c9b73",
+      "final_url": "https://static.data.gouv.fr/resources/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025/20251211-145039/pred-mai-mef-dhup.csv",
+      "last_modified": "Thu, 11 Dec 2025 14:50:40 GMT",
+      "bytes": 4763456,
+      "sha256": "fd4f5e33ec1d7c8d97deeb024bab4b4a76466f2822f83a3739d1777c3b7bd72b",
+      "row_count": 34900,
+      "gzip_name": "maison.csv.gz",
+      "gzip_bytes": 776113,
+      "gzip_sha256": "066010fe5bb1e6d5c2c95c1bc1d8401e5133cd3729999eac5272b72b29e54bbc"
+    },
+    {
+      "housing_type": "1-2_pieces",
+      "resource_id": "14a1fe11-b2d1-49b3-9f6b-83d12df9482c",
+      "requested_url": "https://www.data.gouv.fr/fr/datasets/r/14a1fe11-b2d1-49b3-9f6b-83d12df9482c",
+      "final_url": "https://static.data.gouv.fr/resources/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025/20251211-144934/pred-app12-mef-dhup.csv",
+      "last_modified": "Thu, 11 Dec 2025 14:49:35 GMT",
+      "bytes": 4754556,
+      "sha256": "363baef0ce893ad920bf8751214ca77b9ff14422ea412c44716055937992d4bf",
+      "row_count": 34900,
+      "gzip_name": "1-2_pieces.csv.gz",
+      "gzip_bytes": 710628,
+      "gzip_sha256": "d3cfd425134f5cc5f446113aeddb151436a3d1629a08450baf77cf88762ef960"
+    },
+    {
+      "housing_type": "3+_pieces",
+      "resource_id": "5e3b28a4-cf56-43a3-ae79-43cceeb27f8c",
+      "requested_url": "https://www.data.gouv.fr/fr/datasets/r/5e3b28a4-cf56-43a3-ae79-43cceeb27f8c",
+      "final_url": "https://static.data.gouv.fr/resources/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025/20251211-144951/pred-app3-mef-dhup.csv",
+      "last_modified": "Thu, 11 Dec 2025 14:49:52 GMT",
+      "bytes": 4757613,
+      "sha256": "fb35d4238de2e6a72d1a0890aaee56f372e6519410be3a21c2333f52e1fc91dc",
+      "row_count": 34900,
+      "gzip_name": "3+_pieces.csv.gz",
+      "gzip_bytes": 741420,
+      "gzip_sha256": "46c23cce753955e2a73858a177c2a2137c1330044605e3a3dae33c078cfaec37"
+    }
+  ]
+}

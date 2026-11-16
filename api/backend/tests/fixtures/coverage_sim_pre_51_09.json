@@ -1,0 +1,181 @@
+{
+  "description": "Redacted pre-51-09 scenario. Frozen unit-test input, not a live contract authority.",
+  "schema": {
+    "required_categories": [
+      "complete",
+      "no_dvf",
+      "no_dpe",
+      "dataset_out_of_coverage"
+    ],
+    "required_observations": [
+      {
+        "layer": "db",
+        "invariant": "copro_row_present",
+        "value": true
+      },
+      {
+        "layer": "db",
+        "invariant": "dpe_appartements_multiples",
+        "value": true
+      },
+      {
+        "layer": "db",
+        "invariant": "dvf_appartements_present",
+        "value": true
+      },
+      {
+        "all_of": [
+          {
+            "layer": "db",
+            "invariant": "dpe_appartements_multiples",
+            "value": true
+          },
+          {
+            "layer": "db",
+            "invariant": "copro_row_present",
+            "value": false
+          }
+        ]
+      }
+    ],
+    "cardinality": {
+      "commune": {
+        "min": 3,
+        "max": 5
+      },
+      "address": {
+        "min": 5,
+        "max": 10
+      }
+    }
+  },
+  "manifest": {
+    "cases": [
+      {
+        "case_id": "golden-address-001",
+        "type": "address",
+        "category": "complete",
+        "invariants": {
+          "db": {},
+          "api": {
+            "dvf_state": "value",
+            "dpe_state": "value"
+          },
+          "mapper": {}
+        }
+      },
+      {
+        "case_id": "golden-address-002",
+        "type": "address",
+        "category": "no_dpe",
+        "invariants": {
+          "db": {},
+          "api": {
+            "dvf_state": "value",
+            "dpe_state": "not_reported"
+          },
+          "mapper": {}
+        }
+      },
+      {
+        "case_id": "golden-address-003",
+        "type": "address",
+        "category": "no_dvf",
+        "invariants": {
+          "db": {},
+          "api": {
+            "dvf_state": "not_reported",
+            "dpe_state": "value"
+          },
+          "mapper": {}
+        }
+      },
+      {
+        "case_id": "golden-address-004",
+        "type": "address",
+        "category": "dataset_out_of_coverage",
+        "invariants": {
+          "db": {},
+          "api": {
+            "dvf_state": "not_reported",
+            "dpe_state": "not_reported"
+          },
+          "mapper": {}
+        }
+      },
+      {
+        "case_id": "golden-address-005",
+        "type": "address",
+        "category": "complete",
+        "invariants": {
+          "db": {
+            "copro_row_present": true,
+            "dpe_appartements_multiples": true,
+            "dvf_appartements_present": true
+          },
+          "api": {
+            "dvf_state": "value",
+            "dpe_state": "value"
+          },
+          "mapper": {}
+        }
+      },
+      {
+        "case_id": "golden-address-007",
+        "type": "address",
+        "category": "complete",
+        "invariants": {
+          "db": {
+            "copro_row_present": false,
+            "dpe_appartements_multiples": true,
+            "dvf_appartements_present": true
+          },
+          "api": {
+            "dvf_state": "value",
+            "dpe_state": "value"
+          },
+          "mapper": {}
+        }
+      },
+      {
+        "case_id": "golden-commune-001",
+        "type": "commune",
+        "category": "complete",
+        "invariants": {
+          "db": {},
+          "api": {
+            "dvf_state": "value",
+            "dpe_state": "value"
+          },
+          "mapper": {}
+        }
+      },
+      {
+        "case_id": "golden-commune-002",
+        "type": "commune",
+        "category": "complete",
+        "invariants": {
+          "db": {},
+          "api": {
+            "dvf_state": "value",
+            "dpe_state": "value"
+          },
+          "mapper": {}
+        }
+      },
+      {
+        "case_id": "golden-commune-003",
+        "type": "commune",
+        "category": "complete",
+        "invariants": {
+          "db": {},
+          "api": {
+            "dvf_state": "value",
+            "dpe_state": "value"
+          },
+          "mapper": {}
+        }
+      }
+    ]
+  }
+}

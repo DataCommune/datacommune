@@ -1,0 +1,14 @@
+[Unit]
+Description=Timer for datacommune-job@synthetic-probe
+
+[Timer]
+# Daily golden-probe replay (HEALTH-02). Fires after the matview refresh window
+# (06:00-06:20) so the reference journey is checked against freshly rebuilt data.
+OnCalendar=*-*-* 08:30:00
+# Bounded jitter so the probe never hammers the API at a perfectly fixed second.
+RandomizedDelaySec=1800
+# Catch up a missed run once at next boot instead of silently skipping it.
+Persistent=true
+
+[Install]
+WantedBy=timers.target

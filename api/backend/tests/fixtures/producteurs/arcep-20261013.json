@@ -1,0 +1,2264 @@
+{
+ "absent": {
+  "975": {
+   "etat": "absent_producteur",
+   "status": 404,
+   "url": "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_975.csv.gz"
+  }
+ },
+ "captured_at": "2026-10-13T10:44:48Z",
+ "counts": {
+  "01": {
+   "base_imb:immeubles": 282152,
+   "eligibilite_fixe": 4018923,
+   "eligibilite_fixe:id_imb_distincts": 282152
+  },
+  "02": {
+   "base_imb:immeubles": 238726,
+   "eligibilite_fixe": 2929152,
+   "eligibilite_fixe:id_imb_distincts": 238726
+  },
+  "03": {
+   "base_imb:immeubles": 182992,
+   "eligibilite_fixe": 2486307,
+   "eligibilite_fixe:id_imb_distincts": 182992
+  },
+  "04": {
+   "base_imb:immeubles": 103228,
+   "eligibilite_fixe": 1217818,
+   "eligibilite_fixe:id_imb_distincts": 103228
+  },
+  "05": {
+   "base_imb:immeubles": 85174,
+   "eligibilite_fixe": 998621,
+   "eligibilite_fixe:id_imb_distincts": 85174
+  },
+  "06": {
+   "base_imb:immeubles": 250530,
+   "eligibilite_fixe": 3348263,
+   "eligibilite_fixe:id_imb_distincts": 250528
+  },
+  "07": {
+   "base_imb:immeubles": 194864,
+   "eligibilite_fixe": 2772890,
+   "eligibilite_fixe:id_imb_distincts": 194864
+  },
+  "08": {
+   "base_imb:immeubles": 129803,
+   "eligibilite_fixe": 1640524,
+   "eligibilite_fixe:id_imb_distincts": 129804
+  },
+  "09": {
+   "base_imb:immeubles": 106944,
+   "eligibilite_fixe": 1234577,
+   "eligibilite_fixe:id_imb_distincts": 106944
+  },
+  "10": {
+   "base_imb:immeubles": 138295,
+   "eligibilite_fixe": 1749319,
+   "eligibilite_fixe:id_imb_distincts": 138306
+  },
+  "11": {
+   "base_imb:immeubles": 236357,
+   "eligibilite_fixe": 3264064,
+   "eligibilite_fixe:id_imb_distincts": 236355
+  },
+  "12": {
+   "base_imb:immeubles": 172142,
+   "eligibilite_fixe": 2033203,
+   "eligibilite_fixe:id_imb_distincts": 172142
+  },
+  "13": {
+   "base_imb:immeubles": 513063,
+   "eligibilite_fixe": 6730367,
+   "eligibilite_fixe:id_imb_distincts": 513050
+  },
+  "14": {
+   "base_imb:immeubles": 334189,
+   "eligibilite_fixe": 5161381,
+   "eligibilite_fixe:id_imb_distincts": 334188
+  },
+  "15": {
+   "base_imb:immeubles": 93694,
+   "eligibilite_fixe": 1250273,
+   "eligibilite_fixe:id_imb_distincts": 93694
+  },
+  "16": {
+   "base_imb:immeubles": 201823,
+   "eligibilite_fixe": 2611837,
+   "eligibilite_fixe:id_imb_distincts": 201824
+  },
+  "17": {
+   "base_imb:immeubles": 413481,
+   "eligibilite_fixe": 4853666,
+   "eligibilite_fixe:id_imb_distincts": 413478
+  },
+  "18": {
+   "base_imb:immeubles": 170072,
+   "eligibilite_fixe": 2087905,
+   "eligibilite_fixe:id_imb_distincts": 170084
+  },
+  "19": {
+   "base_imb:immeubles": 157084,
+   "eligibilite_fixe": 1945505,
+   "eligibilite_fixe:id_imb_distincts": 157084
+  },
+  "21": {
+   "base_imb:immeubles": 203023,
+   "eligibilite_fixe": 2616437,
+   "eligibilite_fixe:id_imb_distincts": 203023
+  },
+  "22": {
+   "base_imb:immeubles": 379767,
+   "eligibilite_fixe": 5052923,
+   "eligibilite_fixe:id_imb_distincts": 379767
+  },
+  "23": {
+   "base_imb:immeubles": 95026,
+   "eligibilite_fixe": 1155712,
+   "eligibilite_fixe:id_imb_distincts": 95026
+  },
+  "24": {
+   "base_imb:immeubles": 278561,
+   "eligibilite_fixe": 3525547,
+   "eligibilite_fixe:id_imb_distincts": 278561
+  },
+  "25": {
+   "base_imb:immeubles": 194699,
+   "eligibilite_fixe": 2700611,
+   "eligibilite_fixe:id_imb_distincts": 194699
+  },
+  "26": {
+   "base_imb:immeubles": 234623,
+   "eligibilite_fixe": 3463702,
+   "eligibilite_fixe:id_imb_distincts": 234624
+  },
+  "27": {
+   "base_imb:immeubles": 275810,
+   "eligibilite_fixe": 3412698,
+   "eligibilite_fixe:id_imb_distincts": 275809
+  },
+  "28": {
+   "base_imb:immeubles": 195828,
+   "eligibilite_fixe": 2489015,
+   "eligibilite_fixe:id_imb_distincts": 195827
+  },
+  "29": {
+   "base_imb:immeubles": 494182,
+   "eligibilite_fixe": 6601576,
+   "eligibilite_fixe:id_imb_distincts": 494179
+  },
+  "2A": {
+   "base_imb:immeubles": 79592,
+   "eligibilite_fixe": 931073,
+   "eligibilite_fixe:id_imb_distincts": 79585
+  },
+  "2B": {
+   "base_imb:immeubles": 86422,
+   "eligibilite_fixe": 1006990,
+   "eligibilite_fixe:id_imb_distincts": 86420
+  },
+  "30": {
+   "base_imb:immeubles": 338017,
+   "eligibilite_fixe": 4451089,
+   "eligibilite_fixe:id_imb_distincts": 338012
+  },
+  "31": {
+   "base_imb:immeubles": 464912,
+   "eligibilite_fixe": 5683117,
+   "eligibilite_fixe:id_imb_distincts": 464912
+  },
+  "32": {
+   "base_imb:immeubles": 116289,
+   "eligibilite_fixe": 1198724,
+   "eligibilite_fixe:id_imb_distincts": 116289
+  },
+  "33": {
+   "base_imb:immeubles": 685602,
+   "eligibilite_fixe": 8324303,
+   "eligibilite_fixe:id_imb_distincts": 685574
+  },
+  "34": {
+   "base_imb:immeubles": 452734,
+   "eligibilite_fixe": 6076551,
+   "eligibilite_fixe:id_imb_distincts": 452733
+  },
+  "35": {
+   "base_imb:immeubles": 443352,
+   "eligibilite_fixe": 5594552,
+   "eligibilite_fixe:id_imb_distincts": 443351
+  },
+  "36": {
+   "base_imb:immeubles": 136082,
+   "eligibilite_fixe": 1680912,
+   "eligibilite_fixe:id_imb_distincts": 136082
+  },
+  "37": {
+   "base_imb:immeubles": 263860,
+   "eligibilite_fixe": 3394708,
+   "eligibilite_fixe:id_imb_distincts": 263860
+  },
+  "38": {
+   "base_imb:immeubles": 437010,
+   "eligibilite_fixe": 5760797,
+   "eligibilite_fixe:id_imb_distincts": 437010
+  },
+  "39": {
+   "base_imb:immeubles": 135732,
+   "eligibilite_fixe": 1732312,
+   "eligibilite_fixe:id_imb_distincts": 135732
+  },
+  "40": {
+   "base_imb:immeubles": 244708,
+   "eligibilite_fixe": 3043137,
+   "eligibilite_fixe:id_imb_distincts": 244708
+  },
+  "41": {
+   "base_imb:immeubles": 181289,
+   "eligibilite_fixe": 2283157,
+   "eligibilite_fixe:id_imb_distincts": 181290
+  },
+  "42": {
+   "base_imb:immeubles": 268474,
+   "eligibilite_fixe": 3733738,
+   "eligibilite_fixe:id_imb_distincts": 268474
+  },
+  "43": {
+   "base_imb:immeubles": 140491,
+   "eligibilite_fixe": 1929570,
+   "eligibilite_fixe:id_imb_distincts": 140491
+  },
+  "44": {
+   "base_imb:immeubles": 576544,
+   "eligibilite_fixe": 6953727,
+   "eligibilite_fixe:id_imb_distincts": 576540
+  },
+  "45": {
+   "base_imb:immeubles": 289592,
+   "eligibilite_fixe": 3271246,
+   "eligibilite_fixe:id_imb_distincts": 289592
+  },
+  "46": {
+   "base_imb:immeubles": 127998,
+   "eligibilite_fixe": 1479682,
+   "eligibilite_fixe:id_imb_distincts": 127998
+  },
+  "47": {
+   "base_imb:immeubles": 188817,
+   "eligibilite_fixe": 2419496,
+   "eligibilite_fixe:id_imb_distincts": 188811
+  },
+  "48": {
+   "base_imb:immeubles": 59081,
+   "eligibilite_fixe": 666582,
+   "eligibilite_fixe:id_imb_distincts": 59081
+  },
+  "49": {
+   "base_imb:immeubles": 351501,
+   "eligibilite_fixe": 4507994,
+   "eligibilite_fixe:id_imb_distincts": 351502
+  },
+  "50": {
+   "base_imb:immeubles": 305672,
+   "eligibilite_fixe": 4678529,
+   "eligibilite_fixe:id_imb_distincts": 305669
+  },
+  "51": {
+   "base_imb:immeubles": 215643,
+   "eligibilite_fixe": 2715548,
+   "eligibilite_fixe:id_imb_distincts": 215633
+  },
+  "52": {
+   "base_imb:immeubles": 94626,
+   "eligibilite_fixe": 1170379,
+   "eligibilite_fixe:id_imb_distincts": 94625
+  },
+  "53": {
+   "base_imb:immeubles": 159536,
+   "eligibilite_fixe": 1953827,
+   "eligibilite_fixe:id_imb_distincts": 159537
+  },
+  "54": {
+   "base_imb:immeubles": 266849,
+   "eligibilite_fixe": 3488971,
+   "eligibilite_fixe:id_imb_distincts": 266849
+  },
+  "55": {
+   "base_imb:immeubles": 96568,
+   "eligibilite_fixe": 1179769,
+   "eligibilite_fixe:id_imb_distincts": 96566
+  },
+  "56": {
+   "base_imb:immeubles": 443022,
+   "eligibilite_fixe": 6076299,
+   "eligibilite_fixe:id_imb_distincts": 443019
+  },
+  "57": {
+   "base_imb:immeubles": 372088,
+   "eligibilite_fixe": 4718777,
+   "eligibilite_fixe:id_imb_distincts": 372088
+  },
+  "58": {
+   "base_imb:immeubles": 132065,
+   "eligibilite_fixe": 1514055,
+   "eligibilite_fixe:id_imb_distincts": 132065
+  },
+  "59": {
+   "base_imb:immeubles": 963498,
+   "eligibilite_fixe": 12413652,
+   "eligibilite_fixe:id_imb_distincts": 963490
+  },
+  "60": {
+   "base_imb:immeubles": 298132,
+   "eligibilite_fixe": 3432058,
+   "eligibilite_fixe:id_imb_distincts": 298132
+  },
+  "61": {
+   "base_imb:immeubles": 168148,
+   "eligibilite_fixe": 2273664,
+   "eligibilite_fixe:id_imb_distincts": 168148
+  },
+  "62": {
+   "base_imb:immeubles": 649591,
+   "eligibilite_fixe": 8305010,
+   "eligibilite_fixe:id_imb_distincts": 649592
+  },
+  "63": {
+   "base_imb:immeubles": 311030,
+   "eligibilite_fixe": 4224474,
+   "eligibilite_fixe:id_imb_distincts": 311030
+  },
+  "64": {
+   "base_imb:immeubles": 271849,
+   "eligibilite_fixe": 3483249,
+   "eligibilite_fixe:id_imb_distincts": 271849
+  },
+  "65": {
+   "base_imb:immeubles": 120691,
+   "eligibilite_fixe": 1563668,
+   "eligibilite_fixe:id_imb_distincts": 120691
+  },
+  "66": {
+   "base_imb:immeubles": 259085,
+   "eligibilite_fixe": 3586059,
+   "eligibilite_fixe:id_imb_distincts": 259083
+  },
+  "67": {
+   "base_imb:immeubles": 337006,
+   "eligibilite_fixe": 4670958,
+   "eligibilite_fixe:id_imb_distincts": 336988
+  },
+  "68": {
+   "base_imb:immeubles": 263577,
+   "eligibilite_fixe": 3905655,
+   "eligibilite_fixe:id_imb_distincts": 263584
+  },
+  "69": {
+   "base_imb:immeubles": 366967,
+   "eligibilite_fixe": 4476956,
+   "eligibilite_fixe:id_imb_distincts": 366965
+  },
+  "70": {
+   "base_imb:immeubles": 125680,
+   "eligibilite_fixe": 1537923,
+   "eligibilite_fixe:id_imb_distincts": 125680
+  },
+  "71": {
+   "base_imb:immeubles": 269511,
+   "eligibilite_fixe": 3394152,
+   "eligibilite_fixe:id_imb_distincts": 269511
+  },
+  "72": {
+   "base_imb:immeubles": 275101,
+   "eligibilite_fixe": 3399911,
+   "eligibilite_fixe:id_imb_distincts": 275099
+  },
+  "73": {
+   "base_imb:immeubles": 192389,
+   "eligibilite_fixe": 2351464,
+   "eligibilite_fixe:id_imb_distincts": 192389
+  },
+  "74": {
+   "base_imb:immeubles": 288673,
+   "eligibilite_fixe": 4099376,
+   "eligibilite_fixe:id_imb_distincts": 288670
+  },
+  "75": {
+   "base_imb:immeubles": 99257,
+   "eligibilite_fixe": 1492742,
+   "eligibilite_fixe:id_imb_distincts": 99257
+  },
+  "76": {
+   "base_imb:immeubles": 446827,
+   "eligibilite_fixe": 5751693,
+   "eligibilite_fixe:id_imb_distincts": 446805
+  },
+  "77": {
+   "base_imb:immeubles": 443411,
+   "eligibilite_fixe": 5748329,
+   "eligibilite_fixe:id_imb_distincts": 443410
+  },
+  "78": {
+   "base_imb:immeubles": 335391,
+   "eligibilite_fixe": 3921823,
+   "eligibilite_fixe:id_imb_distincts": 335390
+  },
+  "79": {
+   "base_imb:immeubles": 202440,
+   "eligibilite_fixe": 2689682,
+   "eligibilite_fixe:id_imb_distincts": 202439
+  },
+  "80": {
+   "base_imb:immeubles": 268323,
+   "eligibilite_fixe": 3370494,
+   "eligibilite_fixe:id_imb_distincts": 268318
+  },
+  "81": {
+   "base_imb:immeubles": 215814,
+   "eligibilite_fixe": 2607594,
+   "eligibilite_fixe:id_imb_distincts": 215814
+  },
+  "82": {
+   "base_imb:immeubles": 135406,
+   "eligibilite_fixe": 1690262,
+   "eligibilite_fixe:id_imb_distincts": 135406
+  },
+  "83": {
+   "base_imb:immeubles": 440872,
+   "eligibilite_fixe": 5640985,
+   "eligibilite_fixe:id_imb_distincts": 440830
+  },
+  "84": {
+   "base_imb:immeubles": 256855,
+   "eligibilite_fixe": 3347013,
+   "eligibilite_fixe:id_imb_distincts": 256854
+  },
+  "85": {
+   "base_imb:immeubles": 441661,
+   "eligibilite_fixe": 6340621,
+   "eligibilite_fixe:id_imb_distincts": 441661
+  },
+  "86": {
+   "base_imb:immeubles": 216059,
+   "eligibilite_fixe": 2944613,
+   "eligibilite_fixe:id_imb_distincts": 216059
+  },
+  "87": {
+   "base_imb:immeubles": 181257,
+   "eligibilite_fixe": 2419187,
+   "eligibilite_fixe:id_imb_distincts": 181257
+  },
+  "88": {
+   "base_imb:immeubles": 182043,
+   "eligibilite_fixe": 2288713,
+   "eligibilite_fixe:id_imb_distincts": 182043
+  },
+  "89": {
+   "base_imb:immeubles": 190751,
+   "eligibilite_fixe": 2371410,
+   "eligibilite_fixe:id_imb_distincts": 190751
+  },
+  "90": {
+   "base_imb:immeubles": 44371,
+   "eligibilite_fixe": 591820,
+   "eligibilite_fixe:id_imb_distincts": 44371
+  },
+  "91": {
+   "base_imb:immeubles": 327822,
+   "eligibilite_fixe": 4343444,
+   "eligibilite_fixe:id_imb_distincts": 327822
+  },
+  "92": {
+   "base_imb:immeubles": 148271,
+   "eligibilite_fixe": 2080083,
+   "eligibilite_fixe:id_imb_distincts": 148269
+  },
+  "93": {
+   "base_imb:immeubles": 217213,
+   "eligibilite_fixe": 2942904,
+   "eligibilite_fixe:id_imb_distincts": 217212
+  },
+  "94": {
+   "base_imb:immeubles": 189248,
+   "eligibilite_fixe": 2419551,
+   "eligibilite_fixe:id_imb_distincts": 189248
+  },
+  "95": {
+   "base_imb:immeubles": 273012,
+   "eligibilite_fixe": 3356545,
+   "eligibilite_fixe:id_imb_distincts": 273012
+  },
+  "971": {
+   "base_imb:immeubles": 226190,
+   "eligibilite_fixe": 2192832,
+   "eligibilite_fixe:id_imb_distincts": 226179
+  },
+  "972": {
+   "base_imb:immeubles": 179821,
+   "eligibilite_fixe": 1803097,
+   "eligibilite_fixe:id_imb_distincts": 179820
+  },
+  "973": {
+   "base_imb:immeubles": 70720,
+   "eligibilite_fixe": 594313,
+   "eligibilite_fixe:id_imb_distincts": 70592
+  },
+  "974": {
+   "base_imb:immeubles": 330310,
+   "eligibilite_fixe": 2864873,
+   "eligibilite_fixe:id_imb_distincts": 330309
+  },
+  "976": {
+   "base_imb:immeubles": 48599,
+   "eligibilite_fixe": 249523,
+   "eligibilite_fixe:id_imb_distincts": 48599
+  }
+ },
+ "departements_demandes": [
+  "01",
+  "02",
+  "03",
+  "04",
+  "05",
+  "06",
+  "07",
+  "08",
+  "09",
+  "10",
+  "11",
+  "12",
+  "13",
+  "14",
+  "15",
+  "16",
+  "17",
+  "18",
+  "19",
+  "2A",
+  "2B",
+  "21",
+  "22",
+  "23",
+  "24",
+  "25",
+  "26",
+  "27",
+  "28",
+  "29",
+  "30",
+  "31",
+  "32",
+  "33",
+  "34",
+  "35",
+  "36",
+  "37",
+  "38",
+  "39",
+  "40",
+  "41",
+  "42",
+  "43",
+  "44",
+  "45",
+  "46",
+  "47",
+  "48",
+  "49",
+  "50",
+  "51",
+  "52",
+  "53",
+  "54",
+  "55",
+  "56",
+  "57",
+  "58",
+  "59",
+  "60",
+  "61",
+  "62",
+  "63",
+  "64",
+  "65",
+  "66",
+  "67",
+  "68",
+  "69",
+  "70",
+  "71",
+  "72",
+  "73",
+  "74",
+  "75",
+  "76",
+  "77",
+  "78",
+  "79",
+  "80",
+  "81",
+  "82",
+  "83",
+  "84",
+  "85",
+  "86",
+  "87",
+  "88",
+  "89",
+  "90",
+  "91",
+  "92",
+  "93",
+  "94",
+  "95",
+  "971",
+  "972",
+  "973",
+  "974",
+  "975",
+  "976"
+ ],
+ "details": {},
+ "filter": "app/etl_arcep/pipeline.py transform(): inner join base_imb_XX x actuel_XX on imb_id (pandas merge, NA keys never kept); swap(): id_imb and technologie non empty; code_departement = _derive_code_departement(addr_code_insee of base_imb), file departement when missing",
+ "headers": {
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_01.csv.gz": {
+   "content_length": "13706507",
+   "etag": "\"b4c90411938e8f4b8856693e4a137644\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_01.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 15:57:23 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_02.csv.gz": {
+   "content_length": "12496829",
+   "etag": "\"a4ddb4717cff450acae3787804bd293a\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_02.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 15:57:22 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_03.csv.gz": {
+   "content_length": "8777388",
+   "etag": "\"6160812d5248a20f1e500614f411ca27\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_03.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 15:57:20 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_04.csv.gz": {
+   "content_length": "5093827",
+   "etag": "\"79dde36fa56e441c6b7b84f9377c30d6\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_04.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 15:57:23 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_05.csv.gz": {
+   "content_length": "4256419",
+   "etag": "\"d6ce82977edad85b3f5025df7057cb6d\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_05.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 15:57:26 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_06.csv.gz": {
+   "content_length": "11869848",
+   "etag": "\"b3a1587cb17f3c1968b370b46e502a9e\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_06.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 15:57:30 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_07.csv.gz": {
+   "content_length": "11935550",
+   "etag": "\"cda2fdade3b2c3d56a338030996f9ddc\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_07.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 15:57:31 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_08.csv.gz": {
+   "content_length": "6131295",
+   "etag": "\"50a91fcb54da45ce6b75f9cdcf4bfd21\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_08.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 15:57:31 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_09.csv.gz": {
+   "content_length": "4996726",
+   "etag": "\"297ed077ba18c5566dffd77d3cfa4b9c\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_09.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 15:57:35 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_10.csv.gz": {
+   "content_length": "6591742",
+   "etag": "\"c8a77b663b760acbdaf647e118890cdd\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_10.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 15:57:37 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_11.csv.gz": {
+   "content_length": "11073645",
+   "etag": "\"ca4d98f144d4ba1511c551bd13e02da7\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_11.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 15:57:39 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_12.csv.gz": {
+   "content_length": "8644587",
+   "etag": "\"c6a0d19aee545e8865b9d696d4836116\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_12.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 15:57:43 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_13.csv.gz": {
+   "content_length": "24763975",
+   "etag": "\"48646b9b974696a53162d01c2487fcf2\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_13.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 15:57:54 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_14.csv.gz": {
+   "content_length": "15888649",
+   "etag": "\"5f898dd76e41b39805a793ec2d5b13de\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_14.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 15:57:50 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_15.csv.gz": {
+   "content_length": "4569743",
+   "etag": "\"1355c3410ad35cdf164af3c052f16280\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_15.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 15:57:50 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_16.csv.gz": {
+   "content_length": "11286567",
+   "etag": "\"6067caab148cb195eb997f358a6eb920\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_16.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 15:58:02 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_17.csv.gz": {
+   "content_length": "19284470",
+   "etag": "\"bfa8e4d276ab79a8004b3365e1f1a826\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_17.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 15:58:05 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_18.csv.gz": {
+   "content_length": "9581873",
+   "etag": "\"507349dbe180097b1f6401497ebebb20\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_18.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 15:58:04 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_19.csv.gz": {
+   "content_length": "9018712",
+   "etag": "\"66c81afbb099e18ab404e7283004e33f\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_19.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 15:58:14 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_21.csv.gz": {
+   "content_length": "9657145",
+   "etag": "\"5d61a9a2df70fbb1d4798b7db307bef9\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_21.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 15:58:17 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_22.csv.gz": {
+   "content_length": "17919085",
+   "etag": "\"1e00663760e35b42ea37cc00f2c490f1\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_22.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 15:58:20 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_23.csv.gz": {
+   "content_length": "5581896",
+   "etag": "\"d5db52b454bd572afbf65119ee5e77de\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_23.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 15:58:24 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_24.csv.gz": {
+   "content_length": "17282590",
+   "etag": "\"4932ac596ad0b84276793576606c2b47\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_24.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 15:58:34 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_25.csv.gz": {
+   "content_length": "9134503",
+   "etag": "\"075a107e42c2349d398e6e3f26f5141c\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_25.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 15:58:35 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_26.csv.gz": {
+   "content_length": "13603432",
+   "etag": "\"39a48343aa4daf5cb03ea9a9f7348dd7\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_26.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 15:58:43 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_27.csv.gz": {
+   "content_length": "16808291",
+   "etag": "\"7ca0c660cb21e140ec1dcd2216fb7e06\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_27.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 15:58:51 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_28.csv.gz": {
+   "content_length": "9426589",
+   "etag": "\"d479b5ee2fadf9b4828cbfc850774503\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_28.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 15:58:52 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_29.csv.gz": {
+   "content_length": "23527498",
+   "etag": "\"f7a8102a42819459ff6dbfe51f6c9ae9\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_29.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 15:59:06 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_2A.csv.gz": {
+   "content_length": "3757740",
+   "etag": "\"f7dfd712f65323a17ed3469f8ae988e6\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_2A.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 15:59:02 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_2B.csv.gz": {
+   "content_length": "4254075",
+   "etag": "\"022c87c3eb71bc29b6a43a707a5b438b\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_2B.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 15:59:03 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_30.csv.gz": {
+   "content_length": "17850889",
+   "etag": "\"5a02e9755a855ba91a66a56923e11156\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_30.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 15:59:22 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_31.csv.gz": {
+   "content_length": "22147597",
+   "etag": "\"23cca7a0ac54f46a76c6b33ae57793de\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_31.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 15:59:33 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_32.csv.gz": {
+   "content_length": "5774265",
+   "etag": "\"cfd13ea6e8125d29db569716945dd6eb\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_32.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 15:59:21 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_33.csv.gz": {
+   "content_length": "32507154",
+   "etag": "\"9cb1f601c969cf4f8e6a5f4d6d281a2c\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_33.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:00:03 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_34.csv.gz": {
+   "content_length": "23295557",
+   "etag": "\"e3bf9ce28686bdee1fa9ae4b396cc5ab\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_34.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 15:59:56 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_35.csv.gz": {
+   "content_length": "21166747",
+   "etag": "\"b88a75825628568ef5504600b63cc952\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_35.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:00:05 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_36.csv.gz": {
+   "content_length": "7853532",
+   "etag": "\"eb0d7326af5b0b6e9b3e5c0503ca7008\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_36.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:00:00 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_37.csv.gz": {
+   "content_length": "12688357",
+   "etag": "\"2acf28d0900a13fbd2740ac5075a814a\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_37.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:00:08 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_38.csv.gz": {
+   "content_length": "24237501",
+   "etag": "\"42335809e44ed4acf637916ca3e66ad4\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_38.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:00:19 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_39.csv.gz": {
+   "content_length": "6501194",
+   "etag": "\"f57332b96579a5acd3d824e2a3cec7e0\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_39.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:00:10 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_40.csv.gz": {
+   "content_length": "13200566",
+   "etag": "\"cad3a1356f5be57dffe0dd4c40de6e9d\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_40.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:00:20 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_41.csv.gz": {
+   "content_length": "8707237",
+   "etag": "\"0b127fde51461d193c213dc6cc859fd3\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_41.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:00:14 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_42.csv.gz": {
+   "content_length": "14060259",
+   "etag": "\"46aad3bd89d743f9c412dfa6a82fa361\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_42.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:00:25 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_43.csv.gz": {
+   "content_length": "6787137",
+   "etag": "\"f614e4a9ba032606661fff94cf4d4882\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_43.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:00:26 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_44.csv.gz": {
+   "content_length": "30599407",
+   "etag": "\"595b76b69360e1dd3cd06ae751cd593c\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_44.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:00:41 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_45.csv.gz": {
+   "content_length": "14775712",
+   "etag": "\"7deaab6677ed29ac7ca2fe1f47ba8678\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_45.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:00:35 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_46.csv.gz": {
+   "content_length": "6539509",
+   "etag": "\"8ea21272405e137dcddf606c967e1f35\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_46.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:00:32 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_47.csv.gz": {
+   "content_length": "9989460",
+   "etag": "\"d8110d8574caf83e9b91fbb5c9dc4fd0\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_47.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:00:39 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_48.csv.gz": {
+   "content_length": "2923192",
+   "etag": "\"bae00472a571da39517501205f049153\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_48.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:00:37 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_49.csv.gz": {
+   "content_length": "17021723",
+   "etag": "\"68389eefe36cd51524e6270409fe6deb\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_49.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:00:48 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_50.csv.gz": {
+   "content_length": "15138414",
+   "etag": "\"d566141aab6d5d677d91498ff1c37fde\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_50.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:00:52 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_51.csv.gz": {
+   "content_length": "10412647",
+   "etag": "\"82478db8058cab38cbb84d4f4f209900\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_51.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:00:48 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_52.csv.gz": {
+   "content_length": "4441517",
+   "etag": "\"7099af5f70d18f126ab8a9f3ec7a2fcc\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_52.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:00:51 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_53.csv.gz": {
+   "content_length": "7640463",
+   "etag": "\"63f23bddae0cf502070cc76fa987f000\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_53.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:00:52 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_54.csv.gz": {
+   "content_length": "12353716",
+   "etag": "\"299d86034025cb70b7d35598363a3b8e\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_54.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:01:00 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_55.csv.gz": {
+   "content_length": "4575653",
+   "etag": "\"8cfd3ea90254f36e44b1045eb28b463d\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_55.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:00:57 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_56.csv.gz": {
+   "content_length": "20716800",
+   "etag": "\"0a639f714930e7d294030353cb62672a\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_56.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:01:04 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_57.csv.gz": {
+   "content_length": "16694474",
+   "etag": "\"d2278a9564374df37abb864abeef55d5\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_57.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:01:08 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_58.csv.gz": {
+   "content_length": "6338557",
+   "etag": "\"41422d46d21a155bb6497d7350a4f3b1\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_58.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:01:05 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_59.csv.gz": {
+   "content_length": "47297481",
+   "etag": "\"2b60e001b83443c39239e883f3e19eb2\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_59.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:01:40 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_60.csv.gz": {
+   "content_length": "14067261",
+   "etag": "\"ca7cfbcace047668601f62b1f4128bbf\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_60.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:01:16 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_61.csv.gz": {
+   "content_length": "8292630",
+   "etag": "\"9b5921f521a7783972c09fb07784ad28\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_61.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:01:15 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_62.csv.gz": {
+   "content_length": "32468595",
+   "etag": "\"401109108dcb651541522d0cb340f38f\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_62.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:01:42 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_63.csv.gz": {
+   "content_length": "15032123",
+   "etag": "\"d58dbab18a21935f0cafb891f4f8376b\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_63.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:01:27 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_64.csv.gz": {
+   "content_length": "13706675",
+   "etag": "\"de15b876ad740054079870e35c814648\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_64.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:01:35 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_65.csv.gz": {
+   "content_length": "5811179",
+   "etag": "\"70906997a58bf169c2e52c25d9fa813a\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_65.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:01:38 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_66.csv.gz": {
+   "content_length": "12138374",
+   "etag": "\"c8a6442d382d8001a7c5d66f65ca8673\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_66.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:01:49 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_67.csv.gz": {
+   "content_length": "15357669",
+   "etag": "\"c3e35ed65d92e77324a5f1c00da68495\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_67.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:01:50 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_68.csv.gz": {
+   "content_length": "11927458",
+   "etag": "\"50df4cda2cb2319775dcd7134f245910\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_68.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:01:48 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_69.csv.gz": {
+   "content_length": "17742044",
+   "etag": "\"84e0c8132bf9d5f34b88a15515306542\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_69.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:02:01 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_70.csv.gz": {
+   "content_length": "5797732",
+   "etag": "\"687a02b5ca25e654ae1f06d15a4891b1\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_70.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:01:54 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_71.csv.gz": {
+   "content_length": "13577237",
+   "etag": "\"67b75b23f2c3c5e517d82e5ba3e00e0b\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_71.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:02:01 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_72.csv.gz": {
+   "content_length": "15606956",
+   "etag": "\"e85dafc552fa3c7a5eaf5c253cfe229a\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_72.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:02:00 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_73.csv.gz": {
+   "content_length": "9715489",
+   "etag": "\"c4c139f79077c4b69c81a32ccde8ac44\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_73.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:02:07 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_74.csv.gz": {
+   "content_length": "14238086",
+   "etag": "\"bd624456600713c37980ec876dd764c8\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_74.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:02:07 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_75.csv.gz": {
+   "content_length": "4754469",
+   "etag": "\"e219f1e3adea7c19527f2b7812b7fa62\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_75.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:02:06 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_76.csv.gz": {
+   "content_length": "21522376",
+   "etag": "\"a8287234111b87a50d7439fc9cd7d607\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_76.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:02:28 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_77.csv.gz": {
+   "content_length": "21929496",
+   "etag": "\"22d128ce1db2ccca2c8d4793f5756e23\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_77.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:02:23 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_78.csv.gz": {
+   "content_length": "15787938",
+   "etag": "\"0d79de24b793b10a0eb66de860e06e88\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_78.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:02:23 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_79.csv.gz": {
+   "content_length": "10206722",
+   "etag": "\"9f8f463e6c554e063c37ec26b3074325\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_79.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:02:33 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_80.csv.gz": {
+   "content_length": "12406032",
+   "etag": "\"b87b66c13e52aad0c82a979bf6a0d599\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_80.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:02:34 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_81.csv.gz": {
+   "content_length": "11306821",
+   "etag": "\"6bd39ad55fa30adf7857d235c63e6f35\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_81.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:02:37 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_82.csv.gz": {
+   "content_length": "6614672",
+   "etag": "\"03c53b2302321b1486a7a2d4d47ba45b\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_82.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:02:38 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_83.csv.gz": {
+   "content_length": "21407768",
+   "etag": "\"4938d4681b13d109ac8471c9b32f816b\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_83.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:02:53 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_84.csv.gz": {
+   "content_length": "13502370",
+   "etag": "\"f1aa46eeda6b848eb6c7194d08115527\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_84.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:02:51 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_85.csv.gz": {
+   "content_length": "21315051",
+   "etag": "\"7eff03a4395fc3aa7c92e3be980bc311\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_85.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:02:53 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_86.csv.gz": {
+   "content_length": "10758328",
+   "etag": "\"68c096d20bd7033464b2619a653b52c6\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_86.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:02:57 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_87.csv.gz": {
+   "content_length": "9623770",
+   "etag": "\"0e41c956be84f9f85cab82713b6128c3\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_87.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:02:59 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_88.csv.gz": {
+   "content_length": "8776888",
+   "etag": "\"bc5ff8a2fbd79b2d3fb63f01a3ddad94\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_88.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:02:59 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_89.csv.gz": {
+   "content_length": "9095823",
+   "etag": "\"f411913cde19b5aaa4e4fcd0beeb9543\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_89.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:03:01 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_90.csv.gz": {
+   "content_length": "2000680",
+   "etag": "\"89a4d2f6698584729846acc7a01da107\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_90.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:02:59 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_91.csv.gz": {
+   "content_length": "15203137",
+   "etag": "\"260c18591740101d3629544134721021\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_91.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:03:06 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_92.csv.gz": {
+   "content_length": "6804067",
+   "etag": "\"d515e54538fe9a1ac6a853eb1607ae6a\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_92.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:03:03 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_93.csv.gz": {
+   "content_length": "9877772",
+   "etag": "\"05031a8e3fad524259c92a909d951ad8\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_93.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:03:04 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_94.csv.gz": {
+   "content_length": "8789288",
+   "etag": "\"d39ebc45e257fc793a0869fc4c657959\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_94.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:03:06 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_95.csv.gz": {
+   "content_length": "12709495",
+   "etag": "\"c9a537172625dc2b46f1fce588987321\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_95.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:03:07 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_971.csv.gz": {
+   "content_length": "9530128",
+   "etag": "\"a55a507789c15b53b246cefc8dbafa7b\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_971.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:03:09 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_972.csv.gz": {
+   "content_length": "7610511",
+   "etag": "\"6b0a0fcc334e86ed8fe32c2526bb9970\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_972.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:03:09 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_973.csv.gz": {
+   "content_length": "2989878",
+   "etag": "\"7b2c0297a7eafdf1038dbd56de212e1e\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_973.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:03:08 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_974.csv.gz": {
+   "content_length": "15538254",
+   "etag": "\"1ea3730375eab16f2d1db863883cf25d\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_974.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:03:11 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_975.csv.gz": {
+   "content_length": "236",
+   "etag": null,
+   "final_url": null,
+   "last_modified": null,
+   "status": 404
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_976.csv.gz": {
+   "content_length": "1899369",
+   "etag": "\"f25467515bef472be0117de27233b95d\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/base_imb/2026_T2/departement/base_imb_976.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:03:10 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_01.csv.gz": {
+   "content_length": "16714690",
+   "etag": "\"6e2bea7d9601d075edb7f7af8b57fa75\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_01.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:04:45 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_02.csv.gz": {
+   "content_length": "14187364",
+   "etag": "\"4856edeb082787dfb9e0754a2e5f50d0\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_02.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:04:43 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_03.csv.gz": {
+   "content_length": "10447201",
+   "etag": "\"6a8cfe9512ec873caf29c9db41714fcc\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_03.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:04:42 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_04.csv.gz": {
+   "content_length": "5373075",
+   "etag": "\"e8dd30e8257fada0642cc16f6dc77748\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_04.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:04:45 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_05.csv.gz": {
+   "content_length": "4343635",
+   "etag": "\"a6602256f36e420f2f01bd5d49b18de6\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_05.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:04:46 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_06.csv.gz": {
+   "content_length": "14068245",
+   "etag": "\"8cf4ed122c28ffc537ccc62984821ef4\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_06.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:04:54 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_07.csv.gz": {
+   "content_length": "14494186",
+   "etag": "\"96cbcb041a0576c834c101ce554ccde1\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_07.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:04:53 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_08.csv.gz": {
+   "content_length": "6851455",
+   "etag": "\"7298b765aa76966945e3e0f5a3f194e3\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_08.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:04:54 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_09.csv.gz": {
+   "content_length": "5173556",
+   "etag": "\"9edb701e307de5d2a898f0cd9c772358\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_09.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:04:59 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_10.csv.gz": {
+   "content_length": "7337455",
+   "etag": "\"9c0c9be6b129a4bc133cbadd9cd9138f\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_10.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:05:01 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_11.csv.gz": {
+   "content_length": "13489841",
+   "etag": "\"e972139b3c6a3b172c020d196a48ae6c\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_11.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:05:06 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_12.csv.gz": {
+   "content_length": "8615518",
+   "etag": "\"2255e5f1174892012d042443cc8396bf\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_12.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:05:10 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_13.csv.gz": {
+   "content_length": "29038035",
+   "etag": "\"3458badc7125b785df522fb3ef784858\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_13.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:05:24 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_14.csv.gz": {
+   "content_length": "20605399",
+   "etag": "\"d9011a877314068efbe8b28cc0951326\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_14.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:05:22 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_15.csv.gz": {
+   "content_length": "5294446",
+   "etag": "\"a597bdac4bdd9f7cb2e94a7fcf14a668\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_15.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:05:19 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_16.csv.gz": {
+   "content_length": "12909736",
+   "etag": "\"964e1c400d6fedb043714babc1f0918c\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_16.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:05:30 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_17.csv.gz": {
+   "content_length": "20364275",
+   "etag": "\"fbc6cd203afddd7d67b309aed07efd65\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_17.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:05:39 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_18.csv.gz": {
+   "content_length": "10694751",
+   "etag": "\"b3859da93354e22f2869e1829c67b8d2\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_18.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:05:38 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_19.csv.gz": {
+   "content_length": "10124709",
+   "etag": "\"1d9159ce3f2913bd5cb74634a04df494\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_19.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:05:43 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_21.csv.gz": {
+   "content_length": "10786730",
+   "etag": "\"7ef2dfc7bf56eab6fd28e307181eb01b\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_21.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:05:53 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_22.csv.gz": {
+   "content_length": "21931857",
+   "etag": "\"231b938e53851327adbb3f7aaa234d5a\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_22.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:05:55 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_23.csv.gz": {
+   "content_length": "6261953",
+   "etag": "\"3a938d2903e8c060e3ad021779d921d3\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_23.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:05:55 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_24.csv.gz": {
+   "content_length": "18850831",
+   "etag": "\"10c41a6cda7533d8ae5fd9e9b30b768c\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_24.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:06:12 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_25.csv.gz": {
+   "content_length": "11205657",
+   "etag": "\"66005f5f709e072defd124f544195936\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_25.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:06:13 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_26.csv.gz": {
+   "content_length": "16946582",
+   "etag": "\"94ff212ef35a3942060a446331550d37\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_26.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:06:11 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_27.csv.gz": {
+   "content_length": "18102496",
+   "etag": "\"0cb1d747572b3d165138ca96865465e6\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_27.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:06:31 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_28.csv.gz": {
+   "content_length": "10388274",
+   "etag": "\"345b257575445dcc69d202e754088571\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_28.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:06:30 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_29.csv.gz": {
+   "content_length": "28928915",
+   "etag": "\"026b09ccf2930498e50ae5d2e5024d97\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_29.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:06:46 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_2A.csv.gz": {
+   "content_length": "3912817",
+   "etag": "\"bc2a0cc52ce36d28aadc513c886fdf9f\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_2A.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:06:43 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_2B.csv.gz": {
+   "content_length": "4230123",
+   "etag": "\"473f858505400bcb88391d2b66549c7f\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_2B.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:06:44 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_30.csv.gz": {
+   "content_length": "20439983",
+   "etag": "\"f68dca8c7ea273a97952e87656ea401f\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_30.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:07:12 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_31.csv.gz": {
+   "content_length": "24061513",
+   "etag": "\"4e04e14eebeb09c56eb4378aaa7edb58\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_31.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:07:21 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_32.csv.gz": {
+   "content_length": "5148936",
+   "etag": "\"0251d2157e7c21df419b2c17d9690351\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_32.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:07:03 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_33.csv.gz": {
+   "content_length": "35052168",
+   "etag": "\"8952b2e3f877ec7bb0509903e15a6528\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_33.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:07:53 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_34.csv.gz": {
+   "content_length": "26649143",
+   "etag": "\"951debe1e9288865a320fc770ea2db08\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_34.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:07:52 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_35.csv.gz": {
+   "content_length": "24880058",
+   "etag": "\"29abd72b2da947de6367dfe20c87dc25\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_35.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:07:53 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_36.csv.gz": {
+   "content_length": "8843891",
+   "etag": "\"e419929fad86b2706d7400f8c0faf347\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_36.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:08:12 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_37.csv.gz": {
+   "content_length": "14096643",
+   "etag": "\"d2d2fd77fa6f8f63e8a819f064d8d6cb\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_37.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:08:14 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_38.csv.gz": {
+   "content_length": "27234374",
+   "etag": "\"7c0d2ae7dac9e55b200724dc1328e186\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_38.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:08:37 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_39.csv.gz": {
+   "content_length": "7101894",
+   "etag": "\"b2395aab697fdf8fd06797c86b3e5643\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_39.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:08:20 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_40.csv.gz": {
+   "content_length": "14327804",
+   "etag": "\"b0186b7a24822ae017bebbb20d7ba9e6\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_40.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:08:22 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_41.csv.gz": {
+   "content_length": "9510847",
+   "etag": "\"b0cd71da656d01f4e1f0f419de3ba5fa\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_41.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:08:30 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_42.csv.gz": {
+   "content_length": "16770268",
+   "etag": "\"781f3f14abc433315c7fbc5e2ee030f6\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_42.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:08:36 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_43.csv.gz": {
+   "content_length": "8137146",
+   "etag": "\"2019913fe116d822c7abdbb2003877d5\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_43.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:08:35 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_44.csv.gz": {
+   "content_length": "33658148",
+   "etag": "\"68a93464000ab784171281a56555f708\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_44.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:09:02 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_45.csv.gz": {
+   "content_length": "15269450",
+   "etag": "\"f873e0ea0bf39ee7fc1940173e55a6e9\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_45.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:08:49 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_46.csv.gz": {
+   "content_length": "6338200",
+   "etag": "\"deac943377f007c6bbbe2621f96d73e8\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_46.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:08:44 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_47.csv.gz": {
+   "content_length": "11054059",
+   "etag": "\"e211082be2455f073ee929bd94c5ab42\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_47.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:08:53 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_48.csv.gz": {
+   "content_length": "2814318",
+   "etag": "\"a5b1dd88a876ca15ae642143aacda2bc\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_48.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:08:52 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_49.csv.gz": {
+   "content_length": "18864911",
+   "etag": "\"cd3bdd20e2acf59d3a9e3b84102c1e69\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_49.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:09:05 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_50.csv.gz": {
+   "content_length": "19111522",
+   "etag": "\"a0f7e923457cb4fd79d906d83cc4d2df\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_50.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:09:03 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_51.csv.gz": {
+   "content_length": "11625830",
+   "etag": "\"1753cd75d948ec7ff465ef721205aadb\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_51.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:09:12 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_52.csv.gz": {
+   "content_length": "4907575",
+   "etag": "\"3386ae9d8da56979b49360b32f2fb629\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_52.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:09:08 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_53.csv.gz": {
+   "content_length": "8057131",
+   "etag": "\"a89c1c33a705ff379c8f5e240c3b5e50\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_53.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:09:11 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_54.csv.gz": {
+   "content_length": "14397992",
+   "etag": "\"e4a2a63098d57e91c522489c0828768b\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_54.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:09:18 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_55.csv.gz": {
+   "content_length": "4998890",
+   "etag": "\"226635f30b8e0436d1f46c4b06ff08fc\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_55.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:09:15 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_56.csv.gz": {
+   "content_length": "26165450",
+   "etag": "\"89a8aa0aaca68c03851ebb88375ec604\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_56.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:09:32 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_57.csv.gz": {
+   "content_length": "19346547",
+   "etag": "\"e362f510d6701b3e7c87f04693ce4cb9\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_57.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:09:30 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_58.csv.gz": {
+   "content_length": "6448935",
+   "etag": "\"9bbecc96997d479190ffb64c18014d7e\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_58.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:09:24 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_59.csv.gz": {
+   "content_length": "57353186",
+   "etag": "\"cebe83eddcfc9816ae9707d81ad17f80\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_59.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:10:11 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_60.csv.gz": {
+   "content_length": "14790145",
+   "etag": "\"e3dcd275c60ffc05d24ad6a4892af3b4\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_60.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:09:41 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_61.csv.gz": {
+   "content_length": "9472142",
+   "etag": "\"e4f9b1bab58bbb636a7b7039f8774312\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_61.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:09:39 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_62.csv.gz": {
+   "content_length": "39063577",
+   "etag": "\"83d8f3abda4427179016ed523b2d0f51\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_62.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:09:57 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_63.csv.gz": {
+   "content_length": "17781109",
+   "etag": "\"fdef9dd2ca8f922e5d5c2904649e41ac\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_63.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:09:57 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_64.csv.gz": {
+   "content_length": "15456785",
+   "etag": "\"3c221bfc95db76c750b5f64609df4964\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_64.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:10:05 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_65.csv.gz": {
+   "content_length": "6684448",
+   "etag": "\"dc71d2a57903991ce63a74163c124195\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_65.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:10:02 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_66.csv.gz": {
+   "content_length": "14884323",
+   "etag": "\"8bb23d404b29844892a0b128cdc0946f\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_66.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:10:11 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_67.csv.gz": {
+   "content_length": "19240428",
+   "etag": "\"7cf07c76abb4ba032e37d1fde519a7cb\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_67.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:10:19 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_68.csv.gz": {
+   "content_length": "15888919",
+   "etag": "\"38efcec73b4a8dfe137301ab60b3fb5e\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_68.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:10:21 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_69.csv.gz": {
+   "content_length": "19282202",
+   "etag": "\"4d84afe84bb2ac36a9967635d002948b\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_69.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:10:27 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_70.csv.gz": {
+   "content_length": "6307164",
+   "etag": "\"710a9642a2e87324d63eaae19ed37e73\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_70.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:10:23 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_71.csv.gz": {
+   "content_length": "14821102",
+   "etag": "\"53f08adac1c84a77f66fccedf094fd6b\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_71.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:10:32 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_72.csv.gz": {
+   "content_length": "17314062",
+   "etag": "\"09a3873878df8ca3891f21692b760b62\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_72.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:10:34 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_73.csv.gz": {
+   "content_length": "9758899",
+   "etag": "\"57a768efcef7148531c7057902fdb573\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_73.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:10:34 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_74.csv.gz": {
+   "content_length": "17222195",
+   "etag": "\"fc0e7b4502fdaed77aee7e9ee58a4fbf\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_74.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:10:45 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_75.csv.gz": {
+   "content_length": "6215073",
+   "etag": "\"72eb24092e3c56659940700d47f71ca7\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_75.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:10:40 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_76.csv.gz": {
+   "content_length": "24599395",
+   "etag": "\"042dc5afc92f5a352d132ea317694973\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_76.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:10:56 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_77.csv.gz": {
+   "content_length": "24214017",
+   "etag": "\"4cc6183fd1834b0e235f6d36964dd245\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_77.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:10:56 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_78.csv.gz": {
+   "content_length": "17177622",
+   "etag": "\"95f917a2659e693019be8eb6cfa82225\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_78.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:10:59 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_79.csv.gz": {
+   "content_length": "11377663",
+   "etag": "\"9c95e8d84cea556ba725c582eeaf77bf\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_79.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:11:06 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_80.csv.gz": {
+   "content_length": "13916637",
+   "etag": "\"00a1d392a97b6d1c07e6ece208f6eade\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_80.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:11:06 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_81.csv.gz": {
+   "content_length": "12184690",
+   "etag": "\"ce16e51889e2a6faa9e1ac13295b86b7\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_81.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:11:06 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_82.csv.gz": {
+   "content_length": "7161586",
+   "etag": "\"8aba3596e357fe3ee7dbc7ff29e8612e\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_82.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:11:10 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_83.csv.gz": {
+   "content_length": "23693405",
+   "etag": "\"64902ef80578ba896c2892fab9db2703\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_83.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:11:27 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_84.csv.gz": {
+   "content_length": "15965355",
+   "etag": "\"f1fa75e311af662274cf25c563a72aa0\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_84.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:11:21 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_85.csv.gz": {
+   "content_length": "25888986",
+   "etag": "\"c9a35b4f885c1f83f818c6a29268a2ac\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_85.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:11:20 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_86.csv.gz": {
+   "content_length": "12291119",
+   "etag": "\"875792a5d937a16470ce6456787d7b93\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_86.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:11:31 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_87.csv.gz": {
+   "content_length": "11063498",
+   "etag": "\"2c85a5c075e861ab87ee1d4eefeefa9a\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_87.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:11:26 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_88.csv.gz": {
+   "content_length": "9692102",
+   "etag": "\"06cee793407a4d94b4e9c6a2f688dc6c\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_88.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:11:32 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_89.csv.gz": {
+   "content_length": "9825087",
+   "etag": "\"53c53b39b1970b65643c8c0246af9f7e\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_89.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:11:32 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_90.csv.gz": {
+   "content_length": "2498907",
+   "etag": "\"f212d0153d1c37d8eaa27897aec7d0af\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_90.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:11:33 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_91.csv.gz": {
+   "content_length": "17719199",
+   "etag": "\"8695b57e8a0b00a936a2bc9d53d84443\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_91.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:11:40 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_92.csv.gz": {
+   "content_length": "8414856",
+   "etag": "\"8ef8933cb417317f9644a46dc1a7adfe\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_92.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:11:41 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_93.csv.gz": {
+   "content_length": "12431875",
+   "etag": "\"1d537c0d2d5f4ef2aa3f76194f3a317c\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_93.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:11:44 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_94.csv.gz": {
+   "content_length": "10531058",
+   "etag": "\"10b1354169806c331d1f457597419c67\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_94.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:11:47 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_95.csv.gz": {
+   "content_length": "14449448",
+   "etag": "\"dc337cda5307645057247863273a7367\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_95.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:11:52 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_971.csv.gz": {
+   "content_length": "9380208",
+   "etag": "\"7ec3504003abb4ff3d49ea35081588ea\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_971.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:11:50 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_972.csv.gz": {
+   "content_length": "7843642",
+   "etag": "\"d9934691e836f7153249db38af9cfcdd\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_972.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:11:52 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_973.csv.gz": {
+   "content_length": "2528756",
+   "etag": "\"0816b94d7c3914f547b28a3eee80852d\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_973.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:11:52 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_974.csv.gz": {
+   "content_length": "13069707",
+   "etag": "\"d80bd89b85d2076b2adf71fc569714e1\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_974.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:12:00 GMT",
+   "status": 200
+  },
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_976.csv.gz": {
+   "content_length": "1110124",
+   "etag": "\"fdfa23372ebf7944b5b53ad1c01f62c7\"",
+   "final_url": "https://arcep.s3.rbx.io.cloud.ovh.net/fixe/maconnexioninternet/eligibilite/2026_T2/departement/actuel_976.csv.gz",
+   "last_modified": "Mon, 14 Sep 2026 16:11:54 GMT",
+   "status": 200
+  }
+ },
+ "millesime": "2026_T2",
+ "mode": "producteur",
+ "pannes": {},
+ "primary_metric": "eligibilite_fixe",
+ "script_sha256": "960d3b0b3bf138081e7a161842e7c3a708287fe6ea337ddbe0df0c0b0a1a201a",
+ "script_sha256_origin": "caller, SHA-256 of the file sent on stdin",
+ "source": "arcep",
+ "started_at": "2026-10-13T10:37:12Z",
+ "totals": {
+  "base_imb:immeubles": 25783172,
+  "eligibilite_fixe": 330154802,
+  "eligibilite_fixe:id_imb_distincts": 25782858
+ },
+ "urls": [
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_01.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_01.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_02.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_02.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_03.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_03.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_04.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_04.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_05.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_05.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_06.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_06.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_07.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_07.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_08.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_08.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_09.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_09.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_10.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_10.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_11.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_11.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_12.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_12.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_13.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_13.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_14.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_14.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_15.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_15.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_16.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_16.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_17.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_17.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_18.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_18.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_19.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_19.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_2A.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_2A.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_2B.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_2B.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_21.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_21.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_22.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_22.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_23.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_23.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_24.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_24.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_25.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_25.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_26.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_26.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_27.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_27.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_28.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_28.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_29.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_29.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_30.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_30.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_31.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_31.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_32.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_32.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_33.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_33.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_34.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_34.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_35.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_35.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_36.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_36.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_37.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_37.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_38.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_38.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_39.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_39.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_40.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_40.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_41.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_41.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_42.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_42.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_43.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_43.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_44.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_44.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_45.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_45.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_46.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_46.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_47.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_47.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_48.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_48.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_49.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_49.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_50.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_50.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_51.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_51.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_52.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_52.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_53.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_53.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_54.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_54.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_55.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_55.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_56.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_56.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_57.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_57.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_58.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_58.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_59.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_59.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_60.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_60.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_61.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_61.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_62.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_62.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_63.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_63.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_64.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_64.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_65.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_65.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_66.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_66.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_67.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_67.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_68.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_68.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_69.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_69.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_70.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_70.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_71.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_71.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_72.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_72.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_73.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_73.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_74.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_74.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_75.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_75.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_76.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_76.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_77.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_77.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_78.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_78.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_79.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_79.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_80.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_80.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_81.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_81.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_82.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_82.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_83.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_83.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_84.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_84.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_85.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_85.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_86.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_86.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_87.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_87.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_88.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_88.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_89.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_89.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_90.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_90.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_91.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_91.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_92.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_92.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_93.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_93.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_94.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_94.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_95.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_95.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_971.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_971.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_972.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_972.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_973.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_973.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_974.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_974.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_975.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_976.csv.gz",
+  "https://data.arcep.fr/fixe/maconnexioninternet/eligibilite/last/departement/actuel_976.csv.gz"
+ ]
+}

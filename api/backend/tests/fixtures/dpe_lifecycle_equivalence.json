@@ -1,0 +1,407 @@
+{
+ "simple_replacement": [
+  [
+   "a",
+   {
+    "replacement_state": "replaced",
+    "graph_issues": [],
+    "date_issues": []
+   }
+  ],
+  [
+   "b",
+   {
+    "replacement_state": "replaced",
+    "graph_issues": [],
+    "date_issues": [
+     "invalid_end_date"
+    ]
+   }
+  ],
+  [
+   "c",
+   {
+    "replacement_state": "no_successor_known",
+    "graph_issues": [],
+    "date_issues": []
+   }
+  ],
+  [
+   "d",
+   {
+    "replacement_state": "no_successor_known",
+    "graph_issues": [],
+    "date_issues": []
+   }
+  ]
+ ],
+ "fork": [
+  [
+   "a",
+   {
+    "replacement_state": "replaced",
+    "graph_issues": [
+     "fork"
+    ],
+    "date_issues": []
+   }
+  ],
+  [
+   "b",
+   {
+    "replacement_state": "no_successor_known",
+    "graph_issues": [
+     "fork"
+    ],
+    "date_issues": []
+   }
+  ],
+  [
+   "c",
+   {
+    "replacement_state": "replaced",
+    "graph_issues": [
+     "fork"
+    ],
+    "date_issues": []
+   }
+  ],
+  [
+   "d",
+   {
+    "replacement_state": "no_successor_known",
+    "graph_issues": [
+     "fork"
+    ],
+    "date_issues": []
+   }
+  ]
+ ],
+ "cycle": [
+  [
+   "a",
+   {
+    "replacement_state": "replaced",
+    "graph_issues": [
+     "cycle",
+     "fork"
+    ],
+    "date_issues": []
+   }
+  ],
+  [
+   "b",
+   {
+    "replacement_state": "replaced",
+    "graph_issues": [
+     "cycle",
+     "fork"
+    ],
+    "date_issues": []
+   }
+  ],
+  [
+   "c",
+   {
+    "replacement_state": "replaced",
+    "graph_issues": [
+     "cycle",
+     "fork"
+    ],
+    "date_issues": []
+   }
+  ],
+  [
+   "d",
+   {
+    "replacement_state": "no_successor_known",
+    "graph_issues": [
+     "cycle",
+     "fork"
+    ],
+    "date_issues": []
+   }
+  ],
+  [
+   "e",
+   {
+    "replacement_state": "replaced",
+    "graph_issues": [
+     "cycle"
+    ],
+    "date_issues": []
+   }
+  ]
+ ],
+ "ambiguous_duplicate": [
+  [
+   "a",
+   {
+    "replacement_state": "ambiguous",
+    "graph_issues": [
+     "ambiguous_target"
+    ],
+    "date_issues": [
+     "invalid_establishment_date",
+     "invalid_end_date"
+    ]
+   }
+  ],
+  [
+   "b",
+   {
+    "replacement_state": "replaced",
+    "graph_issues": [
+     "ambiguous_target"
+    ],
+    "date_issues": []
+   }
+  ],
+  [
+   "c",
+   {
+    "replacement_state": "ambiguous",
+    "graph_issues": [
+     "ambiguous_target"
+    ],
+    "date_issues": []
+   }
+  ],
+  [
+   "x",
+   {
+    "replacement_state": "replaced",
+    "graph_issues": [
+     "ambiguous_target"
+    ],
+    "date_issues": []
+   }
+  ],
+  [
+   "y",
+   {
+    "replacement_state": "ambiguous",
+    "graph_issues": [
+     "ambiguous_target"
+    ],
+    "date_issues": []
+   }
+  ]
+ ],
+ "missing_reference": [
+  [
+   "a",
+   {
+    "replacement_state": "replaced",
+    "graph_issues": [
+     "missing_target"
+    ],
+    "date_issues": []
+   }
+  ],
+  [
+   "b",
+   {
+    "replacement_state": "no_successor_known",
+    "graph_issues": [
+     "missing_target"
+    ],
+    "date_issues": []
+   }
+  ],
+  [
+   "c",
+   {
+    "replacement_state": "no_successor_known",
+    "graph_issues": [
+     "missing_target"
+    ],
+    "date_issues": []
+   }
+  ],
+  [
+   "d",
+   {
+    "replacement_state": "no_successor_known",
+    "graph_issues": [],
+    "date_issues": []
+   }
+  ]
+ ],
+ "ambiguous_edges_first": [
+  [
+   "dup",
+   {
+    "replacement_state": "ambiguous",
+    "graph_issues": [
+     "ambiguous_target"
+    ],
+    "date_issues": []
+   }
+  ],
+  [
+   "x",
+   {
+    "replacement_state": "ambiguous",
+    "graph_issues": [
+     "ambiguous_target"
+    ],
+    "date_issues": []
+   }
+  ],
+  [
+   "y",
+   {
+    "replacement_state": "replaced",
+    "graph_issues": [
+     "ambiguous_target"
+    ],
+    "date_issues": []
+   }
+  ]
+ ],
+ "large_component": {
+  "count": 1235,
+  "sha256": "39f5b16b4bd53a7768f149cc84163674bb9615624219ef38729e1b91e59cbacb",
+  "first": [
+   "n0",
+   {
+    "replacement_state": "replaced",
+    "graph_issues": [
+     "fork",
+     "truncated"
+    ],
+    "date_issues": []
+   }
+  ],
+  "last": [
+   "small4",
+   {
+    "replacement_state": "no_successor_known",
+    "graph_issues": [],
+    "date_issues": []
+   }
+  ]
+ },
+ "mixed": [
+  [
+   "m-a",
+   {
+    "replacement_state": "replaced",
+    "graph_issues": [
+     "fork"
+    ],
+    "date_issues": []
+   }
+  ],
+  [
+   "m-cyc2",
+   {
+    "replacement_state": "replaced",
+    "graph_issues": [
+     "cycle",
+     "ambiguous_target"
+    ],
+    "date_issues": [
+     "invalid_establishment_date",
+     "invalid_end_date"
+    ]
+   }
+  ],
+  [
+   "m-self",
+   {
+    "replacement_state": "replaced",
+    "graph_issues": [
+     "cycle"
+    ],
+    "date_issues": []
+   }
+  ],
+  [
+   "m-fork",
+   {
+    "replacement_state": "no_successor_known",
+    "graph_issues": [
+     "fork"
+    ],
+    "date_issues": []
+   }
+  ],
+  [
+   "m-after-dup",
+   {
+    "replacement_state": "ambiguous",
+    "graph_issues": [
+     "cycle",
+     "ambiguous_target"
+    ],
+    "date_issues": []
+   }
+  ],
+  [
+   "m-b",
+   {
+    "replacement_state": "replaced",
+    "graph_issues": [
+     "fork"
+    ],
+    "date_issues": [
+     "invalid_end_date"
+    ]
+   }
+  ],
+  [
+   "m-dup",
+   {
+    "replacement_state": "ambiguous",
+    "graph_issues": [
+     "cycle",
+     "ambiguous_target"
+    ],
+    "date_issues": [
+     "invalid_end_date"
+    ]
+   }
+  ],
+  [
+   "m-alone",
+   {
+    "replacement_state": "no_successor_known",
+    "graph_issues": [],
+    "date_issues": []
+   }
+  ],
+  [
+   "m-cyc1",
+   {
+    "replacement_state": "replaced",
+    "graph_issues": [
+     "cycle",
+     "ambiguous_target"
+    ],
+    "date_issues": []
+   }
+  ],
+  [
+   "m-lost",
+   {
+    "replacement_state": "no_successor_known",
+    "graph_issues": [
+     "missing_target"
+    ],
+    "date_issues": []
+   }
+  ],
+  [
+   "m-c",
+   {
+    "replacement_state": "no_successor_known",
+    "graph_issues": [
+     "fork"
+    ],
+    "date_issues": []
+   }
+  ]
+ ]
+}

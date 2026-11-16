@@ -1,0 +1,28 @@
+# Local feedback for the gates CI enforces (.github/workflows/ci-api.yml), on the
+# same surface (app/ tests/ scripts/).
+# Install once: pre-commit install --hook-type pre-commit --hook-type pre-push
+# Every hook runs the uv-locked tools of api/backend, so the local version can
+# never drift from CI.
+repos:
+  - repo: local
+    hooks:
+      - id: ruff-check
+        name: ruff check (api/backend)
+        entry: uv run --project api/backend --quiet ruff check --force-exclude
+        language: system
+        types: [python]
+        files: ^api/backend/(app|tests|scripts)/
+      - id: ruff-format
+        name: ruff format --check (api/backend)
+        entry: uv run --project api/backend --quiet ruff format --check --force-exclude
+        language: system
+        types: [python]
+        files: ^api/backend/(app|tests|scripts)/
+      # ~10 s with a warm cache: pre-push only, so commits stay fast.
+      - id: mypy-ratchet
+        name: mypy ratchet (api/backend)
+        entry: uv run --project api/backend --quiet python api/backend/scripts/mypy_ratchet.py
+        language: system
+        pass_filenames: false
+        files: ^api/backend/.*\.py$
+        stages: [pre-push]

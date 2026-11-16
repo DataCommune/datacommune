@@ -1,0 +1,83 @@
+{
+  "id": "delinquance",
+  "section": "vivre",
+  "titre": "Délinquance enregistrée",
+  "etat": "ok",
+  "ton": "neutre",
+  "granularite": {
+    "niveau": "commune",
+    "rayon_m": null
+  },
+  "verdict": "Cambriolages de logement en 2025 : 6,3 ‰ dans la commune, 6,3 ‰ dans le département.",
+  "chiffres": [
+    {
+      "id": "cambriolages_commune",
+      "libelle": "Cambriolages pour 1 000 logements, commune",
+      "valeur": 6.3,
+      "unite": "pour_mille",
+      "millesime": "2025"
+    },
+    {
+      "id": "cambriolages_departement",
+      "libelle": "Cambriolages pour 1 000 logements, département",
+      "valeur": 6.3,
+      "unite": "pour_mille",
+      "millesime": "2025"
+    }
+  ],
+  "details": {
+    "annee": 2025,
+    "zone": {
+      "code": "44109",
+      "niveau": "commune"
+    },
+    "indicateurs": [
+      {
+        "indicateur": "Cambriolages de logement",
+        "base": "pour 1 000 logements",
+        "taux_commune": 6.3368504,
+        "nombre_commune": 1227,
+        "diffuse": true,
+        "taux_departement": 6.3213546
+      },
+      {
+        "indicateur": "Vols sans violence contre des personnes",
+        "base": "pour 1 000 habitants",
+        "taux_commune": 17.5019986,
+        "nombre_commune": 5736,
+        "diffuse": true,
+        "taux_departement": 8.2873411
+      },
+      {
+        "indicateur": "Violences physiques hors cadre familial",
+        "base": "pour 1 000 habitants",
+        "taux_commune": 4.4456785,
+        "nombre_commune": 1457,
+        "diffuse": true,
+        "taux_departement": 2.4832445
+      },
+      {
+        "indicateur": "Destructions et dégradations volontaires",
+        "base": "pour 1 000 habitants",
+        "taux_commune": 8.8333832,
+        "nombre_commune": 2895,
+        "diffuse": true,
+        "taux_departement": 6.9401776
+      }
+    ]
+  },
+  "rattachement": null,
+  "sources": [
+    {
+      "cle": "delinquance",
+      "nom": "Bases statistiques communale et départementale de la délinquance enregistrée par la police et la gendarmerie nationales (SSMSI)",
+      "producteur": "SSMSI (Ministère de l'Intérieur)",
+      "url": "https://www.data.gouv.fr/datasets/621df2954fa5a3b5a023e23c/",
+      "licence": "Licence Ouverte 2.0",
+      "millesime": "2025",
+      "mode": "direct"
+    }
+  ],
+  "motif": null,
+  "pannes_partielles": []
+}

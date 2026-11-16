@@ -1,0 +1,279 @@
+{
+  "statut": "ok",
+  "donnees": {
+    "etat": "value",
+    "motif": null,
+    "periode": "2021-2025",
+    "annee_debut": 2021,
+    "total": 4,
+    "page": 1,
+    "pages": 1,
+    "par_page": 5,
+    "generation": "0123456789abcdef",
+    "ventes": [
+      {
+        "date": "2025-03-14",
+        "nature": "Vente",
+        "composition": {
+          "maisons": 1,
+          "appartements": 0,
+          "dependances": 0,
+          "locaux_activite": 0
+        },
+        "surface_batie": 92,
+        "prix": 238000.0,
+        "prix_m2": 2587,
+        "prix_affiche": true,
+        "minimisation": null,
+        "distance_m": null,
+        "hors_stats_vefa": false
+      },
+      {
+        "date": "2024-06-01",
+        "nature": "Vente",
+        "composition": {
+          "maisons": 1,
+          "appartements": 0,
+          "dependances": 1,
+          "locaux_activite": 0
+        },
+        "surface_batie": 110,
+        "prix": null,
+        "prix_m2": null,
+        "prix_affiche": false,
+        "minimisation": {
+          "motif": "vente_isolee_recente"
+        },
+        "distance_m": null,
+        "hors_stats_vefa": false
+      },
+      {
+        "date": "2022-09-20",
+        "nature": "Vente",
+        "composition": {
+          "maisons": 0,
+          "appartements": 0,
+          "dependances": 0,
+          "locaux_activite": 0
+        },
+        "surface_batie": null,
+        "prix": 48000.0,
+        "prix_m2": null,
+        "prix_affiche": true,
+        "minimisation": null,
+        "distance_m": null,
+        "hors_stats_vefa": false
+      },
+      {
+        "date": "2021-02-10",
+        "nature": "Vente",
+        "composition": {
+          "maisons": 0,
+          "appartements": 0,
+          "dependances": 0,
+          "locaux_activite": 2
+        },
+        "surface_batie": 640,
+        "prix": 1250000.0,
+        "prix_m2": null,
+        "prix_affiche": true,
+        "minimisation": null,
+        "distance_m": null,
+        "hors_stats_vefa": false
+      }
+    ],
+    "groupes": [
+      null,
+      {
+        "total": 2,
+        "autres": 1,
+        "absentes_du_cadastre": 0,
+        "hors_emprise": 0,
+        "sans_surface": 0,
+        "surface_totale_m2": 830,
+        "parcelles": [
+          {
+            "id_parcelle": "00000000ZA0001",
+            "geometry": {
+              "type": "MultiPolygon",
+              "coordinates": [
+                [
+                  [
+                    [
+                      -3.5002,
+                      46.49986
+                    ],
+                    [
+                      -3.4998,
+                      46.49986
+                    ],
+                    [
+                      -3.4998,
+                      46.50014
+                    ],
+                    [
+                      -3.5002,
+                      46.50014
+                    ],
+                    [
+                      -3.5002,
+                      46.49986
+                    ]
+                  ]
+                ]
+              ]
+            },
+            "etiquette": [
+              -3.5,
+              46.5
+            ]
+          },
+          {
+            "id_parcelle": "00000000ZA0004",
+            "geometry": {
+              "type": "MultiPolygon",
+              "coordinates": [
+                [
+                  [
+                    [
+                      -3.5007,
+                      46.49986
+                    ],
+                    [
+                      -3.5002,
+                      46.49986
+                    ],
+                    [
+                      -3.5002,
+                      46.50014
+                    ],
+                    [
+                      -3.5007,
+                      46.50014
+                    ],
+                    [
+                      -3.5007,
+                      46.49986
+                    ]
+                  ]
+                ]
+              ]
+            },
+            "etiquette": [
+              -3.50045,
+              46.5
+            ]
+          }
+        ]
+      },
+      {
+        "total": 3,
+        "autres": 2,
+        "absentes_du_cadastre": 1,
+        "hors_emprise": 0,
+        "sans_surface": 0,
+        "surface_totale_m2": null,
+        "parcelles": [
+          {
+            "id_parcelle": "00000000ZA0001",
+            "geometry": {
+              "type": "MultiPolygon",
+              "coordinates": [
+                [
+                  [
+                    [
+                      -3.5002,
+                      46.49986
+                    ],
+                    [
+                      -3.4998,
+                      46.49986
+                    ],
+                    [
+                      -3.4998,
+                      46.50014
+                    ],
+                    [
+                      -3.5002,
+                      46.50014
+                    ],
+                    [
+                      -3.5002,
+                      46.49986
+                    ]
+                  ]
+                ]
+              ]
+            },
+            "etiquette": [
+              -3.5,
+              46.5
+            ]
+          },
+          {
+            "id_parcelle": "00000000ZA0003",
+            "geometry": {
+              "type": "MultiPolygon",
+              "coordinates": [
+                [
+                  [
+                    [
+                      -3.5002,
+                      46.50014
+                    ],
+                    [
+                      -3.4998,
+                      46.50014
+                    ],
+                    [
+                      -3.4998,
+                      46.50042
+                    ],
+                    [
+                      -3.5002,
+                      46.50042
+                    ],
+                    [
+                      -3.5002,
+                      46.50014
+                    ]
+                  ]
+                ]
+              ]
+            },
+            "etiquette": [
+              -3.5,
+              46.50028
+            ]
+          }
+        ]
+      },
+      {
+        "total": 60,
+        "autres": 59,
+        "absentes_du_cadastre": 0,
+        "hors_emprise": 12,
+        "sans_surface": 0,
+        "surface_totale_m2": 48210,
+        "parcelles": null
+      }
+    ]
+  },
+  "meta": {
+    "source": [
+      {
+        "nom": "Demandes de valeurs foncières (DVF)",
+        "licence": "Licence Ouverte 2.0",
+        "url": "https://www.data.gouv.fr/datasets/demandes-de-valeurs-foncieres-geolocalisees",
+        "producteur": "DGFiP / Etalab"
+      },
+      {
+        "nom": "Cadastre Etalab",
+        "licence": "Licence Ouverte 1.0",
+        "url": "https://cadastre.data.gouv.fr",
+        "producteur": "DGFiP / Etalab"
+      }
+    ],
+    "resolution": null
+  }
+}

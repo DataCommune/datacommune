@@ -1,0 +1,3538 @@
+{
+	"regle": "Relevé du rendu par field_id figé au SHA de départ de chaque section (D45-01). Une section existante ne se réécrit jamais ; un changement voulu de forme de rendu se déclare dans lecture-rendu.spec.ts.",
+	"baseRevision": "1c423c98d88e3ab3fedfcbd5366d1e0fe3140c24",
+	"capturedAt": "2026-10-24T19:47:56.671Z",
+	"sections": {
+		"document-dpe-2644E8000030X": {
+			"baseRevision": "451dd5e3f3c6698e49a1014d5f4fb08b9818cfa8",
+			"capturedAt": "2026-10-26T11:17:31.841Z",
+			"page": "/dpe/2644E8000030X",
+			"rendu": [
+				{
+					"fieldId": "dpe.document.conso_ep",
+					"texte": "127 982 kWhEP/an",
+					"etat": "value"
+				},
+				{
+					"fieldId": "dpe.document.cout_annuel",
+					"texte": "14 750 €/an",
+					"etat": "value"
+				},
+				{
+					"fieldId": "dpe.document.emissions_ges",
+					"texte": "10 258 kg CO₂ éq/an",
+					"etat": "value"
+				},
+				{
+					"fieldId": "dpe.document.energie_chauffage",
+					"texte": "Électricité",
+					"etat": "value"
+				},
+				{
+					"fieldId": "dpe.document.installation_chauffage",
+					"texte": "individuel",
+					"etat": "value"
+				},
+				{
+					"fieldId": "dpe.document.isolation",
+					"texte": "insuffisante",
+					"etat": "value"
+				},
+				{
+					"fieldId": "dpe.document.periode_construction",
+					"texte": "avant 1948",
+					"etat": "value"
+				},
+				{
+					"fieldId": "dpe.document.surface_habitable",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"fieldId": "dpe.document.type_batiment",
+					"texte": "Immeuble",
+					"etat": "value"
+				}
+			]
+		},
+		"document-dpe-ancien": {
+			"baseRevision": "451dd5e3f3c6698e49a1014d5f4fb08b9818cfa8",
+			"capturedAt": "2026-10-26T11:17:30.974Z",
+			"page": "/dpe/2185E0000001A",
+			"rendu": [
+				{
+					"fieldId": "dpe.document.conso_ep",
+					"texte": "17 830 kWhEP/an",
+					"etat": "value"
+				},
+				{
+					"fieldId": "dpe.document.cout_annuel",
+					"texte": "1 834 €/an",
+					"etat": "value"
+				},
+				{
+					"fieldId": "dpe.document.emissions_ges",
+					"texte": "3 433 kg CO₂ éq/an",
+					"etat": "value"
+				},
+				{
+					"fieldId": "dpe.document.isolation",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"fieldId": "dpe.document.periode_construction",
+					"texte": "1948-1974",
+					"etat": "value"
+				},
+				{
+					"fieldId": "dpe.document.surface_habitable",
+					"texte": "79 m²",
+					"etat": "value"
+				},
+				{
+					"fieldId": "dpe.document.type_batiment",
+					"texte": "Maison · 79 m²",
+					"etat": "value"
+				},
+				{
+					"fieldId": "dpe.document.type_batiment",
+					"texte": "Maison",
+					"etat": "value"
+				}
+			]
+		},
+		"document-dpe-recent": {
+			"baseRevision": "451dd5e3f3c6698e49a1014d5f4fb08b9818cfa8",
+			"capturedAt": "2026-10-26T11:17:30.076Z",
+			"page": "/dpe/2485E0000003C",
+			"rendu": [
+				{
+					"fieldId": "dpe.document.conso_ep",
+					"texte": "9 120 kWhEP/an",
+					"etat": "value"
+				},
+				{
+					"fieldId": "dpe.document.cout_annuel",
+					"texte": "1 240 €/an",
+					"etat": "value"
+				},
+				{
+					"fieldId": "dpe.document.emissions_ges",
+					"texte": "1 005 kg CO₂ éq/an",
+					"etat": "value"
+				},
+				{
+					"fieldId": "dpe.document.isolation",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"fieldId": "dpe.document.periode_construction",
+					"texte": "1948-1974",
+					"etat": "value"
+				},
+				{
+					"fieldId": "dpe.document.surface_habitable",
+					"texte": "92 m²",
+					"etat": "value"
+				},
+				{
+					"fieldId": "dpe.document.type_batiment",
+					"texte": "Maison · 92 m²",
+					"etat": "value"
+				},
+				{
+					"fieldId": "dpe.document.type_batiment",
+					"texte": "Maison",
+					"etat": "value"
+				}
+			]
+		},
+		"documents-44109-zz04-00004-douze-liens": {
+			"baseRevision": "9149114ed69cc1cd412838dc924c9ba47e1e6070",
+			"capturedAt": "2026-10-25T06:02:14.632Z",
+			"page": "/adresse/44109_zz04_00004?theme=documents",
+			"rendu": [
+				{
+					"bloc": "adresse_brute",
+					"element": "volet-lien",
+					"terme": "Source",
+					"texte": "Diagnostics de performance énergétique (DPE)",
+					"href": "https://data.ademe.fr/datasets/dpe03existant"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet-lien",
+					"terme": "Source",
+					"texte": "Diagnostics de performance énergétique (DPE)",
+					"href": "https://data.ademe.fr/datasets/dpe03existant"
+				}
+			]
+		},
+		"documents-44109-zz04-00004-constat-ademe-liens": {
+			"baseRevision": "9149114ed69cc1cd412838dc924c9ba47e1e6070",
+			"capturedAt": "2026-10-25T06:02:14.014Z",
+			"page": "/adresse/44109_zz04_00004?theme=documents",
+			"rendu": [
+				{
+					"bloc": "adresse_brute",
+					"element": "volet-lien",
+					"terme": "Source",
+					"texte": "Diagnostics de performance énergétique (DPE)",
+					"href": "https://data.ademe.fr/datasets/dpe03existant"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet-lien",
+					"terme": "Source",
+					"texte": "Diagnostics de performance énergétique (DPE)",
+					"href": "https://data.ademe.fr/datasets/dpe03existant"
+				}
+			]
+		},
+		"documents-44109-zz04-00004-ademe-zero-liens": {
+			"baseRevision": "9149114ed69cc1cd412838dc924c9ba47e1e6070",
+			"capturedAt": "2026-10-25T06:02:13.406Z",
+			"page": "/adresse/44109_zz04_00004?theme=documents",
+			"rendu": [
+				{
+					"bloc": "adresse_brute",
+					"element": "volet-lien",
+					"terme": "Source",
+					"texte": "Diagnostics de performance énergétique (DPE)",
+					"href": "https://data.ademe.fr/datasets/dpe03existant"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet-lien",
+					"terme": "Source",
+					"texte": "Diagnostics de performance énergétique (DPE)",
+					"href": "https://data.ademe.fr/datasets/dpe03existant"
+				}
+			]
+		},
+		"documents-44109-zz04-00004-vide-liens": {
+			"baseRevision": "9149114ed69cc1cd412838dc924c9ba47e1e6070",
+			"capturedAt": "2026-10-25T06:02:12.789Z",
+			"page": "/adresse/44109_zz04_00004?theme=documents",
+			"rendu": [
+				{
+					"bloc": "adresse_brute",
+					"element": "volet-lien",
+					"terme": "Source",
+					"texte": "Diagnostics de performance énergétique (DPE)",
+					"href": "https://data.ademe.fr/datasets/dpe03existant"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet-lien",
+					"terme": "Source",
+					"texte": "Diagnostics de performance énergétique (DPE)",
+					"href": "https://data.ademe.fr/datasets/dpe03existant"
+				}
+			]
+		},
+		"documents-44109-zz04-00004-non-calcule-liens": {
+			"baseRevision": "9149114ed69cc1cd412838dc924c9ba47e1e6070",
+			"capturedAt": "2026-10-25T06:02:12.184Z",
+			"page": "/adresse/44109_zz04_00004?theme=documents",
+			"rendu": [
+				{
+					"bloc": "adresse_brute",
+					"element": "volet-lien",
+					"terme": "Source",
+					"texte": "Diagnostics de performance énergétique (DPE)",
+					"href": "https://data.ademe.fr/datasets/dpe03existant"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet-lien",
+					"terme": "Source",
+					"texte": "Diagnostics de performance énergétique (DPE)",
+					"href": "https://data.ademe.fr/datasets/dpe03existant"
+				}
+			]
+		},
+		"documents-44109-zz04-00004-servi-liens": {
+			"baseRevision": "9149114ed69cc1cd412838dc924c9ba47e1e6070",
+			"capturedAt": "2026-10-25T06:02:11.558Z",
+			"page": "/adresse/44109_zz04_00004?theme=documents",
+			"rendu": [
+				{
+					"bloc": "adresse_brute",
+					"element": "volet-lien",
+					"terme": "Source",
+					"texte": "Diagnostics de performance énergétique (DPE)",
+					"href": "https://data.ademe.fr/datasets/dpe03existant"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet-lien",
+					"terme": "Source",
+					"texte": "Diagnostics de performance énergétique (DPE)",
+					"href": "https://data.ademe.fr/datasets/dpe03existant"
+				}
+			]
+		},
+		"documents-44109-zz04-00004-sans-groupe-liens": {
+			"baseRevision": "9149114ed69cc1cd412838dc924c9ba47e1e6070",
+			"capturedAt": "2026-10-25T06:02:10.883Z",
+			"page": "/adresse/44109_zz04_00004?theme=documents",
+			"rendu": [
+				{
+					"bloc": "ademe",
+					"element": "volet-lien",
+					"terme": "Source",
+					"texte": "Diagnostics de performance énergétique (DPE)",
+					"href": "https://data.ademe.fr/datasets/dpe03existant"
+				}
+			]
+		},
+		"ventes-declarees-44109-zz04-00004-hors-parcelle": {
+			"baseRevision": "9149114ed69cc1cd412838dc924c9ba47e1e6070",
+			"capturedAt": "2026-10-25T05:58:06.161Z",
+			"page": "/adresse/44109_zz04_00004?theme=ventes",
+			"rendu": [
+				{
+					"zone": "liste",
+					"element": "plage",
+					"fieldId": null,
+					"texte": "Ventes 1 à 1 sur 1",
+					"etat": null,
+					"lien": null
+				},
+				{
+					"zone": "liste",
+					"element": "commune",
+					"fieldId": null,
+					"texte": "DVF (DGFiP) · 2021-01-02 → 2025-12-31 · ventes déclarées à ce numéro, rattachées à aucun logement",
+					"etat": null,
+					"lien": null
+				},
+				{
+					"zone": "liste",
+					"element": "volet",
+					"fieldId": null,
+					"texte": "Définition : Nombre de ventes enregistrées dans les demandes de valeurs foncières (DVF) rattachées à cette adresse par l'adresse saisie dans la déclaration (numéro, voie et commune), sur toute la période importée. La vente est rattachée par cette adresse déclarée, pas par la parcelle : elle peut aussi figurer parmi les ventes publiées sur la parcelle. Aucune vente rattachée ne veut pas dire aucune vente : pour une vente de plusieurs biens, seule l'adresse de sa première ligne est gardée, et une partie des ventes déclarées ne retrouve aucune adresse de la Base Adresse Nationale. Les données DVF importées ne gardent pas le suffixe (bis, ter) : une vente déclarée au « 2 bis » peut apparaître sur la page du « 2 ».",
+					"etat": null,
+					"lien": null
+				},
+				{
+					"zone": "liste",
+					"element": "volet",
+					"fieldId": null,
+					"texte": "Objet : Vente",
+					"etat": null,
+					"lien": null
+				},
+				{
+					"zone": "liste",
+					"element": "volet",
+					"fieldId": null,
+					"texte": "Rattachement : Adresse déclarée dans la vente (DVF)",
+					"etat": null,
+					"lien": null
+				},
+				{
+					"zone": "liste",
+					"element": "volet",
+					"fieldId": null,
+					"texte": "Période : 2021-01-02 → 2025-12-31",
+					"etat": null,
+					"lien": null
+				},
+				{
+					"zone": "liste",
+					"element": "volet",
+					"fieldId": null,
+					"texte": "Source : Demandes de valeurs foncières (DVF)",
+					"etat": null,
+					"lien": "https://www.data.gouv.fr/datasets/demandes-de-valeurs-foncieres-geolocalisees"
+				},
+				{
+					"zone": "essentiel",
+					"element": "valeur",
+					"fieldId": "adresse.dvf.ventes_parcelle.nombre",
+					"texte": "Point hors parcelle",
+					"etat": "not_available",
+					"lien": null
+				}
+			]
+		},
+		"ventes-declarees-44109-zz04-00004": {
+			"baseRevision": "9149114ed69cc1cd412838dc924c9ba47e1e6070",
+			"capturedAt": "2026-10-25T05:58:05.499Z",
+			"page": "/adresse/44109_zz04_00004?theme=ventes",
+			"rendu": [
+				{
+					"zone": "liste",
+					"element": "plage",
+					"fieldId": null,
+					"texte": "Ventes 1 à 3 sur 3",
+					"etat": null,
+					"lien": null
+				},
+				{
+					"zone": "liste",
+					"element": "commune",
+					"fieldId": null,
+					"texte": "DVF (DGFiP) · 2021-01-02 → 2025-12-31 · ventes déclarées à ce numéro, rattachées à aucun logement",
+					"etat": null,
+					"lien": null
+				},
+				{
+					"zone": "liste",
+					"element": "volet",
+					"fieldId": null,
+					"texte": "Définition : Nombre de ventes enregistrées dans les demandes de valeurs foncières (DVF) rattachées à cette adresse par l'adresse saisie dans la déclaration (numéro, voie et commune), sur toute la période importée. La vente est rattachée par cette adresse déclarée, pas par la parcelle : elle peut aussi figurer parmi les ventes publiées sur la parcelle. Aucune vente rattachée ne veut pas dire aucune vente : pour une vente de plusieurs biens, seule l'adresse de sa première ligne est gardée, et une partie des ventes déclarées ne retrouve aucune adresse de la Base Adresse Nationale. Les données DVF importées ne gardent pas le suffixe (bis, ter) : une vente déclarée au « 2 bis » peut apparaître sur la page du « 2 ».",
+					"etat": null,
+					"lien": null
+				},
+				{
+					"zone": "liste",
+					"element": "volet",
+					"fieldId": null,
+					"texte": "Objet : Vente",
+					"etat": null,
+					"lien": null
+				},
+				{
+					"zone": "liste",
+					"element": "volet",
+					"fieldId": null,
+					"texte": "Rattachement : Adresse déclarée dans la vente (DVF)",
+					"etat": null,
+					"lien": null
+				},
+				{
+					"zone": "liste",
+					"element": "volet",
+					"fieldId": null,
+					"texte": "Période : 2021-01-02 → 2025-12-31",
+					"etat": null,
+					"lien": null
+				},
+				{
+					"zone": "liste",
+					"element": "volet",
+					"fieldId": null,
+					"texte": "Source : Demandes de valeurs foncières (DVF)",
+					"etat": null,
+					"lien": "https://www.data.gouv.fr/datasets/demandes-de-valeurs-foncieres-geolocalisees"
+				},
+				{
+					"zone": "essentiel",
+					"element": "valeur",
+					"fieldId": "adresse.dvf.ventes_parcelle.nombre",
+					"texte": "3",
+					"etat": "value",
+					"lien": null
+				}
+			]
+		},
+		"documents-44109-zz04-00004-douze": {
+			"baseRevision": "7a9fa615ab9c3705e94a618c4e8b9017c8559304",
+			"capturedAt": "2026-10-25T04:23:21.471Z",
+			"page": "/adresse/44109_zz04_00004?theme=documents",
+			"rendu": [
+				{
+					"bloc": "ademe",
+					"element": "titre",
+					"texte": "Documents DPE déclarés à cette adresse"
+				},
+				{
+					"bloc": "ademe",
+					"element": "phrase",
+					"texte": "5 DPE déclarés à cette adresse · le plus récent : classe D, mars 2026"
+				},
+				{
+					"bloc": "ademe",
+					"element": "commune",
+					"texte": "Adresse saisie par le diagnostiqueur · aucun document n'est rattaché à un logement précis · ADEME, dernière importation réussie le 8 octobre 2026"
+				},
+				{
+					"bloc": "ademe",
+					"element": "repartition",
+					"texte": "Classe A 0Classe B 0Classe C 1Classe D 2Classe E 1Classe F 1Classe G 0"
+				},
+				{
+					"bloc": "ademe",
+					"element": "plage",
+					"texte": "Documents 1 à 5 sur 5"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Définition : Nombre de diagnostics de performance énergétique (DPE) dont l'adresse saisie par le diagnostiqueur correspond à cette adresse. Aucun n'est rattaché à un logement précis."
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Objet : Document DPE"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Rattachement : Adresse saisie par le diagnostiqueur (non vérifiée)"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Source : Diagnostics de performance énergétique (DPE)"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Dernière importation réussie : 8 octobre 2026"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Adresse déclarée non affichée : Le document y joint un complément (étage, porte, bâtiment ou nom). Le texte saisi par le diagnostiqueur est conservé par DataCommune et n'est pas publié."
+				},
+				{
+					"bloc": "ademe",
+					"element": "carte",
+					"rang": 0,
+					"numero": "2644E8000029X",
+					"lien": "/dpe/2644E8000029X",
+					"energie": "Classe D",
+					"climat": "GES D",
+					"typeSurface": "Appartement · 118,9 m²",
+					"dates": "Établi le 16 mars 2026 · valable jusqu'au 15 mars 2036",
+					"badges": [
+						"Le plus récent"
+					],
+					"rattachement": null,
+					"adresse": null
+				},
+				{
+					"bloc": "ademe",
+					"element": "carte",
+					"rang": 1,
+					"numero": "2644E8000030X",
+					"lien": "/dpe/2644E8000030X",
+					"energie": "Classe E",
+					"climat": "GES C",
+					"typeSurface": "Immeuble · surface non renseignée",
+					"dates": "Établi le 27 février 2026 · valable jusqu'au 26 février 2036",
+					"badges": [],
+					"rattachement": null,
+					"adresse": null
+				},
+				{
+					"bloc": "ademe",
+					"element": "carte",
+					"rang": 2,
+					"numero": "2544E8000031X",
+					"lien": "/dpe/2544E8000031X",
+					"energie": "Classe C",
+					"climat": "GES A",
+					"typeSurface": "Appartement · 36,9 m²",
+					"dates": "Établi le 10 février 2025 · valable jusqu'au 9 février 2035",
+					"badges": [],
+					"rattachement": null,
+					"adresse": "Adresse déclarée non affichée"
+				},
+				{
+					"bloc": "ademe",
+					"element": "carte",
+					"rang": 3,
+					"numero": "2444E8000032X",
+					"lien": "/dpe/2444E8000032X",
+					"energie": "Classe F",
+					"climat": "GES C",
+					"typeSurface": "Appartement · 31,8 m²",
+					"dates": "Établi le 14 mars 2024 · valable jusqu'au 13 mars 2034",
+					"badges": [
+						"Remplacement non vérifié"
+					],
+					"rattachement": null,
+					"adresse": null
+				},
+				{
+					"bloc": "ademe",
+					"element": "carte",
+					"rang": 4,
+					"numero": "2244E8000033X",
+					"lien": "/dpe/2244E8000033X",
+					"energie": "Classe D",
+					"climat": "GES D",
+					"typeSurface": "Appartement · 118,4 m²",
+					"dates": "Établi le 16 juin 2022 · valable jusqu'au 15 juin 2032",
+					"badges": [],
+					"rattachement": null,
+					"adresse": null
+				}
+			]
+		},
+		"documents-44109-zz04-00004-constat-ademe": {
+			"baseRevision": "7a9fa615ab9c3705e94a618c4e8b9017c8559304",
+			"capturedAt": "2026-10-25T04:23:20.870Z",
+			"page": "/adresse/44109_zz04_00004?theme=documents",
+			"rendu": [
+				{
+					"bloc": "ademe",
+					"element": "titre",
+					"texte": "Documents DPE déclarés à cette adresse"
+				},
+				{
+					"bloc": "ademe",
+					"element": "phrase",
+					"texte": "1 DPE déclaré à cette adresse · classe D, mars 2026"
+				},
+				{
+					"bloc": "ademe",
+					"element": "commune",
+					"texte": "Adresse saisie par le diagnostiqueur · aucun document n'est rattaché à un logement précis · ADEME, dernière importation réussie le 8 octobre 2026"
+				},
+				{
+					"bloc": "ademe",
+					"element": "constat",
+					"texte": "Une adresse, un bâtiment, un DPE : les éléments concordent maison · document unique à la clé BAN · concordance stricte de l'adresse brute · bâtiment unique sur la parcelle du point BAN · annexes déclarées exclues, bâtiment d'usage inconnu compté"
+				},
+				{
+					"bloc": "ademe",
+					"element": "plage",
+					"texte": "Documents 1 à 1 sur 1"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet-constat",
+					"texte": "Méthode : maison · document unique à la clé BAN · concordance stricte de l'adresse brute · bâtiment unique sur la parcelle du point BAN · annexes déclarées exclues, bâtiment d'usage inconnu compté"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet-constat",
+					"texte": "Sources : Diagnostics de performance énergétique (DPE) · BD TOPO — Bâtiments"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet-constat",
+					"texte": "Limite : Ce constat ne prouve pas l'identité d'un logement."
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Définition : Nombre de diagnostics de performance énergétique (DPE) dont l'adresse saisie par le diagnostiqueur correspond à cette adresse. Aucun n'est rattaché à un logement précis."
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Objet : Document DPE"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Rattachement : Adresse saisie par le diagnostiqueur (non vérifiée)"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Source : Diagnostics de performance énergétique (DPE)"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Dernière importation réussie : 8 octobre 2026"
+				},
+				{
+					"bloc": "ademe",
+					"element": "carte",
+					"rang": 0,
+					"numero": "2644E8000029X",
+					"lien": "/dpe/2644E8000029X",
+					"energie": "Classe D",
+					"climat": "GES D",
+					"typeSurface": "Maison · 118,9 m²",
+					"dates": "Établi le 16 mars 2026 · valable jusqu'au 15 mars 2036",
+					"badges": [
+						"Le plus récent"
+					],
+					"rattachement": null,
+					"adresse": null
+				}
+			]
+		},
+		"documents-44109-zz04-00004-ademe-zero": {
+			"baseRevision": "7a9fa615ab9c3705e94a618c4e8b9017c8559304",
+			"capturedAt": "2026-10-25T04:23:20.280Z",
+			"page": "/adresse/44109_zz04_00004?theme=documents",
+			"rendu": [
+				{
+					"bloc": "ademe",
+					"element": "titre",
+					"texte": "Documents DPE déclarés à cette adresse"
+				},
+				{
+					"bloc": "ademe",
+					"element": "phrase",
+					"texte": "Aucun DPE déclaré à cette adresse dans la base ADEME importée le 8 octobre 2026. Cela ne prouve pas qu'aucun DPE n'a été réalisé."
+				},
+				{
+					"bloc": "ademe",
+					"element": "commune",
+					"texte": "Adresse saisie par le diagnostiqueur · aucun document n'est rattaché à un logement précis · ADEME, dernière importation réussie le 8 octobre 2026"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Définition : Nombre de diagnostics de performance énergétique (DPE) dont l'adresse saisie par le diagnostiqueur correspond à cette adresse. Aucun n'est rattaché à un logement précis."
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Objet : Document DPE"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Rattachement : Adresse saisie par le diagnostiqueur (non vérifiée)"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Source : Diagnostics de performance énergétique (DPE)"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Dernière importation réussie : 8 octobre 2026"
+				}
+			]
+		},
+		"documents-44109-zz04-00004-vide": {
+			"baseRevision": "7a9fa615ab9c3705e94a618c4e8b9017c8559304",
+			"capturedAt": "2026-10-25T04:23:19.699Z",
+			"page": "/adresse/44109_zz04_00004?theme=documents",
+			"rendu": [
+				{
+					"bloc": "ademe",
+					"element": "titre",
+					"texte": "Documents DPE déclarés à cette adresse"
+				},
+				{
+					"bloc": "ademe",
+					"element": "phrase",
+					"texte": "5 DPE déclarés à cette adresse · le plus récent : classe D, mars 2026"
+				},
+				{
+					"bloc": "ademe",
+					"element": "commune",
+					"texte": "Adresse saisie par le diagnostiqueur · aucun document n'est rattaché à un logement précis · ADEME, dernière importation réussie le 8 octobre 2026"
+				},
+				{
+					"bloc": "ademe",
+					"element": "repartition",
+					"texte": "Classe A 0Classe B 0Classe C 1Classe D 2Classe E 1Classe F 1Classe G 0"
+				},
+				{
+					"bloc": "ademe",
+					"element": "plage",
+					"texte": "Documents 1 à 5 sur 5"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Définition : Nombre de diagnostics de performance énergétique (DPE) dont l'adresse saisie par le diagnostiqueur correspond à cette adresse. Aucun n'est rattaché à un logement précis."
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Objet : Document DPE"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Rattachement : Adresse saisie par le diagnostiqueur (non vérifiée)"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Source : Diagnostics de performance énergétique (DPE)"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Dernière importation réussie : 8 octobre 2026"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Adresse déclarée non affichée : Le document y joint un complément (étage, porte, bâtiment ou nom). Le texte saisi par le diagnostiqueur est conservé par DataCommune et n'est pas publié."
+				},
+				{
+					"bloc": "ademe",
+					"element": "carte",
+					"rang": 0,
+					"numero": "2644E8000029X",
+					"lien": "/dpe/2644E8000029X",
+					"energie": "Classe D",
+					"climat": "GES D",
+					"typeSurface": "Appartement · 118,9 m²",
+					"dates": "Établi le 16 mars 2026 · valable jusqu'au 15 mars 2036",
+					"badges": [
+						"Le plus récent"
+					],
+					"rattachement": null,
+					"adresse": null
+				},
+				{
+					"bloc": "ademe",
+					"element": "carte",
+					"rang": 1,
+					"numero": "2644E8000030X",
+					"lien": "/dpe/2644E8000030X",
+					"energie": "Classe E",
+					"climat": "GES C",
+					"typeSurface": "Immeuble · surface non renseignée",
+					"dates": "Établi le 27 février 2026 · valable jusqu'au 26 février 2036",
+					"badges": [],
+					"rattachement": null,
+					"adresse": null
+				},
+				{
+					"bloc": "ademe",
+					"element": "carte",
+					"rang": 2,
+					"numero": "2544E8000031X",
+					"lien": "/dpe/2544E8000031X",
+					"energie": "Classe C",
+					"climat": "GES A",
+					"typeSurface": "Appartement · 36,9 m²",
+					"dates": "Établi le 10 février 2025 · valable jusqu'au 9 février 2035",
+					"badges": [],
+					"rattachement": null,
+					"adresse": "Adresse déclarée non affichée"
+				},
+				{
+					"bloc": "ademe",
+					"element": "carte",
+					"rang": 3,
+					"numero": "2444E8000032X",
+					"lien": "/dpe/2444E8000032X",
+					"energie": "Classe F",
+					"climat": "GES C",
+					"typeSurface": "Appartement · 31,8 m²",
+					"dates": "Établi le 14 mars 2024 · valable jusqu'au 13 mars 2034",
+					"badges": [
+						"Remplacement non vérifié"
+					],
+					"rattachement": null,
+					"adresse": null
+				},
+				{
+					"bloc": "ademe",
+					"element": "carte",
+					"rang": 4,
+					"numero": "2244E8000033X",
+					"lien": "/dpe/2244E8000033X",
+					"energie": "Classe D",
+					"climat": "GES D",
+					"typeSurface": "Appartement · 118,4 m²",
+					"dates": "Établi le 16 juin 2022 · valable jusqu'au 15 juin 2032",
+					"badges": [],
+					"rattachement": null,
+					"adresse": null
+				}
+			]
+		},
+		"documents-44109-zz04-00004-non-calcule": {
+			"baseRevision": "7a9fa615ab9c3705e94a618c4e8b9017c8559304",
+			"capturedAt": "2026-10-25T04:23:19.109Z",
+			"page": "/adresse/44109_zz04_00004?theme=documents",
+			"rendu": [
+				{
+					"bloc": "ademe",
+					"element": "titre",
+					"texte": "Documents DPE déclarés à cette adresse"
+				},
+				{
+					"bloc": "ademe",
+					"element": "phrase",
+					"texte": "5 DPE déclarés à cette adresse · le plus récent : classe D, mars 2026"
+				},
+				{
+					"bloc": "ademe",
+					"element": "commune",
+					"texte": "Adresse saisie par le diagnostiqueur · aucun document n'est rattaché à un logement précis · ADEME, dernière importation réussie le 8 octobre 2026"
+				},
+				{
+					"bloc": "ademe",
+					"element": "repartition",
+					"texte": "Classe A 0Classe B 0Classe C 1Classe D 2Classe E 1Classe F 1Classe G 0"
+				},
+				{
+					"bloc": "ademe",
+					"element": "plage",
+					"texte": "Documents 1 à 5 sur 5"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Définition : Nombre de diagnostics de performance énergétique (DPE) dont l'adresse saisie par le diagnostiqueur correspond à cette adresse. Aucun n'est rattaché à un logement précis."
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Objet : Document DPE"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Rattachement : Adresse saisie par le diagnostiqueur (non vérifiée)"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Source : Diagnostics de performance énergétique (DPE)"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Dernière importation réussie : 8 octobre 2026"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Adresse déclarée non affichée : Le document y joint un complément (étage, porte, bâtiment ou nom). Le texte saisi par le diagnostiqueur est conservé par DataCommune et n'est pas publié."
+				},
+				{
+					"bloc": "ademe",
+					"element": "carte",
+					"rang": 0,
+					"numero": "2644E8000029X",
+					"lien": "/dpe/2644E8000029X",
+					"energie": "Classe D",
+					"climat": "GES D",
+					"typeSurface": "Appartement · 118,9 m²",
+					"dates": "Établi le 16 mars 2026 · valable jusqu'au 15 mars 2036",
+					"badges": [
+						"Le plus récent"
+					],
+					"rattachement": null,
+					"adresse": null
+				},
+				{
+					"bloc": "ademe",
+					"element": "carte",
+					"rang": 1,
+					"numero": "2644E8000030X",
+					"lien": "/dpe/2644E8000030X",
+					"energie": "Classe E",
+					"climat": "GES C",
+					"typeSurface": "Immeuble · surface non renseignée",
+					"dates": "Établi le 27 février 2026 · valable jusqu'au 26 février 2036",
+					"badges": [],
+					"rattachement": null,
+					"adresse": null
+				},
+				{
+					"bloc": "ademe",
+					"element": "carte",
+					"rang": 2,
+					"numero": "2544E8000031X",
+					"lien": "/dpe/2544E8000031X",
+					"energie": "Classe C",
+					"climat": "GES A",
+					"typeSurface": "Appartement · 36,9 m²",
+					"dates": "Établi le 10 février 2025 · valable jusqu'au 9 février 2035",
+					"badges": [],
+					"rattachement": null,
+					"adresse": "Adresse déclarée non affichée"
+				},
+				{
+					"bloc": "ademe",
+					"element": "carte",
+					"rang": 3,
+					"numero": "2444E8000032X",
+					"lien": "/dpe/2444E8000032X",
+					"energie": "Classe F",
+					"climat": "GES C",
+					"typeSurface": "Appartement · 31,8 m²",
+					"dates": "Établi le 14 mars 2024 · valable jusqu'au 13 mars 2034",
+					"badges": [
+						"Remplacement non vérifié"
+					],
+					"rattachement": null,
+					"adresse": null
+				},
+				{
+					"bloc": "ademe",
+					"element": "carte",
+					"rang": 4,
+					"numero": "2244E8000033X",
+					"lien": "/dpe/2244E8000033X",
+					"energie": "Classe D",
+					"climat": "GES D",
+					"typeSurface": "Appartement · 118,4 m²",
+					"dates": "Établi le 16 juin 2022 · valable jusqu'au 15 juin 2032",
+					"badges": [],
+					"rattachement": null,
+					"adresse": null
+				}
+			]
+		},
+		"documents-44109-zz04-00004-servi": {
+			"baseRevision": "7a9fa615ab9c3705e94a618c4e8b9017c8559304",
+			"capturedAt": "2026-10-25T04:23:18.504Z",
+			"page": "/adresse/44109_zz04_00004?theme=documents",
+			"rendu": [
+				{
+					"bloc": "ademe",
+					"element": "titre",
+					"texte": "Documents DPE déclarés à cette adresse"
+				},
+				{
+					"bloc": "ademe",
+					"element": "phrase",
+					"texte": "5 DPE déclarés à cette adresse · le plus récent : classe D, mars 2026"
+				},
+				{
+					"bloc": "ademe",
+					"element": "commune",
+					"texte": "Adresse saisie par le diagnostiqueur · aucun document n'est rattaché à un logement précis · ADEME, dernière importation réussie le 8 octobre 2026"
+				},
+				{
+					"bloc": "ademe",
+					"element": "repartition",
+					"texte": "Classe A 0Classe B 0Classe C 1Classe D 2Classe E 1Classe F 1Classe G 0"
+				},
+				{
+					"bloc": "ademe",
+					"element": "plage",
+					"texte": "Documents 1 à 5 sur 5"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Définition : Nombre de diagnostics de performance énergétique (DPE) dont l'adresse saisie par le diagnostiqueur correspond à cette adresse. Aucun n'est rattaché à un logement précis."
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Objet : Document DPE"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Rattachement : Adresse saisie par le diagnostiqueur (non vérifiée)"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Source : Diagnostics de performance énergétique (DPE)"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Dernière importation réussie : 8 octobre 2026"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Adresse déclarée non affichée : Le document y joint un complément (étage, porte, bâtiment ou nom). Le texte saisi par le diagnostiqueur est conservé par DataCommune et n'est pas publié."
+				},
+				{
+					"bloc": "ademe",
+					"element": "carte",
+					"rang": 0,
+					"numero": "2644E8000029X",
+					"lien": "/dpe/2644E8000029X",
+					"energie": "Classe D",
+					"climat": "GES D",
+					"typeSurface": "Appartement · 118,9 m²",
+					"dates": "Établi le 16 mars 2026 · valable jusqu'au 15 mars 2036",
+					"badges": [
+						"Le plus récent"
+					],
+					"rattachement": null,
+					"adresse": null
+				},
+				{
+					"bloc": "ademe",
+					"element": "carte",
+					"rang": 1,
+					"numero": "2644E8000030X",
+					"lien": "/dpe/2644E8000030X",
+					"energie": "Classe E",
+					"climat": "GES C",
+					"typeSurface": "Immeuble · surface non renseignée",
+					"dates": "Établi le 27 février 2026 · valable jusqu'au 26 février 2036",
+					"badges": [],
+					"rattachement": null,
+					"adresse": null
+				},
+				{
+					"bloc": "ademe",
+					"element": "carte",
+					"rang": 2,
+					"numero": "2544E8000031X",
+					"lien": "/dpe/2544E8000031X",
+					"energie": "Classe C",
+					"climat": "GES A",
+					"typeSurface": "Appartement · 36,9 m²",
+					"dates": "Établi le 10 février 2025 · valable jusqu'au 9 février 2035",
+					"badges": [],
+					"rattachement": null,
+					"adresse": "Adresse déclarée non affichée"
+				},
+				{
+					"bloc": "ademe",
+					"element": "carte",
+					"rang": 3,
+					"numero": "2444E8000032X",
+					"lien": "/dpe/2444E8000032X",
+					"energie": "Classe F",
+					"climat": "GES C",
+					"typeSurface": "Appartement · 31,8 m²",
+					"dates": "Établi le 14 mars 2024 · valable jusqu'au 13 mars 2034",
+					"badges": [
+						"Remplacement non vérifié"
+					],
+					"rattachement": null,
+					"adresse": null
+				},
+				{
+					"bloc": "ademe",
+					"element": "carte",
+					"rang": 4,
+					"numero": "2244E8000033X",
+					"lien": "/dpe/2244E8000033X",
+					"energie": "Classe D",
+					"climat": "GES D",
+					"typeSurface": "Appartement · 118,4 m²",
+					"dates": "Établi le 16 juin 2022 · valable jusqu'au 15 juin 2032",
+					"badges": [],
+					"rattachement": null,
+					"adresse": null
+				}
+			]
+		},
+		"documents-44109-zz04-00004-sans-groupe": {
+			"baseRevision": "7a9fa615ab9c3705e94a618c4e8b9017c8559304",
+			"capturedAt": "2026-10-25T04:23:17.844Z",
+			"page": "/adresse/44109_zz04_00004?theme=documents",
+			"rendu": [
+				{
+					"bloc": "ademe",
+					"element": "titre",
+					"texte": "Documents DPE déclarés à cette adresse"
+				},
+				{
+					"bloc": "ademe",
+					"element": "phrase",
+					"texte": "5 DPE déclarés à cette adresse · le plus récent : classe D, mars 2026"
+				},
+				{
+					"bloc": "ademe",
+					"element": "commune",
+					"texte": "Adresse saisie par le diagnostiqueur · aucun document n'est rattaché à un logement précis · ADEME, dernière importation réussie le 8 octobre 2026"
+				},
+				{
+					"bloc": "ademe",
+					"element": "repartition",
+					"texte": "Classe A 0Classe B 0Classe C 1Classe D 2Classe E 1Classe F 1Classe G 0"
+				},
+				{
+					"bloc": "ademe",
+					"element": "plage",
+					"texte": "Documents 1 à 5 sur 5"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Définition : Nombre de diagnostics de performance énergétique (DPE) dont l'adresse saisie par le diagnostiqueur correspond à cette adresse. Aucun n'est rattaché à un logement précis."
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Objet : Document DPE"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Rattachement : Adresse saisie par le diagnostiqueur (non vérifiée)"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Source : Diagnostics de performance énergétique (DPE)"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Dernière importation réussie : 8 octobre 2026"
+				},
+				{
+					"bloc": "ademe",
+					"element": "volet",
+					"texte": "Adresse déclarée non affichée : Le document y joint un complément (étage, porte, bâtiment ou nom). Le texte saisi par le diagnostiqueur est conservé par DataCommune et n'est pas publié."
+				},
+				{
+					"bloc": "ademe",
+					"element": "carte",
+					"rang": 0,
+					"numero": "2644E8000029X",
+					"lien": "/dpe/2644E8000029X",
+					"energie": "Classe D",
+					"climat": "GES D",
+					"typeSurface": "Appartement · 118,9 m²",
+					"dates": "Établi le 16 mars 2026 · valable jusqu'au 15 mars 2036",
+					"badges": [
+						"Le plus récent"
+					],
+					"rattachement": null,
+					"adresse": null
+				},
+				{
+					"bloc": "ademe",
+					"element": "carte",
+					"rang": 1,
+					"numero": "2644E8000030X",
+					"lien": "/dpe/2644E8000030X",
+					"energie": "Classe E",
+					"climat": "GES C",
+					"typeSurface": "Immeuble · surface non renseignée",
+					"dates": "Établi le 27 février 2026 · valable jusqu'au 26 février 2036",
+					"badges": [],
+					"rattachement": null,
+					"adresse": null
+				},
+				{
+					"bloc": "ademe",
+					"element": "carte",
+					"rang": 2,
+					"numero": "2544E8000031X",
+					"lien": "/dpe/2544E8000031X",
+					"energie": "Classe C",
+					"climat": "GES A",
+					"typeSurface": "Appartement · 36,9 m²",
+					"dates": "Établi le 10 février 2025 · valable jusqu'au 9 février 2035",
+					"badges": [],
+					"rattachement": null,
+					"adresse": "Adresse déclarée non affichée"
+				},
+				{
+					"bloc": "ademe",
+					"element": "carte",
+					"rang": 3,
+					"numero": "2444E8000032X",
+					"lien": "/dpe/2444E8000032X",
+					"energie": "Classe F",
+					"climat": "GES C",
+					"typeSurface": "Appartement · 31,8 m²",
+					"dates": "Établi le 14 mars 2024 · valable jusqu'au 13 mars 2034",
+					"badges": [
+						"Remplacement non vérifié"
+					],
+					"rattachement": null,
+					"adresse": null
+				},
+				{
+					"bloc": "ademe",
+					"element": "carte",
+					"rang": 4,
+					"numero": "2244E8000033X",
+					"lien": "/dpe/2244E8000033X",
+					"energie": "Classe D",
+					"climat": "GES D",
+					"typeSurface": "Appartement · 118,4 m²",
+					"dates": "Établi le 16 juin 2022 · valable jusqu'au 15 juin 2032",
+					"badges": [],
+					"rattachement": null,
+					"adresse": null
+				}
+			]
+		},
+		"essentiel-lignes-adresse-44109-zz04-00004": {
+			"baseRevision": "974c17d49a2a04dbd0da04ed7df12f02dc37cdb5",
+			"capturedAt": "2026-10-25T01:50:18.779Z",
+			"page": "/adresse/44109_zz04_00004",
+			"rendu": [
+				{
+					"ligne": "dpe-plus-recent",
+					"libelle": "Plus récent",
+					"texte": "mars 2026",
+					"meta": null,
+					"classe": "Classe D"
+				}
+			]
+		},
+		"essentiel-volets-adresse-44109-zz04-00004": {
+			"baseRevision": "974c17d49a2a04dbd0da04ed7df12f02dc37cdb5",
+			"capturedAt": "2026-10-25T01:50:18.156Z",
+			"page": "/adresse/44109_zz04_00004",
+			"rendu": [
+				{
+					"carte": "argiles",
+					"volet": "Argiles au point",
+					"terme": "Période",
+					"valeur": "13 octobre 2026"
+				},
+				{
+					"carte": "dpe",
+					"volet": "DPE déclarés à cette adresse",
+					"terme": "Période",
+					"valeur": "8 octobre 2026"
+				},
+				{
+					"carte": "reference",
+					"volet": "Prix médian dans la commune · Appartements",
+					"terme": "Période",
+					"valeur": "2024-12-31 → 2025-12-31"
+				},
+				{
+					"carte": "reference",
+					"volet": "Prix médian dans la commune · Maisons",
+					"terme": "Période",
+					"valeur": "2024-12-31 → 2025-12-31"
+				},
+				{
+					"carte": "ventes",
+					"volet": "Ventes sur la parcelle",
+					"terme": "Période",
+					"valeur": "2021-01-02 → 2025-12-31"
+				}
+			]
+		},
+		"essentiel-volets-adresse-85191-zz05-00011": {
+			"baseRevision": "974c17d49a2a04dbd0da04ed7df12f02dc37cdb5",
+			"capturedAt": "2026-10-25T01:50:16.156Z",
+			"page": "/adresse/85191_zz05_00011",
+			"rendu": [
+				{
+					"carte": "argiles",
+					"volet": "Argiles au point",
+					"terme": "Période",
+					"valeur": "12 octobre 2026"
+				},
+				{
+					"carte": "dpe",
+					"volet": "DPE déclarés à cette adresse",
+					"terme": "Période",
+					"valeur": "8 octobre 2026"
+				},
+				{
+					"carte": "dpe-dominant",
+					"volet": "Classe DPE médiane",
+					"terme": "Dernière importation réussie",
+					"valeur": "08/10/2026"
+				},
+				{
+					"carte": "dpe-dominant",
+					"volet": "Classe DPE médiane",
+					"terme": "Période",
+					"valeur": "Dates des diagnostics non renseignées"
+				},
+				{
+					"carte": "prix-appartements",
+					"volet": "Prix médian des appartements",
+					"terme": "Dernière importation réussie",
+					"valeur": "25/09/2026"
+				},
+				{
+					"carte": "prix-appartements",
+					"volet": "Prix médian des appartements",
+					"terme": "Période",
+					"valeur": "2024-12-31 → 2025-12-31"
+				},
+				{
+					"carte": "prix-maisons",
+					"volet": "Prix médian des maisons",
+					"terme": "Dernière importation réussie",
+					"valeur": "25/09/2026"
+				},
+				{
+					"carte": "prix-maisons",
+					"volet": "Prix médian des maisons",
+					"terme": "Période",
+					"valeur": "2024-12-31 → 2025-12-31"
+				},
+				{
+					"carte": "reference",
+					"volet": "Prix médian dans la commune · Appartements",
+					"terme": "Période",
+					"valeur": "2024-12-31 → 2025-12-31"
+				},
+				{
+					"carte": "reference",
+					"volet": "Prix médian dans la commune · Maisons",
+					"terme": "Période",
+					"valeur": "2024-12-31 → 2025-12-31"
+				}
+			]
+		},
+		"essentiel-volets-commune-85191": {
+			"baseRevision": "974c17d49a2a04dbd0da04ed7df12f02dc37cdb5",
+			"capturedAt": "2026-10-25T01:50:15.438Z",
+			"page": "/commune/85191",
+			"rendu": [
+				{
+					"carte": "dpe-dominant",
+					"volet": "Classe DPE médiane",
+					"terme": "Dernière importation réussie",
+					"valeur": "08/10/2026"
+				},
+				{
+					"carte": "dpe-dominant",
+					"volet": "Classe DPE médiane",
+					"terme": "Période",
+					"valeur": "Dates des diagnostics non renseignées"
+				},
+				{
+					"carte": "prix-appartements",
+					"volet": "Prix médian appartement (hors ventes sur plan)",
+					"terme": "Dernière importation réussie",
+					"valeur": "25/09/2026"
+				},
+				{
+					"carte": "prix-appartements",
+					"volet": "Prix médian appartement (hors ventes sur plan)",
+					"terme": "Période",
+					"valeur": "2024-12-31 → 2025-12-31"
+				},
+				{
+					"carte": "prix-maisons",
+					"volet": "Prix médian maison (hors ventes sur plan)",
+					"terme": "Dernière importation réussie",
+					"valeur": "25/09/2026"
+				},
+				{
+					"carte": "prix-maisons",
+					"volet": "Prix médian maison (hors ventes sur plan)",
+					"terme": "Période",
+					"valeur": "2024-12-31 → 2025-12-31"
+				}
+			]
+		},
+		"comparateur-documents": {
+			"baseRevision": "1c423c98d88e3ab3fedfcbd5366d1e0fe3140c24",
+			"capturedAt": "2026-10-24T19:47:59.265Z",
+			"page": "/comparer?dpe=2185E0000001A,2385E0123456A",
+			"rendu": [
+				{
+					"groupe": "adresse",
+					"cle": "adresse_ban",
+					"code": "2185E0000001A",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "adresse",
+					"cle": "adresse_ban",
+					"code": "2385E0123456A",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "adresse",
+					"cle": "adresse_declaree",
+					"code": "2185E0000001A",
+					"texte": "« 12 rue des Lilas »",
+					"etat": "value"
+				},
+				{
+					"groupe": "adresse",
+					"cle": "adresse_declaree",
+					"code": "2385E0123456A",
+					"texte": "non affichée : le document y joint un complément (étage, porte, bâtiment ou nom).",
+					"etat": "value"
+				},
+				{
+					"groupe": "cout_validite",
+					"cle": "cout_annuel",
+					"code": "2185E0000001A",
+					"texte": "1 834 €/an",
+					"etat": "value"
+				},
+				{
+					"groupe": "cout_validite",
+					"cle": "cout_annuel",
+					"code": "2385E0123456A",
+					"texte": "2 034 €/an",
+					"etat": "value"
+				},
+				{
+					"groupe": "cout_validite",
+					"cle": "etabli_le",
+					"code": "2185E0000001A",
+					"texte": "4 mai 2020",
+					"etat": "value"
+				},
+				{
+					"groupe": "cout_validite",
+					"cle": "etabli_le",
+					"code": "2385E0123456A",
+					"texte": "5 janvier 2026",
+					"etat": "value"
+				},
+				{
+					"groupe": "cout_validite",
+					"cle": "methode",
+					"code": "2185E0000001A",
+					"texte": "Ancienne méthode",
+					"etat": "value"
+				},
+				{
+					"groupe": "cout_validite",
+					"cle": "methode",
+					"code": "2385E0123456A",
+					"texte": "Méthode actuelle (depuis juillet 2021)",
+					"etat": "value"
+				},
+				{
+					"groupe": "cout_validite",
+					"cle": "valable_jusqu_au",
+					"code": "2185E0000001A",
+					"texte": "3 mai 2030",
+					"etat": "value"
+				},
+				{
+					"groupe": "cout_validite",
+					"cle": "valable_jusqu_au",
+					"code": "2385E0123456A",
+					"texte": "4 janvier 2036",
+					"etat": "value"
+				},
+				{
+					"groupe": "etiquettes",
+					"cle": "classe_climat",
+					"code": "2185E0000001A",
+					"texte": "C",
+					"etat": "value"
+				},
+				{
+					"groupe": "etiquettes",
+					"cle": "classe_climat",
+					"code": "2385E0123456A",
+					"texte": "C",
+					"etat": "value"
+				},
+				{
+					"groupe": "etiquettes",
+					"cle": "classe_energie",
+					"code": "2185E0000001A",
+					"texte": "D",
+					"etat": "value"
+				},
+				{
+					"groupe": "etiquettes",
+					"cle": "classe_energie",
+					"code": "2385E0123456A",
+					"texte": "D",
+					"etat": "value"
+				},
+				{
+					"groupe": "etiquettes",
+					"cle": "consommation",
+					"code": "2185E0000001A",
+					"texte": "17 830 kWhEP/an",
+					"etat": "value"
+				},
+				{
+					"groupe": "etiquettes",
+					"cle": "consommation",
+					"code": "2385E0123456A",
+					"texte": "17 830 kWhEP/an",
+					"etat": "value"
+				},
+				{
+					"groupe": "etiquettes",
+					"cle": "emissions",
+					"code": "2185E0000001A",
+					"texte": "3 433 kg CO₂ éq/an",
+					"etat": "value"
+				},
+				{
+					"groupe": "etiquettes",
+					"cle": "emissions",
+					"code": "2385E0123456A",
+					"texte": "3 433 kg CO₂ éq/an",
+					"etat": "value"
+				},
+				{
+					"groupe": "logement",
+					"cle": "energie_chauffage",
+					"code": "2185E0000001A",
+					"texte": "Gaz naturel",
+					"etat": "value"
+				},
+				{
+					"groupe": "logement",
+					"cle": "energie_chauffage",
+					"code": "2385E0123456A",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "logement",
+					"cle": "periode_construction",
+					"code": "2185E0000001A",
+					"texte": "1948-1974",
+					"etat": "value"
+				},
+				{
+					"groupe": "logement",
+					"cle": "periode_construction",
+					"code": "2385E0123456A",
+					"texte": "1948-1974",
+					"etat": "value"
+				},
+				{
+					"groupe": "logement",
+					"cle": "surface",
+					"code": "2185E0000001A",
+					"texte": "79 m²",
+					"etat": "value"
+				},
+				{
+					"groupe": "logement",
+					"cle": "surface",
+					"code": "2385E0123456A",
+					"texte": "79 m²",
+					"etat": "value"
+				},
+				{
+					"groupe": "logement",
+					"cle": "type_batiment",
+					"code": "2185E0000001A",
+					"texte": "Maison",
+					"etat": "value"
+				},
+				{
+					"groupe": "logement",
+					"cle": "type_batiment",
+					"code": "2385E0123456A",
+					"texte": "Maison",
+					"etat": "value"
+				}
+			]
+		},
+		"comparateur-adresses": {
+			"baseRevision": "1c423c98d88e3ab3fedfcbd5366d1e0fe3140c24",
+			"capturedAt": "2026-10-24T19:47:58.897Z",
+			"page": "/comparer?adresses=85191_0420_00012,85191_0601_00001",
+			"rendu": [
+				{
+					"groupe": "commune_reference",
+					"cle": "prix_median_appartement",
+					"code": "85191_0420_00012",
+					"texte": "Effectif insuffisant",
+					"etat": "insufficient_sample"
+				},
+				{
+					"groupe": "commune_reference",
+					"cle": "prix_median_appartement",
+					"code": "85191_0601_00001",
+					"texte": "Effectif insuffisant",
+					"etat": "insufficient_sample"
+				},
+				{
+					"groupe": "commune_reference",
+					"cle": "prix_median_maison",
+					"code": "85191_0420_00012",
+					"texte": "2 100 €/m²",
+					"etat": "value"
+				},
+				{
+					"groupe": "commune_reference",
+					"cle": "prix_median_maison",
+					"code": "85191_0601_00001",
+					"texte": "2 100 €/m²",
+					"etat": "value"
+				},
+				{
+					"groupe": "documents",
+					"cle": "dpe_declares",
+					"code": "85191_0420_00012",
+					"texte": "2",
+					"etat": "value"
+				},
+				{
+					"groupe": "documents",
+					"cle": "dpe_declares",
+					"code": "85191_0601_00001",
+					"texte": "2",
+					"etat": "value"
+				},
+				{
+					"groupe": "documents",
+					"cle": "dpe_plus_recent",
+					"code": "85191_0420_00012",
+					"texte": "Classe D · mars 2024",
+					"etat": "value"
+				},
+				{
+					"groupe": "documents",
+					"cle": "dpe_plus_recent",
+					"code": "85191_0601_00001",
+					"texte": "Classe D · mars 2024 · expiré",
+					"etat": "value"
+				},
+				{
+					"groupe": "lieu",
+					"cle": "argiles",
+					"code": "85191_0420_00012",
+					"texte": "Exposition moyenne",
+					"etat": "value"
+				},
+				{
+					"groupe": "lieu",
+					"cle": "argiles",
+					"code": "85191_0601_00001",
+					"texte": "Exposition forte",
+					"etat": "value"
+				},
+				{
+					"groupe": "lieu",
+					"cle": "arret_proche",
+					"code": "85191_0420_00012",
+					"texte": "Arrêt 100 · à 100 m (à vol d'oiseau, pas un temps de trajet)",
+					"etat": "value"
+				},
+				{
+					"groupe": "lieu",
+					"cle": "arret_proche",
+					"code": "85191_0601_00001",
+					"texte": "Arrêt 300 · à 300 m (à vol d'oiseau, pas un temps de trajet)",
+					"etat": "value"
+				},
+				{
+					"groupe": "lieu",
+					"cle": "contenance",
+					"code": "85191_0420_00012",
+					"texte": "1 412 m²",
+					"etat": "value"
+				},
+				{
+					"groupe": "lieu",
+					"cle": "contenance",
+					"code": "85191_0601_00001",
+					"texte": "1 000 m²",
+					"etat": "value"
+				},
+				{
+					"groupe": "lieu",
+					"cle": "fibre",
+					"code": "85191_0420_00012",
+					"texte": "Oui",
+					"etat": "value"
+				},
+				{
+					"groupe": "lieu",
+					"cle": "fibre",
+					"code": "85191_0601_00001",
+					"texte": "Oui",
+					"etat": "value"
+				},
+				{
+					"groupe": "lieu",
+					"cle": "hauteur",
+					"code": "85191_0420_00012",
+					"texte": "7,5 m",
+					"etat": "value"
+				},
+				{
+					"groupe": "lieu",
+					"cle": "hauteur",
+					"code": "85191_0601_00001",
+					"texte": "7,5 m",
+					"etat": "value"
+				},
+				{
+					"groupe": "lieu",
+					"cle": "zone_plu",
+					"code": "85191_0420_00012",
+					"texte": "UB · Zone urbaine",
+					"etat": "value"
+				},
+				{
+					"groupe": "lieu",
+					"cle": "zone_plu",
+					"code": "85191_0601_00001",
+					"texte": "UA",
+					"etat": "value"
+				},
+				{
+					"groupe": "ventes",
+					"cle": "derniere_vente",
+					"code": "85191_0420_00012",
+					"texte": "juin 2024",
+					"etat": "value"
+				},
+				{
+					"groupe": "ventes",
+					"cle": "derniere_vente",
+					"code": "85191_0601_00001",
+					"texte": "Point hors parcelle",
+					"etat": "not_available"
+				},
+				{
+					"groupe": "ventes",
+					"cle": "ventes_declarees",
+					"code": "85191_0420_00012",
+					"texte": "3",
+					"etat": "value"
+				},
+				{
+					"groupe": "ventes",
+					"cle": "ventes_declarees",
+					"code": "85191_0601_00001",
+					"texte": "3",
+					"etat": "value"
+				},
+				{
+					"groupe": "ventes",
+					"cle": "ventes_parcelle",
+					"code": "85191_0420_00012",
+					"texte": "3",
+					"etat": "value"
+				},
+				{
+					"groupe": "ventes",
+					"cle": "ventes_parcelle",
+					"code": "85191_0601_00001",
+					"texte": "Point hors parcelle",
+					"etat": "not_available"
+				}
+			]
+		},
+		"comparateur-communes": {
+			"baseRevision": "1c423c98d88e3ab3fedfcbd5366d1e0fe3140c24",
+			"capturedAt": "2026-10-24T19:47:58.539Z",
+			"page": "/comparer?communes=44991,44992,85991",
+			"rendu": [
+				{
+					"groupe": "contexte-communal",
+					"cle": "densite",
+					"code": "44991",
+					"texte": "Non publiée",
+					"etat": "not_available"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "densite",
+					"code": "44992",
+					"texte": "Non publiée",
+					"etat": "not_available"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "densite",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "indice_gini",
+					"code": "44991",
+					"texte": "Non publiée",
+					"etat": "not_available"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "indice_gini",
+					"code": "44992",
+					"texte": "Non publiée",
+					"etat": "not_available"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "indice_gini",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "nb_menages",
+					"code": "44991",
+					"texte": "Non publiée",
+					"etat": "not_available"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "nb_menages",
+					"code": "44992",
+					"texte": "Non publiée",
+					"etat": "not_available"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "nb_menages",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "nb_proprietaires_pm",
+					"code": "44991",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "nb_proprietaires_pm",
+					"code": "44992",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "nb_proprietaires_pm",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "nom_epci",
+					"code": "44991",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "nom_epci",
+					"code": "44992",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "nom_epci",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "part_imposee",
+					"code": "44991",
+					"texte": "Non publiée",
+					"etat": "not_available"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "part_imposee",
+					"code": "44992",
+					"texte": "Non publiée",
+					"etat": "not_available"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "part_imposee",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "population",
+					"code": "44991",
+					"texte": "100 hab.",
+					"etat": "value"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "population",
+					"code": "44992",
+					"texte": "200 hab.",
+					"etat": "value"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "population",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "revenu_median",
+					"code": "44991",
+					"texte": "21 000 €/UC/an",
+					"etat": "value"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "revenu_median",
+					"code": "44992",
+					"texte": "22 480 €/UC/an",
+					"etat": "value"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "revenu_median",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "superficie",
+					"code": "44991",
+					"texte": "Non publiée",
+					"etat": "not_available"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "superficie",
+					"code": "44992",
+					"texte": "Non publiée",
+					"etat": "not_available"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "superficie",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "surface_pm_ha",
+					"code": "44991",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "surface_pm_ha",
+					"code": "44992",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "surface_pm_ha",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "taux_pauvrete",
+					"code": "44991",
+					"texte": "15,2 %",
+					"etat": "value"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "taux_pauvrete",
+					"code": "44992",
+					"texte": "15,2 %",
+					"etat": "value"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "taux_pauvrete",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "taux_teom",
+					"code": "44991",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "taux_teom",
+					"code": "44992",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "taux_teom",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "taux_tfpb",
+					"code": "44991",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "taux_tfpb",
+					"code": "44992",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "taux_tfpb",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "taux_th_rs",
+					"code": "44991",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "taux_th_rs",
+					"code": "44992",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "contexte-communal",
+					"cle": "taux_th_rs",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "energie-bati",
+					"cle": "annee_construction_mediane",
+					"code": "44991",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "energie-bati",
+					"cle": "annee_construction_mediane",
+					"code": "44992",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "energie-bati",
+					"cle": "annee_construction_mediane",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "energie-bati",
+					"cle": "dpe_median",
+					"code": "44991",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "energie-bati",
+					"cle": "dpe_median",
+					"code": "44992",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "energie-bati",
+					"cle": "dpe_median",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "energie-bati",
+					"cle": "dpe_passoires_pct",
+					"code": "44991",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "energie-bati",
+					"cle": "dpe_passoires_pct",
+					"code": "44992",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "energie-bati",
+					"cle": "dpe_passoires_pct",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "energie-bati",
+					"cle": "indicateurs_dpe.resultat.distribution.classes.A",
+					"code": "44991",
+					"texte": "4",
+					"etat": "value"
+				},
+				{
+					"groupe": "energie-bati",
+					"cle": "indicateurs_dpe.resultat.distribution.classes.A",
+					"code": "44992",
+					"texte": "4",
+					"etat": "value"
+				},
+				{
+					"groupe": "energie-bati",
+					"cle": "indicateurs_dpe.resultat.distribution.classes.A",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "energie-bati",
+					"cle": "indicateurs_dpe.resultat.distribution.classes.B",
+					"code": "44991",
+					"texte": "0",
+					"etat": "value"
+				},
+				{
+					"groupe": "energie-bati",
+					"cle": "indicateurs_dpe.resultat.distribution.classes.B",
+					"code": "44992",
+					"texte": "0",
+					"etat": "value"
+				},
+				{
+					"groupe": "energie-bati",
+					"cle": "indicateurs_dpe.resultat.distribution.classes.B",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "energie-bati",
+					"cle": "indicateurs_dpe.resultat.distribution.classes.C",
+					"code": "44991",
+					"texte": "0",
+					"etat": "value"
+				},
+				{
+					"groupe": "energie-bati",
+					"cle": "indicateurs_dpe.resultat.distribution.classes.C",
+					"code": "44992",
+					"texte": "0",
+					"etat": "value"
+				},
+				{
+					"groupe": "energie-bati",
+					"cle": "indicateurs_dpe.resultat.distribution.classes.C",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "energie-bati",
+					"cle": "indicateurs_dpe.resultat.distribution.classes.D",
+					"code": "44991",
+					"texte": "3",
+					"etat": "value"
+				},
+				{
+					"groupe": "energie-bati",
+					"cle": "indicateurs_dpe.resultat.distribution.classes.D",
+					"code": "44992",
+					"texte": "3",
+					"etat": "value"
+				},
+				{
+					"groupe": "energie-bati",
+					"cle": "indicateurs_dpe.resultat.distribution.classes.D",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "energie-bati",
+					"cle": "indicateurs_dpe.resultat.distribution.classes.E",
+					"code": "44991",
+					"texte": "0",
+					"etat": "value"
+				},
+				{
+					"groupe": "energie-bati",
+					"cle": "indicateurs_dpe.resultat.distribution.classes.E",
+					"code": "44992",
+					"texte": "0",
+					"etat": "value"
+				},
+				{
+					"groupe": "energie-bati",
+					"cle": "indicateurs_dpe.resultat.distribution.classes.E",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "energie-bati",
+					"cle": "indicateurs_dpe.resultat.distribution.classes.F",
+					"code": "44991",
+					"texte": "0",
+					"etat": "value"
+				},
+				{
+					"groupe": "energie-bati",
+					"cle": "indicateurs_dpe.resultat.distribution.classes.F",
+					"code": "44992",
+					"texte": "0",
+					"etat": "value"
+				},
+				{
+					"groupe": "energie-bati",
+					"cle": "indicateurs_dpe.resultat.distribution.classes.F",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "energie-bati",
+					"cle": "indicateurs_dpe.resultat.distribution.classes.G",
+					"code": "44991",
+					"texte": "2",
+					"etat": "value"
+				},
+				{
+					"groupe": "energie-bati",
+					"cle": "indicateurs_dpe.resultat.distribution.classes.G",
+					"code": "44992",
+					"texte": "2",
+					"etat": "value"
+				},
+				{
+					"groupe": "energie-bati",
+					"cle": "indicateurs_dpe.resultat.distribution.classes.G",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "energie-bati",
+					"cle": "indicateurs_dpe.resultat.part_fg_pct",
+					"code": "44991",
+					"texte": "22,2 %",
+					"etat": "value"
+				},
+				{
+					"groupe": "energie-bati",
+					"cle": "indicateurs_dpe.resultat.part_fg_pct",
+					"code": "44992",
+					"texte": "22,2 %",
+					"etat": "value"
+				},
+				{
+					"groupe": "energie-bati",
+					"cle": "indicateurs_dpe.resultat.part_fg_pct",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "energie-bati",
+					"cle": "indicateurs_dpe.resultat.population.total",
+					"code": "44991",
+					"texte": "10",
+					"etat": "value"
+				},
+				{
+					"groupe": "energie-bati",
+					"cle": "indicateurs_dpe.resultat.population.total",
+					"code": "44992",
+					"texte": "10",
+					"etat": "value"
+				},
+				{
+					"groupe": "energie-bati",
+					"cle": "indicateurs_dpe.resultat.population.total",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "indicateurs_dvf.residentiel_appartement.courante.effectif",
+					"code": "44991",
+					"texte": "5",
+					"etat": "value"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "indicateurs_dvf.residentiel_appartement.courante.effectif",
+					"code": "44992",
+					"texte": "5",
+					"etat": "value"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "indicateurs_dvf.residentiel_appartement.courante.effectif",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "indicateurs_dvf.residentiel_appartement.courante.quantiles.p10",
+					"code": "44991",
+					"texte": "Non qualifié",
+					"etat": "not_qualified"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "indicateurs_dvf.residentiel_appartement.courante.quantiles.p10",
+					"code": "44992",
+					"texte": "Non qualifié",
+					"etat": "not_qualified"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "indicateurs_dvf.residentiel_appartement.courante.quantiles.p10",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "indicateurs_dvf.residentiel_appartement.courante.quantiles.p50",
+					"code": "44991",
+					"texte": "Non qualifié",
+					"etat": "not_qualified"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "indicateurs_dvf.residentiel_appartement.courante.quantiles.p50",
+					"code": "44992",
+					"texte": "Non qualifié",
+					"etat": "not_qualified"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "indicateurs_dvf.residentiel_appartement.courante.quantiles.p50",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "indicateurs_dvf.residentiel_appartement.courante.quantiles.p90",
+					"code": "44991",
+					"texte": "Non qualifié",
+					"etat": "not_qualified"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "indicateurs_dvf.residentiel_appartement.courante.quantiles.p90",
+					"code": "44992",
+					"texte": "Non qualifié",
+					"etat": "not_qualified"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "indicateurs_dvf.residentiel_appartement.courante.quantiles.p90",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "indicateurs_dvf.residentiel_appartement.precedente.effectif",
+					"code": "44991",
+					"texte": "5",
+					"etat": "value"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "indicateurs_dvf.residentiel_appartement.precedente.effectif",
+					"code": "44992",
+					"texte": "5",
+					"etat": "value"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "indicateurs_dvf.residentiel_appartement.precedente.effectif",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "indicateurs_dvf.residentiel_appartement.precedente.mediane",
+					"code": "44991",
+					"texte": "2 000 €/m²",
+					"etat": "value"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "indicateurs_dvf.residentiel_appartement.precedente.mediane",
+					"code": "44992",
+					"texte": "2 000 €/m²",
+					"etat": "value"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "indicateurs_dvf.residentiel_appartement.precedente.mediane",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "indicateurs_dvf.residentiel_maison.courante.effectif",
+					"code": "44991",
+					"texte": "5",
+					"etat": "value"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "indicateurs_dvf.residentiel_maison.courante.effectif",
+					"code": "44992",
+					"texte": "5",
+					"etat": "value"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "indicateurs_dvf.residentiel_maison.courante.effectif",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "indicateurs_dvf.residentiel_maison.courante.quantiles.p10",
+					"code": "44991",
+					"texte": "Non qualifié",
+					"etat": "not_qualified"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "indicateurs_dvf.residentiel_maison.courante.quantiles.p10",
+					"code": "44992",
+					"texte": "Non qualifié",
+					"etat": "not_qualified"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "indicateurs_dvf.residentiel_maison.courante.quantiles.p10",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "indicateurs_dvf.residentiel_maison.courante.quantiles.p50",
+					"code": "44991",
+					"texte": "Non qualifié",
+					"etat": "not_qualified"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "indicateurs_dvf.residentiel_maison.courante.quantiles.p50",
+					"code": "44992",
+					"texte": "Non qualifié",
+					"etat": "not_qualified"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "indicateurs_dvf.residentiel_maison.courante.quantiles.p50",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "indicateurs_dvf.residentiel_maison.courante.quantiles.p90",
+					"code": "44991",
+					"texte": "Non qualifié",
+					"etat": "not_qualified"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "indicateurs_dvf.residentiel_maison.courante.quantiles.p90",
+					"code": "44992",
+					"texte": "Non qualifié",
+					"etat": "not_qualified"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "indicateurs_dvf.residentiel_maison.courante.quantiles.p90",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "indicateurs_dvf.residentiel_maison.precedente.effectif",
+					"code": "44991",
+					"texte": "5",
+					"etat": "value"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "indicateurs_dvf.residentiel_maison.precedente.effectif",
+					"code": "44992",
+					"texte": "5",
+					"etat": "value"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "indicateurs_dvf.residentiel_maison.precedente.effectif",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "indicateurs_dvf.residentiel_maison.precedente.mediane",
+					"code": "44991",
+					"texte": "2 000 €/m²",
+					"etat": "value"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "indicateurs_dvf.residentiel_maison.precedente.mediane",
+					"code": "44992",
+					"texte": "2 000 €/m²",
+					"etat": "value"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "indicateurs_dvf.residentiel_maison.precedente.mediane",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "loyer_m2_appartement",
+					"code": "44991",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "loyer_m2_appartement",
+					"code": "44992",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "loyer_m2_appartement",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "loyer_m2_maison",
+					"code": "44991",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "loyer_m2_maison",
+					"code": "44992",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "loyer_m2_maison",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "nb_logements",
+					"code": "44991",
+					"texte": "Non publiée",
+					"etat": "not_available"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "nb_logements",
+					"code": "44992",
+					"texte": "Non publiée",
+					"etat": "not_available"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "nb_logements",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "nb_logements_vacants_recensement",
+					"code": "44991",
+					"texte": "Non publiée",
+					"etat": "not_available"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "nb_logements_vacants_recensement",
+					"code": "44992",
+					"texte": "Non publiée",
+					"etat": "not_available"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "nb_logements_vacants_recensement",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "nb_mutations_12m",
+					"code": "44991",
+					"texte": "5",
+					"etat": "value"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "nb_mutations_12m",
+					"code": "44992",
+					"texte": "4",
+					"etat": "value"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "nb_mutations_12m",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "nb_mutations_12m_appartement",
+					"code": "44991",
+					"texte": "5",
+					"etat": "value"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "nb_mutations_12m_appartement",
+					"code": "44992",
+					"texte": "4",
+					"etat": "value"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "nb_mutations_12m_appartement",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "nb_mutations_12m_maison",
+					"code": "44991",
+					"texte": "0",
+					"etat": "value"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "nb_mutations_12m_maison",
+					"code": "44992",
+					"texte": "0",
+					"etat": "value"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "nb_mutations_12m_maison",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "nb_vacants_plus_2ans",
+					"code": "44991",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "nb_vacants_plus_2ans",
+					"code": "44992",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "nb_vacants_plus_2ans",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "prix_m2_median",
+					"code": "44991",
+					"texte": "3 040 €/m²",
+					"etat": "value"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "prix_m2_median",
+					"code": "44992",
+					"texte": "Effectif insuffisant",
+					"etat": "insufficient_sample"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "prix_m2_median",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "prix_m2_median_appartement",
+					"code": "44991",
+					"texte": "3 040 €/m²",
+					"etat": "value"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "prix_m2_median_appartement",
+					"code": "44992",
+					"texte": "Effectif insuffisant",
+					"etat": "insufficient_sample"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "prix_m2_median_appartement",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "prix_m2_median_maison",
+					"code": "44991",
+					"texte": "Effectif insuffisant",
+					"etat": "insufficient_sample"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "prix_m2_median_maison",
+					"code": "44992",
+					"texte": "Effectif insuffisant",
+					"etat": "insufficient_sample"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "prix_m2_median_maison",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "taux_vacance",
+					"code": "44991",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "taux_vacance",
+					"code": "44992",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "immobilier",
+					"cle": "taux_vacance",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "reperes",
+					"cle": "indicateurs_dpe.resultat.mediane_ordinale",
+					"code": "44991",
+					"texte": "D",
+					"etat": "value"
+				},
+				{
+					"groupe": "reperes",
+					"cle": "indicateurs_dpe.resultat.mediane_ordinale",
+					"code": "44992",
+					"texte": "D",
+					"etat": "value"
+				},
+				{
+					"groupe": "reperes",
+					"cle": "indicateurs_dpe.resultat.mediane_ordinale",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "reperes",
+					"cle": "indicateurs_dpe.resultat.modes",
+					"code": "44991",
+					"texte": "A",
+					"etat": "value"
+				},
+				{
+					"groupe": "reperes",
+					"cle": "indicateurs_dpe.resultat.modes",
+					"code": "44992",
+					"texte": "A",
+					"etat": "value"
+				},
+				{
+					"groupe": "reperes",
+					"cle": "indicateurs_dpe.resultat.modes",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "reperes",
+					"cle": "indicateurs_dvf.residentiel_appartement.courante.mediane",
+					"code": "44991",
+					"texte": "2 200 €/m²",
+					"etat": "value"
+				},
+				{
+					"groupe": "reperes",
+					"cle": "indicateurs_dvf.residentiel_appartement.courante.mediane",
+					"code": "44992",
+					"texte": "2 200 €/m²",
+					"etat": "value"
+				},
+				{
+					"groupe": "reperes",
+					"cle": "indicateurs_dvf.residentiel_appartement.courante.mediane",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "reperes",
+					"cle": "indicateurs_dvf.residentiel_appartement.variation_pct",
+					"code": "44991",
+					"texte": "Non qualifié",
+					"etat": "not_qualified"
+				},
+				{
+					"groupe": "reperes",
+					"cle": "indicateurs_dvf.residentiel_appartement.variation_pct",
+					"code": "44992",
+					"texte": "Non qualifié",
+					"etat": "not_qualified"
+				},
+				{
+					"groupe": "reperes",
+					"cle": "indicateurs_dvf.residentiel_appartement.variation_pct",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "reperes",
+					"cle": "indicateurs_dvf.residentiel_maison.courante.mediane",
+					"code": "44991",
+					"texte": "2 200 €/m²",
+					"etat": "value"
+				},
+				{
+					"groupe": "reperes",
+					"cle": "indicateurs_dvf.residentiel_maison.courante.mediane",
+					"code": "44992",
+					"texte": "2 300 €/m²",
+					"etat": "value"
+				},
+				{
+					"groupe": "reperes",
+					"cle": "indicateurs_dvf.residentiel_maison.courante.mediane",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "reperes",
+					"cle": "indicateurs_dvf.residentiel_maison.variation_pct",
+					"code": "44991",
+					"texte": "Non qualifié",
+					"etat": "not_qualified"
+				},
+				{
+					"groupe": "reperes",
+					"cle": "indicateurs_dvf.residentiel_maison.variation_pct",
+					"code": "44992",
+					"texte": "Non qualifié",
+					"etat": "not_qualified"
+				},
+				{
+					"groupe": "reperes",
+					"cle": "indicateurs_dvf.residentiel_maison.variation_pct",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "risques-urbanisme",
+					"cle": "nb_monuments",
+					"code": "44991",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "risques-urbanisme",
+					"cle": "nb_monuments",
+					"code": "44992",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "risques-urbanisme",
+					"cle": "nb_monuments",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "risques-urbanisme",
+					"cle": "zone_abc",
+					"code": "44991",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "risques-urbanisme",
+					"cle": "zone_abc",
+					"code": "44992",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "risques-urbanisme",
+					"cle": "zone_abc",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "risques-urbanisme",
+					"cle": "zone_abc_reclassement",
+					"code": "44991",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "risques-urbanisme",
+					"cle": "zone_abc_reclassement",
+					"code": "44992",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "risques-urbanisme",
+					"cle": "zone_abc_reclassement",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "services-transports",
+					"cle": "fibre_pct",
+					"code": "44991",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "services-transports",
+					"cle": "fibre_pct",
+					"code": "44992",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "services-transports",
+					"cle": "fibre_pct",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "services-transports",
+					"cle": "nb_equipements",
+					"code": "44991",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "services-transports",
+					"cle": "nb_equipements",
+					"code": "44992",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "services-transports",
+					"cle": "nb_equipements",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				},
+				{
+					"groupe": "services-transports",
+					"cle": "nb_etablissements_scolaires",
+					"code": "44991",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "services-transports",
+					"cle": "nb_etablissements_scolaires",
+					"code": "44992",
+					"texte": "Non renseigné",
+					"etat": "not_reported"
+				},
+				{
+					"groupe": "services-transports",
+					"cle": "nb_etablissements_scolaires",
+					"code": "85991",
+					"texte": "Hors couverture",
+					"etat": "out_of_coverage"
+				}
+			]
+		},
+		"adresse-44109-zz04-00004": {
+			"baseRevision": "1c423c98d88e3ab3fedfcbd5366d1e0fe3140c24",
+			"capturedAt": "2026-10-24T19:47:57.783Z",
+			"page": "/adresse/44109_zz04_00004",
+			"rendu": [
+				{
+					"fieldId": "adresse.batiment.etages",
+					"texte": "5",
+					"etat": "value"
+				},
+				{
+					"fieldId": "adresse.batiment.hauteur",
+					"texte": "16,3 m",
+					"etat": "value"
+				},
+				{
+					"fieldId": "adresse.batiment.rnb_id",
+					"texte": "2SNZFXM29DZQ",
+					"etat": "value"
+				},
+				{
+					"fieldId": "adresse.batiments.nombre_parcelle",
+					"texte": "1 bâtiment sur la parcelle",
+					"etat": "value"
+				},
+				{
+					"fieldId": "adresse.batiments.nombre_parcelle_hors_annexe",
+					"texte": "1",
+					"etat": "value"
+				},
+				{
+					"fieldId": "adresse.connectivite.debit",
+					"texte": "THD1G",
+					"etat": "value"
+				},
+				{
+					"fieldId": "adresse.connectivite.eligibilite_fibre",
+					"texte": "Oui",
+					"etat": "value"
+				},
+				{
+					"fieldId": "adresse.copropriete.immatriculation",
+					"texte": "0",
+					"etat": "value"
+				},
+				{
+					"fieldId": "adresse.dpe.nombre_declares",
+					"texte": "5",
+					"etat": "value"
+				},
+				{
+					"fieldId": "adresse.dvf.ventes_parcelle.nombre",
+					"texte": "3",
+					"etat": "value"
+				},
+				{
+					"fieldId": "adresse.parcelle.contenance",
+					"texte": "201 m²",
+					"etat": "value"
+				},
+				{
+					"fieldId": "adresse.parcelle.identifiant",
+					"texte": "44109000ZZ0062",
+					"etat": "value"
+				},
+				{
+					"fieldId": "adresse.reference_commune.prix_median_appartement",
+					"texte": "3 385 €/m²",
+					"etat": "value"
+				},
+				{
+					"fieldId": "adresse.reference_commune.prix_median_maison",
+					"texte": "4 102 €/m²",
+					"etat": "value"
+				},
+				{
+					"fieldId": "adresse.risques.argiles_au_point",
+					"texte": "Exposition faible",
+					"etat": "value"
+				},
+				{
+					"fieldId": "adresse.risques.icpe_commune",
+					"texte": "157",
+					"etat": "value"
+				},
+				{
+					"fieldId": "adresse.risques.liste_commune",
+					"texte": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines) ; Affaissements et effondrements d'origine naturelle (cavités souterraines) ; Avancée dunaire ; Eboulement ou chutes de pierres et de blocs ; Engins de guerre ; Foudre ; Glissement de terrain ; Grêle ; Inondation ; Mouvement de terrain ; Neige et pluies verglaçantes ; Par remontées de nappes naturelles ; Par ruissellement et coulée de boue ; Par une crue à débordement lent de cours d'eau ; Phénomène lié à l'atmosphère ; Radon ; Risque industriel ; Rupture de barrage ; Séisme ; Tassements différentiels ; Tempête et grains (vent) ; Transport de marchandises dangereuses",
+					"etat": "value"
+				},
+				{
+					"fieldId": "adresse.risques.radon_commune",
+					"texte": "3",
+					"etat": "value"
+				},
+				{
+					"fieldId": "adresse.transports.arret_proche",
+					"texte": "à 130 m (à vol d'oiseau, pas un temps de trajet)",
+					"etat": "value"
+				},
+				{
+					"fieldId": "adresse.transports.arret_proche",
+					"texte": "à 139 m (à vol d'oiseau, pas un temps de trajet)",
+					"etat": "value"
+				},
+				{
+					"fieldId": "adresse.transports.arret_proche",
+					"texte": "à 169 m (à vol d'oiseau, pas un temps de trajet)",
+					"etat": "value"
+				},
+				{
+					"fieldId": "adresse.urbanisme.prescriptions",
+					"texte": "norme plafond applicable à la sous-destination Bureau pour les véhicules à moteur ; Orientation d'Aménagement et de Programmation Loire (OAP) ; polarité commerciale de proximité et centralité commerciale Nantaise ; Orientation dAménagement et de Programmation Commerce (OAP) ; secteur de renforcement de la mixité sociale ; norme plancher applicable à la sous-destination Logement collectif pour les véhicules à moteur ; hauteur par niveaux, hors tout ; norme de stationnement applicable à la sous-destination Artisanat et commerce de détail ; périmètre indicatif de 500 m autour des stations de transport collectif structurant",
+					"etat": "value"
+				},
+				{
+					"fieldId": "adresse.urbanisme.zone_plu",
+					"texte": "UMa · Secteur de développement des centralités actuelles ou en devenir",
+					"etat": "value"
+				}
+			]
+		},
+		"adresse-85191-zz05-00011": {
+			"baseRevision": "1c423c98d88e3ab3fedfcbd5366d1e0fe3140c24",
+			"capturedAt": "2026-10-24T19:47:57.398Z",
+			"page": "/adresse/85191_zz05_00011",
+			"rendu": [
+				{
+					"fieldId": "adresse.batiment.rnb_id",
+					"texte": "8CF491SSG29F",
+					"etat": "value"
+				},
+				{
+					"fieldId": "adresse.connectivite.debit",
+					"texte": "THD1G",
+					"etat": "value"
+				},
+				{
+					"fieldId": "adresse.connectivite.eligibilite_fibre",
+					"texte": "Oui",
+					"etat": "value"
+				},
+				{
+					"fieldId": "adresse.dpe.nombre_declares",
+					"texte": "0",
+					"etat": "value"
+				},
+				{
+					"fieldId": "adresse.dvf.ventes_parcelle.nombre",
+					"texte": "Point hors parcelle",
+					"etat": "not_available"
+				},
+				{
+					"fieldId": "adresse.reference_commune.prix_median_appartement",
+					"texte": "2 429 €/m²",
+					"etat": "value"
+				},
+				{
+					"fieldId": "adresse.reference_commune.prix_median_maison",
+					"texte": "2 357 €/m²",
+					"etat": "value"
+				},
+				{
+					"fieldId": "adresse.risques.argiles_au_point",
+					"texte": "Exposition moyenne",
+					"etat": "value"
+				},
+				{
+					"fieldId": "adresse.risques.icpe_commune",
+					"texte": "60",
+					"etat": "value"
+				},
+				{
+					"fieldId": "adresse.risques.liste_commune",
+					"texte": "Affaissements et effondrements d'origine naturelle (cavités souterraines) ; Inondation ; Mouvement de terrain ; Neige et pluies verglaçantes ; Par une crue à débordement lent de cours d'eau ; Phénomène lié à l'atmosphère ; Radon ; Rupture de barrage ; Séisme ; Tassements différentiels ; Transport de marchandises dangereuses",
+					"etat": "value"
+				},
+				{
+					"fieldId": "adresse.risques.radon_commune",
+					"texte": "3",
+					"etat": "value"
+				},
+				{
+					"fieldId": "adresse.transports.arret_proche",
+					"texte": "à 201 m (à vol d'oiseau, pas un temps de trajet)",
+					"etat": "value"
+				},
+				{
+					"fieldId": "adresse.transports.arret_proche",
+					"texte": "à 76 m (à vol d'oiseau, pas un temps de trajet)",
+					"etat": "value"
+				},
+				{
+					"fieldId": "adresse.transports.arret_proche",
+					"texte": "à 93 m (à vol d'oiseau, pas un temps de trajet)",
+					"etat": "value"
+				},
+				{
+					"fieldId": "adresse.urbanisme.prescriptions",
+					"texte": "OAP TVBN",
+					"etat": "value"
+				},
+				{
+					"fieldId": "adresse.urbanisme.zone_plu",
+					"texte": "UB · UB - Zone urbaine mixte",
+					"etat": "value"
+				},
+				{
+					"fieldId": "dpe.dpe_median",
+					"texte": "Classe C",
+					"etat": "value"
+				},
+				{
+					"fieldId": "dvf.indicateurs.maison.variation_pct",
+					"texte": "Non publiée",
+					"etat": "not_available"
+				},
+				{
+					"fieldId": "dvf.prix_m2_median_appartement",
+					"texte": "2 429 €/m²",
+					"etat": "value"
+				},
+				{
+					"fieldId": "dvf.prix_m2_median_maison",
+					"texte": "2 357 €/m²",
+					"etat": "value"
+				}
+			]
+		},
+		"commune-85191": {
+			"baseRevision": "1c423c98d88e3ab3fedfcbd5366d1e0fe3140c24",
+			"capturedAt": "2026-10-24T19:47:56.671Z",
+			"page": "/commune/85191",
+			"rendu": [
+				{
+					"fieldId": "connectivite.fibre_pct",
+					"texte": "98 %",
+					"etat": "value"
+				},
+				{
+					"fieldId": "demographie.densite",
+					"texte": "621,4 hab./km²",
+					"etat": "value"
+				},
+				{
+					"fieldId": "demographie.nb_logements",
+					"texte": "31 207",
+					"etat": "value"
+				},
+				{
+					"fieldId": "demographie.nb_logements_vacants_recensement",
+					"texte": "1 870",
+					"etat": "value"
+				},
+				{
+					"fieldId": "demographie.nb_menages",
+					"texte": "28 216",
+					"etat": "value"
+				},
+				{
+					"fieldId": "demographie.population",
+					"texte": "54 699 hab.",
+					"etat": "value"
+				},
+				{
+					"fieldId": "demographie.superficie",
+					"texte": "88,02 km²",
+					"etat": "value"
+				},
+				{
+					"fieldId": "dpe.annee_construction_mediane",
+					"texte": "1997",
+					"etat": "value"
+				},
+				{
+					"fieldId": "dpe.dpe_median",
+					"texte": "C",
+					"etat": "value"
+				},
+				{
+					"fieldId": "dpe.dpe_median",
+					"texte": "Classe C",
+					"etat": "value"
+				},
+				{
+					"fieldId": "dpe.dpe_passoires_pct",
+					"texte": "3,3 %",
+					"etat": "value"
+				},
+				{
+					"fieldId": "dvf.indicateurs.maison.variation_pct",
+					"texte": "Non publiée",
+					"etat": "not_available"
+				},
+				{
+					"fieldId": "dvf.nb_mutations_12m",
+					"texte": "835",
+					"etat": "value"
+				},
+				{
+					"fieldId": "dvf.nb_mutations_12m_appartement",
+					"texte": "375",
+					"etat": "value"
+				},
+				{
+					"fieldId": "dvf.nb_mutations_12m_maison",
+					"texte": "460",
+					"etat": "value"
+				},
+				{
+					"fieldId": "dvf.prix_m2_median",
+					"texte": "2 391 €/m²",
+					"etat": "value"
+				},
+				{
+					"fieldId": "dvf.prix_m2_median_appartement",
+					"texte": "2 429 €/m²",
+					"etat": "value"
+				},
+				{
+					"fieldId": "dvf.prix_m2_median_maison",
+					"texte": "2 357 €/m²",
+					"etat": "value"
+				},
+				{
+					"fieldId": "equipements.nb_equipements",
+					"texte": "2 392",
+					"etat": "value"
+				},
+				{
+					"fieldId": "fiscalite.nom_epci",
+					"texte": "CA La Roche-sur-Yon - Agglomération",
+					"etat": "value"
+				},
+				{
+					"fieldId": "fiscalite.taux_teom",
+					"texte": "Non publiée",
+					"etat": "not_available"
+				},
+				{
+					"fieldId": "fiscalite.taux_tfpb",
+					"texte": "51,05 %",
+					"etat": "value"
+				},
+				{
+					"fieldId": "fiscalite.taux_th_rs",
+					"texte": "36,14 %",
+					"etat": "value"
+				},
+				{
+					"fieldId": "foncier_pm.nb_proprietaires_pm",
+					"texte": "Non publiée",
+					"etat": "not_available"
+				},
+				{
+					"fieldId": "foncier_pm.surface_pm_ha",
+					"texte": "3 006,5 ha",
+					"etat": "value"
+				},
+				{
+					"fieldId": "loyers.annee",
+					"texte": "2025",
+					"etat": "value"
+				},
+				{
+					"fieldId": "loyers.loyer_m2_appartement",
+					"texte": "11,8 €/m²/mois",
+					"etat": "value"
+				},
+				{
+					"fieldId": "loyers.loyer_m2_maison",
+					"texte": "10,8 €/m²/mois",
+					"etat": "value"
+				},
+				{
+					"fieldId": "monuments.nb_monuments",
+					"texte": "8",
+					"etat": "value"
+				},
+				{
+					"fieldId": "revenus.indice_gini",
+					"texte": "0,36",
+					"etat": "value"
+				},
+				{
+					"fieldId": "revenus.part_imposee",
+					"texte": "49 %",
+					"etat": "value"
+				},
+				{
+					"fieldId": "revenus.revenu_median",
+					"texte": "21 940 €/UC/an",
+					"etat": "value"
+				},
+				{
+					"fieldId": "revenus.taux_pauvrete",
+					"texte": "15 %",
+					"etat": "value"
+				},
+				{
+					"fieldId": "scolaire.nb_etablissements_scolaires",
+					"texte": "4",
+					"etat": "value"
+				},
+				{
+					"fieldId": "vacance.nb_vacants_plus_2ans",
+					"texte": "296",
+					"etat": "value"
+				},
+				{
+					"fieldId": "vacance.taux_vacance",
+					"texte": "7,59 %",
+					"etat": "value"
+				},
+				{
+					"fieldId": "zonage_abc.reclassement",
+					"texte": "Non",
+					"etat": "value"
+				},
+				{
+					"fieldId": "zonage_abc.zone",
+					"texte": "B1",
+					"etat": "value"
+				}
+			]
+		}
+	}
+}

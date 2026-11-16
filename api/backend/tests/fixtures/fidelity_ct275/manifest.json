@@ -1,0 +1,210 @@
+{
+  "departements": [
+    "44",
+    "85"
+  ],
+  "dvf_history": [
+    {
+      "bytes": 60,
+      "name": "mutation_parcelles_44_85_before_2021-01-01.csv.gz",
+      "sha256": "391eb539181a745f8bb90d7dace230e3654ec02ab34220b9fdec83423ca9f4fa"
+    },
+    {
+      "bytes": 244,
+      "name": "mutations_44_85_before_2021-01-01.csv.gz",
+      "sha256": "9b142fe4acab9311be4ca2d9d6dddf168f811dac14e65e6d6c845ef8774c898f"
+    },
+    {
+      "bytes": 221,
+      "name": "mutations_grain_44_85_before_2021-01-01.csv.gz",
+      "sha256": "0bbc1fc9d6a286d74bf246a739852790d32dfd6692f0124ef75260dde4e2ae81"
+    }
+  ],
+  "extracted_at": "2026-09-21T19:13:06Z",
+  "files": [
+    {
+      "bytes": 6291,
+      "name": "level1_counts.json",
+      "sha256": "b70c43cf38c77b68a58d6ebdabcb1de4c8686a17b42e3566528cb6236bf36dbb"
+    },
+    {
+      "bytes": 57108,
+      "name": "level2_panel.json",
+      "sha256": "047a411d9d698f7822b5d5c0bad91e0555ba9e4ff5791468e5933e4cf9ea60b1"
+    },
+    {
+      "bytes": 2464,
+      "name": "lovac_false_zeros.json",
+      "sha256": "e90f73d480c766f5c1135ff226ac172df1247e8491e3b8e7d3bdc7c0a90e9f01"
+    },
+    {
+      "bytes": 20527,
+      "name": "millesimes.json",
+      "sha256": "8f697696cfb51d0b480b4928dee93acc0b0fa173628abd8ae1c95f01c76df585"
+    },
+    {
+      "bytes": 3004,
+      "name": "panel.json",
+      "sha256": "9b6e44f556d5035992f9592f586b3c6a92508ae6d75102e2b84c55a92528d634"
+    }
+  ],
+  "methods": {
+    "adresses": {
+      "column": null,
+      "method": "partition",
+      "status": "ok"
+    },
+    "antennes": {
+      "column": "code_insee",
+      "method": "departement_from_insee",
+      "status": "ok"
+    },
+    "arrets_transport": {
+      "column": null,
+      "method": "absent",
+      "motif": "aucune colonne de departement ni de code INSEE",
+      "status": "ok"
+    },
+    "batiments": {
+      "column": null,
+      "method": "partition",
+      "status": "ok"
+    },
+    "carte_scolaire": {
+      "column": "code_departement",
+      "method": "code_departement",
+      "status": "ok"
+    },
+    "copropriete": {
+      "column": "code_insee",
+      "method": "departement_from_insee",
+      "status": "ok"
+    },
+    "demographie": {
+      "column": "code_departement",
+      "method": "code_departement",
+      "status": "ok"
+    },
+    "diagnostics_dpe": {
+      "column": "code_departement",
+      "method": "code_departement",
+      "status": "ok"
+    },
+    "eligibilite_fixe": {
+      "column": "code_departement",
+      "method": "code_departement",
+      "status": "ok"
+    },
+    "encadrement_loyers": {
+      "column": null,
+      "method": "absent",
+      "motif": "aucune colonne de departement ni de code INSEE",
+      "status": "ok"
+    },
+    "equipements": {
+      "column": null,
+      "method": "partition",
+      "status": "ok"
+    },
+    "fiscalite_locale": {
+      "column": "code_departement",
+      "method": "code_departement",
+      "status": "ok"
+    },
+    "foncier_pm": {
+      "column": null,
+      "method": "partition",
+      "status": "ok"
+    },
+    "gares": {
+      "column": "code_insee",
+      "method": "departement_from_insee",
+      "status": "ok"
+    },
+    "geo_communes": {
+      "column": "departement_code",
+      "method": "code_departement",
+      "status": "ok"
+    },
+    "geo_departements": {
+      "column": "code",
+      "method": "code_departement",
+      "status": "ok"
+    },
+    "geo_sections": {
+      "column": "departement_code",
+      "method": "code_departement",
+      "status": "ok"
+    },
+    "indicateurs_loyers": {
+      "column": "code_departement",
+      "method": "code_departement",
+      "status": "ok"
+    },
+    "monuments_historiques": {
+      "column": "code_departement",
+      "method": "code_departement",
+      "status": "ok"
+    },
+    "mutation_parcelles": {
+      "column": "code_departement",
+      "method": "code_departement",
+      "status": "ok"
+    },
+    "mutations": {
+      "column": null,
+      "method": "partition",
+      "status": "ok"
+    },
+    "mutations_grain": {
+      "column": null,
+      "method": "partition",
+      "status": "ok"
+    },
+    "parcelles": {
+      "column": null,
+      "method": "partition",
+      "status": "ok"
+    },
+    "permis": {
+      "column": "code_departement",
+      "method": "code_departement",
+      "status": "ok"
+    },
+    "revenus": {
+      "column": "code_departement",
+      "method": "code_departement",
+      "status": "ok"
+    },
+    "rnb_liens": {
+      "column": "code_departement",
+      "method": "code_departement",
+      "status": "ok"
+    },
+    "scoring_renov_target": {
+      "column": null,
+      "method": null,
+      "status": "absent"
+    },
+    "v_commune_synthese": {
+      "column": "code_departement",
+      "method": "code_departement",
+      "status": "ok"
+    },
+    "vacance": {
+      "column": "code_departement",
+      "method": "code_departement",
+      "status": "ok"
+    },
+    "zonage_abc": {
+      "column": "code_departement",
+      "method": "code_departement",
+      "status": "ok"
+    }
+  },
+  "script_sha256": "ec5fd047b85d192ec0fb0a2926734f67750149c6feaa56618497128678c8dea7",
+  "source": {
+    "alembic_version": "094_publication_generations",
+    "label": "pbs-main:backup/ct/275/2026-09-18T14:38:24Z datacommune-api"
+  }
+}

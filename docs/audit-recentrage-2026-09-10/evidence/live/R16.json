@@ -1,0 +1,605 @@
+{
+  "captured_at": "2026-09-10T20:41:08.229631+00:00",
+  "case": {
+    "case_id": "R16",
+    "address": "16 Rue Pierre Bérégovoy, 85000 La Roche-sur-Yon",
+    "ban_id": "85191_2006_00016",
+    "stratum": "appartement existant 85"
+  },
+  "sources": {
+    "dpe03existant": {
+      "http": 200,
+      "body": {
+        "total": 11,
+        "results": [
+          {
+            "adresse_brut": "16 Rue Pierre Bérégovoy\nRésidence Les Jardins Apt n°48 - rdc",
+            "adresse_ban": "16 Rue Pierre Bérégovoy 85000 La Roche-sur-Yon",
+            "identifiant_ban": "85191_2006_00016",
+            "code_insee_ban": "85191",
+            "score_ban": 0.61,
+            "type_batiment": "appartement",
+            "numero_etage_appartement": 0,
+            "numero_dpe": "2685E0079009H",
+            "date_fin_validite_dpe": "2036-01-11",
+            "date_etablissement_dpe": "2026-01-12",
+            "surface_habitable_logement": 56,
+            "etiquette_dpe": "C",
+            "_score": null
+          },
+          {
+            "code_insee_ban": "85191",
+            "score_ban": 0.62,
+            "type_batiment": "appartement",
+            "numero_dpe": "2285E2669063P",
+            "date_fin_validite_dpe": "2032-11-09",
+            "adresse_brut": "16 Rue pierre bérégovoy",
+            "adresse_ban": "16 Rue pierre bérégovoy 85000 La Roche-sur-Yon",
+            "identifiant_ban": "85191_2006_00016",
+            "id_rnb": "Y61153CD9CVJ",
+            "numero_etage_appartement": 0,
+            "numero_dpe_remplace": "2285E2667739R",
+            "date_etablissement_dpe": "2022-11-10",
+            "surface_habitable_logement": 71.8,
+            "etiquette_dpe": "C",
+            "_score": null
+          },
+          {
+            "code_insee_ban": "85191",
+            "score_ban": 0.62,
+            "type_batiment": "appartement",
+            "numero_dpe": "2385E2908117A",
+            "date_fin_validite_dpe": "2033-08-31",
+            "adresse_brut": "16 Rue pierre bérégovoy",
+            "adresse_ban": "16 Rue pierre bérégovoy 85000 La Roche-sur-Yon",
+            "identifiant_ban": "85191_2006_00016",
+            "id_rnb": "Y61153CD9CVJ",
+            "numero_etage_appartement": 0,
+            "date_etablissement_dpe": "2023-09-01",
+            "surface_habitable_logement": 54.1,
+            "etiquette_dpe": "C",
+            "_score": null
+          },
+          {
+            "code_insee_ban": "85191",
+            "score_ban": 0.62,
+            "type_batiment": "appartement",
+            "numero_dpe": "2485E4343274K",
+            "date_fin_validite_dpe": "2034-12-07",
+            "adresse_brut": "Appt N°49 Résidence Les Jardins\n16 rue Pierre Beregovoy",
+            "adresse_ban": "16 Rue pierre bérégovoy 85000 La Roche-sur-Yon",
+            "identifiant_ban": "85191_2006_00016",
+            "id_rnb": "Y61153CD9CVJ",
+            "numero_etage_appartement": 0,
+            "date_etablissement_dpe": "2024-12-08",
+            "surface_habitable_logement": 56.8,
+            "etiquette_dpe": "C",
+            "_score": null
+          },
+          {
+            "code_insee_ban": "85191",
+            "score_ban": 0.61,
+            "type_batiment": "appartement",
+            "numero_dpe": "2585E1766124H",
+            "date_fin_validite_dpe": "2035-05-27",
+            "adresse_brut": "16 Rue pierre bérégovoy\nRésidence Les Jardins",
+            "adresse_ban": "16 Rue pierre bérégovoy 85000 La Roche-sur-Yon",
+            "identifiant_ban": "85191_2006_00016",
+            "id_rnb": "Y61153CD9CVJ",
+            "numero_etage_appartement": 0,
+            "date_etablissement_dpe": "2025-05-28",
+            "surface_habitable_logement": 74.8,
+            "etiquette_dpe": "C",
+            "_score": null
+          },
+          {
+            "code_insee_ban": "85191",
+            "score_ban": 0.62,
+            "type_batiment": "appartement",
+            "numero_dpe": "2585E0818779Y",
+            "date_fin_validite_dpe": "2035-03-10",
+            "adresse_brut": "16 Rue Pierre Bérégovoy\nrésidence Les Jardins",
+            "adresse_ban": "16 Rue pierre bérégovoy 85000 La Roche-sur-Yon",
+            "identifiant_ban": "85191_2006_00016",
+            "id_rnb": "Y61153CD9CVJ",
+            "numero_etage_appartement": 0,
+            "date_etablissement_dpe": "2025-03-11",
+            "surface_habitable_logement": 67.3,
+            "etiquette_dpe": "D",
+            "_score": null
+          },
+          {
+            "adresse_brut": "18 rue pierre bérégovoy",
+            "adresse_ban": "16 Rue pierre bérégovoy 85000 La Roche-sur-Yon",
+            "identifiant_ban": "85191_2006_00016",
+            "code_insee_ban": "85191",
+            "score_ban": 0.66,
+            "type_batiment": "appartement",
+            "numero_etage_appartement": 3,
+            "numero_dpe": "2585E2866363E",
+            "date_fin_validite_dpe": "2035-09-09",
+            "date_etablissement_dpe": "2025-09-10",
+            "surface_habitable_logement": 56,
+            "etiquette_dpe": "D",
+            "_score": null
+          },
+          {
+            "adresse_brut": "16 rue Pierre Bérégovoy",
+            "adresse_ban": "16 Rue pierre bérégovoy 85000 La Roche-sur-Yon",
+            "identifiant_ban": "85191_2006_00016",
+            "code_insee_ban": "85191",
+            "score_ban": 0.61,
+            "type_batiment": "immeuble",
+            "numero_etage_appartement": 0,
+            "numero_dpe": "2585E2252548X",
+            "date_fin_validite_dpe": "2035-07-07",
+            "date_etablissement_dpe": "2025-07-08",
+            "etiquette_dpe": "D",
+            "_score": null
+          },
+          {
+            "adresse_brut": "18 rue pierre bérégovoy",
+            "adresse_ban": "16 Rue pierre bérégovoy 85000 La Roche-sur-Yon",
+            "identifiant_ban": "85191_2006_00016",
+            "code_insee_ban": "85191",
+            "score_ban": 0.66,
+            "type_batiment": "appartement",
+            "numero_etage_appartement": 2,
+            "numero_dpe": "2585E2789576V",
+            "date_fin_validite_dpe": "2035-09-02",
+            "date_etablissement_dpe": "2025-09-03",
+            "surface_habitable_logement": 76,
+            "etiquette_dpe": "D",
+            "_score": null
+          },
+          {
+            "adresse_brut": "16 rue pierre bérégovoy",
+            "adresse_ban": "16 Rue pierre bérégovoy 85000 La Roche-sur-Yon",
+            "identifiant_ban": "85191_2006_00016",
+            "code_insee_ban": "85191",
+            "score_ban": 0.75,
+            "type_batiment": "appartement",
+            "numero_etage_appartement": 1,
+            "numero_dpe": "2585E2949614D",
+            "date_fin_validite_dpe": "2035-09-16",
+            "date_etablissement_dpe": "2025-09-17",
+            "surface_habitable_logement": 76,
+            "etiquette_dpe": "D",
+            "_score": null
+          },
+          {
+            "adresse_brut": "18 rue pierre bérégovoy",
+            "adresse_ban": "16 Rue pierre bérégovoy 85000 La Roche-sur-Yon",
+            "identifiant_ban": "85191_2006_00016",
+            "code_insee_ban": "85191",
+            "score_ban": 0.66,
+            "type_batiment": "appartement",
+            "numero_etage_appartement": 1,
+            "numero_dpe": "2585E2789633A",
+            "date_fin_validite_dpe": "2035-09-02",
+            "date_etablissement_dpe": "2025-09-03",
+            "surface_habitable_logement": 56,
+            "etiquette_dpe": "D",
+            "_score": null
+          }
+        ]
+      },
+      "url": "https://data.ademe.fr/data-fair/api/v1/datasets/dpe03existant/lines?qs=identifiant_ban%3A%2285191_2006_00016%22&size=100&select=numero_dpe%2Cidentifiant_ban%2Cadresse_ban%2Cadresse_brut%2Ccode_insee_ban%2Ctype_batiment%2Csurface_habitable_logement%2Cetiquette_dpe%2Cdate_etablissement_dpe%2Cdate_fin_validite_dpe%2Cnumero_dpe_remplace%2Cid_rnb%2Cscore_ban%2Cnumero_etage_appartement"
+    },
+    "dpe02neuf": {
+      "http": 200,
+      "body": {
+        "total": 0,
+        "results": []
+      },
+      "url": "https://data.ademe.fr/data-fair/api/v1/datasets/dpe02neuf/lines?qs=identifiant_ban%3A%2285191_2006_00016%22&size=100&select=numero_dpe%2Cidentifiant_ban%2Cadresse_ban%2Cadresse_brut%2Ccode_insee_ban%2Ctype_batiment%2Csurface_habitable_logement%2Cetiquette_dpe%2Cdate_etablissement_dpe%2Cdate_fin_validite_dpe%2Cnumero_dpe_remplace%2Cid_rnb%2Cscore_ban%2Cnumero_etage_appartement"
+    }
+  },
+  "datacommune": {
+    "http": 200,
+    "body": {
+      "statut": "ok",
+      "donnees": [
+        {
+          "type_detecte": "adresse",
+          "latitude": 46.667981,
+          "longitude": -1.429593,
+          "adresse": "16 Rue Pierre Bérégovoy, 85000 La Roche-sur-Yon",
+          "id_parcelle": "85191000AN0411",
+          "commune": "La Roche-sur-Yon",
+          "code_postal": "85000",
+          "score": 0.686274528503418,
+          "code_insee": "85191",
+          "resolution": "exact",
+          "parcelles_candidates": null,
+          "ban_id": "85191_2006_00016",
+          "datasets": {
+            "dpe": null
+          },
+          "erreurs": null,
+          "avertissements": [],
+          "dataset_states": {
+            "dpe": {
+              "dataset": "dpe",
+              "presence": "value",
+              "absence_reason": null,
+              "raison": null
+            }
+          },
+          "dpe_attribution": {
+            "version": 2,
+            "status": "unassigned",
+            "reason": "dwelling_identity_unproven",
+            "diagnostic": null,
+            "candidates": [],
+            "building_context": {
+              "count": 8,
+              "distribution": {
+                "C": 6,
+                "D": 2
+              },
+              "truncated": false
+            },
+            "graph_state": "not_checked"
+          },
+          "dpe_inventory": {
+            "association": "source_ban_equality",
+            "address_check": "unverified",
+            "source": "ADEME",
+            "source_coverage": "unknown",
+            "graph_state": "not_checked",
+            "imported_at": null,
+            "version": 2,
+            "as_of_date": "2026-09-10",
+            "state": "ready",
+            "items": [
+              {
+                "type_batiment": "appartement",
+                "surface_habitable": 71.8,
+                "etiquette_dpe": "C",
+                "etiquette_ges": "C",
+                "date_etablissement_dpe": "2022-11-10",
+                "date_fin_validite_dpe": "2032-11-09",
+                "lifecycle": {
+                  "source_state": "present",
+                  "source_snapshot_date": "2026-09-05",
+                  "source_scope": "44/85",
+                  "regimes": [
+                    "existant"
+                  ],
+                  "replacement_state": "no_successor_known",
+                  "graph_issues": [
+                    "missing_target"
+                  ],
+                  "validity": "not_expired_by_date",
+                  "as_of_date": "2026-09-10",
+                  "revision_status": "unverified",
+                  "revision_kind": null,
+                  "revision_date": null,
+                  "detail_availability": "available"
+                }
+              },
+              {
+                "type_batiment": "appartement",
+                "surface_habitable": 54.1,
+                "etiquette_dpe": "C",
+                "etiquette_ges": "C",
+                "date_etablissement_dpe": "2023-09-01",
+                "date_fin_validite_dpe": "2033-08-31",
+                "lifecycle": {
+                  "source_state": "present",
+                  "source_snapshot_date": "2026-09-05",
+                  "source_scope": "44/85",
+                  "regimes": [
+                    "existant"
+                  ],
+                  "replacement_state": "no_successor_known",
+                  "graph_issues": [],
+                  "validity": "not_expired_by_date",
+                  "as_of_date": "2026-09-10",
+                  "revision_status": "unverified",
+                  "revision_kind": null,
+                  "revision_date": null,
+                  "detail_availability": "available"
+                }
+              },
+              {
+                "type_batiment": "appartement",
+                "surface_habitable": 56.8,
+                "etiquette_dpe": "C",
+                "etiquette_ges": "C",
+                "date_etablissement_dpe": "2024-12-08",
+                "date_fin_validite_dpe": "2034-12-07",
+                "lifecycle": {
+                  "source_state": "present",
+                  "source_snapshot_date": "2026-09-05",
+                  "source_scope": "44/85",
+                  "regimes": [
+                    "existant"
+                  ],
+                  "replacement_state": "no_successor_known",
+                  "graph_issues": [],
+                  "validity": "not_expired_by_date",
+                  "as_of_date": "2026-09-10",
+                  "revision_status": "unverified",
+                  "revision_kind": null,
+                  "revision_date": null,
+                  "detail_availability": "available"
+                }
+              },
+              {
+                "type_batiment": "appartement",
+                "surface_habitable": 67.3,
+                "etiquette_dpe": "D",
+                "etiquette_ges": "D",
+                "date_etablissement_dpe": "2025-03-11",
+                "date_fin_validite_dpe": "2035-03-10",
+                "lifecycle": {
+                  "source_state": "present",
+                  "source_snapshot_date": "2026-09-05",
+                  "source_scope": "44/85",
+                  "regimes": [
+                    "existant"
+                  ],
+                  "replacement_state": "no_successor_known",
+                  "graph_issues": [],
+                  "validity": "not_expired_by_date",
+                  "as_of_date": "2026-09-10",
+                  "revision_status": "unverified",
+                  "revision_kind": null,
+                  "revision_date": null,
+                  "detail_availability": "available"
+                }
+              },
+              {
+                "type_batiment": "appartement",
+                "surface_habitable": 74.8,
+                "etiquette_dpe": "C",
+                "etiquette_ges": "C",
+                "date_etablissement_dpe": "2025-05-28",
+                "date_fin_validite_dpe": "2035-05-27",
+                "lifecycle": {
+                  "source_state": "present",
+                  "source_snapshot_date": "2026-09-05",
+                  "source_scope": "44/85",
+                  "regimes": [
+                    "existant"
+                  ],
+                  "replacement_state": "no_successor_known",
+                  "graph_issues": [],
+                  "validity": "not_expired_by_date",
+                  "as_of_date": "2026-09-10",
+                  "revision_status": "unverified",
+                  "revision_kind": null,
+                  "revision_date": null,
+                  "detail_availability": "available"
+                }
+              },
+              {
+                "type_batiment": "immeuble",
+                "surface_habitable": null,
+                "etiquette_dpe": "D",
+                "etiquette_ges": "D",
+                "date_etablissement_dpe": "2025-07-08",
+                "date_fin_validite_dpe": "2035-07-07",
+                "lifecycle": {
+                  "source_state": "present",
+                  "source_snapshot_date": "2026-09-05",
+                  "source_scope": "44/85",
+                  "regimes": [
+                    "existant"
+                  ],
+                  "replacement_state": "no_successor_known",
+                  "graph_issues": [],
+                  "validity": "not_expired_by_date",
+                  "as_of_date": "2026-09-10",
+                  "revision_status": "unverified",
+                  "revision_kind": null,
+                  "revision_date": null,
+                  "detail_availability": "available"
+                }
+              },
+              {
+                "type_batiment": "appartement",
+                "surface_habitable": 76.0,
+                "etiquette_dpe": "D",
+                "etiquette_ges": "D",
+                "date_etablissement_dpe": "2025-09-03",
+                "date_fin_validite_dpe": "2035-09-02",
+                "lifecycle": {
+                  "source_state": "present",
+                  "source_snapshot_date": "2026-09-05",
+                  "source_scope": "44/85",
+                  "regimes": [
+                    "existant"
+                  ],
+                  "replacement_state": "no_successor_known",
+                  "graph_issues": [],
+                  "validity": "not_expired_by_date",
+                  "as_of_date": "2026-09-10",
+                  "revision_status": "unverified",
+                  "revision_kind": null,
+                  "revision_date": null,
+                  "detail_availability": "available"
+                }
+              },
+              {
+                "type_batiment": "appartement",
+                "surface_habitable": 56.0,
+                "etiquette_dpe": "D",
+                "etiquette_ges": "D",
+                "date_etablissement_dpe": "2025-09-03",
+                "date_fin_validite_dpe": "2035-09-02",
+                "lifecycle": {
+                  "source_state": "present",
+                  "source_snapshot_date": "2026-09-05",
+                  "source_scope": "44/85",
+                  "regimes": [
+                    "existant"
+                  ],
+                  "replacement_state": "no_successor_known",
+                  "graph_issues": [],
+                  "validity": "not_expired_by_date",
+                  "as_of_date": "2026-09-10",
+                  "revision_status": "unverified",
+                  "revision_kind": null,
+                  "revision_date": null,
+                  "detail_availability": "available"
+                }
+              },
+              {
+                "type_batiment": "appartement",
+                "surface_habitable": 56.0,
+                "etiquette_dpe": "D",
+                "etiquette_ges": "D",
+                "date_etablissement_dpe": "2025-09-10",
+                "date_fin_validite_dpe": "2035-09-09",
+                "lifecycle": {
+                  "source_state": "present",
+                  "source_snapshot_date": "2026-09-05",
+                  "source_scope": "44/85",
+                  "regimes": [
+                    "existant"
+                  ],
+                  "replacement_state": "no_successor_known",
+                  "graph_issues": [],
+                  "validity": "not_expired_by_date",
+                  "as_of_date": "2026-09-10",
+                  "revision_status": "unverified",
+                  "revision_kind": null,
+                  "revision_date": null,
+                  "detail_availability": "available"
+                }
+              },
+              {
+                "type_batiment": "appartement",
+                "surface_habitable": 76.0,
+                "etiquette_dpe": "D",
+                "etiquette_ges": "D",
+                "date_etablissement_dpe": "2025-09-17",
+                "date_fin_validite_dpe": "2035-09-16",
+                "lifecycle": {
+                  "source_state": "present",
+                  "source_snapshot_date": "2026-09-05",
+                  "source_scope": "44/85",
+                  "regimes": [
+                    "existant"
+                  ],
+                  "replacement_state": "no_successor_known",
+                  "graph_issues": [],
+                  "validity": "not_expired_by_date",
+                  "as_of_date": "2026-09-10",
+                  "revision_status": "unverified",
+                  "revision_kind": null,
+                  "revision_date": null,
+                  "detail_availability": "available"
+                }
+              },
+              {
+                "type_batiment": "appartement",
+                "surface_habitable": 56.0,
+                "etiquette_dpe": "C",
+                "etiquette_ges": "C",
+                "date_etablissement_dpe": "2026-01-12",
+                "date_fin_validite_dpe": "2036-01-11",
+                "lifecycle": {
+                  "source_state": "present",
+                  "source_snapshot_date": "2026-09-05",
+                  "source_scope": "44/85",
+                  "regimes": [
+                    "existant"
+                  ],
+                  "replacement_state": "no_successor_known",
+                  "graph_issues": [],
+                  "validity": "not_expired_by_date",
+                  "as_of_date": "2026-09-10",
+                  "revision_status": "unverified",
+                  "revision_kind": null,
+                  "revision_date": null,
+                  "detail_availability": "available"
+                }
+              }
+            ],
+            "total": 11,
+            "distribution": {
+              "A": 0,
+              "B": 0,
+              "C": 5,
+              "D": 6,
+              "E": 0,
+              "F": 0,
+              "G": 0,
+              "unknown": 0
+            },
+            "page_size": 20,
+            "has_more": false,
+            "read_state": "complete"
+          },
+          "dvf_attribution": null
+        }
+      ],
+      "meta": {
+        "source": [
+          {
+            "nom": "Base Adresse Nationale (BAN)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://adresse.data.gouv.fr",
+            "producteur": "DINUM / IGN",
+            "dataset": "ban",
+            "periode": {
+              "statut": "inconnue",
+              "label": null,
+              "debut": null,
+              "fin": null
+            },
+            "derniere_importation_reussie": null,
+            "couverture": {
+              "type": "inconnue",
+              "departements": null
+            },
+            "cadence": {
+              "statut": "official",
+              "label": "Hebdomadaire",
+              "evidence_url": "https://cartes.gouv.fr/aide/fr/guides-utilisateur/utiliser-les-services-de-la-geoplateforme/geocodage/",
+              "intervalle_jours": 7
+            },
+            "etat": "inconnu"
+          },
+          {
+            "nom": "Diagnostics de Performance Energetique (DPE)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://data.ademe.fr/datasets/dpe03existant",
+            "producteur": "ADEME",
+            "dataset": "dpe",
+            "periode": {
+              "statut": "inconnue",
+              "label": null,
+              "debut": null,
+              "fin": null
+            },
+            "derniere_importation_reussie": null,
+            "couverture": {
+              "type": "departements",
+              "departements": [
+                "44",
+                "85"
+              ]
+            },
+            "cadence": {
+              "statut": "official",
+              "label": "Hebdomadaire",
+              "evidence_url": "https://data.ademe.fr/datasets/dpe03existant",
+              "intervalle_jours": 7
+            },
+            "etat": "inconnu"
+          }
+        ],
+        "resolution": {
+          "issue": "exact",
+          "raison": null,
+          "parcelles_candidates": null
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,2459 @@
+{
+	"_provenance": "details of every theme served by datacommune.fr/adresse/<ban>/__data.json on 2026-11-12 (SHA 1e4280aa), at five town halls: Nantes, Lyon 1er, Bordeaux, Paris 4e, Lille. Public buildings only.",
+	"themes": {
+		"altitude": [
+			{
+				"altitude_m": 9.39
+			},
+			{
+				"altitude_m": 8.76
+			},
+			{
+				"altitude_m": 20.4
+			},
+			{
+				"altitude_m": 168.84
+			},
+			{
+				"altitude_m": 33.73
+			}
+		],
+		"antennes_5g": [
+			{
+				"supports": 45,
+				"supports_5g": 35,
+				"liste_incomplete": false,
+				"motif": null
+			},
+			{
+				"supports": 46,
+				"supports_5g": 35,
+				"liste_incomplete": false,
+				"motif": null
+			},
+			{
+				"supports": 97,
+				"supports_5g": 53,
+				"liste_incomplete": false,
+				"motif": null
+			},
+			{
+				"supports": 117,
+				"supports_5g": 70,
+				"liste_incomplete": false,
+				"motif": null
+			},
+			{
+				"supports": 130,
+				"supports_5g": 75,
+				"liste_incomplete": false,
+				"motif": null
+			}
+		],
+		"argiles": [
+			{
+				"exposition": "Exposition forte"
+			},
+			{
+				"exposition": "Exposition faible"
+			},
+			{
+				"exposition": "Exposition moyenne"
+			}
+		],
+		"batiment": [
+			{
+				"batiments_parcelle": 1,
+				"batiments_parcelle_hors_annexe": 1,
+				"hauteur_etat": "value",
+				"hauteur_motif": null,
+				"rnb": {
+					"etat": "value",
+					"identifiant": "2VYBYTG2XPAD",
+					"motif": null
+				}
+			},
+			{
+				"rnb": {
+					"etat": "value",
+					"identifiant": "BCP3EKAKB7XR",
+					"motif": null
+				}
+			},
+			{
+				"batiments_parcelle": 1,
+				"batiments_parcelle_hors_annexe": 1,
+				"hauteur_etat": "value",
+				"hauteur_motif": null,
+				"rnb": {
+					"etat": "not_reported",
+					"identifiant": null,
+					"motif": null
+				}
+			},
+			{
+				"batiments_parcelle": 5,
+				"batiments_parcelle_hors_annexe": 5,
+				"hauteur_etat": "value",
+				"hauteur_motif": null,
+				"rnb": {
+					"etat": "not_available",
+					"identifiant": null,
+					"motif": "batiment_rnb_non_unique"
+				}
+			},
+			{
+				"batiments_parcelle": 1,
+				"batiments_parcelle_hors_annexe": 1,
+				"hauteur_etat": "not_available",
+				"hauteur_motif": "aucun_batiment_au_point",
+				"rnb": {
+					"etat": "value",
+					"identifiant": "8PWJVCN6NEYJ",
+					"motif": null
+				}
+			}
+		],
+		"catnat": [
+			{
+				"derniers": [
+					{
+						"risque": "Sécheresse",
+						"debut": "2024-12-31",
+						"fin": "2025-12-30",
+						"publication_jo": "2026-04-13"
+					},
+					{
+						"risque": "Inondations et/ou Coulées de Boue",
+						"debut": "2024-06-17",
+						"fin": "2024-06-18",
+						"publication_jo": "2024-08-02"
+					},
+					{
+						"risque": "Sécheresse",
+						"debut": "2022-07-01",
+						"fin": "2022-09-30",
+						"publication_jo": "2023-05-03"
+					},
+					{
+						"risque": "Inondations et/ou Coulées de Boue",
+						"debut": "2021-06-17",
+						"fin": "2021-06-19",
+						"publication_jo": "2021-07-02"
+					},
+					{
+						"risque": "Inondations et/ou Coulées de Boue",
+						"debut": "2020-05-09",
+						"fin": "2020-05-11",
+						"publication_jo": "2020-12-03"
+					}
+				],
+				"liste_incomplete": false
+			},
+			{
+				"derniers": [
+					{
+						"risque": "Inondations et/ou Coulées de Boue",
+						"debut": "2026-02-08",
+						"fin": "2026-02-23",
+						"publication_jo": "2026-03-03"
+					},
+					{
+						"risque": "Inondations et/ou Coulées de Boue",
+						"debut": "2024-10-07",
+						"fin": "2024-10-12",
+						"publication_jo": "2025-02-05"
+					},
+					{
+						"risque": "Inondations et/ou Coulées de Boue",
+						"debut": "2024-06-17",
+						"fin": "2024-06-21",
+						"publication_jo": "2024-07-07"
+					},
+					{
+						"risque": "Inondations et/ou Coulées de Boue",
+						"debut": "2022-04-24",
+						"fin": "2022-04-24",
+						"publication_jo": "2022-08-25"
+					},
+					{
+						"risque": "Inondations et/ou Coulées de Boue",
+						"debut": "2021-10-02",
+						"fin": "2021-10-03",
+						"publication_jo": "2022-08-25"
+					}
+				],
+				"liste_incomplete": false
+			},
+			{
+				"derniers": [
+					{
+						"risque": "Sécheresse",
+						"debut": "2022-04-01",
+						"fin": "2022-06-30",
+						"publication_jo": "2024-04-07"
+					},
+					{
+						"risque": "Inondations et/ou Coulées de Boue",
+						"debut": "2008-06-02",
+						"fin": "2008-06-02",
+						"publication_jo": "2008-12-31"
+					},
+					{
+						"risque": "Inondations et/ou Coulées de Boue",
+						"debut": "2008-05-15",
+						"fin": "2008-05-15",
+						"publication_jo": "2008-10-10"
+					},
+					{
+						"risque": "Inondations et/ou Coulées de Boue",
+						"debut": "2007-07-20",
+						"fin": "2007-07-20",
+						"publication_jo": "2007-11-25"
+					},
+					{
+						"risque": "Inondations et/ou Coulées de Boue",
+						"debut": "2005-07-04",
+						"fin": "2005-07-04",
+						"publication_jo": "2005-12-30"
+					}
+				],
+				"liste_incomplete": false
+			},
+			{
+				"derniers": [],
+				"liste_incomplete": false
+			}
+		],
+		"construction": [
+			{
+				"groupes": [
+					{
+						"batiment_groupe_id": "bdnb-bg-5EAM-VD6Z-QZUE",
+						"annee_construction": 1900,
+						"mat_mur_txt": "INDETERMINE",
+						"mat_toit_txt": "INDETERMINE"
+					}
+				],
+				"liste_incomplete": false
+			},
+			{
+				"groupes": [
+					{
+						"batiment_groupe_id": "bdnb-bg-NGB3-JXVS-S5HJ",
+						"annee_construction": 1880,
+						"mat_mur_txt": "INDETERMINE",
+						"mat_toit_txt": "INDETERMINE"
+					}
+				],
+				"liste_incomplete": false
+			},
+			{
+				"groupes": [
+					{
+						"batiment_groupe_id": "bdnb-bg-JQP5-RGSR-DJ7J",
+						"annee_construction": 1580,
+						"mat_mur_txt": "INDETERMINE",
+						"mat_toit_txt": "INDETERMINE"
+					}
+				],
+				"liste_incomplete": false
+			},
+			{
+				"groupes": [
+					{
+						"batiment_groupe_id": "bdnb-bg-UL9C-WJDP-NJBE",
+						"annee_construction": 1981,
+						"mat_mur_txt": "INDETERMINE",
+						"mat_toit_txt": "INDETERMINE"
+					}
+				],
+				"liste_incomplete": false
+			}
+		],
+		"copropriete": [
+			{
+				"registres": [],
+				"liste_incomplete": false,
+				"mention": "Le registre cite au plus trois parcelles par copropriété ; une copropriété non immatriculée n'y figure pas."
+			}
+		],
+		"debroussaillement": [
+			{
+				"feu_de_foret_commune": null,
+				"feu_de_foret_present": false
+			}
+		],
+		"delinquance": [
+			{
+				"annee": 2025,
+				"zone": {
+					"code": "33063",
+					"niveau": "commune"
+				},
+				"indicateurs": [
+					{
+						"indicateur": "Cambriolages de logement",
+						"base": "pour 1 000 logements",
+						"taux_commune": 6.8800734,
+						"nombre_commune": 1159,
+						"diffuse": true,
+						"taux_departement": 7.425526
+					},
+					{
+						"indicateur": "Vols sans violence contre des personnes",
+						"base": "pour 1 000 habitants",
+						"taux_commune": 39.0610132,
+						"nombre_commune": 10468,
+						"diffuse": true,
+						"taux_departement": 11.5439697
+					},
+					{
+						"indicateur": "Violences physiques hors cadre familial",
+						"base": "pour 1 000 habitants",
+						"taux_commune": 5.0897232,
+						"nombre_commune": 1364,
+						"diffuse": true,
+						"taux_departement": 2.8636617
+					},
+					{
+						"indicateur": "Destructions et dégradations volontaires",
+						"base": "pour 1 000 habitants",
+						"taux_commune": 14.7243751,
+						"nombre_commune": 3946,
+						"diffuse": true,
+						"taux_departement": 8.9121931
+					}
+				]
+			},
+			{
+				"annee": 2025,
+				"zone": {
+					"code": "44109",
+					"niveau": "commune"
+				},
+				"indicateurs": [
+					{
+						"indicateur": "Cambriolages de logement",
+						"base": "pour 1 000 logements",
+						"taux_commune": 6.3368504,
+						"nombre_commune": 1227,
+						"diffuse": true,
+						"taux_departement": 6.3213546
+					},
+					{
+						"indicateur": "Vols sans violence contre des personnes",
+						"base": "pour 1 000 habitants",
+						"taux_commune": 17.5019986,
+						"nombre_commune": 5736,
+						"diffuse": true,
+						"taux_departement": 8.2873411
+					},
+					{
+						"indicateur": "Violences physiques hors cadre familial",
+						"base": "pour 1 000 habitants",
+						"taux_commune": 4.4456785,
+						"nombre_commune": 1457,
+						"diffuse": true,
+						"taux_departement": 2.4832445
+					},
+					{
+						"indicateur": "Destructions et dégradations volontaires",
+						"base": "pour 1 000 habitants",
+						"taux_commune": 8.8333832,
+						"nombre_commune": 2895,
+						"diffuse": true,
+						"taux_departement": 6.9401776
+					}
+				]
+			},
+			{
+				"annee": 2025,
+				"zone": {
+					"code": "59350",
+					"niveau": "commune"
+				},
+				"indicateurs": [
+					{
+						"indicateur": "Cambriolages de logement",
+						"base": "pour 1 000 logements",
+						"taux_commune": 8.9645648,
+						"nombre_commune": 1301,
+						"diffuse": true,
+						"taux_departement": 6.7320185
+					},
+					{
+						"indicateur": "Vols sans violence contre des personnes",
+						"base": "pour 1 000 habitants",
+						"taux_commune": 30.5398622,
+						"nombre_commune": 7276,
+						"diffuse": true,
+						"taux_departement": 8.2633854
+					},
+					{
+						"indicateur": "Violences physiques hors cadre familial",
+						"base": "pour 1 000 habitants",
+						"taux_commune": 6.5520512,
+						"nombre_commune": 1561,
+						"diffuse": true,
+						"taux_departement": 3.9470339
+					},
+					{
+						"indicateur": "Destructions et dégradations volontaires",
+						"base": "pour 1 000 habitants",
+						"taux_commune": 12.7725124,
+						"nombre_commune": 3043,
+						"diffuse": true,
+						"taux_departement": 9.7093058
+					}
+				]
+			},
+			{
+				"annee": 2025,
+				"zone": {
+					"code": "69381",
+					"niveau": "arrondissement"
+				},
+				"indicateurs": [
+					{
+						"indicateur": "Cambriolages de logement",
+						"base": "pour 1 000 logements",
+						"taux_commune": 8.5042705,
+						"nombre_commune": 162,
+						"diffuse": true,
+						"taux_departement": 7.3180795
+					},
+					{
+						"indicateur": "Vols sans violence contre des personnes",
+						"base": "pour 1 000 habitants",
+						"taux_commune": 59.5814326,
+						"nombre_commune": 1711,
+						"diffuse": true,
+						"taux_departement": 17.3549761
+					},
+					{
+						"indicateur": "Violences physiques hors cadre familial",
+						"base": "pour 1 000 habitants",
+						"taux_commune": 8.6359996,
+						"nombre_commune": 248,
+						"diffuse": true,
+						"taux_departement": 3.8413991
+					},
+					{
+						"indicateur": "Destructions et dégradations volontaires",
+						"base": "pour 1 000 habitants",
+						"taux_commune": 13.3718703,
+						"nombre_commune": 384,
+						"diffuse": true,
+						"taux_departement": 9.6585986
+					}
+				]
+			},
+			{
+				"annee": 2025,
+				"zone": {
+					"code": "75104",
+					"niveau": "arrondissement"
+				},
+				"indicateurs": [
+					{
+						"indicateur": "Cambriolages de logement",
+						"base": "pour 1 000 logements",
+						"taux_commune": 5.7749062,
+						"nombre_commune": 133,
+						"diffuse": true,
+						"taux_departement": 5.0545976
+					},
+					{
+						"indicateur": "Vols sans violence contre des personnes",
+						"base": "pour 1 000 habitants",
+						"taux_commune": 93.0045368,
+						"nombre_commune": 2542,
+						"diffuse": true,
+						"taux_departement": 45.1207304
+					},
+					{
+						"indicateur": "Violences physiques hors cadre familial",
+						"base": "pour 1 000 habitants",
+						"taux_commune": 6.6588614,
+						"nombre_commune": 182,
+						"diffuse": true,
+						"taux_departement": 5.2738454
+					},
+					{
+						"indicateur": "Destructions et dégradations volontaires",
+						"base": "pour 1 000 habitants",
+						"taux_commune": 14.1226401,
+						"nombre_commune": 386,
+						"diffuse": true,
+						"taux_departement": 8.9729049
+					}
+				]
+			}
+		],
+		"dpe": [
+			{
+				"repartition": {
+					"A": 0,
+					"B": 0,
+					"C": 0,
+					"D": 0,
+					"E": 0,
+					"F": 0,
+					"G": 0,
+					"unknown": 0
+				},
+				"interdictions_location": {
+					"etat": "ok",
+					"unite": "documents_dpe",
+					"portee": "bail_signe_renouvele_ou_reconduit",
+					"etapes": [
+						{
+							"classe": "G",
+							"a_partir_du": "2025-01-01",
+							"en_vigueur": true,
+							"documents": 0
+						},
+						{
+							"classe": "F",
+							"a_partir_du": "2028-01-01",
+							"en_vigueur": false,
+							"documents": 0
+						},
+						{
+							"classe": "E",
+							"a_partir_du": "2034-01-01",
+							"en_vigueur": false,
+							"documents": 0
+						}
+					],
+					"exception_copropriete": true
+				},
+				"documents_appartement": 0,
+				"plus_recent": {
+					"etat": "indeterminee",
+					"date": null,
+					"document": null,
+					"documents_ex_aequo": [],
+					"motif": "aucun_document"
+				},
+				"batiments": {
+					"rnb_des_documents": 0,
+					"documents_sans_rnb": 0,
+					"liens_rnb_de_la_cle": 1,
+					"un_seul_batiment_etabli": false
+				}
+			},
+			{
+				"repartition": {
+					"A": 0,
+					"B": 0,
+					"C": 0,
+					"D": 0,
+					"E": 0,
+					"F": 0,
+					"G": 0,
+					"unknown": 0
+				},
+				"interdictions_location": {
+					"etat": "ok",
+					"unite": "documents_dpe",
+					"portee": "bail_signe_renouvele_ou_reconduit",
+					"etapes": [
+						{
+							"classe": "G",
+							"a_partir_du": "2025-01-01",
+							"en_vigueur": true,
+							"documents": 0
+						},
+						{
+							"classe": "F",
+							"a_partir_du": "2028-01-01",
+							"en_vigueur": false,
+							"documents": 0
+						},
+						{
+							"classe": "E",
+							"a_partir_du": "2034-01-01",
+							"en_vigueur": false,
+							"documents": 0
+						}
+					],
+					"exception_copropriete": true
+				},
+				"documents_appartement": 0,
+				"plus_recent": {
+					"etat": "indeterminee",
+					"date": null,
+					"document": null,
+					"documents_ex_aequo": [],
+					"motif": "aucun_document"
+				},
+				"batiments": {
+					"rnb_des_documents": 0,
+					"documents_sans_rnb": 0,
+					"liens_rnb_de_la_cle": 0,
+					"un_seul_batiment_etabli": false
+				}
+			},
+			{
+				"repartition": {
+					"A": 0,
+					"B": 0,
+					"C": 0,
+					"D": 0,
+					"E": 0,
+					"F": 0,
+					"G": 0,
+					"unknown": 0
+				},
+				"interdictions_location": {
+					"etat": "ok",
+					"unite": "documents_dpe",
+					"portee": "bail_signe_renouvele_ou_reconduit",
+					"etapes": [
+						{
+							"classe": "G",
+							"a_partir_du": "2025-01-01",
+							"en_vigueur": true,
+							"documents": 0
+						},
+						{
+							"classe": "F",
+							"a_partir_du": "2028-01-01",
+							"en_vigueur": false,
+							"documents": 0
+						},
+						{
+							"classe": "E",
+							"a_partir_du": "2034-01-01",
+							"en_vigueur": false,
+							"documents": 0
+						}
+					],
+					"exception_copropriete": true
+				},
+				"documents_appartement": 0,
+				"plus_recent": {
+					"etat": "indeterminee",
+					"date": null,
+					"document": null,
+					"documents_ex_aequo": [],
+					"motif": "aucun_document"
+				},
+				"batiments": {
+					"rnb_des_documents": 0,
+					"documents_sans_rnb": 0,
+					"liens_rnb_de_la_cle": 2,
+					"un_seul_batiment_etabli": false
+				}
+			}
+		],
+		"eau_potable": [
+			{
+				"reseaux": [
+					{
+						"code": "044000115",
+						"nom": "SECTEUR-REZE"
+					},
+					{
+						"code": "044000138",
+						"nom": "SECTEUR-NANTES"
+					}
+				],
+				"reseaux_complets": true,
+				"annee_reseaux": "2026",
+				"bacteriologique": {
+					"prelevements": 399,
+					"non_conformes": 0,
+					"sans_conclusion": 0,
+					"dates_non_conformes": [],
+					"taux_conformite": 100,
+					"dernier_prelevement": "2026-08-31",
+					"dernier_controle_conclu": "2026-08-31",
+					"dernier_conforme": true,
+					"lecture_complete": true
+				},
+				"physico_chimique": {
+					"prelevements": 401,
+					"non_conformes": 0,
+					"sans_conclusion": 0,
+					"dates_non_conformes": [],
+					"taux_conformite": 100,
+					"dernier_prelevement": "2026-08-31",
+					"dernier_controle_conclu": "2026-08-31",
+					"dernier_conforme": true,
+					"lecture_complete": true
+				},
+				"durete_f": 12.3,
+				"durete": "douce",
+				"durete_date": "2025-12-30",
+				"prelevements": 401
+			},
+			{
+				"reseaux": [
+					{
+						"code": "059000545",
+						"nom": "LILLE"
+					},
+					{
+						"code": "059000585",
+						"nom": "VILLENEUVE D'ASCQ"
+					},
+					{
+						"code": "059004195",
+						"nom": "LAMBERSART"
+					}
+				],
+				"reseaux_complets": true,
+				"annee_reseaux": "2026",
+				"bacteriologique": {
+					"prelevements": 86,
+					"non_conformes": 0,
+					"sans_conclusion": 0,
+					"dates_non_conformes": [],
+					"taux_conformite": 100,
+					"dernier_prelevement": "2026-08-26",
+					"dernier_controle_conclu": "2026-08-26",
+					"dernier_conforme": true,
+					"lecture_complete": true
+				},
+				"physico_chimique": {
+					"prelevements": 92,
+					"non_conformes": 0,
+					"sans_conclusion": 0,
+					"dates_non_conformes": [],
+					"taux_conformite": 100,
+					"dernier_prelevement": "2026-08-26",
+					"dernier_controle_conclu": "2026-08-26",
+					"dernier_conforme": true,
+					"lecture_complete": true
+				},
+				"durete_f": null,
+				"durete": null,
+				"durete_date": null,
+				"prelevements": 92
+			},
+			{
+				"reseaux": [
+					{
+						"code": "069000069",
+						"nom": "CENTRE (METROPOLE LYON)"
+					}
+				],
+				"reseaux_complets": true,
+				"annee_reseaux": "2026",
+				"bacteriologique": {
+					"prelevements": 284,
+					"non_conformes": 0,
+					"sans_conclusion": 0,
+					"dates_non_conformes": [],
+					"taux_conformite": 100,
+					"dernier_prelevement": "2026-08-28",
+					"dernier_controle_conclu": "2026-08-28",
+					"dernier_conforme": true,
+					"lecture_complete": true
+				},
+				"physico_chimique": {
+					"prelevements": 284,
+					"non_conformes": 0,
+					"sans_conclusion": 0,
+					"dates_non_conformes": [],
+					"taux_conformite": 100,
+					"dernier_prelevement": "2026-08-28",
+					"dernier_controle_conclu": "2026-08-28",
+					"dernier_conforme": true,
+					"lecture_complete": true
+				},
+				"durete_f": null,
+				"durete": null,
+				"durete_date": null,
+				"prelevements": 284
+			},
+			{
+				"reseaux": [
+					{
+						"code": "075000221",
+						"nom": "CENTRE"
+					},
+					{
+						"code": "075000222",
+						"nom": "NORD OUEST"
+					},
+					{
+						"code": "075000225",
+						"nom": "SUD OUEST"
+					},
+					{
+						"code": "075000227",
+						"nom": "EST"
+					}
+				],
+				"reseaux_complets": true,
+				"annee_reseaux": "2026",
+				"bacteriologique": {
+					"prelevements": 836,
+					"non_conformes": 0,
+					"sans_conclusion": 0,
+					"dates_non_conformes": [],
+					"taux_conformite": 100,
+					"dernier_prelevement": "2026-06-30",
+					"dernier_controle_conclu": "2026-06-30",
+					"dernier_conforme": true,
+					"lecture_complete": true
+				},
+				"physico_chimique": {
+					"prelevements": 836,
+					"non_conformes": 0,
+					"sans_conclusion": 0,
+					"dates_non_conformes": [],
+					"taux_conformite": 100,
+					"dernier_prelevement": "2026-06-30",
+					"dernier_controle_conclu": "2026-06-30",
+					"dernier_conforme": true,
+					"lecture_complete": true
+				},
+				"durete_f": 29.98,
+				"durete": "dure",
+				"durete_date": "2025-12-26",
+				"prelevements": 836
+			}
+		],
+		"ecoles": [
+			{
+				"elementaire": {
+					"uai": "0440661E",
+					"nom": "Ecole élémentaire publique Léon Blum",
+					"distance_m": 140,
+					"ips": 136.2,
+					"ips_rentree": "2024-2025",
+					"ips_national_public": 103.1,
+					"taux_reussite": null,
+					"valeur_ajoutee": null,
+					"session": null
+				},
+				"college": {
+					"uai": "0440045K",
+					"nom": "Collège Victor Hugo",
+					"distance_m": 704,
+					"ips": 128.4,
+					"ips_rentree": "2025-2026",
+					"ips_national_public": 100.8,
+					"taux_reussite": 84,
+					"valeur_ajoutee": -10,
+					"session": "2025"
+				},
+				"lycee": {
+					"uai": "0440022K",
+					"nom": "Lycée Jules Verne",
+					"distance_m": 460,
+					"ips": 140.8,
+					"ips_rentree": "2025-2026",
+					"ips_national_public": 115.2,
+					"taux_reussite": 97,
+					"valeur_ajoutee": -2,
+					"session": "2025"
+				},
+				"college_de_secteur": null
+			},
+			{
+				"elementaire": {
+					"uai": "0693219Z",
+					"nom": "Ecole primaire Michel Servet",
+					"distance_m": 477,
+					"ips": 123,
+					"ips_rentree": "2024-2025",
+					"ips_national_public": 103.1,
+					"taux_reussite": null,
+					"valeur_ajoutee": null,
+					"session": null
+				},
+				"college": {
+					"uai": "0692693C",
+					"nom": "Collège Ampère",
+					"distance_m": 297,
+					"ips": 120.8,
+					"ips_rentree": "2025-2026",
+					"ips_national_public": 100.8,
+					"taux_reussite": 92,
+					"valeur_ajoutee": -3,
+					"session": "2025"
+				},
+				"lycee": {
+					"uai": "0690023A",
+					"nom": "Lycée Ampère",
+					"distance_m": 297,
+					"ips": 120.2,
+					"ips_rentree": "2025-2026",
+					"ips_national_public": 115.2,
+					"taux_reussite": 96,
+					"valeur_ajoutee": -2,
+					"session": "2025"
+				},
+				"college_de_secteur": {
+					"uai": "0692693C",
+					"parmi_les_plus_proches": true,
+					"nom": "Collège Ampère",
+					"distance_m": 297,
+					"ips": 120.8,
+					"ips_rentree": "2025-2026",
+					"ips_national_public": 100.8,
+					"taux_reussite": 92,
+					"valeur_ajoutee": -3,
+					"session": "2025"
+				}
+			},
+			{
+				"elementaire": {
+					"uai": "0750945V",
+					"nom": "E.P.PU MOUSSY 9 rue de Moussy",
+					"distance_m": 317,
+					"ips": 131.2,
+					"ips_rentree": "2024-2025",
+					"ips_national_public": 103.1,
+					"taux_reussite": null,
+					"valeur_ajoutee": null,
+					"session": null
+				},
+				"college": {
+					"uai": "0752693V",
+					"nom": "Collège François Couperin",
+					"distance_m": 272,
+					"ips": 125,
+					"ips_rentree": "2025-2026",
+					"ips_national_public": 100.8,
+					"taux_reussite": 91,
+					"valeur_ajoutee": -4,
+					"session": "2025"
+				},
+				"lycee": {
+					"uai": "0750653C",
+					"nom": "Lycée Sophie Germain",
+					"distance_m": 414,
+					"ips": 135,
+					"ips_rentree": "2025-2026",
+					"ips_national_public": 115.2,
+					"taux_reussite": 97,
+					"valeur_ajoutee": -2,
+					"session": "2025"
+				},
+				"college_de_secteur": {
+					"uai": "0752693V",
+					"parmi_les_plus_proches": true,
+					"nom": "Collège François Couperin",
+					"distance_m": 272,
+					"ips": 125,
+					"ips_rentree": "2025-2026",
+					"ips_national_public": 100.8,
+					"taux_reussite": 91,
+					"valeur_ajoutee": -4,
+					"session": "2025"
+				}
+			}
+		],
+		"encadrement_loyers": [
+			{
+				"commune": "33063",
+				"statut": "en_vigueur",
+				"perimetre": "commune",
+				"territoire": "Bordeaux",
+				"decret": "Décret n° 2021-1145 du 2 septembre 2021",
+				"arrete": {
+					"numero": null,
+					"date": "2026-07-06",
+					"source": "Préfecture de la Gironde : arrêté préfectoral du 6 juillet 2026 (loyers de référence de Bordeaux)",
+					"url": "https://www.gironde.gouv.fr/contenu/telechargement/87471/658140/file/arrete_prefectoral_encadrement+loyers_Bordeaux_2026-07-06_sign%C3%A9.pdf"
+				},
+				"en_vigueur_du": "2026-07-15",
+				"en_vigueur_au": "2026-11-24",
+				"arrete_precedent": null,
+				"liste_verifiee_le": "2026-10-29",
+				"loyers_reference": {
+					"etat": "hors_couverture",
+					"motif": "loyers_reference_non_importes"
+				}
+			},
+			{
+				"commune": "44109",
+				"liste_verifiee_le": "2026-10-29"
+			},
+			{
+				"commune": "59350",
+				"statut": "en_vigueur",
+				"perimetre": "commune",
+				"territoire": "Lille, Hellemmes et Lomme",
+				"decret": "Décret n° 2020-41 du 22 janvier 2020",
+				"arrete": {
+					"numero": "2026-02-10-00006",
+					"date": "2026-02-10",
+					"source": "Ville de Lille : arrêté du préfet du Nord du 10 février 2026 (loyers de référence de Lille)",
+					"url": "https://www.lille.fr/content/download/404914/4007936/file/Arrete+du+10+f%C3%A9vrier+2026_sans_carte.pdf"
+				},
+				"en_vigueur_du": "2026-04-01",
+				"en_vigueur_au": "2026-11-24",
+				"arrete_precedent": null,
+				"liste_verifiee_le": "2026-10-29",
+				"loyers_reference": {
+					"etat": "hors_couverture",
+					"motif": "loyers_reference_non_importes"
+				}
+			},
+			{
+				"commune": "69123",
+				"statut": "en_vigueur",
+				"perimetre": "commune",
+				"territoire": "Lyon et Villeurbanne",
+				"decret": "Décret n° 2021-1143 du 2 septembre 2021",
+				"arrete": {
+					"numero": "DDT-69-2026-10-23-00004",
+					"date": "2026-10-23",
+					"source": "Préfecture du Rhône : arrêté n° DDT-69-2026-10-23-00004 du 23 octobre 2026",
+					"url": "https://www.rhone.gouv.fr/contenu/telechargement/70756/476440/file/20261023_encadrement_loyers_Lyon_Villeurbanne_global_RAA.pdf"
+				},
+				"en_vigueur_du": "2026-11-01",
+				"en_vigueur_au": "2026-11-23",
+				"arrete_precedent": null,
+				"liste_verifiee_le": "2026-10-29",
+				"loyers_reference": {
+					"etat": "hors_couverture",
+					"motif": "loyers_reference_non_importes"
+				}
+			},
+			{
+				"commune": "75056",
+				"statut": "en_vigueur",
+				"perimetre": "commune",
+				"territoire": "Paris",
+				"decret": "Décret n° 2019-315 du 12 avril 2019",
+				"arrete": {
+					"numero": "IDF-2026-06-12-00003",
+					"date": "2026-06-12",
+					"source": "Préfecture de la région d'Île-de-France, recueil des actes administratifs spécial n° IDF-039-2026-06",
+					"url": "https://cdn.paris.fr/paris/2026/06/17/arrete-prefectoral-encadrement-des-loyers-12-06-2026-publie-n4wk.pdf"
+				},
+				"en_vigueur_du": "2026-07-01",
+				"en_vigueur_au": "2026-11-24",
+				"arrete_precedent": null,
+				"liste_verifiee_le": "2026-10-29",
+				"loyers_reference": {
+					"etat": "hors_couverture",
+					"motif": "loyers_reference_non_importes"
+				}
+			}
+		],
+		"equipements": [
+			{
+				"par_domaine": {
+					"commerces": 1164,
+					"enseignement": 58,
+					"sante_social": 928,
+					"services_particuliers": 2042,
+					"sports_loisirs_culture": 36,
+					"tourisme": 94,
+					"transports": 44
+				},
+				"liste_incomplete": false,
+				"motif": null
+			},
+			{
+				"par_domaine": {
+					"commerces": 900,
+					"enseignement": 62,
+					"sante_social": 667,
+					"services_particuliers": 1228,
+					"sports_loisirs_culture": 50,
+					"tourisme": 82,
+					"transports": 21
+				},
+				"liste_incomplete": false,
+				"motif": null
+			},
+			{
+				"par_domaine": {
+					"commerces": 927,
+					"enseignement": 111,
+					"sante_social": 693,
+					"services_particuliers": 1609,
+					"sports_loisirs_culture": 34,
+					"tourisme": 93,
+					"transports": 61
+				},
+				"liste_incomplete": false,
+				"motif": null
+			},
+			{
+				"par_domaine": {
+					"commerces": 1288,
+					"enseignement": 64,
+					"sante_social": 1313,
+					"services_particuliers": 1972,
+					"sports_loisirs_culture": 59,
+					"tourisme": 86,
+					"transports": 46
+				},
+				"liste_incomplete": false,
+				"motif": null
+			},
+			{
+				"par_domaine": {
+					"commerces": 2007,
+					"enseignement": 102,
+					"sante_social": 1044,
+					"services_particuliers": 2784,
+					"sports_loisirs_culture": 113,
+					"tourisme": 270,
+					"transports": 99
+				},
+				"liste_incomplete": false,
+				"motif": null
+			}
+		],
+		"fibre": [
+			{
+				"debit_max": "THD1G"
+			}
+		],
+		"fiscalite": [
+			{
+				"territoire": "33063",
+				"taux_tfpb": "49.54",
+				"taux_tfpnb": "124.82",
+				"taux_th_rs": "33.56",
+				"taux_teom": "9.31",
+				"nom_epci": "Bordeaux Métropole",
+				"annee": 2025,
+				"moyenne_departement": {
+					"etat": "ok",
+					"departement": "33",
+					"nom_departement": "GIRONDE",
+					"moyenne_simple": 40.3,
+					"communes": 534,
+					"ecart_points": 9.24,
+					"annee": 2025
+				},
+				"majoration_thrs": {
+					"etat": "ok",
+					"majoree": true,
+					"taux": 60
+				}
+			},
+			{
+				"territoire": "44109",
+				"taux_tfpb": "53.37",
+				"taux_tfpnb": "91.69",
+				"taux_th_rs": "34.92",
+				"taux_teom": "7.95",
+				"nom_epci": "Nantes Métropole",
+				"annee": 2025,
+				"moyenne_departement": {
+					"etat": "ok",
+					"departement": "44",
+					"nom_departement": "LOIRE-ATLANTIQUE",
+					"moyenne_simple": 40.38,
+					"communes": 207,
+					"ecart_points": 12.99,
+					"annee": 2025
+				},
+				"majoration_thrs": {
+					"etat": "ok",
+					"majoree": true,
+					"taux": 60
+				}
+			},
+			{
+				"territoire": "59350",
+				"taux_tfpb": "48.91",
+				"taux_tfpnb": "67.10",
+				"taux_th_rs": "46.61",
+				"taux_teom": "14.64",
+				"nom_epci": "Métropole Européenne de Lille",
+				"annee": 2025,
+				"moyenne_departement": {
+					"etat": "ok",
+					"departement": "59",
+					"nom_departement": "NORD",
+					"moyenne_simple": 42.25,
+					"communes": 647,
+					"ecart_points": 6.66,
+					"annee": 2025
+				},
+				"majoration_thrs": {
+					"etat": "ok",
+					"majoree": false,
+					"taux": null
+				}
+			},
+			{
+				"territoire": "69123",
+				"taux_tfpb": "32.82",
+				"taux_tfpnb": "39.53",
+				"taux_th_rs": "30.42",
+				"taux_teom": "5.19",
+				"nom_epci": "Métropole de Lyon",
+				"annee": 2025,
+				"moyenne_departement": {
+					"etat": "ok",
+					"departement": "69",
+					"nom_departement": "RHONE",
+					"moyenne_simple": 32.93,
+					"communes": 266,
+					"ecart_points": -0.11,
+					"annee": 2025
+				},
+				"majoration_thrs": {
+					"etat": "ok",
+					"majoree": true,
+					"taux": 60
+				},
+				"valeur_communale": true
+			},
+			{
+				"territoire": "75056",
+				"taux_tfpb": "21.21",
+				"taux_tfpnb": "28.82",
+				"taux_th_rs": "21.00",
+				"taux_teom": "6.21",
+				"nom_epci": "Métropole du Grand Paris",
+				"annee": 2025,
+				"moyenne_departement": {
+					"etat": "non_concerne",
+					"motif": "seule_commune_du_departement"
+				},
+				"majoration_thrs": {
+					"etat": "ok",
+					"majoree": true,
+					"taux": 60
+				},
+				"valeur_communale": true
+			}
+		],
+		"geologie": [
+			{
+				"formation": "Sables",
+				"type": "Roches Sédimentaires",
+				"echelle": "1/1 000 000"
+			},
+			{
+				"formation": "Craie",
+				"type": "Roches Sédimentaires",
+				"echelle": "1/1 000 000"
+			},
+			{
+				"formation": "Calcaires, marnes et gypse",
+				"type": "Roches Sédimentaires",
+				"echelle": "1/1 000 000"
+			}
+		],
+		"grand_axe": [
+			{
+				"axes": [],
+				"liste_incomplete": false
+			},
+			{
+				"axes": [
+					{
+						"nom": "QU JEAN MOULIN",
+						"type": "grand axe",
+						"importance": "2",
+						"distance_m": 167
+					},
+					{
+						"nom": "QU ANDRE LASSAGNE",
+						"type": "grand axe",
+						"importance": "2",
+						"distance_m": 184
+					},
+					{
+						"nom": "QU JULES COURMONT",
+						"type": "grand axe",
+						"importance": "2",
+						"distance_m": 443
+					}
+				],
+				"liste_incomplete": false
+			}
+		],
+		"icpe_commune": [
+			{
+				"nombre": 172,
+				"liste_incomplete": false
+			},
+			{
+				"nombre": 157,
+				"liste_incomplete": false
+			},
+			{
+				"nombre": 153,
+				"liste_incomplete": false
+			},
+			{
+				"nombre": 0,
+				"liste_incomplete": false
+			}
+		],
+		"inondation": [
+			{
+				"statut_commune": "Risque Existant",
+				"statut_adresse": "Risque Existant",
+				"niveau": null,
+				"adresse_concordante": true,
+				"ecart_adresse_georisques_m": 0,
+				"atlas_zones_inondables": [
+					"Vallée de la Loire",
+					"Atlas des zones inondables de l'Erdre"
+				],
+				"territoires_risque_important": [
+					"Nantes"
+				],
+				"tri_parcelle": null
+			},
+			{
+				"statut_commune": "Risque Existant",
+				"statut_adresse": "Risque Existant",
+				"niveau": null,
+				"adresse_concordante": true,
+				"ecart_adresse_georisques_m": 0,
+				"atlas_zones_inondables": [],
+				"territoires_risque_important": [],
+				"tri_parcelle": null
+			}
+		],
+		"loyers": [
+			{
+				"territoire": "33063",
+				"mention": "Estimations ANIL, à partir des données du Groupe SeLoger et de leboncoin",
+				"types": {
+					"1-2_pieces": {
+						"loyer_m2_bas": "14.37",
+						"loyer_m2_haut": "23.92",
+						"type_prediction": "commune",
+						"nb_observations": 56919,
+						"r2_ajuste": "0.642204190385416",
+						"charges_comprises": true,
+						"annee": 2025,
+						"id_zone": "1724"
+					},
+					"3+_pieces": {
+						"loyer_m2_bas": "10.71",
+						"loyer_m2_haut": "19.92",
+						"type_prediction": "commune",
+						"nb_observations": 28156,
+						"r2_ajuste": "0.659180092940471",
+						"charges_comprises": true,
+						"annee": 2025,
+						"id_zone": "2033"
+					},
+					"appartement": {
+						"loyer_m2_bas": "12.27",
+						"loyer_m2_haut": "20.84",
+						"type_prediction": "commune",
+						"nb_observations": 84641,
+						"r2_ajuste": "0.821385071888653",
+						"charges_comprises": true,
+						"annee": 2025,
+						"id_zone": "2920"
+					},
+					"maison": {
+						"loyer_m2_bas": "11.02",
+						"loyer_m2_haut": "21.83",
+						"type_prediction": "commune",
+						"nb_observations": 4258,
+						"r2_ajuste": "0.806216407810279",
+						"charges_comprises": true,
+						"annee": 2025,
+						"id_zone": "2129"
+					}
+				}
+			},
+			{
+				"territoire": "44109",
+				"mention": "Estimations ANIL, à partir des données du Groupe SeLoger et de leboncoin",
+				"types": {
+					"1-2_pieces": {
+						"loyer_m2_bas": "13.23",
+						"loyer_m2_haut": "20.75",
+						"type_prediction": "commune",
+						"nb_observations": 45333,
+						"r2_ajuste": "0.708263240563166",
+						"charges_comprises": true,
+						"annee": 2025,
+						"id_zone": "1348"
+					},
+					"3+_pieces": {
+						"loyer_m2_bas": "10.25",
+						"loyer_m2_haut": "18.09",
+						"type_prediction": "commune",
+						"nb_observations": 20201,
+						"r2_ajuste": "0.725604829271508",
+						"charges_comprises": true,
+						"annee": 2025,
+						"id_zone": "1855"
+					},
+					"appartement": {
+						"loyer_m2_bas": "11.35",
+						"loyer_m2_haut": "18.54",
+						"type_prediction": "commune",
+						"nb_observations": 65568,
+						"r2_ajuste": "0.854702561810005",
+						"charges_comprises": true,
+						"annee": 2025,
+						"id_zone": "2540"
+					},
+					"maison": {
+						"loyer_m2_bas": "10.07",
+						"loyer_m2_haut": "20.47",
+						"type_prediction": "commune",
+						"nb_observations": 2602,
+						"r2_ajuste": "0.796012275306375",
+						"charges_comprises": true,
+						"annee": 2025,
+						"id_zone": "1963"
+					}
+				}
+			},
+			{
+				"territoire": "59350",
+				"mention": "Estimations ANIL, à partir des données du Groupe SeLoger et de leboncoin",
+				"types": {
+					"1-2_pieces": {
+						"loyer_m2_bas": "14.38",
+						"loyer_m2_haut": "22.76",
+						"type_prediction": "commune",
+						"nb_observations": 54792,
+						"r2_ajuste": "0.716335890994062",
+						"charges_comprises": true,
+						"annee": 2025,
+						"id_zone": "133"
+					},
+					"3+_pieces": {
+						"loyer_m2_bas": "10.75",
+						"loyer_m2_haut": "19.87",
+						"type_prediction": "commune",
+						"nb_observations": 22549,
+						"r2_ajuste": "0.67337329473732",
+						"charges_comprises": true,
+						"annee": 2025,
+						"id_zone": "291"
+					},
+					"appartement": {
+						"loyer_m2_bas": "12.22",
+						"loyer_m2_haut": "20.33",
+						"type_prediction": "commune",
+						"nb_observations": 77376,
+						"r2_ajuste": "0.828809211897279",
+						"charges_comprises": true,
+						"annee": 2025,
+						"id_zone": "1312"
+					},
+					"maison": {
+						"loyer_m2_bas": "8.96",
+						"loyer_m2_haut": "18.12",
+						"type_prediction": "commune",
+						"nb_observations": 3579,
+						"r2_ajuste": "0.72452711001936",
+						"charges_comprises": true,
+						"annee": 2025,
+						"id_zone": "1606"
+					}
+				}
+			},
+			{
+				"territoire": "69381",
+				"mention": "Estimations ANIL, à partir des données du Groupe SeLoger et de leboncoin",
+				"types": {
+					"1-2_pieces": {
+						"loyer_m2_bas": "14.68",
+						"loyer_m2_haut": "26.36",
+						"type_prediction": "commune",
+						"nb_observations": 5174,
+						"r2_ajuste": "0.67634277825345",
+						"charges_comprises": true,
+						"annee": 2025,
+						"id_zone": "1832"
+					},
+					"3+_pieces": {
+						"loyer_m2_bas": "11.86",
+						"loyer_m2_haut": "20.28",
+						"type_prediction": "commune",
+						"nb_observations": 2150,
+						"r2_ajuste": "0.772228811893522",
+						"charges_comprises": true,
+						"annee": 2025,
+						"id_zone": "2130"
+					},
+					"appartement": {
+						"loyer_m2_bas": "12.66",
+						"loyer_m2_haut": "23.01",
+						"type_prediction": "commune",
+						"nb_observations": 7396,
+						"r2_ajuste": "0.83658319458154",
+						"charges_comprises": true,
+						"annee": 2025,
+						"id_zone": "2122"
+					},
+					"maison": {
+						"loyer_m2_bas": "9.60",
+						"loyer_m2_haut": "22.29",
+						"type_prediction": "maille",
+						"nb_observations": 5,
+						"r2_ajuste": "0.797584221155035",
+						"charges_comprises": true,
+						"annee": 2025,
+						"id_zone": "1914"
+					}
+				},
+				"valeur_communale": false
+			},
+			{
+				"territoire": "75104",
+				"mention": "Estimations ANIL, à partir des données du Groupe SeLoger et de leboncoin",
+				"types": {
+					"1-2_pieces": {
+						"loyer_m2_bas": "30.12",
+						"loyer_m2_haut": "54.27",
+						"type_prediction": "commune",
+						"nb_observations": 3453,
+						"r2_ajuste": "0.81710944990298",
+						"charges_comprises": true,
+						"annee": 2025,
+						"id_zone": "1487"
+					},
+					"3+_pieces": {
+						"loyer_m2_bas": "27.74",
+						"loyer_m2_haut": "48.00",
+						"type_prediction": "commune",
+						"nb_observations": 1486,
+						"r2_ajuste": "0.852984337214328",
+						"charges_comprises": true,
+						"annee": 2025,
+						"id_zone": "1834"
+					},
+					"appartement": {
+						"loyer_m2_bas": "28.19",
+						"loyer_m2_haut": "50.57",
+						"type_prediction": "commune",
+						"nb_observations": 4942,
+						"r2_ajuste": "0.916469309617236",
+						"charges_comprises": true,
+						"annee": 2025,
+						"id_zone": "3010"
+					},
+					"maison": {
+						"loyer_m2_bas": "11.01",
+						"loyer_m2_haut": "31.12",
+						"type_prediction": "maille",
+						"nb_observations": 7,
+						"r2_ajuste": "0.721663436870247",
+						"charges_comprises": true,
+						"annee": 2025,
+						"id_zone": "561"
+					}
+				},
+				"valeur_communale": false
+			}
+		],
+		"mouvements_terrain": [
+			{
+				"cavites": [],
+				"mouvements": [],
+				"liste_incomplete": false
+			},
+			{
+				"cavites": [],
+				"mouvements": [
+					{
+						"type": "Effondrement / Affaissement",
+						"distance_m": 456
+					}
+				],
+				"liste_incomplete": false
+			}
+		],
+		"nucleaire": [
+			{
+				"statut_commune": null,
+				"statut_adresse": null,
+				"niveau": null,
+				"adresse_concordante": true,
+				"ecart_adresse_georisques_m": 0
+			}
+		],
+		"parcelle": [
+			{
+				"identifiant": "33063000KE0080",
+				"contenance_m2": 73
+			},
+			{
+				"identifiant": "59350000LR0210",
+				"contenance_m2": 104
+			},
+			{
+				"identifiant": "69381000AS0018",
+				"contenance_m2": 5472
+			},
+			{
+				"identifiant": "75104000AE0003",
+				"contenance_m2": 15168
+			}
+		],
+		"peb": [
+			{
+				"zones_peb": [],
+				"zones_pgs": []
+			}
+		],
+		"prix_commune": [
+			{
+				"commune": {
+					"code_insee": "33063",
+					"nom": "Bordeaux"
+				},
+				"fenetre": "2024-12-31 → 2025-12-31",
+				"absences": {}
+			},
+			{
+				"commune": {
+					"code_insee": "44109",
+					"nom": "Nantes"
+				},
+				"fenetre": "2024-12-31 → 2025-12-31",
+				"absences": {}
+			},
+			{
+				"commune": {
+					"code_insee": "59350",
+					"nom": "Lille"
+				},
+				"fenetre": "2024-12-31 → 2025-12-31",
+				"absences": {}
+			},
+			{
+				"commune": {
+					"code_insee": "69381",
+					"nom": "Lyon"
+				},
+				"fenetre": "2024-12-31 → 2025-12-31",
+				"absences": {
+					"maison": "2 mutations de maisons retenues sur 12 mois, sous le seuil de publication de 5."
+				}
+			},
+			{
+				"commune": {
+					"code_insee": "75104",
+					"nom": "Paris"
+				},
+				"fenetre": "2024-12-31 → 2025-12-31",
+				"absences": {
+					"maison": "0 mutations de maisons retenues sur 12 mois, sous le seuil de publication de 5."
+				}
+			}
+		],
+		"qualite_air": [
+			{
+				"indice": {
+					"code": 2,
+					"libelle": "moyen",
+					"date": "2026-11-12",
+					"sous_indices": {
+						"no2": 1,
+						"o3": 2,
+						"pm10": 1,
+						"pm25": 1,
+						"so2": 1
+					}
+				},
+				"zone": {
+					"type": "commune",
+					"code": "33063",
+					"nom": "Bordeaux"
+				},
+				"aasqa": "Atmo Nouvelle-Aquitaine",
+				"moyennes_annuelles": {
+					"etat": "hors_couverture",
+					"motif": "moyennes_geodair_non_importees"
+				}
+			},
+			{
+				"indice": {
+					"code": 2,
+					"libelle": "moyen",
+					"date": "2026-11-12",
+					"sous_indices": {
+						"no2": 1,
+						"o3": 2,
+						"pm10": 1,
+						"pm25": 1,
+						"so2": 1
+					}
+				},
+				"zone": {
+					"type": "commune",
+					"code": "44109",
+					"nom": "Nantes"
+				},
+				"aasqa": "Air Pays de la Loire",
+				"moyennes_annuelles": {
+					"etat": "hors_couverture",
+					"motif": "moyennes_geodair_non_importees"
+				}
+			},
+			{
+				"indice": {
+					"code": 2,
+					"libelle": "moyen",
+					"date": "2026-11-12",
+					"sous_indices": {
+						"no2": 2,
+						"o3": 2,
+						"pm10": 2,
+						"pm25": 2,
+						"so2": 1
+					}
+				},
+				"zone": {
+					"type": "commune",
+					"code": "59350",
+					"nom": "LILLE"
+				},
+				"aasqa": "Atmo HDF",
+				"moyennes_annuelles": {
+					"etat": "hors_couverture",
+					"motif": "moyennes_geodair_non_importees"
+				}
+			},
+			{
+				"indice": {
+					"code": 2,
+					"libelle": "moyen",
+					"date": "2026-11-12",
+					"sous_indices": {
+						"no2": 2,
+						"o3": 1,
+						"pm10": 1,
+						"pm25": 2,
+						"so2": 1
+					}
+				},
+				"zone": {
+					"type": "commune",
+					"code": "69381",
+					"nom": null
+				},
+				"aasqa": "Atmo Auvergne-Rhône-Alpes",
+				"moyennes_annuelles": {
+					"etat": "hors_couverture",
+					"motif": "moyennes_geodair_non_importees"
+				}
+			},
+			{
+				"indice": {
+					"code": 2,
+					"libelle": "moyen",
+					"date": "2026-11-12",
+					"sous_indices": {
+						"no2": 1,
+						"o3": 2,
+						"pm10": 1,
+						"pm25": 2,
+						"so2": 1
+					}
+				},
+				"zone": {
+					"type": "commune",
+					"code": "75104",
+					"nom": "Paris 4e Arrondissement"
+				},
+				"aasqa": "Airparif",
+				"moyennes_annuelles": {
+					"etat": "hors_couverture",
+					"motif": "moyennes_geodair_non_importees"
+				}
+			}
+		],
+		"radon": [
+			{
+				"classe": "2"
+			},
+			{
+				"classe": "3"
+			},
+			{
+				"classe": "1"
+			}
+		],
+		"remontee_nappe": [
+			{
+				"statut_commune": "Risque Existant",
+				"statut_adresse": "Risque Existant",
+				"niveau": null,
+				"adresse_concordante": true,
+				"ecart_adresse_georisques_m": 0
+			}
+		],
+		"revenus": [
+			{
+				"filosofi_carreau": {
+					"etat": "ok",
+					"id": "CRS3035RES200mN2473200E3486200",
+					"millesime": "2015",
+					"individus": 191.5,
+					"menages": 112,
+					"niveau_vie_moyen": 25953,
+					"part_menages_pauvres": 22.3
+				},
+				"iris": {
+					"etat": "ok",
+					"code": "330630508",
+					"nom": "Hôtel de Ville-Quinconces 8",
+					"type": "H",
+					"composition": {
+						"etat": "ok",
+						"annee": "2023",
+						"population_15_ans_plus": 2158,
+						"parts": {
+							"1": 0,
+							"2": 5.1,
+							"3": 23.6,
+							"4": 19.3,
+							"5": 12.3,
+							"6": 4.3,
+							"7": 10.1,
+							"9": 25.3
+						}
+					}
+				},
+				"territoire": "33063",
+				"nb_menages_fiscaux": 120277,
+				"revenu_q1": 14910,
+				"revenu_q3": 39050,
+				"revenu_d1": 6420,
+				"revenu_d9": 59020,
+				"indice_gini": "0.4370",
+				"part_imposee": "57.00"
+			},
+			{
+				"filosofi_carreau": {
+					"etat": "ok",
+					"id": "CRS3035RES200mN2746400E3449000",
+					"millesime": "2015",
+					"individus": 501,
+					"menages": 284,
+					"niveau_vie_moyen": 23083,
+					"part_menages_pauvres": 21.8
+				},
+				"iris": {
+					"etat": "ok",
+					"code": "441090106",
+					"nom": "Decré-Cathédrale",
+					"type": "H",
+					"composition": {
+						"etat": "ok",
+						"annee": "2023",
+						"population_15_ans_plus": 5035,
+						"parts": {
+							"1": 0,
+							"2": 3.7,
+							"3": 25.7,
+							"4": 18.6,
+							"5": 17.2,
+							"6": 5,
+							"7": 8.1,
+							"9": 21.8
+						}
+					}
+				},
+				"territoire": "44109",
+				"nb_menages_fiscaux": 141375,
+				"revenu_q1": 14440,
+				"revenu_q3": 36290,
+				"revenu_d1": 6050,
+				"revenu_d9": 52030,
+				"indice_gini": "0.4120",
+				"part_imposee": "57.00"
+			},
+			{
+				"filosofi_carreau": {
+					"etat": "ok",
+					"id": "CRS3035RES200mN2531000E3919000",
+					"millesime": "2015",
+					"individus": 545.5,
+					"menages": 315,
+					"niveau_vie_moyen": 27875,
+					"part_menages_pauvres": 13.7
+				},
+				"iris": {
+					"etat": "ok",
+					"code": "693810102",
+					"nom": "Louis Pradel",
+					"type": "A",
+					"composition": {
+						"etat": "ok",
+						"annee": "2023",
+						"population_15_ans_plus": 27,
+						"parts": {
+							"1": 0,
+							"2": 0,
+							"3": 12.7,
+							"4": 25.4,
+							"5": 25.4,
+							"6": 0,
+							"7": 0,
+							"9": 36.5
+						}
+					}
+				},
+				"territoire": "69381",
+				"nb_menages_fiscaux": 13371,
+				"revenu_q1": 16020,
+				"revenu_q3": 40920,
+				"revenu_d1": 7610,
+				"revenu_d9": 59720,
+				"indice_gini": "0.4080",
+				"part_imposee": "60.00",
+				"valeur_communale": false
+			},
+			{
+				"filosofi_carreau": {
+					"etat": "ok",
+					"id": "CRS3035RES200mN2889200E3760600",
+					"millesime": "2015",
+					"individus": 135,
+					"menages": 77,
+					"niveau_vie_moyen": 34332,
+					"part_menages_pauvres": 19.5
+				},
+				"iris": {
+					"etat": "ok",
+					"code": "751041304",
+					"nom": "Saint-Merri 4",
+					"type": "A",
+					"composition": {
+						"etat": "ok",
+						"annee": "2023",
+						"population_15_ans_plus": 251,
+						"parts": {
+							"1": 0,
+							"2": 3.3,
+							"3": 52.2,
+							"4": 11.5,
+							"5": 4.1,
+							"6": 0,
+							"7": 8.2,
+							"9": 20.7
+						}
+					}
+				},
+				"territoire": "75104",
+				"nb_menages_fiscaux": 13854,
+				"revenu_q1": 19880,
+				"revenu_q3": 62610,
+				"revenu_d1": 8010,
+				"revenu_d9": 107130,
+				"indice_gini": "0.5400",
+				"part_imposee": "70.00",
+				"valeur_communale": false
+			}
+		],
+		"risques_commune": [
+			{
+				"risques": [
+					"Inondation",
+					"Mouvement de terrain",
+					"Par une crue à débordement lent de cours d'eau",
+					"Radon",
+					"Risque industriel",
+					"Séisme",
+					"Tassements différentiels"
+				],
+				"liste_incomplete": false
+			},
+			{
+				"risques": [
+					"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
+					"Affaissements et effondrements d'origine naturelle (cavités souterraines)",
+					"Avancée dunaire",
+					"Eboulement ou chutes de pierres et de blocs",
+					"Engins de guerre",
+					"Foudre",
+					"Glissement de terrain",
+					"Grêle",
+					"Inondation",
+					"Mouvement de terrain",
+					"Neige et pluies verglaçantes",
+					"Par remontées de nappes naturelles",
+					"Par ruissellement et coulée de boue",
+					"Par une crue à débordement lent de cours d'eau",
+					"Phénomène lié à l'atmosphère",
+					"Radon",
+					"Risque industriel",
+					"Rupture de barrage",
+					"Séisme",
+					"Tassements différentiels",
+					"Tempête et grains (vent)",
+					"Transport de marchandises dangereuses"
+				],
+				"liste_incomplete": false
+			},
+			{
+				"risques": [
+					"Engins de guerre",
+					"Inondation",
+					"Mouvement de terrain",
+					"Risque industriel",
+					"Séisme",
+					"Transport de marchandises dangereuses"
+				],
+				"liste_incomplete": false
+			}
+		],
+		"rupture_barrage": [
+			{
+				"statut_commune": "Risque Concerne",
+				"statut_adresse": "Risque Inconnu",
+				"niveau": null,
+				"adresse_concordante": true,
+				"ecart_adresse_georisques_m": 0
+			}
+		],
+		"secteur_bruit": [
+			{
+				"secteurs": [
+					"Périmètre de voisinage d'infrastructure de transport terrestre (secteur affecté par le bruit) - voie routière"
+				],
+				"informations_plu": 2
+			},
+			{
+				"secteurs": [],
+				"informations_plu": 7
+			},
+			{
+				"secteurs": [],
+				"informations_plu": 12
+			},
+			{
+				"secteurs": [
+					"Zone d exposition au bruit"
+				],
+				"informations_plu": 4
+			},
+			{
+				"secteurs": [],
+				"informations_plu": 1
+			}
+		],
+		"seveso": [
+			{
+				"sites": [
+					{
+						"nom": "BRENNTAG  AQUITAINE",
+						"seuil": "bas",
+						"distance_m": 2463,
+						"activite": "En fin d'exploitation"
+					},
+					{
+						"nom": "SAFT SAS",
+						"seuil": "bas",
+						"distance_m": 3536,
+						"activite": "En exploitation avec titre"
+					},
+					{
+						"nom": "AIR LIQUIDE FRANCE INDUSTRIE",
+						"seuil": "bas",
+						"distance_m": 4811,
+						"activite": "En exploitation avec titre"
+					}
+				],
+				"liste_incomplete": false
+			},
+			{
+				"sites": [
+					{
+						"nom": "THE VALSPAR (FRANCE) CORP S.A.",
+						"seuil": "bas",
+						"distance_m": 4319,
+						"activite": "En exploitation avec titre"
+					}
+				],
+				"liste_incomplete": false
+			},
+			{
+				"sites": [],
+				"liste_incomplete": false
+			}
+		],
+		"sismicite": [
+			{
+				"zone": "2"
+			},
+			{
+				"zone": "3"
+			},
+			{
+				"zone": "1"
+			}
+		],
+		"trait_de_cote": [
+			{
+				"statut_commune": null,
+				"statut_adresse": null,
+				"niveau": null,
+				"adresse_concordante": true,
+				"ecart_adresse_georisques_m": 0,
+				"risque_cotier": {
+					"present": false,
+					"statut_commune": null,
+					"statut_adresse": null
+				}
+			}
+		],
+		"transports": [
+			{
+				"arrets": [
+					{
+						"nom": "Hôtel de Ville",
+						"distance_m": 161,
+						"nature": "arret"
+					},
+					{
+						"nom": "Hôtel de Ville",
+						"distance_m": 163,
+						"nature": "arret"
+					},
+					{
+						"nom": "Hôtel de Ville",
+						"distance_m": 199,
+						"nature": "arret"
+					}
+				],
+				"liste_incomplete": true,
+				"motif": null,
+				"categories_non_couvertes": [],
+				"gare": {
+					"etat": "ok",
+					"nom": "Bordeaux-St-Jean",
+					"distance_m": 2260,
+					"plus_proche_connue": false
+				},
+				"lignes": {
+					"etat": "hors_couverture",
+					"motif": "horaires_gtfs_non_importes"
+				},
+				"frequence_pointe": {
+					"etat": "hors_couverture",
+					"motif": "horaires_gtfs_non_importes"
+				}
+			},
+			{
+				"arrets": [
+					{
+						"nom": "Hôtel de Ville",
+						"distance_m": 45,
+						"nature": "arret"
+					},
+					{
+						"nom": "Hôtel de Ville",
+						"distance_m": 60,
+						"nature": "arret"
+					},
+					{
+						"nom": "Place du Cirque",
+						"distance_m": 159,
+						"nature": "arret"
+					}
+				],
+				"liste_incomplete": true,
+				"motif": null,
+				"categories_non_couvertes": [],
+				"gare": {
+					"etat": "ok",
+					"nom": "Nantes",
+					"distance_m": 833,
+					"plus_proche_connue": false
+				},
+				"lignes": {
+					"etat": "hors_couverture",
+					"motif": "horaires_gtfs_non_importes"
+				},
+				"frequence_pointe": {
+					"etat": "hors_couverture",
+					"motif": "horaires_gtfs_non_importes"
+				}
+			},
+			{
+				"arrets": [
+					{
+						"nom": "Rihour",
+						"distance_m": 69,
+						"nature": "arret"
+					},
+					{
+						"nom": "Rihour",
+						"distance_m": 81,
+						"nature": "arret"
+					},
+					{
+						"nom": "Rihour",
+						"distance_m": 85,
+						"nature": "arret"
+					}
+				],
+				"liste_incomplete": true,
+				"motif": null,
+				"categories_non_couvertes": [],
+				"gare": {
+					"etat": "ok",
+					"nom": "Lille-Flandres",
+					"distance_m": 591,
+					"plus_proche_connue": false
+				},
+				"lignes": {
+					"etat": "hors_couverture",
+					"motif": "horaires_gtfs_non_importes"
+				},
+				"frequence_pointe": {
+					"etat": "hors_couverture",
+					"motif": "horaires_gtfs_non_importes"
+				}
+			},
+			{
+				"arrets": [
+					{
+						"nom": "Hôtel de Ville L. Pradel",
+						"distance_m": 189,
+						"nature": "arret"
+					},
+					{
+						"nom": "Cordeliers",
+						"distance_m": 490,
+						"nature": "arret"
+					},
+					{
+						"nom": "Lyon-Saint-Paul Quai de Bondy",
+						"distance_m": 597,
+						"nature": "arret"
+					}
+				],
+				"liste_incomplete": true,
+				"motif": null,
+				"categories_non_couvertes": [],
+				"gare": {
+					"etat": "ok",
+					"nom": "Lyon-St-Paul",
+					"distance_m": 808,
+					"plus_proche_connue": false
+				},
+				"lignes": {
+					"etat": "hors_couverture",
+					"motif": "horaires_gtfs_non_importes"
+				},
+				"frequence_pointe": {
+					"etat": "hors_couverture",
+					"motif": "horaires_gtfs_non_importes"
+				}
+			},
+			{
+				"arrets": [
+					{
+						"nom": "Hôtel de Ville",
+						"distance_m": 56,
+						"nature": "arret"
+					},
+					{
+						"nom": "Hôtel de Ville",
+						"distance_m": 89,
+						"nature": "arret"
+					},
+					{
+						"nom": "r. de Lobau",
+						"distance_m": 142,
+						"nature": "arret"
+					}
+				],
+				"liste_incomplete": true,
+				"motif": null,
+				"categories_non_couvertes": [],
+				"gare": {
+					"etat": "ok",
+					"nom": "St-Michel-Notre-Dame",
+					"distance_m": 512,
+					"plus_proche_connue": false
+				},
+				"lignes": {
+					"etat": "hors_couverture",
+					"motif": "horaires_gtfs_non_importes"
+				},
+				"frequence_pointe": {
+					"etat": "hors_couverture",
+					"motif": "horaires_gtfs_non_importes"
+				}
+			}
+		],
+		"urbanisme": [
+			{
+				"zones": [
+					"US · Zone Urbaine Sauvegardée"
+				],
+				"prescriptions": [
+					"Mixitée fonctionnelle",
+					"Espaces faisant l'objet d'orientations d'aménagement et de programmation",
+					"Tissus Urbains"
+				],
+				"prescriptions_etat": "value",
+				"liste_incomplete": false
+			},
+			{
+				"zones": [
+					"UCM1.1.1 · Coeur métropolitain - Centralités"
+				],
+				"prescriptions": [
+					"Emplacement réservé SMS1 : Servitude de mixité sociale",
+					"SPEER 3 : Secteur de performances énergétiques et environnementales renforcées",
+					"OAP Thématique TVB : Outils de protection et de préservation des éléments paysagers et environnementaux : autres outils",
+					"Emplacement réservé STL1 : Servitude de taille de logement",
+					"Hauteur : Hauteur façade / hauteur absolue : NR/22",
+					"CBS1 : Coefficient de biotope par surface 1",
+					"Stationnement : Règles de stationnement S0.1 (Dispositions générales)",
+					"Secteur de bonne qualité de desserte"
+				],
+				"prescriptions_etat": "value",
+				"liste_incomplete": false
+			},
+			{
+				"zones": [
+					"UCe1b · Tissu urbain dense a caractere patrimonial qui regroupe toutes les fonctions des centres urbains. Il est constitue d ilots profonds tres occupes par le bati avec peu d espaces vegetalises."
+				],
+				"prescriptions": [
+					"Hauteur Max-22",
+					"Risque d inondation par ruissellement-ZONE PRODUCTION",
+					"Secteur de taille minimale des logements-1",
+					"Polarite commerciale",
+					"Secteur de mixite sociale",
+					"Secteur de mixite sociale",
+					"Secteur de stationnement-Aa",
+					"OAP-0.1",
+					"Secteur de mixite sociale",
+					"Secteur de mixite sociale",
+					"Secteur de taille minimale des logements-1",
+					"Polarite d hebergement hotelier et touristique"
+				],
+				"prescriptions_etat": "value",
+				"liste_incomplete": false
+			},
+			{
+				"zones": [
+					"US · Zone urbaine Sauvegardée"
+				],
+				"prescriptions": [
+					"Jardin ou espace d'intérêt patrimonial et/ou historique majeur à dominante végétal",
+					"Fuseau de protection du site de Paris"
+				],
+				"prescriptions_etat": "value",
+				"liste_incomplete": false
+			}
+		],
+		"ventes_parcelle": [
+			{
+				"periode": "2021-01-01 → 2025-12-31",
+				"nombre": 0
+			},
+			{
+				"periode": "2021-01-01 → 2025-12-31",
+				"nombre": 1,
+				"derniere": "2022-05-31"
+			}
+		],
+		"voie_ferree": [
+			{
+				"voies": [],
+				"liste_incomplete": false
+			},
+			{
+				"voies": [
+					{
+						"nature": "Voie ferrée principale",
+						"nom": null,
+						"nombre_de_voies": 2,
+						"electrifiee": true,
+						"vitesse_maximale_kmh": null,
+						"distance_m": 492
+					},
+					{
+						"nature": "Voie ferrée principale",
+						"nom": null,
+						"nombre_de_voies": 2,
+						"electrifiee": true,
+						"vitesse_maximale_kmh": null,
+						"distance_m": 498
+					}
+				],
+				"liste_incomplete": false
+			}
+		],
+		"zonage_abc": [
+			{
+				"territoire": "33063",
+				"zone": "A",
+				"date_arrete": "2025-09-05",
+				"reclassement": false
+			},
+			{
+				"territoire": "44109",
+				"zone": "A",
+				"date_arrete": "2025-09-05",
+				"reclassement": false
+			},
+			{
+				"territoire": "59350",
+				"zone": "A",
+				"date_arrete": "2025-09-05",
+				"reclassement": false
+			},
+			{
+				"territoire": "69123",
+				"zone": "A",
+				"date_arrete": "2025-09-05",
+				"reclassement": false,
+				"valeur_communale": true
+			},
+			{
+				"territoire": "75056",
+				"zone": "Abis",
+				"date_arrete": "2025-09-05",
+				"reclassement": false,
+				"valeur_communale": true
+			}
+		],
+		"zone_tendue": [
+			{
+				"commune": "33063",
+				"lue_sur_la_commune": false,
+				"categorie": "agglomeration",
+				"liste": "taxe_logements_vacants"
+			},
+			{
+				"commune": "44109",
+				"lue_sur_la_commune": false,
+				"categorie": "agglomeration",
+				"liste": "taxe_logements_vacants"
+			},
+			{
+				"commune": "59350",
+				"lue_sur_la_commune": false,
+				"categorie": "agglomeration",
+				"liste": "taxe_logements_vacants"
+			},
+			{
+				"commune": "69123",
+				"lue_sur_la_commune": true,
+				"categorie": "agglomeration",
+				"liste": "taxe_logements_vacants"
+			},
+			{
+				"commune": "75056",
+				"lue_sur_la_commune": true,
+				"categorie": "agglomeration",
+				"liste": "taxe_logements_vacants"
+			}
+		]
+	}
+}

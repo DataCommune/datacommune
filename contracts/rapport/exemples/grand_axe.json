@@ -1,0 +1,46 @@
+{
+  "id": "grand_axe",
+  "section": "vivre",
+  "titre": "Grands axes routiers",
+  "etat": "ok",
+  "ton": "vigilance",
+  "granularite": {
+    "niveau": "rayon",
+    "rayon_m": 500
+  },
+  "verdict": "Grand axe routier proche : N844 (route nationale) à 50 m.",
+  "chiffres": [
+    {
+      "id": "distance",
+      "libelle": "Grand axe routier le plus proche",
+      "valeur": 50,
+      "unite": "metre",
+      "millesime": "2026-10-30"
+    }
+  ],
+  "details": {
+    "axes": [
+      {
+        "nom": "N844",
+        "type": "route nationale",
+        "importance": "1",
+        "distance_m": 50
+      }
+    ],
+    "liste_incomplete": false
+  },
+  "rattachement": null,
+  "sources": [
+    {
+      "cle": "axes_transport",
+      "nom": "BD TOPO – Réseaux routier et ferré (WFS de la Géoplateforme)",
+      "producteur": "IGN",
+      "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-TOPO",
+      "licence": "Licence Ouverte 2.0",
+      "millesime": "2026-10-30",
+      "mode": "direct"
+    }
+  ],
+  "motif": null,
+  "pannes_partielles": []
+}

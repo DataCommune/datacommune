@@ -1,0 +1,26 @@
+# Development image for DataCommune API with hot-reload
+# Build context: ./backend (set in docker-compose.dev.yml)
+
+FROM python:3.12-slim
+
+# GDAL/ogr2ogr for ETL pipelines (cadastre GeoJSON loading)
+RUN apt-get update && apt-get install -y --no-install-recommends gdal-bin && rm -rf /var/lib/apt/lists/*
+
+COPY --from=ghcr.io/astral-sh/uv:0.6 /uv /uvx /bin/
+
+WORKDIR /app
+
+# Install dependencies
+COPY pyproject.toml uv.lock ./
+RUN uv sync --locked --no-install-project --no-editable
+
+# Copy source code and install project
+COPY . .
+RUN uv sync --locked --no-editable
+
+ENV PATH="/app/.venv/bin:$PATH"
+
+EXPOSE 8000
+
+# Hot-reload enabled for development
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload", "--no-access-log"]

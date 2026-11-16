@@ -1,0 +1,12 @@
+{
+  "description": "Main routes timed by measure_route_latencies.py for PERF-00 (plan 02-18). Public parameters only; the golden address is read from the private input, signed DPE references are taken from the previous route at run time.",
+  "routes": [
+    {"name": "communes_search", "path": "/v1/communes/search", "params": {"q": "Nantes"}, "cle_attendue": "donnees", "non_vide": true},
+    {"name": "commune", "path": "/v1/commune", "params": {"code_insee": "44109"}, "cle_attendue": "donnees", "non_vide": true},
+    {"name": "dvf", "path": "/v1/dvf", "params": {"lat": "47.2184", "lon": "-1.5536", "rayon_m": "500"}, "cle_attendue": "donnees", "non_vide": true},
+    {"name": "datasets", "path": "/v1/datasets", "params": {}, "cle_attendue": "donnees", "non_vide": true},
+    {"name": "resolve", "path": "/v1/resolve", "params": {"type": "adresse", "datasets": "dpe"}, "private_params": {"q": {"case_id": "golden-address-001", "field": "query"}}, "cle_attendue": "donnees", "non_vide": true},
+    {"name": "dpe_inventaire", "path": "/v1/bien/dpe/inventaire", "params": {}, "params_from": {"contexte": {"route": "resolve", "pointer": "donnees.0.dpe_inventory.context_ref"}}, "cle_attendue": "items", "non_vide": true},
+    {"name": "dpe_document", "path": "/v1/bien/dpe/document", "params": {}, "params_from": {"contexte": {"route": "resolve", "pointer": "donnees.0.dpe_inventory.context_ref"}, "reference": {"route": "dpe_inventaire", "pointer": "items.0.document_ref"}}, "cle_attendue": "document_ref", "non_vide": false}
+  ]
+}

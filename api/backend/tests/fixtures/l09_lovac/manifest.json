@@ -1,0 +1,13 @@
+{
+  "raw_sha256": "b856568d4b69784d32f9fafaf7e1376047e45eed245fb114dd737d2d43826245",
+  "raw_bytes": 7628201,
+  "gzip_sha256": "a1cc182c08bb0b5a4b5e9f83409226356119826fd532c1b0ec1b79766e4ac4bf",
+  "gzip_bytes": 1168493,
+  "rows": 34912,
+  "denominator_secrets": 18321,
+  "numerator_year": 2026,
+  "denominator_year": 2025,
+  "provenance": "Existing COR08 official source; no network retrieval in L09",
+  "encoding": "latin-1",
+  "delimiter": ";"
+}

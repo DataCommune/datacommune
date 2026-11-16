@@ -1,0 +1,437 @@
+# Gitleaks configuration — DataCommune (SEC-01 / threat T46-03-LEAK)
+#
+# Scope: the security-audit workflow scans the WORKING TREE and the PR/push
+# COMMIT RANGE only (never the full history — the pre-public history purge of
+# dead `dc_live_` keys is tracked separately as DA-08).
+#
+# Fail-closed: any non-allowlisted finding fails the job. Output is `--redact`ed;
+# reports expose file / rule / count only, never the matched string.
+#
+# INVARIANT: this file MUST NOT contain any secret value. Entries below carry a
+# rule/path, a revoked/false-positive/by-design status and a triage date only.
+
+title = "DataCommune gitleaks config"
+
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Triaged historical (revoked) and by-design (public) findings. No secret value stored."
+
+# --- Path-scoped allowlist (documentation / vendored trees) ------------------
+paths = [
+  # Revoked dead demo API key committed in a FROZEN v2.2 archive plan.
+  # Rule: generic-api-key. Status: REVOKED (dead `dc_live_` demo key).
+  # Triaged: 2026-07-22. Full-history purge deferred to pre-public (DA-08).
+  '''\.planning/archive/admin-v2\.2/phases/06-cleanup-grid-foundation/06-04-PLAN\.md''',
+  # Planning + review docs: prose and placeholder keys (dc_live_xxx, sk_live_xxx).
+  # Documentation, not source; no live secret. Status: FALSE-POSITIVE. 2026-07-22.
+  # Scoped to documentation extensions only, so a non-doc file (a stray .env,
+  # .key, source file) dropped under these trees is NOT silently allowlisted.
+  '''\.planning/.*\.md$''',
+  '''reviews/.*\.(md|err|log|txt|json)$''',
+  # Design mockups + API usage docs + guides: prose and placeholder curl examples
+  # (`curl -H "X-API-Key: VOTRE_CLE"`). rule: curl-auth-header / generic-api-key.
+  # Documentation, not runtime source; no live secret. FALSE-POSITIVE. 2026-07-22.
+  # Scoped to documentation extensions only (a stray .env/.key/source file dropped
+  # under these trees is NOT silently allowlisted).
+  '''\.planning/design/.*\.dc\.html$''',
+  '''api/docs/.*\.md$''',
+  '''frontend/src/routes/\(marketing\)/guides/.*\.svx$''',
+  # Named example-catalog files whose whole purpose is to render curl API examples
+  # with a `VOTRE_CLE` placeholder. rule: curl-auth-header. FALSE-POSITIVE. 2026-07-22.
+  # Whole-file scope is accepted here: a real secret added to *these two named files*
+  # later would escape gitleaks, but the specific dc_live_/sk_live_/etc. default rules
+  # still apply everywhere else. Re-triage if either file gains non-example content.
+  '''frontend/src/lib/data/marketing-datasets\.ts$''',
+  '''frontend/src/routes/\(marketing\)/playground/\+page\.svelte$''',
+  # Vendored / generated trees (not tracked; defense-in-depth if ever scanned).
+  '''(^|/)node_modules/''',
+  '''(^|/)\.venv(-release)?/''',
+  '''(^|/)\.svelte-kit/''',
+]
+
+# --- Pattern-scoped allowlist (public-by-design identifiers) ------------------
+regexes = [
+  # Anonymous frontend key prefix. Public by design (embedded in the shipped
+  # bundle, quota-capped server-side per SEC-02). NOT a secret. Status: BY-DESIGN.
+  # Triaged: 2026-07-22. This is a prefix pattern, not a secret value.
+  '''dc_anon_[A-Za-z0-9_-]*''',
+  # Deliberate fake sentinel used by redaction tests to PROVE secrets are scrubbed
+  # (test_phase44_live_evidence.py, test_exact_resolution_report.py). rule:
+  # generic-api-key. Not a real credential. Status: BY-DESIGN (test fixture). 2026-07-22.
+  '''dc_live_SENTINEL[0-9a-fA-F]+''',
+]
+
+# L11, 2026-09-08: exact reviewed SHA fingerprints in sealed evidence.
+# These are content hashes, never credentials. No arbitrary hash or tree is exempt.
+# A changed fingerprint requires fresh triage; synthetic canaries guard the boundary.
+[[allowlists]]
+description = "L11 reviewed immutable evidence fingerprints"
+targetRules = ["generic-api-key", "sentry-access-token"]
+condition = "AND"
+regexTarget = "secret"
+paths = [
+  '''^docs/audit\-stabilisation\-2026\-09\-08/autonomie/coverage\-inventory\.json$''',
+  '''^docs/audit\-stabilisation\-2026\-09\-08/autonomie/frontend\-checks\.json$''',
+  '''^docs/audit\-stabilisation\-2026\-09\-08/autonomie/integration\-attempt1/frontend\-checks\.json$''',
+  '''^docs/audit\-stabilisation\-2026\-09\-08/autonomie/integration\-attempt1/linux\-checks\.json$''',
+  '''^docs/audit\-stabilisation\-2026\-09\-08/autonomie/integration\-attempt1/postgis\-checks\.json$''',
+  '''^docs/audit\-stabilisation\-2026\-09\-08/autonomie/integration\-attempt2/linux\-checks\.json$''',
+  '''^docs/audit\-stabilisation\-2026\-09\-08/autonomie/integration\-attempt2/postgis\-checks\.json$''',
+  '''^docs/audit\-stabilisation\-2026\-09\-08/autonomie/linux\-checks\.json$''',
+  '''^docs/audit\-stabilisation\-2026\-09\-08/autonomie/postgis\-checks\.json$''',
+  '''^docs/audit\-stabilisation\-2026\-09\-08/autonomie/verification\.json$''',
+  '''^docs/audit\-stabilisation\-2026\-09\-08/lot\-02/cor07\-source\-chain\.json$''',
+  '''^docs/audit\-stabilisation\-2026\-09\-08/lot\-02/verification\.json$''',
+  '''^docs/audit\-stabilisation\-2026\-09\-08/lot\-08/baseline\-worktrees\.json$''',
+  '''^docs/audit\-stabilisation\-2026\-09\-08/lot\-08/e2e\-checks\.json$''',
+  '''^docs/audit\-stabilisation\-2026\-09\-08/lot\-08/frontend\-checks\.json$''',
+  '''^docs/audit\-stabilisation\-2026\-09\-08/lot\-08/linux\-checks\.json$''',
+  '''^docs/audit\-stabilisation\-2026\-09\-08/lot\-08/postgis\-checks\.json$''',
+  '''^docs/audit\-stabilisation\-2026\-09\-08/lot\-08/verification\.json$''',
+  '''^docs/audit\-stabilisation\-2026\-09\-08/lot\-09/baseline\-worktrees\.json$''',
+  '''^docs/audit\-stabilisation\-2026\-09\-08/lot\-09/linux\-checks\.json$''',
+  '''^docs/audit\-stabilisation\-2026\-09\-08/lot\-09/postgis\-checks\.json$''',
+  '''^docs/audit\-stabilisation\-2026\-09\-08/lot\-09/verification\.json$''',
+  '''^docs/audit\-stabilisation\-2026\-09\-08/lot\-10/browser\-checks\.json$''',
+  '''^docs/audit\-stabilisation\-2026\-09\-08/lot\-10/browser\-final/browser\-checks\.json$''',
+  '''^docs/audit\-stabilisation\-2026\-09\-08/lot\-10/frontend\-checks\.json$''',
+  '''^docs/audit\-stabilisation\-2026\-09\-08/lot\-10/initial\-input\-drift/linux\-checks\.json$''',
+  '''^docs/audit\-stabilisation\-2026\-09\-08/lot\-10/initial\-input\-drift/postgis\-checks\.json$''',
+  '''^docs/audit\-stabilisation\-2026\-09\-08/lot\-10/linux\-checks\.json$''',
+  '''^docs/audit\-stabilisation\-2026\-09\-08/lot\-10/postgis\-checks\.json$''',
+]
+regexes = [
+  '''^058a9e37d4bb43383b63a8c0dfb4c0f913e1f1a331da344441651e0d703e876a$''',
+  '''^05e1c1d3c41a54f9fb8b4d0266b030b9eeb0398d4df31b39593d915369f67775$''',
+  '''^1283b7ce02f283d97eefbdad9354bdd53955053e4d7db01ee22891d311cfb584$''',
+  '''^1420215866bd5d78c8f8b5c6056d738a2bfe2344b6692aa5ce8370c603737456$''',
+  '''^2185fe8f9c2f2f34e2e2fc34e6af537ca870ec0c82cc6ce4fe6930ce6b3683f2$''',
+  '''^21c05a291fbdecb113198cdf36a085b058ae7fbdc383aebce93c7f6332f0c9c5$''',
+  '''^222d06046ea3e5202be3f59fe73b0999901c1460f813873b845eb313e3e8d1f1$''',
+  '''^27b524bb922fa82e3becd23ab0ab794299cacf605fd3c46425c016d63c376163$''',
+  '''^292e32b852dd5d5a6ff8120a85e282b92d92d2961ced6a7f83a292353601433c$''',
+  '''^2a9b931c1d150e41ef80645b94e289a8b64bdd10754c63c6a0a13fb11987d2de$''',
+  '''^2c9c90ea058b94d2f9628d051f1b61b8dce58d011a7909699aefae89e8450199$''',
+  '''^35b40aaadd0ed59e49489aa5a19c9a6b09c522604a143397b44684d97b2e5737$''',
+  '''^4ccfb9e495ce1ed8392812e5b1412f3b5b28d7b0baefcfd30a9cbd7e992ff240$''',
+  '''^56283d2e5b06cb5d3630a43bde70da84eaf69c3e83dcd328a8fa9492c2c3880c$''',
+  '''^5672467600a97cac8b6573d3e45ba3f6f1946fb76d34dbe6ea1f9b9d0f8a8106$''',
+  '''^5c179dcbf2262f48fb3683ab8b097af8aa21a4ae2f7517ce9bfed03b5d1b5e4b$''',
+  '''^65677143a68078bf1c8a8fb5f01defaa4da481b4b4fdf359aa14ae25f031e5ee$''',
+  '''^65e7126c4a8ae0131f79c4e8856e7143e9e524f3c6305a0a05be76c055a5a72d$''',
+  '''^6fa17f68622660edf0c73551212b572594d7212c2b1105ca69bee60c5a357192$''',
+  '''^72b794e76b0ec042fcdf4ca8c8ee6ec485d9a56a0a4111ef5d4b7cbaaf933857$''',
+  '''^738525a158ce5c246e1acf88488b8855aae0b6ddbef8537104561b74672783cd$''',
+  '''^756e28144d1e0c602a6af7c936e328115afd3c386b652acc9430e726282f96db$''',
+  '''^7715d3ff97ac3fbb2b7725e90cbb5199b418840325ddb759e0a1a7a5d3070d4d$''',
+  '''^781c07c360841b8db0d921d7c57570609fa80c7aa088bc9190f3492c9e288434$''',
+  '''^7b1f62d1f5e5bd62533b7fbcc637086ce1467c15427f63a4950eecd6e9e5cc89$''',
+  '''^825d8c8f18dddf0e7685f7863a588305c28ffab43ab6fd32752f694e63a99378$''',
+  '''^82b589e064cf3c59d90ce3fc47892c989a7d1623a2315618d756eaad73d6b13e$''',
+  '''^9752f055f39b1544baca5ae04edba1861d1ca54b8010a07abe8f0ec4d50f7198$''',
+  '''^9b7fa494cacd17d18818ec15cbba9e88c38e7aa3cc7ebf27052a0687c115b05f$''',
+  '''^a2cacb856bfa03c29273471396f7879c8e0c1674f50f2a74e3483fd317484ff0$''',
+  '''^a432a587f2e4cb534bdbcf324848ed000e56a4bbfc8f6732ab33db9546a0b46f$''',
+  '''^a485698799a76a07acbcf3510c2fc19c560f08e4370c2c8317f48d7a5b99cc81$''',
+  '''^a5e8ca5bd1019acf2d203c23173a4ee64814e4d44be3b794256a134755d3deae$''',
+  '''^aab92425342128f4e55a2359db0932a7c0341988abcc1b2b3f55b656f3731eda$''',
+  '''^b04268efbbcfc857c92d49fec6244daaa3ae670c37bf62c92644b2ac86cad83b$''',
+  '''^b49a6e2da82a6dd2bd50c94056d038148a678bb64d7bffb7a6384457d7cc9875$''',
+  '''^c0b1de9665b243c9f996eee959ac338f5559382d2e925e2ca0b5946ad4ba7e5e$''',
+  '''^c2a246e5f8d7847dc26e21ed97711b0516ff4f389218939d4d740583654cd41c$''',
+  '''^c579a6873cea49d3aeba3b0041941f2282a0bdac397af6697f2c82e3fb0fd132$''',
+  '''^d1a841c89cf740629baccd6f0bbc1391215ab426d910a3c543ec5462c084e35a$''',
+  '''^d5f9d15d9307ade26a6f1f3c72578d0957df7ac6bfe95bc25824ae0cbbe00db7$''',
+  '''^d985a8361ba36e13ece816b9562065a43465bac3ffeabd83d14c7e06d0fec9db$''',
+  '''^ddd02c4649f929ce5eba94d965615960eb973865be05d8f6b3b93b49af514138$''',
+  '''^e5c0a4f6202110b890544f157770da5ca0335f800cfdca4e292451de792fe432$''',
+  '''^e7b3deffa1d0bc5711513de097da6e42ed649109fe7d9d70b3c3eaa0b4c5d7b0$''',
+  '''^e98474b811592c32a9693884cb6612c09c1f5cb84b7ad522c24caf1ad4526a61$''',
+  '''^ea89ff788b37def0c86a1cb576764fd480730b2a9259b5be02e2a5a2f7f28f35$''',
+  '''^f3e9a3507335956b587f9736d07966b3b76c1106f4ea9f0ab8e79c4865b4bf47$''',
+  '''^f66244aee6e08f70b84cbcd57c0ee0db6278e71ec28e5ef38bf788c833df6b4b$''',
+  '''^f8761a373e63f597e7e81a1e26fba26675a06629c726022095f6439ecc101cde$''',
+]
+
+# 2026-09-09: exact OpenAPI fingerprint observed in two reviewed preproduction
+# read-only evidence files. It is a content hash, not a credential. The match
+# target binds the exact JSON field fragment and value; paths and rule are exact.
+[[allowlists]]
+description = "Reviewed preproduction OpenAPI fingerprint evidence"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''^\.planning[\\/]phases[\\/]DC\-58\.3\-appariement\-dpe\-explicable\-du\-logement[\\/]evidence[\\/]preproduction\-read\.json$''',
+  '''^\.planning[\\/]phases[\\/]DC\-58\.3\-appariement\-dpe\-explicable\-du\-logement[\\/]evidence[\\/]preproduction\-read\-initial\.json$''',
+]
+regexes = [
+  '''^openapi_sha256": "aaab65d8320b329cdbb657827b97599d7a5d3aa5a8952ab68dceea6d966192f0"$''',
+]
+
+[[allowlists]]
+description = "Captured public curl example: literal VOTRE_CLE placeholder"
+targetRules = ["curl-auth-header"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''^docs/audit-stabilisation-2026-09-08/autonomie/cor09-13-15-ssr\.html$''']
+regexes = ['''^curl -H "X-API-Key: VOTRE_CLE"$''']
+
+# 2026-09-23 (03-02, D-39): the developer page shows a curl example with the literal
+# VOTRE_CLE placeholder, never a key. Exact paths, exact rule, exact secret.
+# 2026-11-12 (05-07 lot 3): since a3fee7a1 the page and its test hold two curl commands, and
+# the rule matches from the first one to the header: the match changed, the secret did not.
+# The target moves from the matched fragment to the secret, still the literal placeholder only.
+[[allowlists]]
+description = "Developer page curl example: literal VOTRE_CLE placeholder"
+targetRules = ["curl-auth-header"]
+condition = "AND"
+regexTarget = "secret"
+paths = ['''^frontend/src/routes/\(marketing\)/developpeurs/\+page\.svelte$''', '''^frontend/src/routes/\(marketing\)/developpeurs/page\.test\.ts$''']
+regexes = ['''^VOTRE_CLE$''']
+
+# 2026-11-12 (05-07 lot 3): the report test asserts the internal URL of the API service
+# (http://api:8000/v1/signalements); generic-api-key reads its path as a key. Exact path, rule, secret.
+[[allowlists]]
+description = "Internal API URL asserted by the report test, not a key"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "secret"
+paths = ['''^frontend/src/routes/\(marketing\)/signaler/page\.server\.test\.ts$''']
+regexes = ['''^8000/v1/signalements$''']
+
+[[allowlists]]
+description = "Named synthetic address slug in proxy browser fixture, not an auth token"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''^frontend/tests/e2e/stabilisation-proxies\.spec\.ts$''']
+regexes = ["^token = '1-rue-du-temoin-44000-nantes'$"]
+
+# 2026-09-26 (02-19): synthetic DPE fixture identifier of the 02-16 integration test (845cbc0),
+# declared "Synthetic identities only" in the test itself; not a credential. Proof: the matched
+# value is the literal `fixture-dpe02neuf-44-0`. Exact path, exact rule, exact matched fragment.
+[[allowlists]]
+description = "Synthetic DPE fixture identifier in test_dpe_without_geometry.py, not a key"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''^api[\/]backend[\/]tests[\/]integration[\/]test_dpe_without_geometry\.py$''']
+regexes = ['''^KEY_WITHOUT_ADDRESS = "fixture-dpe02neuf-44-0"$''']
+
+# 2026-11-11 (public export): keyword argument of a test helper, `_annuaire(api,
+# inclure_arrondissements="true")`. The rule reads `api` as a key name and the parameter name
+# as its value; the "secret" is the literal `inclure_arrondissements=`. Found by the export
+# of 2026-11-11 (4 lines). Exact path, exact rule, exact matched fragment.
+[[allowlists]]
+description = "Keyword argument name in test_plm_arrondissements.py, not a key"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''^api[\/]backend[\/]tests[\/]integration[\/]test_plm_arrondissements\.py$''']
+regexes = ['''^api, inclure_arrondissements="$''']
+
+# 2026-09-10: individually verified Git/image/body fingerprints from live qualification.
+# Exact path AND exact matched fragment; no new credential or changed hash is exempt.
+
+[[allowlists]]
+description = "Reviewed 911b6749 live evidence fingerprint 1"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''^\.planning[\\/]phases[\\/]DC\-60\-comparateur\-de\-deux\-communes[\\/]evidence\-07\-real[\\/]replay\-receipt\.json$''']
+regexes = ['''^api_revision":\ "911b674985672882ef265befe3e9d1b0b21f0e21"$''']
+
+[[allowlists]]
+description = "Reviewed 911b6749 live evidence fingerprint 2"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''^\.planning[\\/]phases[\\/]DC\-60\-comparateur\-de\-deux\-communes[\\/]evidence\-07\-real[\\/]producer\-runtime\-enabled\.json$''']
+regexes = ['''^api_response_sha256":\ "8125ec2282a7ef34a98ee76487c33e1bd959289e19b193b0b258479f3332ce59"$''']
+
+[[allowlists]]
+description = "Reviewed 911b6749 live evidence fingerprint 3"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''^\.planning[\\/]phases[\\/]DC\-60\-comparateur\-de\-deux\-communes[\\/]evidence\-07\-real[\\/]producer\-runtime\-enabled\.json$''']
+regexes = ['''^datacommune\-preprod\-api:sha\-911b674985672882ef265befe3e9d1b0b21f0e21"$''']
+
+[[allowlists]]
+description = "Reviewed 911b6749 live evidence fingerprint 4"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''^docs[\\/]reprise\-2026\-09\-10[\\/]phase591[\\/]qualification\-911b6749[\\/]runtime\-enabled\.json$''']
+regexes = ['''^api_response_sha256":\ "8125ec2282a7ef34a98ee76487c33e1bd959289e19b193b0b258479f3332ce59"$''']
+
+[[allowlists]]
+description = "Reviewed 911b6749 live evidence fingerprint 5"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''^docs[\\/]reprise\-2026\-09\-10[\\/]phase591[\\/]qualification\-911b6749[\\/]runtime\-enabled\.json$''']
+regexes = ['''^datacommune\-preprod\-api:sha\-911b674985672882ef265befe3e9d1b0b21f0e21"$''']
+
+[[allowlists]]
+description = "Reviewed 911b6749 live evidence fingerprint 6"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''^docs[\\/]reprise\-2026\-09\-10[\\/]phase591[\\/]qualification\-911b6749[\\/]cd\-qualification\.json$''']
+regexes = ['''^api_sha":\ "911b674985672882ef265befe3e9d1b0b21f0e21"$''']
+
+[[allowlists]]
+description = "Reviewed 911b6749 live evidence fingerprint 7"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''^docs[\\/]reprise\-2026\-09\-10[\\/]phase591[\\/]qualification\-911b6749[\\/]review\-real\-activation\.md$''']
+regexes = ['''^datacommune\-preprod\-api:sha\-911b674985672882ef265befe3e9d1b0b21f0e21`$''']
+
+[[allowlists]]
+description = "Reviewed 911b6749 exhaustive HTTP report Git revision"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''^docs[\\/]reprise-2026-09-10[\\/]phase591[\\/]http-full-911b6749[\\/]review-real-http-full-v3\.md$''']
+regexes = ['''^API : `911b674985672882ef265befe3e9d1b0b21f0e21`$''']
+
+# 2026-09-10: exact public Git/image/body fingerprints in reviewed successor
+# receipts. Every exception binds one path, one JSON field/fragment and one value.
+[[allowlists]]
+description = "Reviewed successor replay API revision"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''^\.planning[\\/]phases[\\/]DC\-60\-comparateur\-de\-deux\-communes[\\/]evidence\-08\-successor[\\/]preparation\-replay\-receipt\-32786450\.json$''']
+regexes = ['''^api_revision":\ "911b674985672882ef265befe3e9d1b0b21f0e21"$''']
+
+[[allowlists]]
+description = "Reviewed ef5a50cf runtime API body fingerprint"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''^docs[\\/]reprise\-2026\-09\-10[\\/]phase591[\\/]runtime\-ef5a50cf[\\/]runtime\.json$''']
+regexes = ['''^api_response_sha256":\ "a82acf7ea7787b51c862674c43f79dd36750743716368f9c351a45a6dce62442"$''']
+
+[[allowlists]]
+description = "Reviewed ef5a50cf runtime image tag"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''^docs[\\/]reprise\-2026\-09\-10[\\/]phase591[\\/]runtime\-ef5a50cf[\\/]runtime\.json$''']
+regexes = ['''^datacommune\-preprod\-api:sha\-ef5a50cfe21097c16b898b23831b77fbad05f0fa"$''']
+
+[[allowlists]]
+description = "Reviewed ef5a50cf deployment API revision"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''^docs[\\/]reprise\-2026\-09\-10[\\/]phase591[\\/]runtime\-ef5a50cf[\\/]cd\-qualification\.json$''']
+regexes = ['''^api_sha":\ "ef5a50cfe21097c16b898b23831b77fbad05f0fa"$''']
+
+# 2026-09-10: exact public Git/image/body fingerprints from the reviewed final
+# phase 59.1 evidence projection. Each exception binds one path and one field.
+[[allowlists]]
+description = "Reviewed final 41f140a6 deployment API revision"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''^docs[\\/]reprise\-2026\-09\-10[\\/]phase591[\\/]final\-41f140a6[\\/]cd\-qualification\.json$''']
+regexes = ['''^api_sha":\ "41f140a686de23ada10bcc5d5e0ce8d5e8510fc4"$''']
+
+[[allowlists]]
+description = "Reviewed final 41f140a6 runtime API body fingerprint"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''^docs[\\/]reprise\-2026\-09\-10[\\/]phase591[\\/]final\-41f140a6[\\/]runtime\.json$''']
+regexes = ['''^api_response_sha256":\ "048726cbece70b3fae60d5f07d12a7ba5aa60f6b82b9c9ac53c3dc57e41644b4"$''']
+
+[[allowlists]]
+description = "Reviewed final 41f140a6 runtime image tag"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''^docs[\\/]reprise\-2026\-09\-10[\\/]phase591[\\/]final\-41f140a6[\\/]runtime\.json$''']
+regexes = ['''^datacommune\-preprod\-api:sha\-41f140a686de23ada10bcc5d5e0ce8d5e8510fc4"$''']
+
+[[allowlists]]
+description = "Reviewed final 41f140a6 independent review image tag"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''^docs[\\/]reprise\-2026\-09\-10[\\/]phase591[\\/]final\-41f140a6[\\/]independent\-review\.md$''']
+regexes = ['''^datacommune\-preprod\-api:sha\-41f140a686de23ada10bcc5d5e0ce8d5e8510fc4`$''']
+
+# 2026-09-10: exact public Git/image/body fingerprints prepared for the final
+# phase 60 evidence paths. Each exception binds one path and one field.
+[[allowlists]]
+description = "Reviewed phase 60 final replay API revision"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''^\.planning[\\/]phases[\\/]DC\-60\-comparateur\-de\-deux\-communes[\\/]evidence\-09\-final[\\/]replay\-receipt\.json$''']
+regexes = ['''^api_revision":\ "41f140a686de23ada10bcc5d5e0ce8d5e8510fc4"$''']
+
+[[allowlists]]
+description = "Reviewed phase 60 final runtime API body fingerprint"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''^\.planning[\\/]phases[\\/]DC\-60\-comparateur\-de\-deux\-communes[\\/]evidence\-09\-final[\\/]producer\-runtime\.json$''']
+regexes = ['''^api_response_sha256":\ "048726cbece70b3fae60d5f07d12a7ba5aa60f6b82b9c9ac53c3dc57e41644b4"$''']
+
+[[allowlists]]
+description = "Reviewed phase 60 final runtime image tag"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''^\.planning[\\/]phases[\\/]DC\-60\-comparateur\-de\-deux\-communes[\\/]evidence\-09\-final[\\/]producer\-runtime\.json$''']
+regexes = ['''^datacommune\-preprod\-api:sha\-41f140a686de23ada10bcc5d5e0ce8d5e8510fc4"$''']
+
+# 2026-09-20 (plan 01-02) : empreinte de contenu dans le manifeste `artifacts_sha256`
+# de l'audit de recentrage, transféré depuis `9d903a46` comme spécification de phase 4.
+# Faux positif PROUVÉ, pas supposé : les 18 valeurs de cet objet sont des hex-64 et
+# 17 d'entre elles sont exactement le SHA-256 du fichier qu'elles nomment à la révision
+# `9002f0e7` de l'ancien dépôt (la 18e, `socle/source-references.json`, correspond au
+# fichier tel que transféré ici). Ce n'est donc pas une clé d'API mais l'empreinte de
+# `docs/audit-recentrage-2026-09-10/socle-api-revue.md`. Portée : un chemin, une règle,
+# une valeur exacte — une empreinte modifiée exige un nouveau triage.
+[[allowlists]]
+description = "Reviewed audit-recentrage artifacts_sha256 document fingerprint"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''^docs[\/]audit\-recentrage\-2026\-09\-10[\/]socle[\/]verification\.json$''']
+regexes = ['''^socle\-api\-revue\.md":\ "5613d2e03f55bb3a892f0c36dcfabd2cd750f18207b2224a1ae2b94ec000ee52"$''']
+
+# 2026-10-06 : `const TOKEN` du test de redirection `/bien/[token]` (04-08) est le
+# jeton d'adresse en clair d'une fixture (« 12 rue des lilas 85000 la roche sur
+# yon » en slug), pas une clé d'API. Faux positif PROUVÉ : la valeur est lisible et
+# égale au libellé de la ligne suivante. Portée : un chemin, une règle, une valeur
+# exacte — une autre valeur dans ce fichier reste détectée.
+[[allowlists]]
+description = "Plain-text address slug fixture of the /bien/[token] redirect test"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "secret"
+paths = ['''^frontend[\/]src[\/]routes[\/]\(marketing\)[\/]bien[\/]\[token\][\/]load\.test\.ts$''']
+regexes = ['''^12\-rue\-des\-lilas\-85000\-la\-roche\-sur\-yon$''']
+
+# 2026-10-21 : `http://api:8000/v1/communes/44109` du test de `internalApiFetch`
+# (dc4f349a) est l'URL interne attendue (service Docker `api`, port 8000, commune
+# 44109), pas une clé d'API. Faux positif PROUVÉ : gitleaks lit `api:` comme nom de
+# clé et `8000/v1/communes/44109` comme valeur. Portée : un chemin, une règle, une
+# valeur exacte — une autre valeur dans ce fichier reste détectée.
+[[allowlists]]
+description = "Internal Docker API URL expected by the internalApiFetch hook test"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "secret"
+paths = ['''^frontend[\/]src[\/]hooks\.server\.test\.ts$''']
+regexes = ['''^8000/v1/communes/44109$''']

@@ -1,0 +1,4726 @@
+{
+  "case_id": "R14",
+  "captured_at": "2026-09-10T20:43:09.216295+00:00",
+  "document": {
+    "http": 200,
+    "body": {
+      "association": "source_ban_equality",
+      "address_check": "unverified",
+      "source": "ADEME",
+      "source_coverage": "unknown",
+      "graph_state": "not_checked",
+      "imported_at": null,
+      "version": 2,
+      "type_batiment": "appartement",
+      "surface_habitable": 65.9,
+      "etiquette_dpe": "C",
+      "etiquette_ges": "C",
+      "date_etablissement_dpe": "2024-09-20",
+      "date_fin_validite_dpe": "2034-09-19",
+      "annee_construction": 2020,
+      "periode_construction": "2013-2021",
+      "type_installation_chauffage": "individuel",
+      "type_energie_principale_chauffage": "Gaz naturel",
+      "qualite_isolation_enveloppe": "moyenne",
+      "conso_5_usages_ep": 6879.1,
+      "emission_ges_5_usages": 1391.6,
+      "cout_total_5_usages": 912.2,
+      "validity_by_date": "not_expired_by_date",
+      "lifecycle": {
+        "source_state": "present",
+        "source_snapshot_date": "2026-09-05",
+        "source_scope": "44/85",
+        "regimes": [
+          "existant"
+        ],
+        "replacement_state": "no_successor_known",
+        "graph_issues": [],
+        "validity": "not_expired_by_date",
+        "as_of_date": "2026-09-10",
+        "revision_status": "unverified",
+        "revision_kind": null,
+        "revision_date": null,
+        "detail_availability": "available"
+      }
+    }
+  },
+  "pages": [
+    {
+      "association": "source_ban_equality",
+      "address_check": "unverified",
+      "source": "ADEME",
+      "source_coverage": "unknown",
+      "graph_state": "not_checked",
+      "imported_at": null,
+      "version": 2,
+      "as_of_date": "2026-09-10",
+      "state": "ready",
+      "items": [
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 65.9,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-09-20",
+          "date_fin_validite_dpe": "2034-09-19",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 66.9,
+          "etiquette_dpe": "D",
+          "etiquette_ges": "D",
+          "date_etablissement_dpe": "2024-09-26",
+          "date_fin_validite_dpe": "2034-09-25",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 52.6,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-09-26",
+          "date_fin_validite_dpe": "2034-09-25",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 77.1,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-09-26",
+          "date_fin_validite_dpe": "2034-09-25",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 51.6,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-09-26",
+          "date_fin_validite_dpe": "2034-09-25",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 64.3,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-09-26",
+          "date_fin_validite_dpe": "2034-09-25",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 64.3,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-09-26",
+          "date_fin_validite_dpe": "2034-09-25",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 80.4,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-09-26",
+          "date_fin_validite_dpe": "2034-09-25",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 76.5,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-09-26",
+          "date_fin_validite_dpe": "2034-09-25",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 71.8,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-09-26",
+          "date_fin_validite_dpe": "2034-09-25",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 71.8,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-09-26",
+          "date_fin_validite_dpe": "2034-09-25",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 51.5,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-09-27",
+          "date_fin_validite_dpe": "2034-09-26",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 43.4,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-09-27",
+          "date_fin_validite_dpe": "2034-09-26",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 51.6,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-09-27",
+          "date_fin_validite_dpe": "2034-09-26",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 65.6,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-09-27",
+          "date_fin_validite_dpe": "2034-09-26",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 44.9,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-09-27",
+          "date_fin_validite_dpe": "2034-09-26",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 77.1,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-09-27",
+          "date_fin_validite_dpe": "2034-09-26",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 66.9,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-09-27",
+          "date_fin_validite_dpe": "2034-09-26",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 66.1,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-09-27",
+          "date_fin_validite_dpe": "2034-09-26",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 77.1,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-09-27",
+          "date_fin_validite_dpe": "2034-09-26",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        }
+      ],
+      "total": 114,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 113,
+        "D": 1,
+        "E": 0,
+        "F": 0,
+        "G": 0,
+        "unknown": 0
+      },
+      "page_size": 20,
+      "has_more": true,
+      "read_state": "complete"
+    },
+    {
+      "association": "source_ban_equality",
+      "address_check": "unverified",
+      "source": "ADEME",
+      "source_coverage": "unknown",
+      "graph_state": "not_checked",
+      "imported_at": null,
+      "version": 2,
+      "as_of_date": "2026-09-10",
+      "state": "ready",
+      "items": [
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 51.5,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-09-27",
+          "date_fin_validite_dpe": "2034-09-26",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 64.3,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-10-02",
+          "date_fin_validite_dpe": "2034-10-01",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 64.3,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-10-02",
+          "date_fin_validite_dpe": "2034-10-01",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 77.1,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-10-02",
+          "date_fin_validite_dpe": "2034-10-01",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 77.1,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-10-02",
+          "date_fin_validite_dpe": "2034-10-01",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 51.7,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-10-02",
+          "date_fin_validite_dpe": "2034-10-01",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 71.8,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-10-02",
+          "date_fin_validite_dpe": "2034-10-01",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 76.5,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-10-02",
+          "date_fin_validite_dpe": "2034-10-01",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 71.8,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-10-02",
+          "date_fin_validite_dpe": "2034-10-01",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 50.3,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-10-02",
+          "date_fin_validite_dpe": "2034-10-01",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 50.3,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-10-02",
+          "date_fin_validite_dpe": "2034-10-01",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 43.4,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-10-02",
+          "date_fin_validite_dpe": "2034-10-01",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 64.3,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-10-03",
+          "date_fin_validite_dpe": "2034-10-02",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 52.6,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-10-04",
+          "date_fin_validite_dpe": "2034-10-03",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 76.5,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-10-04",
+          "date_fin_validite_dpe": "2034-10-03",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 50.3,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-10-04",
+          "date_fin_validite_dpe": "2034-10-03",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 80.4,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-10-04",
+          "date_fin_validite_dpe": "2034-10-03",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 71.1,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-10-04",
+          "date_fin_validite_dpe": "2034-10-03",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 44.9,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-10-04",
+          "date_fin_validite_dpe": "2034-10-03",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 84.5,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-10-04",
+          "date_fin_validite_dpe": "2034-10-03",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        }
+      ],
+      "total": 114,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 113,
+        "D": 1,
+        "E": 0,
+        "F": 0,
+        "G": 0,
+        "unknown": 0
+      },
+      "page_size": 20,
+      "has_more": true,
+      "read_state": "complete"
+    },
+    {
+      "association": "source_ban_equality",
+      "address_check": "unverified",
+      "source": "ADEME",
+      "source_coverage": "unknown",
+      "graph_state": "not_checked",
+      "imported_at": null,
+      "version": 2,
+      "as_of_date": "2026-09-10",
+      "state": "ready",
+      "items": [
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 71.8,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-10-09",
+          "date_fin_validite_dpe": "2034-10-08",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 76.5,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-10-09",
+          "date_fin_validite_dpe": "2034-10-08",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 76.5,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-10-09",
+          "date_fin_validite_dpe": "2034-10-08",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 50.4,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-10-09",
+          "date_fin_validite_dpe": "2034-10-08",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 65.4,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-10-09",
+          "date_fin_validite_dpe": "2034-10-08",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 65.4,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-10-09",
+          "date_fin_validite_dpe": "2034-10-08",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 43.4,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-10-14",
+          "date_fin_validite_dpe": "2034-10-13",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 50.3,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-10-14",
+          "date_fin_validite_dpe": "2034-10-13",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 52.6,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-10-14",
+          "date_fin_validite_dpe": "2034-10-13",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 52.6,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-10-14",
+          "date_fin_validite_dpe": "2034-10-13",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 65.6,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-10-14",
+          "date_fin_validite_dpe": "2034-10-13",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 64.3,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-10-14",
+          "date_fin_validite_dpe": "2034-10-13",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 52.6,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-10-14",
+          "date_fin_validite_dpe": "2034-10-13",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 65.4,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-10-14",
+          "date_fin_validite_dpe": "2034-10-13",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 64.3,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-10-14",
+          "date_fin_validite_dpe": "2034-10-13",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 65.4,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-10-14",
+          "date_fin_validite_dpe": "2034-10-13",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 44.9,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2024-10-14",
+          "date_fin_validite_dpe": "2034-10-13",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 71.4,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2025-08-07",
+          "date_fin_validite_dpe": "2035-08-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 40.0,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2025-10-07",
+          "date_fin_validite_dpe": "2035-10-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 65.6,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        }
+      ],
+      "total": 114,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 113,
+        "D": 1,
+        "E": 0,
+        "F": 0,
+        "G": 0,
+        "unknown": 0
+      },
+      "page_size": 20,
+      "has_more": true,
+      "read_state": "complete"
+    },
+    {
+      "association": "source_ban_equality",
+      "address_check": "unverified",
+      "source": "ADEME",
+      "source_coverage": "unknown",
+      "graph_state": "not_checked",
+      "imported_at": null,
+      "version": 2,
+      "as_of_date": "2026-09-10",
+      "state": "ready",
+      "items": [
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 65.6,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 43.4,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 43.4,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 44.9,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 50.3,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 71.1,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 43.4,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 44.9,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 50.3,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 51.5,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 43.4,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 44.9,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 71.8,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 50.4,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 51.5,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 71.8,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 50.3,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 80.4,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 84.5,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 71.8,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        }
+      ],
+      "total": 114,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 113,
+        "D": 1,
+        "E": 0,
+        "F": 0,
+        "G": 0,
+        "unknown": 0
+      },
+      "page_size": 20,
+      "has_more": true,
+      "read_state": "complete"
+    },
+    {
+      "association": "source_ban_equality",
+      "address_check": "unverified",
+      "source": "ADEME",
+      "source_coverage": "unknown",
+      "graph_state": "not_checked",
+      "imported_at": null,
+      "version": 2,
+      "as_of_date": "2026-09-10",
+      "state": "ready",
+      "items": [
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 50.3,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 66.9,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 66.1,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 64.3,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 71.8,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 52.6,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 76.5,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 77.1,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 64.3,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 71.8,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 52.6,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 76.5,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 77.1,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 64.3,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 65.4,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 51.7,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 52.6,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 76.5,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 77.1,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 64.3,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        }
+      ],
+      "total": 114,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 113,
+        "D": 1,
+        "E": 0,
+        "F": 0,
+        "G": 0,
+        "unknown": 0
+      },
+      "page_size": 20,
+      "has_more": true,
+      "read_state": "complete"
+    },
+    {
+      "association": "source_ban_equality",
+      "address_check": "unverified",
+      "source": "ADEME",
+      "source_coverage": "unknown",
+      "graph_state": "not_checked",
+      "imported_at": null,
+      "version": 2,
+      "as_of_date": "2026-09-10",
+      "state": "ready",
+      "items": [
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 65.4,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 51.6,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 52.6,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 76.5,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 77.1,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 64.3,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 65.4,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 51.6,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 52.6,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 76.5,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 77.1,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 64.3,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-01-07",
+          "date_fin_validite_dpe": "2036-01-06",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 40.1,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "A",
+          "date_etablissement_dpe": "2026-01-14",
+          "date_fin_validite_dpe": "2036-01-13",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        },
+        {
+          "type_batiment": "appartement",
+          "surface_habitable": 66.1,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-02-25",
+          "date_fin_validite_dpe": "2036-02-24",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        }
+      ],
+      "total": 114,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 113,
+        "D": 1,
+        "E": 0,
+        "F": 0,
+        "G": 0,
+        "unknown": 0
+      },
+      "page_size": 20,
+      "has_more": false,
+      "read_state": "complete"
+    }
+  ],
+  "source_existant": {
+    "http": 200,
+    "body": {
+      "total": 114,
+      "results": [
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\nRDC - PORTE 1",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0039039K",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 64.3,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n5EME ETAGE - PORTE 29",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0036804L",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 71.8,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n3EME ETAGE - PORTE 16",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0038112T",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 52.6,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n3EME ETAGE - PORTE 14",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0038229G",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 77.1,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n2EME ETAGE - PORTE 40",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0036050L",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 51.5,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n4EME ETAGE - PORTE 22",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0037427K",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 52.6,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n5EME ETAGE - PORTE 26",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0037043Q",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 77.1,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n3EME ETAGE - PORTE 41",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0035950P",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 50.4,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n4EME ETAGE - PORTE 24",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0037226R",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 71.8,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n4EME ETAGE - PORTE 48",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0035569Y",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 44.9,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n3EME ETAGE - PORTE 15",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0038175E",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 76.5,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n4EME ETAGE - PORTE 25",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0037123S",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 64.3,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n1ER ETAGE - PORTE 36",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0036253G",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 80.4,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n3EME ETAGE - PORTE 19",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0037927Q",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 64.3,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n2EME ETAGE - PORTE 9",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0038541G",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 76.5,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n2EME ETAGE - PORTE 39",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0036123G",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 71.8,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n5EME ETAGE - PORTE 28",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0036942T",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 52.6,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 3 - Escalier 1\n20 ROUTE de Carquefou\nRDC - PORTE 55",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0035067Q",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 65.6,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n3EME ETAGE - PORTE 44",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0035806B",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 43.4,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n3EME ETAGE - PORTE 17",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0038053M",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 51.7,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 3 - Escalier 1\n20 ROUTE de Carquefou\n2EME - PORTE 57",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0034975C",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 65.6,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n5EME ETAGE - PORTE 30",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0036728N",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 64.3,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n2EME ETAGE - PORTE 8",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0038598L",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 77.1,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n4EME ETAGE - PORTE 50",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0035439Y",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 71.1,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n2EME ETAGE - PORTE 11",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0038388J",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 51.6,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n4EME ETAGE - PORTE 21",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0037791K",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 76.5,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n4EME ETAGE - PORTE 20",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0037843K",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 77.1,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n2EME ETAGE - PORTE 13",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0038278D",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 64.3,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n3EME ETAGE - PORTE 18",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0037990B",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 65.4,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n1ER ETAGE - PORTE 33",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0036446R",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 50.3,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n5EME ETAGE - PORTE 54",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0035176V",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 43.4,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n2EME ETAGE - PORTE 12",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0038323W",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 65.4,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n5EME ETAGE - PORTE 27",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0036989O",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 76.5,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n2EME ETAGE - PORTE 10",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0038469M",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 52.6,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n1ER ETAGE - PORTE 6",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0038723G",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 65.4,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\nRDC - PORTE 32",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0036576R",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 66.9,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n5EME ETAGE - PORTE 51",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0035378P",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 50.3,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n3EME ETAGE - PORTE 43",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0035853W",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 44.9,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n5EME ETAGE - PORTE 53",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0035329S",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 44.9,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n1ER ETAGE - PORTE 3",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0038902D",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 76.5,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n3EME ETAGE - PORTE 42",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0035908Z",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 71.8,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n1ER ETAGE - PORTE 7",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0038672H",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 64.3,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n1ER ETAGE - PORTE 34",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0036390N",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 71.8,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n1ER ETAGE - PORTE 4",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0038864R",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 52.6,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n3EME ETAGE - PORTE 45",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0035732F",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 51.5,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n1ER ETAGE - PORTE 5",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0038805K",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 51.6,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n4EME ETAGE - PORTE 49",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0035501I",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 43.4,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n1ER ETAGE - PORTE 2",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0038974X",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 77.1,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n4EME ETAGE - PORTE 46",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0035615S",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 50.3,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n1ER ETAGE - PORTE 35",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0036318T",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 84.5,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n5EME ETAGE - PORTE 54",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0035139K",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 43.4,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n2EME ETAGE - PORTE 38",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0036185Q",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 50.3,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\nRDC - PORTE 31",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0036660X",
+          "date_fin_validite_dpe": "2036-01-06",
+          "date_etablissement_dpe": "2026-01-07",
+          "surface_habitable_logement": 66.1,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "20 Route de Carquefou",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0099311O",
+          "date_fin_validite_dpe": "2036-01-13",
+          "date_etablissement_dpe": "2026-01-14",
+          "surface_habitable_logement": 40.1,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3533984H",
+          "date_fin_validite_dpe": "2034-10-08",
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n3EME ETAGE - PORTE 41",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-10-09",
+          "surface_habitable_logement": 50.4,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3360765A",
+          "date_fin_validite_dpe": "2034-09-25",
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n1ER ETAGE - PORTE 36",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-09-26",
+          "surface_habitable_logement": 80.4,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3473900J",
+          "date_fin_validite_dpe": "2034-10-03",
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n2EME ETAGE - PORTE 10",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-10-04",
+          "surface_habitable_logement": 52.6,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3359635O",
+          "date_fin_validite_dpe": "2034-09-25",
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n4EME ETAGE - PORTE 22",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-09-26",
+          "surface_habitable_logement": 52.6,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3534475E",
+          "date_fin_validite_dpe": "2034-10-08",
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n2EME ETAGE - PORTE 12",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-10-09",
+          "surface_habitable_logement": 65.4,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3445012H",
+          "date_fin_validite_dpe": "2034-10-01",
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n1ER ETAGE - PORTE 33",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-10-02",
+          "surface_habitable_logement": 50.3,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3596622L",
+          "date_fin_validite_dpe": "2034-10-13",
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n2EME ETAGE - PORTE 38",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-10-14",
+          "surface_habitable_logement": 50.3,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3440055Q",
+          "date_fin_validite_dpe": "2034-10-01",
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n3EME ETAGE - PORTE 19",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-10-02",
+          "surface_habitable_logement": 64.3,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3440042D",
+          "date_fin_validite_dpe": "2034-10-01",
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n3EME ETAGE - PORTE 19",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-10-02",
+          "surface_habitable_logement": 64.3,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3382618N",
+          "date_fin_validite_dpe": "2034-09-26",
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n3EME ETAGE - PORTE 45",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-09-27",
+          "surface_habitable_logement": 51.5,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3533396R",
+          "date_fin_validite_dpe": "2034-10-08",
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n4EME ETAGE - PORTE 21",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-10-09",
+          "surface_habitable_logement": 76.5,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3361325O",
+          "date_fin_validite_dpe": "2034-09-25",
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n2EME ETAGE - PORTE 9",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-09-26",
+          "surface_habitable_logement": 76.5,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3442996T",
+          "date_fin_validite_dpe": "2034-10-01",
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n5EME ETAGE - PORTE 29",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-10-02",
+          "surface_habitable_logement": 71.8,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3598346T",
+          "date_fin_validite_dpe": "2034-10-13",
+          "adresse_brut": "ENTREVUE\nBâtiment 3 - Escalier 1\n20 ROUTE de Carquefou\n2EME - PORTE 57",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-10-14",
+          "surface_habitable_logement": 65.6,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3599340Z",
+          "date_fin_validite_dpe": "2034-10-13",
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n3EME ETAGE - PORTE 18",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-10-14",
+          "surface_habitable_logement": 65.4,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3598643E",
+          "date_fin_validite_dpe": "2034-10-13",
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n2EME ETAGE - PORTE 13",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-10-14",
+          "surface_habitable_logement": 64.3,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3380616N",
+          "date_fin_validite_dpe": "2034-09-26",
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n5EME ETAGE - PORTE 26",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-09-27",
+          "surface_habitable_logement": 77.1,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3599160B",
+          "date_fin_validite_dpe": "2034-10-13",
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n5EME ETAGE - PORTE 30",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-10-14",
+          "surface_habitable_logement": 64.3,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3280890X",
+          "date_fin_validite_dpe": "2034-09-19",
+          "adresse_brut": "ENTREVUE\nBâtiment 3 - Escalier 1\n20 ROUTE de Carquefou\n1ER ETAGE - PORTE 56",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-09-20",
+          "surface_habitable_logement": 65.9,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3440454Z",
+          "date_fin_validite_dpe": "2034-10-01",
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n1ER ETAGE - PORTE 2",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-10-02",
+          "surface_habitable_logement": 77.1,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3442428X",
+          "date_fin_validite_dpe": "2034-10-01",
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n3EME ETAGE - PORTE 15",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-10-02",
+          "surface_habitable_logement": 76.5,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3600111Q",
+          "date_fin_validite_dpe": "2034-10-13",
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n3EME ETAGE - PORTE 43",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-10-14",
+          "surface_habitable_logement": 44.9,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3444746B",
+          "date_fin_validite_dpe": "2034-10-01",
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n5EME ETAGE - PORTE 51",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-10-02",
+          "surface_habitable_logement": 50.3,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3445229Q",
+          "date_fin_validite_dpe": "2034-10-01",
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n5EME ETAGE - PORTE 54",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-10-02",
+          "surface_habitable_logement": 43.4,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3441718P",
+          "date_fin_validite_dpe": "2034-10-01",
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n2EME ETAGE - PORTE 39",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-10-02",
+          "surface_habitable_logement": 71.8,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3474450N",
+          "date_fin_validite_dpe": "2034-10-03",
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n1ER ETAGE - PORTE 3",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-10-04",
+          "surface_habitable_logement": 76.5,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3359690R",
+          "date_fin_validite_dpe": "2034-09-25",
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n2EME ETAGE - PORTE 11",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-09-26",
+          "surface_habitable_logement": 51.6,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3440945W",
+          "date_fin_validite_dpe": "2034-10-01",
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n3EME ETAGE - PORTE 17",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-10-02",
+          "surface_habitable_logement": 51.7,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3597884Z",
+          "date_fin_validite_dpe": "2034-10-13",
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n3EME ETAGE - PORTE 16",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-10-14",
+          "surface_habitable_logement": 52.6,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3595423I",
+          "date_fin_validite_dpe": "2034-10-13",
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n4EME ETAGE - PORTE 49",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-10-14",
+          "surface_habitable_logement": 43.4,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3478587Q",
+          "date_fin_validite_dpe": "2034-10-03",
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n5EME ETAGE - PORTE 53",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-10-04",
+          "surface_habitable_logement": 44.9,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3380026V",
+          "date_fin_validite_dpe": "2034-09-26",
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n4EME ETAGE - PORTE 48",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-09-27",
+          "surface_habitable_logement": 44.9,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3534605E",
+          "date_fin_validite_dpe": "2034-10-08",
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n4EME ETAGE - PORTE 24",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-10-09",
+          "surface_habitable_logement": 65.4,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3361728B",
+          "date_fin_validite_dpe": "2034-09-25",
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n3EME ETAGE - PORTE 42",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-09-26",
+          "surface_habitable_logement": 71.8,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3359715Q",
+          "date_fin_validite_dpe": "2034-09-25",
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n1ER ETAGE - PORTE 7",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-09-26",
+          "surface_habitable_logement": 64.3,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3381257E",
+          "date_fin_validite_dpe": "2034-09-26",
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\nRDC - PORTE 32",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-09-27",
+          "surface_habitable_logement": 66.9,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3440702N",
+          "date_fin_validite_dpe": "2034-10-01",
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n4EME ETAGE - PORTE 20",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-10-02",
+          "surface_habitable_logement": 77.1,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3533246X",
+          "date_fin_validite_dpe": "2034-10-08",
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n1ER ETAGE - PORTE 34",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-10-09",
+          "surface_habitable_logement": 71.8,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3376918H",
+          "date_fin_validite_dpe": "2034-09-26",
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n2EME ETAGE - PORTE 40",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-09-27",
+          "surface_habitable_logement": 51.5,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3379711S",
+          "date_fin_validite_dpe": "2034-09-26",
+          "adresse_brut": "ENTREVUE\nBâtiment 3 - Escalier 1\n20 ROUTE de Carquefou\nRDC - PORTE 55",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-09-27",
+          "surface_habitable_logement": 65.6,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3533609W",
+          "date_fin_validite_dpe": "2034-10-08",
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n5EME ETAGE - PORTE 27",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-10-09",
+          "surface_habitable_logement": 76.5,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3377330D",
+          "date_fin_validite_dpe": "2034-09-26",
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n3EME ETAGE - PORTE 44",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-09-27",
+          "surface_habitable_logement": 43.4,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3381307C",
+          "date_fin_validite_dpe": "2034-09-26",
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\nRDC - PORTE 31",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-09-27",
+          "surface_habitable_logement": 66.1,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n4EME ETAGE - PORTE 23",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2544E2575926Y",
+          "date_fin_validite_dpe": "2035-08-06",
+          "date_etablissement_dpe": "2025-08-07",
+          "surface_habitable_logement": 71.4,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3478921M",
+          "date_fin_validite_dpe": "2034-10-03",
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n1ER ETAGE - PORTE 35",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-10-04",
+          "surface_habitable_logement": 84.5,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3359662P",
+          "date_fin_validite_dpe": "2034-09-25",
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n3EME ETAGE - PORTE 14",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-09-26",
+          "surface_habitable_logement": 77.1,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3598929E",
+          "date_fin_validite_dpe": "2034-10-13",
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n1ER ETAGE - PORTE 4",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-10-14",
+          "surface_habitable_logement": 52.6,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3377718B",
+          "date_fin_validite_dpe": "2034-09-26",
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n1ER ETAGE - PORTE 5",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-09-27",
+          "surface_habitable_logement": 51.6,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3475620N",
+          "date_fin_validite_dpe": "2034-10-03",
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n4EME ETAGE - PORTE 46",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-10-04",
+          "surface_habitable_logement": 50.3,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3359606L",
+          "date_fin_validite_dpe": "2034-09-25",
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\nRDC - PORTE 32",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-09-26",
+          "surface_habitable_logement": 66.9,
+          "etiquette_dpe": "D",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3459623G",
+          "date_fin_validite_dpe": "2034-10-02",
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n4EME ETAGE - PORTE 25",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-10-03",
+          "surface_habitable_logement": 64.3,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3359748X",
+          "date_fin_validite_dpe": "2034-09-25",
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\nRDC - PORTE 1",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-09-26",
+          "surface_habitable_logement": 64.3,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3478077A",
+          "date_fin_validite_dpe": "2034-10-03",
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n4EME ETAGE - PORTE 50",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-10-04",
+          "surface_habitable_logement": 71.1,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3476230Z",
+          "date_fin_validite_dpe": "2034-10-03",
+          "adresse_brut": "ENTREVUE\nBâtiment 2 - Escalier 1\n20 ROUTE de Carquefou\n1ER ETAGE - PORTE 35",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-10-04",
+          "surface_habitable_logement": 80.4,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3382183U",
+          "date_fin_validite_dpe": "2034-09-26",
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n2EME ETAGE - PORTE 8",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-09-27",
+          "surface_habitable_logement": 77.1,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3362434F",
+          "date_fin_validite_dpe": "2034-09-25",
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n4EME ETAGE - PORTE 24",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-09-26",
+          "surface_habitable_logement": 71.8,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3596854J",
+          "date_fin_validite_dpe": "2034-10-13",
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n5EME ETAGE - PORTE 28",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-10-14",
+          "surface_habitable_logement": 52.6,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_dpe": "2444E3599020R",
+          "date_fin_validite_dpe": "2034-10-13",
+          "adresse_brut": "ENTREVUE\nBâtiment 1 - Escalier 1\n20 ROUTE de Carquefou\n1ER ETAGE - PORTE 6",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "id_rnb": "P2JM46K1F5BY",
+          "numero_etage_appartement": 0,
+          "date_etablissement_dpe": "2024-10-14",
+          "surface_habitable_logement": 65.4,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "20 Route de Carquefou",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2544E3173550M",
+          "date_fin_validite_dpe": "2035-10-06",
+          "date_etablissement_dpe": "2025-10-07",
+          "surface_habitable_logement": 40,
+          "etiquette_dpe": "C",
+          "_score": null
+        },
+        {
+          "adresse_brut": "20 Route de Carquefou",
+          "adresse_ban": "20 Route de Carquefou 44300 Nantes",
+          "identifiant_ban": "44109_1452_00020",
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "appartement",
+          "numero_etage_appartement": 0,
+          "numero_dpe": "2644E0542922N",
+          "date_fin_validite_dpe": "2036-02-24",
+          "date_etablissement_dpe": "2026-02-25",
+          "surface_habitable_logement": 66.1,
+          "etiquette_dpe": "C",
+          "_score": null
+        }
+      ]
+    },
+    "url": "https://data.ademe.fr/data-fair/api/v1/datasets/dpe03existant/lines?qs=identifiant_ban%3A%2244109_1452_00020%22&size=200&select=numero_dpe%2Cidentifiant_ban%2Cadresse_ban%2Cadresse_brut%2Ccode_insee_ban%2Ctype_batiment%2Csurface_habitable_logement%2Cetiquette_dpe%2Cdate_etablissement_dpe%2Cdate_fin_validite_dpe%2Cnumero_dpe_remplace%2Cid_rnb%2Cscore_ban%2Cnumero_etage_appartement"
+  },
+  "items_read": 114,
+  "unique_refs": 114,
+  "last_has_more": false
+}

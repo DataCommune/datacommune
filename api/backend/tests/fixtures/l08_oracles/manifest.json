@@ -1,0 +1,2625 @@
+{
+  "version": 1,
+  "sources": {
+    "guide p1": {
+      "path": "api/backend/tests/fixtures/l08_oracles/loyers-guide-2025.pdf",
+      "sha256": "620db206f562be7696e7abe2074dc4c8cd53392ff29dda16aae498df2e28a224",
+      "version": "Carte des loyers 2025, guide figé COR06",
+      "pages": [
+        1,
+        3
+      ],
+      "method": "Documentary reading recorded in COR06; byte integrity checked"
+    },
+    "FILO2021_DEC_COM.csv": {
+      "path": "api/backend/tests/fixtures/cor05_revenus/FILO2021_DEC_COM.csv",
+      "sha256_lf": "01dee53d1ae5ae5a548703c1991b8347bd9e6f7f189620964794e20bd4b6f399",
+      "encoding": "utf-8-sig",
+      "upstream_archive_sha256": "7d22f68a7aca557ffc3f2405dbbd54dcb68d7293a4ee7edc3396e9a6708ac6b9",
+      "upstream_member_sha256": "902044e0ec7d6d7176248e1118db4adcb95da02dced450bf29031da6b2536e30",
+      "url": "https://www.insee.fr/fr/statistiques/fichier/7756855/indic-struct-distrib-revenu-2021-COMMUNES_csv.zip"
+    },
+    "FILO2021_DISP_COM.csv": {
+      "path": "api/backend/tests/fixtures/cor05_revenus/FILO2021_DISP_COM.csv",
+      "sha256_lf": "0667061b5bdb1f78d70751f37ca55a5c39e13426176cf5e73a094b68bc53f3c1",
+      "encoding": "utf-8-sig",
+      "upstream_archive_sha256": "7d22f68a7aca557ffc3f2405dbbd54dcb68d7293a4ee7edc3396e9a6708ac6b9",
+      "upstream_member_sha256": "2d1c769b2cce3503141d260ce1ddc67ffb475db59c1f0dd4d9365f62477c7f27",
+      "url": "https://www.insee.fr/fr/statistiques/fichier/7756855/indic-struct-distrib-revenu-2021-COMMUNES_csv.zip"
+    },
+    "FILO2021_DISP_PAUVRES_COM.csv": {
+      "path": "api/backend/tests/fixtures/cor05_revenus/FILO2021_DISP_PAUVRES_COM.csv",
+      "sha256_lf": "89b6199de022df780def86344058ec2d16c7ab470f28bf1a00a7371ddbc2af59",
+      "encoding": "utf-8-sig",
+      "upstream_archive_sha256": "7d22f68a7aca557ffc3f2405dbbd54dcb68d7293a4ee7edc3396e9a6708ac6b9",
+      "upstream_member_sha256": "3477b617d24f48ce120a6439e9bd5f9d4db3c7bbb8de6f221c72d1e5c0f38857",
+      "url": "https://www.insee.fr/fr/statistiques/fichier/7756855/indic-struct-distrib-revenu-2021-COMMUNES_csv.zip"
+    },
+    "FILO2021_DEC_METROPOLE.csv": {
+      "path": "api/backend/tests/fixtures/cor05_revenus/FILO2021_DEC_METROPOLE.csv",
+      "sha256_lf": "3dd64ad1e710e7ef343e3713c38e4aa9f2d5d3b727b2bfd81be842ee8b44cf70",
+      "encoding": "utf-8-sig",
+      "upstream_archive_sha256": "874e283c079cb10b7c851687feacfd7a31c58056a21b1de5d07e6669b43b7c9e",
+      "upstream_member_sha256": "b228c48413ba9f82905561b8cd85a2ea8ff48fd1bb793eeaf37b07960d714efa",
+      "url": "https://www.insee.fr/fr/statistiques/fichier/7756855/indic-struct-distrib-revenu-2021-SUPRA_csv.zip"
+    },
+    "FILO2021_DISP_METROPOLE.csv": {
+      "path": "api/backend/tests/fixtures/cor05_revenus/FILO2021_DISP_METROPOLE.csv",
+      "sha256_lf": "2f552e9b13f35533b19afb85651b34d9348b053c159b1a681811b9525aa52a80",
+      "encoding": "utf-8-sig",
+      "upstream_archive_sha256": "874e283c079cb10b7c851687feacfd7a31c58056a21b1de5d07e6669b43b7c9e",
+      "upstream_member_sha256": "1d7d5db808e1ea0d7e58288ff5e7006a32f99213138540f335edaa6596e2cca6",
+      "url": "https://www.insee.fr/fr/statistiques/fichier/7756855/indic-struct-distrib-revenu-2021-SUPRA_csv.zip"
+    },
+    "loyers:appartement": {
+      "path": "docs/audit-stabilisation-2026-09-08/lot-02/cor06-sources/appartement.prefix.csv",
+      "sha256_lf": "ea19bb9f0172e1469b706a5385f36a36d4264d692434f90362faac6b48c7fb8b",
+      "encoding": "latin-1",
+      "upstream_prefix_sha256": "865e0078de32cdaad031d8acb20cab3dd5d4f4b1c365fd87a8c63e1eb1411381",
+      "normalization": "CRLF -> LF only; original download hash retained",
+      "url": "https://static.data.gouv.fr/resources/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025/20251211-145010/pred-app-mef-dhup.csv"
+    },
+    "loyers:appartement:extracted": {
+      "path": "api/backend/tests/fixtures/loyers/appartement.csv",
+      "sha256_lf": "e4714bdf66fd761af259741fdbd53dd3126f9a74b86dfada39d6d59af4802506",
+      "encoding": "latin-1"
+    },
+    "loyers:maison": {
+      "path": "docs/audit-stabilisation-2026-09-08/lot-02/cor06-sources/maison.prefix.csv",
+      "sha256_lf": "45499586f68b51a05a51ad772f65312d8394280ef5a1f33e31ad9c77177963c4",
+      "encoding": "latin-1",
+      "upstream_prefix_sha256": "8586a168ed7b42de2b0e8384d33d648c99a93831d26ea0a8fc8c9ac1cb71ce1c",
+      "normalization": "CRLF -> LF only; original download hash retained",
+      "url": "https://static.data.gouv.fr/resources/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025/20251211-145039/pred-mai-mef-dhup.csv"
+    },
+    "loyers:maison:extracted": {
+      "path": "api/backend/tests/fixtures/loyers/maison.csv",
+      "sha256_lf": "473649d79e57736a9eab34cdfc62d0d0f9e38aa5a1707a7bb80bc73efe63e7f3",
+      "encoding": "latin-1"
+    },
+    "loyers:1-2_pieces": {
+      "path": "docs/audit-stabilisation-2026-09-08/lot-02/cor06-sources/1-2_pieces.prefix.csv",
+      "sha256_lf": "16a6547409c79aad27ea8aed983837e8bb1367a2af2a3efbf3805fbca93abcba",
+      "encoding": "latin-1",
+      "upstream_prefix_sha256": "cf445d2bf36003a54444bf2bfaec20c6acfcc0858aa133462775dd9db106b2e0",
+      "normalization": "CRLF -> LF only; original download hash retained",
+      "url": "https://static.data.gouv.fr/resources/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025/20251211-144934/pred-app12-mef-dhup.csv"
+    },
+    "loyers:1-2_pieces:extracted": {
+      "path": "api/backend/tests/fixtures/loyers/1-2_pieces.csv",
+      "sha256_lf": "5b5c14119466805c848423b5488876f4c5810e15386a023a28655d254003a2b5",
+      "encoding": "latin-1"
+    },
+    "loyers:3+_pieces": {
+      "path": "docs/audit-stabilisation-2026-09-08/lot-02/cor06-sources/3+_pieces.prefix.csv",
+      "sha256_lf": "d409d937f22c27f1cf719906ddf67be44ca29f7341e8a9ecffee8934a96bbb15",
+      "encoding": "latin-1",
+      "upstream_prefix_sha256": "3e71343ff4de4afde2eb11108929d984d5b7bab41b622ff0fdcd120354942c35",
+      "normalization": "CRLF -> LF only; original download hash retained",
+      "url": "https://static.data.gouv.fr/resources/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025/20251211-144951/pred-app3-mef-dhup.csv"
+    },
+    "loyers:3+_pieces:extracted": {
+      "path": "api/backend/tests/fixtures/loyers/3+_pieces.csv",
+      "sha256_lf": "ab61b3e6c48ae7efaed8d162ea9d6b0ad87aac9a417cdefa81d6f8b5a29c84fc",
+      "encoding": "latin-1"
+    },
+    "lovac": {
+      "path": "api/backend/tests/fixtures/cor08_lovac/official-communes26.csv",
+      "sha256_lf": "b3df9d7b7364ae02b3a5b5eaaff59db5bd00741d443ce63d3a7ef2fd23a8a7f6",
+      "encoding": "latin-1",
+      "upstream_sha256": "b856568d4b69784d32f9fafaf7e1376047e45eed245fb114dd737d2d43826245",
+      "url": "https://static.data.gouv.fr/resources/logements-vacants-du-parc-prive-par-commune-departement-region-france/20260625-163627/lovac-opendata-communes26.csv"
+    }
+  },
+  "cases": [
+    {
+      "id": "revenus:01019",
+      "dataset": "revenus",
+      "key": {
+        "code_insee": "01019"
+      },
+      "sources": [
+        "FILO2021_DEC_COM.csv",
+        "FILO2021_DISP_PAUVRES_COM.csv"
+      ],
+      "fields": {
+        "annee": {
+          "value": 2021,
+          "columns": [
+            "DEC2021 / DISP_PAUVRES2021"
+          ],
+          "unit": "year",
+          "method": "exact source value"
+        },
+        "nb_menages_fiscaux": {
+          "value": null,
+          "columns": [
+            "FILO2021_DEC_COM.csv:NBMEN21"
+          ],
+          "unit": "households",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_median": {
+          "value": null,
+          "columns": [
+            "FILO2021_DEC_COM.csv:Q221"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_q1": {
+          "value": null,
+          "columns": [
+            "FILO2021_DEC_COM.csv:Q121"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_q3": {
+          "value": null,
+          "columns": [
+            "FILO2021_DEC_COM.csv:Q321"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_d1": {
+          "value": null,
+          "columns": [
+            "FILO2021_DEC_COM.csv:D121"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_d9": {
+          "value": null,
+          "columns": [
+            "FILO2021_DEC_COM.csv:D921"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "indice_gini": {
+          "value": null,
+          "columns": [
+            "FILO2021_DEC_COM.csv:GI21"
+          ],
+          "unit": "ratio 0..1",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "part_imposee": {
+          "value": null,
+          "columns": [
+            "FILO2021_DEC_COM.csv:PMIMP21"
+          ],
+          "unit": "percentage points",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "taux_pauvrete": {
+          "value": null,
+          "columns": [
+            "FILO2021_DISP_PAUVRES_COM.csv:TP6021"
+          ],
+          "unit": "percentage points, disposable income",
+          "method": "join CODGEO; threshold 60% of metropolitan median"
+        }
+      },
+      "commune_fields": {
+        "revenu_median": "revenu_median",
+        "indice_gini": "indice_gini",
+        "part_imposee": "part_imposee",
+        "taux_pauvrete": "taux_pauvrete",
+        "annee_revenus": "annee"
+      }
+    },
+    {
+      "id": "revenus:13055",
+      "dataset": "revenus",
+      "key": {
+        "code_insee": "13055"
+      },
+      "sources": [
+        "FILO2021_DEC_COM.csv",
+        "FILO2021_DISP_PAUVRES_COM.csv"
+      ],
+      "fields": {
+        "annee": {
+          "value": 2021,
+          "columns": [
+            "DEC2021 / DISP_PAUVRES2021"
+          ],
+          "unit": "year",
+          "method": "exact source value"
+        },
+        "nb_menages_fiscaux": {
+          "value": 363394,
+          "columns": [
+            "FILO2021_DEC_COM.csv:NBMEN21"
+          ],
+          "unit": "households",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_median": {
+          "value": 19710,
+          "columns": [
+            "FILO2021_DEC_COM.csv:Q221"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_q1": {
+          "value": 9610,
+          "columns": [
+            "FILO2021_DEC_COM.csv:Q121"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_q3": {
+          "value": 30670,
+          "columns": [
+            "FILO2021_DEC_COM.csv:Q321"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_d1": {
+          "value": 2350,
+          "columns": [
+            "FILO2021_DEC_COM.csv:D121"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_d9": {
+          "value": 44900,
+          "columns": [
+            "FILO2021_DEC_COM.csv:D921"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "indice_gini": {
+          "value": 0.457,
+          "columns": [
+            "FILO2021_DEC_COM.csv:GI21"
+          ],
+          "unit": "ratio 0..1",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "part_imposee": {
+          "value": 48,
+          "columns": [
+            "FILO2021_DEC_COM.csv:PMIMP21"
+          ],
+          "unit": "percentage points",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "taux_pauvrete": {
+          "value": 26,
+          "columns": [
+            "FILO2021_DISP_PAUVRES_COM.csv:TP6021"
+          ],
+          "unit": "percentage points, disposable income",
+          "method": "join CODGEO; threshold 60% of metropolitan median"
+        }
+      },
+      "commune_fields": {
+        "revenu_median": "revenu_median",
+        "indice_gini": "indice_gini",
+        "part_imposee": "part_imposee",
+        "taux_pauvrete": "taux_pauvrete",
+        "annee_revenus": "annee"
+      }
+    },
+    {
+      "id": "revenus:13201",
+      "dataset": "revenus",
+      "key": {
+        "code_insee": "13201"
+      },
+      "sources": [
+        "FILO2021_DEC_COM.csv",
+        "FILO2021_DISP_PAUVRES_COM.csv"
+      ],
+      "fields": {
+        "annee": {
+          "value": 2021,
+          "columns": [
+            "DEC2021 / DISP_PAUVRES2021"
+          ],
+          "unit": "year",
+          "method": "exact source value"
+        },
+        "nb_menages_fiscaux": {
+          "value": 15618,
+          "columns": [
+            "FILO2021_DEC_COM.csv:NBMEN21"
+          ],
+          "unit": "households",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_median": {
+          "value": 14250,
+          "columns": [
+            "FILO2021_DEC_COM.csv:Q221"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_q1": {
+          "value": 5080,
+          "columns": [
+            "FILO2021_DEC_COM.csv:Q121"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_q3": {
+          "value": 26350,
+          "columns": [
+            "FILO2021_DEC_COM.csv:Q321"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_d1": {
+          "value": 150,
+          "columns": [
+            "FILO2021_DEC_COM.csv:D121"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_d9": {
+          "value": 39950,
+          "columns": [
+            "FILO2021_DEC_COM.csv:D921"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "indice_gini": {
+          "value": 0.503,
+          "columns": [
+            "FILO2021_DEC_COM.csv:GI21"
+          ],
+          "unit": "ratio 0..1",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "part_imposee": {
+          "value": 39,
+          "columns": [
+            "FILO2021_DEC_COM.csv:PMIMP21"
+          ],
+          "unit": "percentage points",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "taux_pauvrete": {
+          "value": 38,
+          "columns": [
+            "FILO2021_DISP_PAUVRES_COM.csv:TP6021"
+          ],
+          "unit": "percentage points, disposable income",
+          "method": "join CODGEO; threshold 60% of metropolitan median"
+        }
+      },
+      "commune_fields": {
+        "revenu_median": "revenu_median",
+        "indice_gini": "indice_gini",
+        "part_imposee": "part_imposee",
+        "taux_pauvrete": "taux_pauvrete",
+        "annee_revenus": "annee"
+      }
+    },
+    {
+      "id": "revenus:44109",
+      "dataset": "revenus",
+      "key": {
+        "code_insee": "44109"
+      },
+      "sources": [
+        "FILO2021_DEC_COM.csv",
+        "FILO2021_DISP_PAUVRES_COM.csv"
+      ],
+      "fields": {
+        "annee": {
+          "value": 2021,
+          "columns": [
+            "DEC2021 / DISP_PAUVRES2021"
+          ],
+          "unit": "year",
+          "method": "exact source value"
+        },
+        "nb_menages_fiscaux": {
+          "value": 141375,
+          "columns": [
+            "FILO2021_DEC_COM.csv:NBMEN21"
+          ],
+          "unit": "households",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_median": {
+          "value": 24380,
+          "columns": [
+            "FILO2021_DEC_COM.csv:Q221"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_q1": {
+          "value": 14440,
+          "columns": [
+            "FILO2021_DEC_COM.csv:Q121"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_q3": {
+          "value": 36290,
+          "columns": [
+            "FILO2021_DEC_COM.csv:Q321"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_d1": {
+          "value": 6050,
+          "columns": [
+            "FILO2021_DEC_COM.csv:D121"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_d9": {
+          "value": 52030,
+          "columns": [
+            "FILO2021_DEC_COM.csv:D921"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "indice_gini": {
+          "value": 0.412,
+          "columns": [
+            "FILO2021_DEC_COM.csv:GI21"
+          ],
+          "unit": "ratio 0..1",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "part_imposee": {
+          "value": 57,
+          "columns": [
+            "FILO2021_DEC_COM.csv:PMIMP21"
+          ],
+          "unit": "percentage points",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "taux_pauvrete": {
+          "value": 17,
+          "columns": [
+            "FILO2021_DISP_PAUVRES_COM.csv:TP6021"
+          ],
+          "unit": "percentage points, disposable income",
+          "method": "join CODGEO; threshold 60% of metropolitan median"
+        }
+      },
+      "commune_fields": {
+        "revenu_median": "revenu_median",
+        "indice_gini": "indice_gini",
+        "part_imposee": "part_imposee",
+        "taux_pauvrete": "taux_pauvrete",
+        "annee_revenus": "annee"
+      }
+    },
+    {
+      "id": "revenus:69123",
+      "dataset": "revenus",
+      "key": {
+        "code_insee": "69123"
+      },
+      "sources": [
+        "FILO2021_DEC_COM.csv",
+        "FILO2021_DISP_PAUVRES_COM.csv"
+      ],
+      "fields": {
+        "annee": {
+          "value": 2021,
+          "columns": [
+            "DEC2021 / DISP_PAUVRES2021"
+          ],
+          "unit": "year",
+          "method": "exact source value"
+        },
+        "nb_menages_fiscaux": {
+          "value": 230486,
+          "columns": [
+            "FILO2021_DEC_COM.csv:NBMEN21"
+          ],
+          "unit": "households",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_median": {
+          "value": 25860,
+          "columns": [
+            "FILO2021_DEC_COM.csv:Q221"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_q1": {
+          "value": 15260,
+          "columns": [
+            "FILO2021_DEC_COM.csv:Q121"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_q3": {
+          "value": 39230,
+          "columns": [
+            "FILO2021_DEC_COM.csv:Q321"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_d1": {
+          "value": 6990,
+          "columns": [
+            "FILO2021_DEC_COM.csv:D121"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_d9": {
+          "value": 56770,
+          "columns": [
+            "FILO2021_DEC_COM.csv:D921"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "indice_gini": {
+          "value": 0.419,
+          "columns": [
+            "FILO2021_DEC_COM.csv:GI21"
+          ],
+          "unit": "ratio 0..1",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "part_imposee": {
+          "value": 61,
+          "columns": [
+            "FILO2021_DEC_COM.csv:PMIMP21"
+          ],
+          "unit": "percentage points",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "taux_pauvrete": {
+          "value": 16,
+          "columns": [
+            "FILO2021_DISP_PAUVRES_COM.csv:TP6021"
+          ],
+          "unit": "percentage points, disposable income",
+          "method": "join CODGEO; threshold 60% of metropolitan median"
+        }
+      },
+      "commune_fields": {
+        "revenu_median": "revenu_median",
+        "indice_gini": "indice_gini",
+        "part_imposee": "part_imposee",
+        "taux_pauvrete": "taux_pauvrete",
+        "annee_revenus": "annee"
+      }
+    },
+    {
+      "id": "revenus:69381",
+      "dataset": "revenus",
+      "key": {
+        "code_insee": "69381"
+      },
+      "sources": [
+        "FILO2021_DEC_COM.csv",
+        "FILO2021_DISP_PAUVRES_COM.csv"
+      ],
+      "fields": {
+        "annee": {
+          "value": 2021,
+          "columns": [
+            "DEC2021 / DISP_PAUVRES2021"
+          ],
+          "unit": "year",
+          "method": "exact source value"
+        },
+        "nb_menages_fiscaux": {
+          "value": 13371,
+          "columns": [
+            "FILO2021_DEC_COM.csv:NBMEN21"
+          ],
+          "unit": "households",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_median": {
+          "value": 26800,
+          "columns": [
+            "FILO2021_DEC_COM.csv:Q221"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_q1": {
+          "value": 16020,
+          "columns": [
+            "FILO2021_DEC_COM.csv:Q121"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_q3": {
+          "value": 40920,
+          "columns": [
+            "FILO2021_DEC_COM.csv:Q321"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_d1": {
+          "value": 7610,
+          "columns": [
+            "FILO2021_DEC_COM.csv:D121"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_d9": {
+          "value": 59720,
+          "columns": [
+            "FILO2021_DEC_COM.csv:D921"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "indice_gini": {
+          "value": 0.408,
+          "columns": [
+            "FILO2021_DEC_COM.csv:GI21"
+          ],
+          "unit": "ratio 0..1",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "part_imposee": {
+          "value": 60,
+          "columns": [
+            "FILO2021_DEC_COM.csv:PMIMP21"
+          ],
+          "unit": "percentage points",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "taux_pauvrete": {
+          "value": 15,
+          "columns": [
+            "FILO2021_DISP_PAUVRES_COM.csv:TP6021"
+          ],
+          "unit": "percentage points, disposable income",
+          "method": "join CODGEO; threshold 60% of metropolitan median"
+        }
+      },
+      "commune_fields": {
+        "revenu_median": "revenu_median",
+        "indice_gini": "indice_gini",
+        "part_imposee": "part_imposee",
+        "taux_pauvrete": "taux_pauvrete",
+        "annee_revenus": "annee"
+      }
+    },
+    {
+      "id": "revenus:75056",
+      "dataset": "revenus",
+      "key": {
+        "code_insee": "75056"
+      },
+      "sources": [
+        "FILO2021_DEC_COM.csv",
+        "FILO2021_DISP_PAUVRES_COM.csv"
+      ],
+      "fields": {
+        "annee": {
+          "value": 2021,
+          "columns": [
+            "DEC2021 / DISP_PAUVRES2021"
+          ],
+          "unit": "year",
+          "method": "exact source value"
+        },
+        "nb_menages_fiscaux": {
+          "value": 1010678,
+          "columns": [
+            "FILO2021_DEC_COM.csv:NBMEN21"
+          ],
+          "unit": "households",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_median": {
+          "value": 31670,
+          "columns": [
+            "FILO2021_DEC_COM.csv:Q221"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_q1": {
+          "value": 16630,
+          "columns": [
+            "FILO2021_DEC_COM.csv:Q121"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_q3": {
+          "value": 53500,
+          "columns": [
+            "FILO2021_DEC_COM.csv:Q321"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_d1": {
+          "value": 7370,
+          "columns": [
+            "FILO2021_DEC_COM.csv:D121"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_d9": {
+          "value": 87450,
+          "columns": [
+            "FILO2021_DEC_COM.csv:D921"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "indice_gini": {
+          "value": 0.526,
+          "columns": [
+            "FILO2021_DEC_COM.csv:GI21"
+          ],
+          "unit": "ratio 0..1",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "part_imposee": {
+          "value": 69,
+          "columns": [
+            "FILO2021_DEC_COM.csv:PMIMP21"
+          ],
+          "unit": "percentage points",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "taux_pauvrete": {
+          "value": 16,
+          "columns": [
+            "FILO2021_DISP_PAUVRES_COM.csv:TP6021"
+          ],
+          "unit": "percentage points, disposable income",
+          "method": "join CODGEO; threshold 60% of metropolitan median"
+        }
+      },
+      "commune_fields": {
+        "revenu_median": "revenu_median",
+        "indice_gini": "indice_gini",
+        "part_imposee": "part_imposee",
+        "taux_pauvrete": "taux_pauvrete",
+        "annee_revenus": "annee"
+      }
+    },
+    {
+      "id": "revenus:75101",
+      "dataset": "revenus",
+      "key": {
+        "code_insee": "75101"
+      },
+      "sources": [
+        "FILO2021_DEC_COM.csv",
+        "FILO2021_DISP_PAUVRES_COM.csv"
+      ],
+      "fields": {
+        "annee": {
+          "value": 2021,
+          "columns": [
+            "DEC2021 / DISP_PAUVRES2021"
+          ],
+          "unit": "year",
+          "method": "exact source value"
+        },
+        "nb_menages_fiscaux": {
+          "value": 8462,
+          "columns": [
+            "FILO2021_DEC_COM.csv:NBMEN21"
+          ],
+          "unit": "households",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_median": {
+          "value": 38950,
+          "columns": [
+            "FILO2021_DEC_COM.csv:Q221"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_q1": {
+          "value": 20700,
+          "columns": [
+            "FILO2021_DEC_COM.csv:Q121"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_q3": {
+          "value": 67470,
+          "columns": [
+            "FILO2021_DEC_COM.csv:Q321"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_d1": {
+          "value": 9510,
+          "columns": [
+            "FILO2021_DEC_COM.csv:D121"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_d9": {
+          "value": 121760,
+          "columns": [
+            "FILO2021_DEC_COM.csv:D921"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "indice_gini": {
+          "value": 0.586,
+          "columns": [
+            "FILO2021_DEC_COM.csv:GI21"
+          ],
+          "unit": "ratio 0..1",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "part_imposee": {
+          "value": 71,
+          "columns": [
+            "FILO2021_DEC_COM.csv:PMIMP21"
+          ],
+          "unit": "percentage points",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "taux_pauvrete": {
+          "value": 12,
+          "columns": [
+            "FILO2021_DISP_PAUVRES_COM.csv:TP6021"
+          ],
+          "unit": "percentage points, disposable income",
+          "method": "join CODGEO; threshold 60% of metropolitan median"
+        }
+      },
+      "commune_fields": {
+        "revenu_median": "revenu_median",
+        "indice_gini": "indice_gini",
+        "part_imposee": "part_imposee",
+        "taux_pauvrete": "taux_pauvrete",
+        "annee_revenus": "annee"
+      }
+    },
+    {
+      "id": "revenus:85191",
+      "dataset": "revenus",
+      "key": {
+        "code_insee": "85191"
+      },
+      "sources": [
+        "FILO2021_DEC_COM.csv",
+        "FILO2021_DISP_PAUVRES_COM.csv"
+      ],
+      "fields": {
+        "annee": {
+          "value": 2021,
+          "columns": [
+            "DEC2021 / DISP_PAUVRES2021"
+          ],
+          "unit": "year",
+          "method": "exact source value"
+        },
+        "nb_menages_fiscaux": {
+          "value": 25644,
+          "columns": [
+            "FILO2021_DEC_COM.csv:NBMEN21"
+          ],
+          "unit": "households",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_median": {
+          "value": 21940,
+          "columns": [
+            "FILO2021_DEC_COM.csv:Q221"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_q1": {
+          "value": 14670,
+          "columns": [
+            "FILO2021_DEC_COM.csv:Q121"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_q3": {
+          "value": 30030,
+          "columns": [
+            "FILO2021_DEC_COM.csv:Q321"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_d1": {
+          "value": 7470,
+          "columns": [
+            "FILO2021_DEC_COM.csv:D121"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "revenu_d9": {
+          "value": 40300,
+          "columns": [
+            "FILO2021_DEC_COM.csv:D921"
+          ],
+          "unit": "EUR/UC/year declared",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "indice_gini": {
+          "value": 0.361,
+          "columns": [
+            "FILO2021_DEC_COM.csv:GI21"
+          ],
+          "unit": "ratio 0..1",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "part_imposee": {
+          "value": 49,
+          "columns": [
+            "FILO2021_DEC_COM.csv:PMIMP21"
+          ],
+          "unit": "percentage points",
+          "method": "decimal source; secret s -> JSON null"
+        },
+        "taux_pauvrete": {
+          "value": 15,
+          "columns": [
+            "FILO2021_DISP_PAUVRES_COM.csv:TP6021"
+          ],
+          "unit": "percentage points, disposable income",
+          "method": "join CODGEO; threshold 60% of metropolitan median"
+        }
+      },
+      "commune_fields": {
+        "revenu_median": "revenu_median",
+        "indice_gini": "indice_gini",
+        "part_imposee": "part_imposee",
+        "taux_pauvrete": "taux_pauvrete",
+        "annee_revenus": "annee"
+      }
+    },
+    {
+      "id": "loyers:05066:appartement",
+      "dataset": "loyers",
+      "key": {
+        "code_insee": "05066",
+        "type_habitat": "appartement"
+      },
+      "sources": [
+        "loyers:appartement",
+        "loyers:appartement:extracted",
+        "guide p1"
+      ],
+      "fields": {
+        "annee": {
+          "value": 2025,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "year",
+          "method": "exact source value"
+        },
+        "trimestre_reference": {
+          "value": 3,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "quarter",
+          "method": "exact source value"
+        },
+        "charges_comprises": {
+          "value": true,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "boolean",
+          "method": "exact source value"
+        },
+        "meuble": {
+          "value": false,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "boolean",
+          "method": "exact source value"
+        },
+        "surface_reference_m2": {
+          "value": 52,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "m2",
+          "method": "exact source value"
+        },
+        "surface_piece_reference_m2": {
+          "value": 22.2,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "m2/piece",
+          "method": "exact source value"
+        },
+        "id_zone": {
+          "value": "1",
+          "columns": [
+            "id_zone"
+          ],
+          "unit": "source estimation zone",
+          "method": "exact source value"
+        },
+        "type_prediction": {
+          "value": "maille",
+          "columns": [
+            "TYPPRED"
+          ],
+          "unit": "prediction geography",
+          "method": "exact source value"
+        },
+        "loyer_m2": {
+          "value": 9.76,
+          "columns": [
+            "loypredm2"
+          ],
+          "unit": "EUR/m2/month predicted charges included",
+          "method": "decimal half-even to 2 places; bounds are prediction 95%, not quartiles (guide p3)"
+        },
+        "loyer_m2_bas": {
+          "value": 7.58,
+          "columns": [
+            "lwr.IPm2"
+          ],
+          "unit": "EUR/m2/month predicted charges included",
+          "method": "decimal half-even to 2 places; bounds are prediction 95%, not quartiles (guide p3)"
+        },
+        "loyer_m2_haut": {
+          "value": 12.56,
+          "columns": [
+            "upr.IPm2"
+          ],
+          "unit": "EUR/m2/month predicted charges included",
+          "method": "decimal half-even to 2 places; bounds are prediction 95%, not quartiles (guide p3)"
+        },
+        "nb_observations": {
+          "value": 0,
+          "columns": [
+            "nbobs_com"
+          ],
+          "unit": "observations",
+          "method": "exact source value"
+        },
+        "nb_observations_commune": {
+          "value": 0,
+          "columns": [
+            "nbobs_com"
+          ],
+          "unit": "observations",
+          "method": "exact source value"
+        },
+        "nb_observations_maille": {
+          "value": 484,
+          "columns": [
+            "nbobs_mail"
+          ],
+          "unit": "observations",
+          "method": "exact source value"
+        },
+        "r2": {
+          "value": 0.777,
+          "columns": [
+            "R2_adj"
+          ],
+          "unit": "ratio",
+          "method": "legacy precision 3 places"
+        },
+        "r2_ajuste": {
+          "value": 0.77697857231704,
+          "columns": [
+            "R2_adj"
+          ],
+          "unit": "adjusted R2",
+          "method": "full source decimal"
+        }
+      },
+      "commune_fields": {},
+      "source_line": 2,
+      "commune_object": "loyers_appartement"
+    },
+    {
+      "id": "loyers:26113:appartement",
+      "dataset": "loyers",
+      "key": {
+        "code_insee": "26113",
+        "type_habitat": "appartement"
+      },
+      "sources": [
+        "loyers:appartement",
+        "loyers:appartement:extracted",
+        "guide p1"
+      ],
+      "fields": {
+        "annee": {
+          "value": 2025,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "year",
+          "method": "exact source value"
+        },
+        "trimestre_reference": {
+          "value": 3,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "quarter",
+          "method": "exact source value"
+        },
+        "charges_comprises": {
+          "value": true,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "boolean",
+          "method": "exact source value"
+        },
+        "meuble": {
+          "value": false,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "boolean",
+          "method": "exact source value"
+        },
+        "surface_reference_m2": {
+          "value": 52,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "m2",
+          "method": "exact source value"
+        },
+        "surface_piece_reference_m2": {
+          "value": 22.2,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "m2/piece",
+          "method": "exact source value"
+        },
+        "id_zone": {
+          "value": "1",
+          "columns": [
+            "id_zone"
+          ],
+          "unit": "source estimation zone",
+          "method": "exact source value"
+        },
+        "type_prediction": {
+          "value": "commune",
+          "columns": [
+            "TYPPRED"
+          ],
+          "unit": "prediction geography",
+          "method": "exact source value"
+        },
+        "loyer_m2": {
+          "value": 11.75,
+          "columns": [
+            "loypredm2"
+          ],
+          "unit": "EUR/m2/month predicted charges included",
+          "method": "decimal half-even to 2 places; bounds are prediction 95%, not quartiles (guide p3)"
+        },
+        "loyer_m2_bas": {
+          "value": 9.09,
+          "columns": [
+            "lwr.IPm2"
+          ],
+          "unit": "EUR/m2/month predicted charges included",
+          "method": "decimal half-even to 2 places; bounds are prediction 95%, not quartiles (guide p3)"
+        },
+        "loyer_m2_haut": {
+          "value": 15.19,
+          "columns": [
+            "upr.IPm2"
+          ],
+          "unit": "EUR/m2/month predicted charges included",
+          "method": "decimal half-even to 2 places; bounds are prediction 95%, not quartiles (guide p3)"
+        },
+        "nb_observations": {
+          "value": 356,
+          "columns": [
+            "nbobs_com"
+          ],
+          "unit": "observations",
+          "method": "exact source value"
+        },
+        "nb_observations_commune": {
+          "value": 356,
+          "columns": [
+            "nbobs_com"
+          ],
+          "unit": "observations",
+          "method": "exact source value"
+        },
+        "nb_observations_maille": {
+          "value": 484,
+          "columns": [
+            "nbobs_mail"
+          ],
+          "unit": "observations",
+          "method": "exact source value"
+        },
+        "r2": {
+          "value": 0.777,
+          "columns": [
+            "R2_adj"
+          ],
+          "unit": "ratio",
+          "method": "legacy precision 3 places"
+        },
+        "r2_ajuste": {
+          "value": 0.77697857231704,
+          "columns": [
+            "R2_adj"
+          ],
+          "unit": "adjusted R2",
+          "method": "full source decimal"
+        }
+      },
+      "commune_fields": {},
+      "source_line": 11,
+      "commune_object": "loyers_appartement"
+    },
+    {
+      "id": "loyers:37099:maison",
+      "dataset": "loyers",
+      "key": {
+        "code_insee": "37099",
+        "type_habitat": "maison"
+      },
+      "sources": [
+        "loyers:maison",
+        "loyers:maison:extracted",
+        "guide p1"
+      ],
+      "fields": {
+        "annee": {
+          "value": 2025,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "year",
+          "method": "exact source value"
+        },
+        "trimestre_reference": {
+          "value": 3,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "quarter",
+          "method": "exact source value"
+        },
+        "charges_comprises": {
+          "value": true,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "boolean",
+          "method": "exact source value"
+        },
+        "meuble": {
+          "value": false,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "boolean",
+          "method": "exact source value"
+        },
+        "surface_reference_m2": {
+          "value": 92,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "m2",
+          "method": "exact source value"
+        },
+        "surface_piece_reference_m2": {
+          "value": 22.4,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "m2/piece",
+          "method": "exact source value"
+        },
+        "id_zone": {
+          "value": "1",
+          "columns": [
+            "id_zone"
+          ],
+          "unit": "source estimation zone",
+          "method": "exact source value"
+        },
+        "type_prediction": {
+          "value": "maille",
+          "columns": [
+            "TYPPRED"
+          ],
+          "unit": "prediction geography",
+          "method": "exact source value"
+        },
+        "loyer_m2": {
+          "value": 8.96,
+          "columns": [
+            "loypredm2"
+          ],
+          "unit": "EUR/m2/month predicted charges included",
+          "method": "decimal half-even to 2 places; bounds are prediction 95%, not quartiles (guide p3)"
+        },
+        "loyer_m2_bas": {
+          "value": 6.95,
+          "columns": [
+            "lwr.IPm2"
+          ],
+          "unit": "EUR/m2/month predicted charges included",
+          "method": "decimal half-even to 2 places; bounds are prediction 95%, not quartiles (guide p3)"
+        },
+        "loyer_m2_haut": {
+          "value": 11.55,
+          "columns": [
+            "upr.IPm2"
+          ],
+          "unit": "EUR/m2/month predicted charges included",
+          "method": "decimal half-even to 2 places; bounds are prediction 95%, not quartiles (guide p3)"
+        },
+        "nb_observations": {
+          "value": 54,
+          "columns": [
+            "nbobs_com"
+          ],
+          "unit": "observations",
+          "method": "exact source value"
+        },
+        "nb_observations_commune": {
+          "value": 54,
+          "columns": [
+            "nbobs_com"
+          ],
+          "unit": "observations",
+          "method": "exact source value"
+        },
+        "nb_observations_maille": {
+          "value": 494,
+          "columns": [
+            "nbobs_mail"
+          ],
+          "unit": "observations",
+          "method": "exact source value"
+        },
+        "r2": {
+          "value": 0.755,
+          "columns": [
+            "R2_adj"
+          ],
+          "unit": "ratio",
+          "method": "legacy precision 3 places"
+        },
+        "r2_ajuste": {
+          "value": 0.75527981050117,
+          "columns": [
+            "R2_adj"
+          ],
+          "unit": "adjusted R2",
+          "method": "full source decimal"
+        }
+      },
+      "commune_fields": {},
+      "source_line": 2,
+      "commune_object": "loyers_maison"
+    },
+    {
+      "id": "loyers:37014:maison",
+      "dataset": "loyers",
+      "key": {
+        "code_insee": "37014",
+        "type_habitat": "maison"
+      },
+      "sources": [
+        "loyers:maison",
+        "loyers:maison:extracted",
+        "guide p1"
+      ],
+      "fields": {
+        "annee": {
+          "value": 2025,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "year",
+          "method": "exact source value"
+        },
+        "trimestre_reference": {
+          "value": 3,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "quarter",
+          "method": "exact source value"
+        },
+        "charges_comprises": {
+          "value": true,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "boolean",
+          "method": "exact source value"
+        },
+        "meuble": {
+          "value": false,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "boolean",
+          "method": "exact source value"
+        },
+        "surface_reference_m2": {
+          "value": 92,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "m2",
+          "method": "exact source value"
+        },
+        "surface_piece_reference_m2": {
+          "value": 22.4,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "m2/piece",
+          "method": "exact source value"
+        },
+        "id_zone": {
+          "value": "1",
+          "columns": [
+            "id_zone"
+          ],
+          "unit": "source estimation zone",
+          "method": "exact source value"
+        },
+        "type_prediction": {
+          "value": "commune",
+          "columns": [
+            "TYPPRED"
+          ],
+          "unit": "prediction geography",
+          "method": "exact source value"
+        },
+        "loyer_m2": {
+          "value": 9.24,
+          "columns": [
+            "loypredm2"
+          ],
+          "unit": "EUR/m2/month predicted charges included",
+          "method": "decimal half-even to 2 places; bounds are prediction 95%, not quartiles (guide p3)"
+        },
+        "loyer_m2_bas": {
+          "value": 7.18,
+          "columns": [
+            "lwr.IPm2"
+          ],
+          "unit": "EUR/m2/month predicted charges included",
+          "method": "decimal half-even to 2 places; bounds are prediction 95%, not quartiles (guide p3)"
+        },
+        "loyer_m2_haut": {
+          "value": 11.89,
+          "columns": [
+            "upr.IPm2"
+          ],
+          "unit": "EUR/m2/month predicted charges included",
+          "method": "decimal half-even to 2 places; bounds are prediction 95%, not quartiles (guide p3)"
+        },
+        "nb_observations": {
+          "value": 177,
+          "columns": [
+            "nbobs_com"
+          ],
+          "unit": "observations",
+          "method": "exact source value"
+        },
+        "nb_observations_commune": {
+          "value": 177,
+          "columns": [
+            "nbobs_com"
+          ],
+          "unit": "observations",
+          "method": "exact source value"
+        },
+        "nb_observations_maille": {
+          "value": 494,
+          "columns": [
+            "nbobs_mail"
+          ],
+          "unit": "observations",
+          "method": "exact source value"
+        },
+        "r2": {
+          "value": 0.755,
+          "columns": [
+            "R2_adj"
+          ],
+          "unit": "ratio",
+          "method": "legacy precision 3 places"
+        },
+        "r2_ajuste": {
+          "value": 0.75527981050117,
+          "columns": [
+            "R2_adj"
+          ],
+          "unit": "adjusted R2",
+          "method": "full source decimal"
+        }
+      },
+      "commune_fields": {},
+      "source_line": 9,
+      "commune_object": "loyers_maison"
+    },
+    {
+      "id": "loyers:28198:1-2_pieces",
+      "dataset": "loyers",
+      "key": {
+        "code_insee": "28198",
+        "type_habitat": "1-2_pieces"
+      },
+      "sources": [
+        "loyers:1-2_pieces",
+        "loyers:1-2_pieces:extracted",
+        "guide p1"
+      ],
+      "fields": {
+        "annee": {
+          "value": 2025,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "year",
+          "method": "exact source value"
+        },
+        "trimestre_reference": {
+          "value": 3,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "quarter",
+          "method": "exact source value"
+        },
+        "charges_comprises": {
+          "value": true,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "boolean",
+          "method": "exact source value"
+        },
+        "meuble": {
+          "value": false,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "boolean",
+          "method": "exact source value"
+        },
+        "surface_reference_m2": {
+          "value": 37,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "m2",
+          "method": "exact source value"
+        },
+        "surface_piece_reference_m2": {
+          "value": 22.9,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "m2/piece",
+          "method": "exact source value"
+        },
+        "id_zone": {
+          "value": "1",
+          "columns": [
+            "id_zone"
+          ],
+          "unit": "source estimation zone",
+          "method": "exact source value"
+        },
+        "type_prediction": {
+          "value": "maille",
+          "columns": [
+            "TYPPRED"
+          ],
+          "unit": "prediction geography",
+          "method": "exact source value"
+        },
+        "loyer_m2": {
+          "value": 11.37,
+          "columns": [
+            "loypredm2"
+          ],
+          "unit": "EUR/m2/month predicted charges included",
+          "method": "decimal half-even to 2 places; bounds are prediction 95%, not quartiles (guide p3)"
+        },
+        "loyer_m2_bas": {
+          "value": 9.36,
+          "columns": [
+            "lwr.IPm2"
+          ],
+          "unit": "EUR/m2/month predicted charges included",
+          "method": "decimal half-even to 2 places; bounds are prediction 95%, not quartiles (guide p3)"
+        },
+        "loyer_m2_haut": {
+          "value": 13.82,
+          "columns": [
+            "upr.IPm2"
+          ],
+          "unit": "EUR/m2/month predicted charges included",
+          "method": "decimal half-even to 2 places; bounds are prediction 95%, not quartiles (guide p3)"
+        },
+        "nb_observations": {
+          "value": 4,
+          "columns": [
+            "nbobs_com"
+          ],
+          "unit": "observations",
+          "method": "exact source value"
+        },
+        "nb_observations_commune": {
+          "value": 4,
+          "columns": [
+            "nbobs_com"
+          ],
+          "unit": "observations",
+          "method": "exact source value"
+        },
+        "nb_observations_maille": {
+          "value": 1281,
+          "columns": [
+            "nbobs_mail"
+          ],
+          "unit": "observations",
+          "method": "exact source value"
+        },
+        "r2": {
+          "value": 0.701,
+          "columns": [
+            "R2_adj"
+          ],
+          "unit": "ratio",
+          "method": "legacy precision 3 places"
+        },
+        "r2_ajuste": {
+          "value": 0.700824619954554,
+          "columns": [
+            "R2_adj"
+          ],
+          "unit": "adjusted R2",
+          "method": "full source decimal"
+        }
+      },
+      "commune_fields": {},
+      "source_line": 2,
+      "commune_object": null
+    },
+    {
+      "id": "loyers:28088:1-2_pieces",
+      "dataset": "loyers",
+      "key": {
+        "code_insee": "28088",
+        "type_habitat": "1-2_pieces"
+      },
+      "sources": [
+        "loyers:1-2_pieces",
+        "loyers:1-2_pieces:extracted",
+        "guide p1"
+      ],
+      "fields": {
+        "annee": {
+          "value": 2025,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "year",
+          "method": "exact source value"
+        },
+        "trimestre_reference": {
+          "value": 3,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "quarter",
+          "method": "exact source value"
+        },
+        "charges_comprises": {
+          "value": true,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "boolean",
+          "method": "exact source value"
+        },
+        "meuble": {
+          "value": false,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "boolean",
+          "method": "exact source value"
+        },
+        "surface_reference_m2": {
+          "value": 37,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "m2",
+          "method": "exact source value"
+        },
+        "surface_piece_reference_m2": {
+          "value": 22.9,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "m2/piece",
+          "method": "exact source value"
+        },
+        "id_zone": {
+          "value": "1",
+          "columns": [
+            "id_zone"
+          ],
+          "unit": "source estimation zone",
+          "method": "exact source value"
+        },
+        "type_prediction": {
+          "value": "commune",
+          "columns": [
+            "TYPPRED"
+          ],
+          "unit": "prediction geography",
+          "method": "exact source value"
+        },
+        "loyer_m2": {
+          "value": 12.38,
+          "columns": [
+            "loypredm2"
+          ],
+          "unit": "EUR/m2/month predicted charges included",
+          "method": "decimal half-even to 2 places; bounds are prediction 95%, not quartiles (guide p3)"
+        },
+        "loyer_m2_bas": {
+          "value": 10.19,
+          "columns": [
+            "lwr.IPm2"
+          ],
+          "unit": "EUR/m2/month predicted charges included",
+          "method": "decimal half-even to 2 places; bounds are prediction 95%, not quartiles (guide p3)"
+        },
+        "loyer_m2_haut": {
+          "value": 15.05,
+          "columns": [
+            "upr.IPm2"
+          ],
+          "unit": "EUR/m2/month predicted charges included",
+          "method": "decimal half-even to 2 places; bounds are prediction 95%, not quartiles (guide p3)"
+        },
+        "nb_observations": {
+          "value": 1022,
+          "columns": [
+            "nbobs_com"
+          ],
+          "unit": "observations",
+          "method": "exact source value"
+        },
+        "nb_observations_commune": {
+          "value": 1022,
+          "columns": [
+            "nbobs_com"
+          ],
+          "unit": "observations",
+          "method": "exact source value"
+        },
+        "nb_observations_maille": {
+          "value": 1281,
+          "columns": [
+            "nbobs_mail"
+          ],
+          "unit": "observations",
+          "method": "exact source value"
+        },
+        "r2": {
+          "value": 0.701,
+          "columns": [
+            "R2_adj"
+          ],
+          "unit": "ratio",
+          "method": "legacy precision 3 places"
+        },
+        "r2_ajuste": {
+          "value": 0.700824619954554,
+          "columns": [
+            "R2_adj"
+          ],
+          "unit": "adjusted R2",
+          "method": "full source decimal"
+        }
+      },
+      "commune_fields": {},
+      "source_line": 22,
+      "commune_object": null
+    },
+    {
+      "id": "loyers:60666:3+_pieces",
+      "dataset": "loyers",
+      "key": {
+        "code_insee": "60666",
+        "type_habitat": "3+_pieces"
+      },
+      "sources": [
+        "loyers:3+_pieces",
+        "loyers:3+_pieces:extracted",
+        "guide p1"
+      ],
+      "fields": {
+        "annee": {
+          "value": 2025,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "year",
+          "method": "exact source value"
+        },
+        "trimestre_reference": {
+          "value": 3,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "quarter",
+          "method": "exact source value"
+        },
+        "charges_comprises": {
+          "value": true,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "boolean",
+          "method": "exact source value"
+        },
+        "meuble": {
+          "value": false,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "boolean",
+          "method": "exact source value"
+        },
+        "surface_reference_m2": {
+          "value": 72,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "m2",
+          "method": "exact source value"
+        },
+        "surface_piece_reference_m2": {
+          "value": 21.3,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "m2/piece",
+          "method": "exact source value"
+        },
+        "id_zone": {
+          "value": "1",
+          "columns": [
+            "id_zone"
+          ],
+          "unit": "source estimation zone",
+          "method": "exact source value"
+        },
+        "type_prediction": {
+          "value": "maille",
+          "columns": [
+            "TYPPRED"
+          ],
+          "unit": "prediction geography",
+          "method": "exact source value"
+        },
+        "loyer_m2": {
+          "value": 13.53,
+          "columns": [
+            "loypredm2"
+          ],
+          "unit": "EUR/m2/month predicted charges included",
+          "method": "decimal half-even to 2 places; bounds are prediction 95%, not quartiles (guide p3)"
+        },
+        "loyer_m2_bas": {
+          "value": 11.67,
+          "columns": [
+            "lwr.IPm2"
+          ],
+          "unit": "EUR/m2/month predicted charges included",
+          "method": "decimal half-even to 2 places; bounds are prediction 95%, not quartiles (guide p3)"
+        },
+        "loyer_m2_haut": {
+          "value": 15.67,
+          "columns": [
+            "upr.IPm2"
+          ],
+          "unit": "EUR/m2/month predicted charges included",
+          "method": "decimal half-even to 2 places; bounds are prediction 95%, not quartiles (guide p3)"
+        },
+        "nb_observations": {
+          "value": 64,
+          "columns": [
+            "nbobs_com"
+          ],
+          "unit": "observations",
+          "method": "exact source value"
+        },
+        "nb_observations_commune": {
+          "value": 64,
+          "columns": [
+            "nbobs_com"
+          ],
+          "unit": "observations",
+          "method": "exact source value"
+        },
+        "nb_observations_maille": {
+          "value": 481,
+          "columns": [
+            "nbobs_mail"
+          ],
+          "unit": "observations",
+          "method": "exact source value"
+        },
+        "r2": {
+          "value": 0.605,
+          "columns": [
+            "R2_adj"
+          ],
+          "unit": "ratio",
+          "method": "legacy precision 3 places"
+        },
+        "r2_ajuste": {
+          "value": 0.60519837244384,
+          "columns": [
+            "R2_adj"
+          ],
+          "unit": "adjusted R2",
+          "method": "full source decimal"
+        }
+      },
+      "commune_fields": {},
+      "source_line": 2,
+      "commune_object": null
+    },
+    {
+      "id": "loyers:60500:3+_pieces",
+      "dataset": "loyers",
+      "key": {
+        "code_insee": "60500",
+        "type_habitat": "3+_pieces"
+      },
+      "sources": [
+        "loyers:3+_pieces",
+        "loyers:3+_pieces:extracted",
+        "guide p1"
+      ],
+      "fields": {
+        "annee": {
+          "value": 2025,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "year",
+          "method": "exact source value"
+        },
+        "trimestre_reference": {
+          "value": 3,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "quarter",
+          "method": "exact source value"
+        },
+        "charges_comprises": {
+          "value": true,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "boolean",
+          "method": "exact source value"
+        },
+        "meuble": {
+          "value": false,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "boolean",
+          "method": "exact source value"
+        },
+        "surface_reference_m2": {
+          "value": 72,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "m2",
+          "method": "exact source value"
+        },
+        "surface_piece_reference_m2": {
+          "value": 21.3,
+          "columns": [
+            "guide p1"
+          ],
+          "unit": "m2/piece",
+          "method": "exact source value"
+        },
+        "id_zone": {
+          "value": "1",
+          "columns": [
+            "id_zone"
+          ],
+          "unit": "source estimation zone",
+          "method": "exact source value"
+        },
+        "type_prediction": {
+          "value": "commune",
+          "columns": [
+            "TYPPRED"
+          ],
+          "unit": "prediction geography",
+          "method": "exact source value"
+        },
+        "loyer_m2": {
+          "value": 14.48,
+          "columns": [
+            "loypredm2"
+          ],
+          "unit": "EUR/m2/month predicted charges included",
+          "method": "decimal half-even to 2 places; bounds are prediction 95%, not quartiles (guide p3)"
+        },
+        "loyer_m2_bas": {
+          "value": 12.5,
+          "columns": [
+            "lwr.IPm2"
+          ],
+          "unit": "EUR/m2/month predicted charges included",
+          "method": "decimal half-even to 2 places; bounds are prediction 95%, not quartiles (guide p3)"
+        },
+        "loyer_m2_haut": {
+          "value": 16.77,
+          "columns": [
+            "upr.IPm2"
+          ],
+          "unit": "EUR/m2/month predicted charges included",
+          "method": "decimal half-even to 2 places; bounds are prediction 95%, not quartiles (guide p3)"
+        },
+        "nb_observations": {
+          "value": 149,
+          "columns": [
+            "nbobs_com"
+          ],
+          "unit": "observations",
+          "method": "exact source value"
+        },
+        "nb_observations_commune": {
+          "value": 149,
+          "columns": [
+            "nbobs_com"
+          ],
+          "unit": "observations",
+          "method": "exact source value"
+        },
+        "nb_observations_maille": {
+          "value": 481,
+          "columns": [
+            "nbobs_mail"
+          ],
+          "unit": "observations",
+          "method": "exact source value"
+        },
+        "r2": {
+          "value": 0.605,
+          "columns": [
+            "R2_adj"
+          ],
+          "unit": "ratio",
+          "method": "legacy precision 3 places"
+        },
+        "r2_ajuste": {
+          "value": 0.60519837244384,
+          "columns": [
+            "R2_adj"
+          ],
+          "unit": "adjusted R2",
+          "method": "full source decimal"
+        }
+      },
+      "commune_fields": {},
+      "source_line": 11,
+      "commune_object": null
+    },
+    {
+      "id": "vacance:01001",
+      "dataset": "vacance",
+      "key": {
+        "code_commune": "01001"
+      },
+      "sources": [
+        "lovac"
+      ],
+      "fields": {
+        "annee": {
+          "value": 2026,
+          "columns": [
+            "CODGEO_26 / pp_vacant_26"
+          ],
+          "unit": "numerator year",
+          "method": "exact source value"
+        },
+        "nb_logements_prives": {
+          "value": 361,
+          "columns": [
+            "ff_pp_total_25"
+          ],
+          "unit": "private housing, denominator 2025",
+          "method": "exact source value"
+        },
+        "nb_logements_vacants": {
+          "value": 16,
+          "columns": [
+            "pp_vacant_26"
+          ],
+          "unit": "private housing",
+          "method": "difference for short only if both counts known; secret s -> null"
+        },
+        "nb_vacants_moins_2ans": {
+          "value": null,
+          "columns": [
+            "pp_vacant_26",
+            "pp_vacant_plus_2ans_26"
+          ],
+          "unit": "private housing",
+          "method": "difference for short only if both counts known; secret s -> null"
+        },
+        "nb_vacants_plus_2ans": {
+          "value": null,
+          "columns": [
+            "pp_vacant_plus_2ans_26"
+          ],
+          "unit": "private housing",
+          "method": "difference for short only if both counts known; secret s -> null"
+        },
+        "taux_vacance": {
+          "value": 4.43,
+          "columns": [
+            "pp_vacant_26",
+            "ff_pp_total_25"
+          ],
+          "unit": "percentage points",
+          "method": "known nonnegative numerator / known positive private denominator *100; half-even 2 places"
+        },
+        "taux_vacance_moins_2ans": {
+          "value": null,
+          "columns": [
+            "pp_vacant_26",
+            "pp_vacant_plus_2ans_26",
+            "ff_pp_total_25"
+          ],
+          "unit": "percentage points",
+          "method": "known nonnegative numerator / known positive private denominator *100; half-even 2 places"
+        },
+        "taux_vacance_plus_2ans": {
+          "value": null,
+          "columns": [
+            "pp_vacant_plus_2ans_26",
+            "ff_pp_total_25"
+          ],
+          "unit": "percentage points",
+          "method": "known nonnegative numerator / known positive private denominator *100; half-even 2 places"
+        }
+      },
+      "commune_fields": {
+        "annee_vacance": "annee",
+        "taux_vacance": "taux_vacance",
+        "nb_vacants_plus_2ans": "nb_vacants_plus_2ans"
+      }
+    },
+    {
+      "id": "vacance:01006",
+      "dataset": "vacance",
+      "key": {
+        "code_commune": "01006"
+      },
+      "sources": [
+        "lovac"
+      ],
+      "fields": {
+        "annee": {
+          "value": 2026,
+          "columns": [
+            "CODGEO_26 / pp_vacant_26"
+          ],
+          "unit": "numerator year",
+          "method": "exact source value"
+        },
+        "nb_logements_prives": {
+          "value": null,
+          "columns": [
+            "ff_pp_total_25"
+          ],
+          "unit": "private housing, denominator 2025",
+          "method": "exact source value"
+        },
+        "nb_logements_vacants": {
+          "value": null,
+          "columns": [
+            "pp_vacant_26"
+          ],
+          "unit": "private housing",
+          "method": "difference for short only if both counts known; secret s -> null"
+        },
+        "nb_vacants_moins_2ans": {
+          "value": null,
+          "columns": [
+            "pp_vacant_26",
+            "pp_vacant_plus_2ans_26"
+          ],
+          "unit": "private housing",
+          "method": "difference for short only if both counts known; secret s -> null"
+        },
+        "nb_vacants_plus_2ans": {
+          "value": null,
+          "columns": [
+            "pp_vacant_plus_2ans_26"
+          ],
+          "unit": "private housing",
+          "method": "difference for short only if both counts known; secret s -> null"
+        },
+        "taux_vacance": {
+          "value": null,
+          "columns": [
+            "pp_vacant_26",
+            "ff_pp_total_25"
+          ],
+          "unit": "percentage points",
+          "method": "known nonnegative numerator / known positive private denominator *100; half-even 2 places"
+        },
+        "taux_vacance_moins_2ans": {
+          "value": null,
+          "columns": [
+            "pp_vacant_26",
+            "pp_vacant_plus_2ans_26",
+            "ff_pp_total_25"
+          ],
+          "unit": "percentage points",
+          "method": "known nonnegative numerator / known positive private denominator *100; half-even 2 places"
+        },
+        "taux_vacance_plus_2ans": {
+          "value": null,
+          "columns": [
+            "pp_vacant_plus_2ans_26",
+            "ff_pp_total_25"
+          ],
+          "unit": "percentage points",
+          "method": "known nonnegative numerator / known positive private denominator *100; half-even 2 places"
+        }
+      },
+      "commune_fields": {
+        "annee_vacance": "annee",
+        "taux_vacance": "taux_vacance",
+        "nb_vacants_plus_2ans": "nb_vacants_plus_2ans"
+      }
+    },
+    {
+      "id": "vacance:01009",
+      "dataset": "vacance",
+      "key": {
+        "code_commune": "01009"
+      },
+      "sources": [
+        "lovac"
+      ],
+      "fields": {
+        "annee": {
+          "value": 2026,
+          "columns": [
+            "CODGEO_26 / pp_vacant_26"
+          ],
+          "unit": "numerator year",
+          "method": "exact source value"
+        },
+        "nb_logements_prives": {
+          "value": null,
+          "columns": [
+            "ff_pp_total_25"
+          ],
+          "unit": "private housing, denominator 2025",
+          "method": "exact source value"
+        },
+        "nb_logements_vacants": {
+          "value": 28,
+          "columns": [
+            "pp_vacant_26"
+          ],
+          "unit": "private housing",
+          "method": "difference for short only if both counts known; secret s -> null"
+        },
+        "nb_vacants_moins_2ans": {
+          "value": 11,
+          "columns": [
+            "pp_vacant_26",
+            "pp_vacant_plus_2ans_26"
+          ],
+          "unit": "private housing",
+          "method": "difference for short only if both counts known; secret s -> null"
+        },
+        "nb_vacants_plus_2ans": {
+          "value": 17,
+          "columns": [
+            "pp_vacant_plus_2ans_26"
+          ],
+          "unit": "private housing",
+          "method": "difference for short only if both counts known; secret s -> null"
+        },
+        "taux_vacance": {
+          "value": null,
+          "columns": [
+            "pp_vacant_26",
+            "ff_pp_total_25"
+          ],
+          "unit": "percentage points",
+          "method": "known nonnegative numerator / known positive private denominator *100; half-even 2 places"
+        },
+        "taux_vacance_moins_2ans": {
+          "value": null,
+          "columns": [
+            "pp_vacant_26",
+            "pp_vacant_plus_2ans_26",
+            "ff_pp_total_25"
+          ],
+          "unit": "percentage points",
+          "method": "known nonnegative numerator / known positive private denominator *100; half-even 2 places"
+        },
+        "taux_vacance_plus_2ans": {
+          "value": null,
+          "columns": [
+            "pp_vacant_plus_2ans_26",
+            "ff_pp_total_25"
+          ],
+          "unit": "percentage points",
+          "method": "known nonnegative numerator / known positive private denominator *100; half-even 2 places"
+        }
+      },
+      "commune_fields": {
+        "annee_vacance": "annee",
+        "taux_vacance": "taux_vacance",
+        "nb_vacants_plus_2ans": "nb_vacants_plus_2ans"
+      }
+    },
+    {
+      "id": "vacance:02343",
+      "dataset": "vacance",
+      "key": {
+        "code_commune": "02343"
+      },
+      "sources": [
+        "lovac"
+      ],
+      "fields": {
+        "annee": {
+          "value": 2026,
+          "columns": [
+            "CODGEO_26 / pp_vacant_26"
+          ],
+          "unit": "numerator year",
+          "method": "exact source value"
+        },
+        "nb_logements_prives": {
+          "value": 35,
+          "columns": [
+            "ff_pp_total_25"
+          ],
+          "unit": "private housing, denominator 2025",
+          "method": "exact source value"
+        },
+        "nb_logements_vacants": {
+          "value": 0,
+          "columns": [
+            "pp_vacant_26"
+          ],
+          "unit": "private housing",
+          "method": "difference for short only if both counts known; secret s -> null"
+        },
+        "nb_vacants_moins_2ans": {
+          "value": 0,
+          "columns": [
+            "pp_vacant_26",
+            "pp_vacant_plus_2ans_26"
+          ],
+          "unit": "private housing",
+          "method": "difference for short only if both counts known; secret s -> null"
+        },
+        "nb_vacants_plus_2ans": {
+          "value": 0,
+          "columns": [
+            "pp_vacant_plus_2ans_26"
+          ],
+          "unit": "private housing",
+          "method": "difference for short only if both counts known; secret s -> null"
+        },
+        "taux_vacance": {
+          "value": 0,
+          "columns": [
+            "pp_vacant_26",
+            "ff_pp_total_25"
+          ],
+          "unit": "percentage points",
+          "method": "known nonnegative numerator / known positive private denominator *100; half-even 2 places"
+        },
+        "taux_vacance_moins_2ans": {
+          "value": 0,
+          "columns": [
+            "pp_vacant_26",
+            "pp_vacant_plus_2ans_26",
+            "ff_pp_total_25"
+          ],
+          "unit": "percentage points",
+          "method": "known nonnegative numerator / known positive private denominator *100; half-even 2 places"
+        },
+        "taux_vacance_plus_2ans": {
+          "value": 0,
+          "columns": [
+            "pp_vacant_plus_2ans_26",
+            "ff_pp_total_25"
+          ],
+          "unit": "percentage points",
+          "method": "known nonnegative numerator / known positive private denominator *100; half-even 2 places"
+        }
+      },
+      "commune_fields": {
+        "annee_vacance": "annee",
+        "taux_vacance": "taux_vacance",
+        "nb_vacants_plus_2ans": "nb_vacants_plus_2ans"
+      }
+    },
+    {
+      "id": "vacance:44109",
+      "dataset": "vacance",
+      "key": {
+        "code_commune": "44109"
+      },
+      "sources": [
+        "lovac"
+      ],
+      "fields": {
+        "annee": {
+          "value": 2026,
+          "columns": [
+            "CODGEO_26 / pp_vacant_26"
+          ],
+          "unit": "numerator year",
+          "method": "exact source value"
+        },
+        "nb_logements_prives": {
+          "value": 155375,
+          "columns": [
+            "ff_pp_total_25"
+          ],
+          "unit": "private housing, denominator 2025",
+          "method": "exact source value"
+        },
+        "nb_logements_vacants": {
+          "value": 14854,
+          "columns": [
+            "pp_vacant_26"
+          ],
+          "unit": "private housing",
+          "method": "difference for short only if both counts known; secret s -> null"
+        },
+        "nb_vacants_moins_2ans": {
+          "value": 12455,
+          "columns": [
+            "pp_vacant_26",
+            "pp_vacant_plus_2ans_26"
+          ],
+          "unit": "private housing",
+          "method": "difference for short only if both counts known; secret s -> null"
+        },
+        "nb_vacants_plus_2ans": {
+          "value": 2399,
+          "columns": [
+            "pp_vacant_plus_2ans_26"
+          ],
+          "unit": "private housing",
+          "method": "difference for short only if both counts known; secret s -> null"
+        },
+        "taux_vacance": {
+          "value": 9.56,
+          "columns": [
+            "pp_vacant_26",
+            "ff_pp_total_25"
+          ],
+          "unit": "percentage points",
+          "method": "known nonnegative numerator / known positive private denominator *100; half-even 2 places"
+        },
+        "taux_vacance_moins_2ans": {
+          "value": 8.02,
+          "columns": [
+            "pp_vacant_26",
+            "pp_vacant_plus_2ans_26",
+            "ff_pp_total_25"
+          ],
+          "unit": "percentage points",
+          "method": "known nonnegative numerator / known positive private denominator *100; half-even 2 places"
+        },
+        "taux_vacance_plus_2ans": {
+          "value": 1.54,
+          "columns": [
+            "pp_vacant_plus_2ans_26",
+            "ff_pp_total_25"
+          ],
+          "unit": "percentage points",
+          "method": "known nonnegative numerator / known positive private denominator *100; half-even 2 places"
+        }
+      },
+      "commune_fields": {
+        "annee_vacance": "annee",
+        "taux_vacance": "taux_vacance",
+        "nb_vacants_plus_2ans": "nb_vacants_plus_2ans"
+      }
+    }
+  ],
+  "guide_evidence": {
+    "historical_sha256": "620db206f562be7696e7abe2074dc4c8cd53392ff29dda16aae498df2e28a224",
+    "report": "docs/audit-stabilisation-2026-09-08/lot-02/cor06-result.md",
+    "locally_rehashed": true
+  },
+  "limits": [
+    "22 selected public source rows, no national exhaustiveness",
+    "guide p1/p3 interpretation reused from COR06; frozen PDF shipped in CI",
+    "no frontend renderer, authentication, acquisition network or runner-wide gate certified",
+    "legacy metadata and synthetic corruptions are not official source observations"
+  ]
+}

@@ -1,0 +1,188 @@
+# Caddyfile.prod -- HTTP reverse proxy of the rented production server (plan 04.2-01).
+#
+#   prod.datacommune.fr      -> frontend:3000       (pre-production frontend, calls api-prod)
+#   api-prod.datacommune.fr  -> api:8000            (same API, pre-production host)
+#   datacommune.fr           -> frontend-prod:3000  (apex frontend, published by plan 04.2-05)
+#   api.datacommune.fr       -> api:8000
+#   www.datacommune.fr       -> 301 https://datacommune.fr{uri}
+#
+# Every route of api/Caddyfile.public is here too (/count, /carte/*, closed sign-up and error
+# reports): the switch to the bought server runs this file. Parity checked by
+# frontend/src/lib/caddy-prod-parite.test.ts.
+#
+# Standalone file: snippets do not cross Caddy files. api/Caddyfile.public is the reference
+# for every value below (headers, HSTS, API noindex, CSP, client address); only the CSP
+# connect-src is widened to both API hosts, and the pre-production frontend is noindex.
+# Same model: Cloudflare terminates TLS, cloudflared (same compose project) forwards the
+# routed hostnames to http://caddy:80, no port is published outside 127.0.0.1:8080.
+# Access logs stay disabled: URLs carry private resolve inputs (addresses).
+{
+	auto_https off
+}
+
+# Sent on every host.
+(common_headers) {
+	header {
+		>X-Content-Type-Options "nosniff"
+		>X-Frame-Options "DENY"
+		>Referrer-Policy "strict-origin-when-cross-origin"
+		>Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
+		>X-XSS-Protection "0"
+		defer
+		-Server
+		-X-Powered-By
+	}
+}
+
+# Cloudflare sets CF-Connecting-IP; copied over X-Forwarded-For / X-Real-IP (overwrite,
+# never append: a spoofed X-Forwarded-For cannot reach the upstreams).
+(visitor_ip) {
+	header_up X-Forwarded-For {header.CF-Connecting-IP}
+	header_up X-Real-IP {header.CF-Connecting-IP}
+}
+
+(frontend_headers) {
+	import common_headers
+	header {
+		# One year, no includeSubDomains (the API hosts serve their own HSTS).
+		>Strict-Transport-Security "max-age=31536000"
+		# No CSP header here (05-07 lot 5): each frontend writes its own (kit.csp of
+		# svelte.config.js, built with the API it calls); a header set here would replace it.
+	}
+}
+
+(api_headers) {
+	import common_headers
+	header {
+		>Strict-Transport-Security "max-age=31536000; includeSubDomains"
+		>Content-Security-Policy "default-src 'self'; frame-ancestors 'none'; base-uri 'self'"
+		# The API is for programs, not for the index.
+		>X-Robots-Tag "noindex, nofollow"
+	}
+	# Scalar API docs need the jsdelivr CDN and inline scripts/styles.
+	@docs path /docs /docs/* /openapi.json
+	header @docs >Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; img-src 'self' data: https://fastapi.tiangolo.com https://cdn.jsdelivr.net; font-src 'self' data: https://cdn.jsdelivr.net; connect-src 'self' https://api.datacommune.fr https://api-prod.datacommune.fr; frame-ancestors 'none'; base-uri 'self'"
+}
+
+# Routes of the API closed from the internet, on both API hosts (same lines as the API host of
+# Caddyfile.public).
+(api_closed_routes) {
+	# Sign-up is closed on the public instance (2026-11-10): mail is off (EMAIL_ENABLED=false in
+	# docker-compose.public.yml), so an account created here could never be verified or used, yet
+	# these routes wrote rows for anyone who called them. Proof: infra/public/tests/test-inscription-fermee.sh.
+	@inscription path /auth/register /auth/quick-key /auth/resend-verification
+	respond @inscription 404
+
+	# Error reports (2026-11-10): POST /v1/signalements writes a row for whoever calls it. Only the
+	# server of the site calls it, over the compose network (API_INTERNAL_URL), behind its own form;
+	# from the internet the route does not exist. Proof: infra/public/tests/test-signalement-ferme.sh.
+	@signalement path /v1/signalements /v1/signalements/*
+	respond @signalement 404
+}
+
+http://prod.datacommune.fr {
+	import frontend_headers
+	# Pre-production host: kept out of the index (the apex is the canonical site).
+	header >X-Robots-Tag "noindex, nofollow"
+
+	# The pre-production frontend is the public build, so its pages count themselves at
+	# /count: answered here with 204, nothing reaches GoatCounter (recette visits are not
+	# audience). Its maps are relayed like the apex's (same block as Caddyfile.public).
+	handle /count {
+		respond 204
+	}
+
+	# Address maps (04.7-17): same-origin images, so the CSP `img-src 'self' data:` stays as it is.
+	# /carte/<ban_id>/<couche>.png is relayed to the public route /v1/carte/... of the API, which
+	# queries the IGN itself: the visitor never talks to the IGN. Only the real address of the
+	# visitor goes through (visitor_ip, for the API's rate bucket); the cookie and the referrer
+	# (the page may be an address) are removed. The API reads no other header, no body, and
+	# ignores the query string; nothing the visitor sends is forwarded to the IGN.
+	handle /carte/* {
+		rewrite * /v1{uri}
+		reverse_proxy api:8000 {
+			import visitor_ip
+			header_up -Cookie
+			header_up -Referer
+		}
+	}
+
+	reverse_proxy frontend:3000 {
+		import visitor_ip
+	}
+}
+
+http://api-prod.datacommune.fr {
+	import api_headers
+	import api_closed_routes
+	reverse_proxy api:8000 {
+		import visitor_ip
+	}
+}
+
+http://datacommune.fr {
+	import frontend_headers
+
+	# Audience measurement (04.7-14b, audit A9): only the counting endpoint of the self-hosted
+	# GoatCounter is published. Nothing that identifies the visitor reaches it:
+	#   - no address: every header the RealIP middleware of GoatCounter 2.7.0 reads
+	#     (zgo.at/zhttp mware/realip.go: Cf-Connecting-Ip, Fly-Client-Ip, X-Azure-Socketip,
+	#     X-Real-Ip, X-Forwarded-For) is removed, and Forwarded / True-Client-IP too, so it only
+	#     sees Caddy; the X-Forwarded-For Caddy prepares itself is removed by the same line;
+	#   - no referrer (the page may be an address), no cookie.
+	# Host is rewritten to the vhost the site was created with (`localhost`, also the one the
+	# SSH-tunnelled dashboard answers to).
+	# Gate: until MESURE_AUDIENCE_ACTIVE=oui (set in /opt/datacommune/.env once the GoatCounter
+	# site is created and its settings applied, see 04.7-14b-SUMMARY.md), Caddy answers /count
+	# itself with 204 and nothing reaches GoatCounter.
+	handle /count {
+		@collecte_fermee expression `"{$MESURE_AUDIENCE_ACTIVE:non}" != "oui"`
+		respond @collecte_fermee 204
+		reverse_proxy goatcounter:8080 {
+			header_up Host localhost
+			header_up -CF-Connecting-IP
+			header_up -Fly-Client-IP
+			header_up -X-Azure-SocketIP
+			header_up -X-Real-IP
+			header_up -X-Forwarded-For
+			header_up -Forwarded
+			header_up -True-Client-IP
+			header_up -Referer
+			header_up -Cookie
+		}
+	}
+
+	# Address maps (04.7-17): same-origin images, so the CSP `img-src 'self' data:` stays as it is.
+	# /carte/<ban_id>/<couche>.png is relayed to the public route /v1/carte/... of the API, which
+	# queries the IGN itself: the visitor never talks to the IGN. Only the real address of the
+	# visitor goes through (visitor_ip, for the API's rate bucket); the cookie and the referrer
+	# (the page may be an address) are removed. The API reads no other header, no body, and
+	# ignores the query string; nothing the visitor sends is forwarded to the IGN.
+	handle /carte/* {
+		rewrite * /v1{uri}
+		reverse_proxy api:8000 {
+			import visitor_ip
+			header_up -Cookie
+			header_up -Referer
+		}
+	}
+
+	reverse_proxy frontend-prod:3000 {
+		import visitor_ip
+	}
+}
+
+http://api.datacommune.fr {
+	import api_headers
+	import api_closed_routes
+	reverse_proxy api:8000 {
+		import visitor_ip
+	}
+}
+
+# www is a CNAME of the apex in Cloudflare: one canonical host, permanent redirect that
+# keeps the path and query.
+http://www.datacommune.fr {
+	import common_headers
+	redir https://datacommune.fr{uri} permanent
+}

@@ -1,0 +1,12 @@
+# ⚠️ LEGACY — ciblait la DB prod01 (décommissionnée ~2026-06). Non fonctionnel.
+# Expose DB port to LXC localhost for SSH tunnel access (dev only).
+# Bind to 127.0.0.1 — only reachable from LXC itself (+ SSH tunnel).
+#
+# Deploy (one-time):
+#   scp docker-compose.tunnel.yml datacommune:/opt/datacommune/
+#   ssh datacommune "cd /opt/datacommune && docker compose -f docker-compose.yml -f docker-compose.prod.yml -f docker-compose.tunnel.yml up -d db"
+
+services:
+  db:
+    ports:
+      - "127.0.0.1:5432:5432"

@@ -1,0 +1,9 @@
+[Unit]
+Description=Timer for datacommune-job@cleanup-old-tables
+
+[Timer]
+OnCalendar=hourly
+Persistent=true
+
+[Install]
+WantedBy=timers.target

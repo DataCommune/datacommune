@@ -1,0 +1,77 @@
+{
+  "id": "revenus",
+  "section": "vivre",
+  "titre": "Revenus",
+  "etat": "hors_couverture",
+  "ton": "info",
+  "granularite": {
+    "niveau": "commune",
+    "rayon_m": null
+  },
+  "verdict": "Source non couverte ici par DataCommune.",
+  "chiffres": [],
+  "details": {
+    "filosofi_carreau": {
+      "etat": "ok",
+      "id": "CRS3035RES200mN2746200E3450000",
+      "millesime": "2015",
+      "individus": 101.5,
+      "menages": 55.0,
+      "niveau_vie_moyen": 24794,
+      "part_menages_pauvres": 14.5
+    },
+    "iris": {
+      "etat": "ok",
+      "code": "441090507",
+      "nom": "Vieux Malakoff",
+      "type": "A",
+      "composition": {
+        "etat": "ok",
+        "annee": "2023",
+        "population_15_ans_plus": 3042,
+        "parts": {
+          "1": 0.0,
+          "2": 3.9,
+          "3": 25.1,
+          "4": 21.0,
+          "5": 16.8,
+          "6": 11.2,
+          "7": 5.9,
+          "9": 16.0
+        }
+      }
+    }
+  },
+  "rattachement": null,
+  "sources": [
+    {
+      "cle": "revenus",
+      "nom": "Filosofi (revenus et pauvreté)",
+      "producteur": "INSEE",
+      "url": "https://www.insee.fr/fr/statistiques/7756855",
+      "licence": "Licence Ouverte 2.0",
+      "millesime": null,
+      "mode": "import"
+    },
+    {
+      "cle": "filosofi_carreaux",
+      "nom": "Filosofi 2015, données carroyées à 200 m (revenus, pauvreté et niveau de vie)",
+      "producteur": "INSEE (diffusion Géoplateforme IGN)",
+      "url": "https://www.insee.fr/fr/statistiques/4176290",
+      "licence": "Licence Ouverte 2.0",
+      "millesime": "2015",
+      "mode": "direct"
+    },
+    {
+      "cle": "iris",
+      "nom": "Contours IRIS et recensement de la population à l'IRIS (catégories socioprofessionnelles)",
+      "producteur": "INSEE et IGN",
+      "url": "https://api.insee.fr/melodi/",
+      "licence": "Licence Ouverte 2.0",
+      "millesime": "2023",
+      "mode": "direct"
+    }
+  ],
+  "motif": "test",
+  "pannes_partielles": []
+}

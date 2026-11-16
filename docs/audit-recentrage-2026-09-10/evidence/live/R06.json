@@ -1,0 +1,201 @@
+{
+  "captured_at": "2026-09-10T20:40:33.824639+00:00",
+  "case": {
+    "case_id": "R06",
+    "address": "105 Rue Aristide Briand, 44400 Rezé",
+    "ban_id": "44143_0160_00105",
+    "stratum": "maison existante 44"
+  },
+  "sources": {
+    "dpe03existant": {
+      "http": 200,
+      "body": {
+        "total": 1,
+        "results": [
+          {
+            "adresse_brut": "105 Rue Aristide Briand",
+            "adresse_ban": "105 Rue Aristide Briand 44400 Rezé",
+            "identifiant_ban": "44143_0160_00105",
+            "code_insee_ban": "44143",
+            "score_ban": 0.74,
+            "type_batiment": "maison",
+            "numero_etage_appartement": 0,
+            "numero_dpe": "2644E0008262R",
+            "date_fin_validite_dpe": "2036-01-04",
+            "date_etablissement_dpe": "2026-01-05",
+            "surface_habitable_logement": 79,
+            "etiquette_dpe": "D",
+            "_score": null
+          }
+        ]
+      },
+      "url": "https://data.ademe.fr/data-fair/api/v1/datasets/dpe03existant/lines?qs=identifiant_ban%3A%2244143_0160_00105%22&size=100&select=numero_dpe%2Cidentifiant_ban%2Cadresse_ban%2Cadresse_brut%2Ccode_insee_ban%2Ctype_batiment%2Csurface_habitable_logement%2Cetiquette_dpe%2Cdate_etablissement_dpe%2Cdate_fin_validite_dpe%2Cnumero_dpe_remplace%2Cid_rnb%2Cscore_ban%2Cnumero_etage_appartement"
+    },
+    "dpe02neuf": {
+      "http": 200,
+      "body": {
+        "total": 0,
+        "results": []
+      },
+      "url": "https://data.ademe.fr/data-fair/api/v1/datasets/dpe02neuf/lines?qs=identifiant_ban%3A%2244143_0160_00105%22&size=100&select=numero_dpe%2Cidentifiant_ban%2Cadresse_ban%2Cadresse_brut%2Ccode_insee_ban%2Ctype_batiment%2Csurface_habitable_logement%2Cetiquette_dpe%2Cdate_etablissement_dpe%2Cdate_fin_validite_dpe%2Cnumero_dpe_remplace%2Cid_rnb%2Cscore_ban%2Cnumero_etage_appartement"
+    }
+  },
+  "datacommune": {
+    "http": 200,
+    "body": {
+      "statut": "ok",
+      "donnees": [
+        {
+          "type_detecte": "adresse",
+          "latitude": 47.179083,
+          "longitude": -1.544448,
+          "adresse": "105 Rue Aristide Briand, 44400 Rezé",
+          "id_parcelle": "44143000AT0649",
+          "commune": "Rezé",
+          "code_postal": "44400",
+          "score": 0.7647058963775635,
+          "code_insee": "44143",
+          "resolution": "exact",
+          "parcelles_candidates": null,
+          "ban_id": "44143_0160_00105",
+          "datasets": {
+            "dpe": null
+          },
+          "erreurs": null,
+          "avertissements": [],
+          "dataset_states": {
+            "dpe": {
+              "dataset": "dpe",
+              "presence": "value",
+              "absence_reason": null,
+              "raison": null
+            }
+          },
+          "dpe_attribution": {
+            "version": 2,
+            "status": "unassigned",
+            "reason": "dwelling_identity_unproven",
+            "diagnostic": null,
+            "candidates": [],
+            "building_context": null,
+            "graph_state": "not_checked"
+          },
+          "dpe_inventory": {
+            "association": "source_ban_equality",
+            "address_check": "unverified",
+            "source": "ADEME",
+            "source_coverage": "unknown",
+            "graph_state": "not_checked",
+            "imported_at": null,
+            "version": 2,
+            "as_of_date": "2026-09-10",
+            "state": "ready",
+            "items": [
+              {
+                "type_batiment": "maison",
+                "surface_habitable": 79.0,
+                "etiquette_dpe": "D",
+                "etiquette_ges": "D",
+                "date_etablissement_dpe": "2026-01-05",
+                "date_fin_validite_dpe": "2036-01-04",
+                "lifecycle": {
+                  "source_state": "present",
+                  "source_snapshot_date": "2026-09-05",
+                  "source_scope": "44/85",
+                  "regimes": [
+                    "existant"
+                  ],
+                  "replacement_state": "no_successor_known",
+                  "graph_issues": [],
+                  "validity": "not_expired_by_date",
+                  "as_of_date": "2026-09-10",
+                  "revision_status": "unverified",
+                  "revision_kind": null,
+                  "revision_date": null,
+                  "detail_availability": "available"
+                }
+              }
+            ],
+            "total": 1,
+            "distribution": {
+              "A": 0,
+              "B": 0,
+              "C": 0,
+              "D": 1,
+              "E": 0,
+              "F": 0,
+              "G": 0,
+              "unknown": 0
+            },
+            "page_size": 20,
+            "has_more": false,
+            "read_state": "complete"
+          },
+          "dvf_attribution": null
+        }
+      ],
+      "meta": {
+        "source": [
+          {
+            "nom": "Base Adresse Nationale (BAN)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://adresse.data.gouv.fr",
+            "producteur": "DINUM / IGN",
+            "dataset": "ban",
+            "periode": {
+              "statut": "inconnue",
+              "label": null,
+              "debut": null,
+              "fin": null
+            },
+            "derniere_importation_reussie": null,
+            "couverture": {
+              "type": "inconnue",
+              "departements": null
+            },
+            "cadence": {
+              "statut": "official",
+              "label": "Hebdomadaire",
+              "evidence_url": "https://cartes.gouv.fr/aide/fr/guides-utilisateur/utiliser-les-services-de-la-geoplateforme/geocodage/",
+              "intervalle_jours": 7
+            },
+            "etat": "inconnu"
+          },
+          {
+            "nom": "Diagnostics de Performance Energetique (DPE)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://data.ademe.fr/datasets/dpe03existant",
+            "producteur": "ADEME",
+            "dataset": "dpe",
+            "periode": {
+              "statut": "inconnue",
+              "label": null,
+              "debut": null,
+              "fin": null
+            },
+            "derniere_importation_reussie": null,
+            "couverture": {
+              "type": "departements",
+              "departements": [
+                "44",
+                "85"
+              ]
+            },
+            "cadence": {
+              "statut": "official",
+              "label": "Hebdomadaire",
+              "evidence_url": "https://data.ademe.fr/datasets/dpe03existant",
+              "intervalle_jours": 7
+            },
+            "etat": "inconnu"
+          }
+        ],
+        "resolution": {
+          "issue": "exact",
+          "raison": null,
+          "parcelles_candidates": null
+        }
+      }
+    }
+  }
+}

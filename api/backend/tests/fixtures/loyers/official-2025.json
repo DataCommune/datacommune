@@ -1,0 +1,170 @@
+[
+  {
+    "type_habitat": "appartement",
+    "source_line": 2,
+    "source_prefix_sha256": "865e0078de32cdaad031d8acb20cab3dd5d4f4b1c365fd87a8c63e1eb1411381",
+    "resolved_url": "https://static.data.gouv.fr/resources/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025/20251211-145010/pred-app-mef-dhup.csv",
+    "values": {
+      "id_zone": "1",
+      "INSEE_C": "05066",
+      "LIBGEO": "La Haute-Beaume",
+      "EPCI": "200067445",
+      "DEP": "05",
+      "REG": "93",
+      "loypredm2": "9,75769624568385",
+      "lwr.IPm2": "7,57917786912916",
+      "upr.IPm2": "12,5623963003751",
+      "TYPPRED": "maille",
+      "nbobs_com": "0",
+      "nbobs_mail": "484",
+      "R2_adj": "0,77697857231704"
+    }
+  },
+  {
+    "type_habitat": "appartement",
+    "source_line": 11,
+    "source_prefix_sha256": "865e0078de32cdaad031d8acb20cab3dd5d4f4b1c365fd87a8c63e1eb1411381",
+    "resolved_url": "https://static.data.gouv.fr/resources/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025/20251211-145010/pred-app-mef-dhup.csv",
+    "values": {
+      "id_zone": "1",
+      "INSEE_C": "26113",
+      "LIBGEO": "Die",
+      "EPCI": "242600534",
+      "DEP": "26",
+      "REG": "84",
+      "loypredm2": "11,75397160684",
+      "lwr.IPm2": "9,09433606571995",
+      "upr.IPm2": "15,1914166725334",
+      "TYPPRED": "commune",
+      "nbobs_com": "356",
+      "nbobs_mail": "484",
+      "R2_adj": "0,77697857231704"
+    }
+  },
+  {
+    "type_habitat": "maison",
+    "source_line": 2,
+    "source_prefix_sha256": "8586a168ed7b42de2b0e8384d33d648c99a93831d26ea0a8fc8c9ac1cb71ce1c",
+    "resolved_url": "https://static.data.gouv.fr/resources/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025/20251211-145039/pred-mai-mef-dhup.csv",
+    "values": {
+      "id_zone": "1",
+      "INSEE_C": "37099",
+      "LIBGEO": "Druye",
+      "EPCI": "243700754",
+      "DEP": "37",
+      "REG": "24",
+      "loypredm2": "8,95647852540627",
+      "lwr.IPm2": "6,94544866376119",
+      "upr.IPm2": "11,5497949030441",
+      "TYPPRED": "maille",
+      "nbobs_com": "54",
+      "nbobs_mail": "494",
+      "R2_adj": "0,75527981050117"
+    }
+  },
+  {
+    "type_habitat": "maison",
+    "source_line": 9,
+    "source_prefix_sha256": "8586a168ed7b42de2b0e8384d33d648c99a93831d26ea0a8fc8c9ac1cb71ce1c",
+    "resolved_url": "https://static.data.gouv.fr/resources/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025/20251211-145039/pred-mai-mef-dhup.csv",
+    "values": {
+      "id_zone": "1",
+      "INSEE_C": "37014",
+      "LIBGEO": "Azay-le-Rideau",
+      "EPCI": "200072650",
+      "DEP": "37",
+      "REG": "24",
+      "loypredm2": "9,23650118035591",
+      "lwr.IPm2": "7,17768992691409",
+      "upr.IPm2": "11,8858511475704",
+      "TYPPRED": "commune",
+      "nbobs_com": "177",
+      "nbobs_mail": "494",
+      "R2_adj": "0,75527981050117"
+    }
+  },
+  {
+    "type_habitat": "1-2_pieces",
+    "source_line": 2,
+    "source_prefix_sha256": "cf445d2bf36003a54444bf2bfaec20c6acfcc0858aa133462775dd9db106b2e0",
+    "resolved_url": "https://static.data.gouv.fr/resources/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025/20251211-144934/pred-app12-mef-dhup.csv",
+    "values": {
+      "id_zone": "1",
+      "INSEE_C": "28198",
+      "LIBGEO": "Jallans",
+      "EPCI": "200069961",
+      "DEP": "28",
+      "REG": "24",
+      "loypredm2": "11,3724071080056",
+      "lwr.IPm2": "9,35669639357067",
+      "upr.IPm2": "13,8223618668535",
+      "TYPPRED": "maille",
+      "nbobs_com": "4",
+      "nbobs_mail": "1281",
+      "R2_adj": "0,700824619954554"
+    }
+  },
+  {
+    "type_habitat": "1-2_pieces",
+    "source_line": 22,
+    "source_prefix_sha256": "cf445d2bf36003a54444bf2bfaec20c6acfcc0858aa133462775dd9db106b2e0",
+    "resolved_url": "https://static.data.gouv.fr/resources/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025/20251211-144934/pred-app12-mef-dhup.csv",
+    "values": {
+      "id_zone": "1",
+      "INSEE_C": "28088",
+      "LIBGEO": "Châteaudun",
+      "EPCI": "200069961",
+      "DEP": "28",
+      "REG": "24",
+      "loypredm2": "12,3834494504435",
+      "lwr.IPm2": "10,1895800177829",
+      "upr.IPm2": "15,0496703518754",
+      "TYPPRED": "commune",
+      "nbobs_com": "1022",
+      "nbobs_mail": "1281",
+      "R2_adj": "0,700824619954554"
+    }
+  },
+  {
+    "type_habitat": "3+_pieces",
+    "source_line": 2,
+    "source_prefix_sha256": "3e71343ff4de4afde2eb11108929d984d5b7bab41b622ff0fdcd120354942c35",
+    "resolved_url": "https://static.data.gouv.fr/resources/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025/20251211-144951/pred-app3-mef-dhup.csv",
+    "values": {
+      "id_zone": "1",
+      "INSEE_C": "60666",
+      "LIBGEO": "Ver-sur-Launette",
+      "EPCI": "246000871",
+      "DEP": "60",
+      "REG": "32",
+      "loypredm2": "13,5253774910438",
+      "lwr.IPm2": "11,6731800628264",
+      "upr.IPm2": "15,6714652982865",
+      "TYPPRED": "maille",
+      "nbobs_com": "64",
+      "nbobs_mail": "481",
+      "R2_adj": "0,60519837244384"
+    }
+  },
+  {
+    "type_habitat": "3+_pieces",
+    "source_line": 11,
+    "source_prefix_sha256": "3e71343ff4de4afde2eb11108929d984d5b7bab41b622ff0fdcd120354942c35",
+    "resolved_url": "https://static.data.gouv.fr/resources/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025/20251211-144951/pred-app3-mef-dhup.csv",
+    "values": {
+      "id_zone": "1",
+      "INSEE_C": "60500",
+      "LIBGEO": "Le Plessis-Belleville",
+      "EPCI": "246000871",
+      "DEP": "60",
+      "REG": "32",
+      "loypredm2": "14,4784257924259",
+      "lwr.IPm2": "12,4966918443206",
+      "upr.IPm2": "16,7744244667482",
+      "TYPPRED": "commune",
+      "nbobs_com": "149",
+      "nbobs_mail": "481",
+      "R2_adj": "0,60519837244384"
+    }
+  }
+]

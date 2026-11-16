@@ -1,0 +1,2501 @@
+{
+  "description": "Requêtes servies rendues depuis le code (plans 04.1-18 et 04.1-23), paramètres publics ; tests/test_explain_statements.py vérifie chaque copie ; `python -m scripts.explain_statements regenerer` les réécrit.",
+  "requetes": [
+    {
+      "nom": "batiments_par_point",
+      "fichier": "app/batiments/queries.py",
+      "symbole": "batiments_par_point",
+      "rang": 0,
+      "tables": [
+        "batiments"
+      ],
+      "params": {
+        "lat": 47.2184,
+        "lon": -1.5536,
+        "rayon_m": 200.0,
+        "limit": 20,
+        "offset": 0
+      },
+      "sql": "\n        SELECT cleabs, nature, usage_1, nombre_d_etages,\n               hauteur, altitude_minimale_sol, altitude_maximale_toit\n        FROM (\n            SELECT DISTINCT ON (cleabs)\n                   cleabs, nature, usage_1, nombre_d_etages,\n                   hauteur, altitude_minimale_sol, altitude_maximale_toit,\n                   ST_Distance(\n                       geometrie::geography,\n                       ST_SetSRID(ST_MakePoint(:lon, :lat), 4326)::geography\n                   ) AS dist\n            FROM batiments\n            WHERE ST_DWithin(\n                geometrie::geography,\n                ST_SetSRID(ST_MakePoint(:lon, :lat), 4326)::geography,\n                :rayon_m\n            )\n            ORDER BY cleabs, dist\n        ) sub\n        ORDER BY dist\n        LIMIT :limit OFFSET :offset\n    "
+    },
+    {
+      "nom": "batiments_sur_parcelle",
+      "fichier": "app/adresse/relations.py",
+      "symbole": "_BATIMENTS_SUR_PARCELLE",
+      "rang": 0,
+      "tables": [
+        "parcelles",
+        "batiments"
+      ],
+      "params": {
+        "id_parcelle": "44109000AB0001",
+        "department": "44"
+      },
+      "sql": "\n    WITH parcelle AS (\n        SELECT p.geometrie\n        FROM parcelles AS p\n        WHERE p.id_parcelle = :id_parcelle\n          AND p.code_departement = :department\n    )\n    SELECT (SELECT count(*) FROM parcelle) AS parcelles,\n           count(b.cleabs) AS total,\n           count(b.cleabs) FILTER (\n               WHERE b.usage_1 IS DISTINCT FROM 'Annexe'\n           ) AS hors_annexe\n    FROM parcelle AS p\n    JOIN batiments AS b\n      ON b.code_departement = :department\n     AND ST_Intersects(b.geometrie, p.geometrie)\n     AND ST_Covers(p.geometrie, ST_PointOnSurface(b.geometrie))\n"
+    },
+    {
+      "nom": "parcelle_par_point",
+      "fichier": "app/cadastre/queries.py",
+      "symbole": "parcelle_par_point",
+      "rang": 0,
+      "tables": [
+        "parcelles"
+      ],
+      "params": {
+        "lat": 46.6705,
+        "lon": -1.426
+      },
+      "sql": "\n        SELECT id_parcelle, commune, prefixe, section, numero,\n               contenance,\n               ST_Y(ST_Centroid(geometrie)) AS centroide_lat,\n               ST_X(ST_Centroid(geometrie)) AS centroide_lon,\n               ST_AsGeoJSON(geometrie) AS geometrie_geojson\n        FROM parcelles\n        WHERE ST_Intersects(\n            geometrie,\n            ST_SetSRID(ST_MakePoint(:lon, :lat), 4326)\n        )\n        ORDER BY id_parcelle\n    "
+    },
+    {
+      "nom": "parcelles_proches",
+      "fichier": "app/cadastre/queries.py",
+      "symbole": "parcelles_proches",
+      "rang": 0,
+      "tables": [
+        "parcelles"
+      ],
+      "params": {
+        "lat": 46.6705,
+        "lon": -1.426,
+        "rayon_m": 50.0
+      },
+      "sql": "\n        SELECT id_parcelle, commune, prefixe, section, numero,\n               contenance,\n               ST_Y(ST_Centroid(geometrie)) AS centroide_lat,\n               ST_X(ST_Centroid(geometrie)) AS centroide_lon,\n               ST_AsGeoJSON(geometrie) AS geometrie_geojson,\n               ST_Distance(\n                   geometrie::geography,\n                   ST_SetSRID(ST_MakePoint(:lon, :lat), 4326)::geography\n               ) AS distance_m\n        FROM parcelles\n        WHERE ST_DWithin(\n            geometrie,\n            ST_SetSRID(ST_MakePoint(:lon, :lat), 4326),\n            :rayon_m / (111320.0 * GREATEST(COS(RADIANS(:lat)), 0.01))\n        )\n        AND ST_Distance(\n            geometrie::geography,\n            ST_SetSRID(ST_MakePoint(:lon, :lat), 4326)::geography\n        ) <= :rayon_m\n        ORDER BY distance_m, id_parcelle\n    "
+    },
+    {
+      "nom": "parcelle_par_reference",
+      "fichier": "app/cadastre/queries.py",
+      "symbole": "parcelle_par_reference",
+      "rang": 0,
+      "tables": [
+        "parcelles"
+      ],
+      "params": {
+        "ref": "85191000AB0001"
+      },
+      "sql": "\n        SELECT id_parcelle, commune, prefixe, section, numero,\n               contenance,\n               ST_Y(ST_Centroid(geometrie)) AS centroide_lat,\n               ST_X(ST_Centroid(geometrie)) AS centroide_lon,\n               ST_AsGeoJSON(geometrie) AS geometrie_geojson\n        FROM parcelles\n        WHERE id_parcelle = :ref\n    "
+    },
+    {
+      "nom": "adresse_par_cle",
+      "fichier": "app/adresse/service.py",
+      "symbole": "_ADRESSES_PAR_CLE",
+      "rang": 0,
+      "tables": [
+        "adresses"
+      ],
+      "params": {
+        "ban_id": "44109_0001_00001",
+        "departement": "44"
+      },
+      "sql": "\n    SELECT numero, rep, nom_voie, code_postal, code_commune, nom_commune,\n           ST_X(position) AS lon, ST_Y(position) AS lat\n    FROM adresses\n    WHERE ban_id = :ban_id AND code_departement = :departement\n    ORDER BY id\n"
+    },
+    {
+      "nom": "points_de_la_cle_documents",
+      "fichier": "app/adresse/documents.py",
+      "symbole": "_POINTS_DE_LA_CLE",
+      "rang": 0,
+      "tables": [
+        "adresses"
+      ],
+      "params": {
+        "ban_id": "44109_0001_00001",
+        "department": "44"
+      },
+      "sql": "\n    SELECT ST_X(position) AS lon, ST_Y(position) AS lat,\n           numero, rep, nom_voie, code_postal, code_commune, nom_commune\n    FROM public.adresses\n    WHERE ban_id = :ban_id AND code_departement = :department\n"
+    },
+    {
+      "nom": "points_de_la_cle_ventes",
+      "fichier": "app/adresse/ventes.py",
+      "symbole": "_POINTS_DE_LA_CLE",
+      "rang": 0,
+      "tables": [
+        "adresses"
+      ],
+      "params": {
+        "ban_id": "44109_0001_00001",
+        "department": "44"
+      },
+      "sql": "\n    SELECT ST_X(position) AS lon, ST_Y(position) AS lat\n    FROM public.adresses\n    WHERE ban_id = :ban_id AND code_departement = :department\n"
+    },
+    {
+      "nom": "geocodage_inverse",
+      "fichier": "app/ban/queries.py",
+      "symbole": "reverse_geocoder",
+      "rang": 0,
+      "tables": [
+        "adresses"
+      ],
+      "params": {
+        "lat": 47.2184,
+        "lon": -1.5536,
+        "rayon_m": 200.0,
+        "limit": 1
+      },
+      "sql": "\n        SELECT ban_id, numero, rep, nom_voie, code_postal,\n               code_commune, nom_commune,\n               ST_X(position) AS longitude,\n               ST_Y(position) AS latitude,\n               ST_Distance(\n                   position::geography,\n                   ST_SetSRID(ST_MakePoint(:lon, :lat), 4326)::geography\n               ) AS distance_m\n        FROM adresses\n        WHERE ST_DWithin(\n            position::geography,\n            ST_SetSRID(ST_MakePoint(:lon, :lat), 4326)::geography,\n            :rayon_m\n        )\n        ORDER BY position <-> ST_SetSRID(ST_MakePoint(:lon, :lat), 4326),\n                 ban_id, id\n        LIMIT :limit\n    "
+    },
+    {
+      "nom": "documents_dpe_de_la_cle",
+      "fichier": "app/adresse/documents.py",
+      "symbole": "_DOCUMENTS_DE_LA_CLE",
+      "rang": 0,
+      "tables": [
+        "diagnostics_dpe"
+      ],
+      "params": {
+        "ban_id": "44109_0001_00001",
+        "department": "44"
+      },
+      "sql": "\n    SELECT count(*) AS total\n    FROM public.diagnostics_dpe AS d\n    WHERE d.identifiant_ban = :ban_id AND d.code_departement = :department\n"
+    },
+    {
+      "nom": "dvf_par_point",
+      "source": "appel",
+      "fichier": "app/dvf/queries.py",
+      "symbole": "dvf_par_point",
+      "appel": {
+        "lat": 47.2184,
+        "lon": -1.5536
+      },
+      "rang": 0,
+      "tables": [
+        "mutations_grain",
+        "mutation_parcelles",
+        "mutations"
+      ],
+      "params": {
+        "lat": 47.2184,
+        "lon": -1.5536,
+        "rayon_m": 500.0,
+        "limit": 21,
+        "offset": 0
+      },
+      "variantes": [
+        {
+          "id": "nantes_r50_l21",
+          "lat": 47.2184,
+          "lon": -1.5536,
+          "rayon_m": 50.0,
+          "limit": 21
+        },
+        {
+          "id": "nantes_r50_l101",
+          "lat": 47.2184,
+          "lon": -1.5536,
+          "rayon_m": 50.0,
+          "limit": 101
+        },
+        {
+          "id": "nantes_r500_l21",
+          "lat": 47.2184,
+          "lon": -1.5536,
+          "rayon_m": 500.0,
+          "limit": 21
+        },
+        {
+          "id": "nantes_r500_l101",
+          "lat": 47.2184,
+          "lon": -1.5536,
+          "rayon_m": 500.0,
+          "limit": 101
+        },
+        {
+          "id": "nantes_r5000_l21",
+          "lat": 47.2184,
+          "lon": -1.5536,
+          "rayon_m": 5000.0,
+          "limit": 21
+        },
+        {
+          "id": "nantes_r5000_l101",
+          "lat": 47.2184,
+          "lon": -1.5536,
+          "rayon_m": 5000.0,
+          "limit": 101
+        },
+        {
+          "id": "rural_85_r50_l21",
+          "lat": 46.4167,
+          "lon": -0.8167,
+          "rayon_m": 50.0,
+          "limit": 21
+        },
+        {
+          "id": "rural_85_r50_l101",
+          "lat": 46.4167,
+          "lon": -0.8167,
+          "rayon_m": 50.0,
+          "limit": 101
+        },
+        {
+          "id": "rural_85_r500_l21",
+          "lat": 46.4167,
+          "lon": -0.8167,
+          "rayon_m": 500.0,
+          "limit": 21
+        },
+        {
+          "id": "rural_85_r500_l101",
+          "lat": 46.4167,
+          "lon": -0.8167,
+          "rayon_m": 500.0,
+          "limit": 101
+        },
+        {
+          "id": "rural_85_r5000_l21",
+          "lat": 46.4167,
+          "lon": -0.8167,
+          "rayon_m": 5000.0,
+          "limit": 21
+        },
+        {
+          "id": "rural_85_r5000_l101",
+          "lat": 46.4167,
+          "lon": -0.8167,
+          "rayon_m": 5000.0,
+          "limit": 101
+        },
+        {
+          "id": "littoral_44_r50_l21",
+          "lat": 47.27,
+          "lon": -2.21,
+          "rayon_m": 50.0,
+          "limit": 21
+        },
+        {
+          "id": "littoral_44_r50_l101",
+          "lat": 47.27,
+          "lon": -2.21,
+          "rayon_m": 50.0,
+          "limit": 101
+        },
+        {
+          "id": "littoral_44_r500_l21",
+          "lat": 47.27,
+          "lon": -2.21,
+          "rayon_m": 500.0,
+          "limit": 21
+        },
+        {
+          "id": "littoral_44_r500_l101",
+          "lat": 47.27,
+          "lon": -2.21,
+          "rayon_m": 500.0,
+          "limit": 101
+        },
+        {
+          "id": "littoral_44_r5000_l21",
+          "lat": 47.27,
+          "lon": -2.21,
+          "rayon_m": 5000.0,
+          "limit": 21
+        },
+        {
+          "id": "littoral_44_r5000_l101",
+          "lat": 47.27,
+          "lon": -2.21,
+          "rayon_m": 5000.0,
+          "limit": 101
+        },
+        {
+          "id": "mer_r50_l21",
+          "lat": 46.9,
+          "lon": -3.0,
+          "rayon_m": 50.0,
+          "limit": 21
+        },
+        {
+          "id": "mer_r50_l101",
+          "lat": 46.9,
+          "lon": -3.0,
+          "rayon_m": 50.0,
+          "limit": 101
+        },
+        {
+          "id": "mer_r500_l21",
+          "lat": 46.9,
+          "lon": -3.0,
+          "rayon_m": 500.0,
+          "limit": 21
+        },
+        {
+          "id": "mer_r500_l101",
+          "lat": 46.9,
+          "lon": -3.0,
+          "rayon_m": 500.0,
+          "limit": 101
+        },
+        {
+          "id": "mer_r5000_l21",
+          "lat": 46.9,
+          "lon": -3.0,
+          "rayon_m": 5000.0,
+          "limit": 21
+        },
+        {
+          "id": "mer_r5000_l101",
+          "lat": 46.9,
+          "lon": -3.0,
+          "rayon_m": 5000.0,
+          "limit": 101
+        }
+      ],
+      "sql": "\n        SELECT mg.id_mutation, mg.date_mutation, mg.nature_mutation,\n               mg.valeur_fonciere,\n               CASE mg.classe_mutation\n        WHEN 'residentiel_maison' THEN 'Maison'\n        WHEN 'residentiel_appartement' THEN 'Appartement'\n        ELSE NULL\n    END AS type_local,\n               mg.surface_bati_totale AS surface_reelle_bati,\n               mg.nombre_pieces_totales AS nombre_pieces_principales,\n               mg.surface_terrain_totale AS surface_terrain,\n               CASE\n        WHEN mg.classe_mutation NOT IN (\n            'residentiel_maison', 'residentiel_appartement'\n        ) THEN NULL\n        WHEN NOT (mg.est_vente OR mg.hors_stats_vefa) THEN NULL\n        WHEN NOT mg.mono_local\n             OR mg.surface_bati_totale IS NULL OR mg.surface_bati_totale <= 0\n             OR mg.valeur_fonciere IS NULL OR mg.valeur_fonciere <= 0 THEN NULL\n        ELSE ROUND(mg.valeur_fonciere / mg.surface_bati_totale)\n    END AS prix_m2,\n               mg.adresse_numero, mg.adresse_nom_voie, mg.code_postal,\n               mg.nom_commune,\n               CASE mg.classe_mutation\n        WHEN 'residentiel_maison' THEN '1'\n        WHEN 'residentiel_appartement' THEN '2'\n        ELSE NULL\n    END AS code_type_local,\n               NULL::text AS code_nature_culture,\n               NULL::text AS nature_culture,\n               NULL::text AS code_nature_culture_speciale,\n               NULL::text AS nature_culture_speciale,\n               ST_X(mg.position) AS longitude,\n               ST_Y(mg.position) AS latitude,\n               mg.classe_mutation,\n               CASE\n        WHEN mg.classe_mutation = 'mixte' THEN 'vente_mixte'\n        WHEN mg.classe_mutation = 'commerciale' THEN 'mutation_commerciale'\n        WHEN mg.classe_mutation = 'terrain_seul' THEN 'terrain_seul'\n        WHEN mg.classe_mutation NOT IN (\n            'residentiel_maison', 'residentiel_appartement'\n        ) THEN 'mutation_multi_locaux'\n        WHEN NOT (mg.est_vente OR mg.hors_stats_vefa) THEN 'nature_hors_vente'\n        WHEN NOT mg.mono_local\n             OR mg.surface_bati_totale IS NULL OR mg.surface_bati_totale <= 0\n             OR mg.valeur_fonciere IS NULL OR mg.valeur_fonciere <= 0\n            THEN 'surface_absente'\n        ELSE NULL\n    END AS prix_m2_raison,\n               mg.mono_local AS mutation_mono_local,\n               mg.nb_locaux_maison, mg.nb_locaux_appartement,\n               mg.nb_locaux_commercial,\n               CASE WHEN mg.mono_local THEN (\n        SELECT m2.nombre_lots FROM mutations m2\n        WHERE m2.id_mutation = mg.id_mutation\n          AND m2.code_departement = mg.code_departement\n          AND m2.code_type_local IN ('1', '2')\n        LIMIT 1\n    ) END AS nb_lots_source,\n               mg.nb_parcelles, mg.hors_stats_vefa, mg.surface_bati_totale,\n               parc.id_parcelle\n        FROM mutations_grain mg\n        LEFT JOIN LATERAL (\n        SELECT mp.id_parcelle FROM mutation_parcelles mp\n        WHERE mp.id_mutation = mg.id_mutation\n        ORDER BY mp.id_parcelle\n        LIMIT 1\n    ) parc ON true\n        WHERE ST_DWithin(    mg.position::geography,    ST_SetSRID(ST_MakePoint(:lon, :lat), 4326)::geography,    :rayon_m)\n        ORDER BY mg.position::geography\n            <-> ST_SetSRID(ST_MakePoint(:lon, :lat), 4326)::geography\n        LIMIT :limit OFFSET :offset\n    "
+    },
+    {
+      "nom": "dvf_par_adresse",
+      "source": "appel",
+      "fichier": "app/dvf/queries.py",
+      "symbole": "dvf_par_adresse",
+      "appel": {
+        "lat": 47.2184,
+        "lon": -1.5536
+      },
+      "rang": 0,
+      "tables": [
+        "mutations_grain",
+        "mutation_parcelles",
+        "mutations"
+      ],
+      "params": {
+        "lat": 47.2184,
+        "lon": -1.5536,
+        "rayon_m": 50.0,
+        "limit": 51,
+        "offset": 0
+      },
+      "variantes": [
+        {
+          "id": "nantes_l21",
+          "lat": 47.2184,
+          "lon": -1.5536,
+          "limit": 21
+        },
+        {
+          "id": "nantes_l101",
+          "lat": 47.2184,
+          "lon": -1.5536,
+          "limit": 101
+        },
+        {
+          "id": "rural_85_l21",
+          "lat": 46.4167,
+          "lon": -0.8167,
+          "limit": 21
+        },
+        {
+          "id": "rural_85_l101",
+          "lat": 46.4167,
+          "lon": -0.8167,
+          "limit": 101
+        },
+        {
+          "id": "littoral_44_l21",
+          "lat": 47.27,
+          "lon": -2.21,
+          "limit": 21
+        },
+        {
+          "id": "littoral_44_l101",
+          "lat": 47.27,
+          "lon": -2.21,
+          "limit": 101
+        },
+        {
+          "id": "mer_l21",
+          "lat": 46.9,
+          "lon": -3.0,
+          "limit": 21
+        },
+        {
+          "id": "mer_l101",
+          "lat": 46.9,
+          "lon": -3.0,
+          "limit": 101
+        }
+      ],
+      "sql": "\n        WITH une_par_mutation AS (\n            SELECT DISTINCT ON (mg.id_mutation)\n                   mg.id_mutation, mg.date_mutation, mg.nature_mutation,\n                   mg.valeur_fonciere,\n               CASE mg.classe_mutation\n        WHEN 'residentiel_maison' THEN 'Maison'\n        WHEN 'residentiel_appartement' THEN 'Appartement'\n        ELSE NULL\n    END AS type_local,\n               mg.surface_bati_totale AS surface_reelle_bati,\n               mg.nombre_pieces_totales AS nombre_pieces_principales,\n               mg.surface_terrain_totale AS surface_terrain,\n               CASE\n        WHEN mg.classe_mutation NOT IN (\n            'residentiel_maison', 'residentiel_appartement'\n        ) THEN NULL\n        WHEN NOT (mg.est_vente OR mg.hors_stats_vefa) THEN NULL\n        WHEN NOT mg.mono_local\n             OR mg.surface_bati_totale IS NULL OR mg.surface_bati_totale <= 0\n             OR mg.valeur_fonciere IS NULL OR mg.valeur_fonciere <= 0 THEN NULL\n        ELSE ROUND(mg.valeur_fonciere / mg.surface_bati_totale)\n    END AS prix_m2,\n               mg.adresse_numero, mg.adresse_nom_voie, mg.code_postal,\n               mg.nom_commune,\n               CASE mg.classe_mutation\n        WHEN 'residentiel_maison' THEN '1'\n        WHEN 'residentiel_appartement' THEN '2'\n        ELSE NULL\n    END AS code_type_local,\n               NULL::text AS code_nature_culture,\n               NULL::text AS nature_culture,\n               NULL::text AS code_nature_culture_speciale,\n               NULL::text AS nature_culture_speciale,\n               ST_X(mg.position) AS longitude,\n               ST_Y(mg.position) AS latitude,\n               mg.classe_mutation,\n               CASE\n        WHEN mg.classe_mutation = 'mixte' THEN 'vente_mixte'\n        WHEN mg.classe_mutation = 'commerciale' THEN 'mutation_commerciale'\n        WHEN mg.classe_mutation = 'terrain_seul' THEN 'terrain_seul'\n        WHEN mg.classe_mutation NOT IN (\n            'residentiel_maison', 'residentiel_appartement'\n        ) THEN 'mutation_multi_locaux'\n        WHEN NOT (mg.est_vente OR mg.hors_stats_vefa) THEN 'nature_hors_vente'\n        WHEN NOT mg.mono_local\n             OR mg.surface_bati_totale IS NULL OR mg.surface_bati_totale <= 0\n             OR mg.valeur_fonciere IS NULL OR mg.valeur_fonciere <= 0\n            THEN 'surface_absente'\n        ELSE NULL\n    END AS prix_m2_raison,\n               mg.mono_local AS mutation_mono_local,\n               mg.nb_locaux_maison, mg.nb_locaux_appartement,\n               mg.nb_locaux_commercial,\n               CASE WHEN mg.mono_local THEN (\n        SELECT m2.nombre_lots FROM mutations m2\n        WHERE m2.id_mutation = mg.id_mutation\n          AND m2.code_departement = mg.code_departement\n          AND m2.code_type_local IN ('1', '2')\n        LIMIT 1\n    ) END AS nb_lots_source,\n               mg.nb_parcelles, mg.hors_stats_vefa, mg.surface_bati_totale,\n                   parc.id_parcelle\n            FROM mutations_grain mg\n            LEFT JOIN LATERAL (\n        SELECT mp.id_parcelle FROM mutation_parcelles mp\n        WHERE mp.id_mutation = mg.id_mutation\n        ORDER BY mp.id_parcelle\n        LIMIT 1\n    ) parc ON true\n            WHERE ST_DWithin(    mg.position::geography,    ST_SetSRID(ST_MakePoint(:lon, :lat), 4326)::geography,    :rayon_m) AND (mg.est_vente OR mg.hors_stats_vefa)\n            ORDER BY mg.id_mutation, mg.id\n        )\n        SELECT * FROM une_par_mutation\n        ORDER BY date_mutation DESC, valeur_fonciere DESC, id_mutation\n        LIMIT :limit OFFSET :offset\n    "
+    },
+    {
+      "nom": "dvf_par_id_parcelle",
+      "source": "appel",
+      "fichier": "app/dvf/queries.py",
+      "symbole": "dvf_par_id_parcelle",
+      "appel": {
+        "id_parcelle": "44109000AB0001"
+      },
+      "rang": 0,
+      "tables": [
+        "mutations_grain",
+        "mutation_parcelles"
+      ],
+      "params": {
+        "id_parcelle": "44109000AB0001",
+        "limit": 5
+      },
+      "types": {
+        "id_parcelle": "text"
+      },
+      "variantes": [
+        {
+          "id": "parcelle_85",
+          "id_parcelle": "85191000AB0001"
+        }
+      ],
+      "sql": "\n        SELECT mg.id_mutation, mg.date_mutation, mg.nature_mutation,\n               mg.valeur_fonciere,\n               CASE mg.classe_mutation\n        WHEN 'residentiel_maison' THEN 'Maison'\n        WHEN 'residentiel_appartement' THEN 'Appartement'\n        ELSE NULL\n    END AS type_local,\n               mg.surface_bati_totale AS surface_reelle_bati,\n               mg.nombre_pieces_totales AS nombre_pieces_principales,\n               mg.surface_terrain_totale AS surface_terrain,\n               CASE\n        WHEN mg.classe_mutation NOT IN (\n            'residentiel_maison', 'residentiel_appartement'\n        ) THEN NULL\n        WHEN NOT (mg.est_vente OR mg.hors_stats_vefa) THEN NULL\n        WHEN NOT mg.mono_local\n             OR mg.surface_bati_totale IS NULL OR mg.surface_bati_totale <= 0\n             OR mg.valeur_fonciere IS NULL OR mg.valeur_fonciere <= 0 THEN NULL\n        ELSE ROUND(mg.valeur_fonciere / mg.surface_bati_totale)\n    END AS prix_m2,\n               mg.adresse_numero, mg.adresse_nom_voie, mg.code_postal,\n               mg.nom_commune,\n               CASE mg.classe_mutation\n        WHEN 'residentiel_maison' THEN '1'\n        WHEN 'residentiel_appartement' THEN '2'\n        ELSE NULL\n    END AS code_type_local,\n               NULL::text AS code_nature_culture,\n               NULL::text AS nature_culture,\n               NULL::text AS code_nature_culture_speciale,\n               NULL::text AS nature_culture_speciale,\n               ST_X(mg.position) AS longitude,\n               ST_Y(mg.position) AS latitude,\n               mg.classe_mutation,\n               CASE\n        WHEN mg.classe_mutation = 'mixte' THEN 'vente_mixte'\n        WHEN mg.classe_mutation = 'commerciale' THEN 'mutation_commerciale'\n        WHEN mg.classe_mutation = 'terrain_seul' THEN 'terrain_seul'\n        WHEN mg.classe_mutation NOT IN (\n            'residentiel_maison', 'residentiel_appartement'\n        ) THEN 'mutation_multi_locaux'\n        WHEN NOT (mg.est_vente OR mg.hors_stats_vefa) THEN 'nature_hors_vente'\n        WHEN NOT mg.mono_local\n             OR mg.surface_bati_totale IS NULL OR mg.surface_bati_totale <= 0\n             OR mg.valeur_fonciere IS NULL OR mg.valeur_fonciere <= 0\n            THEN 'surface_absente'\n        ELSE NULL\n    END AS prix_m2_raison,\n               mg.mono_local AS mutation_mono_local,\n               mg.nb_locaux_maison, mg.nb_locaux_appartement,\n               mg.nb_locaux_commercial,\n               CASE WHEN mg.mono_local THEN (\n        SELECT m2.nombre_lots FROM mutations m2\n        WHERE m2.id_mutation = mg.id_mutation\n          AND m2.code_departement = mg.code_departement\n          AND m2.code_type_local IN ('1', '2')\n        LIMIT 1\n    ) END AS nb_lots_source,\n               mg.nb_parcelles, mg.hors_stats_vefa, mg.surface_bati_totale,\n               mp.id_parcelle\n        FROM mutations_grain mg\n        JOIN mutation_parcelles mp ON mp.id_mutation = mg.id_mutation\n        WHERE mp.id_parcelle = :id_parcelle\n          AND mg.code_departement = CASE\n              WHEN LEFT(:id_parcelle, 2) = '97' THEN LEFT(:id_parcelle, 3)\n              ELSE LEFT(:id_parcelle, 2)\n          END\n          AND mg.position IS NOT NULL\n        ORDER BY mg.date_mutation DESC, mg.valeur_fonciere DESC\n        LIMIT :limit\n    "
+    },
+    {
+      "nom": "dvf_compte_par_id_parcelle",
+      "source": "appel",
+      "fichier": "app/dvf/queries.py",
+      "symbole": "dvf_compte_par_id_parcelle",
+      "appel": {
+        "id_parcelle": "44109000AB0001"
+      },
+      "rang": 0,
+      "tables": [
+        "mutations_grain",
+        "mutation_parcelles"
+      ],
+      "params": {
+        "id_parcelle": "44109000AB0001"
+      },
+      "types": {
+        "id_parcelle": "text"
+      },
+      "variantes": [
+        {
+          "id": "parcelle_85",
+          "id_parcelle": "85191000AB0001"
+        }
+      ],
+      "sql": "\n        SELECT COUNT(DISTINCT mg.id_mutation) AS nombre,\n               MAX(mg.date_mutation) AS derniere\n        \n        FROM mutations_grain mg\n        JOIN mutation_parcelles mp ON mp.id_mutation = mg.id_mutation\n        WHERE mp.id_parcelle = :id_parcelle\n          AND mg.code_departement = CASE\n              WHEN LEFT(:id_parcelle, 2) = '97' THEN LEFT(:id_parcelle, 3)\n              ELSE LEFT(:id_parcelle, 2)\n          END\n          AND mg.position IS NOT NULL\n\n    "
+    },
+    {
+      "nom": "dvf_par_parcelle",
+      "source": "appel",
+      "fichier": "app/dvf/queries.py",
+      "symbole": "dvf_par_parcelle",
+      "appel": {
+        "lat": 47.2184,
+        "lon": -1.5536
+      },
+      "rang": 0,
+      "tables": [
+        "parcelles",
+        "mutations_grain",
+        "mutation_parcelles",
+        "mutations"
+      ],
+      "params": {
+        "lat": 47.2184,
+        "lon": -1.5536,
+        "limit": 5
+      },
+      "variantes": [
+        {
+          "id": "nantes",
+          "lat": 47.2184,
+          "lon": -1.5536
+        },
+        {
+          "id": "rural_85",
+          "lat": 46.4167,
+          "lon": -0.8167
+        },
+        {
+          "id": "littoral_44",
+          "lat": 47.27,
+          "lon": -2.21
+        },
+        {
+          "id": "mer",
+          "lat": 46.9,
+          "lon": -3.0
+        }
+      ],
+      "sql": "\n        WITH parc AS (\n            SELECT id_parcelle\n            FROM parcelles\n            WHERE ST_Intersects(\n                geometrie,\n                ST_SetSRID(ST_MakePoint(:lon, :lat), 4326)\n            )\n            LIMIT 1\n        )\n        SELECT mg.id_mutation, mg.date_mutation, mg.nature_mutation,\n               mg.valeur_fonciere,\n               CASE mg.classe_mutation\n        WHEN 'residentiel_maison' THEN 'Maison'\n        WHEN 'residentiel_appartement' THEN 'Appartement'\n        ELSE NULL\n    END AS type_local,\n               mg.surface_bati_totale AS surface_reelle_bati,\n               mg.nombre_pieces_totales AS nombre_pieces_principales,\n               mg.surface_terrain_totale AS surface_terrain,\n               CASE\n        WHEN mg.classe_mutation NOT IN (\n            'residentiel_maison', 'residentiel_appartement'\n        ) THEN NULL\n        WHEN NOT (mg.est_vente OR mg.hors_stats_vefa) THEN NULL\n        WHEN NOT mg.mono_local\n             OR mg.surface_bati_totale IS NULL OR mg.surface_bati_totale <= 0\n             OR mg.valeur_fonciere IS NULL OR mg.valeur_fonciere <= 0 THEN NULL\n        ELSE ROUND(mg.valeur_fonciere / mg.surface_bati_totale)\n    END AS prix_m2,\n               mg.adresse_numero, mg.adresse_nom_voie, mg.code_postal,\n               mg.nom_commune,\n               CASE mg.classe_mutation\n        WHEN 'residentiel_maison' THEN '1'\n        WHEN 'residentiel_appartement' THEN '2'\n        ELSE NULL\n    END AS code_type_local,\n               NULL::text AS code_nature_culture,\n               NULL::text AS nature_culture,\n               NULL::text AS code_nature_culture_speciale,\n               NULL::text AS nature_culture_speciale,\n               ST_X(mg.position) AS longitude,\n               ST_Y(mg.position) AS latitude,\n               mg.classe_mutation,\n               CASE\n        WHEN mg.classe_mutation = 'mixte' THEN 'vente_mixte'\n        WHEN mg.classe_mutation = 'commerciale' THEN 'mutation_commerciale'\n        WHEN mg.classe_mutation = 'terrain_seul' THEN 'terrain_seul'\n        WHEN mg.classe_mutation NOT IN (\n            'residentiel_maison', 'residentiel_appartement'\n        ) THEN 'mutation_multi_locaux'\n        WHEN NOT (mg.est_vente OR mg.hors_stats_vefa) THEN 'nature_hors_vente'\n        WHEN NOT mg.mono_local\n             OR mg.surface_bati_totale IS NULL OR mg.surface_bati_totale <= 0\n             OR mg.valeur_fonciere IS NULL OR mg.valeur_fonciere <= 0\n            THEN 'surface_absente'\n        ELSE NULL\n    END AS prix_m2_raison,\n               mg.mono_local AS mutation_mono_local,\n               mg.nb_locaux_maison, mg.nb_locaux_appartement,\n               mg.nb_locaux_commercial,\n               CASE WHEN mg.mono_local THEN (\n        SELECT m2.nombre_lots FROM mutations m2\n        WHERE m2.id_mutation = mg.id_mutation\n          AND m2.code_departement = mg.code_departement\n          AND m2.code_type_local IN ('1', '2')\n        LIMIT 1\n    ) END AS nb_lots_source,\n               mg.nb_parcelles, mg.hors_stats_vefa, mg.surface_bati_totale,\n               mp.id_parcelle\n        FROM mutations_grain mg\n        JOIN mutation_parcelles mp ON mp.id_mutation = mg.id_mutation\n        JOIN parc ON mp.id_parcelle = parc.id_parcelle\n            AND mg.code_departement = CASE\n                WHEN LEFT(parc.id_parcelle, 2) = '97' THEN LEFT(parc.id_parcelle, 3)\n                ELSE LEFT(parc.id_parcelle, 2)\n            END\n        WHERE mg.position IS NOT NULL\n        ORDER BY mg.date_mutation DESC, mg.valeur_fonciere DESC\n        LIMIT :limit\n    "
+    },
+    {
+      "nom": "dvf_appartements_par_parcelle",
+      "source": "appel",
+      "fichier": "app/dvf/queries.py",
+      "symbole": "dvf_appartements_par_parcelle",
+      "appel": {
+        "id_parcelle": "44109000AB0001"
+      },
+      "rang": 0,
+      "tables": [
+        "mutations_grain",
+        "mutation_parcelles"
+      ],
+      "params": {
+        "id_parcelle": "44109000AB0001",
+        "classes_mutation": [
+          "residentiel_appartement",
+          "ensemble_residentiel"
+        ],
+        "surface_min": 10,
+        "limit": 20
+      },
+      "types": {
+        "id_parcelle": "text",
+        "classes_mutation": "text[]"
+      },
+      "variantes": [
+        {
+          "id": "parcelle_85",
+          "id_parcelle": "85191000AB0001"
+        }
+      ],
+      "sql": "\n        SELECT mg.date_mutation,\n               CASE mg.classe_mutation\n        WHEN 'residentiel_maison' THEN 'Maison'\n        WHEN 'residentiel_appartement' THEN 'Appartement'\n        ELSE NULL\n    END AS type_local,\n               mg.surface_bati_totale AS surface_reelle_bati,\n               mg.nombre_pieces_totales AS nombre_pieces_principales,\n               mg.valeur_fonciere,\n               mg.classe_mutation,\n               mg.mono_local,\n               mg.hors_stats_vefa,\n               CASE\n        WHEN mg.classe_mutation NOT IN (\n            'residentiel_maison', 'residentiel_appartement'\n        ) THEN NULL\n        WHEN NOT (mg.est_vente OR mg.hors_stats_vefa) THEN NULL\n        WHEN NOT mg.mono_local\n             OR mg.surface_bati_totale IS NULL OR mg.surface_bati_totale <= 0\n             OR mg.valeur_fonciere IS NULL OR mg.valeur_fonciere <= 0 THEN NULL\n        ELSE ROUND(mg.valeur_fonciere / mg.surface_bati_totale)\n    END AS prix_m2,\n               CASE\n        WHEN mg.classe_mutation = 'mixte' THEN 'vente_mixte'\n        WHEN mg.classe_mutation = 'commerciale' THEN 'mutation_commerciale'\n        WHEN mg.classe_mutation = 'terrain_seul' THEN 'terrain_seul'\n        WHEN mg.classe_mutation NOT IN (\n            'residentiel_maison', 'residentiel_appartement'\n        ) THEN 'mutation_multi_locaux'\n        WHEN NOT (mg.est_vente OR mg.hors_stats_vefa) THEN 'nature_hors_vente'\n        WHEN NOT mg.mono_local\n             OR mg.surface_bati_totale IS NULL OR mg.surface_bati_totale <= 0\n             OR mg.valeur_fonciere IS NULL OR mg.valeur_fonciere <= 0\n            THEN 'surface_absente'\n        ELSE NULL\n    END AS prix_m2_raison,\n               (mg.nb_locaux_maison + mg.nb_locaux_appartement)\n                   AS nb_locaux_residentiel,\n               mg.nb_locaux_commercial\n        FROM mutations_grain mg\n        JOIN mutation_parcelles mp ON mp.id_mutation = mg.id_mutation\n        WHERE mp.id_parcelle = :id_parcelle\n          AND mg.classe_mutation = ANY(:classes_mutation)\n          AND mg.surface_bati_totale >= :surface_min\n          AND mg.code_departement = CASE\n              WHEN LEFT(:id_parcelle, 2) = '97' THEN LEFT(:id_parcelle, 3)\n              ELSE LEFT(:id_parcelle, 2)\n          END\n          AND mg.position IS NOT NULL\n        ORDER BY mg.date_mutation DESC\n        LIMIT :limit\n    "
+    },
+    {
+      "nom": "ventes_page_parcelle",
+      "source": "attribut",
+      "fichier": "app/adresse/ventes.py",
+      "symbole": "_PAGE_PARCELLE_SQL",
+      "rang": 0,
+      "tables": [
+        "mutations_grain",
+        "mutation_parcelles"
+      ],
+      "params": {
+        "id_parcelle": "44109000AB0001",
+        "limit": 10,
+        "offset": 0
+      },
+      "types": {
+        "id_parcelle": "text"
+      },
+      "variantes": [
+        {
+          "id": "parcelle_85",
+          "id_parcelle": "85191000AB0001"
+        }
+      ],
+      "sql": "\n    WITH mutations AS (\n        SELECT DISTINCT ON (mg.id_mutation) \n        mg.id_mutation, mg.date_mutation, mg.nature_mutation,\n        mg.valeur_fonciere, mg.nb_locaux_maison, mg.nb_locaux_appartement,\n        mg.nb_locaux_dependance, mg.nb_locaux_commercial,\n        mg.surface_bati_totale, CASE\n        WHEN mg.classe_mutation NOT IN (\n            'residentiel_maison', 'residentiel_appartement'\n        ) THEN NULL\n        WHEN NOT (mg.est_vente OR mg.hors_stats_vefa) THEN NULL\n        WHEN NOT mg.mono_local\n             OR mg.surface_bati_totale IS NULL OR mg.surface_bati_totale <= 0\n             OR mg.valeur_fonciere IS NULL OR mg.valeur_fonciere <= 0 THEN NULL\n        ELSE ROUND(mg.valeur_fonciere / mg.surface_bati_totale)\n    END AS prix_m2, mg.hors_stats_vefa\n\n        \n        FROM mutations_grain mg\n        JOIN mutation_parcelles mp ON mp.id_mutation = mg.id_mutation\n        WHERE mp.id_parcelle = :id_parcelle\n          AND mg.code_departement = CASE\n              WHEN LEFT(:id_parcelle, 2) = '97' THEN LEFT(:id_parcelle, 3)\n              ELSE LEFT(:id_parcelle, 2)\n          END\n          AND mg.position IS NOT NULL\n\n        ORDER BY mg.id_mutation, mg.id\n    )\n    SELECT * FROM mutations\n    ORDER BY date_mutation DESC, id_mutation\n    LIMIT :limit OFFSET :offset\n"
+    },
+    {
+      "nom": "ventes_isolement",
+      "source": "attribut",
+      "fichier": "app/adresse/ventes.py",
+      "symbole": "_ISOLEMENT_SQL",
+      "rang": 0,
+      "tables": [
+        "mutation_parcelles"
+      ],
+      "params": {
+        "ids": [
+          "2024-0000001",
+          "2024-0000002"
+        ]
+      },
+      "sql": "\n    SELECT c.id_mutation, bool_or(n.nombre = 1) AS isolee\n    FROM mutation_parcelles c\n    CROSS JOIN LATERAL (\n        SELECT count(DISTINCT o.id_mutation) AS nombre\n        FROM mutation_parcelles o\n        WHERE o.id_parcelle = c.id_parcelle\n          AND EXISTS (\n              SELECT 1 FROM mutations_grain mg\n              WHERE mg.id_mutation = o.id_mutation\n                AND mg.code_departement = o.code_departement\n                AND mg.position IS NOT NULL\n          )\n    ) AS n\n    WHERE c.id_mutation = ANY(CAST(:ids AS text[]))\n    GROUP BY c.id_mutation\n"
+    },
+    {
+      "nom": "ventes_ressemblantes_rayon_compte",
+      "source": "attribut",
+      "fichier": "app/adresse/ventes.py",
+      "symbole": "_REQUETES[(False, False)][0]",
+      "rang": 0,
+      "tables": [
+        "mutations_grain"
+      ],
+      "params": {
+        "classe": "residentiel_maison",
+        "debut": "2020-01-01",
+        "fin": "2024-12-31",
+        "lat": 47.2184,
+        "lon": -1.5536,
+        "rayon": 500.0
+      },
+      "types": {
+        "debut": "date",
+        "fin": "date"
+      },
+      "variantes": [
+        {
+          "id": "nantes_r250",
+          "lat": 47.2184,
+          "lon": -1.5536,
+          "rayon": 250.0
+        },
+        {
+          "id": "nantes_r1000",
+          "lat": 47.2184,
+          "lon": -1.5536,
+          "rayon": 1000.0
+        },
+        {
+          "id": "rural_85_r250",
+          "lat": 46.4167,
+          "lon": -0.8167,
+          "rayon": 250.0
+        },
+        {
+          "id": "rural_85_r1000",
+          "lat": 46.4167,
+          "lon": -0.8167,
+          "rayon": 1000.0
+        },
+        {
+          "id": "littoral_44_r250",
+          "lat": 47.27,
+          "lon": -2.21,
+          "rayon": 250.0
+        },
+        {
+          "id": "littoral_44_r1000",
+          "lat": 47.27,
+          "lon": -2.21,
+          "rayon": 1000.0
+        },
+        {
+          "id": "mer_r250",
+          "lat": 46.9,
+          "lon": -3.0,
+          "rayon": 250.0
+        },
+        {
+          "id": "mer_r1000",
+          "lat": 46.9,
+          "lon": -3.0,
+          "rayon": 1000.0
+        }
+      ],
+      "sql": "\n        WITH mutations AS (\n            SELECT DISTINCT ON (mg.id_mutation) mg.id_mutation\n            \n        FROM mutations_grain mg\n        WHERE mg.classe_mutation = :classe\n          AND (mg.est_vente OR mg.hors_stats_vefa)\n          AND mg.date_mutation >= :debut AND mg.date_mutation <= :fin\n          AND mg.position IS NOT NULL\n\n          AND ST_DWithin(mg.position::geography, ST_SetSRID(ST_MakePoint(:lon, :lat), 4326)::geography, :rayon)\n\n            ORDER BY mg.id_mutation, mg.id\n        )\n        SELECT count(*) FROM mutations\n    "
+    },
+    {
+      "nom": "ventes_ressemblantes_rayon_page",
+      "source": "attribut",
+      "fichier": "app/adresse/ventes.py",
+      "symbole": "_REQUETES[(False, False)][1]",
+      "rang": 0,
+      "tables": [
+        "mutations_grain"
+      ],
+      "params": {
+        "classe": "residentiel_maison",
+        "debut": "2020-01-01",
+        "fin": "2024-12-31",
+        "lat": 47.2184,
+        "lon": -1.5536,
+        "rayon": 500.0,
+        "limit": 10,
+        "offset": 0
+      },
+      "types": {
+        "debut": "date",
+        "fin": "date"
+      },
+      "variantes": [
+        {
+          "id": "nantes_r250",
+          "lat": 47.2184,
+          "lon": -1.5536,
+          "rayon": 250.0
+        },
+        {
+          "id": "nantes_r1000",
+          "lat": 47.2184,
+          "lon": -1.5536,
+          "rayon": 1000.0
+        },
+        {
+          "id": "rural_85_r250",
+          "lat": 46.4167,
+          "lon": -0.8167,
+          "rayon": 250.0
+        },
+        {
+          "id": "rural_85_r1000",
+          "lat": 46.4167,
+          "lon": -0.8167,
+          "rayon": 1000.0
+        },
+        {
+          "id": "littoral_44_r250",
+          "lat": 47.27,
+          "lon": -2.21,
+          "rayon": 250.0
+        },
+        {
+          "id": "littoral_44_r1000",
+          "lat": 47.27,
+          "lon": -2.21,
+          "rayon": 1000.0
+        },
+        {
+          "id": "mer_r250",
+          "lat": 46.9,
+          "lon": -3.0,
+          "rayon": 250.0
+        },
+        {
+          "id": "mer_r1000",
+          "lat": 46.9,
+          "lon": -3.0,
+          "rayon": 1000.0
+        }
+      ],
+      "sql": "\n        WITH mutations AS (\n            SELECT DISTINCT ON (mg.id_mutation) \n        mg.id_mutation, mg.date_mutation, mg.nature_mutation,\n        mg.valeur_fonciere, mg.nb_locaux_maison, mg.nb_locaux_appartement,\n        mg.nb_locaux_dependance, mg.nb_locaux_commercial,\n        mg.surface_bati_totale, CASE\n        WHEN mg.classe_mutation NOT IN (\n            'residentiel_maison', 'residentiel_appartement'\n        ) THEN NULL\n        WHEN NOT (mg.est_vente OR mg.hors_stats_vefa) THEN NULL\n        WHEN NOT mg.mono_local\n             OR mg.surface_bati_totale IS NULL OR mg.surface_bati_totale <= 0\n             OR mg.valeur_fonciere IS NULL OR mg.valeur_fonciere <= 0 THEN NULL\n        ELSE ROUND(mg.valeur_fonciere / mg.surface_bati_totale)\n    END AS prix_m2, mg.hors_stats_vefa\n,\n                   ST_Distance(mg.position::geography, ST_SetSRID(ST_MakePoint(:lon, :lat), 4326)::geography) AS distance\n            \n        FROM mutations_grain mg\n        WHERE mg.classe_mutation = :classe\n          AND (mg.est_vente OR mg.hors_stats_vefa)\n          AND mg.date_mutation >= :debut AND mg.date_mutation <= :fin\n          AND mg.position IS NOT NULL\n\n          AND ST_DWithin(mg.position::geography, ST_SetSRID(ST_MakePoint(:lon, :lat), 4326)::geography, :rayon)\n\n            ORDER BY mg.id_mutation, mg.id\n        )\n        SELECT * FROM mutations\n        ORDER BY distance ASC NULLS LAST, date_mutation DESC, id_mutation\n        LIMIT :limit OFFSET :offset\n    "
+    },
+    {
+      "nom": "ventes_ressemblantes_rayon_surface_compte",
+      "source": "attribut",
+      "fichier": "app/adresse/ventes.py",
+      "symbole": "_REQUETES[(True, False)][0]",
+      "rang": 0,
+      "tables": [
+        "mutations_grain"
+      ],
+      "params": {
+        "classe": "residentiel_maison",
+        "debut": "2020-01-01",
+        "fin": "2024-12-31",
+        "lat": 47.2184,
+        "lon": -1.5536,
+        "rayon": 500.0,
+        "surface_min": 72,
+        "surface_max": 108
+      },
+      "types": {
+        "debut": "date",
+        "fin": "date"
+      },
+      "variantes": [
+        {
+          "id": "nantes_r250",
+          "lat": 47.2184,
+          "lon": -1.5536,
+          "rayon": 250.0
+        },
+        {
+          "id": "nantes_r1000",
+          "lat": 47.2184,
+          "lon": -1.5536,
+          "rayon": 1000.0
+        },
+        {
+          "id": "rural_85_r250",
+          "lat": 46.4167,
+          "lon": -0.8167,
+          "rayon": 250.0
+        },
+        {
+          "id": "rural_85_r1000",
+          "lat": 46.4167,
+          "lon": -0.8167,
+          "rayon": 1000.0
+        },
+        {
+          "id": "littoral_44_r250",
+          "lat": 47.27,
+          "lon": -2.21,
+          "rayon": 250.0
+        },
+        {
+          "id": "littoral_44_r1000",
+          "lat": 47.27,
+          "lon": -2.21,
+          "rayon": 1000.0
+        },
+        {
+          "id": "mer_r250",
+          "lat": 46.9,
+          "lon": -3.0,
+          "rayon": 250.0
+        },
+        {
+          "id": "mer_r1000",
+          "lat": 46.9,
+          "lon": -3.0,
+          "rayon": 1000.0
+        }
+      ],
+      "sql": "\n        WITH mutations AS (\n            SELECT DISTINCT ON (mg.id_mutation) mg.id_mutation\n            \n        FROM mutations_grain mg\n        WHERE mg.classe_mutation = :classe\n          AND (mg.est_vente OR mg.hors_stats_vefa)\n          AND mg.date_mutation >= :debut AND mg.date_mutation <= :fin\n          AND mg.position IS NOT NULL\n\n          AND mg.surface_bati_totale >= :surface_min\n          AND mg.surface_bati_totale <= :surface_max\n\n          AND ST_DWithin(mg.position::geography, ST_SetSRID(ST_MakePoint(:lon, :lat), 4326)::geography, :rayon)\n\n            ORDER BY mg.id_mutation, mg.id\n        )\n        SELECT count(*) FROM mutations\n    "
+    },
+    {
+      "nom": "ventes_ressemblantes_rayon_surface_page",
+      "source": "attribut",
+      "fichier": "app/adresse/ventes.py",
+      "symbole": "_REQUETES[(True, False)][1]",
+      "rang": 0,
+      "tables": [
+        "mutations_grain"
+      ],
+      "params": {
+        "classe": "residentiel_maison",
+        "debut": "2020-01-01",
+        "fin": "2024-12-31",
+        "lat": 47.2184,
+        "lon": -1.5536,
+        "rayon": 500.0,
+        "surface_min": 72,
+        "surface_max": 108,
+        "limit": 10,
+        "offset": 0
+      },
+      "types": {
+        "debut": "date",
+        "fin": "date"
+      },
+      "variantes": [
+        {
+          "id": "nantes_r250",
+          "lat": 47.2184,
+          "lon": -1.5536,
+          "rayon": 250.0
+        },
+        {
+          "id": "nantes_r1000",
+          "lat": 47.2184,
+          "lon": -1.5536,
+          "rayon": 1000.0
+        },
+        {
+          "id": "rural_85_r250",
+          "lat": 46.4167,
+          "lon": -0.8167,
+          "rayon": 250.0
+        },
+        {
+          "id": "rural_85_r1000",
+          "lat": 46.4167,
+          "lon": -0.8167,
+          "rayon": 1000.0
+        },
+        {
+          "id": "littoral_44_r250",
+          "lat": 47.27,
+          "lon": -2.21,
+          "rayon": 250.0
+        },
+        {
+          "id": "littoral_44_r1000",
+          "lat": 47.27,
+          "lon": -2.21,
+          "rayon": 1000.0
+        },
+        {
+          "id": "mer_r250",
+          "lat": 46.9,
+          "lon": -3.0,
+          "rayon": 250.0
+        },
+        {
+          "id": "mer_r1000",
+          "lat": 46.9,
+          "lon": -3.0,
+          "rayon": 1000.0
+        }
+      ],
+      "sql": "\n        WITH mutations AS (\n            SELECT DISTINCT ON (mg.id_mutation) \n        mg.id_mutation, mg.date_mutation, mg.nature_mutation,\n        mg.valeur_fonciere, mg.nb_locaux_maison, mg.nb_locaux_appartement,\n        mg.nb_locaux_dependance, mg.nb_locaux_commercial,\n        mg.surface_bati_totale, CASE\n        WHEN mg.classe_mutation NOT IN (\n            'residentiel_maison', 'residentiel_appartement'\n        ) THEN NULL\n        WHEN NOT (mg.est_vente OR mg.hors_stats_vefa) THEN NULL\n        WHEN NOT mg.mono_local\n             OR mg.surface_bati_totale IS NULL OR mg.surface_bati_totale <= 0\n             OR mg.valeur_fonciere IS NULL OR mg.valeur_fonciere <= 0 THEN NULL\n        ELSE ROUND(mg.valeur_fonciere / mg.surface_bati_totale)\n    END AS prix_m2, mg.hors_stats_vefa\n,\n                   ST_Distance(mg.position::geography, ST_SetSRID(ST_MakePoint(:lon, :lat), 4326)::geography) AS distance\n            \n        FROM mutations_grain mg\n        WHERE mg.classe_mutation = :classe\n          AND (mg.est_vente OR mg.hors_stats_vefa)\n          AND mg.date_mutation >= :debut AND mg.date_mutation <= :fin\n          AND mg.position IS NOT NULL\n\n          AND mg.surface_bati_totale >= :surface_min\n          AND mg.surface_bati_totale <= :surface_max\n\n          AND ST_DWithin(mg.position::geography, ST_SetSRID(ST_MakePoint(:lon, :lat), 4326)::geography, :rayon)\n\n            ORDER BY mg.id_mutation, mg.id\n        )\n        SELECT * FROM mutations\n        ORDER BY distance ASC NULLS LAST, date_mutation DESC, id_mutation\n        LIMIT :limit OFFSET :offset\n    "
+    },
+    {
+      "nom": "dpe_par_point",
+      "source": "appel",
+      "fichier": "app/dpe/queries.py",
+      "symbole": "dpe_par_point",
+      "appel": {
+        "lat": 47.2184,
+        "lon": -1.5536
+      },
+      "rang": 0,
+      "tables": [
+        "diagnostics_dpe"
+      ],
+      "params": {
+        "lat": 47.2184,
+        "lon": -1.5536,
+        "rayon_m": 500.0,
+        "limit": 21,
+        "offset": 0
+      },
+      "variantes": [
+        {
+          "id": "nantes_r50",
+          "lat": 47.2184,
+          "lon": -1.5536,
+          "rayon_m": 50.0
+        },
+        {
+          "id": "nantes_r500",
+          "lat": 47.2184,
+          "lon": -1.5536,
+          "rayon_m": 500.0
+        },
+        {
+          "id": "nantes_r5000",
+          "lat": 47.2184,
+          "lon": -1.5536,
+          "rayon_m": 5000.0
+        },
+        {
+          "id": "rural_85_r50",
+          "lat": 46.4167,
+          "lon": -0.8167,
+          "rayon_m": 50.0
+        },
+        {
+          "id": "rural_85_r500",
+          "lat": 46.4167,
+          "lon": -0.8167,
+          "rayon_m": 500.0
+        },
+        {
+          "id": "rural_85_r5000",
+          "lat": 46.4167,
+          "lon": -0.8167,
+          "rayon_m": 5000.0
+        },
+        {
+          "id": "littoral_44_r50",
+          "lat": 47.27,
+          "lon": -2.21,
+          "rayon_m": 50.0
+        },
+        {
+          "id": "littoral_44_r500",
+          "lat": 47.27,
+          "lon": -2.21,
+          "rayon_m": 500.0
+        },
+        {
+          "id": "littoral_44_r5000",
+          "lat": 47.27,
+          "lon": -2.21,
+          "rayon_m": 5000.0
+        },
+        {
+          "id": "mer_r50",
+          "lat": 46.9,
+          "lon": -3.0,
+          "rayon_m": 50.0
+        },
+        {
+          "id": "mer_r500",
+          "lat": 46.9,
+          "lon": -3.0,
+          "rayon_m": 500.0
+        },
+        {
+          "id": "mer_r5000",
+          "lat": 46.9,
+          "lon": -3.0,
+          "rayon_m": 5000.0
+        },
+        {
+          "id": "nantes_r5000_l101",
+          "lat": 47.2184,
+          "lon": -1.5536,
+          "rayon_m": 5000.0,
+          "limit": 101
+        }
+      ],
+      "sql": "\n        SELECT numero_dpe, date_etablissement_dpe, annee_construction, periode_construction, type_batiment, surface_habitable, etiquette_dpe, etiquette_ges, type_installation_chauffage, type_energie_principale_chauffage, conso_5_usages_ep, emission_ges_5_usages, cout_total_5_usages, qualite_isolation_enveloppe, code_postal, code_insee, nom_commune,\n               ST_X(position) AS longitude,\n               ST_Y(position) AS latitude\n        FROM diagnostics_dpe\n        WHERE position IS NOT NULL AND NOT is_tombstone AND source_state NOT IN ('absent_from_complete_scope', 'explicitly_deactivated') AND ST_DWithin(    position::geography,    ST_SetSRID(ST_MakePoint(:lon, :lat), 4326)::geography,    :rayon_m)\n        ORDER BY position::geography\n            <-> ST_SetSRID(ST_MakePoint(:lon, :lat), 4326)::geography\n        LIMIT :limit OFFSET :offset\n    "
+    },
+    {
+      "nom": "dpe_par_point_annee",
+      "source": "appel",
+      "fichier": "app/dpe/queries.py",
+      "symbole": "dpe_par_point",
+      "appel": {
+        "lat": 47.2184,
+        "lon": -1.5536,
+        "annee_min": 1970
+      },
+      "rang": 0,
+      "tables": [
+        "diagnostics_dpe"
+      ],
+      "params": {
+        "lat": 47.2184,
+        "lon": -1.5536,
+        "rayon_m": 500.0,
+        "limit": 21,
+        "offset": 0,
+        "annee_min": 1970
+      },
+      "variantes": [
+        {
+          "id": "nantes_r500",
+          "lat": 47.2184,
+          "lon": -1.5536,
+          "rayon_m": 500.0
+        },
+        {
+          "id": "nantes_r5000",
+          "lat": 47.2184,
+          "lon": -1.5536,
+          "rayon_m": 5000.0
+        },
+        {
+          "id": "rural_85_r500",
+          "lat": 46.4167,
+          "lon": -0.8167,
+          "rayon_m": 500.0
+        },
+        {
+          "id": "rural_85_r5000",
+          "lat": 46.4167,
+          "lon": -0.8167,
+          "rayon_m": 5000.0
+        },
+        {
+          "id": "littoral_44_r500",
+          "lat": 47.27,
+          "lon": -2.21,
+          "rayon_m": 500.0
+        },
+        {
+          "id": "littoral_44_r5000",
+          "lat": 47.27,
+          "lon": -2.21,
+          "rayon_m": 5000.0
+        },
+        {
+          "id": "mer_r500",
+          "lat": 46.9,
+          "lon": -3.0,
+          "rayon_m": 500.0
+        },
+        {
+          "id": "mer_r5000",
+          "lat": 46.9,
+          "lon": -3.0,
+          "rayon_m": 5000.0
+        }
+      ],
+      "sql": "\n        SELECT numero_dpe, date_etablissement_dpe, annee_construction, periode_construction, type_batiment, surface_habitable, etiquette_dpe, etiquette_ges, type_installation_chauffage, type_energie_principale_chauffage, conso_5_usages_ep, emission_ges_5_usages, cout_total_5_usages, qualite_isolation_enveloppe, code_postal, code_insee, nom_commune,\n               ST_X(position) AS longitude,\n               ST_Y(position) AS latitude\n        FROM diagnostics_dpe\n        WHERE position IS NOT NULL AND NOT is_tombstone AND source_state NOT IN ('absent_from_complete_scope', 'explicitly_deactivated') AND ST_DWithin(    position::geography,    ST_SetSRID(ST_MakePoint(:lon, :lat), 4326)::geography,    :rayon_m) AND annee_construction >= :annee_min\n        ORDER BY position::geography\n            <-> ST_SetSRID(ST_MakePoint(:lon, :lat), 4326)::geography\n        LIMIT :limit OFFSET :offset\n    "
+    },
+    {
+      "nom": "dpe_par_point_etiquette",
+      "source": "appel",
+      "fichier": "app/dpe/queries.py",
+      "symbole": "dpe_par_point",
+      "appel": {
+        "lat": 47.2184,
+        "lon": -1.5536,
+        "etiquette_dpe": "F"
+      },
+      "rang": 0,
+      "tables": [
+        "diagnostics_dpe"
+      ],
+      "params": {
+        "lat": 47.2184,
+        "lon": -1.5536,
+        "rayon_m": 500.0,
+        "limit": 21,
+        "offset": 0,
+        "etiquette_dpe": "F"
+      },
+      "variantes": [
+        {
+          "id": "nantes_r500",
+          "lat": 47.2184,
+          "lon": -1.5536,
+          "rayon_m": 500.0
+        },
+        {
+          "id": "nantes_r5000",
+          "lat": 47.2184,
+          "lon": -1.5536,
+          "rayon_m": 5000.0
+        },
+        {
+          "id": "rural_85_r500",
+          "lat": 46.4167,
+          "lon": -0.8167,
+          "rayon_m": 500.0
+        },
+        {
+          "id": "rural_85_r5000",
+          "lat": 46.4167,
+          "lon": -0.8167,
+          "rayon_m": 5000.0
+        },
+        {
+          "id": "littoral_44_r500",
+          "lat": 47.27,
+          "lon": -2.21,
+          "rayon_m": 500.0
+        },
+        {
+          "id": "littoral_44_r5000",
+          "lat": 47.27,
+          "lon": -2.21,
+          "rayon_m": 5000.0
+        },
+        {
+          "id": "mer_r500",
+          "lat": 46.9,
+          "lon": -3.0,
+          "rayon_m": 500.0
+        },
+        {
+          "id": "mer_r5000",
+          "lat": 46.9,
+          "lon": -3.0,
+          "rayon_m": 5000.0
+        },
+        {
+          "id": "nantes_r5000_etiquette_A",
+          "lat": 47.2184,
+          "lon": -1.5536,
+          "rayon_m": 5000.0,
+          "etiquette_dpe": "A"
+        }
+      ],
+      "sql": "\n        SELECT numero_dpe, date_etablissement_dpe, annee_construction, periode_construction, type_batiment, surface_habitable, etiquette_dpe, etiquette_ges, type_installation_chauffage, type_energie_principale_chauffage, conso_5_usages_ep, emission_ges_5_usages, cout_total_5_usages, qualite_isolation_enveloppe, code_postal, code_insee, nom_commune,\n               ST_X(position) AS longitude,\n               ST_Y(position) AS latitude\n        FROM diagnostics_dpe\n        WHERE position IS NOT NULL AND NOT is_tombstone AND source_state NOT IN ('absent_from_complete_scope', 'explicitly_deactivated') AND ST_DWithin(    position::geography,    ST_SetSRID(ST_MakePoint(:lon, :lat), 4326)::geography,    :rayon_m) AND etiquette_dpe = :etiquette_dpe\n        ORDER BY position::geography\n            <-> ST_SetSRID(ST_MakePoint(:lon, :lat), 4326)::geography\n        LIMIT :limit OFFSET :offset\n    "
+    },
+    {
+      "nom": "dpe_par_point_etiquette_annee",
+      "source": "appel",
+      "fichier": "app/dpe/queries.py",
+      "symbole": "dpe_par_point",
+      "appel": {
+        "lat": 47.2184,
+        "lon": -1.5536,
+        "etiquette_dpe": "F",
+        "annee_min": 1970
+      },
+      "rang": 0,
+      "tables": [
+        "diagnostics_dpe"
+      ],
+      "params": {
+        "lat": 47.2184,
+        "lon": -1.5536,
+        "rayon_m": 500.0,
+        "limit": 21,
+        "offset": 0,
+        "etiquette_dpe": "F",
+        "annee_min": 1970
+      },
+      "variantes": [
+        {
+          "id": "nantes_r500",
+          "lat": 47.2184,
+          "lon": -1.5536,
+          "rayon_m": 500.0
+        },
+        {
+          "id": "nantes_r5000",
+          "lat": 47.2184,
+          "lon": -1.5536,
+          "rayon_m": 5000.0
+        },
+        {
+          "id": "rural_85_r500",
+          "lat": 46.4167,
+          "lon": -0.8167,
+          "rayon_m": 500.0
+        },
+        {
+          "id": "rural_85_r5000",
+          "lat": 46.4167,
+          "lon": -0.8167,
+          "rayon_m": 5000.0
+        },
+        {
+          "id": "littoral_44_r500",
+          "lat": 47.27,
+          "lon": -2.21,
+          "rayon_m": 500.0
+        },
+        {
+          "id": "littoral_44_r5000",
+          "lat": 47.27,
+          "lon": -2.21,
+          "rayon_m": 5000.0
+        },
+        {
+          "id": "mer_r500",
+          "lat": 46.9,
+          "lon": -3.0,
+          "rayon_m": 500.0
+        },
+        {
+          "id": "mer_r5000",
+          "lat": 46.9,
+          "lon": -3.0,
+          "rayon_m": 5000.0
+        },
+        {
+          "id": "nantes_r5000_etiquette_A",
+          "lat": 47.2184,
+          "lon": -1.5536,
+          "rayon_m": 5000.0,
+          "etiquette_dpe": "A"
+        }
+      ],
+      "sql": "\n        SELECT numero_dpe, date_etablissement_dpe, annee_construction, periode_construction, type_batiment, surface_habitable, etiquette_dpe, etiquette_ges, type_installation_chauffage, type_energie_principale_chauffage, conso_5_usages_ep, emission_ges_5_usages, cout_total_5_usages, qualite_isolation_enveloppe, code_postal, code_insee, nom_commune,\n               ST_X(position) AS longitude,\n               ST_Y(position) AS latitude\n        FROM diagnostics_dpe\n        WHERE position IS NOT NULL AND NOT is_tombstone AND source_state NOT IN ('absent_from_complete_scope', 'explicitly_deactivated') AND ST_DWithin(    position::geography,    ST_SetSRID(ST_MakePoint(:lon, :lat), 4326)::geography,    :rayon_m) AND etiquette_dpe = :etiquette_dpe AND annee_construction >= :annee_min\n        ORDER BY position::geography\n            <-> ST_SetSRID(ST_MakePoint(:lon, :lat), 4326)::geography\n        LIMIT :limit OFFSET :offset\n    "
+    },
+    {
+      "nom": "dpe_appartements_par_parcelle",
+      "source": "appel",
+      "fichier": "app/logements/queries.py",
+      "symbole": "dpe_appartements_par_parcelle",
+      "appel": {
+        "id_parcelle": "44109000AB0001"
+      },
+      "rang": 0,
+      "tables": [
+        "parcelles",
+        "diagnostics_dpe"
+      ],
+      "remarque": "aucun appelant dans app/ (relevé le 2026-10-20)",
+      "params": {
+        "id_parcelle": "44109000AB0001",
+        "limit": 120,
+        "rayon_m": 12.0,
+        "marge_m": 2.0
+      },
+      "types": {
+        "id_parcelle": "text"
+      },
+      "variantes": [
+        {
+          "id": "parcelle_85",
+          "id_parcelle": "85191000AB0001"
+        }
+      ],
+      "sql": "\n        WITH parc AS (\n            SELECT geometrie FROM parcelles\n            WHERE id_parcelle = :id_parcelle\n              AND code_departement = CASE\n                  WHEN LEFT(:id_parcelle, 2) = '97' THEN LEFT(:id_parcelle, 3)\n                  ELSE LEFT(:id_parcelle, 2)\n              END\n            LIMIT 1\n        ),\n        candidats AS (\n            SELECT d.numero_dpe,\n            d.date_etablissement_dpe,\n            d.date_fin_validite_dpe,\n            d.numero_dpe_remplace,\n            d.type_batiment,\n            d.surface_habitable,\n            d.etiquette_dpe,\n            d.numero_etage_appartement,\n            d.complement_adresse_logement,\n            d.identifiant_ban,\n            d.position,\n            ST_Distance(\n                parc.geometrie::geography, d.position::geography\n            ) AS distance_m\n            FROM diagnostics_dpe d\n            JOIN parc ON ST_DWithin(\n                parc.geometrie,\n                d.position,\n                :rayon_m / (111320.0 * GREATEST(COS(RADIANS(ST_Y(d.position))), 0.01))\n            )\n            WHERE d.type_batiment = 'appartement'\n              -- A document kept without source geometry (DATA-02) is never\n              -- attached spatially.\n              AND d.position IS NOT NULL\n            \n        )\n        SELECT c.numero_dpe,\n            c.date_etablissement_dpe,\n            c.date_fin_validite_dpe,\n            c.numero_dpe_remplace,\n            c.type_batiment,\n            c.surface_habitable,\n            c.etiquette_dpe,\n            c.numero_etage_appartement,\n            c.complement_adresse_logement,\n            c.identifiant_ban\n        FROM candidats c\n        WHERE c.distance_m <= :rayon_m\n          AND (\n            c.distance_m = 0\n            OR NOT EXISTS (\n                SELECT 1 FROM parcelles p\n                WHERE p.code_departement = CASE\n                  WHEN LEFT(:id_parcelle, 2) = '97' THEN LEFT(:id_parcelle, 3)\n                  ELSE LEFT(:id_parcelle, 2)\n              END\n                  AND p.id_parcelle <> :id_parcelle\n                  AND ST_DWithin(\n                      p.geometrie,\n                      c.position,\n                      (c.distance_m + :marge_m)\n                      / (111320.0 * GREATEST(COS(RADIANS(ST_Y(c.position))), 0.01))\n                  )\n                  AND ST_Distance(p.geometrie::geography, c.position::geography)\n                      < c.distance_m + :marge_m\n            )\n          )\n        ORDER BY c.date_etablissement_dpe DESC\n        LIMIT :limit\n    "
+    },
+    {
+      "nom": "dpe_appartements_par_parcelle_sans_cle",
+      "source": "appel",
+      "fichier": "app/logements/queries.py",
+      "symbole": "dpe_appartements_par_parcelle",
+      "appel": {
+        "id_parcelle": "44109000AB0001",
+        "seulement_sans_cle": true
+      },
+      "rang": 0,
+      "tables": [
+        "parcelles",
+        "diagnostics_dpe"
+      ],
+      "remarque": "aucun appelant dans app/ (relevé le 2026-10-20)",
+      "params": {
+        "id_parcelle": "44109000AB0001",
+        "limit": 120,
+        "rayon_m": 12.0,
+        "marge_m": 2.0
+      },
+      "types": {
+        "id_parcelle": "text"
+      },
+      "variantes": [
+        {
+          "id": "parcelle_85",
+          "id_parcelle": "85191000AB0001"
+        }
+      ],
+      "sql": "\n        WITH parc AS (\n            SELECT geometrie FROM parcelles\n            WHERE id_parcelle = :id_parcelle\n              AND code_departement = CASE\n                  WHEN LEFT(:id_parcelle, 2) = '97' THEN LEFT(:id_parcelle, 3)\n                  ELSE LEFT(:id_parcelle, 2)\n              END\n            LIMIT 1\n        ),\n        candidats AS (\n            SELECT d.numero_dpe,\n            d.date_etablissement_dpe,\n            d.date_fin_validite_dpe,\n            d.numero_dpe_remplace,\n            d.type_batiment,\n            d.surface_habitable,\n            d.etiquette_dpe,\n            d.numero_etage_appartement,\n            d.complement_adresse_logement,\n            d.identifiant_ban,\n            d.position,\n            ST_Distance(\n                parc.geometrie::geography, d.position::geography\n            ) AS distance_m\n            FROM diagnostics_dpe d\n            JOIN parc ON ST_DWithin(\n                parc.geometrie,\n                d.position,\n                :rayon_m / (111320.0 * GREATEST(COS(RADIANS(ST_Y(d.position))), 0.01))\n            )\n            WHERE d.type_batiment = 'appartement'\n              -- A document kept without source geometry (DATA-02) is never\n              -- attached spatially.\n              AND d.position IS NOT NULL\n            AND d.identifiant_ban IS NULL\n        )\n        SELECT c.numero_dpe,\n            c.date_etablissement_dpe,\n            c.date_fin_validite_dpe,\n            c.numero_dpe_remplace,\n            c.type_batiment,\n            c.surface_habitable,\n            c.etiquette_dpe,\n            c.numero_etage_appartement,\n            c.complement_adresse_logement,\n            c.identifiant_ban\n        FROM candidats c\n        WHERE c.distance_m <= :rayon_m\n          AND (\n            c.distance_m = 0\n            OR NOT EXISTS (\n                SELECT 1 FROM parcelles p\n                WHERE p.code_departement = CASE\n                  WHEN LEFT(:id_parcelle, 2) = '97' THEN LEFT(:id_parcelle, 3)\n                  ELSE LEFT(:id_parcelle, 2)\n              END\n                  AND p.id_parcelle <> :id_parcelle\n                  AND ST_DWithin(\n                      p.geometrie,\n                      c.position,\n                      (c.distance_m + :marge_m)\n                      / (111320.0 * GREATEST(COS(RADIANS(ST_Y(c.position))), 0.01))\n                  )\n                  AND ST_Distance(p.geometrie::geography, c.position::geography)\n                      < c.distance_m + :marge_m\n            )\n          )\n        ORDER BY c.date_etablissement_dpe DESC\n        LIMIT :limit\n    "
+    },
+    {
+      "nom": "zone_resolve_dpe_commune_compte",
+      "source": "appel",
+      "fichier": "app/zone/queries.py",
+      "symbole": "zone_resolve_dpe",
+      "appel": {
+        "zone_type": "commune",
+        "code": "44109"
+      },
+      "rang": 0,
+      "tables": [
+        "diagnostics_dpe"
+      ],
+      "params": {
+        "codes": [
+          "44109"
+        ]
+      },
+      "types": {
+        "codes": "text[]"
+      },
+      "variantes": [
+        {
+          "id": "code_85191",
+          "codes": [
+            "85191"
+          ]
+        }
+      ],
+      "sql": "SELECT COUNT(*) FROM diagnostics_dpe WHERE code_insee = ANY(CAST(:codes AS text[]))"
+    },
+    {
+      "nom": "zone_resolve_dpe_commune_page",
+      "source": "appel",
+      "fichier": "app/zone/queries.py",
+      "symbole": "zone_resolve_dpe",
+      "appel": {
+        "zone_type": "commune",
+        "code": "44109"
+      },
+      "rang": 1,
+      "tables": [
+        "diagnostics_dpe"
+      ],
+      "params": {
+        "limit": 25,
+        "offset": 0,
+        "codes": [
+          "44109"
+        ]
+      },
+      "types": {
+        "codes": "text[]"
+      },
+      "variantes": [
+        {
+          "id": "code_85191",
+          "codes": [
+            "85191"
+          ]
+        }
+      ],
+      "sql": "\n        SELECT numero_dpe, date_etablissement_dpe, annee_construction, periode_construction, type_batiment, surface_habitable, etiquette_dpe, etiquette_ges, type_installation_chauffage, type_energie_principale_chauffage, conso_5_usages_ep, emission_ges_5_usages, cout_total_5_usages, qualite_isolation_enveloppe, code_postal, code_insee, nom_commune,\n               longitude, latitude\n        FROM diagnostics_dpe\n        WHERE code_insee = ANY(CAST(:codes AS text[]))\n        ORDER BY date_etablissement_dpe DESC NULLS LAST\n        LIMIT :limit OFFSET :offset\n    "
+    },
+    {
+      "nom": "zone_resolve_dpe_commune_etiquette_compte",
+      "source": "appel",
+      "fichier": "app/zone/queries.py",
+      "symbole": "zone_resolve_dpe",
+      "appel": {
+        "zone_type": "commune",
+        "code": "44109",
+        "dpe": "F"
+      },
+      "rang": 0,
+      "tables": [
+        "diagnostics_dpe"
+      ],
+      "params": {
+        "dpe": "F",
+        "codes": [
+          "44109"
+        ]
+      },
+      "types": {
+        "codes": "text[]"
+      },
+      "variantes": [
+        {
+          "id": "code_85191",
+          "codes": [
+            "85191"
+          ]
+        }
+      ],
+      "sql": "SELECT COUNT(*) FROM diagnostics_dpe WHERE code_insee = ANY(CAST(:codes AS text[])) AND etiquette_dpe = :dpe"
+    },
+    {
+      "nom": "zone_resolve_dpe_commune_etiquette_page",
+      "source": "appel",
+      "fichier": "app/zone/queries.py",
+      "symbole": "zone_resolve_dpe",
+      "appel": {
+        "zone_type": "commune",
+        "code": "44109",
+        "dpe": "F"
+      },
+      "rang": 1,
+      "tables": [
+        "diagnostics_dpe"
+      ],
+      "params": {
+        "dpe": "F",
+        "limit": 25,
+        "offset": 0,
+        "codes": [
+          "44109"
+        ]
+      },
+      "types": {
+        "codes": "text[]"
+      },
+      "variantes": [
+        {
+          "id": "code_85191",
+          "codes": [
+            "85191"
+          ]
+        }
+      ],
+      "sql": "\n        SELECT numero_dpe, date_etablissement_dpe, annee_construction, periode_construction, type_batiment, surface_habitable, etiquette_dpe, etiquette_ges, type_installation_chauffage, type_energie_principale_chauffage, conso_5_usages_ep, emission_ges_5_usages, cout_total_5_usages, qualite_isolation_enveloppe, code_postal, code_insee, nom_commune,\n               longitude, latitude\n        FROM diagnostics_dpe\n        WHERE code_insee = ANY(CAST(:codes AS text[])) AND etiquette_dpe = :dpe\n        ORDER BY date_etablissement_dpe DESC NULLS LAST\n        LIMIT :limit OFFSET :offset\n    "
+    },
+    {
+      "nom": "zone_stats_dpe_commune",
+      "source": "appel",
+      "fichier": "app/zone/queries.py",
+      "symbole": "zone_stats_dpe",
+      "appel": {
+        "zone_type": "commune",
+        "code": "44109"
+      },
+      "rang": 0,
+      "tables": [
+        "diagnostics_dpe"
+      ],
+      "params": {
+        "codes": [
+          "44109"
+        ]
+      },
+      "types": {
+        "codes": "text[]"
+      },
+      "variantes": [
+        {
+          "id": "code_85191",
+          "codes": [
+            "85191"
+          ]
+        }
+      ],
+      "sql": "\n        SELECT etiquette_dpe, COUNT(*) AS cnt\n        FROM diagnostics_dpe\n        WHERE code_insee = ANY(CAST(:codes AS text[]))\n          AND etiquette_dpe IS NOT NULL\n        GROUP BY etiquette_dpe\n        ORDER BY etiquette_dpe\n    "
+    },
+    {
+      "nom": "zone_resolve_dpe_departement_compte",
+      "source": "appel",
+      "fichier": "app/zone/queries.py",
+      "symbole": "zone_resolve_dpe",
+      "appel": {
+        "zone_type": "departement",
+        "code": "44"
+      },
+      "rang": 0,
+      "tables": [
+        "diagnostics_dpe"
+      ],
+      "params": {
+        "code": "44"
+      },
+      "types": {
+        "code": "text"
+      },
+      "variantes": [
+        {
+          "id": "code_85",
+          "code": "85"
+        }
+      ],
+      "sql": "SELECT COUNT(*) FROM diagnostics_dpe WHERE code_departement = :code"
+    },
+    {
+      "nom": "zone_resolve_dpe_departement_page",
+      "source": "appel",
+      "fichier": "app/zone/queries.py",
+      "symbole": "zone_resolve_dpe",
+      "appel": {
+        "zone_type": "departement",
+        "code": "44"
+      },
+      "rang": 1,
+      "tables": [
+        "diagnostics_dpe"
+      ],
+      "params": {
+        "code": "44",
+        "limit": 25,
+        "offset": 0
+      },
+      "types": {
+        "code": "text"
+      },
+      "variantes": [
+        {
+          "id": "code_85",
+          "code": "85"
+        }
+      ],
+      "sql": "\n        SELECT numero_dpe, date_etablissement_dpe, annee_construction, periode_construction, type_batiment, surface_habitable, etiquette_dpe, etiquette_ges, type_installation_chauffage, type_energie_principale_chauffage, conso_5_usages_ep, emission_ges_5_usages, cout_total_5_usages, qualite_isolation_enveloppe, code_postal, code_insee, nom_commune,\n               longitude, latitude\n        FROM diagnostics_dpe\n        WHERE code_departement = :code\n        ORDER BY date_etablissement_dpe DESC NULLS LAST\n        LIMIT :limit OFFSET :offset\n    "
+    },
+    {
+      "nom": "zone_resolve_dpe_departement_etiquette_compte",
+      "source": "appel",
+      "fichier": "app/zone/queries.py",
+      "symbole": "zone_resolve_dpe",
+      "appel": {
+        "zone_type": "departement",
+        "code": "44",
+        "dpe": "F"
+      },
+      "rang": 0,
+      "tables": [
+        "diagnostics_dpe"
+      ],
+      "params": {
+        "code": "44",
+        "dpe": "F"
+      },
+      "types": {
+        "code": "text"
+      },
+      "variantes": [
+        {
+          "id": "code_85",
+          "code": "85"
+        }
+      ],
+      "sql": "SELECT COUNT(*) FROM diagnostics_dpe WHERE code_departement = :code AND etiquette_dpe = :dpe"
+    },
+    {
+      "nom": "zone_resolve_dpe_departement_etiquette_page",
+      "source": "appel",
+      "fichier": "app/zone/queries.py",
+      "symbole": "zone_resolve_dpe",
+      "appel": {
+        "zone_type": "departement",
+        "code": "44",
+        "dpe": "F"
+      },
+      "rang": 1,
+      "tables": [
+        "diagnostics_dpe"
+      ],
+      "params": {
+        "code": "44",
+        "dpe": "F",
+        "limit": 25,
+        "offset": 0
+      },
+      "types": {
+        "code": "text"
+      },
+      "variantes": [
+        {
+          "id": "code_85",
+          "code": "85"
+        }
+      ],
+      "sql": "\n        SELECT numero_dpe, date_etablissement_dpe, annee_construction, periode_construction, type_batiment, surface_habitable, etiquette_dpe, etiquette_ges, type_installation_chauffage, type_energie_principale_chauffage, conso_5_usages_ep, emission_ges_5_usages, cout_total_5_usages, qualite_isolation_enveloppe, code_postal, code_insee, nom_commune,\n               longitude, latitude\n        FROM diagnostics_dpe\n        WHERE code_departement = :code AND etiquette_dpe = :dpe\n        ORDER BY date_etablissement_dpe DESC NULLS LAST\n        LIMIT :limit OFFSET :offset\n    "
+    },
+    {
+      "nom": "zone_stats_dpe_departement",
+      "source": "appel",
+      "fichier": "app/zone/queries.py",
+      "symbole": "zone_stats_dpe",
+      "appel": {
+        "zone_type": "departement",
+        "code": "44"
+      },
+      "rang": 0,
+      "tables": [
+        "diagnostics_dpe"
+      ],
+      "params": {
+        "code": "44"
+      },
+      "types": {
+        "code": "text"
+      },
+      "variantes": [
+        {
+          "id": "code_85",
+          "code": "85"
+        }
+      ],
+      "sql": "\n        SELECT etiquette_dpe, COUNT(*) AS cnt\n        FROM diagnostics_dpe\n        WHERE code_departement = :code\n          AND etiquette_dpe IS NOT NULL\n        GROUP BY etiquette_dpe\n        ORDER BY etiquette_dpe\n    "
+    },
+    {
+      "nom": "qualite_dpe_format_code_insee",
+      "source": "appel",
+      "fichier": "app/data_quality/profiles.py",
+      "symbole": "check_format",
+      "appel": {
+        "profile": {
+          "attribut": "PROFILES['dpe']"
+        }
+      },
+      "rang": 2,
+      "binds": "psycopg",
+      "tables": [
+        "diagnostics_dpe"
+      ],
+      "params": {
+        "p1": 5
+      },
+      "sql": "SELECT count(*) FROM \"diagnostics_dpe\" WHERE length(\"code_insee\") != :p1 AND \"code_insee\" IS NOT NULL"
+    },
+    {
+      "nom": "qualite_dpe_format_etiquette",
+      "source": "appel",
+      "fichier": "app/data_quality/profiles.py",
+      "symbole": "check_format",
+      "appel": {
+        "profile": {
+          "attribut": "PROFILES['dpe']"
+        }
+      },
+      "rang": 3,
+      "binds": "psycopg",
+      "tables": [
+        "diagnostics_dpe"
+      ],
+      "params": {
+        "p1": "A",
+        "p2": "B",
+        "p3": "C",
+        "p4": "D",
+        "p5": "E",
+        "p6": "F",
+        "p7": "G",
+        "p8": "N"
+      },
+      "sql": "SELECT count(*) FROM \"diagnostics_dpe\" WHERE \"etiquette_dpe\" NOT IN (:p1, :p2, :p3, :p4, :p5, :p6, :p7, :p8) AND \"etiquette_dpe\" IS NOT NULL"
+    },
+    {
+      "nom": "qualite_dpe_integrite_code_insee",
+      "source": "appel",
+      "fichier": "app/data_quality/profiles.py",
+      "symbole": "check_integrity",
+      "appel": {
+        "profile": {
+          "attribut": "PROFILES['dpe']"
+        }
+      },
+      "rang": 1,
+      "binds": "psycopg",
+      "tables": [
+        "diagnostics_dpe"
+      ],
+      "params": {},
+      "sql": "SELECT  count(*) FILTER (WHERE t.\"code_insee\" IS NOT NULL) AS total_non_null,  count(*) FILTER (    WHERE t.\"code_insee\" IS NOT NULL      AND ref.\"code\" IS NULL  ) AS orphans FROM \"diagnostics_dpe\" t LEFT JOIN geo_communes ref   ON ref.\"code\" = t.\"code_insee\""
+    },
+    {
+      "nom": "vue_v_commune_dvf",
+      "source": "pg_matviews",
+      "matview": "v_commune_dvf",
+      "tables": [
+        "mutations_grain"
+      ]
+    },
+    {
+      "nom": "vue_v_commune_dpe",
+      "source": "pg_matviews",
+      "matview": "v_commune_dpe",
+      "tables": [
+        "diagnostics_dpe"
+      ]
+    },
+    {
+      "nom": "vue_v_commune_foncier_pm",
+      "source": "pg_matviews",
+      "matview": "v_commune_foncier_pm",
+      "tables": [
+        "foncier_pm"
+      ]
+    },
+    {
+      "nom": "vue_scoring_renov_target",
+      "source": "pg_matviews",
+      "matview": "scoring_renov_target",
+      "tables": [
+        "diagnostics_dpe",
+        "parcelles",
+        "mutations"
+      ]
+    },
+    {
+      "nom": "foncier_pm_par_codes",
+      "source": "appel",
+      "fichier": "app/foncier_pm/queries.py",
+      "symbole": "foncier_pm_par_codes",
+      "appel": {
+        "codes": [
+          "44109"
+        ]
+      },
+      "rang": 0,
+      "tables": [
+        "foncier_pm"
+      ],
+      "params": {
+        "codes": [
+          "44109"
+        ],
+        "limit": 21,
+        "offset": 0
+      },
+      "types": {
+        "codes": "text[]"
+      },
+      "variantes": [
+        {
+          "id": "codes_85191",
+          "codes": [
+            "85191"
+          ]
+        },
+        {
+          "id": "codes_44_85",
+          "codes": [
+            "44109",
+            "85191"
+          ]
+        }
+      ],
+      "sql": "\n        SELECT \n    fp.code_parcelle,\n    fp.code_commune,\n    fp.nom_commune,\n    fp.adresse,\n    fp.contenance_parcelle,\n    fp.nature_culture,\n    fp.code_droit,\n    fp.numero_siren,\n    fp.groupe_personne,\n    fp.forme_juridique_abregee,\n    fp.denomination\n\n        FROM foncier_pm fp\n        WHERE fp.code_commune = ANY(:codes)\n        ORDER BY fp.code_parcelle, fp.numero_siren\n        LIMIT :limit OFFSET :offset\n    "
+    },
+    {
+      "nom": "foncier_pm_par_point",
+      "source": "appel",
+      "fichier": "app/foncier_pm/queries.py",
+      "symbole": "foncier_pm_par_point",
+      "appel": {
+        "lat": 47.2184,
+        "lon": -1.5536
+      },
+      "rang": 0,
+      "tables": [
+        "geo_communes",
+        "foncier_pm"
+      ],
+      "params": {
+        "lat": 47.2184,
+        "lon": -1.5536,
+        "rayon_m": 500.0,
+        "limit": 21,
+        "offset": 0
+      },
+      "variantes": [
+        {
+          "id": "nantes_r50",
+          "lat": 47.2184,
+          "lon": -1.5536,
+          "rayon_m": 50.0
+        },
+        {
+          "id": "nantes_r5000",
+          "lat": 47.2184,
+          "lon": -1.5536,
+          "rayon_m": 5000.0
+        },
+        {
+          "id": "rural_85_r50",
+          "lat": 46.4167,
+          "lon": -0.8167,
+          "rayon_m": 50.0
+        },
+        {
+          "id": "rural_85_r5000",
+          "lat": 46.4167,
+          "lon": -0.8167,
+          "rayon_m": 5000.0
+        },
+        {
+          "id": "littoral_44_r50",
+          "lat": 47.27,
+          "lon": -2.21,
+          "rayon_m": 50.0
+        },
+        {
+          "id": "littoral_44_r5000",
+          "lat": 47.27,
+          "lon": -2.21,
+          "rayon_m": 5000.0
+        },
+        {
+          "id": "mer_r50",
+          "lat": 46.9,
+          "lon": -3.0,
+          "rayon_m": 50.0
+        },
+        {
+          "id": "mer_r5000",
+          "lat": 46.9,
+          "lon": -3.0,
+          "rayon_m": 5000.0
+        }
+      ],
+      "sql": "\n        WITH communes_in_radius AS (\n            SELECT g.code AS commune\n            FROM geo_communes g\n            WHERE ST_DWithin(\n                g.geometry::geography,\n                ST_SetSRID(ST_MakePoint(:lon, :lat), 4326)::geography,\n                :rayon_m\n            )\n        )\n        SELECT \n    fp.code_parcelle,\n    fp.code_commune,\n    fp.nom_commune,\n    fp.adresse,\n    fp.contenance_parcelle,\n    fp.nature_culture,\n    fp.code_droit,\n    fp.numero_siren,\n    fp.groupe_personne,\n    fp.forme_juridique_abregee,\n    fp.denomination\n\n        FROM foncier_pm fp\n        WHERE fp.code_commune IN (SELECT commune FROM communes_in_radius)\n        ORDER BY fp.code_parcelle, fp.numero_siren\n        LIMIT :limit OFFSET :offset\n    "
+    },
+    {
+      "nom": "foncier_pm_par_codes_denomination",
+      "source": "appel",
+      "fichier": "app/foncier_pm/queries.py",
+      "symbole": "foncier_pm_par_codes",
+      "appel": {
+        "codes": [
+          "44109"
+        ],
+        "denomination": "COMMUNE DE NANTES"
+      },
+      "rang": 0,
+      "tables": [
+        "foncier_pm"
+      ],
+      "params": {
+        "codes": [
+          "44109"
+        ],
+        "limit": 21,
+        "offset": 0,
+        "denomination": "%COMMUNE DE NANTES%"
+      },
+      "types": {
+        "codes": "text[]"
+      },
+      "variantes": [
+        {
+          "id": "codes_85191",
+          "codes": [
+            "85191"
+          ]
+        },
+        {
+          "id": "codes_44_85",
+          "codes": [
+            "44109",
+            "85191"
+          ]
+        }
+      ],
+      "sql": "\n        SELECT \n    fp.code_parcelle,\n    fp.code_commune,\n    fp.nom_commune,\n    fp.adresse,\n    fp.contenance_parcelle,\n    fp.nature_culture,\n    fp.code_droit,\n    fp.numero_siren,\n    fp.groupe_personne,\n    fp.forme_juridique_abregee,\n    fp.denomination\n\n        FROM foncier_pm fp\n        WHERE fp.code_commune = ANY(:codes) AND fp.denomination ILIKE :denomination ESCAPE '\\'\n        ORDER BY fp.code_parcelle, fp.numero_siren\n        LIMIT :limit OFFSET :offset\n    "
+    },
+    {
+      "nom": "foncier_pm_par_point_denomination",
+      "source": "appel",
+      "fichier": "app/foncier_pm/queries.py",
+      "symbole": "foncier_pm_par_point",
+      "appel": {
+        "lat": 47.2184,
+        "lon": -1.5536,
+        "denomination": "COMMUNE DE NANTES"
+      },
+      "rang": 0,
+      "tables": [
+        "geo_communes",
+        "foncier_pm"
+      ],
+      "params": {
+        "lat": 47.2184,
+        "lon": -1.5536,
+        "rayon_m": 500.0,
+        "limit": 21,
+        "offset": 0,
+        "denomination": "%COMMUNE DE NANTES%"
+      },
+      "variantes": [
+        {
+          "id": "nantes_r50",
+          "lat": 47.2184,
+          "lon": -1.5536,
+          "rayon_m": 50.0
+        },
+        {
+          "id": "nantes_r5000",
+          "lat": 47.2184,
+          "lon": -1.5536,
+          "rayon_m": 5000.0
+        },
+        {
+          "id": "rural_85_r50",
+          "lat": 46.4167,
+          "lon": -0.8167,
+          "rayon_m": 50.0
+        },
+        {
+          "id": "rural_85_r5000",
+          "lat": 46.4167,
+          "lon": -0.8167,
+          "rayon_m": 5000.0
+        },
+        {
+          "id": "littoral_44_r50",
+          "lat": 47.27,
+          "lon": -2.21,
+          "rayon_m": 50.0
+        },
+        {
+          "id": "littoral_44_r5000",
+          "lat": 47.27,
+          "lon": -2.21,
+          "rayon_m": 5000.0
+        },
+        {
+          "id": "mer_r50",
+          "lat": 46.9,
+          "lon": -3.0,
+          "rayon_m": 50.0
+        },
+        {
+          "id": "mer_r5000",
+          "lat": 46.9,
+          "lon": -3.0,
+          "rayon_m": 5000.0
+        }
+      ],
+      "sql": "\n        WITH communes_in_radius AS (\n            SELECT g.code AS commune\n            FROM geo_communes g\n            WHERE ST_DWithin(\n                g.geometry::geography,\n                ST_SetSRID(ST_MakePoint(:lon, :lat), 4326)::geography,\n                :rayon_m\n            )\n        )\n        SELECT \n    fp.code_parcelle,\n    fp.code_commune,\n    fp.nom_commune,\n    fp.adresse,\n    fp.contenance_parcelle,\n    fp.nature_culture,\n    fp.code_droit,\n    fp.numero_siren,\n    fp.groupe_personne,\n    fp.forme_juridique_abregee,\n    fp.denomination\n\n        FROM foncier_pm fp\n        WHERE fp.code_commune IN (SELECT commune FROM communes_in_radius) AND fp.denomination ILIKE :denomination ESCAPE '\\'\n        ORDER BY fp.code_parcelle, fp.numero_siren\n        LIMIT :limit OFFSET :offset\n    "
+    },
+    {
+      "nom": "foncier_pm_par_codes_siren",
+      "source": "appel",
+      "fichier": "app/foncier_pm/queries.py",
+      "symbole": "foncier_pm_par_codes",
+      "appel": {
+        "codes": [
+          "44109"
+        ],
+        "siren": "214401093"
+      },
+      "rang": 0,
+      "tables": [
+        "foncier_pm"
+      ],
+      "params": {
+        "codes": [
+          "44109"
+        ],
+        "limit": 21,
+        "offset": 0,
+        "siren": "214401093"
+      },
+      "types": {
+        "codes": "text[]"
+      },
+      "variantes": [
+        {
+          "id": "codes_85191",
+          "codes": [
+            "85191"
+          ]
+        },
+        {
+          "id": "codes_44_85",
+          "codes": [
+            "44109",
+            "85191"
+          ]
+        }
+      ],
+      "sql": "\n        SELECT \n    fp.code_parcelle,\n    fp.code_commune,\n    fp.nom_commune,\n    fp.adresse,\n    fp.contenance_parcelle,\n    fp.nature_culture,\n    fp.code_droit,\n    fp.numero_siren,\n    fp.groupe_personne,\n    fp.forme_juridique_abregee,\n    fp.denomination\n\n        FROM foncier_pm fp\n        WHERE fp.code_commune = ANY(:codes) AND fp.numero_siren = :siren\n        ORDER BY fp.code_parcelle, fp.numero_siren\n        LIMIT :limit OFFSET :offset\n    "
+    },
+    {
+      "nom": "foncier_pm_par_point_siren",
+      "source": "appel",
+      "fichier": "app/foncier_pm/queries.py",
+      "symbole": "foncier_pm_par_point",
+      "appel": {
+        "lat": 47.2184,
+        "lon": -1.5536,
+        "siren": "214401093"
+      },
+      "rang": 0,
+      "tables": [
+        "geo_communes",
+        "foncier_pm"
+      ],
+      "params": {
+        "lat": 47.2184,
+        "lon": -1.5536,
+        "rayon_m": 500.0,
+        "limit": 21,
+        "offset": 0,
+        "siren": "214401093"
+      },
+      "variantes": [
+        {
+          "id": "nantes_r50",
+          "lat": 47.2184,
+          "lon": -1.5536,
+          "rayon_m": 50.0
+        },
+        {
+          "id": "nantes_r5000",
+          "lat": 47.2184,
+          "lon": -1.5536,
+          "rayon_m": 5000.0
+        },
+        {
+          "id": "rural_85_r50",
+          "lat": 46.4167,
+          "lon": -0.8167,
+          "rayon_m": 50.0
+        },
+        {
+          "id": "rural_85_r5000",
+          "lat": 46.4167,
+          "lon": -0.8167,
+          "rayon_m": 5000.0
+        },
+        {
+          "id": "littoral_44_r50",
+          "lat": 47.27,
+          "lon": -2.21,
+          "rayon_m": 50.0
+        },
+        {
+          "id": "littoral_44_r5000",
+          "lat": 47.27,
+          "lon": -2.21,
+          "rayon_m": 5000.0
+        },
+        {
+          "id": "mer_r50",
+          "lat": 46.9,
+          "lon": -3.0,
+          "rayon_m": 50.0
+        },
+        {
+          "id": "mer_r5000",
+          "lat": 46.9,
+          "lon": -3.0,
+          "rayon_m": 5000.0
+        }
+      ],
+      "sql": "\n        WITH communes_in_radius AS (\n            SELECT g.code AS commune\n            FROM geo_communes g\n            WHERE ST_DWithin(\n                g.geometry::geography,\n                ST_SetSRID(ST_MakePoint(:lon, :lat), 4326)::geography,\n                :rayon_m\n            )\n        )\n        SELECT \n    fp.code_parcelle,\n    fp.code_commune,\n    fp.nom_commune,\n    fp.adresse,\n    fp.contenance_parcelle,\n    fp.nature_culture,\n    fp.code_droit,\n    fp.numero_siren,\n    fp.groupe_personne,\n    fp.forme_juridique_abregee,\n    fp.denomination\n\n        FROM foncier_pm fp\n        WHERE fp.code_commune IN (SELECT commune FROM communes_in_radius) AND fp.numero_siren = :siren\n        ORDER BY fp.code_parcelle, fp.numero_siren\n        LIMIT :limit OFFSET :offset\n    "
+    },
+    {
+      "nom": "foncier_pm_par_codes_siren_denomination",
+      "source": "appel",
+      "fichier": "app/foncier_pm/queries.py",
+      "symbole": "foncier_pm_par_codes",
+      "appel": {
+        "codes": [
+          "44109"
+        ],
+        "siren": "214401093",
+        "denomination": "COMMUNE DE NANTES"
+      },
+      "rang": 0,
+      "tables": [
+        "foncier_pm"
+      ],
+      "params": {
+        "codes": [
+          "44109"
+        ],
+        "limit": 21,
+        "offset": 0,
+        "siren": "214401093",
+        "denomination": "%COMMUNE DE NANTES%"
+      },
+      "types": {
+        "codes": "text[]"
+      },
+      "variantes": [
+        {
+          "id": "codes_85191",
+          "codes": [
+            "85191"
+          ]
+        },
+        {
+          "id": "codes_44_85",
+          "codes": [
+            "44109",
+            "85191"
+          ]
+        }
+      ],
+      "sql": "\n        SELECT \n    fp.code_parcelle,\n    fp.code_commune,\n    fp.nom_commune,\n    fp.adresse,\n    fp.contenance_parcelle,\n    fp.nature_culture,\n    fp.code_droit,\n    fp.numero_siren,\n    fp.groupe_personne,\n    fp.forme_juridique_abregee,\n    fp.denomination\n\n        FROM foncier_pm fp\n        WHERE fp.code_commune = ANY(:codes) AND fp.numero_siren = :siren AND fp.denomination ILIKE :denomination ESCAPE '\\'\n        ORDER BY fp.code_parcelle, fp.numero_siren\n        LIMIT :limit OFFSET :offset\n    "
+    },
+    {
+      "nom": "foncier_pm_par_point_siren_denomination",
+      "source": "appel",
+      "fichier": "app/foncier_pm/queries.py",
+      "symbole": "foncier_pm_par_point",
+      "appel": {
+        "lat": 47.2184,
+        "lon": -1.5536,
+        "siren": "214401093",
+        "denomination": "COMMUNE DE NANTES"
+      },
+      "rang": 0,
+      "tables": [
+        "geo_communes",
+        "foncier_pm"
+      ],
+      "params": {
+        "lat": 47.2184,
+        "lon": -1.5536,
+        "rayon_m": 500.0,
+        "limit": 21,
+        "offset": 0,
+        "siren": "214401093",
+        "denomination": "%COMMUNE DE NANTES%"
+      },
+      "variantes": [
+        {
+          "id": "nantes_r50",
+          "lat": 47.2184,
+          "lon": -1.5536,
+          "rayon_m": 50.0
+        },
+        {
+          "id": "nantes_r5000",
+          "lat": 47.2184,
+          "lon": -1.5536,
+          "rayon_m": 5000.0
+        },
+        {
+          "id": "rural_85_r50",
+          "lat": 46.4167,
+          "lon": -0.8167,
+          "rayon_m": 50.0
+        },
+        {
+          "id": "rural_85_r5000",
+          "lat": 46.4167,
+          "lon": -0.8167,
+          "rayon_m": 5000.0
+        },
+        {
+          "id": "littoral_44_r50",
+          "lat": 47.27,
+          "lon": -2.21,
+          "rayon_m": 50.0
+        },
+        {
+          "id": "littoral_44_r5000",
+          "lat": 47.27,
+          "lon": -2.21,
+          "rayon_m": 5000.0
+        },
+        {
+          "id": "mer_r50",
+          "lat": 46.9,
+          "lon": -3.0,
+          "rayon_m": 50.0
+        },
+        {
+          "id": "mer_r5000",
+          "lat": 46.9,
+          "lon": -3.0,
+          "rayon_m": 5000.0
+        }
+      ],
+      "sql": "\n        WITH communes_in_radius AS (\n            SELECT g.code AS commune\n            FROM geo_communes g\n            WHERE ST_DWithin(\n                g.geometry::geography,\n                ST_SetSRID(ST_MakePoint(:lon, :lat), 4326)::geography,\n                :rayon_m\n            )\n        )\n        SELECT \n    fp.code_parcelle,\n    fp.code_commune,\n    fp.nom_commune,\n    fp.adresse,\n    fp.contenance_parcelle,\n    fp.nature_culture,\n    fp.code_droit,\n    fp.numero_siren,\n    fp.groupe_personne,\n    fp.forme_juridique_abregee,\n    fp.denomination\n\n        FROM foncier_pm fp\n        WHERE fp.code_commune IN (SELECT commune FROM communes_in_radius) AND fp.numero_siren = :siren AND fp.denomination ILIKE :denomination ESCAPE '\\'\n        ORDER BY fp.code_parcelle, fp.numero_siren\n        LIMIT :limit OFFSET :offset\n    "
+    },
+    {
+      "nom": "geocodeur_strategie_A",
+      "source": "appel",
+      "fichier": "app/ban/queries.py",
+      "symbole": "_execute_query",
+      "appel": {
+        "template": {
+          "attribut": "_STRATEGY_A"
+        },
+        "params": {
+          "query": "12 rue de strasbourg nantes",
+          "limit": 1,
+          "target_numero": 12,
+          "target_rep": "",
+          "voie_clean": "rue de strasbourg",
+          "code_communes": [
+            "44109"
+          ]
+        },
+        "postal_filter": "",
+        "numero_order": "numero"
+      },
+      "rang": 0,
+      "tables": [
+        "adresses"
+      ],
+      "remarque": "adresses : aucun index candidat, relevé pour information (demande de Ianis)",
+      "params": {
+        "limit": 1,
+        "target_numero": 12,
+        "target_rep": "",
+        "voie_clean": "rue de strasbourg",
+        "code_communes": [
+          "44109"
+        ]
+      },
+      "types": {
+        "code_communes": "text[]"
+      },
+      "sql": "\n    SELECT ban_id, numero, rep, nom_voie, code_postal,\n           code_commune, nom_commune,\n           ST_X(position) AS longitude,\n           ST_Y(position) AS latitude,\n           word_similarity(unaccent(nom_voie), unaccent(:voie_clean)) AS score\n    FROM adresses\n    WHERE code_commune = ANY(:code_communes)\n      AND nom_voie % :voie_clean\n        \n    ORDER BY score DESC , ABS(NULLIF(regexp_replace(numero, '[^0-9]', '', 'g'), '')::int - :target_numero) ASC NULLS LAST, (lower(btrim(coalesce(rep, ''))) = :target_rep) DESC, ban_id, id\n    LIMIT :limit\n"
+    },
+    {
+      "nom": "geocodeur_strategie_B",
+      "source": "appel",
+      "fichier": "app/ban/queries.py",
+      "symbole": "_execute_query",
+      "appel": {
+        "template": {
+          "attribut": "_STRATEGY_B"
+        },
+        "params": {
+          "query": "12 rue de strasbourg nantes",
+          "limit": 1,
+          "target_numero": 12,
+          "target_rep": ""
+        },
+        "postal_filter": "",
+        "numero_order": "numero"
+      },
+      "rang": 0,
+      "tables": [
+        "adresses"
+      ],
+      "remarque": "adresses : aucun index candidat, relevé pour information (demande de Ianis)",
+      "params": {
+        "query": "12 rue de strasbourg nantes",
+        "limit": 1,
+        "target_numero": 12,
+        "target_rep": ""
+      },
+      "sql": "\n    SELECT ban_id, numero, rep, nom_voie, code_postal,\n           code_commune, nom_commune,\n           ST_X(position) AS longitude,\n           ST_Y(position) AS latitude,\n           word_similarity(search_text, unaccent(:query)) AS score\n    FROM adresses\n    WHERE to_tsvector('french', search_text)\n          @@ websearch_to_tsquery('french', unaccent(:query))\n        \n    ORDER BY score DESC , ABS(NULLIF(regexp_replace(numero, '[^0-9]', '', 'g'), '')::int - :target_numero) ASC NULLS LAST, (lower(btrim(coalesce(rep, ''))) = :target_rep) DESC, ban_id, id\n    LIMIT :limit\n"
+    },
+    {
+      "nom": "geocodeur_strategie_C",
+      "source": "appel",
+      "fichier": "app/ban/queries.py",
+      "symbole": "_execute_query",
+      "appel": {
+        "template": {
+          "attribut": "_STRATEGY_C"
+        },
+        "params": {
+          "query": "12 rue de strasbourg nantes",
+          "limit": 1,
+          "target_numero": 12,
+          "target_rep": "",
+          "voie_clean": "rue de strasbourg",
+          "code_communes": [
+            "44109"
+          ]
+        },
+        "postal_filter": "",
+        "numero_order": "numero"
+      },
+      "rang": 0,
+      "tables": [
+        "adresses"
+      ],
+      "remarque": "adresses : aucun index candidat, relevé pour information (demande de Ianis)",
+      "params": {
+        "limit": 1,
+        "target_numero": 12,
+        "target_rep": "",
+        "voie_clean": "rue de strasbourg",
+        "code_communes": [
+          "44109"
+        ]
+      },
+      "types": {
+        "code_communes": "text[]"
+      },
+      "sql": "\n    SELECT ban_id, numero, rep, nom_voie, code_postal,\n           code_commune, nom_commune,\n           ST_X(position) AS longitude,\n           ST_Y(position) AS latitude,\n           word_similarity(unaccent(nom_voie), unaccent(:voie_clean)) AS score\n    FROM adresses\n    WHERE code_commune = ANY(:code_communes)\n      AND nom_voie % :voie_clean\n        \n    ORDER BY score DESC , ABS(NULLIF(regexp_replace(numero, '[^0-9]', '', 'g'), '')::int - :target_numero) ASC NULLS LAST, (lower(btrim(coalesce(rep, ''))) = :target_rep) DESC, ban_id, id\n    LIMIT :limit\n"
+    },
+    {
+      "nom": "geocodeur_strategie_D",
+      "source": "appel",
+      "fichier": "app/ban/queries.py",
+      "symbole": "_execute_query",
+      "appel": {
+        "template": {
+          "attribut": "_STRATEGY_D"
+        },
+        "params": {
+          "query": "12 rue de strasbourg nantes",
+          "limit": 1,
+          "target_numero": 12,
+          "target_rep": ""
+        },
+        "postal_filter": "",
+        "numero_order": "numero"
+      },
+      "rang": 0,
+      "tables": [
+        "adresses"
+      ],
+      "remarque": "adresses : aucun index candidat, relevé pour information (demande de Ianis)",
+      "params": {
+        "query": "12 rue de strasbourg nantes",
+        "limit": 1,
+        "target_numero": 12,
+        "target_rep": ""
+      },
+      "sql": "\n    SELECT ban_id, numero, rep, nom_voie, code_postal,\n           code_commune, nom_commune,\n           ST_X(position) AS longitude,\n           ST_Y(position) AS latitude,\n           word_similarity(search_text, unaccent(:query)) AS score\n    FROM adresses\n    WHERE search_text % unaccent(:query)\n        \n    ORDER BY score DESC , ABS(NULLIF(regexp_replace(numero, '[^0-9]', '', 'g'), '')::int - :target_numero) ASC NULLS LAST, (lower(btrim(coalesce(rep, ''))) = :target_rep) DESC, ban_id, id\n    LIMIT :limit\n"
+    },
+    {
+      "nom": "carte_departements_de_la_tuile",
+      "source": "attribut",
+      "fichier": "app/carte/parcelles.py",
+      "symbole": "_DEPARTEMENTS_DE_LA_TUILE",
+      "rang": 0,
+      "tables": [
+        "geo_departements"
+      ],
+      "params": {
+        "z": 16,
+        "x": 32500,
+        "y": 23000
+      },
+      "sql": "\n    SELECT g.code\n    FROM geo_departements g\n    WHERE ST_Intersects(g.geometry, ST_Transform(\n            ST_TileEnvelope(CAST(:z AS integer), CAST(:x AS integer),\n                            CAST(:y AS integer)), 4326))\n    ORDER BY g.code\n"
+    },
+    {
+      "nom": "carte_parcelles_de_la_tuile",
+      "source": "attribut",
+      "fichier": "app/carte/parcelles.py",
+      "symbole": "_PARCELLES_DE_LA_TUILE",
+      "rang": 0,
+      "tables": [
+        "parcelles"
+      ],
+      "params": {
+        "z": 16,
+        "x": 32500,
+        "y": 23000,
+        "departements": [
+          "85"
+        ]
+      },
+      "variantes": [
+        {
+          "id": "deux_departements",
+          "departements": [
+            "44",
+            "85"
+          ]
+        }
+      ],
+      "sql": "\n    SELECT p.id_parcelle, p.code_departement, p.contenance,\n           ST_AsGeoJSON(p.geometrie, 6) AS geometrie,\n           ST_X(e.point) AS lon, ST_Y(e.point) AS lat\n    FROM parcelles p\n    CROSS JOIN LATERAL (SELECT ST_PointOnSurface(p.geometrie) AS point) e\n    WHERE p.code_departement = ANY(CAST(:departements AS text[]))\n      AND ST_Intersects(p.geometrie, ST_Transform(\n            ST_TileEnvelope(CAST(:z AS integer), CAST(:x AS integer),\n                            CAST(:y AS integer)), 4326))\n    ORDER BY p.id_parcelle\n"
+    },
+    {
+      "nom": "carte_ventes_des_parcelles",
+      "source": "attribut",
+      "fichier": "app/carte/parcelles.py",
+      "symbole": "_VENTES_DES_PARCELLES",
+      "rang": 0,
+      "tables": [
+        "mutation_parcelles",
+        "mutations_grain"
+      ],
+      "params": {
+        "ids": [
+          "85000000ZA0001",
+          "85000000ZA0002"
+        ],
+        "departements": [
+          "85"
+        ]
+      },
+      "variantes": [
+        {
+          "id": "deux_departements",
+          "ids": [
+            "44000000ZA0001",
+            "85000000ZA0001"
+          ],
+          "departements": [
+            "44",
+            "85"
+          ]
+        }
+      ],
+      "sql": "\n    SELECT mp.id_parcelle, COUNT(DISTINCT mg.id_mutation) AS nombre\n    FROM mutation_parcelles mp\n    JOIN mutations_grain mg ON mg.id_mutation = mp.id_mutation\n    WHERE mp.id_parcelle = ANY(CAST(:ids AS text[]))\n      AND mg.code_departement = ANY(CAST(:departements AS text[]))\n      AND mg.code_departement = CASE\n          WHEN LEFT(mp.id_parcelle, 2) = '97' THEN LEFT(mp.id_parcelle, 3)\n          ELSE LEFT(mp.id_parcelle, 2)\n      END\n      AND mg.position IS NOT NULL\n    GROUP BY mp.id_parcelle\n"
+    },
+    {
+      "nom": "carte_debut_dvf",
+      "source": "attribut",
+      "fichier": "app/carte/parcelles.py",
+      "symbole": "_DEBUT_DVF_SQL",
+      "rang": 0,
+      "tables": [
+        "mutations_grain"
+      ],
+      "params": {},
+      "sql": "SELECT min(date_mutation) AS debut FROM mutations_grain"
+    },
+    {
+      "nom": "carte_departements_du_fond",
+      "source": "attribut",
+      "fichier": "app/carte/tuiles.py",
+      "symbole": "_DEPARTEMENTS_DU_FOND",
+      "rang": 0,
+      "tables": [
+        "geo_departements"
+      ],
+      "params": {
+        "z": 16,
+        "x": 32500,
+        "y": 23000,
+        "marge": 0.02
+      },
+      "sql": "\n    SELECT g.code\n    FROM geo_departements g\n    WHERE ST_Intersects(\n        g.geometry,\n        ST_Expand(ST_Transform(\n            ST_TileEnvelope(CAST(:z AS integer), CAST(:x AS integer),\n                            CAST(:y AS integer)), 4326), CAST(:marge AS double precision)))\n    ORDER BY g.code\n"
+    },
+    {
+      "nom": "carte_parcelle_dans_l_emprise",
+      "source": "attribut",
+      "fichier": "app/carte/ventes.py",
+      "symbole": "_PARCELLE_DANS_L_EMPRISE",
+      "rang": 0,
+      "tables": [
+        "parcelles"
+      ],
+      "params": {
+        "id_parcelle": "85000000ZA0001",
+        "departement": "85",
+        "ouest": -1.485962,
+        "sud": 46.590332,
+        "est": -1.458496,
+        "nord": 46.609204
+      },
+      "sql": "\n    SELECT ST_Intersects(p.geometrie, ST_MakeEnvelope(\n            CAST(:ouest AS double precision), CAST(:sud AS double precision),\n            CAST(:est AS double precision), CAST(:nord AS double precision), 4326)) AS dedans\n    FROM parcelles p\n    WHERE p.id_parcelle = :id_parcelle\n      AND p.code_departement = :departement\n"
+    },
+    {
+      "nom": "carte_parcelles_des_ventes",
+      "source": "attribut",
+      "fichier": "app/carte/ventes.py",
+      "symbole": "_PARCELLES_DES_VENTES",
+      "rang": 0,
+      "tables": [
+        "mutation_parcelles"
+      ],
+      "params": {
+        "ids": [
+          "2024-0000001",
+          "2024-0000002"
+        ]
+      },
+      "sql": "\n    SELECT mp.id_mutation, mp.id_parcelle\n    FROM mutation_parcelles mp\n    WHERE mp.id_mutation = ANY(CAST(:ids AS text[]))\n    ORDER BY mp.id_mutation, mp.id_parcelle\n"
+    },
+    {
+      "nom": "carte_parcelles_du_groupe",
+      "source": "attribut",
+      "fichier": "app/carte/ventes.py",
+      "symbole": "_PARCELLES_DU_GROUPE",
+      "rang": 0,
+      "tables": [
+        "parcelles"
+      ],
+      "params": {
+        "ids": [
+          "85000000ZA0001",
+          "85000000ZA0002"
+        ],
+        "departements": [
+          "85"
+        ],
+        "ouest": -1.485962,
+        "sud": 46.590332,
+        "est": -1.458496,
+        "nord": 46.609204
+      },
+      "variantes": [
+        {
+          "id": "deux_departements",
+          "ids": [
+            "44000000ZA0001",
+            "85000000ZA0001"
+          ],
+          "departements": [
+            "44",
+            "85"
+          ]
+        }
+      ],
+      "sql": "\n    SELECT p.id_parcelle, p.contenance, e.dedans,\n           CASE WHEN e.dedans THEN ST_AsGeoJSON(p.geometrie, 6) END\n               AS geometrie,\n           ST_X(s.point) AS lon, ST_Y(s.point) AS lat\n    FROM parcelles p\n    CROSS JOIN LATERAL (\n        SELECT ST_Intersects(p.geometrie, ST_MakeEnvelope(\n            CAST(:ouest AS double precision), CAST(:sud AS double precision),\n            CAST(:est AS double precision), CAST(:nord AS double precision), 4326)) AS dedans\n    ) e\n    CROSS JOIN LATERAL (\n        SELECT CASE WHEN e.dedans THEN ST_PointOnSurface(p.geometrie) END AS point\n    ) s\n    WHERE p.code_departement = ANY(CAST(:departements AS text[]))\n      AND p.id_parcelle = ANY(CAST(:ids AS text[]))\n    ORDER BY p.id_parcelle\n"
+    }
+  ]
+}

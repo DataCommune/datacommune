@@ -1,0 +1,903 @@
+{
+  "captured_at": "2026-09-10T20:40:47.536913+00:00",
+  "case": {
+    "case_id": "R10",
+    "address": "21 Rue Benoît Chupiet, 44400 Rezé",
+    "ban_id": "44143_0890_00021",
+    "stratum": "appartements, adresse source mal encodée"
+  },
+  "sources": {
+    "dpe03existant": {
+      "http": 200,
+      "body": {
+        "total": 19,
+        "results": [
+          {
+            "adresse_brut": "21 Rue Benoît Chupiet",
+            "adresse_ban": "21 Rue Beno*u00eet Chupiet 44400 Rezé",
+            "identifiant_ban": "44143_0890_00021",
+            "code_insee_ban": "44143",
+            "score_ban": 0.63,
+            "id_rnb": "RSHZXVXQFDZ7",
+            "type_batiment": "appartement",
+            "numero_dpe": "2244E0139144L",
+            "date_fin_validite_dpe": "2032-01-18",
+            "date_etablissement_dpe": "2022-01-19",
+            "surface_habitable_logement": 56.7,
+            "etiquette_dpe": "C",
+            "_score": null
+          },
+          {
+            "adresse_brut": "38 Rue Alexandre Huchon",
+            "adresse_ban": "21 Rue Beno*u00eet Chupiet 44400 Rezé",
+            "identifiant_ban": "44143_0890_00021",
+            "code_insee_ban": "44143",
+            "score_ban": 0.63,
+            "id_rnb": "RSHZXVXQFDZ7",
+            "type_batiment": "appartement",
+            "numero_dpe": "2244E0138923Y",
+            "date_fin_validite_dpe": "2032-01-18",
+            "date_etablissement_dpe": "2022-01-19",
+            "surface_habitable_logement": 56.7,
+            "etiquette_dpe": "C",
+            "_score": null
+          },
+          {
+            "adresse_brut": "38 Rue Alexandre Huchon",
+            "adresse_ban": "21 Rue Beno*u00eet Chupiet 44400 Rezé",
+            "identifiant_ban": "44143_0890_00021",
+            "code_insee_ban": "44143",
+            "score_ban": 0.63,
+            "id_rnb": "RSHZXVXQFDZ7",
+            "type_batiment": "appartement",
+            "numero_dpe": "2244E0138926B",
+            "date_fin_validite_dpe": "2032-01-18",
+            "date_etablissement_dpe": "2022-01-19",
+            "surface_habitable_logement": 60.9,
+            "etiquette_dpe": "C",
+            "_score": null
+          },
+          {
+            "adresse_brut": "21 Rue Benoît Chupiet",
+            "adresse_ban": "21 Rue Beno*u00eet Chupiet 44400 Rezé",
+            "identifiant_ban": "44143_0890_00021",
+            "code_insee_ban": "44143",
+            "score_ban": 0.63,
+            "id_rnb": "RSHZXVXQFDZ7",
+            "type_batiment": "appartement",
+            "numero_dpe": "2244E0139126T",
+            "date_fin_validite_dpe": "2032-01-18",
+            "date_etablissement_dpe": "2022-01-19",
+            "surface_habitable_logement": 65.2,
+            "etiquette_dpe": "C",
+            "_score": null
+          },
+          {
+            "adresse_brut": "38 Rue Alexandre Huchon",
+            "adresse_ban": "21 Rue Beno*u00eet Chupiet 44400 Rezé",
+            "identifiant_ban": "44143_0890_00021",
+            "code_insee_ban": "44143",
+            "score_ban": 0.63,
+            "id_rnb": "RSHZXVXQFDZ7",
+            "type_batiment": "appartement",
+            "numero_dpe": "2244E0138927C",
+            "date_fin_validite_dpe": "2032-01-18",
+            "date_etablissement_dpe": "2022-01-19",
+            "surface_habitable_logement": 66.6,
+            "etiquette_dpe": "C",
+            "_score": null
+          },
+          {
+            "adresse_brut": "21 Rue Benoît Chupiet",
+            "adresse_ban": "21 Rue Beno*u00eet Chupiet 44400 Rezé",
+            "identifiant_ban": "44143_0890_00021",
+            "code_insee_ban": "44143",
+            "score_ban": 0.63,
+            "id_rnb": "RSHZXVXQFDZ7",
+            "type_batiment": "appartement",
+            "numero_dpe": "2244E0139105Y",
+            "date_fin_validite_dpe": "2032-01-18",
+            "date_etablissement_dpe": "2022-01-19",
+            "surface_habitable_logement": 65.2,
+            "etiquette_dpe": "C",
+            "_score": null
+          },
+          {
+            "adresse_brut": "21 Rue Benoît Chupiet",
+            "adresse_ban": "21 Rue Beno*u00eet Chupiet 44400 Rezé",
+            "identifiant_ban": "44143_0890_00021",
+            "code_insee_ban": "44143",
+            "score_ban": 0.63,
+            "id_rnb": "RSHZXVXQFDZ7",
+            "type_batiment": "appartement",
+            "numero_dpe": "2244E0139130X",
+            "date_fin_validite_dpe": "2032-01-18",
+            "date_etablissement_dpe": "2022-01-19",
+            "surface_habitable_logement": 54.8,
+            "etiquette_dpe": "C",
+            "_score": null
+          },
+          {
+            "adresse_brut": "21 Rue Benoît Chupiet",
+            "adresse_ban": "21 Rue Beno*u00eet Chupiet 44400 Rezé",
+            "identifiant_ban": "44143_0890_00021",
+            "code_insee_ban": "44143",
+            "score_ban": 0.63,
+            "id_rnb": "RSHZXVXQFDZ7",
+            "type_batiment": "appartement",
+            "numero_dpe": "2244E0139100T",
+            "date_fin_validite_dpe": "2032-01-18",
+            "date_etablissement_dpe": "2022-01-19",
+            "surface_habitable_logement": 55.8,
+            "etiquette_dpe": "C",
+            "_score": null
+          },
+          {
+            "adresse_brut": "21 Rue Benoît Chupiet",
+            "adresse_ban": "21 Rue Beno*u00eet Chupiet 44400 Rezé",
+            "identifiant_ban": "44143_0890_00021",
+            "code_insee_ban": "44143",
+            "score_ban": 0.63,
+            "id_rnb": "RSHZXVXQFDZ7",
+            "type_batiment": "appartement",
+            "numero_dpe": "2244E0139103W",
+            "date_fin_validite_dpe": "2032-01-18",
+            "date_etablissement_dpe": "2022-01-19",
+            "surface_habitable_logement": 80.1,
+            "etiquette_dpe": "C",
+            "_score": null
+          },
+          {
+            "adresse_brut": "21 Rue Benoît Chupiet",
+            "adresse_ban": "21 Rue Beno*u00eet Chupiet 44400 Rezé",
+            "identifiant_ban": "44143_0890_00021",
+            "code_insee_ban": "44143",
+            "score_ban": 0.63,
+            "id_rnb": "RSHZXVXQFDZ7",
+            "type_batiment": "appartement",
+            "numero_dpe": "2244E0139115I",
+            "date_fin_validite_dpe": "2032-01-18",
+            "date_etablissement_dpe": "2022-01-19",
+            "surface_habitable_logement": 33.3,
+            "etiquette_dpe": "C",
+            "_score": null
+          },
+          {
+            "adresse_brut": "21 Rue Benoît Chupiet",
+            "adresse_ban": "21 Rue Beno*u00eet Chupiet 44400 Rezé",
+            "identifiant_ban": "44143_0890_00021",
+            "code_insee_ban": "44143",
+            "score_ban": 0.63,
+            "id_rnb": "RSHZXVXQFDZ7",
+            "type_batiment": "appartement",
+            "numero_dpe": "2244E0139119M",
+            "date_fin_validite_dpe": "2032-01-18",
+            "date_etablissement_dpe": "2022-01-19",
+            "surface_habitable_logement": 66.2,
+            "etiquette_dpe": "C",
+            "_score": null
+          },
+          {
+            "adresse_brut": "21 Rue Benoît Chupiet",
+            "adresse_ban": "21 Rue Beno*u00eet Chupiet 44400 Rezé",
+            "identifiant_ban": "44143_0890_00021",
+            "code_insee_ban": "44143",
+            "score_ban": 0.63,
+            "id_rnb": "RSHZXVXQFDZ7",
+            "type_batiment": "appartement",
+            "numero_dpe": "2244E0139101U",
+            "date_fin_validite_dpe": "2032-01-18",
+            "date_etablissement_dpe": "2022-01-19",
+            "surface_habitable_logement": 58.4,
+            "etiquette_dpe": "C",
+            "_score": null
+          },
+          {
+            "adresse_brut": "21 Rue Benoît Chupiet",
+            "adresse_ban": "21 Rue Beno*u00eet Chupiet 44400 Rezé",
+            "identifiant_ban": "44143_0890_00021",
+            "code_insee_ban": "44143",
+            "score_ban": 0.63,
+            "id_rnb": "RSHZXVXQFDZ7",
+            "type_batiment": "appartement",
+            "numero_dpe": "2244E0139137E",
+            "date_fin_validite_dpe": "2032-01-18",
+            "date_etablissement_dpe": "2022-01-19",
+            "surface_habitable_logement": 68.8,
+            "etiquette_dpe": "C",
+            "_score": null
+          },
+          {
+            "adresse_brut": "21 Rue Benoît Chupiet",
+            "adresse_ban": "21 Rue Beno*u00eet Chupiet 44400 Rezé",
+            "identifiant_ban": "44143_0890_00021",
+            "code_insee_ban": "44143",
+            "score_ban": 0.63,
+            "id_rnb": "RSHZXVXQFDZ7",
+            "type_batiment": "appartement",
+            "numero_dpe": "2244E0139124R",
+            "date_fin_validite_dpe": "2032-01-18",
+            "date_etablissement_dpe": "2022-01-19",
+            "surface_habitable_logement": 80.1,
+            "etiquette_dpe": "C",
+            "_score": null
+          },
+          {
+            "adresse_brut": "21 Rue Benoît Chupiet",
+            "adresse_ban": "21 Rue Beno*u00eet Chupiet 44400 Rezé",
+            "identifiant_ban": "44143_0890_00021",
+            "code_insee_ban": "44143",
+            "score_ban": 0.63,
+            "id_rnb": "RSHZXVXQFDZ7",
+            "type_batiment": "appartement",
+            "numero_dpe": "2244E0139110D",
+            "date_fin_validite_dpe": "2032-01-18",
+            "date_etablissement_dpe": "2022-01-19",
+            "surface_habitable_logement": 54.8,
+            "etiquette_dpe": "C",
+            "_score": null
+          },
+          {
+            "adresse_brut": "21 Rue Benoît Chupiet",
+            "adresse_ban": "21 Rue Beno*u00eet Chupiet 44400 Rezé",
+            "identifiant_ban": "44143_0890_00021",
+            "code_insee_ban": "44143",
+            "score_ban": 0.63,
+            "id_rnb": "RSHZXVXQFDZ7",
+            "type_batiment": "appartement",
+            "numero_dpe": "2244E0139111E",
+            "date_fin_validite_dpe": "2032-01-18",
+            "date_etablissement_dpe": "2022-01-19",
+            "surface_habitable_logement": 55.7,
+            "etiquette_dpe": "C",
+            "_score": null
+          },
+          {
+            "adresse_brut": "21 Rue Benoît Chupiet",
+            "adresse_ban": "21 Rue Beno*u00eet Chupiet 44400 Rezé",
+            "identifiant_ban": "44143_0890_00021",
+            "code_insee_ban": "44143",
+            "score_ban": 0.63,
+            "id_rnb": "RSHZXVXQFDZ7",
+            "type_batiment": "appartement",
+            "numero_dpe": "2244E0139139G",
+            "date_fin_validite_dpe": "2032-01-18",
+            "date_etablissement_dpe": "2022-01-19",
+            "surface_habitable_logement": 52.4,
+            "etiquette_dpe": "C",
+            "_score": null
+          },
+          {
+            "adresse_brut": "38 Rue Alexandre Huchon",
+            "adresse_ban": "21 Rue Beno*u00eet Chupiet 44400 Rezé",
+            "identifiant_ban": "44143_0890_00021",
+            "code_insee_ban": "44143",
+            "score_ban": 0.63,
+            "id_rnb": "RSHZXVXQFDZ7",
+            "type_batiment": "appartement",
+            "numero_dpe": "2244E0138925A",
+            "date_fin_validite_dpe": "2032-01-18",
+            "date_etablissement_dpe": "2022-01-19",
+            "surface_habitable_logement": 56,
+            "etiquette_dpe": "C",
+            "_score": null
+          },
+          {
+            "adresse_brut": "21 Rue Benoît Chupiet",
+            "adresse_ban": "21 Rue Beno*u00eet Chupiet 44400 Rezé",
+            "identifiant_ban": "44143_0890_00021",
+            "code_insee_ban": "44143",
+            "score_ban": 0.63,
+            "id_rnb": "RSHZXVXQFDZ7",
+            "type_batiment": "appartement",
+            "numero_dpe": "2244E0139133A",
+            "date_fin_validite_dpe": "2032-01-18",
+            "date_etablissement_dpe": "2022-01-19",
+            "surface_habitable_logement": 82.7,
+            "etiquette_dpe": "C",
+            "_score": null
+          }
+        ]
+      },
+      "url": "https://data.ademe.fr/data-fair/api/v1/datasets/dpe03existant/lines?qs=identifiant_ban%3A%2244143_0890_00021%22&size=100&select=numero_dpe%2Cidentifiant_ban%2Cadresse_ban%2Cadresse_brut%2Ccode_insee_ban%2Ctype_batiment%2Csurface_habitable_logement%2Cetiquette_dpe%2Cdate_etablissement_dpe%2Cdate_fin_validite_dpe%2Cnumero_dpe_remplace%2Cid_rnb%2Cscore_ban%2Cnumero_etage_appartement"
+    },
+    "dpe02neuf": {
+      "http": 200,
+      "body": {
+        "total": 0,
+        "results": []
+      },
+      "url": "https://data.ademe.fr/data-fair/api/v1/datasets/dpe02neuf/lines?qs=identifiant_ban%3A%2244143_0890_00021%22&size=100&select=numero_dpe%2Cidentifiant_ban%2Cadresse_ban%2Cadresse_brut%2Ccode_insee_ban%2Ctype_batiment%2Csurface_habitable_logement%2Cetiquette_dpe%2Cdate_etablissement_dpe%2Cdate_fin_validite_dpe%2Cnumero_dpe_remplace%2Cid_rnb%2Cscore_ban%2Cnumero_etage_appartement"
+    }
+  },
+  "datacommune": {
+    "http": 200,
+    "body": {
+      "statut": "ok",
+      "donnees": [
+        {
+          "type_detecte": "adresse",
+          "latitude": 47.185466,
+          "longitude": -1.549488,
+          "adresse": "21 Rue Benoît Chupiet, 44400 Rezé",
+          "id_parcelle": "44143000CN0844",
+          "commune": "Rezé",
+          "code_postal": "44400",
+          "score": 0.6000000238418579,
+          "code_insee": "44143",
+          "resolution": "exact",
+          "parcelles_candidates": null,
+          "ban_id": "44143_0890_00021",
+          "datasets": {
+            "dpe": null
+          },
+          "erreurs": null,
+          "avertissements": [],
+          "dataset_states": {
+            "dpe": {
+              "dataset": "dpe",
+              "presence": "value",
+              "absence_reason": null,
+              "raison": null
+            }
+          },
+          "dpe_attribution": {
+            "version": 2,
+            "status": "unassigned",
+            "reason": "dwelling_identity_unproven",
+            "diagnostic": null,
+            "candidates": [],
+            "building_context": null,
+            "graph_state": "not_checked"
+          },
+          "dpe_inventory": {
+            "association": "source_ban_equality",
+            "address_check": "unverified",
+            "source": "ADEME",
+            "source_coverage": "unknown",
+            "graph_state": "not_checked",
+            "imported_at": null,
+            "version": 2,
+            "as_of_date": "2026-09-10",
+            "state": "ready",
+            "items": [
+              {
+                "type_batiment": "appartement",
+                "surface_habitable": 56.7,
+                "etiquette_dpe": "C",
+                "etiquette_ges": "B",
+                "date_etablissement_dpe": "2022-01-19",
+                "date_fin_validite_dpe": "2032-01-18",
+                "lifecycle": {
+                  "source_state": "present",
+                  "source_snapshot_date": "2026-09-05",
+                  "source_scope": "44/85",
+                  "regimes": [
+                    "existant"
+                  ],
+                  "replacement_state": "no_successor_known",
+                  "graph_issues": [],
+                  "validity": "not_expired_by_date",
+                  "as_of_date": "2026-09-10",
+                  "revision_status": "unverified",
+                  "revision_kind": null,
+                  "revision_date": null,
+                  "detail_availability": "available"
+                }
+              },
+              {
+                "type_batiment": "appartement",
+                "surface_habitable": 56.0,
+                "etiquette_dpe": "C",
+                "etiquette_ges": "B",
+                "date_etablissement_dpe": "2022-01-19",
+                "date_fin_validite_dpe": "2032-01-18",
+                "lifecycle": {
+                  "source_state": "present",
+                  "source_snapshot_date": "2026-09-05",
+                  "source_scope": "44/85",
+                  "regimes": [
+                    "existant"
+                  ],
+                  "replacement_state": "no_successor_known",
+                  "graph_issues": [],
+                  "validity": "not_expired_by_date",
+                  "as_of_date": "2026-09-10",
+                  "revision_status": "unverified",
+                  "revision_kind": null,
+                  "revision_date": null,
+                  "detail_availability": "available"
+                }
+              },
+              {
+                "type_batiment": "appartement",
+                "surface_habitable": 60.9,
+                "etiquette_dpe": "C",
+                "etiquette_ges": "B",
+                "date_etablissement_dpe": "2022-01-19",
+                "date_fin_validite_dpe": "2032-01-18",
+                "lifecycle": {
+                  "source_state": "present",
+                  "source_snapshot_date": "2026-09-05",
+                  "source_scope": "44/85",
+                  "regimes": [
+                    "existant"
+                  ],
+                  "replacement_state": "no_successor_known",
+                  "graph_issues": [],
+                  "validity": "not_expired_by_date",
+                  "as_of_date": "2026-09-10",
+                  "revision_status": "unverified",
+                  "revision_kind": null,
+                  "revision_date": null,
+                  "detail_availability": "available"
+                }
+              },
+              {
+                "type_batiment": "appartement",
+                "surface_habitable": 66.6,
+                "etiquette_dpe": "C",
+                "etiquette_ges": "B",
+                "date_etablissement_dpe": "2022-01-19",
+                "date_fin_validite_dpe": "2032-01-18",
+                "lifecycle": {
+                  "source_state": "present",
+                  "source_snapshot_date": "2026-09-05",
+                  "source_scope": "44/85",
+                  "regimes": [
+                    "existant"
+                  ],
+                  "replacement_state": "no_successor_known",
+                  "graph_issues": [],
+                  "validity": "not_expired_by_date",
+                  "as_of_date": "2026-09-10",
+                  "revision_status": "unverified",
+                  "revision_kind": null,
+                  "revision_date": null,
+                  "detail_availability": "available"
+                }
+              },
+              {
+                "type_batiment": "appartement",
+                "surface_habitable": 55.8,
+                "etiquette_dpe": "C",
+                "etiquette_ges": "A",
+                "date_etablissement_dpe": "2022-01-19",
+                "date_fin_validite_dpe": "2032-01-18",
+                "lifecycle": {
+                  "source_state": "present",
+                  "source_snapshot_date": "2026-09-05",
+                  "source_scope": "44/85",
+                  "regimes": [
+                    "existant"
+                  ],
+                  "replacement_state": "no_successor_known",
+                  "graph_issues": [],
+                  "validity": "not_expired_by_date",
+                  "as_of_date": "2026-09-10",
+                  "revision_status": "unverified",
+                  "revision_kind": null,
+                  "revision_date": null,
+                  "detail_availability": "available"
+                }
+              },
+              {
+                "type_batiment": "appartement",
+                "surface_habitable": 58.4,
+                "etiquette_dpe": "C",
+                "etiquette_ges": "A",
+                "date_etablissement_dpe": "2022-01-19",
+                "date_fin_validite_dpe": "2032-01-18",
+                "lifecycle": {
+                  "source_state": "present",
+                  "source_snapshot_date": "2026-09-05",
+                  "source_scope": "44/85",
+                  "regimes": [
+                    "existant"
+                  ],
+                  "replacement_state": "no_successor_known",
+                  "graph_issues": [],
+                  "validity": "not_expired_by_date",
+                  "as_of_date": "2026-09-10",
+                  "revision_status": "unverified",
+                  "revision_kind": null,
+                  "revision_date": null,
+                  "detail_availability": "available"
+                }
+              },
+              {
+                "type_batiment": "appartement",
+                "surface_habitable": 80.1,
+                "etiquette_dpe": "C",
+                "etiquette_ges": "A",
+                "date_etablissement_dpe": "2022-01-19",
+                "date_fin_validite_dpe": "2032-01-18",
+                "lifecycle": {
+                  "source_state": "present",
+                  "source_snapshot_date": "2026-09-05",
+                  "source_scope": "44/85",
+                  "regimes": [
+                    "existant"
+                  ],
+                  "replacement_state": "no_successor_known",
+                  "graph_issues": [],
+                  "validity": "not_expired_by_date",
+                  "as_of_date": "2026-09-10",
+                  "revision_status": "unverified",
+                  "revision_kind": null,
+                  "revision_date": null,
+                  "detail_availability": "available"
+                }
+              },
+              {
+                "type_batiment": "appartement",
+                "surface_habitable": 65.2,
+                "etiquette_dpe": "C",
+                "etiquette_ges": "A",
+                "date_etablissement_dpe": "2022-01-19",
+                "date_fin_validite_dpe": "2032-01-18",
+                "lifecycle": {
+                  "source_state": "present",
+                  "source_snapshot_date": "2026-09-05",
+                  "source_scope": "44/85",
+                  "regimes": [
+                    "existant"
+                  ],
+                  "replacement_state": "no_successor_known",
+                  "graph_issues": [],
+                  "validity": "not_expired_by_date",
+                  "as_of_date": "2026-09-10",
+                  "revision_status": "unverified",
+                  "revision_kind": null,
+                  "revision_date": null,
+                  "detail_availability": "available"
+                }
+              },
+              {
+                "type_batiment": "appartement",
+                "surface_habitable": 54.8,
+                "etiquette_dpe": "C",
+                "etiquette_ges": "A",
+                "date_etablissement_dpe": "2022-01-19",
+                "date_fin_validite_dpe": "2032-01-18",
+                "lifecycle": {
+                  "source_state": "present",
+                  "source_snapshot_date": "2026-09-05",
+                  "source_scope": "44/85",
+                  "regimes": [
+                    "existant"
+                  ],
+                  "replacement_state": "no_successor_known",
+                  "graph_issues": [],
+                  "validity": "not_expired_by_date",
+                  "as_of_date": "2026-09-10",
+                  "revision_status": "unverified",
+                  "revision_kind": null,
+                  "revision_date": null,
+                  "detail_availability": "available"
+                }
+              },
+              {
+                "type_batiment": "appartement",
+                "surface_habitable": 55.7,
+                "etiquette_dpe": "C",
+                "etiquette_ges": "A",
+                "date_etablissement_dpe": "2022-01-19",
+                "date_fin_validite_dpe": "2032-01-18",
+                "lifecycle": {
+                  "source_state": "present",
+                  "source_snapshot_date": "2026-09-05",
+                  "source_scope": "44/85",
+                  "regimes": [
+                    "existant"
+                  ],
+                  "replacement_state": "no_successor_known",
+                  "graph_issues": [],
+                  "validity": "not_expired_by_date",
+                  "as_of_date": "2026-09-10",
+                  "revision_status": "unverified",
+                  "revision_kind": null,
+                  "revision_date": null,
+                  "detail_availability": "available"
+                }
+              },
+              {
+                "type_batiment": "appartement",
+                "surface_habitable": 33.3,
+                "etiquette_dpe": "C",
+                "etiquette_ges": "A",
+                "date_etablissement_dpe": "2022-01-19",
+                "date_fin_validite_dpe": "2032-01-18",
+                "lifecycle": {
+                  "source_state": "present",
+                  "source_snapshot_date": "2026-09-05",
+                  "source_scope": "44/85",
+                  "regimes": [
+                    "existant"
+                  ],
+                  "replacement_state": "no_successor_known",
+                  "graph_issues": [],
+                  "validity": "not_expired_by_date",
+                  "as_of_date": "2026-09-10",
+                  "revision_status": "unverified",
+                  "revision_kind": null,
+                  "revision_date": null,
+                  "detail_availability": "available"
+                }
+              },
+              {
+                "type_batiment": "appartement",
+                "surface_habitable": 66.2,
+                "etiquette_dpe": "C",
+                "etiquette_ges": "A",
+                "date_etablissement_dpe": "2022-01-19",
+                "date_fin_validite_dpe": "2032-01-18",
+                "lifecycle": {
+                  "source_state": "present",
+                  "source_snapshot_date": "2026-09-05",
+                  "source_scope": "44/85",
+                  "regimes": [
+                    "existant"
+                  ],
+                  "replacement_state": "no_successor_known",
+                  "graph_issues": [],
+                  "validity": "not_expired_by_date",
+                  "as_of_date": "2026-09-10",
+                  "revision_status": "unverified",
+                  "revision_kind": null,
+                  "revision_date": null,
+                  "detail_availability": "available"
+                }
+              },
+              {
+                "type_batiment": "appartement",
+                "surface_habitable": 80.1,
+                "etiquette_dpe": "C",
+                "etiquette_ges": "A",
+                "date_etablissement_dpe": "2022-01-19",
+                "date_fin_validite_dpe": "2032-01-18",
+                "lifecycle": {
+                  "source_state": "present",
+                  "source_snapshot_date": "2026-09-05",
+                  "source_scope": "44/85",
+                  "regimes": [
+                    "existant"
+                  ],
+                  "replacement_state": "no_successor_known",
+                  "graph_issues": [],
+                  "validity": "not_expired_by_date",
+                  "as_of_date": "2026-09-10",
+                  "revision_status": "unverified",
+                  "revision_kind": null,
+                  "revision_date": null,
+                  "detail_availability": "available"
+                }
+              },
+              {
+                "type_batiment": "appartement",
+                "surface_habitable": 65.2,
+                "etiquette_dpe": "C",
+                "etiquette_ges": "A",
+                "date_etablissement_dpe": "2022-01-19",
+                "date_fin_validite_dpe": "2032-01-18",
+                "lifecycle": {
+                  "source_state": "present",
+                  "source_snapshot_date": "2026-09-05",
+                  "source_scope": "44/85",
+                  "regimes": [
+                    "existant"
+                  ],
+                  "replacement_state": "no_successor_known",
+                  "graph_issues": [],
+                  "validity": "not_expired_by_date",
+                  "as_of_date": "2026-09-10",
+                  "revision_status": "unverified",
+                  "revision_kind": null,
+                  "revision_date": null,
+                  "detail_availability": "available"
+                }
+              },
+              {
+                "type_batiment": "appartement",
+                "surface_habitable": 54.8,
+                "etiquette_dpe": "C",
+                "etiquette_ges": "A",
+                "date_etablissement_dpe": "2022-01-19",
+                "date_fin_validite_dpe": "2032-01-18",
+                "lifecycle": {
+                  "source_state": "present",
+                  "source_snapshot_date": "2026-09-05",
+                  "source_scope": "44/85",
+                  "regimes": [
+                    "existant"
+                  ],
+                  "replacement_state": "no_successor_known",
+                  "graph_issues": [],
+                  "validity": "not_expired_by_date",
+                  "as_of_date": "2026-09-10",
+                  "revision_status": "unverified",
+                  "revision_kind": null,
+                  "revision_date": null,
+                  "detail_availability": "available"
+                }
+              },
+              {
+                "type_batiment": "appartement",
+                "surface_habitable": 82.7,
+                "etiquette_dpe": "C",
+                "etiquette_ges": "A",
+                "date_etablissement_dpe": "2022-01-19",
+                "date_fin_validite_dpe": "2032-01-18",
+                "lifecycle": {
+                  "source_state": "present",
+                  "source_snapshot_date": "2026-09-05",
+                  "source_scope": "44/85",
+                  "regimes": [
+                    "existant"
+                  ],
+                  "replacement_state": "no_successor_known",
+                  "graph_issues": [],
+                  "validity": "not_expired_by_date",
+                  "as_of_date": "2026-09-10",
+                  "revision_status": "unverified",
+                  "revision_kind": null,
+                  "revision_date": null,
+                  "detail_availability": "available"
+                }
+              },
+              {
+                "type_batiment": "appartement",
+                "surface_habitable": 68.8,
+                "etiquette_dpe": "C",
+                "etiquette_ges": "A",
+                "date_etablissement_dpe": "2022-01-19",
+                "date_fin_validite_dpe": "2032-01-18",
+                "lifecycle": {
+                  "source_state": "present",
+                  "source_snapshot_date": "2026-09-05",
+                  "source_scope": "44/85",
+                  "regimes": [
+                    "existant"
+                  ],
+                  "replacement_state": "no_successor_known",
+                  "graph_issues": [],
+                  "validity": "not_expired_by_date",
+                  "as_of_date": "2026-09-10",
+                  "revision_status": "unverified",
+                  "revision_kind": null,
+                  "revision_date": null,
+                  "detail_availability": "available"
+                }
+              },
+              {
+                "type_batiment": "appartement",
+                "surface_habitable": 52.4,
+                "etiquette_dpe": "C",
+                "etiquette_ges": "A",
+                "date_etablissement_dpe": "2022-01-19",
+                "date_fin_validite_dpe": "2032-01-18",
+                "lifecycle": {
+                  "source_state": "present",
+                  "source_snapshot_date": "2026-09-05",
+                  "source_scope": "44/85",
+                  "regimes": [
+                    "existant"
+                  ],
+                  "replacement_state": "no_successor_known",
+                  "graph_issues": [],
+                  "validity": "not_expired_by_date",
+                  "as_of_date": "2026-09-10",
+                  "revision_status": "unverified",
+                  "revision_kind": null,
+                  "revision_date": null,
+                  "detail_availability": "available"
+                }
+              },
+              {
+                "type_batiment": "appartement",
+                "surface_habitable": 56.7,
+                "etiquette_dpe": "C",
+                "etiquette_ges": "A",
+                "date_etablissement_dpe": "2022-01-19",
+                "date_fin_validite_dpe": "2032-01-18",
+                "lifecycle": {
+                  "source_state": "present",
+                  "source_snapshot_date": "2026-09-05",
+                  "source_scope": "44/85",
+                  "regimes": [
+                    "existant"
+                  ],
+                  "replacement_state": "no_successor_known",
+                  "graph_issues": [],
+                  "validity": "not_expired_by_date",
+                  "as_of_date": "2026-09-10",
+                  "revision_status": "unverified",
+                  "revision_kind": null,
+                  "revision_date": null,
+                  "detail_availability": "available"
+                }
+              }
+            ],
+            "total": 19,
+            "distribution": {
+              "A": 0,
+              "B": 0,
+              "C": 19,
+              "D": 0,
+              "E": 0,
+              "F": 0,
+              "G": 0,
+              "unknown": 0
+            },
+            "page_size": 20,
+            "has_more": false,
+            "read_state": "complete"
+          },
+          "dvf_attribution": null
+        }
+      ],
+      "meta": {
+        "source": [
+          {
+            "nom": "Base Adresse Nationale (BAN)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://adresse.data.gouv.fr",
+            "producteur": "DINUM / IGN",
+            "dataset": "ban",
+            "periode": {
+              "statut": "inconnue",
+              "label": null,
+              "debut": null,
+              "fin": null
+            },
+            "derniere_importation_reussie": null,
+            "couverture": {
+              "type": "inconnue",
+              "departements": null
+            },
+            "cadence": {
+              "statut": "official",
+              "label": "Hebdomadaire",
+              "evidence_url": "https://cartes.gouv.fr/aide/fr/guides-utilisateur/utiliser-les-services-de-la-geoplateforme/geocodage/",
+              "intervalle_jours": 7
+            },
+            "etat": "inconnu"
+          },
+          {
+            "nom": "Diagnostics de Performance Energetique (DPE)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://data.ademe.fr/datasets/dpe03existant",
+            "producteur": "ADEME",
+            "dataset": "dpe",
+            "periode": {
+              "statut": "inconnue",
+              "label": null,
+              "debut": null,
+              "fin": null
+            },
+            "derniere_importation_reussie": null,
+            "couverture": {
+              "type": "departements",
+              "departements": [
+                "44",
+                "85"
+              ]
+            },
+            "cadence": {
+              "statut": "official",
+              "label": "Hebdomadaire",
+              "evidence_url": "https://data.ademe.fr/datasets/dpe03existant",
+              "intervalle_jours": 7
+            },
+            "etat": "inconnu"
+          }
+        ],
+        "resolution": {
+          "issue": "exact",
+          "raison": null,
+          "parcelles_candidates": null
+        }
+      }
+    }
+  }
+}

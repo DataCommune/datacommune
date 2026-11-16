@@ -1,0 +1,14 @@
+{
+  "statut": "indisponible",
+  "donnees": [],
+  "meta": {
+    "source": {
+      "nom": "Permis de construire (source locale en quarantaine)",
+      "licence": "Licence Ouverte 2.0",
+      "url": "https://www.data.gouv.fr/datasets/base-des-permis-de-construire-et-autres-autorisations-durbanisme",
+      "producteur": "Attribution a requalifier"
+    },
+    "resolution": null
+  },
+  "raison": "Source permis en quarantaine : ressource locale observee uniquement dans le departement 93, exhaustivite et historique non qualifies. Une reponse vide ne signifie pas absence de permis. Date de depot non fournie par la source."
+}

@@ -1,0 +1,7 @@
+{
+	auto_https off
+}
+
+http://dev-api.datacommune.fr {
+	reverse_proxy api:8000
+}

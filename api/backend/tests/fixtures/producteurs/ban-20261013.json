@@ -1,0 +1,1352 @@
+{
+ "absent": {},
+ "captured_at": "2026-10-13T10:20:53Z",
+ "counts": {
+  "01": {
+   "adresses": 262165,
+   "lignes_source": 262165
+  },
+  "02": {
+   "adresses": 250692,
+   "lignes_source": 250692
+  },
+  "03": {
+   "adresses": 192844,
+   "lignes_source": 192844
+  },
+  "04": {
+   "adresses": 103545,
+   "lignes_source": 103545
+  },
+  "05": {
+   "adresses": 81541,
+   "lignes_source": 81541
+  },
+  "06": {
+   "adresses": 220168,
+   "lignes_source": 220168
+  },
+  "07": {
+   "adresses": 197851,
+   "lignes_source": 197851
+  },
+  "08": {
+   "adresses": 132891,
+   "lignes_source": 132891
+  },
+  "09": {
+   "adresses": 116811,
+   "lignes_source": 116811
+  },
+  "10": {
+   "adresses": 147826,
+   "lignes_source": 147826
+  },
+  "11": {
+   "adresses": 242117,
+   "lignes_source": 242117
+  },
+  "12": {
+   "adresses": 178407,
+   "lignes_source": 178407
+  },
+  "13": {
+   "adresses": 460847,
+   "lignes_source": 460847
+  },
+  "14": {
+   "adresses": 317152,
+   "lignes_source": 317152
+  },
+  "15": {
+   "adresses": 103265,
+   "lignes_source": 103265
+  },
+  "16": {
+   "adresses": 210802,
+   "lignes_source": 210802
+  },
+  "17": {
+   "adresses": 435988,
+   "lignes_source": 435988
+  },
+  "18": {
+   "adresses": 183620,
+   "lignes_source": 183620
+  },
+  "19": {
+   "adresses": 160560,
+   "lignes_source": 160560
+  },
+  "21": {
+   "adresses": 213498,
+   "lignes_source": 213498
+  },
+  "22": {
+   "adresses": 375866,
+   "lignes_source": 375866
+  },
+  "23": {
+   "adresses": 94005,
+   "lignes_source": 94005
+  },
+  "24": {
+   "adresses": 273272,
+   "lignes_source": 273272
+  },
+  "25": {
+   "adresses": 197670,
+   "lignes_source": 197670
+  },
+  "26": {
+   "adresses": 235095,
+   "lignes_source": 235095
+  },
+  "27": {
+   "adresses": 287867,
+   "lignes_source": 287867
+  },
+  "28": {
+   "adresses": 201800,
+   "lignes_source": 201800
+  },
+  "29": {
+   "adresses": 503551,
+   "lignes_source": 503551
+  },
+  "2A": {
+   "adresses": 57557,
+   "lignes_source": 57557
+  },
+  "2B": {
+   "adresses": 77655,
+   "lignes_source": 77655
+  },
+  "30": {
+   "adresses": 339564,
+   "lignes_source": 339564
+  },
+  "31": {
+   "adresses": 457919,
+   "lignes_source": 457919
+  },
+  "32": {
+   "adresses": 115522,
+   "lignes_source": 115522
+  },
+  "33": {
+   "adresses": 731760,
+   "lignes_source": 731760
+  },
+  "34": {
+   "adresses": 453444,
+   "lignes_source": 453444
+  },
+  "35": {
+   "adresses": 438204,
+   "lignes_source": 438204
+  },
+  "36": {
+   "adresses": 139622,
+   "lignes_source": 139622
+  },
+  "37": {
+   "adresses": 275019,
+   "lignes_source": 275019
+  },
+  "38": {
+   "adresses": 428667,
+   "lignes_source": 428667
+  },
+  "39": {
+   "adresses": 130173,
+   "lignes_source": 130173
+  },
+  "40": {
+   "adresses": 251217,
+   "lignes_source": 251217
+  },
+  "41": {
+   "adresses": 187805,
+   "lignes_source": 187805
+  },
+  "42": {
+   "adresses": 272579,
+   "lignes_source": 272579
+  },
+  "43": {
+   "adresses": 147374,
+   "lignes_source": 147374
+  },
+  "44": {
+   "adresses": 583268,
+   "lignes_source": 583268
+  },
+  "45": {
+   "adresses": 288281,
+   "lignes_source": 288281
+  },
+  "46": {
+   "adresses": 127339,
+   "lignes_source": 127339
+  },
+  "47": {
+   "adresses": 203987,
+   "lignes_source": 203987
+  },
+  "48": {
+   "adresses": 63207,
+   "lignes_source": 63207
+  },
+  "49": {
+   "adresses": 353130,
+   "lignes_source": 353130
+  },
+  "50": {
+   "adresses": 302414,
+   "lignes_source": 302414
+  },
+  "51": {
+   "adresses": 216773,
+   "lignes_source": 216773
+  },
+  "52": {
+   "adresses": 97432,
+   "lignes_source": 97432
+  },
+  "53": {
+   "adresses": 161442,
+   "lignes_source": 161442
+  },
+  "54": {
+   "adresses": 266503,
+   "lignes_source": 266503
+  },
+  "55": {
+   "adresses": 100031,
+   "lignes_source": 100031
+  },
+  "56": {
+   "adresses": 435436,
+   "lignes_source": 435436
+  },
+  "57": {
+   "adresses": 382532,
+   "lignes_source": 382532
+  },
+  "58": {
+   "adresses": 142380,
+   "lignes_source": 142380
+  },
+  "59": {
+   "adresses": 1011285,
+   "lignes_source": 1011285
+  },
+  "60": {
+   "adresses": 314800,
+   "lignes_source": 314800
+  },
+  "61": {
+   "adresses": 176552,
+   "lignes_source": 176552
+  },
+  "62": {
+   "adresses": 691204,
+   "lignes_source": 691204
+  },
+  "63": {
+   "adresses": 326929,
+   "lignes_source": 326929
+  },
+  "64": {
+   "adresses": 272347,
+   "lignes_source": 272347
+  },
+  "65": {
+   "adresses": 126215,
+   "lignes_source": 126215
+  },
+  "66": {
+   "adresses": 255300,
+   "lignes_source": 255300
+  },
+  "67": {
+   "adresses": 339021,
+   "lignes_source": 339021
+  },
+  "68": {
+   "adresses": 259131,
+   "lignes_source": 259131
+  },
+  "69": {
+   "adresses": 353398,
+   "lignes_source": 353398
+  },
+  "70": {
+   "adresses": 130687,
+   "lignes_source": 130687
+  },
+  "71": {
+   "adresses": 276833,
+   "lignes_source": 276833
+  },
+  "72": {
+   "adresses": 261282,
+   "lignes_source": 261282
+  },
+  "73": {
+   "adresses": 184641,
+   "lignes_source": 184641
+  },
+  "74": {
+   "adresses": 282483,
+   "lignes_source": 282483
+  },
+  "75": {
+   "adresses": 152628,
+   "lignes_source": 152628
+  },
+  "76": {
+   "adresses": 464863,
+   "lignes_source": 464863
+  },
+  "77": {
+   "adresses": 452689,
+   "lignes_source": 452689
+  },
+  "78": {
+   "adresses": 343990,
+   "lignes_source": 343990
+  },
+  "79": {
+   "adresses": 209045,
+   "lignes_source": 209045
+  },
+  "80": {
+   "adresses": 275722,
+   "lignes_source": 275722
+  },
+  "81": {
+   "adresses": 221689,
+   "lignes_source": 221689
+  },
+  "82": {
+   "adresses": 136427,
+   "lignes_source": 136427
+  },
+  "83": {
+   "adresses": 403553,
+   "lignes_source": 403553
+  },
+  "84": {
+   "adresses": 257328,
+   "lignes_source": 257328
+  },
+  "85": {
+   "adresses": 439420,
+   "lignes_source": 439420
+  },
+  "86": {
+   "adresses": 214116,
+   "lignes_source": 214116
+  },
+  "87": {
+   "adresses": 182657,
+   "lignes_source": 182657
+  },
+  "88": {
+   "adresses": 189429,
+   "lignes_source": 189429
+  },
+  "89": {
+   "adresses": 198839,
+   "lignes_source": 198839
+  },
+  "90": {
+   "adresses": 45069,
+   "lignes_source": 45069
+  },
+  "91": {
+   "adresses": 336909,
+   "lignes_source": 336909
+  },
+  "92": {
+   "adresses": 166256,
+   "lignes_source": 166256
+  },
+  "93": {
+   "adresses": 235251,
+   "lignes_source": 235251
+  },
+  "94": {
+   "adresses": 202487,
+   "lignes_source": 202487
+  },
+  "95": {
+   "adresses": 286837,
+   "lignes_source": 286837
+  },
+  "971": {
+   "adresses": 163441,
+   "lignes_source": 163441
+  },
+  "972": {
+   "adresses": 138304,
+   "lignes_source": 138304
+  },
+  "973": {
+   "adresses": 60903,
+   "lignes_source": 60903
+  },
+  "974": {
+   "adresses": 340741,
+   "lignes_source": 340741
+  },
+  "975": {
+   "adresses": 3049,
+   "lignes_source": 3049
+  },
+  "976": {
+   "adresses": 52710,
+   "lignes_source": 52710
+  }
+ },
+ "departements_demandes": [
+  "01",
+  "02",
+  "03",
+  "04",
+  "05",
+  "06",
+  "07",
+  "08",
+  "09",
+  "10",
+  "11",
+  "12",
+  "13",
+  "14",
+  "15",
+  "16",
+  "17",
+  "18",
+  "19",
+  "2A",
+  "2B",
+  "21",
+  "22",
+  "23",
+  "24",
+  "25",
+  "26",
+  "27",
+  "28",
+  "29",
+  "30",
+  "31",
+  "32",
+  "33",
+  "34",
+  "35",
+  "36",
+  "37",
+  "38",
+  "39",
+  "40",
+  "41",
+  "42",
+  "43",
+  "44",
+  "45",
+  "46",
+  "47",
+  "48",
+  "49",
+  "50",
+  "51",
+  "52",
+  "53",
+  "54",
+  "55",
+  "56",
+  "57",
+  "58",
+  "59",
+  "60",
+  "61",
+  "62",
+  "63",
+  "64",
+  "65",
+  "66",
+  "67",
+  "68",
+  "69",
+  "70",
+  "71",
+  "72",
+  "73",
+  "74",
+  "75",
+  "76",
+  "77",
+  "78",
+  "79",
+  "80",
+  "81",
+  "82",
+  "83",
+  "84",
+  "85",
+  "86",
+  "87",
+  "88",
+  "89",
+  "90",
+  "91",
+  "92",
+  "93",
+  "94",
+  "95",
+  "971",
+  "972",
+  "973",
+  "974",
+  "975",
+  "976"
+ ],
+ "details": {},
+ "filter": "app/etl_ban/transform.py transform_ban_csv() and pipeline.py swap(): rows of adresses-XX.csv(.gz) with lon and lat non missing; departement = file",
+ "headers": {
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-01.csv.gz": {
+   "content_length": "9002828",
+   "etag": "\"9303a1f3b7ea1d09e0376948a641701e\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-01.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:25:31 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-02.csv.gz": {
+   "content_length": "7710427",
+   "etag": "\"28f95be862a54208b8843632fe447654\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-02.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:25:32 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-03.csv.gz": {
+   "content_length": "6771995",
+   "etag": "\"661891ebd1e9f67cd6604ccddd2bd67a\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-03.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:25:33 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-04.csv.gz": {
+   "content_length": "3791473",
+   "etag": "\"8850d366801795f6d22422b0f7428fb2\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-04.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:25:33 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-05.csv.gz": {
+   "content_length": "3043305",
+   "etag": "\"4d14604f228352e180b46bebbb3cadb8\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-05.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:25:34 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-06.csv.gz": {
+   "content_length": "8273264",
+   "etag": "\"81c83d6bac2af4123424ac2899015ae8\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-06.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:25:34 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-07.csv.gz": {
+   "content_length": "6922981",
+   "etag": "\"5c0cab97be125ef7c7d65526415c9941\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-07.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:25:35 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-08.csv.gz": {
+   "content_length": "4224289",
+   "etag": "\"9bd7c78eaf2935541e19b2442faf2492\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-08.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:25:35 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-09.csv.gz": {
+   "content_length": "3839907",
+   "etag": "\"bc406ce87cbd3b5f5105c34f435ccb23\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-09.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:25:36 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-10.csv.gz": {
+   "content_length": "4651978",
+   "etag": "\"0c2947712592b41477edfdcaba0a9e37\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-10.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:25:37 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-11.csv.gz": {
+   "content_length": "8398239",
+   "etag": "\"e908f2896617922aa379f0cc11ca30b5\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-11.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:25:37 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-12.csv.gz": {
+   "content_length": "6421379",
+   "etag": "\"3fac66a14ba0b02de9b0be4d2ef54b03\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-12.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:25:38 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-13.csv.gz": {
+   "content_length": "18826828",
+   "etag": "\"995ed41858de6607673c3f61f89cb838\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-13.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:25:39 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-14.csv.gz": {
+   "content_length": "11965696",
+   "etag": "\"ef65d6bdaf084906f1ffdfdc751cd364\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-14.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:25:40 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-15.csv.gz": {
+   "content_length": "3420648",
+   "etag": "\"eb0d282d1cb86ddcc2438bb2a5493fd9\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-15.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:25:40 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-16.csv.gz": {
+   "content_length": "7559352",
+   "etag": "\"5b3ffc678ac5dec97a61fa9a7e5031ee\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-16.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:25:41 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-17.csv.gz": {
+   "content_length": "16077514",
+   "etag": "\"5667eeb0836e1f546d2ecbfc00a32b3e\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-17.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:25:42 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-18.csv.gz": {
+   "content_length": "6522778",
+   "etag": "\"30c4b7e394ab324cdeb6d0836e0a1f02\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-18.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:25:44 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-19.csv.gz": {
+   "content_length": "5915388",
+   "etag": "\"f4e02e73ae76e2d2d7773997036130e2\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-19.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:25:44 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-21.csv.gz": {
+   "content_length": "7135794",
+   "etag": "\"c42e25c0720bbafe959cc1c529c1a18c\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-21.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:25:45 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-22.csv.gz": {
+   "content_length": "14174777",
+   "etag": "\"379eab8e6f68b584cf0b7510561f12c6\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-22.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:25:45 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-23.csv.gz": {
+   "content_length": "3018813",
+   "etag": "\"56b4ef8da36ad535854a4ce9ca807437\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-23.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:25:46 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-24.csv.gz": {
+   "content_length": "10641874",
+   "etag": "\"99951855aa95753af25824474faf37ba\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-24.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:25:47 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-25.csv.gz": {
+   "content_length": "6532137",
+   "etag": "\"1ad36d7344bfa2d5790f152147e7f72f\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-25.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:25:47 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-26.csv.gz": {
+   "content_length": "8881645",
+   "etag": "\"5c3d12f0d1b3a5f003054f5bda8f7614\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-26.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:25:48 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-27.csv.gz": {
+   "content_length": "9533874",
+   "etag": "\"c3a81fb464327d917fcdc11e8e4d70eb\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-27.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:25:48 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-28.csv.gz": {
+   "content_length": "6616745",
+   "etag": "\"bc341723e7dd9cfb48ebd6520be09d1d\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-28.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:25:49 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-29.csv.gz": {
+   "content_length": "20016823",
+   "etag": "\"518fd0a43caf22bdf9716f20e9e65b11\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-29.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:25:50 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-2A.csv.gz": {
+   "content_length": "2089965",
+   "etag": "\"f25ad9d4319b03409677168b58b00111\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-2A.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:25:51 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-2B.csv.gz": {
+   "content_length": "2650218",
+   "etag": "\"a34e7ce5388e22c51f51f6c229dff5ca\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-2B.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:25:52 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-30.csv.gz": {
+   "content_length": "12631262",
+   "etag": "\"803677c53564cbba3bb584f67b2a3725\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-30.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:25:52 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-31.csv.gz": {
+   "content_length": "17719592",
+   "etag": "\"afa15b85b1cd80e3856211b1037ba2f0\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-31.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:25:53 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-32.csv.gz": {
+   "content_length": "4283713",
+   "etag": "\"487635976be57a9568ffb40e9ba3bb41\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-32.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:25:53 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-33.csv.gz": {
+   "content_length": "27638884",
+   "etag": "\"07c36b6d58333819faf9f2a80ed8c67e\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-33.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:25:54 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-34.csv.gz": {
+   "content_length": "15776823",
+   "etag": "\"371644c7e0f30abbf853d08b3d82f2a4\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-34.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:25:56 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-35.csv.gz": {
+   "content_length": "16989893",
+   "etag": "\"3b89042400342d20696321751f7a2d43\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-35.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:25:57 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-36.csv.gz": {
+   "content_length": "4993098",
+   "etag": "\"21f9e85397d97710152575c4f8594992\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-36.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:25:58 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-37.csv.gz": {
+   "content_length": "9879175",
+   "etag": "\"b9b496ec31246a73c638cbc47ea8110d\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-37.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:25:59 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-38.csv.gz": {
+   "content_length": "15507829",
+   "etag": "\"49df51cc0de6d17bef3e1aa25da89ce2\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-38.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:01 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-39.csv.gz": {
+   "content_length": "4348067",
+   "etag": "\"fa6077d32f2ed046f95e1fdc30bdf40f\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-39.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:02 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-40.csv.gz": {
+   "content_length": "9157504",
+   "etag": "\"b3e966d41137a3efda00c1795ef31f6c\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-40.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:02 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-41.csv.gz": {
+   "content_length": "6628560",
+   "etag": "\"af4fb3f202b44bf2fc61ca6b114c6bd3\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-41.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:03 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-42.csv.gz": {
+   "content_length": "9624097",
+   "etag": "\"538babf18a90272eb11c15b4c3f35b64\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-42.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:05 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-43.csv.gz": {
+   "content_length": "5398373",
+   "etag": "\"c3ad6713bf32b552008c7933968664f2\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-43.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:06 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-44.csv.gz": {
+   "content_length": "23552061",
+   "etag": "\"8ca977c890a51074075318f747c55094\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-44.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:07 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-45.csv.gz": {
+   "content_length": "10058138",
+   "etag": "\"5016e8f3db31b8593ecdabbcf8f51a87\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-45.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:08 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-46.csv.gz": {
+   "content_length": "4768297",
+   "etag": "\"85c34223da37f0c5bf11f8aa0a6ea730\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-46.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:09 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-47.csv.gz": {
+   "content_length": "7068353",
+   "etag": "\"c802e40520ccc69c75de36c2226d18c8\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-47.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:09 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-48.csv.gz": {
+   "content_length": "2245851",
+   "etag": "\"a0f823ae634ca3b316c1f2be756667f6\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-48.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:10 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-49.csv.gz": {
+   "content_length": "14974570",
+   "etag": "\"c0d61211d344758c33c9dffa637582be\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-49.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:10 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-50.csv.gz": {
+   "content_length": "11240906",
+   "etag": "\"d9fdedf54e6198a2c88d8b1c49031816\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-50.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:11 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-51.csv.gz": {
+   "content_length": "7147679",
+   "etag": "\"ae7110407253f55db2219c63fe61f566\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-51.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:12 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-52.csv.gz": {
+   "content_length": "2968269",
+   "etag": "\"e8324b548a52efa45d12b64641dc2fd9\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-52.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:13 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-53.csv.gz": {
+   "content_length": "6182216",
+   "etag": "\"bc9cb97141755c12013645f71a32441d\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-53.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:14 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-54.csv.gz": {
+   "content_length": "8695424",
+   "etag": "\"e4db54e8c474cfcfe4bf3d5bb1e7a002\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-54.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:15 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-55.csv.gz": {
+   "content_length": "3086941",
+   "etag": "\"9d56a66151072714fffc9e69ec00ccba\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-55.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:16 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-56.csv.gz": {
+   "content_length": "16538399",
+   "etag": "\"0bc1b53c1833847157e8c022e771ee97\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-56.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:17 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-57.csv.gz": {
+   "content_length": "11459515",
+   "etag": "\"c28cb7cb607ce5ef1f287423948f73bf\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-57.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:18 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-58.csv.gz": {
+   "content_length": "4935593",
+   "etag": "\"e1f22a004b39d51bb76012e76d0a8600\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-58.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:19 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-59.csv.gz": {
+   "content_length": "35176573",
+   "etag": "\"36b2e2f142dba41f4603c0a6905a7274\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-59.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:21 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-60.csv.gz": {
+   "content_length": "10087878",
+   "etag": "\"67fc17ef1933548f3c868f128f9f236e\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-60.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:21 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-61.csv.gz": {
+   "content_length": "6424306",
+   "etag": "\"0bf69b5424dea723d3bad1ed11b6ac7f\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-61.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:22 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-62.csv.gz": {
+   "content_length": "22522620",
+   "etag": "\"c304e5761f71ee29ce78d42985df6e77\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-62.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:23 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-63.csv.gz": {
+   "content_length": "12335212",
+   "etag": "\"29b01c6108e90c3e99310c443dfa1d73\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-63.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:25 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-64.csv.gz": {
+   "content_length": "10255937",
+   "etag": "\"197c44be023778216f8716fab5b2c8fc\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-64.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:26 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-65.csv.gz": {
+   "content_length": "4300367",
+   "etag": "\"1e3bbddaf25063b77ccaaadc9217d1dc\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-65.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:27 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-66.csv.gz": {
+   "content_length": "9342437",
+   "etag": "\"756320538c68b1e2f5f338d26a64329a\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-66.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:28 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-67.csv.gz": {
+   "content_length": "11458796",
+   "etag": "\"698ba5647d06c22bce032436400d2efb\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-67.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:29 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-68.csv.gz": {
+   "content_length": "8707790",
+   "etag": "\"835662b53fd496009a3b09a1b22f912a\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-68.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:29 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-69.csv.gz": {
+   "content_length": "12530547",
+   "etag": "\"2198ce6f7b1b1aba4b33f7195fdba0fc\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-69.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:30 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-70.csv.gz": {
+   "content_length": "3968788",
+   "etag": "\"b3ac42a45c9feb95f92baed7be0bdf83\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-70.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:31 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-71.csv.gz": {
+   "content_length": "9531927",
+   "etag": "\"6fb64f1f928287be6d522ed7dd121bee\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-71.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:31 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-72.csv.gz": {
+   "content_length": "9662194",
+   "etag": "\"e4a92736188ae6625a8863bda6d988e2\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-72.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:33 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-73.csv.gz": {
+   "content_length": "6844194",
+   "etag": "\"6921e2cc109d735a6d0a4eee2bfcd82e\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-73.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:33 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-74.csv.gz": {
+   "content_length": "10691032",
+   "etag": "\"37ed536178140bd3772992da03ed0f3e\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-74.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:34 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-75.csv.gz": {
+   "content_length": "6359638",
+   "etag": "\"bbeea442ac24cd857131ed01d4aabb10\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-75.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:35 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-76.csv.gz": {
+   "content_length": "16063628",
+   "etag": "\"efdfa4690587afe6bc6064d75feed51a\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-76.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:36 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-77.csv.gz": {
+   "content_length": "15332282",
+   "etag": "\"981683311c00150bfecaebae8c69dc34\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-77.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:39 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-78.csv.gz": {
+   "content_length": "11602993",
+   "etag": "\"86359f669dfa302ede5284e52e4d1461\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-78.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:40 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-79.csv.gz": {
+   "content_length": "7789999",
+   "etag": "\"cd9b3c57fc58989220175bfff236fdfe\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-79.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:40 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-80.csv.gz": {
+   "content_length": "9323422",
+   "etag": "\"a2f92ba53f973db6f7f9e2eb41036a0f\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-80.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:41 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-81.csv.gz": {
+   "content_length": "8006245",
+   "etag": "\"ec6ca01a9bb923bbf371a1bcb7ad03e6\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-81.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:41 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-82.csv.gz": {
+   "content_length": "5319060",
+   "etag": "\"8c4f75f15b5f9fc153a02e561665410a\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-82.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:42 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-83.csv.gz": {
+   "content_length": "16109586",
+   "etag": "\"e678dfb2103b15a3a544b875801f3624\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-83.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:44 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-84.csv.gz": {
+   "content_length": "10007559",
+   "etag": "\"8a5f408615bac455d751f71f059f28f3\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-84.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:44 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-85.csv.gz": {
+   "content_length": "16252416",
+   "etag": "\"0e0dd38466abeb61868d9407fa65818e\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-85.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:45 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-86.csv.gz": {
+   "content_length": "6953470",
+   "etag": "\"24c185c9a59044cbf814d3a04ae87f1b\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-86.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:45 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-87.csv.gz": {
+   "content_length": "7166077",
+   "etag": "\"2b6956201da0eb26f4f279095a36b87c\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-87.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:46 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-88.csv.gz": {
+   "content_length": "6261310",
+   "etag": "\"f3e4c34b5b096409c63dfafc72d51d87\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-88.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:47 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-89.csv.gz": {
+   "content_length": "6754091",
+   "etag": "\"ecfcd12182b50ed24299f5c44aae9fb6\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-89.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:47 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-90.csv.gz": {
+   "content_length": "1278974",
+   "etag": "\"a424861a8d951d9879d2804e9b2f8508\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-90.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:48 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-91.csv.gz": {
+   "content_length": "11293478",
+   "etag": "\"05ecfa660af9f588496f4e85b4014dbf\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-91.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:48 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-92.csv.gz": {
+   "content_length": "5632065",
+   "etag": "\"a705c4ab5c82327247608fb91fda403c\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-92.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:49 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-93.csv.gz": {
+   "content_length": "8095341",
+   "etag": "\"eda1074cc17b82dd694fb0212c6e33e6\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-93.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:51 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-94.csv.gz": {
+   "content_length": "6936826",
+   "etag": "\"b940b6f96ea6f0b29a03239bc2db3f7e\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-94.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:52 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-95.csv.gz": {
+   "content_length": "9597430",
+   "etag": "\"b7b3a5cac6da6c8ffbdc291cfdecdb07\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-95.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:53 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-971.csv.gz": {
+   "content_length": "6206012",
+   "etag": "\"4eb7d607f3c88bc3ef0943f7527dc61f\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-971.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:53 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-972.csv.gz": {
+   "content_length": "5776998",
+   "etag": "\"3cfa5c5f078758915232a933549d1ed4\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-972.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:54 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-973.csv.gz": {
+   "content_length": "2404390",
+   "etag": "\"669ff1cab20d33901d44648a932050f4\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-973.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:55 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-974.csv.gz": {
+   "content_length": "13327899",
+   "etag": "\"1bb5978e5b2cedd27af13892472e279e\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-974.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:56 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-975.csv.gz": {
+   "content_length": "87016",
+   "etag": "\"45c74c947c0c94cc6a71150296015c5a\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-975.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:56 GMT",
+   "status": 200
+  },
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-976.csv.gz": {
+   "content_length": "2078604",
+   "etag": "\"314c3a8311e761c3f5275898a3e40ff6\"",
+   "final_url": "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-976.csv.gz",
+   "last_modified": "Tue, 13 Oct 2026 02:26:59 GMT",
+   "status": 200
+  }
+ },
+ "millesime": null,
+ "mode": "producteur",
+ "pannes": {},
+ "primary_metric": "adresses",
+ "script_sha256": "960d3b0b3bf138081e7a161842e7c3a708287fe6ea337ddbe0df0c0b0a1a201a",
+ "script_sha256_origin": "caller, SHA-256 of the file sent on stdin",
+ "source": "ban",
+ "started_at": "2026-10-13T10:18:20Z",
+ "totals": {
+  "adresses": 26046412,
+  "lignes_source": 26046412
+ },
+ "urls": [
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-01.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-02.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-03.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-04.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-05.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-06.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-07.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-08.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-09.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-10.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-11.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-12.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-13.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-14.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-15.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-16.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-17.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-18.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-19.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-2A.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-2B.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-21.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-22.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-23.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-24.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-25.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-26.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-27.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-28.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-29.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-30.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-31.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-32.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-33.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-34.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-35.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-36.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-37.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-38.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-39.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-40.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-41.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-42.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-43.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-44.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-45.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-46.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-47.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-48.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-49.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-50.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-51.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-52.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-53.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-54.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-55.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-56.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-57.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-58.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-59.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-60.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-61.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-62.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-63.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-64.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-65.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-66.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-67.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-68.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-69.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-70.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-71.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-72.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-73.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-74.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-75.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-76.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-77.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-78.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-79.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-80.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-81.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-82.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-83.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-84.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-85.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-86.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-87.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-88.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-89.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-90.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-91.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-92.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-93.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-94.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-95.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-971.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-972.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-973.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-974.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-975.csv.gz",
+  "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-976.csv.gz"
+ ]
+}

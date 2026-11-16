@@ -1,0 +1,69 @@
+{
+  "source": "https://www.insee.fr/fr/statistiques/7756855",
+  "archives": [
+    {
+      "archive": "parcours-filosofi-source.zip",
+      "sha256": "7d22f68a7aca557ffc3f2405dbbd54dcb68d7293a4ee7edc3396e9a6708ac6b9",
+      "bytes": 17547620,
+      "members": [
+        {
+          "name": "FILO2021_DEC_COM.csv",
+          "original_sha256": "902044e0ec7d6d7176248e1118db4adcb95da02dced450bf29031da6b2536e30",
+          "rows": 9,
+          "selected_source_sha256": "3a61007d1539281f11238cf04807878c364e5799346e001f4bd8c1efa49d2815",
+          "fixture_sha256_lf": "01dee53d1ae5ae5a548703c1991b8347bd9e6f7f189620964794e20bd4b6f399"
+        },
+        {
+          "name": "FILO2021_DISP_COM.csv",
+          "original_sha256": "2d1c769b2cce3503141d260ce1ddc67ffb475db59c1f0dd4d9365f62477c7f27",
+          "rows": 9,
+          "selected_source_sha256": "40683fd4307aced5405aac5b4bcbac88f6c78f2440dc1e745fe5f756cb964518",
+          "fixture_sha256_lf": "0667061b5bdb1f78d70751f37ca55a5c39e13426176cf5e73a094b68bc53f3c1"
+        },
+        {
+          "name": "FILO2021_DISP_PAUVRES_COM.csv",
+          "original_sha256": "3477b617d24f48ce120a6439e9bd5f9d4db3c7bbb8de6f221c72d1e5c0f38857",
+          "rows": 9,
+          "selected_source_sha256": "d92986e3d53081c4b45b5b1e9857e986f49b3d729a9331d7083e7de72b2f7886",
+          "fixture_sha256_lf": "89b6199de022df780def86344058ec2d16c7ab470f28bf1a00a7371ddbc2af59"
+        }
+      ],
+      "url": "https://www.insee.fr/fr/statistiques/fichier/7756855/indic-struct-distrib-revenu-2021-COMMUNES_csv.zip"
+    },
+    {
+      "archive": "cor05-supra-source.zip",
+      "sha256": "874e283c079cb10b7c851687feacfd7a31c58056a21b1de5d07e6669b43b7c9e",
+      "bytes": 5747907,
+      "members": [
+        {
+          "name": "FILO2021_DEC_METROPOLE.csv",
+          "original_sha256": "b228c48413ba9f82905561b8cd85a2ea8ff48fd1bb793eeaf37b07960d714efa",
+          "rows": 1,
+          "selected_source_sha256": "b228c48413ba9f82905561b8cd85a2ea8ff48fd1bb793eeaf37b07960d714efa",
+          "fixture_sha256_lf": "3dd64ad1e710e7ef343e3713c38e4aa9f2d5d3b727b2bfd81be842ee8b44cf70"
+        },
+        {
+          "name": "FILO2021_DISP_METROPOLE.csv",
+          "original_sha256": "1d7d5db808e1ea0d7e58288ff5e7006a32f99213138540f335edaa6596e2cca6",
+          "rows": 1,
+          "selected_source_sha256": "1d7d5db808e1ea0d7e58288ff5e7006a32f99213138540f335edaa6596e2cca6",
+          "fixture_sha256_lf": "2f552e9b13f35533b19afb85651b34d9348b053c159b1a681811b9525aa52a80"
+        }
+      ],
+      "url": "https://www.insee.fr/fr/statistiques/fichier/7756855/indic-struct-distrib-revenu-2021-SUPRA_csv.zip",
+      "retrieved_utc_date": "2026-09-08"
+    }
+  ],
+  "selection": [
+    "01019",
+    "13055",
+    "13201",
+    "44109",
+    "69123",
+    "69381",
+    "75056",
+    "75101",
+    "85191"
+  ],
+  "method": "Exact header and complete original rows selected by CODGEO; no numeric transformation. fixture_sha256_lf canonicalizes CRLF to LF for cross-platform Git checkouts."
+}

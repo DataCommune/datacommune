@@ -1,0 +1,111 @@
+{
+  "case_id": "R04",
+  "captured_at": "2026-09-10T20:42:43.210918+00:00",
+  "document": {
+    "http": 200,
+    "body": {
+      "association": "source_ban_equality",
+      "address_check": "unverified",
+      "source": "ADEME",
+      "source_coverage": "unknown",
+      "graph_state": "not_checked",
+      "imported_at": null,
+      "version": 2,
+      "type_batiment": "maison",
+      "surface_habitable": 81.9,
+      "etiquette_dpe": "C",
+      "etiquette_ges": "C",
+      "date_etablissement_dpe": "2026-04-13",
+      "date_fin_validite_dpe": "2036-04-12",
+      "annee_construction": 2021,
+      "periode_construction": "après 2021",
+      "type_installation_chauffage": null,
+      "type_energie_principale_chauffage": "Gaz naturel",
+      "qualite_isolation_enveloppe": "très bonne",
+      "conso_5_usages_ep": 5105.1,
+      "emission_ges_5_usages": 1004.8,
+      "cout_total_5_usages": 711.8,
+      "validity_by_date": "not_expired_by_date",
+      "lifecycle": {
+        "source_state": "present",
+        "source_snapshot_date": "2026-09-05",
+        "source_scope": "44/85",
+        "regimes": [
+          "neuf"
+        ],
+        "replacement_state": "no_successor_known",
+        "graph_issues": [],
+        "validity": "not_expired_by_date",
+        "as_of_date": "2026-09-10",
+        "revision_status": "unverified",
+        "revision_kind": null,
+        "revision_date": null,
+        "detail_availability": "available"
+      }
+    }
+  },
+  "pages": [
+    {
+      "association": "source_ban_equality",
+      "address_check": "unverified",
+      "source": "ADEME",
+      "source_coverage": "unknown",
+      "graph_state": "not_checked",
+      "imported_at": null,
+      "version": 2,
+      "as_of_date": "2026-09-10",
+      "state": "ready",
+      "items": [
+        {
+          "type_batiment": "maison",
+          "surface_habitable": 81.9,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "C",
+          "date_etablissement_dpe": "2026-04-13",
+          "date_fin_validite_dpe": "2036-04-12",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "neuf"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        }
+      ],
+      "total": 1,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "E": 0,
+        "F": 0,
+        "G": 0,
+        "unknown": 0
+      },
+      "page_size": 20,
+      "has_more": false,
+      "read_state": "complete"
+    }
+  ],
+  "source_existant": {
+    "http": 200,
+    "body": {
+      "total": 0,
+      "results": []
+    },
+    "url": "https://data.ademe.fr/data-fair/api/v1/datasets/dpe03existant/lines?qs=identifiant_ban%3A%2285088_vf3i1i_00002_b%22&size=200&select=numero_dpe%2Cidentifiant_ban%2Cadresse_ban%2Cadresse_brut%2Ccode_insee_ban%2Ctype_batiment%2Csurface_habitable_logement%2Cetiquette_dpe%2Cdate_etablissement_dpe%2Cdate_fin_validite_dpe%2Cnumero_dpe_remplace%2Cid_rnb%2Cscore_ban%2Cnumero_etage_appartement"
+  },
+  "items_read": 1,
+  "unique_refs": 1,
+  "last_has_more": false
+}

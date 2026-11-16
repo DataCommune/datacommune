@@ -1,0 +1,138 @@
+{
+	"base": "https://datacommune.fr",
+	"date": "2026-11-06T00:25:01.553Z",
+	"version": "46e3e30effd2ff0bcfe6e3a0a5eee10eb7e91ace",
+	"pages": {
+		"accueil": {
+			"375": {
+				"hauteur": 4434,
+				"mots": 730,
+				"source": 3,
+				"sigles": 7,
+				"enBref": null,
+				"notesLongues": 0
+			},
+			"1440": {
+				"hauteur": 2964,
+				"mots": 734,
+				"source": 3,
+				"sigles": 7,
+				"enBref": null,
+				"notesLongues": 0
+			}
+		},
+		"adresse": {
+			"375": {
+				"hauteur": 19782,
+				"mots": 2889,
+				"source": 2,
+				"sigles": 46,
+				"enBref": 1313,
+				"notesLongues": 0
+			},
+			"1440": {
+				"hauteur": 11241,
+				"mots": 2893,
+				"source": 2,
+				"sigles": 46,
+				"enBref": 516,
+				"notesLongues": 0
+			}
+		},
+		"commune": {
+			"375": {
+				"hauteur": 8351,
+				"mots": 902,
+				"source": 40,
+				"sigles": 15,
+				"enBref": null,
+				"notesLongues": 0
+			},
+			"1440": {
+				"hauteur": 5178,
+				"mots": 906,
+				"source": 40,
+				"sigles": 15,
+				"enBref": null,
+				"notesLongues": 0
+			}
+		},
+		"departement": {
+			"375": {
+				"hauteur": 4087,
+				"mots": 598,
+				"source": 0,
+				"sigles": 5,
+				"enBref": null,
+				"notesLongues": 4
+			},
+			"1440": {
+				"hauteur": 2741,
+				"mots": 602,
+				"source": 0,
+				"sigles": 5,
+				"enBref": null,
+				"notesLongues": 4
+			}
+		},
+		"annuaire": {
+			"375": {
+				"hauteur": 17559,
+				"mots": 2926,
+				"source": 0,
+				"sigles": 3,
+				"enBref": null,
+				"notesLongues": 0
+			},
+			"1440": {
+				"hauteur": 6034,
+				"mots": 2817,
+				"source": 0,
+				"sigles": 3,
+				"enBref": null,
+				"notesLongues": 0
+			}
+		},
+		"comparateur": {
+			"375": {
+				"hauteur": 8606,
+				"mots": 1394,
+				"source": 142,
+				"sigles": 14,
+				"enBref": null,
+				"notesLongues": 0
+			},
+			"1440": {
+				"hauteur": 6238,
+				"mots": 1404,
+				"source": 142,
+				"sigles": 14,
+				"enBref": null,
+				"notesLongues": 0
+			}
+		},
+		"datasets": {
+			"375": {
+				"hauteur": 14068,
+				"mots": 1592,
+				"source": 1,
+				"sigles": 44,
+				"enBref": null,
+				"notesLongues": 0
+			},
+			"1440": {
+				"hauteur": 9376,
+				"mots": 1596,
+				"source": 1,
+				"sigles": 44,
+				"enBref": null,
+				"notesLongues": 0
+			}
+		}
+	},
+	"champs": {
+		"44109_zz04_00004": [],
+		"44109_zz02_00031": [],
+		"85191_zz05_00011": []
+	}
+}

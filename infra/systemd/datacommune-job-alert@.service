@@ -1,0 +1,19 @@
+# DataCommune job failure alerter — parameterized oneshot unit (46-01, T6).
+#
+# Wired as the `OnFailure=` target of a scheduled `datacommune-job@<key>` unit.
+# It fires ONLY when the job exits non-zero at the OS level (container down,
+# import failure, or any crash outside the job's own alert path), giving a
+# second, independent notification line behind the application-level alerting.
+# `%i` is the opaque job key; it is passed straight to the redacting CLI hook.
+#
+# Host application (copy to /etc/systemd/system/, daemon-reload) is performed
+# under supervision in Plan 05 / checkpoint 46-01-03. This file is IaC only.
+
+[Unit]
+Description=DataCommune job failure alert: %i
+After=docker.service
+Requires=docker.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/docker exec datacommune-api-api-1 python -m app.scheduler.notify_job_failure %i

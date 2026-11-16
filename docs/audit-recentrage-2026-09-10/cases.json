@@ -1,0 +1,18 @@
+[
+  {"case_id":"R01","address":"2 Rue Rio, 44400 Rezé","ban_id":"44143_3270_00002","stratum":"absence signalée par utilisateur"},
+  {"case_id":"R02","address":"16 Rue des Clos Mâts, 44830 Brains","ban_id":"44024_0035_00016","stratum":"maison neuve 44"},
+  {"case_id":"R03","address":"5 Allée du Tertre, 44610 Indre","ban_id":"44074_rbwmiz_00005","stratum":"appartement neuf 44"},
+  {"case_id":"R04","address":"2b Rue du Martin Pêcheur, 85800 Le Fenouiller","ban_id":"85088_vf3i1i_00002_b","stratum":"maison neuve 85, suffixe"},
+  {"case_id":"R05","address":"39 Rue Blanchet, 44400 Rezé","ban_id":"44143_0400_00039","stratum":"maison, historique source neuve"},
+  {"case_id":"R06","address":"105 Rue Aristide Briand, 44400 Rezé","ban_id":"44143_0160_00105","stratum":"maison existante 44"},
+  {"case_id":"R07","address":"14 Rue des Bouleaux, 44400 Rezé","ban_id":"44143_0465_00014","stratum":"maison existante avec RNB"},
+  {"case_id":"R08","address":"113 Rue des Carterons, 44400 Rezé","ban_id":"44143_0580_00113","stratum":"adresse BAN source différente du numéro brut 111"},
+  {"case_id":"R09","address":"111 Rue des Carterons, 44400 Rezé","ban_id":"44143_0580_00113","stratum":"adresse brute du même diagnostic que R08; BAN source est la référence comparée, pas la vérité terrain"},
+  {"case_id":"R10","address":"21 Rue Benoît Chupiet, 44400 Rezé","ban_id":"44143_0890_00021","stratum":"appartements, adresse source mal encodée"},
+  {"case_id":"R11","address":"38 Rue Alexandre Huchon, 44400 Rezé","ban_id":"44143_0890_00021","stratum":"adresse brute différente de BAN source 21 Chupiet; pas une vérité terrain"},
+  {"case_id":"R12","address":"41 Rue Stendhal, 44300 Nantes","ban_id":"44109_7969_00041","stratum":"maison avec diagnostic remplaçant"},
+  {"case_id":"R13","address":"5 Avenue des Coucous, 44300 Nantes","ban_id":"44109_2222_00005","stratum":"maison avec RNB"},
+  {"case_id":"R14","address":"20 Route de Carquefou, 44300 Nantes","ban_id":"44109_1452_00020","stratum":"collectif, pagination et compléments de logement"},
+  {"case_id":"R15","address":"7 Rue Gaston Tessier, 85000 La Roche-sur-Yon","ban_id":"85191_0889_00007","stratum":"maison existante 85"},
+  {"case_id":"R16","address":"16 Rue Pierre Bérégovoy, 85000 La Roche-sur-Yon","ban_id":"85191_2006_00016","stratum":"appartement existant 85"}
+]

@@ -1,0 +1,23 @@
+{
+  "url": "https://static.data.gouv.fr/resources/logements-vacants-du-parc-prive-par-commune-departement-region-france/20260625-163627/lovac-opendata-communes26.csv",
+  "retrieved": "2026-09-08",
+  "raw_sha256": "b856568d4b69784d32f9fafaf7e1376047e45eed245fb114dd737d2d43826245",
+  "raw_bytes": 7628201,
+  "raw_rows": 34912,
+  "fixture_sha256": "63f3e49ea9a356f651513e304af68c8fe1326d794a58ca7c6b8a9d17aa9403cf",
+  "extraction": "csv.DictReader latin-1 ; select CODGEO_26 in codes preserving source order, columns and values; csv.DictWriter delimiter ; CRLF",
+  "codes": [
+    "01001",
+    "01006",
+    "01009",
+    "02343",
+    "44109"
+  ],
+  "universe": "LOVAC private housing: pp_vacant_26 / ff_pp_total_25; no INSEE denominator",
+  "denominator_partition": {
+    "numeric": 16591,
+    "secret_s": 18321,
+    "empty": 0
+  },
+  "empty_counterexample": "No empty denominator in full official source. Separate synthetic mutation tests only; never represented as official observation."
+}

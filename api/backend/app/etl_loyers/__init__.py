@@ -1,0 +1,5 @@
+"""Carte des Loyers ETL pipeline.
+
+Data source: Estimations ANIL, a partir des donnees du Groupe SeLoger
+et de leboncoin. Published by Ministere de la Transition Ecologique.
+"""

@@ -1,0 +1,4 @@
+# Force LF on shell scripts (avoid CRLF issues on Linux prod)
+*.sh text eol=lf
+Dockerfile text eol=lf
+Caddyfile text eol=lf

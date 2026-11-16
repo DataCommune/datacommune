@@ -1,0 +1,33 @@
+{
+  "id": "zone_tendue",
+  "section": "marche",
+  "titre": "Zone tendue",
+  "etat": "non_concerne",
+  "ton": "neutre",
+  "granularite": {
+    "niveau": "commune",
+    "rayon_m": null
+  },
+  "verdict": "La commune n'est pas en zone tendue (taxe sur les logements vacants).",
+  "chiffres": [],
+  "details": {
+    "commune": "85047",
+    "lue_sur_la_commune": false,
+    "categorie": null,
+    "liste": "taxe_logements_vacants"
+  },
+  "rattachement": null,
+  "sources": [
+    {
+      "cle": "zone_tendue",
+      "nom": "Communes en zone tendue (taxe sur les logements vacants)",
+      "producteur": "DILA (service-public.gouv.fr)",
+      "url": "https://www.data.gouv.fr/datasets/5bc605788b4c414795053dca",
+      "licence": "Licence Ouverte 2.0",
+      "millesime": null,
+      "mode": "direct"
+    }
+  ],
+  "motif": null,
+  "pannes_partielles": []
+}

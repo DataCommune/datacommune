@@ -1,0 +1,210 @@
+# Public instance stack: https://datacommune.fr (frontend) + https://api.datacommune.fr (API).
+# Standalone file (no overlay): db + api + frontend + caddy + cloudflared + goatcounter, in a dedicated
+# LXC container. Nothing is published on the network: the only way in is the Cloudflare
+# Tunnel (outbound connection from cloudflared). Procedure: infra/public/README.md.
+#
+# Usage (inside the CT; infra/public/public-deploy.sh does this):
+#   IMAGE_TAG=<sha12> DEPLOYMENT_SHA=<sha> docker compose -p datacommune-public \
+#     --env-file /opt/datacommune/.env \
+#     -f api/docker-compose.public.yml up -d
+#
+# Images pinned by digest are the ones already pinned in docker-compose.vps.yml /
+# docker-compose.workbase.yml (db, caddy, cloudflared). The two application images are
+# built locally and tagged with the release sha so that a rollback is a tag switch.
+#
+# Client IP chain: Cloudflare -> cloudflared -> caddy (CF-Connecting-IP kept, copied to
+# X-Forwarded-For / X-Real-IP, see Caddyfile.public) -> api (TRUST_PROXY_HEADERS) and
+# frontend (ADDRESS_HEADER). The frontend's own server-side calls to the API are a
+# separate path, see infra/public/README.md ("IP du visiteur").
+
+name: datacommune-public
+
+services:
+  db:
+    image: postgis/postgis:17-3.5@sha256:09e171a1b5604d8ff22528eab3429b6d1237af4b629c239123a31b2deedff8dd
+    restart: unless-stopped
+    shm_size: "1gb"
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-datacommune}
+      POSTGRES_USER: ${POSTGRES_USER:-datacommune}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?POSTGRES_PASSWORD missing from /opt/datacommune/.env}
+    # No `ports`: PostgreSQL is reachable on the compose network only.
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+    command:
+      - "postgres"
+      - "-c"
+      - "shared_buffers=2GB"
+      - "-c"
+      - "effective_cache_size=5GB"
+      - "-c"
+      - "random_page_cost=1.1"
+      - "-c"
+      - "work_mem=16MB"
+      - "-c"
+      - "maintenance_work_mem=512MB"
+      - "-c"
+      - "max_wal_size=2GB"
+      # Functional, not tuning: migration 086 creates pg_stat_statements.
+      - "-c"
+      - "shared_preload_libraries=pg_stat_statements"
+    logging: &logging
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  api:
+    image: datacommune-public-api:${IMAGE_TAG:?IMAGE_TAG must be the release tag}
+    build:
+      context: ./backend
+      dockerfile: ../docker/Dockerfile
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql+asyncpg://${POSTGRES_USER:-datacommune}:${POSTGRES_PASSWORD:?POSTGRES_PASSWORD missing}@db:5432/${POSTGRES_DB:-datacommune}
+      API_BASE_URL: https://api.datacommune.fr
+      DEBUG: "false"
+      LOG_FORMAT: "json"
+      DEPLOYMENT_SHA: ${DEPLOYMENT_SHA:-unknown}
+      ADMIN_USERNAME: ${ADMIN_USERNAME:-admin}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:?ADMIN_PASSWORD missing}
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY:?JWT_SECRET_KEY missing}
+      API_KEY_HMAC_SECRET: ${API_KEY_HMAC_SECRET:?API_KEY_HMAC_SECRET missing}
+      # Billing and mail are frozen (ADR-0002): disabled, so no fake secret is needed.
+      EMAIL_ENABLED: "false"
+      STRIPE_ENABLED: "false"
+      # Only the frontend origin may call the API from a browser.
+      CORS_ORIGINS: '["https://datacommune.fr"]'
+      # Every request reaches the API through caddy, itself behind the tunnel: the only
+      # path in. cf-connecting-ip (set by Cloudflare) is then the visitor's address.
+      TRUST_PROXY_HEADERS: "true"
+      ETL_TEMP_DIR: /etl_tmp
+      # Error report of the site (framing of 2026-11-10): a literal, never read from the .env of the
+      # server. Turning it on is a commit, guarded by frontend/src/lib/signalement/ouverture.test.ts.
+      SIGNALEMENT_ENABLED: "false"
+      # Registration is closed by the API itself too, not only by Caddy (05-07 lot 5).
+      REGISTRATION_ENABLED: "false"
+      # Requests without any key, on the per-IP buckets of the public key (Ianis, 2026-11-12).
+      # A literal: opening it is a commit, deployed with Ianis's agreement.
+      KEYLESS_ACCESS_ENABLED: "false"
+      # MCP server for agents (D-143, Ianis 2026-11-15): POST /mcp reads /v1 without a key on
+      # the same per-IP buckets. A literal: opening it is a commit, deployed with Ianis's
+      # agreement, together with the /mcp route of Caddyfile.public (already written).
+      MCP_ENABLED: "false"
+      # Account mail through the Migadu mailbox of the domain (Ianis, 2026-11-12). Only read
+      # once EMAIL_ENABLED is "true"; the values live in the host .env, set by Ianis, never here.
+      EMAIL_TRANSPORT: "smtp"
+      SMTP_HOST: ${SMTP_HOST:-}
+      SMTP_PORT: ${SMTP_PORT:-465}
+      SMTP_USERNAME: ${SMTP_USERNAME:-}
+      SMTP_PASSWORD: ${SMTP_PASSWORD:-}
+      EMAIL_SENDER: ${EMAIL_SENDER:-}
+    volumes:
+      - etl_tmp:/etl_tmp
+    logging: *logging
+
+  frontend:
+    image: datacommune-public-frontend:${IMAGE_TAG:?IMAGE_TAG must be the release tag}
+    build:
+      context: ../frontend
+      args:
+        VITE_API_URL: https://api.datacommune.fr
+        PUBLIC_DC_API_KEY: ${PUBLIC_DC_API_KEY:?PUBLIC_DC_API_KEY (dc_anon_...) missing from /opt/datacommune/.env}
+        VITE_DEPLOYMENT_ENV: production
+        VITE_DEPLOYMENT_SHA: ${DEPLOYMENT_SHA:-unknown}
+        VITE_ACCOUNTS_ENABLED: "false"
+        # No paid plan even when accounts are opened (D-133 amended 2026-11-12).
+        VITE_BILLING_ENABLED: "false"
+        # Audience measurement (04.7-14b): the pages count themselves at /count, which Caddy
+        # routes to the goatcounter service below.
+        VITE_MESURE_AUDIENCE: "true"
+        # Error report: page /signaler, link of the footer and of the information panel. Same literal
+        # and same guard as SIGNALEMENT_ENABLED above; both are turned on together.
+        VITE_SIGNALEMENT: "false"
+    restart: unless-stopped
+    environment:
+      # adapter-node: ORIGIN is required for the same-origin check of form posts behind
+      # a TLS-terminating proxy; ADDRESS_HEADER makes getClientAddress() the visitor.
+      ORIGIN: https://datacommune.fr
+      ADDRESS_HEADER: CF-Connecting-IP
+      HOST: 0.0.0.0
+      PORT: "3000"
+      # Read by no code yet: target of the server-side API calls once the frontend sends
+      # the visitor's address (infra/public/README.md, "IP du visiteur"). Harmless until then.
+      API_INTERNAL_URL: http://api:8000
+      # Weekly allowance of distinct address fiches per anonymous session (H-3,
+      # frontend/src/lib/server/fiche-quota.ts). Threshold to be set by Ianis in
+      # /opt/datacommune/.env; 0 turns the quota off. Read at runtime: no rebuild.
+      FICHE_QUOTA_WEEKLY: ${FICHE_QUOTA_WEEKLY:-100}
+    logging: *logging
+
+  caddy:
+    # Pinned by digest, same as docker-compose.vps.yml. Re-pin deliberately on upgrade.
+    image: caddy:2@sha256:af5fdcd76f2db5e4e974ee92f96ee8c0fc3edb55bd4ba5032547cbf3f65e486d
+    restart: unless-stopped
+    depends_on:
+      api:
+        condition: service_started
+      frontend:
+        condition: service_started
+    # Loopback only, for diagnostics from the CT (curl -H 'Host: ...'). Not reachable
+    # from the LAN. cloudflared reaches caddy on the compose network (http://caddy:80).
+    ports:
+      - "127.0.0.1:8080:80"
+    environment:
+      # Gate of the audience count (04.7-14b): `oui` only once the GoatCounter site is created and
+      # set (retention, collection off); anything else and Caddy answers /count itself with 204.
+      MESURE_AUDIENCE_ACTIVE: ${MESURE_AUDIENCE_ACTIVE:-non}
+    volumes:
+      - ./Caddyfile.public:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    logging: *logging
+
+  cloudflared:
+    # Pinned by digest, same as docker-compose.vps.yml. Re-pin deliberately on upgrade.
+    image: cloudflare/cloudflared:latest@sha256:6d91c121b803126f7a5344005d17a9324788fc09d305b6e2560ec6040a7ae283
+    restart: unless-stopped
+    # Token read from the environment by cloudflared itself: it stays out of `ps` and of
+    # the compose file. The routes (hostname -> http://caddy:80) live in Cloudflare.
+    command: tunnel --no-autoupdate run
+    environment:
+      TUNNEL_TOKEN: ${CF_TUNNEL_TOKEN:?CF_TUNNEL_TOKEN missing from /opt/datacommune/.env}
+    depends_on:
+      caddy:
+        condition: service_started
+    logging: *logging
+
+  goatcounter:
+    # Audience measurement (04.7-14b, audit A9), self-hosted. Official image, pinned by the digest
+    # of its 2.7.0 index (Docker Hub, 2025-12-15); re-pin deliberately on upgrade. The image runs
+    # `goatcounter serve -automigrate`: plain HTTP on :8080, SQLite in its data volume.
+    # Public side: only /count, through Caddy, which strips the visitor's address, referrer and
+    # cookies (Caddyfile.public). Dashboard: loopback of the CT only, through an SSH tunnel
+    # (ssh -L 8081:127.0.0.1:8081 <ct>, then http://localhost:8081); no DNS entry, no tunnel route.
+    image: arp242/goatcounter:2.7.0@sha256:791df3317bf5ce379511181a4802aaf29127a318b372d4fe39ec59e1c5af44be
+    restart: unless-stopped
+    # Every count reaches it from Caddy's address (the visitor's is removed), and the default limit
+    # of 4 counts a second is keyed on address and User-Agent: it would drop the views of visitors
+    # sharing a browser. 50 a second per User-Agent is far above the expected aggregate traffic.
+    command: ["serve", "-automigrate", "-ratelimit", "count:50/1"]
+    ports:
+      - "127.0.0.1:8081:8080"
+    volumes:
+      - goatcounter_data:/home/goatcounter/goatcounter-data
+    logging: *logging
+
+volumes:
+  pgdata:
+  etl_tmp:
+  caddy_data:
+  caddy_config:
+  goatcounter_data:

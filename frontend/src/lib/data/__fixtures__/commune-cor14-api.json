@@ -1,0 +1,316 @@
+{
+  "44991": {
+    "statut": "ok",
+    "donnees": [
+      {
+        "code_insee": "44991",
+        "nom_commune": "Ancienne",
+        "code_departement": "44",
+        "code_region": null,
+        "population": 100,
+        "nb_menages": null,
+        "nb_logements": null,
+        "nb_logements_vacants_recensement": null,
+        "densite": null,
+        "superficie": null,
+        "annee_demographie": 2022,
+        "revenu_median": null,
+        "taux_pauvrete": null,
+        "indice_gini": null,
+        "part_imposee": null,
+        "annee_revenus": null,
+        "zone_abc": null,
+        "zone_abc_reclassement": null,
+        "taux_vacance": null,
+        "nb_vacants_plus_2ans": null,
+        "annee_vacance": null,
+        "taux_tfpb": null,
+        "taux_th_rs": null,
+        "taux_teom": null,
+        "nom_epci": null,
+        "annee_fiscalite": null,
+        "loyer_m2_appartement": 10.0,
+        "loyer_m2_maison": 12.0,
+        "annee_loyers": null,
+        "loyers_appartement": {
+          "code_insee": "44991",
+          "nom_commune": null,
+          "type_habitat": "appartement",
+          "loyer_m2": 10.0,
+          "loyer_m2_bas": null,
+          "loyer_m2_haut": null,
+          "r2": null,
+          "nb_observations": null,
+          "annee": 2022,
+          "id_zone": null,
+          "type_prediction": null,
+          "nb_observations_commune": null,
+          "nb_observations_maille": null,
+          "r2_ajuste": null,
+          "trimestre_reference": null,
+          "charges_comprises": null,
+          "meuble": null,
+          "surface_reference_m2": null,
+          "surface_piece_reference_m2": null
+        },
+        "loyers_maison": {
+          "code_insee": "44991",
+          "nom_commune": null,
+          "type_habitat": "maison",
+          "loyer_m2": 12.0,
+          "loyer_m2_bas": null,
+          "loyer_m2_haut": null,
+          "r2": null,
+          "nb_observations": null,
+          "annee": 2021,
+          "id_zone": null,
+          "type_prediction": null,
+          "nb_observations_commune": null,
+          "nb_observations_maille": null,
+          "r2_ajuste": null,
+          "trimestre_reference": null,
+          "charges_comprises": null,
+          "meuble": null,
+          "surface_reference_m2": null,
+          "surface_piece_reference_m2": null
+        },
+        "prix_m2_median": null,
+        "nb_mutations_12m": null,
+        "prix_m2_median_maison": null,
+        "nb_mutations_12m_maison": null,
+        "prix_m2_median_appartement": null,
+        "nb_mutations_12m_appartement": null,
+        "dpe_passoires_pct": null,
+        "dpe_median": null,
+        "annee_construction_mediane": null,
+        "nb_equipements": 0,
+        "annee_equipements": 2022,
+        "nb_etablissements_scolaires": null,
+        "nb_monuments": null,
+        "nb_proprietaires_pm": null,
+        "surface_pm_ha": null,
+        "fibre_pct": null
+      }
+    ],
+    "meta": {
+      "source": [
+        {
+          "nom": "Recensement de la population",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://www.insee.fr/fr/statistiques/8290591",
+          "producteur": "INSEE"
+        },
+        {
+          "nom": "Filosofi (revenus et pauvreté)",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://www.insee.fr/fr/statistiques/7756855",
+          "producteur": "INSEE"
+        },
+        {
+          "nom": "Zonage ABC (tension immobilière)",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://www.data.gouv.fr/datasets/liste-des-communes-selon-le-zonage-abc",
+          "producteur": "Ministère de la Transition écologique"
+        },
+        {
+          "nom": "Logements vacants (LOVAC)",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://www.data.gouv.fr/datasets/logements-vacants-du-parc-prive-par-commune-departement-region-france",
+          "producteur": "CEREMA"
+        },
+        {
+          "nom": "Fiscalité locale des particuliers",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://www.data.gouv.fr/datasets/fiscalite-locale-des-particuliers",
+          "producteur": "DGFiP"
+        },
+        {
+          "nom": "Carte des loyers",
+          "licence": "Non specifiee (mention source obligatoire)",
+          "url": "https://www.data.gouv.fr/datasets/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025",
+          "producteur": "ANIL / MTE"
+        },
+        {
+          "nom": "Demandes de valeurs foncières (DVF)",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://www.data.gouv.fr/datasets/demandes-de-valeurs-foncieres-geolocalisees",
+          "producteur": "DGFiP / Etalab"
+        },
+        {
+          "nom": "Diagnostics de performance énergétique (DPE)",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://data.ademe.fr/datasets/dpe03existant",
+          "producteur": "ADEME"
+        },
+        {
+          "nom": "Base permanente des équipements (BPE)",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://www.insee.fr/fr/statistiques/8217537",
+          "producteur": "INSEE"
+        },
+        {
+          "nom": "Carte scolaire des collèges",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://www.data.gouv.fr/datasets/carte-scolaire-des-colleges-publics",
+          "producteur": "DGESCO / MEN"
+        },
+        {
+          "nom": "Monuments historiques",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://data.culture.gouv.fr/explore/dataset/liste-des-immeubles-proteges-au-titre-des-monuments-historiques/",
+          "producteur": "Ministère de la Culture"
+        },
+        {
+          "nom": "Fichiers des personnes morales (MAJIC)",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://www.data.gouv.fr/datasets/fichiers-des-locaux-et-des-parcelles-des-personnes-morales",
+          "producteur": "DGFiP / Etalab"
+        },
+        {
+          "nom": "Ma Connexion Internet (Arcep)",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://www.data.gouv.fr/datasets/ma-connexion-internet",
+          "producteur": "Arcep"
+        }
+      ],
+      "resolution": null
+    }
+  },
+  "85991": {
+    "statut": "ok",
+    "donnees": [
+      {
+        "code_insee": "85991",
+        "nom_commune": "Couverture inconnue",
+        "code_departement": "85",
+        "code_region": null,
+        "population": 300,
+        "nb_menages": null,
+        "nb_logements": null,
+        "nb_logements_vacants_recensement": null,
+        "densite": null,
+        "superficie": null,
+        "annee_demographie": 2024,
+        "revenu_median": null,
+        "taux_pauvrete": null,
+        "indice_gini": null,
+        "part_imposee": null,
+        "annee_revenus": null,
+        "zone_abc": null,
+        "zone_abc_reclassement": null,
+        "taux_vacance": null,
+        "nb_vacants_plus_2ans": null,
+        "annee_vacance": null,
+        "taux_tfpb": null,
+        "taux_th_rs": null,
+        "taux_teom": null,
+        "nom_epci": null,
+        "annee_fiscalite": null,
+        "loyer_m2_appartement": null,
+        "loyer_m2_maison": null,
+        "annee_loyers": null,
+        "loyers_appartement": null,
+        "loyers_maison": null,
+        "prix_m2_median": null,
+        "nb_mutations_12m": null,
+        "prix_m2_median_maison": null,
+        "nb_mutations_12m_maison": null,
+        "prix_m2_median_appartement": null,
+        "nb_mutations_12m_appartement": null,
+        "dpe_passoires_pct": null,
+        "dpe_median": null,
+        "annee_construction_mediane": null,
+        "nb_equipements": null,
+        "annee_equipements": null,
+        "nb_etablissements_scolaires": null,
+        "nb_monuments": null,
+        "nb_proprietaires_pm": null,
+        "surface_pm_ha": null,
+        "fibre_pct": null
+      }
+    ],
+    "meta": {
+      "source": [
+        {
+          "nom": "Recensement de la population",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://www.insee.fr/fr/statistiques/8290591",
+          "producteur": "INSEE"
+        },
+        {
+          "nom": "Filosofi (revenus et pauvreté)",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://www.insee.fr/fr/statistiques/7756855",
+          "producteur": "INSEE"
+        },
+        {
+          "nom": "Zonage ABC (tension immobilière)",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://www.data.gouv.fr/datasets/liste-des-communes-selon-le-zonage-abc",
+          "producteur": "Ministère de la Transition écologique"
+        },
+        {
+          "nom": "Logements vacants (LOVAC)",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://www.data.gouv.fr/datasets/logements-vacants-du-parc-prive-par-commune-departement-region-france",
+          "producteur": "CEREMA"
+        },
+        {
+          "nom": "Fiscalité locale des particuliers",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://www.data.gouv.fr/datasets/fiscalite-locale-des-particuliers",
+          "producteur": "DGFiP"
+        },
+        {
+          "nom": "Carte des loyers",
+          "licence": "Non specifiee (mention source obligatoire)",
+          "url": "https://www.data.gouv.fr/datasets/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025",
+          "producteur": "ANIL / MTE"
+        },
+        {
+          "nom": "Demandes de valeurs foncières (DVF)",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://www.data.gouv.fr/datasets/demandes-de-valeurs-foncieres-geolocalisees",
+          "producteur": "DGFiP / Etalab"
+        },
+        {
+          "nom": "Diagnostics de performance énergétique (DPE)",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://data.ademe.fr/datasets/dpe03existant",
+          "producteur": "ADEME"
+        },
+        {
+          "nom": "Base permanente des équipements (BPE)",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://www.insee.fr/fr/statistiques/8217537",
+          "producteur": "INSEE"
+        },
+        {
+          "nom": "Carte scolaire des collèges",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://www.data.gouv.fr/datasets/carte-scolaire-des-colleges-publics",
+          "producteur": "DGESCO / MEN"
+        },
+        {
+          "nom": "Monuments historiques",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://data.culture.gouv.fr/explore/dataset/liste-des-immeubles-proteges-au-titre-des-monuments-historiques/",
+          "producteur": "Ministère de la Culture"
+        },
+        {
+          "nom": "Fichiers des personnes morales (MAJIC)",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://www.data.gouv.fr/datasets/fichiers-des-locaux-et-des-parcelles-des-personnes-morales",
+          "producteur": "DGFiP / Etalab"
+        },
+        {
+          "nom": "Ma Connexion Internet (Arcep)",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://www.data.gouv.fr/datasets/ma-connexion-internet",
+          "producteur": "Arcep"
+        }
+      ],
+      "resolution": null
+    }
+  }
+}

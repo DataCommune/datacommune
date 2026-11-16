@@ -1,0 +1,983 @@
+{
+  "image_id": "sha256:8e92b9ea916e6fe19270a6a78fbae005d41868076c045e849daba7655f244a2b",
+  "publication_contract": "1",
+  "image_source_files": 438,
+  "image_source_manifest_sha256": "4a5591971d8f6b065e5af1ee0127f6392e5114263d711caf5c5c335676da84e6",
+  "source": {
+    "raw_sha256": "b856568d4b69784d32f9fafaf7e1376047e45eed245fb114dd737d2d43826245",
+    "raw_bytes": 7628201,
+    "gzip_sha256": "a1cc182c08bb0b5a4b5e9f83409226356119826fd532c1b0ec1b79766e4ac4bf",
+    "gzip_bytes": 1168493,
+    "rows": 34912,
+    "denominator_secrets": 18321,
+    "numerator_year": 2026,
+    "denominator_year": 2025,
+    "provenance": "Existing COR08 official source; no network retrieval in L09",
+    "encoding": "latin-1",
+    "delimiter": ";"
+  },
+  "schema091": {
+    "schema": "091_dpe_source_lifecycle",
+    "logical_sha256": "7d1a5ce5041a04041b2fae7854cb01d65764c5000040b980261d206e9d262499",
+    "tables": 778,
+    "objects": {
+      "columns": 13136,
+      "constraints": 799,
+      "indexes": 4725,
+      "views": 10,
+      "sequences": 36
+    }
+  },
+  "archive091_sha256": "3f458bcf28222d299e39383bb69276f27df8f537b1ae3d356c7c0d5bb2ee2cfa",
+  "archive094_sha256": "17b09f5f6d8292aab1c6eb61ecc9e7c8ffd5b4ca535009ac49d5d0a6432bb837",
+  "full_restore094_sha256": "2f033786a1fc721a9ad381da4c144e244873f870a321d8a058462046c703f99a",
+  "tables094": 780,
+  "objects094": {
+    "columns": 13172,
+    "constraints": 805,
+    "indexes": 4732,
+    "views": 10,
+    "sequences": 37
+  },
+  "oids_before": [
+    44451,
+    44551
+  ],
+  "oids_restored": [
+    51270,
+    51282
+  ],
+  "oids_recovered": [
+    56999,
+    57099
+  ],
+  "journal_statuses": [
+    "published",
+    "pending",
+    "failed",
+    "published"
+  ],
+  "phases": {
+    "published094": {
+      "nantes": {
+        "status": 200,
+        "body": {
+          "statut": "ok",
+          "donnees": [
+            {
+              "code_commune": "44109",
+              "nom_commune": "Nantes",
+              "code_departement": "44",
+              "nom_departement": "Loire-Atlantique",
+              "nom_region": "Pays de la Loire",
+              "nb_logements_prives": 155375,
+              "nb_logements_vacants": 14854,
+              "nb_vacants_moins_2ans": 12455,
+              "nb_vacants_plus_2ans": 2399,
+              "taux_vacance": 9.56,
+              "taux_vacance_moins_2ans": 8.02,
+              "taux_vacance_plus_2ans": 1.54,
+              "annee": 2026
+            }
+          ],
+          "meta": {
+            "source": {
+              "nom": "Logements Vacants (LOVAC)",
+              "licence": "Licence Ouverte 2.0",
+              "url": "https://www.data.gouv.fr/datasets/logements-vacants-du-parc-prive-par-commune-departement-region-france",
+              "producteur": "CEREMA"
+            },
+            "resolution": null
+          }
+        }
+      },
+      "secret": {
+        "status": 200,
+        "body": {
+          "statut": "ok",
+          "donnees": [
+            {
+              "code_commune": "01006",
+              "nom_commune": "Ambléon",
+              "code_departement": "01",
+              "nom_departement": "Ain",
+              "nom_region": "Auvergne-Rhône-Alpes",
+              "nb_logements_prives": null,
+              "nb_logements_vacants": null,
+              "nb_vacants_moins_2ans": null,
+              "nb_vacants_plus_2ans": null,
+              "taux_vacance": null,
+              "taux_vacance_moins_2ans": null,
+              "taux_vacance_plus_2ans": null,
+              "annee": 2026
+            }
+          ],
+          "meta": {
+            "source": {
+              "nom": "Logements Vacants (LOVAC)",
+              "licence": "Licence Ouverte 2.0",
+              "url": "https://www.data.gouv.fr/datasets/logements-vacants-du-parc-prive-par-commune-departement-region-france",
+              "producteur": "CEREMA"
+            },
+            "resolution": null
+          }
+        }
+      },
+      "zero": {
+        "status": 200,
+        "body": {
+          "statut": "ok",
+          "donnees": [
+            {
+              "code_commune": "02343",
+              "nom_commune": "Germaine",
+              "code_departement": "02",
+              "nom_departement": "Aisne",
+              "nom_region": "Hauts-de-France",
+              "nb_logements_prives": 35,
+              "nb_logements_vacants": 0,
+              "nb_vacants_moins_2ans": 0,
+              "nb_vacants_plus_2ans": 0,
+              "taux_vacance": 0.0,
+              "taux_vacance_moins_2ans": 0.0,
+              "taux_vacance_plus_2ans": 0.0,
+              "annee": 2026
+            }
+          ],
+          "meta": {
+            "source": {
+              "nom": "Logements Vacants (LOVAC)",
+              "licence": "Licence Ouverte 2.0",
+              "url": "https://www.data.gouv.fr/datasets/logements-vacants-du-parc-prive-par-commune-departement-region-france",
+              "producteur": "CEREMA"
+            },
+            "resolution": null
+          }
+        }
+      },
+      "commune": {
+        "status": 200,
+        "body": {
+          "statut": "ok",
+          "donnees": [
+            {
+              "code_insee": "44109",
+              "nom_commune": null,
+              "code_departement": null,
+              "code_region": null,
+              "population": null,
+              "nb_menages": null,
+              "nb_logements": null,
+              "nb_logements_vacants_recensement": null,
+              "densite": null,
+              "superficie": null,
+              "annee_demographie": 2026,
+              "revenu_median": null,
+              "taux_pauvrete": null,
+              "indice_gini": null,
+              "part_imposee": null,
+              "annee_revenus": null,
+              "zone_abc": null,
+              "zone_abc_reclassement": null,
+              "taux_vacance": 9.56,
+              "nb_vacants_plus_2ans": 2399,
+              "annee_vacance": 2026,
+              "taux_tfpb": null,
+              "taux_th_rs": null,
+              "taux_teom": null,
+              "nom_epci": null,
+              "annee_fiscalite": null,
+              "loyer_m2_appartement": null,
+              "loyer_m2_maison": null,
+              "annee_loyers": null,
+              "loyers_appartement": null,
+              "loyers_maison": null,
+              "prix_m2_median": null,
+              "nb_mutations_12m": null,
+              "prix_m2_median_maison": null,
+              "nb_mutations_12m_maison": null,
+              "prix_m2_median_appartement": null,
+              "nb_mutations_12m_appartement": null,
+              "dpe_passoires_pct": null,
+              "dpe_median": null,
+              "annee_construction_mediane": null,
+              "nb_equipements": null,
+              "annee_equipements": null,
+              "nb_etablissements_scolaires": null,
+              "nb_monuments": null,
+              "nb_proprietaires_pm": null,
+              "surface_pm_ha": null,
+              "fibre_pct": null
+            }
+          ],
+          "meta": {
+            "source": [
+              {
+                "nom": "Recensement de la Population",
+                "licence": "Licence Ouverte 2.0",
+                "url": "https://www.insee.fr/fr/statistiques/8290591",
+                "producteur": "INSEE"
+              },
+              {
+                "nom": "Filosofi (Revenus et Pauvrete)",
+                "licence": "Licence Ouverte 2.0",
+                "url": "https://www.insee.fr/fr/statistiques/7756855",
+                "producteur": "INSEE"
+              },
+              {
+                "nom": "Zonage ABC (Tension Immobiliere)",
+                "licence": "Licence Ouverte 2.0",
+                "url": "https://www.data.gouv.fr/datasets/liste-des-communes-selon-le-zonage-abc",
+                "producteur": "Ministere de la Transition Ecologique"
+              },
+              {
+                "nom": "Logements Vacants (LOVAC)",
+                "licence": "Licence Ouverte 2.0",
+                "url": "https://www.data.gouv.fr/datasets/logements-vacants-du-parc-prive-par-commune-departement-region-france",
+                "producteur": "CEREMA"
+              },
+              {
+                "nom": "Fiscalite Locale des Particuliers",
+                "licence": "Licence Ouverte 2.0",
+                "url": "https://www.data.gouv.fr/datasets/fiscalite-locale-des-particuliers",
+                "producteur": "DGFiP"
+              },
+              {
+                "nom": "Carte des Loyers",
+                "licence": "Non specifiee (mention source obligatoire)",
+                "url": "https://www.data.gouv.fr/datasets/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025",
+                "producteur": "ANIL / MTE"
+              },
+              {
+                "nom": "Demandes de Valeurs Foncieres (DVF)",
+                "licence": "Licence Ouverte 2.0",
+                "url": "https://www.data.gouv.fr/datasets/demandes-de-valeurs-foncieres-geolocalisees",
+                "producteur": "DGFiP / Etalab"
+              },
+              {
+                "nom": "Diagnostics de Performance Energetique (DPE)",
+                "licence": "Licence Ouverte 2.0",
+                "url": "https://data.ademe.fr/datasets/dpe03existant",
+                "producteur": "ADEME"
+              },
+              {
+                "nom": "Base Permanente des Equipements (BPE)",
+                "licence": "Licence Ouverte 2.0",
+                "url": "https://www.insee.fr/fr/statistiques/8217537",
+                "producteur": "INSEE"
+              },
+              {
+                "nom": "Carte Scolaire des Colleges",
+                "licence": "Licence Ouverte 2.0",
+                "url": "https://www.data.gouv.fr/datasets/carte-scolaire-des-colleges-publics",
+                "producteur": "DGESCO / MEN"
+              },
+              {
+                "nom": "Monuments Historiques",
+                "licence": "Licence Ouverte 2.0",
+                "url": "https://data.culture.gouv.fr/explore/dataset/liste-des-immeubles-proteges-au-titre-des-monuments-historiques/",
+                "producteur": "Ministere de la Culture"
+              },
+              {
+                "nom": "Fichiers des personnes morales (MAJIC)",
+                "licence": "Licence Ouverte 2.0",
+                "url": "https://www.data.gouv.fr/datasets/fichiers-des-locaux-et-des-parcelles-des-personnes-morales",
+                "producteur": "DGFiP / Etalab"
+              },
+              {
+                "nom": "Ma Connexion Internet (Arcep)",
+                "licence": "Licence Ouverte 2.0",
+                "url": "https://www.data.gouv.fr/datasets/ma-connexion-internet",
+                "producteur": "Arcep"
+              }
+            ],
+            "resolution": null
+          }
+        }
+      }
+    },
+    "restored_stale_oids": {
+      "nantes": {
+        "status": 503,
+        "body": {
+          "detail": "Données temporairement indisponibles : publication non validée."
+        }
+      },
+      "secret": {
+        "status": 503,
+        "body": {
+          "detail": "Données temporairement indisponibles : publication non validée."
+        }
+      },
+      "zero": {
+        "status": 503,
+        "body": {
+          "detail": "Données temporairement indisponibles : publication non validée."
+        }
+      },
+      "commune": {
+        "status": 503,
+        "body": {
+          "detail": "Synthèse communale temporairement indisponible."
+        }
+      }
+    },
+    "process_crash_pending": {
+      "nantes": {
+        "status": 503,
+        "body": {
+          "detail": "Données temporairement indisponibles : publication non validée."
+        }
+      },
+      "secret": {
+        "status": 503,
+        "body": {
+          "detail": "Données temporairement indisponibles : publication non validée."
+        }
+      },
+      "zero": {
+        "status": 503,
+        "body": {
+          "detail": "Données temporairement indisponibles : publication non validée."
+        }
+      },
+      "commune": {
+        "status": 503,
+        "body": {
+          "detail": "Synthèse communale temporairement indisponible."
+        }
+      }
+    },
+    "failed_required_rebuild": {
+      "nantes": {
+        "status": 503,
+        "body": {
+          "detail": "Données temporairement indisponibles : publication non validée."
+        }
+      },
+      "secret": {
+        "status": 503,
+        "body": {
+          "detail": "Données temporairement indisponibles : publication non validée."
+        }
+      },
+      "zero": {
+        "status": 503,
+        "body": {
+          "detail": "Données temporairement indisponibles : publication non validée."
+        }
+      },
+      "commune": {
+        "status": 503,
+        "body": {
+          "detail": "Synthèse communale temporairement indisponible."
+        }
+      }
+    },
+    "recovered": {
+      "nantes": {
+        "status": 200,
+        "body": {
+          "statut": "ok",
+          "donnees": [
+            {
+              "code_commune": "44109",
+              "nom_commune": "Nantes",
+              "code_departement": "44",
+              "nom_departement": "Loire-Atlantique",
+              "nom_region": "Pays de la Loire",
+              "nb_logements_prives": 155375,
+              "nb_logements_vacants": 14854,
+              "nb_vacants_moins_2ans": 12455,
+              "nb_vacants_plus_2ans": 2399,
+              "taux_vacance": 9.56,
+              "taux_vacance_moins_2ans": 8.02,
+              "taux_vacance_plus_2ans": 1.54,
+              "annee": 2026
+            }
+          ],
+          "meta": {
+            "source": {
+              "nom": "Logements Vacants (LOVAC)",
+              "licence": "Licence Ouverte 2.0",
+              "url": "https://www.data.gouv.fr/datasets/logements-vacants-du-parc-prive-par-commune-departement-region-france",
+              "producteur": "CEREMA"
+            },
+            "resolution": null
+          }
+        }
+      },
+      "secret": {
+        "status": 200,
+        "body": {
+          "statut": "ok",
+          "donnees": [
+            {
+              "code_commune": "01006",
+              "nom_commune": "Ambléon",
+              "code_departement": "01",
+              "nom_departement": "Ain",
+              "nom_region": "Auvergne-Rhône-Alpes",
+              "nb_logements_prives": null,
+              "nb_logements_vacants": null,
+              "nb_vacants_moins_2ans": null,
+              "nb_vacants_plus_2ans": null,
+              "taux_vacance": null,
+              "taux_vacance_moins_2ans": null,
+              "taux_vacance_plus_2ans": null,
+              "annee": 2026
+            }
+          ],
+          "meta": {
+            "source": {
+              "nom": "Logements Vacants (LOVAC)",
+              "licence": "Licence Ouverte 2.0",
+              "url": "https://www.data.gouv.fr/datasets/logements-vacants-du-parc-prive-par-commune-departement-region-france",
+              "producteur": "CEREMA"
+            },
+            "resolution": null
+          }
+        }
+      },
+      "zero": {
+        "status": 200,
+        "body": {
+          "statut": "ok",
+          "donnees": [
+            {
+              "code_commune": "02343",
+              "nom_commune": "Germaine",
+              "code_departement": "02",
+              "nom_departement": "Aisne",
+              "nom_region": "Hauts-de-France",
+              "nb_logements_prives": 35,
+              "nb_logements_vacants": 0,
+              "nb_vacants_moins_2ans": 0,
+              "nb_vacants_plus_2ans": 0,
+              "taux_vacance": 0.0,
+              "taux_vacance_moins_2ans": 0.0,
+              "taux_vacance_plus_2ans": 0.0,
+              "annee": 2026
+            }
+          ],
+          "meta": {
+            "source": {
+              "nom": "Logements Vacants (LOVAC)",
+              "licence": "Licence Ouverte 2.0",
+              "url": "https://www.data.gouv.fr/datasets/logements-vacants-du-parc-prive-par-commune-departement-region-france",
+              "producteur": "CEREMA"
+            },
+            "resolution": null
+          }
+        }
+      },
+      "commune": {
+        "status": 200,
+        "body": {
+          "statut": "ok",
+          "donnees": [
+            {
+              "code_insee": "44109",
+              "nom_commune": null,
+              "code_departement": null,
+              "code_region": null,
+              "population": null,
+              "nb_menages": null,
+              "nb_logements": null,
+              "nb_logements_vacants_recensement": null,
+              "densite": null,
+              "superficie": null,
+              "annee_demographie": 2026,
+              "revenu_median": null,
+              "taux_pauvrete": null,
+              "indice_gini": null,
+              "part_imposee": null,
+              "annee_revenus": null,
+              "zone_abc": null,
+              "zone_abc_reclassement": null,
+              "taux_vacance": 9.56,
+              "nb_vacants_plus_2ans": 2399,
+              "annee_vacance": 2026,
+              "taux_tfpb": null,
+              "taux_th_rs": null,
+              "taux_teom": null,
+              "nom_epci": null,
+              "annee_fiscalite": null,
+              "loyer_m2_appartement": null,
+              "loyer_m2_maison": null,
+              "annee_loyers": null,
+              "loyers_appartement": null,
+              "loyers_maison": null,
+              "prix_m2_median": null,
+              "nb_mutations_12m": null,
+              "prix_m2_median_maison": null,
+              "nb_mutations_12m_maison": null,
+              "prix_m2_median_appartement": null,
+              "nb_mutations_12m_appartement": null,
+              "dpe_passoires_pct": null,
+              "dpe_median": null,
+              "annee_construction_mediane": null,
+              "nb_equipements": null,
+              "annee_equipements": null,
+              "nb_etablissements_scolaires": null,
+              "nb_monuments": null,
+              "nb_proprietaires_pm": null,
+              "surface_pm_ha": null,
+              "fibre_pct": null
+            }
+          ],
+          "meta": {
+            "source": [
+              {
+                "nom": "Recensement de la Population",
+                "licence": "Licence Ouverte 2.0",
+                "url": "https://www.insee.fr/fr/statistiques/8290591",
+                "producteur": "INSEE"
+              },
+              {
+                "nom": "Filosofi (Revenus et Pauvrete)",
+                "licence": "Licence Ouverte 2.0",
+                "url": "https://www.insee.fr/fr/statistiques/7756855",
+                "producteur": "INSEE"
+              },
+              {
+                "nom": "Zonage ABC (Tension Immobiliere)",
+                "licence": "Licence Ouverte 2.0",
+                "url": "https://www.data.gouv.fr/datasets/liste-des-communes-selon-le-zonage-abc",
+                "producteur": "Ministere de la Transition Ecologique"
+              },
+              {
+                "nom": "Logements Vacants (LOVAC)",
+                "licence": "Licence Ouverte 2.0",
+                "url": "https://www.data.gouv.fr/datasets/logements-vacants-du-parc-prive-par-commune-departement-region-france",
+                "producteur": "CEREMA"
+              },
+              {
+                "nom": "Fiscalite Locale des Particuliers",
+                "licence": "Licence Ouverte 2.0",
+                "url": "https://www.data.gouv.fr/datasets/fiscalite-locale-des-particuliers",
+                "producteur": "DGFiP"
+              },
+              {
+                "nom": "Carte des Loyers",
+                "licence": "Non specifiee (mention source obligatoire)",
+                "url": "https://www.data.gouv.fr/datasets/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025",
+                "producteur": "ANIL / MTE"
+              },
+              {
+                "nom": "Demandes de Valeurs Foncieres (DVF)",
+                "licence": "Licence Ouverte 2.0",
+                "url": "https://www.data.gouv.fr/datasets/demandes-de-valeurs-foncieres-geolocalisees",
+                "producteur": "DGFiP / Etalab"
+              },
+              {
+                "nom": "Diagnostics de Performance Energetique (DPE)",
+                "licence": "Licence Ouverte 2.0",
+                "url": "https://data.ademe.fr/datasets/dpe03existant",
+                "producteur": "ADEME"
+              },
+              {
+                "nom": "Base Permanente des Equipements (BPE)",
+                "licence": "Licence Ouverte 2.0",
+                "url": "https://www.insee.fr/fr/statistiques/8217537",
+                "producteur": "INSEE"
+              },
+              {
+                "nom": "Carte Scolaire des Colleges",
+                "licence": "Licence Ouverte 2.0",
+                "url": "https://www.data.gouv.fr/datasets/carte-scolaire-des-colleges-publics",
+                "producteur": "DGESCO / MEN"
+              },
+              {
+                "nom": "Monuments Historiques",
+                "licence": "Licence Ouverte 2.0",
+                "url": "https://data.culture.gouv.fr/explore/dataset/liste-des-immeubles-proteges-au-titre-des-monuments-historiques/",
+                "producteur": "Ministere de la Culture"
+              },
+              {
+                "nom": "Fichiers des personnes morales (MAJIC)",
+                "licence": "Licence Ouverte 2.0",
+                "url": "https://www.data.gouv.fr/datasets/fichiers-des-locaux-et-des-parcelles-des-personnes-morales",
+                "producteur": "DGFiP / Etalab"
+              },
+              {
+                "nom": "Ma Connexion Internet (Arcep)",
+                "licence": "Licence Ouverte 2.0",
+                "url": "https://www.data.gouv.fr/datasets/ma-connexion-internet",
+                "producteur": "Arcep"
+              }
+            ],
+            "resolution": null
+          }
+        }
+      }
+    }
+  },
+  "commands": [
+    {
+      "argv": [
+        "docker",
+        "ps",
+        "--filter",
+        "label=com.docker.compose.service=db",
+        "--format",
+        "{{.ID}}"
+      ],
+      "exit": 0,
+      "seconds": 0.157,
+      "stdout_sha256": "9dea94aef52cd5616fc80864677fb207ca0e98cc3162590743ffe804be35b710",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "docker",
+        "inspect",
+        "29b06d1b525c"
+      ],
+      "exit": 0,
+      "seconds": 0.125,
+      "stdout_sha256": "ddac24de0925fa41695a3a3d036aa289250e824c10b1b0a8d28453aaaf19f661",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "docker",
+        "image",
+        "inspect",
+        "--format",
+        "{{.Id}}",
+        "datacommune-l11-recovery-local:20260908"
+      ],
+      "exit": 0,
+      "stdout_sha256": "6f983c4a73a1f50ebc2cb41d83b1091b8eea405037beab21a9ffcd3e12240c84",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "docker",
+        "image",
+        "inspect",
+        "--format",
+        "{{ index .Config.Labels \"org.datacommune.publication-contract\" }}",
+        "sha256:8e92b9ea916e6fe19270a6a78fbae005d41868076c045e849daba7655f244a2b"
+      ],
+      "exit": 0,
+      "stdout_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "docker",
+        "run",
+        "--rm",
+        "--network",
+        "none",
+        "sha256:8e92b9ea916e6fe19270a6a78fbae005d41868076c045e849daba7655f244a2b",
+        "python",
+        "-c",
+        "import hashlib,json; from pathlib import Path; paths=[*Path('app').rglob('*.py'),*Path('migrations').rglob('*.py'),Path('pyproject.toml'),Path('uv.lock')]; print(json.dumps({p.as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in paths},sort_keys=True))"
+      ],
+      "exit": 0,
+      "stdout_sha256": "a4f65ef5c7b652248486e15e683b4462ed0655a05383ed8d40b2befd84c6d33f",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "docker",
+        "exec",
+        "29b06d1b525cf144a52be1def84b9135041f8100a555fc5b5835674c99545795",
+        "pg_dump",
+        "--format=custom",
+        "--no-owner",
+        "--no-privileges",
+        "-U",
+        "contract_test",
+        "-d",
+        "contract_module_778d0c405d4343879be509e7cf1fc358",
+        "--file",
+        "/tmp/l11_091.dump"
+      ],
+      "exit": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "docker",
+        "exec",
+        "29b06d1b525cf144a52be1def84b9135041f8100a555fc5b5835674c99545795",
+        "sha256sum",
+        "/tmp/l11_091.dump"
+      ],
+      "exit": 0,
+      "stdout_sha256": "705b4cd65f3037dfedb26ba35cc5abf7afe05dc49f9d6d0bab88277624adc515",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "docker",
+        "exec",
+        "29b06d1b525cf144a52be1def84b9135041f8100a555fc5b5835674c99545795",
+        "pg_restore",
+        "--exit-on-error",
+        "--no-owner",
+        "--no-privileges",
+        "-U",
+        "contract_test",
+        "-d",
+        "contract_restore_f25524aa9490463c94997a7927c26773",
+        "/tmp/l11_091.dump"
+      ],
+      "exit": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "docker",
+        "exec",
+        "29b06d1b525cf144a52be1def84b9135041f8100a555fc5b5835674c99545795",
+        "df",
+        "-B1",
+        "--output=avail",
+        "/var/lib/postgresql/data"
+      ],
+      "exit": 0,
+      "stdout_sha256": "bde3515b1dd8563cda153954b9c81c0833b20653027b7d10f7e6f6b1953b147f",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "docker",
+        "inspect",
+        "29b06d1b525cf144a52be1def84b9135041f8100a555fc5b5835674c99545795"
+      ],
+      "exit": 0,
+      "stdout_sha256": "214db78f76b80e507472688e2340c466f475af9765e3e92d3719679b485a32b5",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "docker",
+        "run",
+        "-d",
+        "--name",
+        "dc-l11-reader-2741393536",
+        "--network",
+        "dc-contract-test-243200518d_default",
+        "-p",
+        "127.0.0.1::8000",
+        "-e",
+        "DATABASE_URL",
+        "-e",
+        "DEBUG=true",
+        "-e",
+        "SENTRY_DSN=",
+        "-e",
+        "SENTRY_AUTH_TOKEN=",
+        "--mount",
+        "type=bind,source=C:\\tmp\\datacommune-l11-recovery-20260908\\docs\\audit-stabilisation-2026-09-08\\lot-11\\recovery,target=/probe,readonly",
+        "sha256:8e92b9ea916e6fe19270a6a78fbae005d41868076c045e849daba7655f244a2b",
+        "uvicorn",
+        "--app-dir",
+        "/probe",
+        "probe:app",
+        "--host",
+        "0.0.0.0",
+        "--port",
+        "8000",
+        "--no-access-log"
+      ],
+      "exit": 0,
+      "stdout_sha256": "de2d095340f1752e4cd9740b60fec48d530a0eff82cd69d268c34a916a98322e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "docker",
+        "port",
+        "dc-l11-reader-2741393536",
+        "8000"
+      ],
+      "exit": 0,
+      "stdout_sha256": "c8557836445456dec43119efc9358a798e17eeced97d7dceed8697515610cede",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "docker",
+        "inspect",
+        "--format",
+        "{{.Image}}",
+        "dc-l11-reader-2741393536"
+      ],
+      "exit": 0,
+      "stdout_sha256": "6f983c4a73a1f50ebc2cb41d83b1091b8eea405037beab21a9ffcd3e12240c84",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "docker",
+        "rm",
+        "-f",
+        "dc-l11-reader-2741393536"
+      ],
+      "exit": 0,
+      "stdout_sha256": "fd1a56a02a34826f1eef2e53db43a38210103ffad4372ce8382c026430234634",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "docker",
+        "exec",
+        "29b06d1b525cf144a52be1def84b9135041f8100a555fc5b5835674c99545795",
+        "pg_dump",
+        "--format=custom",
+        "--no-owner",
+        "--no-privileges",
+        "-U",
+        "contract_test",
+        "-d",
+        "contract_module_778d0c405d4343879be509e7cf1fc358",
+        "--file",
+        "/tmp/l11_094.dump"
+      ],
+      "exit": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "docker",
+        "exec",
+        "29b06d1b525cf144a52be1def84b9135041f8100a555fc5b5835674c99545795",
+        "sha256sum",
+        "/tmp/l11_094.dump"
+      ],
+      "exit": 0,
+      "stdout_sha256": "f65ffca52e557b1ed2cbb290260ebdd6e9cc274ba00e5b9a77fc7acd529cc12b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "docker",
+        "exec",
+        "29b06d1b525cf144a52be1def84b9135041f8100a555fc5b5835674c99545795",
+        "pg_restore",
+        "--exit-on-error",
+        "--no-owner",
+        "--no-privileges",
+        "-U",
+        "contract_test",
+        "-d",
+        "contract_restore_781edea636b946e1aad796852de7a848",
+        "/tmp/l11_094.dump"
+      ],
+      "exit": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "docker",
+        "inspect",
+        "29b06d1b525cf144a52be1def84b9135041f8100a555fc5b5835674c99545795"
+      ],
+      "exit": 0,
+      "stdout_sha256": "75e19341f9cc33dc7f316975d1efc4e843b63b651b849fc1daa2d1830d134ef8",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "docker",
+        "run",
+        "-d",
+        "--name",
+        "dc-l11-reader-94373b281f",
+        "--network",
+        "dc-contract-test-243200518d_default",
+        "-p",
+        "127.0.0.1::8000",
+        "-e",
+        "DATABASE_URL",
+        "-e",
+        "DEBUG=true",
+        "-e",
+        "SENTRY_DSN=",
+        "-e",
+        "SENTRY_AUTH_TOKEN=",
+        "--mount",
+        "type=bind,source=C:\\tmp\\datacommune-l11-recovery-20260908\\docs\\audit-stabilisation-2026-09-08\\lot-11\\recovery,target=/probe,readonly",
+        "sha256:8e92b9ea916e6fe19270a6a78fbae005d41868076c045e849daba7655f244a2b",
+        "uvicorn",
+        "--app-dir",
+        "/probe",
+        "probe:app",
+        "--host",
+        "0.0.0.0",
+        "--port",
+        "8000",
+        "--no-access-log"
+      ],
+      "exit": 0,
+      "stdout_sha256": "dc5ca85c5f50fc0d91997f7fa46b10b33f52090d6f904c51291018f0081cd273",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "docker",
+        "port",
+        "dc-l11-reader-94373b281f",
+        "8000"
+      ],
+      "exit": 0,
+      "stdout_sha256": "0e8f8626ab5b3b7447d81b79b5b5fa07008eb8814dfa879fa4efbe35fea491cc",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "docker",
+        "inspect",
+        "--format",
+        "{{.Image}}",
+        "dc-l11-reader-94373b281f"
+      ],
+      "exit": 0,
+      "stdout_sha256": "6f983c4a73a1f50ebc2cb41d83b1091b8eea405037beab21a9ffcd3e12240c84",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "docker",
+        "inspect",
+        "29b06d1b525cf144a52be1def84b9135041f8100a555fc5b5835674c99545795"
+      ],
+      "exit": 0,
+      "stdout_sha256": "074ac0117035cbe7c58faf01ff55b4272dbd22cab817e082b791a8ec11be617b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "operation": "image publication process crash",
+      "image_id": "sha256:8e92b9ea916e6fe19270a6a78fbae005d41868076c045e849daba7655f244a2b",
+      "exit": 17
+    },
+    {
+      "argv": [
+        "docker",
+        "rm",
+        "-f",
+        "dc-l11-reader-94373b281f"
+      ],
+      "exit": 0,
+      "stdout_sha256": "9e34173f3dc7be391ac33c7ec8902244db008d6d560fbf254ddd82f6abab7c32",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "limits": [
+    "local built production Dockerfile image; not deployed",
+    "HTTP probe includes real routers/database/guards; auth/quota/main lifespan omitted",
+    "full migration DDL; LOVAC frozen full source only; other datasets empty except synthetic demographics/spatial anchors",
+    "pg_dump no-owner/no-privileges; roles/ACL/tablespaces/external settings not certified",
+    "production backup/image/restore/RTO/RPO not certified"
+  ]
+}

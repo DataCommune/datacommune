@@ -1,0 +1,28 @@
+{
+  "zone": "datacommune.fr",
+  "account_id": "41e0c64ec2d04177adffccc3bdd6744a",
+  "zone_id": "c257883d25f8487bce1150280950cf35",
+  "worker": "frontend-dev",
+  "frontend_hostname": "dev.datacommune.fr",
+  "api_hostname": "dev-api.datacommune.fr",
+  "tunnel_name": "datacommune-preprod",
+  "tunnel_config": {
+    "ingress": [
+      {
+        "hostname": "dev-api.datacommune.fr",
+        "service": "http://caddy:80",
+        "originRequest": {"httpHostHeader": "dev-api.datacommune.fr"}
+      },
+      {"service": "http_status:404"}
+    ]
+  },
+  "access_contract": {
+    "frontend": "Keep the existing approved human policy and add the dedicated CI service token.",
+    "api": "Require the dedicated Worker/CI service token; do not create a bypass policy.",
+    "token_name": "datacommune-preproduction-worker-ci",
+    "private_worker_bindings": ["CF_ACCESS_CLIENT_ID", "CF_ACCESS_CLIENT_SECRET"],
+    "anonymous_check": "Both version endpoints must refuse unauthenticated requests."
+  },
+  "dns_contract": "Replace only the dev-api CNAME after the new tunnel and API are healthy; preserve every production record.",
+  "forbidden_targets": ["datacommune.fr", "www.datacommune.fr", "api.datacommune.fr", "frontend"]
+}

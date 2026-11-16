@@ -1,0 +1,548 @@
+{
+ "communes": 460,
+ "format_version": "commune-indicator-results.v1",
+ "header_counts": [
+  460,
+  920
+ ],
+ "header_keys": [
+  "calculated_at",
+  "cell_count",
+  "checked_at",
+  "codes_sha256",
+  "cog_sha256",
+  "cog_version",
+  "commune_count",
+  "format_version",
+  "observed_context",
+  "scope"
+ ],
+ "public_sha256": "f64c9d0f7d23ebf15fd2f4f9992469433b415caf314887e9652a2bbbc558d5c2",
+ "sample": {
+  "44001": {
+   "code_insee": "44001",
+   "indicateurs_dpe": {
+    "date_calcul": "2026-09-09T14:01:00Z",
+    "date_evaluation": "2026-09-09",
+    "generation": "11111111-1111-4111-8111-111111111111",
+    "methode_mediane": "percentile_disc",
+    "methode_modes": "toutes_classes_frequence_maximale_ordre_A_G",
+    "periode": "bornes_etablissement_observees_non_exhaustives",
+    "population": "diagnostics_canoniques_disponibles_hors_traces_retirees",
+    "provenance": [
+     {
+      "couverture": "unknown",
+      "date_import": null,
+      "date_publication_source": null,
+      "date_snapshot": null,
+      "licence": "Licence Ouverte 2.0",
+      "nom": "DPE logements existants depuis juillet 2021",
+      "producteur": "ADEME",
+      "reference": "https://data.ademe.fr/datasets/dpe03existant"
+     },
+     {
+      "couverture": "unknown",
+      "date_import": null,
+      "date_publication_source": null,
+      "date_snapshot": null,
+      "licence": "Licence Ouverte 2.0",
+      "nom": "DPE logements neufs depuis juillet 2021",
+      "producteur": "ADEME",
+      "reference": "https://data.ademe.fr/datasets/dpe02neuf"
+     }
+    ],
+    "resultat": {
+     "date_etablissement_max": null,
+     "date_etablissement_min": null,
+     "dates_etablissement_inconnues": 4,
+     "distribution": {
+      "classes": {
+       "A": 2,
+       "B": 0,
+       "C": 0,
+       "D": 0,
+       "E": 0,
+       "F": 0,
+       "G": 2
+      },
+      "inconnue": 0
+     },
+     "etat": "value",
+     "mediane_ordinale": "A",
+     "modes": [
+      "A",
+      "G"
+     ],
+     "part_fg_pct": {
+      "etat": "value",
+      "valeur": 50.0
+     },
+     "population": {
+      "classes_connues": 4,
+      "regimes": {
+       "existant": 0,
+       "inconnu": 4,
+       "neuf": 0
+      },
+      "remplacement": {
+       "ambiguous": 0,
+       "no_successor_known": 0,
+       "not_checked": 4,
+       "replaced": 0
+      },
+      "revision_non_verifiee": 4,
+      "source_inconnue": 4,
+      "total": 4,
+      "types_batiment": {
+       "appartement": 0,
+       "autre": 0,
+       "inconnu": 4,
+       "maison": 0
+      },
+      "validite": {
+       "expired": 0,
+       "future_establishment": 0,
+       "inconsistent_dates": 0,
+       "not_expired_by_date": 0,
+       "unknown": 4
+      }
+     }
+    },
+    "version_contrat": "1.0",
+    "version_population": "dpe-documentary-core.v1"
+   },
+   "indicateurs_dvf": {
+    "ancrage_temporel": {
+     "acquisition_complete": true,
+     "cog_sha256": "6f5a73cf350e68241abae99ec17cb4b7d81a6247a063feaae68228d5356ee2f0",
+     "contenu_projete_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "date_observation": "2026-09-09T00:00:00Z",
+     "departements": [
+      "44",
+      "85"
+     ],
+     "etat": "delivery_received_and_stock_bound",
+     "exhaustivite_historique": "unknown",
+     "generation_fournisseur": null,
+     "generation_stock": "22222222-2222-4222-8222-222222222222",
+     "lot_id": "synthetic-lot",
+     "methode_projection": "sha256-sorted-row-digests-json.v1",
+     "periode_debut_inclus": "2024-01-01",
+     "periode_fin_exclue": "2026-01-01",
+     "preuve_observation_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "preuve_qualification_sha256": "5c84a09d77bf743e5cb87f21e8f9bd8ddfdf60fca2d24bcdf6266e264ef8f910",
+     "preuve_reconstruction_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "revisions_possibles": true,
+     "snapshot_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "version_qualification": "dvf-delivery-qualification.v2"
+    },
+    "date_calcul": "2026-09-09T14:01:00Z",
+    "generation": "22222222-2222-4222-8222-222222222222",
+    "methode_quantiles": "percentile_cont",
+    "methode_variation": "100*(mediane_courante/mediane_precedente-1)",
+    "population": "mutations_residentielles_mono_local_hors_vefa_mono_commune",
+    "provenance": [
+     {
+      "couverture": "unknown",
+      "date_import": null,
+      "date_publication_source": null,
+      "date_snapshot": null,
+      "licence": "Licence Ouverte 2.0",
+      "nom": "Demandes de valeurs foncières (DVF)",
+      "producteur": "DGFiP / Etalab",
+      "reference": "https://www.data.gouv.fr/datasets/demandes-de-valeurs-foncieres-geolocalisees"
+     }
+    ],
+    "residentiel_appartement": {
+     "courante": {
+      "effectif": 0,
+      "fenetre": {
+       "debut_inclus": "2025-01-01",
+       "fin_exclue": "2026-01-01"
+      },
+      "mediane": {
+       "etat": "not_reported",
+       "motif": "empty_sample"
+      },
+      "motif_periode": null,
+      "quantiles": {
+       "etat": "not_qualified",
+       "motif": "indicator_policy_unqualified"
+      }
+     },
+     "precedente": {
+      "effectif": 0,
+      "fenetre": {
+       "debut_inclus": "2024-01-01",
+       "fin_exclue": "2025-01-01"
+      },
+      "mediane": {
+       "etat": "not_reported",
+       "motif": "empty_sample"
+      },
+      "motif_periode": null,
+      "quantiles": {
+       "etat": "not_qualified",
+       "motif": "indicator_policy_unqualified"
+      }
+     },
+     "qualification_tendance": null,
+     "variation_pct": {
+      "etat": "not_reported",
+      "motif": "empty_sample"
+     }
+    },
+    "residentiel_maison": {
+     "courante": {
+      "effectif": 5,
+      "fenetre": {
+       "debut_inclus": "2025-01-01",
+       "fin_exclue": "2026-01-01"
+      },
+      "mediane": {
+       "etat": "value",
+       "valeur": 2000.0
+      },
+      "motif_periode": null,
+      "quantiles": {
+       "etat": "not_qualified",
+       "motif": "indicator_policy_unqualified"
+      }
+     },
+     "precedente": {
+      "effectif": 0,
+      "fenetre": {
+       "debut_inclus": "2024-01-01",
+       "fin_exclue": "2025-01-01"
+      },
+      "mediane": {
+       "etat": "not_reported",
+       "motif": "empty_sample"
+      },
+      "motif_periode": null,
+      "quantiles": {
+       "etat": "not_qualified",
+       "motif": "indicator_policy_unqualified"
+      }
+     },
+     "qualification_tendance": null,
+     "variation_pct": {
+      "etat": "not_reported",
+      "motif": "empty_sample"
+     }
+    },
+    "unite_prix": "EUR/m2",
+    "version_contrat": "1.1",
+    "version_population": "dvf-canonical-windows-core.v1"
+   }
+  },
+  "85001": {
+   "code_insee": "85001",
+   "indicateurs_dpe": {
+    "date_calcul": "2026-09-09T14:01:00Z",
+    "date_evaluation": "2026-09-09",
+    "generation": "11111111-1111-4111-8111-111111111111",
+    "methode_mediane": "percentile_disc",
+    "methode_modes": "toutes_classes_frequence_maximale_ordre_A_G",
+    "periode": "bornes_etablissement_observees_non_exhaustives",
+    "population": "diagnostics_canoniques_disponibles_hors_traces_retirees",
+    "provenance": [
+     {
+      "couverture": "unknown",
+      "date_import": null,
+      "date_publication_source": null,
+      "date_snapshot": null,
+      "licence": "Licence Ouverte 2.0",
+      "nom": "DPE logements existants depuis juillet 2021",
+      "producteur": "ADEME",
+      "reference": "https://data.ademe.fr/datasets/dpe03existant"
+     },
+     {
+      "couverture": "unknown",
+      "date_import": null,
+      "date_publication_source": null,
+      "date_snapshot": null,
+      "licence": "Licence Ouverte 2.0",
+      "nom": "DPE logements neufs depuis juillet 2021",
+      "producteur": "ADEME",
+      "reference": "https://data.ademe.fr/datasets/dpe02neuf"
+     }
+    ],
+    "resultat": {
+     "date_etablissement_max": null,
+     "date_etablissement_min": null,
+     "dates_etablissement_inconnues": 0,
+     "distribution": {
+      "classes": {
+       "A": 0,
+       "B": 0,
+       "C": 0,
+       "D": 0,
+       "E": 0,
+       "F": 0,
+       "G": 0
+      },
+      "inconnue": 0
+     },
+     "etat": "value",
+     "mediane_ordinale": null,
+     "modes": [],
+     "part_fg_pct": {
+      "etat": "zero_denominator",
+      "motif": "known_class_denominator_zero"
+     },
+     "population": {
+      "classes_connues": 0,
+      "regimes": {
+       "existant": 0,
+       "inconnu": 0,
+       "neuf": 0
+      },
+      "remplacement": {
+       "ambiguous": 0,
+       "no_successor_known": 0,
+       "not_checked": 0,
+       "replaced": 0
+      },
+      "revision_non_verifiee": 0,
+      "source_inconnue": 0,
+      "total": 0,
+      "types_batiment": {
+       "appartement": 0,
+       "autre": 0,
+       "inconnu": 0,
+       "maison": 0
+      },
+      "validite": {
+       "expired": 0,
+       "future_establishment": 0,
+       "inconsistent_dates": 0,
+       "not_expired_by_date": 0,
+       "unknown": 0
+      }
+     }
+    },
+    "version_contrat": "1.0",
+    "version_population": "dpe-documentary-core.v1"
+   },
+   "indicateurs_dvf": {
+    "ancrage_temporel": {
+     "acquisition_complete": true,
+     "cog_sha256": "6f5a73cf350e68241abae99ec17cb4b7d81a6247a063feaae68228d5356ee2f0",
+     "contenu_projete_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "date_observation": "2026-09-09T00:00:00Z",
+     "departements": [
+      "44",
+      "85"
+     ],
+     "etat": "delivery_received_and_stock_bound",
+     "exhaustivite_historique": "unknown",
+     "generation_fournisseur": null,
+     "generation_stock": "22222222-2222-4222-8222-222222222222",
+     "lot_id": "synthetic-lot",
+     "methode_projection": "sha256-sorted-row-digests-json.v1",
+     "periode_debut_inclus": "2024-01-01",
+     "periode_fin_exclue": "2026-01-01",
+     "preuve_observation_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "preuve_qualification_sha256": "5c84a09d77bf743e5cb87f21e8f9bd8ddfdf60fca2d24bcdf6266e264ef8f910",
+     "preuve_reconstruction_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "revisions_possibles": true,
+     "snapshot_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "version_qualification": "dvf-delivery-qualification.v2"
+    },
+    "date_calcul": "2026-09-09T14:01:00Z",
+    "generation": "22222222-2222-4222-8222-222222222222",
+    "methode_quantiles": "percentile_cont",
+    "methode_variation": "100*(mediane_courante/mediane_precedente-1)",
+    "population": "mutations_residentielles_mono_local_hors_vefa_mono_commune",
+    "provenance": [
+     {
+      "couverture": "unknown",
+      "date_import": null,
+      "date_publication_source": null,
+      "date_snapshot": null,
+      "licence": "Licence Ouverte 2.0",
+      "nom": "Demandes de valeurs foncières (DVF)",
+      "producteur": "DGFiP / Etalab",
+      "reference": "https://www.data.gouv.fr/datasets/demandes-de-valeurs-foncieres-geolocalisees"
+     }
+    ],
+    "residentiel_appartement": {
+     "courante": {
+      "effectif": 0,
+      "fenetre": {
+       "debut_inclus": "2025-01-01",
+       "fin_exclue": "2026-01-01"
+      },
+      "mediane": {
+       "etat": "not_reported",
+       "motif": "empty_sample"
+      },
+      "motif_periode": null,
+      "quantiles": {
+       "etat": "not_qualified",
+       "motif": "indicator_policy_unqualified"
+      }
+     },
+     "precedente": {
+      "effectif": 0,
+      "fenetre": {
+       "debut_inclus": "2024-01-01",
+       "fin_exclue": "2025-01-01"
+      },
+      "mediane": {
+       "etat": "not_reported",
+       "motif": "empty_sample"
+      },
+      "motif_periode": null,
+      "quantiles": {
+       "etat": "not_qualified",
+       "motif": "indicator_policy_unqualified"
+      }
+     },
+     "qualification_tendance": null,
+     "variation_pct": {
+      "etat": "not_reported",
+      "motif": "empty_sample"
+     }
+    },
+    "residentiel_maison": {
+     "courante": {
+      "effectif": 0,
+      "fenetre": {
+       "debut_inclus": "2025-01-01",
+       "fin_exclue": "2026-01-01"
+      },
+      "mediane": {
+       "etat": "not_reported",
+       "motif": "empty_sample"
+      },
+      "motif_periode": null,
+      "quantiles": {
+       "etat": "not_qualified",
+       "motif": "indicator_policy_unqualified"
+      }
+     },
+     "precedente": {
+      "effectif": 0,
+      "fenetre": {
+       "debut_inclus": "2024-01-01",
+       "fin_exclue": "2025-01-01"
+      },
+      "mediane": {
+       "etat": "not_reported",
+       "motif": "empty_sample"
+      },
+      "motif_periode": null,
+      "quantiles": {
+       "etat": "not_qualified",
+       "motif": "indicator_policy_unqualified"
+      }
+     },
+     "qualification_tendance": null,
+     "variation_pct": {
+      "etat": "not_reported",
+      "motif": "empty_sample"
+     }
+    },
+    "unite_prix": "EUR/m2",
+    "version_contrat": "1.1",
+    "version_population": "dvf-canonical-windows-core.v1"
+   }
+  },
+  "85084": {
+   "code_insee": "85084",
+   "indicateurs_dpe": {
+    "date_calcul": "2026-09-09T14:01:00Z",
+    "date_evaluation": "2026-09-09",
+    "generation": "11111111-1111-4111-8111-111111111111",
+    "methode_mediane": "percentile_disc",
+    "methode_modes": "toutes_classes_frequence_maximale_ordre_A_G",
+    "periode": "bornes_etablissement_observees_non_exhaustives",
+    "population": "diagnostics_canoniques_disponibles_hors_traces_retirees",
+    "provenance": [
+     {
+      "couverture": "unknown",
+      "date_import": null,
+      "date_publication_source": null,
+      "date_snapshot": null,
+      "licence": "Licence Ouverte 2.0",
+      "nom": "DPE logements existants depuis juillet 2021",
+      "producteur": "ADEME",
+      "reference": "https://data.ademe.fr/datasets/dpe03existant"
+     },
+     {
+      "couverture": "unknown",
+      "date_import": null,
+      "date_publication_source": null,
+      "date_snapshot": null,
+      "licence": "Licence Ouverte 2.0",
+      "nom": "DPE logements neufs depuis juillet 2021",
+      "producteur": "ADEME",
+      "reference": "https://data.ademe.fr/datasets/dpe02neuf"
+     }
+    ],
+    "resultat": {
+     "date_etablissement_max": null,
+     "date_etablissement_min": null,
+     "dates_etablissement_inconnues": 0,
+     "distribution": {
+      "classes": {
+       "A": 0,
+       "B": 0,
+       "C": 0,
+       "D": 0,
+       "E": 0,
+       "F": 0,
+       "G": 0
+      },
+      "inconnue": 0
+     },
+     "etat": "value",
+     "mediane_ordinale": null,
+     "modes": [],
+     "part_fg_pct": {
+      "etat": "zero_denominator",
+      "motif": "known_class_denominator_zero"
+     },
+     "population": {
+      "classes_connues": 0,
+      "regimes": {
+       "existant": 0,
+       "inconnu": 0,
+       "neuf": 0
+      },
+      "remplacement": {
+       "ambiguous": 0,
+       "no_successor_known": 0,
+       "not_checked": 0,
+       "replaced": 0
+      },
+      "revision_non_verifiee": 0,
+      "source_inconnue": 0,
+      "total": 0,
+      "types_batiment": {
+       "appartement": 0,
+       "autre": 0,
+       "inconnu": 0,
+       "maison": 0
+      },
+      "validite": {
+       "expired": 0,
+       "future_establishment": 0,
+       "inconsistent_dates": 0,
+       "not_expired_by_date": 0,
+       "unknown": 0
+      }
+     }
+    },
+    "version_contrat": "1.0",
+    "version_population": "dpe-documentary-core.v1"
+   },
+   "indicateurs_dvf": {
+    "etat": "not_qualified",
+    "motif": "territorial_attribution_unqualified"
+   }
+  }
+ }
+}

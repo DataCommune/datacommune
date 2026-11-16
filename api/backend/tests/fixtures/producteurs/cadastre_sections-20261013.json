@@ -1,0 +1,1354 @@
+{
+ "absent": {
+  "975": {
+   "etat": "absent_producteur",
+   "status": 404,
+   "url": "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/975/cadastre-975-sections.json.gz"
+  }
+ },
+ "captured_at": "2026-10-13T11:17:17Z",
+ "counts": {
+  "01": {
+   "geo_sections": 4266,
+   "sections:features": 4266
+  },
+  "02": {
+   "geo_sections": 8231,
+   "sections:features": 8231
+  },
+  "03": {
+   "geo_sections": 4825,
+   "sections:features": 4825
+  },
+  "04": {
+   "geo_sections": 1558,
+   "sections:features": 1558
+  },
+  "05": {
+   "geo_sections": 1556,
+   "sections:features": 1556
+  },
+  "06": {
+   "geo_sections": 2622,
+   "sections:features": 2622
+  },
+  "07": {
+   "geo_sections": 3108,
+   "sections:features": 3108
+  },
+  "08": {
+   "geo_sections": 5183,
+   "sections:features": 5183
+  },
+  "09": {
+   "geo_sections": 1430,
+   "sections:features": 1430
+  },
+  "10": {
+   "geo_sections": 6487,
+   "sections:features": 6487
+  },
+  "11": {
+   "geo_sections": 4113,
+   "sections:features": 4113
+  },
+  "12": {
+   "geo_sections": 4360,
+   "sections:features": 4360
+  },
+  "13": {
+   "geo_sections": 5566,
+   "sections:features": 5566
+  },
+  "14": {
+   "geo_sections": 5693,
+   "sections:features": 5693
+  },
+  "15": {
+   "geo_sections": 3113,
+   "sections:features": 3113
+  },
+  "16": {
+   "geo_sections": 5171,
+   "sections:features": 5171
+  },
+  "17": {
+   "geo_sections": 7849,
+   "sections:features": 7849
+  },
+  "18": {
+   "geo_sections": 4319,
+   "sections:features": 4319
+  },
+  "19": {
+   "geo_sections": 4042,
+   "sections:features": 4042
+  },
+  "21": {
+   "geo_sections": 8469,
+   "sections:features": 8469
+  },
+  "22": {
+   "geo_sections": 5861,
+   "sections:features": 5861
+  },
+  "23": {
+   "geo_sections": 3950,
+   "sections:features": 3950
+  },
+  "24": {
+   "geo_sections": 6093,
+   "sections:features": 6093
+  },
+  "25": {
+   "geo_sections": 5774,
+   "sections:features": 5774
+  },
+  "26": {
+   "geo_sections": 3871,
+   "sections:features": 3871
+  },
+  "27": {
+   "geo_sections": 6313,
+   "sections:features": 6313
+  },
+  "28": {
+   "geo_sections": 6498,
+   "sections:features": 6498
+  },
+  "29": {
+   "geo_sections": 5962,
+   "sections:features": 5962
+  },
+  "2A": {
+   "geo_sections": 694,
+   "sections:features": 694
+  },
+  "2B": {
+   "geo_sections": 1258,
+   "sections:features": 1258
+  },
+  "30": {
+   "geo_sections": 3821,
+   "sections:features": 3821
+  },
+  "31": {
+   "geo_sections": 5432,
+   "sections:features": 5432
+  },
+  "32": {
+   "geo_sections": 3700,
+   "sections:features": 3700
+  },
+  "33": {
+   "geo_sections": 6987,
+   "sections:features": 6987
+  },
+  "34": {
+   "geo_sections": 5141,
+   "sections:features": 5141
+  },
+  "35": {
+   "geo_sections": 5961,
+   "sections:features": 5961
+  },
+  "36": {
+   "geo_sections": 4364,
+   "sections:features": 4364
+  },
+  "37": {
+   "geo_sections": 5759,
+   "sections:features": 5759
+  },
+  "38": {
+   "geo_sections": 5184,
+   "sections:features": 5184
+  },
+  "39": {
+   "geo_sections": 5174,
+   "sections:features": 5174
+  },
+  "40": {
+   "geo_sections": 3760,
+   "sections:features": 3760
+  },
+  "41": {
+   "geo_sections": 4823,
+   "sections:features": 4823
+  },
+  "42": {
+   "geo_sections": 3628,
+   "sections:features": 3628
+  },
+  "43": {
+   "geo_sections": 3038,
+   "sections:features": 3038
+  },
+  "44": {
+   "geo_sections": 8239,
+   "sections:features": 8239
+  },
+  "45": {
+   "geo_sections": 6359,
+   "sections:features": 6359
+  },
+  "46": {
+   "geo_sections": 2410,
+   "sections:features": 2410
+  },
+  "47": {
+   "geo_sections": 3523,
+   "sections:features": 3523
+  },
+  "48": {
+   "geo_sections": 1397,
+   "sections:features": 1397
+  },
+  "49": {
+   "geo_sections": 5317,
+   "sections:features": 5317
+  },
+  "50": {
+   "geo_sections": 5107,
+   "sections:features": 5107
+  },
+  "51": {
+   "geo_sections": 8920,
+   "sections:features": 8920
+  },
+  "52": {
+   "geo_sections": 5861,
+   "sections:features": 5861
+  },
+  "53": {
+   "geo_sections": 3237,
+   "sections:features": 3237
+  },
+  "54": {
+   "geo_sections": 6290,
+   "sections:features": 6290
+  },
+  "55": {
+   "geo_sections": 6213,
+   "sections:features": 6213
+  },
+  "56": {
+   "geo_sections": 6848,
+   "sections:features": 6848
+  },
+  "57": {
+   "geo_sections": 10786,
+   "sections:features": 10786
+  },
+  "58": {
+   "geo_sections": 3913,
+   "sections:features": 3913
+  },
+  "59": {
+   "geo_sections": 6677,
+   "sections:features": 6677
+  },
+  "60": {
+   "geo_sections": 7378,
+   "sections:features": 7378
+  },
+  "61": {
+   "geo_sections": 5488,
+   "sections:features": 5488
+  },
+  "62": {
+   "geo_sections": 8901,
+   "sections:features": 8901
+  },
+  "63": {
+   "geo_sections": 7750,
+   "sections:features": 7750
+  },
+  "64": {
+   "geo_sections": 4651,
+   "sections:features": 4651
+  },
+  "65": {
+   "geo_sections": 2344,
+   "sections:features": 2344
+  },
+  "66": {
+   "geo_sections": 2114,
+   "sections:features": 2114
+  },
+  "67": {
+   "geo_sections": 9563,
+   "sections:features": 9563
+  },
+  "68": {
+   "geo_sections": 7125,
+   "sections:features": 7125
+  },
+  "69": {
+   "geo_sections": 4165,
+   "sections:features": 4165
+  },
+  "70": {
+   "geo_sections": 5356,
+   "sections:features": 5356
+  },
+  "71": {
+   "geo_sections": 6154,
+   "sections:features": 6154
+  },
+  "72": {
+   "geo_sections": 5038,
+   "sections:features": 5038
+  },
+  "73": {
+   "geo_sections": 2856,
+   "sections:features": 2856
+  },
+  "74": {
+   "geo_sections": 2239,
+   "sections:features": 2239
+  },
+  "75": {
+   "geo_sections": 1388,
+   "sections:features": 1388
+  },
+  "76": {
+   "geo_sections": 6759,
+   "sections:features": 6759
+  },
+  "77": {
+   "geo_sections": 6666,
+   "sections:features": 6666
+  },
+  "78": {
+   "geo_sections": 3229,
+   "sections:features": 3229
+  },
+  "79": {
+   "geo_sections": 5771,
+   "sections:features": 5771
+  },
+  "80": {
+   "geo_sections": 8643,
+   "sections:features": 8643
+  },
+  "81": {
+   "geo_sections": 3421,
+   "sections:features": 3421
+  },
+  "82": {
+   "geo_sections": 2265,
+   "sections:features": 2265
+  },
+  "83": {
+   "geo_sections": 2890,
+   "sections:features": 2890
+  },
+  "84": {
+   "geo_sections": 2663,
+   "sections:features": 2663
+  },
+  "85": {
+   "geo_sections": 6151,
+   "sections:features": 6151
+  },
+  "86": {
+   "geo_sections": 6144,
+   "sections:features": 6144
+  },
+  "87": {
+   "geo_sections": 3004,
+   "sections:features": 3004
+  },
+  "88": {
+   "geo_sections": 4752,
+   "sections:features": 4752
+  },
+  "89": {
+   "geo_sections": 7469,
+   "sections:features": 7469
+  },
+  "90": {
+   "geo_sections": 843,
+   "sections:features": 843
+  },
+  "91": {
+   "geo_sections": 2859,
+   "sections:features": 2859
+  },
+  "92": {
+   "geo_sections": 1235,
+   "sections:features": 1235
+  },
+  "93": {
+   "geo_sections": 1380,
+   "sections:features": 1380
+  },
+  "94": {
+   "geo_sections": 1506,
+   "sections:features": 1506
+  },
+  "95": {
+   "geo_sections": 2023,
+   "sections:features": 2023
+  },
+  "971": {
+   "geo_sections": 831,
+   "sections:features": 831
+  },
+  "972": {
+   "geo_sections": 557,
+   "sections:features": 557
+  },
+  "973": {
+   "geo_sections": 436,
+   "sections:features": 436
+  },
+  "974": {
+   "geo_sections": 937,
+   "sections:features": 937
+  },
+  "976": {
+   "geo_sections": 369,
+   "sections:features": 369
+  }
+ },
+ "departements_demandes": [
+  "01",
+  "02",
+  "03",
+  "04",
+  "05",
+  "06",
+  "07",
+  "08",
+  "09",
+  "10",
+  "11",
+  "12",
+  "13",
+  "14",
+  "15",
+  "16",
+  "17",
+  "18",
+  "19",
+  "2A",
+  "2B",
+  "21",
+  "22",
+  "23",
+  "24",
+  "25",
+  "26",
+  "27",
+  "28",
+  "29",
+  "30",
+  "31",
+  "32",
+  "33",
+  "34",
+  "35",
+  "36",
+  "37",
+  "38",
+  "39",
+  "40",
+  "41",
+  "42",
+  "43",
+  "44",
+  "45",
+  "46",
+  "47",
+  "48",
+  "49",
+  "50",
+  "51",
+  "52",
+  "53",
+  "54",
+  "55",
+  "56",
+  "57",
+  "58",
+  "59",
+  "60",
+  "61",
+  "62",
+  "63",
+  "64",
+  "65",
+  "66",
+  "67",
+  "68",
+  "69",
+  "70",
+  "71",
+  "72",
+  "73",
+  "74",
+  "75",
+  "76",
+  "77",
+  "78",
+  "79",
+  "80",
+  "81",
+  "82",
+  "83",
+  "84",
+  "85",
+  "86",
+  "87",
+  "88",
+  "89",
+  "90",
+  "91",
+  "92",
+  "93",
+  "94",
+  "95",
+  "971",
+  "972",
+  "973",
+  "974",
+  "975",
+  "976"
+ ],
+ "details": {},
+ "filter": "scripts/import_geo_boundaries.py insert_sections(): every feature of cadastre-XX-sections.json.gz, departement = file, ON CONFLICT (id): distinct properties.id per departement",
+ "headers": {
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/01/cadastre-01-sections.json.gz": {
+   "content_length": "10725756",
+   "etag": "\"04930e0400e3244e4c9c4e4f424a67db-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/01/cadastre-01-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:46:33 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/02/cadastre-02-sections.json.gz": {
+   "content_length": "9931527",
+   "etag": "\"35ffdd6823c92f65058b30f4f5e9492b-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/02/cadastre-02-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:46:39 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/03/cadastre-03-sections.json.gz": {
+   "content_length": "9146689",
+   "etag": "\"77ea7d2f4df839345f4c1e5efea527a5-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/03/cadastre-03-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:46:44 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/04/cadastre-04-sections.json.gz": {
+   "content_length": "4283924",
+   "etag": "\"150bddfae99de1d8ce8d778ae683e717\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/04/cadastre-04-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:46:48 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/05/cadastre-05-sections.json.gz": {
+   "content_length": "4608942",
+   "etag": "\"c10b7bd14597d05fb4d20bc231418fae\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/05/cadastre-05-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:46:53 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/06/cadastre-06-sections.json.gz": {
+   "content_length": "6710983",
+   "etag": "\"1e4a559e00d97c16a2a1d3bfd647400f\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/06/cadastre-06-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:46:58 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/07/cadastre-07-sections.json.gz": {
+   "content_length": "8107799",
+   "etag": "\"93498b2b0a9a8a1f4d911771f5882b99\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/07/cadastre-07-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:47:03 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/08/cadastre-08-sections.json.gz": {
+   "content_length": "7145578",
+   "etag": "\"1a8d6f7835f494c6053f1ea84d132ff9\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/08/cadastre-08-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:47:08 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/09/cadastre-09-sections.json.gz": {
+   "content_length": "4798508",
+   "etag": "\"d458be713830eccb1214b79c68de92bf\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/09/cadastre-09-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:47:12 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/10/cadastre-10-sections.json.gz": {
+   "content_length": "7638808",
+   "etag": "\"bd05255545ec6475592dca6e04464158\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/10/cadastre-10-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:47:16 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/11/cadastre-11-sections.json.gz": {
+   "content_length": "7074410",
+   "etag": "\"810c018bc70f315254bd52ecb60b94a3\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/11/cadastre-11-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:47:20 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/12/cadastre-12-sections.json.gz": {
+   "content_length": "12700571",
+   "etag": "\"82593651222e7b300353f765a6cd2e17-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/12/cadastre-12-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:47:26 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/13/cadastre-13-sections.json.gz": {
+   "content_length": "7535558",
+   "etag": "\"c70ff6064e4d22c8d76a80affce6fd09\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/13/cadastre-13-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:47:35 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/14/cadastre-14-sections.json.gz": {
+   "content_length": "12325889",
+   "etag": "\"ecd7b53154d5e318436587b56fc0082d-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/14/cadastre-14-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:47:42 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/15/cadastre-15-sections.json.gz": {
+   "content_length": "10699431",
+   "etag": "\"3c3d1298a1e002fbb9be0b7b8c1c4be6-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/15/cadastre-15-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:47:48 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/16/cadastre-16-sections.json.gz": {
+   "content_length": "9307309",
+   "etag": "\"53ef50e69ac1b16fd4bb649b4e1146a4-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/16/cadastre-16-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:47:52 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/17/cadastre-17-sections.json.gz": {
+   "content_length": "11667784",
+   "etag": "\"e45fd96be81f89cfaa295d2757846161-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/17/cadastre-17-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:47:57 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/18/cadastre-18-sections.json.gz": {
+   "content_length": "6373717",
+   "etag": "\"eb7e4abd8664e92d96d65c80666d3253\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/18/cadastre-18-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:48:03 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/19/cadastre-19-sections.json.gz": {
+   "content_length": "9884781",
+   "etag": "\"62deab90d3566b5b168c0010f825a895-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/19/cadastre-19-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:48:09 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/21/cadastre-21-sections.json.gz": {
+   "content_length": "12901281",
+   "etag": "\"d0b09e475e69fcaeed7e6c6f48973c8f-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/21/cadastre-21-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:48:15 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/22/cadastre-22-sections.json.gz": {
+   "content_length": "15740427",
+   "etag": "\"2d73abd10ed6f9974c68fad214557a8a-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/22/cadastre-22-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:48:21 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/23/cadastre-23-sections.json.gz": {
+   "content_length": "9377182",
+   "etag": "\"61317842622e8a51af2c5d25c78cd384-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/23/cadastre-23-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:48:28 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/24/cadastre-24-sections.json.gz": {
+   "content_length": "11993599",
+   "etag": "\"5899ecae544977a993172f6ee8e354ba-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/24/cadastre-24-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:48:34 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/25/cadastre-25-sections.json.gz": {
+   "content_length": "12636524",
+   "etag": "\"029621149809469edfcc3613becb0f75-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/25/cadastre-25-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:48:42 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/26/cadastre-26-sections.json.gz": {
+   "content_length": "7894273",
+   "etag": "\"9ac2b1b63260dea527981503d44df90e\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/26/cadastre-26-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:48:48 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/27/cadastre-27-sections.json.gz": {
+   "content_length": "9636902",
+   "etag": "\"935c88a733f372a9de8f35e153976801-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/27/cadastre-27-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:48:54 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/28/cadastre-28-sections.json.gz": {
+   "content_length": "6891640",
+   "etag": "\"1f59115f9acd5a157055ef7fd99dfb7b\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/28/cadastre-28-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:48:58 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/29/cadastre-29-sections.json.gz": {
+   "content_length": "13873093",
+   "etag": "\"4ffdeb593d6fa21d6e023cbc41cf6406-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/29/cadastre-29-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:49:01 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/2A/cadastre-2A-sections.json.gz": {
+   "content_length": "3230277",
+   "etag": "\"7a7c14600b6c466a2492d73888e65b81\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/2A/cadastre-2A-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:49:08 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/2B/cadastre-2B-sections.json.gz": {
+   "content_length": "6975142",
+   "etag": "\"17b13d1e5d8af53a26919dc7ae9555d0\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/2B/cadastre-2B-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:49:13 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/30/cadastre-30-sections.json.gz": {
+   "content_length": "7195816",
+   "etag": "\"f288b66308249503ae1bcd195e468f71\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/30/cadastre-30-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:49:19 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/31/cadastre-31-sections.json.gz": {
+   "content_length": "8510283",
+   "etag": "\"14dcfccf843ef109c3139b1420a1b892-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/31/cadastre-31-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:49:26 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/32/cadastre-32-sections.json.gz": {
+   "content_length": "7029836",
+   "etag": "\"28a0bcf3644317f647bd0162c776d11d\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/32/cadastre-32-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:49:32 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/33/cadastre-33-sections.json.gz": {
+   "content_length": "9641794",
+   "etag": "\"21dadd03bd1f5fcaa613e8489be13831-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/33/cadastre-33-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:49:37 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/34/cadastre-34-sections.json.gz": {
+   "content_length": "9330254",
+   "etag": "\"406682150fe22f8ae7800b520b7dc2d6-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/34/cadastre-34-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:49:45 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/35/cadastre-35-sections.json.gz": {
+   "content_length": "11211313",
+   "etag": "\"7800bc413e6481cdf5d1fdd433b93997-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/35/cadastre-35-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:49:52 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/36/cadastre-36-sections.json.gz": {
+   "content_length": "6087687",
+   "etag": "\"4be346c20f303d3be4ef4dcccf79db0d\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/36/cadastre-36-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:49:57 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/37/cadastre-37-sections.json.gz": {
+   "content_length": "7373003",
+   "etag": "\"7ebc0ec1a21b048bd0b982b010cd0d4a\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/37/cadastre-37-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:50:02 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/38/cadastre-38-sections.json.gz": {
+   "content_length": "10916348",
+   "etag": "\"559e537a2d7dab2d7821f11125bf5faa-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/38/cadastre-38-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:50:07 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/39/cadastre-39-sections.json.gz": {
+   "content_length": "9501192",
+   "etag": "\"4a44b519de71840a83050a7994076272-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/39/cadastre-39-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:50:14 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/40/cadastre-40-sections.json.gz": {
+   "content_length": "7203937",
+   "etag": "\"1a39760684332a3f47a7566a57e3ac7a\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/40/cadastre-40-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:50:19 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/41/cadastre-41-sections.json.gz": {
+   "content_length": "6109841",
+   "etag": "\"07bebbecb5025bcf3355289615d2f623\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/41/cadastre-41-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:50:23 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/42/cadastre-42-sections.json.gz": {
+   "content_length": "7171842",
+   "etag": "\"611e89a9d9da15c36eb809f8d3531569\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/42/cadastre-42-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:50:28 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/43/cadastre-43-sections.json.gz": {
+   "content_length": "7904923",
+   "etag": "\"44967bec0c6ed093b5aab988b9501a3d\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/43/cadastre-43-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:50:32 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/44/cadastre-44-sections.json.gz": {
+   "content_length": "12243419",
+   "etag": "\"c606c61c7e26b2dc7e71f4246f1e0271-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/44/cadastre-44-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:50:38 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/45/cadastre-45-sections.json.gz": {
+   "content_length": "6209745",
+   "etag": "\"9700ae674e664305897359fdfc9adb94\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/45/cadastre-45-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:50:44 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/46/cadastre-46-sections.json.gz": {
+   "content_length": "5511040",
+   "etag": "\"b1bd73be773fde1bb6ccb1dd4e149f56\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/46/cadastre-46-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:50:48 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/47/cadastre-47-sections.json.gz": {
+   "content_length": "5512783",
+   "etag": "\"d3696f0c0dcbbed4533d6bb4b81b4526\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/47/cadastre-47-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:50:54 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/48/cadastre-48-sections.json.gz": {
+   "content_length": "3594837",
+   "etag": "\"ec5b3edfead6c3b37deeba802ad984f5\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/48/cadastre-48-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:50:58 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/49/cadastre-49-sections.json.gz": {
+   "content_length": "9935803",
+   "etag": "\"c3a5b19ae6e8100ac7ba199072969fbe-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/49/cadastre-49-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:51:01 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/50/cadastre-50-sections.json.gz": {
+   "content_length": "12208397",
+   "etag": "\"bfe14ca2b5da3f56e7e59f98660991a0-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/50/cadastre-50-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:51:07 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/51/cadastre-51-sections.json.gz": {
+   "content_length": "9709396",
+   "etag": "\"9ac4238ce690cdb25582acc5c46871c1-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/51/cadastre-51-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:51:14 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/52/cadastre-52-sections.json.gz": {
+   "content_length": "10811841",
+   "etag": "\"30040c9f239467df917e1208f0806255-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/52/cadastre-52-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:51:21 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/53/cadastre-53-sections.json.gz": {
+   "content_length": "7541783",
+   "etag": "\"c2ff012e333aebcd769a06c43dc6b137\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/53/cadastre-53-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:51:21 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/54/cadastre-54-sections.json.gz": {
+   "content_length": "7823260",
+   "etag": "\"69fd62fc8aa6ba6bbd433b8a3c8fd1a4\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/54/cadastre-54-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:51:24 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/55/cadastre-55-sections.json.gz": {
+   "content_length": "9532625",
+   "etag": "\"0ded62077c1eea8e9c7fa4014ae5a72b-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/55/cadastre-55-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:51:29 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/56/cadastre-56-sections.json.gz": {
+   "content_length": "13760518",
+   "etag": "\"a9843202438f843f7f0922d473692790-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/56/cadastre-56-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:51:35 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/57/cadastre-57-sections.json.gz": {
+   "content_length": "12958211",
+   "etag": "\"66674c8c13a87e2c8fa8ef7f49b8e42f-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/57/cadastre-57-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:51:43 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/58/cadastre-58-sections.json.gz": {
+   "content_length": "8085111",
+   "etag": "\"683ae83820ca06a7507e8f0291d9ef58\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/58/cadastre-58-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:51:48 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/59/cadastre-59-sections.json.gz": {
+   "content_length": "8094531",
+   "etag": "\"80f072f200897a5027d3cc97e8007b6d\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/59/cadastre-59-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:51:52 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/60/cadastre-60-sections.json.gz": {
+   "content_length": "8849213",
+   "etag": "\"2307a917f0da624e2c2960fb07e52954-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/60/cadastre-60-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:52:00 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/61/cadastre-61-sections.json.gz": {
+   "content_length": "9625601",
+   "etag": "\"c9e3717cf4ceb23c9aaa73e26d0846f2-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/61/cadastre-61-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:52:06 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/62/cadastre-62-sections.json.gz": {
+   "content_length": "9996098",
+   "etag": "\"7480afa04fb58dfeac648ad26c3d65a6-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/62/cadastre-62-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:52:10 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/63/cadastre-63-sections.json.gz": {
+   "content_length": "14400410",
+   "etag": "\"089ce47daca6716fdfdf0d46a368571b-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/63/cadastre-63-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:52:16 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/64/cadastre-64-sections.json.gz": {
+   "content_length": "10195430",
+   "etag": "\"a6fe5f62c9975f0ed47245113507c3de-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/64/cadastre-64-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:52:23 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/65/cadastre-65-sections.json.gz": {
+   "content_length": "4378685",
+   "etag": "\"8ca1d36ba3b8f6e51df038d9bab89418\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/65/cadastre-65-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:52:29 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/66/cadastre-66-sections.json.gz": {
+   "content_length": "4346899",
+   "etag": "\"1bdd2e3f611d53b3ccd2aca638f4444d\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/66/cadastre-66-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:52:32 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/67/cadastre-67-sections.json.gz": {
+   "content_length": "10863041",
+   "etag": "\"2132bf311f3ecfb15dd807381cca78ac-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/67/cadastre-67-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:52:37 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/68/cadastre-68-sections.json.gz": {
+   "content_length": "6718632",
+   "etag": "\"501a55f5bd4b6f37252fd48a5d9cbb45\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/68/cadastre-68-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:52:41 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/69/cadastre-69-sections.json.gz": {
+   "content_length": "6948614",
+   "etag": "\"6ba953344d42f8741715209b7d1f770e\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/69/cadastre-69-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:52:45 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/70/cadastre-70-sections.json.gz": {
+   "content_length": "9994523",
+   "etag": "\"2ab66546b58ab7bc91eaa7560ee1f17e-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/70/cadastre-70-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:52:51 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/71/cadastre-71-sections.json.gz": {
+   "content_length": "12656102",
+   "etag": "\"51d8dcd7921168dcc546d1f8bf85aa1c-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/71/cadastre-71-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:52:56 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/72/cadastre-72-sections.json.gz": {
+   "content_length": "7629694",
+   "etag": "\"d3a345c47f4552dd280b331ae1afd958\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/72/cadastre-72-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:53:02 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/73/cadastre-73-sections.json.gz": {
+   "content_length": "9388983",
+   "etag": "\"538a858dab594155e49cbb17114183df-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/73/cadastre-73-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:53:07 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/74/cadastre-74-sections.json.gz": {
+   "content_length": "10477354",
+   "etag": "\"eebe9e6fc6caef71a033344d1e907e04-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/74/cadastre-74-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:53:23 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/75/cadastre-75-sections.json.gz": {
+   "content_length": "265491",
+   "etag": "\"d6ead04e681c717d8a6dd6a59493da5f\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/75/cadastre-75-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:53:26 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/76/cadastre-76-sections.json.gz": {
+   "content_length": "8941133",
+   "etag": "\"286a0d5e1d8742a99276331d6b946da8-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/76/cadastre-76-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:53:30 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/77/cadastre-77-sections.json.gz": {
+   "content_length": "7827346",
+   "etag": "\"4f74775223179edcbd8a291b666384ca\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/77/cadastre-77-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:53:34 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/78/cadastre-78-sections.json.gz": {
+   "content_length": "3242872",
+   "etag": "\"b0178045b0131f9cbddc150e84ee9bb1\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/78/cadastre-78-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:53:39 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/79/cadastre-79-sections.json.gz": {
+   "content_length": "8068120",
+   "etag": "\"62c7022e75d20892e0b242bd29891921\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/79/cadastre-79-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:53:43 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/80/cadastre-80-sections.json.gz": {
+   "content_length": "7910858",
+   "etag": "\"98f1793e00642955833595f590e90ab8\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/80/cadastre-80-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:53:47 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/81/cadastre-81-sections.json.gz": {
+   "content_length": "8294657",
+   "etag": "\"d7408c72b54d32e89cd3e1150200735c\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/81/cadastre-81-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:53:51 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/82/cadastre-82-sections.json.gz": {
+   "content_length": "3790276",
+   "etag": "\"47f4c356e6800d61604ee1e9482a3077\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/82/cadastre-82-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:53:56 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/83/cadastre-83-sections.json.gz": {
+   "content_length": "6941354",
+   "etag": "\"38b2b8aefe586be696e6d7dc16b5f851\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/83/cadastre-83-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:54:00 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/84/cadastre-84-sections.json.gz": {
+   "content_length": "4730481",
+   "etag": "\"8eae37b7467e884cfdabaf2ea17e0040\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/84/cadastre-84-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:54:05 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/85/cadastre-85-sections.json.gz": {
+   "content_length": "11712936",
+   "etag": "\"72e008fdb033326de458751b9bc96c63-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/85/cadastre-85-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:54:10 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/86/cadastre-86-sections.json.gz": {
+   "content_length": "8044826",
+   "etag": "\"7eeaa58946df5a500ca4de6e9ffe5a17\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/86/cadastre-86-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:54:15 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/87/cadastre-87-sections.json.gz": {
+   "content_length": "6394673",
+   "etag": "\"a2361370c80c12ea5280953d26d1f681\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/87/cadastre-87-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:54:20 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/88/cadastre-88-sections.json.gz": {
+   "content_length": "8178597",
+   "etag": "\"f075a402a24e4887237f55384a65d622\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/88/cadastre-88-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:54:24 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/89/cadastre-89-sections.json.gz": {
+   "content_length": "13430093",
+   "etag": "\"d26f189bd67f25af1798d4d8fcfab436-2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/89/cadastre-89-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:54:29 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/90/cadastre-90-sections.json.gz": {
+   "content_length": "1315507",
+   "etag": "\"da94de25d8116198f1a59679725bfeb5\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/90/cadastre-90-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:54:35 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/91/cadastre-91-sections.json.gz": {
+   "content_length": "3087693",
+   "etag": "\"80cd9928206685276f14b3acc1b525f3\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/91/cadastre-91-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:54:36 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/92/cadastre-92-sections.json.gz": {
+   "content_length": "469688",
+   "etag": "\"243fc0424f161cbb2cc600e10b34addb\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/92/cadastre-92-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:54:38 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/93/cadastre-93-sections.json.gz": {
+   "content_length": "743100",
+   "etag": "\"d38cda2dfcd3806454081945a4a020cc\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/93/cadastre-93-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:54:40 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/94/cadastre-94-sections.json.gz": {
+   "content_length": "785915",
+   "etag": "\"d9cdabc5d9c451a907d0bcf303a54a15\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/94/cadastre-94-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:54:41 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/95/cadastre-95-sections.json.gz": {
+   "content_length": "2408453",
+   "etag": "\"cb25d2386e5de06fa889d604b0b4ceb5\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/95/cadastre-95-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:54:43 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/971/cadastre-971-sections.json.gz": {
+   "content_length": "2203223",
+   "etag": "\"34d5b372d6a9d27694d7e057bd444f4b\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/971/cadastre-971-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:54:46 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/972/cadastre-972-sections.json.gz": {
+   "content_length": "1999557",
+   "etag": "\"fa5c02103e51bcc4e94893475b71c8a2\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/972/cadastre-972-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:54:50 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/973/cadastre-973-sections.json.gz": {
+   "content_length": "1234898",
+   "etag": "\"ba0873bb5200cb82b6cd43a4da8d121a\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/973/cadastre-973-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:54:51 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/974/cadastre-974-sections.json.gz": {
+   "content_length": "2889416",
+   "etag": "\"06ebe27af8171dcfeb70331b3865003a\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/974/cadastre-974-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:54:53 GMT",
+   "status": 200
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/975/cadastre-975-sections.json.gz": {
+   "content_length": null,
+   "etag": null,
+   "final_url": null,
+   "last_modified": null,
+   "status": 404
+  },
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/976/cadastre-976-sections.json.gz": {
+   "content_length": "380349",
+   "etag": "\"4d7c943a1943dd31a89c0e0ec89c552a\"",
+   "final_url": "https://cadastre.s3.rbx.io.cloud.ovh.net:443/etalab-cadastre/2026-09-01/geojson/departements/976/cadastre-976-sections.json.gz",
+   "last_modified": "Wed, 30 Sep 2026 01:54:56 GMT",
+   "status": 200
+  }
+ },
+ "millesime": "2026-09-01",
+ "mode": "producteur",
+ "pannes": {},
+ "primary_metric": "geo_sections",
+ "script_sha256": "7603eabecab2e08c2a25e993a2a412b55337c201ef0c878b3ed57c0870d03828",
+ "script_sha256_origin": "caller, SHA-256 of the file sent on stdin",
+ "source": "cadastre_sections",
+ "started_at": "2026-10-13T11:16:29Z",
+ "totals": {
+  "geo_sections": 461417,
+  "sections:features": 461417
+ },
+ "urls": [
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/01/cadastre-01-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/02/cadastre-02-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/03/cadastre-03-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/04/cadastre-04-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/05/cadastre-05-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/06/cadastre-06-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/07/cadastre-07-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/08/cadastre-08-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/09/cadastre-09-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/10/cadastre-10-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/11/cadastre-11-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/12/cadastre-12-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/13/cadastre-13-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/14/cadastre-14-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/15/cadastre-15-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/16/cadastre-16-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/17/cadastre-17-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/18/cadastre-18-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/19/cadastre-19-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/2A/cadastre-2A-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/2B/cadastre-2B-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/21/cadastre-21-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/22/cadastre-22-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/23/cadastre-23-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/24/cadastre-24-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/25/cadastre-25-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/26/cadastre-26-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/27/cadastre-27-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/28/cadastre-28-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/29/cadastre-29-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/30/cadastre-30-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/31/cadastre-31-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/32/cadastre-32-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/33/cadastre-33-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/34/cadastre-34-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/35/cadastre-35-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/36/cadastre-36-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/37/cadastre-37-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/38/cadastre-38-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/39/cadastre-39-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/40/cadastre-40-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/41/cadastre-41-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/42/cadastre-42-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/43/cadastre-43-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/44/cadastre-44-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/45/cadastre-45-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/46/cadastre-46-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/47/cadastre-47-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/48/cadastre-48-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/49/cadastre-49-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/50/cadastre-50-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/51/cadastre-51-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/52/cadastre-52-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/53/cadastre-53-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/54/cadastre-54-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/55/cadastre-55-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/56/cadastre-56-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/57/cadastre-57-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/58/cadastre-58-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/59/cadastre-59-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/60/cadastre-60-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/61/cadastre-61-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/62/cadastre-62-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/63/cadastre-63-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/64/cadastre-64-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/65/cadastre-65-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/66/cadastre-66-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/67/cadastre-67-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/68/cadastre-68-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/69/cadastre-69-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/70/cadastre-70-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/71/cadastre-71-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/72/cadastre-72-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/73/cadastre-73-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/74/cadastre-74-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/75/cadastre-75-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/76/cadastre-76-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/77/cadastre-77-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/78/cadastre-78-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/79/cadastre-79-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/80/cadastre-80-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/81/cadastre-81-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/82/cadastre-82-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/83/cadastre-83-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/84/cadastre-84-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/85/cadastre-85-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/86/cadastre-86-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/87/cadastre-87-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/88/cadastre-88-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/89/cadastre-89-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/90/cadastre-90-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/91/cadastre-91-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/92/cadastre-92-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/93/cadastre-93-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/94/cadastre-94-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/95/cadastre-95-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/971/cadastre-971-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/972/cadastre-972-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/973/cadastre-973-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/974/cadastre-974-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/975/cadastre-975-sections.json.gz",
+  "https://cadastre.data.gouv.fr/data/etalab-cadastre/latest/geojson/departements/976/cadastre-976-sections.json.gz"
+ ]
+}

@@ -1,0 +1,16 @@
+name: Proposition
+description: Une source à ajouter, une question à laquelle le site devrait répondre, une amélioration.
+labels: ["proposition"]
+body:
+  - type: textarea
+    id: besoin
+    attributes:
+      label: Le besoin
+      description: Qui en a besoin, et pour décider de quoi.
+    validations:
+      required: true
+  - type: textarea
+    id: idee
+    attributes:
+      label: L'idée
+      description: Source envisagée (producteur, licence, lien), ou changement proposé.

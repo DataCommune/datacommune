@@ -1,0 +1,189 @@
+{
+	"regle": "Valeurs exportées (CSV) des thèmes Risques et Urbanisme et texte des champs liste (texteChamp), figés au SHA de départ du plan 04.5-04 avant le rendu entrée par entrée (D45-11, contre-revue I1). Ce fichier ne se réécrit pas.",
+	"baseRevision": "a69441d47e7ca945c637fdfd380c17ff8b911ec1",
+	"capturedAt": "2026-10-25T03:00:54Z",
+	"adresses": {
+		"adresse-44109-zz04-00004": {
+			"export": [
+				{
+					"key": "risques",
+					"rows": [
+						{
+							"label": "Au point de l'adresse — Retrait-gonflement des argiles",
+							"value": "Exposition faible",
+							"state": "value",
+							"presentation": {
+								"grain": "Point",
+								"reserves": [
+									"Géorisques",
+									"2026-10-13"
+								]
+							}
+						},
+						{
+							"label": "Sur la commune (référence) — Risques naturels et technologiques recensés",
+							"value": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines) ; Affaissements et effondrements d'origine naturelle (cavités souterraines) ; Avancée dunaire ; Eboulement ou chutes de pierres et de blocs ; Engins de guerre ; Foudre ; Glissement de terrain ; Grêle ; Inondation ; Mouvement de terrain ; Neige et pluies verglaçantes ; Par remontées de nappes naturelles ; Par ruissellement et coulée de boue ; Par une crue à débordement lent de cours d'eau ; Phénomène lié à l'atmosphère ; Radon ; Risque industriel ; Rupture de barrage ; Séisme ; Tassements différentiels ; Tempête et grains (vent) ; Transport de marchandises dangereuses",
+							"state": "value",
+							"presentation": {
+								"grain": "Commune (référence)",
+								"reserves": [
+									"Géorisques",
+									"2026-10-13"
+								]
+							}
+						},
+						{
+							"label": "Sur la commune (référence) — Potentiel radon (catégorie de 1 à 3)",
+							"value": "3",
+							"state": "value",
+							"presentation": {
+								"grain": "Commune (référence)",
+								"reserves": [
+									"Géorisques",
+									"2026-10-13"
+								]
+							}
+						},
+						{
+							"label": "Sur la commune (référence) — Installations classées pour la protection de l'environnement",
+							"value": "157",
+							"state": "value",
+							"presentation": {
+								"grain": "Commune (référence)",
+								"reserves": [
+									"Géorisques",
+									"2026-10-13"
+								]
+							}
+						}
+					]
+				},
+				{
+					"key": "urbanisme",
+					"rows": [
+						{
+							"label": "Zone du PLU au point",
+							"value": "UMa · Secteur de développement des centralités actuelles ou en devenir",
+							"state": "value",
+							"presentation": {
+								"grain": "Point",
+								"reserves": [
+									"API Carto GPU",
+									"2026-10-13"
+								]
+							}
+						},
+						{
+							"label": "Prescriptions au point",
+							"value": "norme plafond applicable à la sous-destination Bureau pour les véhicules à moteur ; Orientation d'Aménagement et de Programmation  Loire (OAP) ; polarité commerciale de proximité et centralité commerciale Nantaise ; Orientation dAménagement et de Programmation Commerce (OAP) ; secteur de renforcement de la mixité sociale ; norme plancher applicable à la sous-destination Logement collectif pour les véhicules à moteur ; hauteur par niveaux, hors tout ; norme de stationnement applicable à la sous-destination Artisanat et commerce de détail ; périmètre indicatif de 500 m autour des stations de transport collectif structurant",
+							"state": "value",
+							"presentation": {
+								"grain": "Point",
+								"reserves": [
+									"API Carto GPU",
+									"2026-10-13"
+								]
+							}
+						}
+					]
+				}
+			],
+			"texteChamp": {
+				"adresse.risques.liste_commune": "Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines) ; Affaissements et effondrements d'origine naturelle (cavités souterraines) ; Avancée dunaire ; Eboulement ou chutes de pierres et de blocs ; Engins de guerre ; Foudre ; Glissement de terrain ; Grêle ; Inondation ; Mouvement de terrain ; Neige et pluies verglaçantes ; Par remontées de nappes naturelles ; Par ruissellement et coulée de boue ; Par une crue à débordement lent de cours d'eau ; Phénomène lié à l'atmosphère ; Radon ; Risque industriel ; Rupture de barrage ; Séisme ; Tassements différentiels ; Tempête et grains (vent) ; Transport de marchandises dangereuses",
+				"adresse.urbanisme.zone_plu": "UMa · Secteur de développement des centralités actuelles ou en devenir",
+				"adresse.urbanisme.prescriptions": "norme plafond applicable à la sous-destination Bureau pour les véhicules à moteur ; Orientation d'Aménagement et de Programmation  Loire (OAP) ; polarité commerciale de proximité et centralité commerciale Nantaise ; Orientation dAménagement et de Programmation Commerce (OAP) ; secteur de renforcement de la mixité sociale ; norme plancher applicable à la sous-destination Logement collectif pour les véhicules à moteur ; hauteur par niveaux, hors tout ; norme de stationnement applicable à la sous-destination Artisanat et commerce de détail ; périmètre indicatif de 500 m autour des stations de transport collectif structurant"
+			}
+		},
+		"adresse-85191-zz05-00011": {
+			"export": [
+				{
+					"key": "risques",
+					"rows": [
+						{
+							"label": "Au point de l'adresse — Retrait-gonflement des argiles",
+							"value": "Exposition moyenne",
+							"state": "value",
+							"presentation": {
+								"grain": "Point",
+								"reserves": [
+									"Géorisques",
+									"2026-10-12"
+								]
+							}
+						},
+						{
+							"label": "Sur la commune (référence) — Risques naturels et technologiques recensés",
+							"value": "Affaissements et effondrements d'origine naturelle (cavités souterraines) ; Inondation ; Mouvement de terrain ; Neige et pluies verglaçantes ; Par une crue à débordement lent de cours d'eau ; Phénomène lié à l'atmosphère ; Radon ; Rupture de barrage ; Séisme ; Tassements différentiels ; Transport de marchandises dangereuses",
+							"state": "value",
+							"presentation": {
+								"grain": "Commune (référence)",
+								"reserves": [
+									"Géorisques",
+									"2026-10-12"
+								]
+							}
+						},
+						{
+							"label": "Sur la commune (référence) — Potentiel radon (catégorie de 1 à 3)",
+							"value": "3",
+							"state": "value",
+							"presentation": {
+								"grain": "Commune (référence)",
+								"reserves": [
+									"Géorisques",
+									"2026-10-12"
+								]
+							}
+						},
+						{
+							"label": "Sur la commune (référence) — Installations classées pour la protection de l'environnement",
+							"value": "60",
+							"state": "value",
+							"presentation": {
+								"grain": "Commune (référence)",
+								"reserves": [
+									"Géorisques",
+									"2026-10-12"
+								]
+							}
+						}
+					]
+				},
+				{
+					"key": "urbanisme",
+					"rows": [
+						{
+							"label": "Zone du PLU au point",
+							"value": "UB · UB - Zone urbaine mixte",
+							"state": "value",
+							"presentation": {
+								"grain": "Point",
+								"reserves": [
+									"API Carto GPU",
+									"2026-10-12"
+								]
+							}
+						},
+						{
+							"label": "Prescriptions au point",
+							"value": "OAP TVBN",
+							"state": "value",
+							"presentation": {
+								"grain": "Point",
+								"reserves": [
+									"API Carto GPU",
+									"2026-10-12"
+								]
+							}
+						}
+					]
+				}
+			],
+			"texteChamp": {
+				"adresse.risques.liste_commune": "Affaissements et effondrements d'origine naturelle (cavités souterraines) ; Inondation ; Mouvement de terrain ; Neige et pluies verglaçantes ; Par une crue à débordement lent de cours d'eau ; Phénomène lié à l'atmosphère ; Radon ; Rupture de barrage ; Séisme ; Tassements différentiels ; Transport de marchandises dangereuses",
+				"adresse.urbanisme.zone_plu": "UB · UB - Zone urbaine mixte",
+				"adresse.urbanisme.prescriptions": "OAP TVBN"
+			}
+		}
+	}
+}

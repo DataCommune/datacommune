@@ -1,0 +1,2912 @@
+{
+	"slug": "rapport-43-themes",
+	"banId": "44109_zz01_00002",
+	"rapport": {
+		"statut": "ok",
+		"donnees": {
+			"adresse": {
+				"etat": "etablie",
+				"ban_id": "44109_zz01_00002",
+				"libelle": "2 Rue des Essais, 44000 Nantes",
+				"numero": "2",
+				"rep": null,
+				"nom_voie": "Rue des Essais",
+				"code_postal": "44000",
+				"commune": {
+					"code_insee": "44109",
+					"nom": "Nantes"
+				},
+				"departement": {
+					"code": "44",
+					"nom": "Loire-Atlantique"
+				},
+				"parcelle": {
+					"etat": "point_hors_parcelle",
+					"id_parcelle": null,
+					"nombre_candidats": null
+				}
+			},
+			"couverture": {
+				"etat": "heberge",
+				"motif": null
+			},
+			"date": "2026-10-30",
+			"resume": {
+				"points_adresse": [
+					{
+						"theme": "grand_axe",
+						"titre": "Grands axes routiers",
+						"verdict": "Grand axe routier proche : N844 (route nationale) à 50 m.",
+						"granularite": {
+							"niveau": "rayon",
+							"rayon_m": 500,
+							"arrondissement": null
+						}
+					},
+					{
+						"theme": "voie_ferree",
+						"titre": "Voies ferrées",
+						"verdict": "Voie ferrée proche : voie ferrée principale à 33 m.",
+						"granularite": {
+							"niveau": "rayon",
+							"rayon_m": 500,
+							"arrondissement": null
+						}
+					},
+					{
+						"theme": "peb",
+						"titre": "Bruit des avions",
+						"verdict": "Zone D du plan d'exposition au bruit de NANTES (arrêté du 17 septembre 2004) : isolation acoustique imposée aux constructions neuves.",
+						"granularite": {
+							"niveau": "adresse",
+							"rayon_m": null,
+							"arrondissement": null
+						}
+					}
+				],
+				"points_commune": [
+					{
+						"theme": "inondation",
+						"titre": "Inondation",
+						"verdict": "Risque d'inondation recensé dans la commune ; non déterminé à l'adresse.",
+						"granularite": {
+							"niveau": "commune",
+							"rayon_m": null,
+							"arrondissement": null
+						}
+					},
+					{
+						"theme": "radon",
+						"titre": "Radon",
+						"verdict": "Le potentiel le plus élevé de l’échelle, valable pour toute la commune.",
+						"granularite": {
+							"niveau": "commune",
+							"rayon_m": null,
+							"arrondissement": null
+						}
+					}
+				],
+				"rassurants": [
+					{
+						"theme": "argiles",
+						"titre": "Retrait-gonflement des argiles",
+						"verdict": "Peu de risque de fissures dues aux argiles au point de l'adresse.",
+						"granularite": {
+							"niveau": "adresse",
+							"rayon_m": null,
+							"arrondissement": null
+						}
+					},
+					{
+						"theme": "fibre",
+						"titre": "Internet fixe",
+						"verdict": "Les opérateurs la déclarent à cette adresse, jusqu’à 1 Gbit/s.",
+						"granularite": {
+							"niveau": "adresse",
+							"rayon_m": null,
+							"arrondissement": null
+						}
+					},
+					{
+						"theme": "eau_potable",
+						"titre": "Eau du robinet",
+						"verdict": "Eau conforme aux limites de qualité : 418 contrôles bactériologiques en 12 mois.",
+						"granularite": {
+							"niveau": "commune",
+							"rayon_m": null,
+							"arrondissement": null
+						}
+					}
+				],
+				"rassurants_adresse": [
+					{
+						"theme": "argiles",
+						"titre": "Retrait-gonflement des argiles",
+						"verdict": "Peu de risque de fissures dues aux argiles au point de l'adresse.",
+						"granularite": {
+							"niveau": "adresse",
+							"rayon_m": null,
+							"arrondissement": null
+						}
+					},
+					{
+						"theme": "fibre",
+						"titre": "Internet fixe",
+						"verdict": "Les opérateurs la déclarent à cette adresse, jusqu’à 1 Gbit/s.",
+						"granularite": {
+							"niveau": "adresse",
+							"rayon_m": null,
+							"arrondissement": null
+						}
+					}
+				],
+				"rassurants_commune": [
+					{
+						"theme": "eau_potable",
+						"titre": "Eau du robinet",
+						"verdict": "Eau conforme aux limites de qualité : 418 contrôles bactériologiques en 12 mois.",
+						"granularite": {
+							"niveau": "commune",
+							"rayon_m": null,
+							"arrondissement": null
+						}
+					}
+				],
+				"pannes": [
+					{
+						"theme": "rupture_barrage",
+						"titre": "Rupture de barrage",
+						"verdict": "Source momentanément indisponible : réessayez plus tard.",
+						"granularite": {
+							"niveau": "adresse",
+							"rayon_m": null,
+							"arrondissement": null
+						}
+					},
+					{
+						"theme": "geologie",
+						"titre": "Géologie",
+						"verdict": "Source momentanément indisponible : réessayez plus tard.",
+						"granularite": {
+							"niveau": "commune",
+							"rayon_m": null,
+							"arrondissement": null
+						}
+					},
+					{
+						"theme": "sismicite",
+						"titre": "Sismicité",
+						"verdict": "Source momentanément indisponible : réessayez plus tard.",
+						"granularite": {
+							"niveau": "commune",
+							"rayon_m": null,
+							"arrondissement": null
+						}
+					},
+					{
+						"theme": "pollution_sols",
+						"titre": "Sols pollués",
+						"verdict": "Source momentanément indisponible : réessayez plus tard.",
+						"granularite": {
+							"niveau": "parcelle",
+							"rayon_m": null,
+							"arrondissement": null
+						}
+					},
+					{
+						"theme": "antennes_5g",
+						"titre": "Réseau mobile 5G",
+						"verdict": "Source momentanément indisponible : réessayez plus tard.",
+						"granularite": {
+							"niveau": "rayon",
+							"rayon_m": 1000,
+							"arrondissement": null
+						}
+					}
+				],
+				"sources_en_panne": [
+					"georisques",
+					"geologie",
+					"errial",
+					"antennes"
+				],
+				"non_concernes": [
+					{
+						"theme": "encadrement_loyers",
+						"titre": "Encadrement des loyers",
+						"verdict": "La commune n'est pas dans la liste des communes à loyers encadrés.",
+						"granularite": {
+							"niveau": "commune",
+							"rayon_m": null,
+							"arrondissement": null
+						}
+					},
+					{
+						"theme": "zone_tendue",
+						"titre": "Zone tendue",
+						"verdict": "La commune n'est pas en zone tendue (taxe sur les logements vacants).",
+						"granularite": {
+							"niveau": "commune",
+							"rayon_m": null,
+							"arrondissement": null
+						}
+					}
+				],
+				"partiels": [
+					{
+						"theme": "inondation",
+						"titre": "Inondation",
+						"verdict": "Risque d'inondation recensé dans la commune ; non déterminé à l'adresse.",
+						"granularite": {
+							"niveau": "commune",
+							"rayon_m": null,
+							"arrondissement": null
+						}
+					}
+				],
+				"sans_valeur": [
+					{
+						"theme": "parcelle",
+						"titre": "Parcelle",
+						"verdict": "Le point de l'adresse ne tombe dans aucune parcelle du cadastre : la parcelle n'est pas identifiée.",
+						"granularite": {
+							"niveau": "parcelle",
+							"rayon_m": null,
+							"arrondissement": null
+						}
+					},
+					{
+						"theme": "zonage_abc",
+						"titre": "Zonage ABC",
+						"verdict": "Information non publiée pour cette adresse.",
+						"granularite": {
+							"niveau": "commune",
+							"rayon_m": null,
+							"arrondissement": null
+						}
+					},
+					{
+						"theme": "remontee_nappe",
+						"titre": "Remontée de nappe",
+						"verdict": "Source non couverte ici par DataCommune.",
+						"granularite": {
+							"niveau": "adresse",
+							"rayon_m": null,
+							"arrondissement": null
+						}
+					},
+					{
+						"theme": "altitude",
+						"titre": "Altitude",
+						"verdict": "Information non publiée pour cette adresse.",
+						"granularite": {
+							"niveau": "adresse",
+							"rayon_m": null,
+							"arrondissement": null
+						}
+					},
+					{
+						"theme": "mouvements_terrain",
+						"titre": "Cavités et mouvements de terrain",
+						"verdict": "Source non couverte ici par DataCommune.",
+						"granularite": {
+							"niveau": "rayon",
+							"rayon_m": 500,
+							"arrondissement": null
+						}
+					},
+					{
+						"theme": "catnat",
+						"titre": "Catastrophes naturelles",
+						"verdict": "Information non publiée pour cette adresse.",
+						"granularite": {
+							"niveau": "commune",
+							"rayon_m": null,
+							"arrondissement": null
+						}
+					},
+					{
+						"theme": "icpe_commune",
+						"titre": "Installations classées",
+						"verdict": "Source non couverte ici par DataCommune.",
+						"granularite": {
+							"niveau": "commune",
+							"rayon_m": null,
+							"arrondissement": null
+						}
+					},
+					{
+						"theme": "trait_de_cote",
+						"titre": "Trait de côte",
+						"verdict": "Information non publiée pour cette adresse.",
+						"granularite": {
+							"niveau": "adresse",
+							"rayon_m": null,
+							"arrondissement": null
+						}
+					},
+					{
+						"theme": "debroussaillement",
+						"titre": "Débroussaillement",
+						"verdict": "Source non couverte ici par DataCommune.",
+						"granularite": {
+							"niveau": "parcelle",
+							"rayon_m": null,
+							"arrondissement": null
+						}
+					},
+					{
+						"theme": "nucleaire",
+						"titre": "Nucléaire",
+						"verdict": "Information non publiée pour cette adresse.",
+						"granularite": {
+							"niveau": "adresse",
+							"rayon_m": null,
+							"arrondissement": null
+						}
+					},
+					{
+						"theme": "construction",
+						"titre": "Construction",
+						"verdict": "Source non couverte ici par DataCommune.",
+						"granularite": {
+							"niveau": "batiment",
+							"rayon_m": null,
+							"arrondissement": null
+						}
+					},
+					{
+						"theme": "copropriete",
+						"titre": "Copropriété",
+						"verdict": "Parcelle non identifiée : la copropriété ne peut pas être recherchée.",
+						"granularite": {
+							"niveau": "parcelle",
+							"rayon_m": null,
+							"arrondissement": null
+						}
+					},
+					{
+						"theme": "secteur_bruit",
+						"titre": "Secteur affecté par le bruit",
+						"verdict": "Information non publiée pour cette adresse.",
+						"granularite": {
+							"niveau": "adresse",
+							"rayon_m": null,
+							"arrondissement": null
+						}
+					}
+				],
+				"en_cours": [],
+				"lus": 25,
+				"lus_adresse": 10,
+				"lus_secteur": 15,
+				"total_criteres": 43,
+				"par_section": {
+					"marche": {
+						"vigilance": 0,
+						"pannes": 0,
+						"lus": 6,
+						"total": 7
+					},
+					"risques": {
+						"vigilance": 2,
+						"pannes": 4,
+						"lus": 6,
+						"total": 19
+					},
+					"batiment": {
+						"vigilance": 0,
+						"pannes": 0,
+						"lus": 2,
+						"total": 4
+					},
+					"vivre": {
+						"vigilance": 3,
+						"pannes": 1,
+						"lus": 11,
+						"total": 13
+					}
+				},
+				"chiffres_cles": [
+					{
+						"id": "prix_m2_median",
+						"libelle": "Prix médian au m²",
+						"theme": "prix_commune",
+						"etat": "manque",
+						"granularite": {
+							"niveau": "commune",
+							"rayon_m": null,
+							"arrondissement": null
+						},
+						"chiffres": [],
+						"motif": "chiffre_absent"
+					},
+					{
+						"id": "loyer_m2",
+						"libelle": "Loyer au m²",
+						"theme": "loyers",
+						"etat": "manque",
+						"granularite": {
+							"niveau": "commune",
+							"rayon_m": null,
+							"arrondissement": null
+						},
+						"chiffres": [],
+						"motif": "chiffre_absent"
+					},
+					{
+						"id": "dpe_dominant",
+						"libelle": "DPE dominant à l'adresse",
+						"theme": "dpe",
+						"etat": "manque",
+						"granularite": {
+							"niveau": "adresse",
+							"rayon_m": null,
+							"arrondissement": null
+						},
+						"chiffres": [],
+						"motif": "chiffre_absent"
+					},
+					{
+						"id": "annee_construction",
+						"libelle": "Année de construction",
+						"theme": "construction",
+						"etat": "hors_couverture",
+						"granularite": {
+							"niveau": "batiment",
+							"rayon_m": null,
+							"arrondissement": null
+						},
+						"chiffres": [],
+						"motif": null
+					}
+				]
+			},
+			"themes": [
+				{
+					"id": "prix_commune",
+					"section": "marche",
+					"titre": "Prix de vente au m²",
+					"etat": "ok",
+					"ton": "neutre",
+					"granularite": {
+						"niveau": "commune",
+						"rayon_m": null,
+						"arrondissement": null
+					},
+					"verdict": "Médiane pour un appartement à Nantes sur un an, d'après 3 996 ventes.",
+					"chiffres": [
+						{
+							"id": "c1",
+							"libelle": "Appartement",
+							"valeur": "3 385 €/m²",
+							"unite": "none",
+							"millesime": null
+						},
+						{
+							"id": "c2",
+							"libelle": "Maison",
+							"valeur": "4 110 €/m²",
+							"unite": "none",
+							"millesime": null
+						},
+						{
+							"id": "c3",
+							"libelle": "Tous biens",
+							"valeur": "3 493 €/m²",
+							"unite": "none",
+							"millesime": null
+						}
+					],
+					"details": {},
+					"rattachement": null,
+					"sources": [
+						{
+							"cle": "dvf",
+							"nom": "Demandes de valeurs foncières (DVF)",
+							"producteur": "DGFiP / Etalab",
+							"url": "https://www.data.gouv.fr/datasets/demandes-de-valeurs-foncieres-geolocalisees",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": "2025-12-31",
+							"mode": "import"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": "3 385 €/m²",
+					"etat_libelle": null
+				},
+				{
+					"id": "ventes_parcelle",
+					"section": "marche",
+					"titre": "Ventes à cette adresse",
+					"etat": "ok",
+					"ton": "neutre",
+					"granularite": {
+						"niveau": "adresse",
+						"rayon_m": null,
+						"arrondissement": null
+					},
+					"verdict": "Déclarées à cette adresse ; la plus récente date de juillet 2025. Parcelle non identifiée.",
+					"chiffres": [
+						{
+							"id": "c1",
+							"libelle": "À l'adresse",
+							"valeur": 3,
+							"unite": "count",
+							"millesime": "2021"
+						},
+						{
+							"id": "c2",
+							"libelle": "Sur la parcelle",
+							"valeur": "inconnues",
+							"unite": "none",
+							"millesime": null
+						},
+						{
+							"id": "c3",
+							"libelle": "Dernière vente à l’adresse",
+							"valeur": "5 255 €/m²",
+							"unite": "none",
+							"millesime": "2025"
+						}
+					],
+					"details": {
+						"ventes_declarees_a_cette_adresse_02_01_2021_au_31_12_2025": [
+							{
+								"Date": "28/07/2025",
+								"Bien": "Appartement et dépendance",
+								"Surface": "47 m²",
+								"Prix": "247 000 €",
+								"Prix au m²": "5 255 €/m²"
+							},
+							{
+								"Date": "12/05/2022",
+								"Bien": "Appartement et dépendance",
+								"Surface": "77 m²",
+								"Prix": "444 530 €",
+								"Prix au m²": "5 773 €/m²"
+							},
+							{
+								"Date": "07/06/2021",
+								"Bien": "Appartement et dépendance",
+								"Surface": "39 m²",
+								"Prix": "225 000 €",
+								"Prix au m²": "5 769 €/m²"
+							}
+						]
+					},
+					"rattachement": {
+						"entite": "vente",
+						"cle": null,
+						"confiance": "sure",
+						"candidats": null,
+						"motif": null,
+						"alerte": null,
+						"maillons": [
+							{
+								"lien": "vente",
+								"confiance": "sure"
+							}
+						]
+					},
+					"sources": [
+						{
+							"cle": "dvf",
+							"nom": "Demandes de valeurs foncières (DVF)",
+							"producteur": "DGFiP / Etalab",
+							"url": "https://www.data.gouv.fr/datasets/demandes-de-valeurs-foncieres-geolocalisees",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": "2026-10-21",
+							"mode": "import"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": "3 à l'adresse",
+					"etat_libelle": null
+				},
+				{
+					"id": "parcelle",
+					"section": "risques",
+					"titre": "Parcelle",
+					"etat": "manque",
+					"ton": "info",
+					"granularite": {
+						"niveau": "parcelle",
+						"rayon_m": null,
+						"arrondissement": null
+					},
+					"verdict": "Le point de l'adresse ne tombe dans aucune parcelle du cadastre : la parcelle n'est pas identifiée.",
+					"chiffres": [],
+					"details": {},
+					"rattachement": {
+						"entite": "parcelle",
+						"cle": null,
+						"confiance": "incertaine",
+						"candidats": null,
+						"motif": "point_hors_parcelle",
+						"alerte": "Le point de l’adresse ne tombe dans aucune parcelle.",
+						"maillons": [
+							{
+								"lien": "parcelle",
+								"confiance": "incertaine"
+							}
+						]
+					},
+					"sources": [
+						{
+							"cle": "cadastre",
+							"nom": "Cadastre Etalab",
+							"producteur": "DGFiP / Etalab",
+							"url": "https://cadastre.data.gouv.fr",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": "2026",
+							"mode": "import"
+						}
+					],
+					"motif": "not_available",
+					"pannes_partielles": [],
+					"accroche": "Non publiée",
+					"etat_libelle": "Non publiée"
+				},
+				{
+					"id": "urbanisme",
+					"section": "risques",
+					"titre": "Plan local d'urbanisme",
+					"etat": "ok",
+					"ton": "neutre",
+					"granularite": {
+						"niveau": "adresse",
+						"rayon_m": null,
+						"arrondissement": null
+					},
+					"verdict": "7 prescriptions du plan s’appliquent au point de l'adresse.",
+					"chiffres": [
+						{
+							"id": "c1",
+							"libelle": "Zone",
+							"valeur": "UMa",
+							"unite": "none",
+							"millesime": null
+						},
+						{
+							"id": "c2",
+							"libelle": "Prescriptions",
+							"valeur": 7,
+							"unite": "count",
+							"millesime": null
+						}
+					],
+					"details": {
+						"liste": [
+							"Hauteur par niveaux, hors tout",
+							"Norme plafond applicable à la sous-destination Bureau pour les véhicules à moteur",
+							"Orientation d'Aménagement et de Programmation Loire (OAP)",
+							"Secteur de renforcement de la mixité sociale",
+							"Norme plancher applicable à la sous-destination Logement collectif pour les véhicules à moteur",
+							"Norme de stationnement applicable à la sous-destination Artisanat et commerce de détail",
+							"Périmètre indicatif de 500 m autour des stations de transport collectif structurant"
+						]
+					},
+					"rattachement": null,
+					"sources": [
+						{
+							"cle": "urbanisme",
+							"nom": "API Carto GPU",
+							"producteur": "IGN",
+							"url": "https://apicarto.ign.fr",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": "2026-10-30",
+							"mode": "direct"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": "UMa",
+					"etat_libelle": null
+				},
+				{
+					"id": "loyers",
+					"section": "marche",
+					"titre": "Loyer de marché",
+					"etat": "ok",
+					"ton": "neutre",
+					"granularite": {
+						"niveau": "commune",
+						"rayon_m": null,
+						"arrondissement": null
+					},
+					"verdict": "Estimation charges comprises pour un appartement à Nantes, entre 11,35 €/m² et 18,54 €/m².",
+					"chiffres": [
+						{
+							"id": "c1",
+							"libelle": "Appartement",
+							"valeur": "14,50 €/m²",
+							"unite": "none",
+							"millesime": "2025"
+						},
+						{
+							"id": "c2",
+							"libelle": "Maison",
+							"valeur": "14,35 €/m²",
+							"unite": "none",
+							"millesime": "2025"
+						},
+						{
+							"id": "c3",
+							"libelle": "Zone ABC",
+							"valeur": "A",
+							"unite": "none",
+							"millesime": null
+						}
+					],
+					"details": {},
+					"rattachement": null,
+					"sources": [
+						{
+							"cle": "loyers",
+							"nom": "Carte des loyers",
+							"producteur": "ANIL / MTE",
+							"url": "https://www.data.gouv.fr/datasets/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": "2025",
+							"mode": "import"
+						},
+						{
+							"cle": "zonage_abc",
+							"nom": "Zonage ABC (tension immobilière)",
+							"producteur": "Ministère de la Transition écologique",
+							"url": "https://www.data.gouv.fr/datasets/liste-des-communes-selon-le-zonage-abc",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": null,
+							"mode": "import"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": "14,50 €/m²",
+					"etat_libelle": null
+				},
+				{
+					"id": "encadrement_loyers",
+					"section": "marche",
+					"titre": "Encadrement des loyers",
+					"etat": "non_concerne",
+					"ton": "neutre",
+					"granularite": {
+						"niveau": "commune",
+						"rayon_m": null,
+						"arrondissement": null
+					},
+					"verdict": "La commune n'est pas dans la liste des communes à loyers encadrés.",
+					"chiffres": [],
+					"details": {
+						"commune": "44109",
+						"liste_verifiee_le": "2026-10-29"
+					},
+					"rattachement": null,
+					"sources": [
+						{
+							"cle": "encadrement_communes",
+							"nom": "Communes à encadrement du niveau des loyers (loi ELAN, article 140)",
+							"producteur": "Naistor, d'après les décrets et arrêtés préfectoraux",
+							"url": "https://www.data.gouv.fr/datasets/6ae3c8c1252503d60d5c00df",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": "2026-10-29",
+							"mode": "direct"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": "Sans objet",
+					"etat_libelle": null
+				},
+				{
+					"id": "zonage_abc",
+					"section": "marche",
+					"titre": "Zonage ABC",
+					"etat": "manque",
+					"ton": "info",
+					"granularite": {
+						"niveau": "commune",
+						"rayon_m": null,
+						"arrondissement": null
+					},
+					"verdict": "Information non publiée pour cette adresse.",
+					"chiffres": [],
+					"details": {},
+					"rattachement": null,
+					"sources": [
+						{
+							"cle": "zonage_abc",
+							"nom": "Zonage ABC (tension immobilière)",
+							"producteur": "Ministère de la Transition écologique",
+							"url": "https://www.data.gouv.fr/datasets/liste-des-communes-selon-le-zonage-abc",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": null,
+							"mode": "import"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": "Non publié",
+					"etat_libelle": null
+				},
+				{
+					"id": "zone_tendue",
+					"section": "marche",
+					"titre": "Zone tendue",
+					"etat": "non_concerne",
+					"ton": "neutre",
+					"granularite": {
+						"niveau": "commune",
+						"rayon_m": null,
+						"arrondissement": null
+					},
+					"verdict": "La commune n'est pas en zone tendue (taxe sur les logements vacants).",
+					"chiffres": [],
+					"details": {
+						"commune": "85047",
+						"lue_sur_la_commune": false,
+						"categorie": null,
+						"liste": "taxe_logements_vacants"
+					},
+					"rattachement": null,
+					"sources": [
+						{
+							"cle": "zone_tendue",
+							"nom": "Communes en zone tendue (taxe sur les logements vacants)",
+							"producteur": "DILA (service-public.gouv.fr)",
+							"url": "https://www.data.gouv.fr/datasets/5bc605788b4c414795053dca",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": null,
+							"mode": "direct"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": "Sans objet",
+					"etat_libelle": null
+				},
+				{
+					"id": "fiscalite",
+					"section": "marche",
+					"titre": "Taxe foncière",
+					"etat": "ok",
+					"ton": "neutre",
+					"granularite": {
+						"niveau": "commune",
+						"rayon_m": null,
+						"arrondissement": null
+					},
+					"verdict": "Taux de la taxe foncière sur le bâti voté pour 2025.",
+					"chiffres": [
+						{
+							"id": "c1",
+							"libelle": "Foncier bâti",
+							"valeur": "53,37 %",
+							"unite": "none",
+							"millesime": "2025"
+						},
+						{
+							"id": "c2",
+							"libelle": "Ordures ménagères",
+							"valeur": "7,95 %",
+							"unite": "none",
+							"millesime": "2025"
+						},
+						{
+							"id": "c3",
+							"libelle": "Habitation (rés. secondaire)",
+							"valeur": "34,92 %",
+							"unite": "none",
+							"millesime": "2025"
+						}
+					],
+					"details": {},
+					"rattachement": null,
+					"sources": [
+						{
+							"cle": "fiscalite",
+							"nom": "Fiscalité locale des particuliers",
+							"producteur": "DGFiP",
+							"url": "https://www.data.gouv.fr/datasets/fiscalite-locale-des-particuliers",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": "2025",
+							"mode": "import"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": "53,37 %",
+					"etat_libelle": null
+				},
+				{
+					"id": "argiles",
+					"section": "risques",
+					"titre": "Retrait-gonflement des argiles",
+					"etat": "ok",
+					"ton": "rassurant",
+					"granularite": {
+						"niveau": "adresse",
+						"rayon_m": null,
+						"arrondissement": null
+					},
+					"verdict": "Peu de risque de fissures dues aux argiles au point de l'adresse.",
+					"chiffres": [
+						{
+							"id": "c1",
+							"libelle": "Exposition",
+							"valeur": "Faible",
+							"unite": "none",
+							"millesime": "2026-10-30"
+						}
+					],
+					"details": {},
+					"rattachement": null,
+					"sources": [
+						{
+							"cle": "georisques",
+							"nom": "Géorisques",
+							"producteur": "BRGM / MTE",
+							"url": "https://www.georisques.gouv.fr",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": "2026-10-30",
+							"mode": "direct"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": "Faible",
+					"etat_libelle": null
+				},
+				{
+					"id": "inondation",
+					"section": "risques",
+					"titre": "Inondation",
+					"etat": "ok",
+					"ton": "vigilance",
+					"granularite": {
+						"niveau": "commune",
+						"rayon_m": null,
+						"arrondissement": null
+					},
+					"verdict": "Risque d'inondation recensé dans la commune ; non déterminé à l'adresse.",
+					"chiffres": [],
+					"details": {
+						"atlas_zones_inondables": [
+							"Vallée de la Loire",
+							"Atlas des zones inondables de l'Erdre"
+						],
+						"territoires_risque_important": [
+							"Nantes"
+						],
+						"tri_parcelle": null,
+						"risques_gaspar": [
+							"Inondation"
+						],
+						"statut_adresse": null
+					},
+					"rattachement": null,
+					"sources": [
+						{
+							"cle": "georisques",
+							"nom": "Géorisques",
+							"producteur": "BRGM / MTE",
+							"url": "https://www.georisques.gouv.fr",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": "2026-10-30",
+							"mode": "direct"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [
+						"statut_adresse"
+					],
+					"accroche": null,
+					"etat_libelle": null
+				},
+				{
+					"id": "remontee_nappe",
+					"section": "risques",
+					"titre": "Remontée de nappe",
+					"etat": "hors_couverture",
+					"ton": "info",
+					"granularite": {
+						"niveau": "adresse",
+						"rayon_m": null,
+						"arrondissement": null
+					},
+					"verdict": "Source non couverte ici par DataCommune.",
+					"chiffres": [],
+					"details": {},
+					"rattachement": null,
+					"sources": [
+						{
+							"cle": "georisques",
+							"nom": "Géorisques",
+							"producteur": "BRGM / MTE",
+							"url": "https://www.georisques.gouv.fr",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": null,
+							"mode": "direct"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": "Hors couverture",
+					"etat_libelle": null
+				},
+				{
+					"id": "rupture_barrage",
+					"section": "risques",
+					"titre": "Rupture de barrage",
+					"etat": "panne",
+					"ton": "info",
+					"granularite": {
+						"niveau": "adresse",
+						"rayon_m": null,
+						"arrondissement": null
+					},
+					"verdict": "Source momentanément indisponible : réessayez plus tard.",
+					"chiffres": [],
+					"details": {},
+					"rattachement": null,
+					"sources": [
+						{
+							"cle": "georisques",
+							"nom": "Géorisques",
+							"producteur": "BRGM / MTE",
+							"url": "https://www.georisques.gouv.fr",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": null,
+							"mode": "direct"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": "Source indisponible",
+					"etat_libelle": null
+				},
+				{
+					"id": "altitude",
+					"section": "risques",
+					"titre": "Altitude",
+					"etat": "manque",
+					"ton": "info",
+					"granularite": {
+						"niveau": "adresse",
+						"rayon_m": null,
+						"arrondissement": null
+					},
+					"verdict": "Information non publiée pour cette adresse.",
+					"chiffres": [],
+					"details": {},
+					"rattachement": null,
+					"sources": [
+						{
+							"cle": "altimetrie",
+							"nom": "RGE ALTI® (calcul altimétrique de la Géoplateforme)",
+							"producteur": "IGN",
+							"url": "https://cartes.gouv.fr/aide/fr/guides-utilisateur/utiliser-les-services-de-la-geoplateforme/calcul-altimetrique/",
+							"licence": "Licence Ouverte (version non précisée par la notice)",
+							"millesime": null,
+							"mode": "direct"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": "Non publié",
+					"etat_libelle": null
+				},
+				{
+					"id": "mouvements_terrain",
+					"section": "risques",
+					"titre": "Cavités et mouvements de terrain",
+					"etat": "hors_couverture",
+					"ton": "info",
+					"granularite": {
+						"niveau": "rayon",
+						"rayon_m": 500,
+						"arrondissement": null
+					},
+					"verdict": "Source non couverte ici par DataCommune.",
+					"chiffres": [],
+					"details": {},
+					"rattachement": null,
+					"sources": [
+						{
+							"cle": "georisques",
+							"nom": "Géorisques",
+							"producteur": "BRGM / MTE",
+							"url": "https://www.georisques.gouv.fr",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": null,
+							"mode": "direct"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": "Hors couverture",
+					"etat_libelle": null
+				},
+				{
+					"id": "geologie",
+					"section": "risques",
+					"titre": "Géologie",
+					"etat": "panne",
+					"ton": "info",
+					"granularite": {
+						"niveau": "commune",
+						"rayon_m": null,
+						"arrondissement": null
+					},
+					"verdict": "Source momentanément indisponible : réessayez plus tard.",
+					"chiffres": [],
+					"details": {},
+					"rattachement": null,
+					"sources": [
+						{
+							"cle": "geologie",
+							"nom": "Carte lithologique simplifiée au 1/1 000 000 (géoservice BRGM)",
+							"producteur": "BRGM",
+							"url": "https://geoservices.brgm.fr/geologie",
+							"licence": "Sans condition déclarée par le géoservice",
+							"millesime": null,
+							"mode": "direct"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": "Source indisponible",
+					"etat_libelle": null
+				},
+				{
+					"id": "risques_commune",
+					"section": "risques",
+					"titre": "Risques recensés sur la commune",
+					"etat": "ok",
+					"ton": "neutre",
+					"granularite": {
+						"niveau": "commune",
+						"rayon_m": null,
+						"arrondissement": null
+					},
+					"verdict": "Liste de l'État pour toute la commune, avec 157 installations classées.",
+					"chiffres": [
+						{
+							"id": "c1",
+							"libelle": "Risques",
+							"valeur": 22,
+							"unite": "count",
+							"millesime": null
+						},
+						{
+							"id": "c2",
+							"libelle": "Installations classées",
+							"valeur": 157,
+							"unite": "count",
+							"millesime": null
+						}
+					],
+					"details": {
+						"liste": [
+							"Affaissements et effondrements d'origine anthropique (anciennes carrières souterraines, hors mines)",
+							"Affaissements et effondrements d'origine naturelle (cavités souterraines)",
+							"Avancée dunaire",
+							"Eboulement ou chutes de pierres et de blocs",
+							"Engins de guerre",
+							"Foudre",
+							"Glissement de terrain",
+							"Grêle",
+							"Inondation",
+							"Mouvement de terrain",
+							"Neige et pluies verglaçantes",
+							"Par remontées de nappes naturelles",
+							"Par ruissellement et coulée de boue",
+							"Par une crue à débordement lent de cours d'eau",
+							"Phénomène lié à l'atmosphère",
+							"Radon",
+							"Risque industriel",
+							"Rupture de barrage",
+							"Séisme",
+							"Tassements différentiels",
+							"Tempête et grains (vent)",
+							"Transport de marchandises dangereuses"
+						]
+					},
+					"rattachement": null,
+					"sources": [
+						{
+							"cle": "georisques",
+							"nom": "Géorisques",
+							"producteur": "BRGM / MTE",
+							"url": "https://www.georisques.gouv.fr",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": "2026-10-30",
+							"mode": "direct"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": "22 risques",
+					"etat_libelle": null
+				},
+				{
+					"id": "catnat",
+					"section": "risques",
+					"titre": "Catastrophes naturelles",
+					"etat": "manque",
+					"ton": "info",
+					"granularite": {
+						"niveau": "commune",
+						"rayon_m": null,
+						"arrondissement": null
+					},
+					"verdict": "Information non publiée pour cette adresse.",
+					"chiffres": [],
+					"details": {},
+					"rattachement": null,
+					"sources": [
+						{
+							"cle": "georisques",
+							"nom": "Géorisques",
+							"producteur": "BRGM / MTE",
+							"url": "https://www.georisques.gouv.fr",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": null,
+							"mode": "direct"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": "Non publié",
+					"etat_libelle": null
+				},
+				{
+					"id": "radon",
+					"section": "risques",
+					"titre": "Radon",
+					"etat": "ok",
+					"ton": "vigilance",
+					"granularite": {
+						"niveau": "commune",
+						"rayon_m": null,
+						"arrondissement": null
+					},
+					"verdict": "Le potentiel le plus élevé de l’échelle, valable pour toute la commune.",
+					"chiffres": [
+						{
+							"id": "c1",
+							"libelle": "Catégorie",
+							"valeur": "3 sur 3",
+							"unite": "none",
+							"millesime": "2026-10-30"
+						}
+					],
+					"details": {},
+					"rattachement": null,
+					"sources": [
+						{
+							"cle": "georisques",
+							"nom": "Géorisques",
+							"producteur": "BRGM / MTE",
+							"url": "https://www.georisques.gouv.fr",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": "2026-10-30",
+							"mode": "direct"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": "3 sur 3",
+					"etat_libelle": null
+				},
+				{
+					"id": "icpe_commune",
+					"section": "risques",
+					"titre": "Installations classées",
+					"etat": "hors_couverture",
+					"ton": "info",
+					"granularite": {
+						"niveau": "commune",
+						"rayon_m": null,
+						"arrondissement": null
+					},
+					"verdict": "Source non couverte ici par DataCommune.",
+					"chiffres": [],
+					"details": {},
+					"rattachement": null,
+					"sources": [
+						{
+							"cle": "georisques",
+							"nom": "Géorisques",
+							"producteur": "BRGM / MTE",
+							"url": "https://www.georisques.gouv.fr",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": null,
+							"mode": "direct"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": "Hors couverture",
+					"etat_libelle": null
+				},
+				{
+					"id": "sismicite",
+					"section": "risques",
+					"titre": "Sismicité",
+					"etat": "panne",
+					"ton": "info",
+					"granularite": {
+						"niveau": "commune",
+						"rayon_m": null,
+						"arrondissement": null
+					},
+					"verdict": "Source momentanément indisponible : réessayez plus tard.",
+					"chiffres": [],
+					"details": {},
+					"rattachement": null,
+					"sources": [
+						{
+							"cle": "georisques",
+							"nom": "Géorisques",
+							"producteur": "BRGM / MTE",
+							"url": "https://www.georisques.gouv.fr",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": null,
+							"mode": "direct"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": "Source indisponible",
+					"etat_libelle": null
+				},
+				{
+					"id": "trait_de_cote",
+					"section": "risques",
+					"titre": "Trait de côte",
+					"etat": "manque",
+					"ton": "info",
+					"granularite": {
+						"niveau": "adresse",
+						"rayon_m": null,
+						"arrondissement": null
+					},
+					"verdict": "Information non publiée pour cette adresse.",
+					"chiffres": [],
+					"details": {},
+					"rattachement": null,
+					"sources": [
+						{
+							"cle": "georisques",
+							"nom": "Géorisques",
+							"producteur": "BRGM / MTE",
+							"url": "https://www.georisques.gouv.fr",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": null,
+							"mode": "direct"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": "Non publié",
+					"etat_libelle": null
+				},
+				{
+					"id": "debroussaillement",
+					"section": "risques",
+					"titre": "Débroussaillement",
+					"etat": "hors_couverture",
+					"ton": "info",
+					"granularite": {
+						"niveau": "parcelle",
+						"rayon_m": null,
+						"arrondissement": null
+					},
+					"verdict": "Source non couverte ici par DataCommune.",
+					"chiffres": [],
+					"details": {},
+					"rattachement": {
+						"entite": "parcelle_errial",
+						"cle": null,
+						"confiance": "incertaine",
+						"candidats": null,
+						"motif": null,
+						"alerte": "Rattachement incertain.",
+						"maillons": [
+							{
+								"lien": "parcelle_errial",
+								"confiance": "incertaine"
+							}
+						]
+					},
+					"sources": [
+						{
+							"cle": "errial",
+							"nom": "ERRIAL (état des risques réglementaires)",
+							"producteur": "BRGM / MTE",
+							"url": "https://errial.georisques.gouv.fr",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": null,
+							"mode": "direct"
+						},
+						{
+							"cle": "georisques",
+							"nom": "Géorisques",
+							"producteur": "BRGM / MTE",
+							"url": "https://www.georisques.gouv.fr",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": null,
+							"mode": "direct"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": "Hors couverture",
+					"etat_libelle": null
+				},
+				{
+					"id": "pollution_sols",
+					"section": "risques",
+					"titre": "Sols pollués",
+					"etat": "panne",
+					"ton": "info",
+					"granularite": {
+						"niveau": "parcelle",
+						"rayon_m": null,
+						"arrondissement": null
+					},
+					"verdict": "Source momentanément indisponible : réessayez plus tard.",
+					"chiffres": [],
+					"details": {},
+					"rattachement": {
+						"entite": "parcelle_errial",
+						"cle": null,
+						"confiance": "incertaine",
+						"candidats": null,
+						"motif": null,
+						"alerte": "Rattachement incertain.",
+						"maillons": [
+							{
+								"lien": "parcelle_errial",
+								"confiance": "incertaine"
+							}
+						]
+					},
+					"sources": [
+						{
+							"cle": "errial",
+							"nom": "ERRIAL (état des risques réglementaires)",
+							"producteur": "BRGM / MTE",
+							"url": "https://errial.georisques.gouv.fr",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": null,
+							"mode": "direct"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": "Source indisponible",
+					"etat_libelle": null
+				},
+				{
+					"id": "seveso",
+					"section": "risques",
+					"titre": "Sites Seveso",
+					"etat": "ok",
+					"ton": "neutre",
+					"granularite": {
+						"niveau": "rayon",
+						"rayon_m": 5000,
+						"arrondissement": null
+					},
+					"verdict": "Site Seveso seuil bas le plus proche : THE VALSPAR (FRANCE) CORP S.A., à 4,1 km.",
+					"chiffres": [
+						{
+							"id": "sites",
+							"libelle": "Sites Seveso à 5 km",
+							"valeur": 1,
+							"unite": "count",
+							"millesime": "2026-10-30"
+						},
+						{
+							"id": "distance",
+							"libelle": "Site le plus proche",
+							"valeur": 4081,
+							"unite": "metre",
+							"millesime": "2026-10-30"
+						}
+					],
+					"details": {
+						"sites": [
+							{
+								"nom": "THE VALSPAR (FRANCE) CORP S.A.",
+								"seuil": "bas",
+								"distance_m": 4081,
+								"activite": "En exploitation avec titre"
+							}
+						],
+						"liste_incomplete": false
+					},
+					"rattachement": null,
+					"sources": [
+						{
+							"cle": "georisques",
+							"nom": "Géorisques",
+							"producteur": "BRGM / MTE",
+							"url": "https://www.georisques.gouv.fr",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": "2026-10-30",
+							"mode": "direct"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": "1 site Seveso à 5 km",
+					"etat_libelle": null
+				},
+				{
+					"id": "nucleaire",
+					"section": "risques",
+					"titre": "Nucléaire",
+					"etat": "manque",
+					"ton": "info",
+					"granularite": {
+						"niveau": "adresse",
+						"rayon_m": null,
+						"arrondissement": null
+					},
+					"verdict": "Information non publiée pour cette adresse.",
+					"chiffres": [],
+					"details": {},
+					"rattachement": null,
+					"sources": [
+						{
+							"cle": "georisques",
+							"nom": "Géorisques",
+							"producteur": "BRGM / MTE",
+							"url": "https://www.georisques.gouv.fr",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": null,
+							"mode": "direct"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": "Non publié",
+					"etat_libelle": null
+				},
+				{
+					"id": "dpe",
+					"section": "batiment",
+					"titre": "Diagnostics de performance énergétique (DPE)",
+					"etat": "ok",
+					"ton": "neutre",
+					"granularite": {
+						"niveau": "adresse",
+						"rayon_m": null,
+						"arrondissement": null
+					},
+					"verdict": "Les 11 diagnostics déposés ici vont de B à E ; le plus récent, d’août 2026, est classé C.",
+					"chiffres": [
+						{
+							"id": "c1",
+							"libelle": "DPE à l'adresse",
+							"valeur": 11,
+							"unite": "count",
+							"millesime": "2026-10-19"
+						},
+						{
+							"id": "c2",
+							"libelle": "Classe la plus fréquente",
+							"valeur": "C",
+							"unite": "classe_dpe",
+							"millesime": null
+						},
+						{
+							"id": "c3",
+							"libelle": "Étendue",
+							"valeur": "B à E",
+							"unite": "none",
+							"millesime": null
+						}
+					],
+					"details": {
+						"repartition": {
+							"A": 0,
+							"B": 1,
+							"C": 7,
+							"D": 2,
+							"E": 1,
+							"F": 0,
+							"G": 0,
+							"unknown": 0
+						},
+						"11_dpe_declares_a_cette_adresse_du_plus_recent_au_plus_ancien": [
+							{
+								"Établi le": "26/08/2026",
+								"Énergie": "",
+								"Climat": "",
+								"Logement décrit": "Appartement",
+								"Surface": "49,5 m²",
+								"Numéro": "2644E8000001X"
+							},
+							{
+								"Établi le": "31/10/2025",
+								"Énergie": "",
+								"Climat": "",
+								"Logement décrit": "Appartement",
+								"Surface": "57,5 m²",
+								"Numéro": "2544E8000002X"
+							},
+							{
+								"Établi le": "11/09/2025",
+								"Énergie": "",
+								"Climat": "",
+								"Logement décrit": "Appartement",
+								"Surface": "56,3 m²",
+								"Numéro": "2544E8000003X"
+							},
+							{
+								"Établi le": "08/07/2025",
+								"Énergie": "",
+								"Climat": "",
+								"Logement décrit": "Appartement",
+								"Surface": "49,5 m²",
+								"Numéro": "2544E8000004X"
+							},
+							{
+								"Établi le": "20/06/2025",
+								"Énergie": "",
+								"Climat": "",
+								"Logement décrit": "Appartement",
+								"Surface": "29,2 m²",
+								"Numéro": "2544E8000005X"
+							},
+							{
+								"Établi le": "15/01/2025",
+								"Énergie": "",
+								"Climat": "",
+								"Logement décrit": "Appartement",
+								"Surface": "40,7 m²",
+								"Numéro": "2544E8000006X"
+							},
+							{
+								"Établi le": "13/06/2024",
+								"Énergie": "",
+								"Climat": "",
+								"Logement décrit": "Appartement",
+								"Surface": "50,0 m²",
+								"Numéro": "2444E8000007X"
+							},
+							{
+								"Établi le": "01/12/2023",
+								"Énergie": "",
+								"Climat": "",
+								"Logement décrit": "Appartement",
+								"Surface": "39,1 m²",
+								"Numéro": "2344E8000008X"
+							},
+							{
+								"Établi le": "08/08/2022",
+								"Énergie": "",
+								"Climat": "",
+								"Logement décrit": "Appartement",
+								"Surface": "39,0 m²",
+								"Numéro": "2244E8000009X"
+							},
+							{
+								"Établi le": "30/05/2022",
+								"Énergie": "",
+								"Climat": "",
+								"Logement décrit": "Appartement",
+								"Surface": "31,7 m²",
+								"Numéro": "2244E8000010X"
+							},
+							{
+								"Établi le": "14/04/2022",
+								"Énergie": "",
+								"Climat": "",
+								"Logement décrit": "Appartement",
+								"Surface": "110,0 m²",
+								"Numéro": "2244E8000011X"
+							}
+						]
+					},
+					"rattachement": {
+						"entite": "document_dpe",
+						"cle": null,
+						"confiance": "incertaine",
+						"candidats": null,
+						"motif": "point_hors_parcelle",
+						"alerte": "Le point de l’adresse ne tombe dans aucune parcelle.",
+						"maillons": [
+							{
+								"lien": "document_dpe",
+								"confiance": "incertaine"
+							}
+						]
+					},
+					"sources": [
+						{
+							"cle": "dpe",
+							"nom": "Diagnostics de performance énergétique (DPE)",
+							"producteur": "ADEME",
+							"url": "https://data.ademe.fr/datasets/dpe03existant",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": "2026-10-19",
+							"mode": "import"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": "11 DPE à l'adresse",
+					"etat_libelle": null
+				},
+				{
+					"id": "batiment",
+					"section": "batiment",
+					"titre": "Bâtiment",
+					"etat": "ok",
+					"ton": "neutre",
+					"granularite": {
+						"niveau": "batiment",
+						"rayon_m": null,
+						"arrondissement": null
+					},
+					"verdict": "Un bâtiment du registre national porte cette adresse, mais sans parcelle au point : hauteur et étages inconnus.",
+					"chiffres": [
+						{
+							"id": "c1",
+							"libelle": "Année de construction",
+							"valeur": "non rattachée",
+							"unite": "none",
+							"millesime": null
+						}
+					],
+					"details": {},
+					"rattachement": {
+						"entite": "batiment",
+						"cle": "42P8B8HVDY1D",
+						"confiance": "incertaine",
+						"candidats": null,
+						"motif": "point_hors_parcelle",
+						"alerte": "Le point de l’adresse ne tombe dans aucune parcelle.",
+						"maillons": [
+							{
+								"lien": "batiment",
+								"confiance": "incertaine"
+							}
+						]
+					},
+					"sources": [
+						{
+							"cle": "rnb",
+							"nom": "Référentiel national des bâtiments (RNB)",
+							"producteur": "beta.gouv.fr / CSTB",
+							"url": "https://rnb.beta.gouv.fr",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": "2026",
+							"mode": "import"
+						},
+						{
+							"cle": "batiments",
+							"nom": "BD TOPO – Bâtiments",
+							"producteur": "IGN",
+							"url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-TOPO",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": "2026-10-19",
+							"mode": "import"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": "non rattachée",
+					"etat_libelle": null
+				},
+				{
+					"id": "construction",
+					"section": "batiment",
+					"titre": "Construction",
+					"etat": "hors_couverture",
+					"ton": "info",
+					"granularite": {
+						"niveau": "batiment",
+						"rayon_m": null,
+						"arrondissement": null
+					},
+					"verdict": "Source non couverte ici par DataCommune.",
+					"chiffres": [],
+					"details": {},
+					"rattachement": {
+						"entite": "batiment_groupe_bdnb_de_la_parcelle",
+						"cle": null,
+						"confiance": "incertaine",
+						"candidats": null,
+						"motif": null,
+						"alerte": "Rattachement incertain.",
+						"maillons": [
+							{
+								"lien": "batiment_groupe_bdnb_de_la_parcelle",
+								"confiance": "incertaine"
+							}
+						]
+					},
+					"sources": [
+						{
+							"cle": "bdnb",
+							"nom": "Base de données nationale des bâtiments (BDNB)",
+							"producteur": "CSTB",
+							"url": "https://bdnb.io",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": null,
+							"mode": "import"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": "Hors couverture",
+					"etat_libelle": null
+				},
+				{
+					"id": "copropriete",
+					"section": "batiment",
+					"titre": "Copropriété",
+					"etat": "manque",
+					"ton": "info",
+					"granularite": {
+						"niveau": "parcelle",
+						"rayon_m": null,
+						"arrondissement": null
+					},
+					"verdict": "Parcelle non identifiée : la copropriété ne peut pas être recherchée.",
+					"chiffres": [],
+					"details": {},
+					"rattachement": {
+						"entite": "copropriete",
+						"cle": null,
+						"confiance": "incertaine",
+						"candidats": null,
+						"motif": "point_hors_parcelle",
+						"alerte": "Le point de l’adresse ne tombe dans aucune parcelle.",
+						"maillons": [
+							{
+								"lien": "copropriete",
+								"confiance": "incertaine"
+							}
+						]
+					},
+					"sources": [
+						{
+							"cle": "copropriete",
+							"nom": "Registre national des copropriétés (RNIC)",
+							"producteur": "ANAH",
+							"url": "https://www.data.gouv.fr/datasets/registre-national-dimmatriculation-des-coproprietes",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": "2026-09-25",
+							"mode": "import"
+						}
+					],
+					"motif": "not_available",
+					"pannes_partielles": [],
+					"accroche": "Non publiée",
+					"etat_libelle": "Non publiée"
+				},
+				{
+					"id": "fibre",
+					"section": "vivre",
+					"titre": "Internet fixe",
+					"etat": "ok",
+					"ton": "rassurant",
+					"granularite": {
+						"niveau": "adresse",
+						"rayon_m": null,
+						"arrondissement": null
+					},
+					"verdict": "Les opérateurs la déclarent à cette adresse, jusqu’à 1 Gbit/s.",
+					"chiffres": [
+						{
+							"id": "c1",
+							"libelle": "Fibre",
+							"valeur": "oui",
+							"unite": "none",
+							"millesime": "2026"
+						},
+						{
+							"id": "c2",
+							"libelle": "Fibre dans la commune",
+							"valeur": "94,4 %",
+							"unite": "none",
+							"millesime": null
+						}
+					],
+					"details": {},
+					"rattachement": null,
+					"sources": [
+						{
+							"cle": "connectivite",
+							"nom": "Ma Connexion Internet (Arcep)",
+							"producteur": "Arcep",
+							"url": "https://www.data.gouv.fr/datasets/ma-connexion-internet",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": "2026",
+							"mode": "import"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": "oui",
+					"etat_libelle": null
+				},
+				{
+					"id": "transports",
+					"section": "vivre",
+					"titre": "Transports en commun",
+					"etat": "ok",
+					"ton": "neutre",
+					"granularite": {
+						"niveau": "rayon",
+						"rayon_m": 1000,
+						"arrondissement": null
+					},
+					"verdict": "Arrêt le plus proche : Viarme-Talensac.",
+					"chiffres": [
+						{
+							"id": "c1",
+							"libelle": "Arrêt le plus proche",
+							"valeur": "133 m",
+							"unite": "none",
+							"millesime": null
+						}
+					],
+					"details": {
+						"les_arrets_les_plus_proches_dans_un_rayon_de_1_km_il_peut_y_en_avoir_d_autres": [
+							{
+								"Arrêt": "Viarme-Talensac",
+								"Distance": "133 m"
+							},
+							{
+								"Arrêt": "Viarme-Talensac",
+								"Distance": "134 m"
+							},
+							{
+								"Arrêt": "Viarme-Talensac",
+								"Distance": "139 m"
+							}
+						]
+					},
+					"rattachement": null,
+					"sources": [
+						{
+							"cle": "transports",
+							"nom": "Arrêts de transport",
+							"producteur": "PAN transport",
+							"url": "https://transport.data.gouv.fr/datasets/arrets-de-transport-en-france",
+							"licence": "ODbL",
+							"millesime": "2026-09-25",
+							"mode": "import"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": "133 m",
+					"etat_libelle": null
+				},
+				{
+					"id": "ecoles",
+					"section": "vivre",
+					"titre": "Écoles publiques",
+					"etat": "ok",
+					"ton": "neutre",
+					"granularite": {
+						"niveau": "rayon",
+						"rayon_m": 10000,
+						"arrondissement": null
+					},
+					"verdict": "Publics les plus proches : école élémentaire à 431 m, collège à 558 m, lycée général à 189 m.",
+					"chiffres": [
+						{
+							"id": "ecole_elementaire",
+							"libelle": "École élémentaire publique la plus proche",
+							"valeur": 431,
+							"unite": "metre",
+							"millesime": "2026-10-30"
+						}
+					],
+					"details": {
+						"elementaire": {
+							"uai": "0440684E",
+							"nom": "Ecole élémentaire publique Stalingrad",
+							"distance_m": 431,
+							"ips": 124.4,
+							"ips_rentree": "2024-2025",
+							"ips_national_public": 103.1,
+							"taux_reussite": null,
+							"valeur_ajoutee": null,
+							"session": null
+						},
+						"college": {
+							"uai": "0440536U",
+							"nom": "Collège Sophie Germain",
+							"distance_m": 558,
+							"ips": 92.1,
+							"ips_rentree": "2025-2026",
+							"ips_national_public": 100.8,
+							"taux_reussite": 73.0,
+							"valeur_ajoutee": -9.0,
+							"session": "2025"
+						},
+						"lycee": {
+							"uai": "0440021J",
+							"nom": "Lycée Clemenceau",
+							"distance_m": 189,
+							"ips": 136.1,
+							"ips_rentree": "2025-2026",
+							"ips_national_public": 115.2,
+							"taux_reussite": 98.0,
+							"valeur_ajoutee": -1.0,
+							"session": "2025"
+						},
+						"college_de_secteur": null
+					},
+					"rattachement": null,
+					"sources": [
+						{
+							"cle": "annuaire_education",
+							"nom": "Annuaire de l'éducation, indices de position sociale et indicateurs de valeur ajoutée",
+							"producteur": "Ministère de l'Éducation nationale (DEPP)",
+							"url": "https://data.education.gouv.fr/explore/dataset/fr-en-annuaire-education/",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": "2026-10-30",
+							"mode": "direct"
+						},
+						{
+							"cle": "scolaire",
+							"nom": "Carte scolaire des collèges",
+							"producteur": "DGESCO / MEN",
+							"url": "https://www.data.gouv.fr/datasets/carte-scolaire-des-colleges-publics",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": null,
+							"mode": "import"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": "431 m",
+					"etat_libelle": null
+				},
+				{
+					"id": "equipements",
+					"section": "vivre",
+					"titre": "Commerces et services",
+					"etat": "ok",
+					"ton": "neutre",
+					"granularite": {
+						"niveau": "commune",
+						"rayon_m": null,
+						"arrondissement": null
+					},
+					"verdict": "Commerces, services et équipements recensés sur la commune en 2025.",
+					"chiffres": [
+						{
+							"id": "c1",
+							"libelle": "Équipements",
+							"valeur": 11165,
+							"unite": "count",
+							"millesime": "2025"
+						}
+					],
+					"details": {},
+					"rattachement": null,
+					"sources": [
+						{
+							"cle": "equipements",
+							"nom": "Base permanente des équipements (BPE)",
+							"producteur": "INSEE",
+							"url": "https://www.insee.fr/fr/statistiques/8217537",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": "2025",
+							"mode": "import"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": "11 165 équipements",
+					"etat_libelle": null
+				},
+				{
+					"id": "antennes_5g",
+					"section": "vivre",
+					"titre": "Réseau mobile 5G",
+					"etat": "panne",
+					"ton": "info",
+					"granularite": {
+						"niveau": "rayon",
+						"rayon_m": 1000,
+						"arrondissement": null
+					},
+					"verdict": "Source momentanément indisponible : réessayez plus tard.",
+					"chiffres": [],
+					"details": {},
+					"rattachement": null,
+					"sources": [
+						{
+							"cle": "antennes",
+							"nom": "Antennes relais (ANFR)",
+							"producteur": "ANFR",
+							"url": "https://data.anfr.fr/explore/dataset/observatoire_2g_3g_4g",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": null,
+							"mode": "import"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": "Source indisponible",
+					"etat_libelle": null
+				},
+				{
+					"id": "grand_axe",
+					"section": "vivre",
+					"titre": "Grands axes routiers",
+					"etat": "ok",
+					"ton": "vigilance",
+					"granularite": {
+						"niveau": "rayon",
+						"rayon_m": 500,
+						"arrondissement": null
+					},
+					"verdict": "Grand axe routier proche : N844 (route nationale) à 50 m.",
+					"chiffres": [
+						{
+							"id": "distance",
+							"libelle": "Grand axe routier le plus proche",
+							"valeur": 50,
+							"unite": "metre",
+							"millesime": "2026-10-30"
+						}
+					],
+					"details": {
+						"axes": [
+							{
+								"nom": "N844",
+								"type": "route nationale",
+								"importance": "1",
+								"distance_m": 50
+							}
+						],
+						"liste_incomplete": false
+					},
+					"rattachement": null,
+					"sources": [
+						{
+							"cle": "axes_transport",
+							"nom": "BD TOPO – Réseaux routier et ferré (WFS de la Géoplateforme)",
+							"producteur": "IGN",
+							"url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-TOPO",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": "2026-10-30",
+							"mode": "direct"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": "50 m",
+					"etat_libelle": null
+				},
+				{
+					"id": "voie_ferree",
+					"section": "vivre",
+					"titre": "Voies ferrées",
+					"etat": "ok",
+					"ton": "vigilance",
+					"granularite": {
+						"niveau": "rayon",
+						"rayon_m": 500,
+						"arrondissement": null
+					},
+					"verdict": "Voie ferrée proche : voie ferrée principale à 33 m.",
+					"chiffres": [
+						{
+							"id": "distance",
+							"libelle": "Voie ferrée principale la plus proche",
+							"valeur": 33,
+							"unite": "metre",
+							"millesime": "2026-10-30"
+						}
+					],
+					"details": {
+						"voies": [
+							{
+								"nature": "Voie ferrée principale",
+								"nom": null,
+								"nombre_de_voies": 2,
+								"electrifiee": true,
+								"vitesse_maximale_kmh": null,
+								"distance_m": 33
+							},
+							{
+								"nature": "Voie ferrée principale",
+								"nom": null,
+								"nombre_de_voies": 2,
+								"electrifiee": true,
+								"vitesse_maximale_kmh": null,
+								"distance_m": 53
+							},
+							{
+								"nature": "Voie ferrée principale",
+								"nom": null,
+								"nombre_de_voies": 2,
+								"electrifiee": true,
+								"vitesse_maximale_kmh": null,
+								"distance_m": 74
+							},
+							{
+								"nature": "Voie ferrée principale",
+								"nom": null,
+								"nombre_de_voies": 2,
+								"electrifiee": true,
+								"vitesse_maximale_kmh": null,
+								"distance_m": 88
+							},
+							{
+								"nature": "Voie ferrée principale",
+								"nom": null,
+								"nombre_de_voies": 2,
+								"electrifiee": true,
+								"vitesse_maximale_kmh": null,
+								"distance_m": 100
+							}
+						],
+						"liste_incomplete": false
+					},
+					"rattachement": null,
+					"sources": [
+						{
+							"cle": "axes_transport",
+							"nom": "BD TOPO – Réseaux routier et ferré (WFS de la Géoplateforme)",
+							"producteur": "IGN",
+							"url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-TOPO",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": "2026-10-30",
+							"mode": "direct"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": "33 m",
+					"etat_libelle": null
+				},
+				{
+					"id": "peb",
+					"section": "vivre",
+					"titre": "Bruit des avions",
+					"etat": "ok",
+					"ton": "vigilance",
+					"granularite": {
+						"niveau": "adresse",
+						"rayon_m": null,
+						"arrondissement": null
+					},
+					"verdict": "Zone D du plan d'exposition au bruit de NANTES (arrêté du 17 septembre 2004) : isolation acoustique imposée aux constructions neuves.",
+					"chiffres": [],
+					"details": {
+						"zones_peb": [
+							{
+								"zone": "D",
+								"aerodrome": "NANTES",
+								"code_oaci": "LFRS",
+								"date_arrete": "2004-09-17",
+								"document": "http://piece-jointe-carto.developpement-durable.gouv.fr/NAT003/PEB/PEB_LFRS_17_09_2004.pdf"
+							}
+						],
+						"zones_pgs": []
+					},
+					"rattachement": null,
+					"sources": [
+						{
+							"cle": "peb",
+							"nom": "Plans d'exposition au bruit et de gêne sonore des aérodromes",
+							"producteur": "DGAC",
+							"url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/DGAC_Plan_d_Exposition_au_Bruit_PEB",
+							"licence": "Licence non déclarée par le producteur",
+							"millesime": "2026-10-30",
+							"mode": "direct"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": null,
+					"etat_libelle": null
+				},
+				{
+					"id": "secteur_bruit",
+					"section": "vivre",
+					"titre": "Secteur affecté par le bruit",
+					"etat": "manque",
+					"ton": "info",
+					"granularite": {
+						"niveau": "adresse",
+						"rayon_m": null,
+						"arrondissement": null
+					},
+					"verdict": "Information non publiée pour cette adresse.",
+					"chiffres": [],
+					"details": {},
+					"rattachement": null,
+					"sources": [
+						{
+							"cle": "urbanisme",
+							"nom": "API Carto GPU",
+							"producteur": "IGN",
+							"url": "https://apicarto.ign.fr",
+							"licence": "Licence Ouverte 1.0",
+							"millesime": null,
+							"mode": "direct"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": "Non publié",
+					"etat_libelle": null
+				},
+				{
+					"id": "delinquance",
+					"section": "vivre",
+					"titre": "Délinquance enregistrée",
+					"etat": "ok",
+					"ton": "neutre",
+					"granularite": {
+						"niveau": "commune",
+						"rayon_m": null,
+						"arrondissement": null
+					},
+					"verdict": "Cambriolages de logement en 2025 : 6,3 ‰ dans la commune, 6,3 ‰ dans le département.",
+					"chiffres": [
+						{
+							"id": "cambriolages_commune",
+							"libelle": "Cambriolages pour 1 000 logements, commune",
+							"valeur": 6.3,
+							"unite": "pour_mille",
+							"millesime": "2025"
+						},
+						{
+							"id": "cambriolages_departement",
+							"libelle": "Cambriolages pour 1 000 logements, département",
+							"valeur": 6.3,
+							"unite": "pour_mille",
+							"millesime": "2025"
+						}
+					],
+					"details": {
+						"annee": 2025,
+						"zone": {
+							"code": "44109",
+							"niveau": "commune"
+						},
+						"indicateurs": [
+							{
+								"indicateur": "Cambriolages de logement",
+								"base": "pour 1 000 logements",
+								"taux_commune": 6.3368504,
+								"nombre_commune": 1227,
+								"diffuse": true,
+								"taux_departement": 6.3213546
+							},
+							{
+								"indicateur": "Vols sans violence contre des personnes",
+								"base": "pour 1 000 habitants",
+								"taux_commune": 17.5019986,
+								"nombre_commune": 5736,
+								"diffuse": true,
+								"taux_departement": 8.2873411
+							},
+							{
+								"indicateur": "Violences physiques hors cadre familial",
+								"base": "pour 1 000 habitants",
+								"taux_commune": 4.4456785,
+								"nombre_commune": 1457,
+								"diffuse": true,
+								"taux_departement": 2.4832445
+							},
+							{
+								"indicateur": "Destructions et dégradations volontaires",
+								"base": "pour 1 000 habitants",
+								"taux_commune": 8.8333832,
+								"nombre_commune": 2895,
+								"diffuse": true,
+								"taux_departement": 6.9401776
+							}
+						]
+					},
+					"rattachement": null,
+					"sources": [
+						{
+							"cle": "delinquance",
+							"nom": "Bases statistiques communale et départementale de la délinquance enregistrée par la police et la gendarmerie nationales (SSMSI)",
+							"producteur": "SSMSI (Ministère de l'Intérieur)",
+							"url": "https://www.data.gouv.fr/datasets/621df2954fa5a3b5a023e23c/",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": "2025",
+							"mode": "direct"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": "6,3 ‰",
+					"etat_libelle": null
+				},
+				{
+					"id": "eau_potable",
+					"section": "vivre",
+					"titre": "Eau du robinet",
+					"etat": "ok",
+					"ton": "rassurant",
+					"granularite": {
+						"niveau": "commune",
+						"rayon_m": null,
+						"arrondissement": null
+					},
+					"verdict": "Eau conforme aux limites de qualité : 418 contrôles bactériologiques en 12 mois.",
+					"chiffres": [
+						{
+							"id": "durete",
+							"libelle": "Dureté (titre hydrotimétrique)",
+							"valeur": 12.3,
+							"unite": "degre_francais",
+							"millesime": "2025-12-30"
+						}
+					],
+					"details": {
+						"reseaux": [
+							{
+								"code": "044000115",
+								"nom": "SECTEUR-REZE"
+							},
+							{
+								"code": "044000138",
+								"nom": "SECTEUR-NANTES"
+							}
+						],
+						"reseaux_complets": true,
+						"annee_reseaux": "2026",
+						"bacteriologique": {
+							"prelevements": 418,
+							"non_conformes": 0,
+							"sans_conclusion": 0,
+							"dates_non_conformes": [],
+							"taux_conformite": 100.0,
+							"dernier_prelevement": "2026-08-31",
+							"dernier_controle_conclu": "2026-08-31",
+							"dernier_conforme": true,
+							"lecture_complete": true
+						},
+						"physico_chimique": {
+							"prelevements": 420,
+							"non_conformes": 0,
+							"sans_conclusion": 0,
+							"dates_non_conformes": [],
+							"taux_conformite": 100.0,
+							"dernier_prelevement": "2026-08-31",
+							"dernier_controle_conclu": "2026-08-31",
+							"dernier_conforme": true,
+							"lecture_complete": true
+						},
+						"durete_f": 12.3,
+						"durete": "douce",
+						"durete_date": "2025-12-30",
+						"prelevements": 420
+					},
+					"rattachement": null,
+					"sources": [
+						{
+							"cle": "eau_potable",
+							"nom": "Qualité de l'eau potable (API Hub'Eau, contrôle sanitaire des ARS)",
+							"producteur": "Ministère chargé de la santé (ARS), diffusé par Hub'Eau",
+							"url": "https://hubeau.eaufrance.fr/page/api-qualite-eau-potable",
+							"licence": "Licence Ouverte (version non précisée par les CGU Hub'Eau)",
+							"millesime": "2026-10-30",
+							"mode": "direct"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": "12,3 °f",
+					"etat_libelle": null
+				},
+				{
+					"id": "qualite_air",
+					"section": "vivre",
+					"titre": "Qualité de l'air",
+					"etat": "ok",
+					"ton": "neutre",
+					"granularite": {
+						"niveau": "epci",
+						"rayon_m": null,
+						"arrondissement": null
+					},
+					"verdict": "Qualité de l'air prévue le 31 octobre 2026 : moyen (2 sur 6), pour l'intercommunalité (CC Sud Vendée Littoral).",
+					"chiffres": [
+						{
+							"id": "indice_atmo",
+							"libelle": "Indice ATMO du jour",
+							"valeur": 2,
+							"unite": "indice_sur_6",
+							"millesime": "2026-10-31"
+						}
+					],
+					"details": {
+						"indice": {
+							"code": 2,
+							"libelle": "moyen",
+							"date": "2026-10-31",
+							"sous_indices": {
+								"no2": 1,
+								"o3": 2,
+								"pm10": 1,
+								"pm25": 1,
+								"so2": 1
+							}
+						},
+						"zone": {
+							"type": "epci",
+							"code": "200073260",
+							"nom": "CC Sud Vendée Littoral"
+						},
+						"aasqa": "Air Pays de la Loire",
+						"moyennes_annuelles": {
+							"etat": "hors_couverture",
+							"motif": "moyennes_geodair_non_importees"
+						}
+					},
+					"rattachement": null,
+					"sources": [
+						{
+							"cle": "qualite_air",
+							"nom": "Indice ATMO de la qualité de l'air (prévision du jour)",
+							"producteur": "Atmo France et les AASQA",
+							"url": "https://www.data.gouv.fr/datasets/indice-de-la-qualite-de-lair-quotidien-par-commune-indice-atmo",
+							"licence": "ODbL 1.0",
+							"millesime": "2026-10-31",
+							"mode": "direct"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": "2 sur 6",
+					"etat_libelle": null
+				},
+				{
+					"id": "revenus",
+					"section": "vivre",
+					"titre": "Revenus des habitants",
+					"etat": "ok",
+					"ton": "neutre",
+					"granularite": {
+						"niveau": "commune",
+						"rayon_m": null,
+						"arrondissement": null
+					},
+					"verdict": "Niveau de vie médian en 2021 ; taux de pauvreté de 17 %.",
+					"chiffres": [
+						{
+							"id": "c1",
+							"libelle": "Niveau de vie médian",
+							"valeur": "24 380 €",
+							"unite": "none",
+							"millesime": "2021"
+						},
+						{
+							"id": "c2",
+							"libelle": "Taux de pauvreté",
+							"valeur": "17 %",
+							"unite": "none",
+							"millesime": "2021"
+						}
+					],
+					"details": {},
+					"rattachement": null,
+					"sources": [
+						{
+							"cle": "revenus",
+							"nom": "Filosofi (revenus et pauvreté)",
+							"producteur": "INSEE",
+							"url": "https://www.insee.fr/fr/statistiques/7756855",
+							"licence": "Licence Ouverte 2.0",
+							"millesime": "2021",
+							"mode": "import"
+						}
+					],
+					"motif": null,
+					"pannes_partielles": [],
+					"accroche": "24 380 €",
+					"etat_libelle": null
+				}
+			],
+			"rattachement_phrase": "Le point de l’adresse ne tombe dans aucune parcelle.",
+			"carte": {
+				"images": {
+					"plan": "/carte/44109_zz01_00002/plan.png",
+					"parcelles": "/carte/44109_zz01_00002/parcelles.png"
+				},
+				"emprise_m": 300,
+				"attribution": "© IGN (Plan IGN, Parcellaire Express)",
+				"licence": "Licence Ouverte 2.0",
+				"geoportail": "https://www.geoportail.gouv.fr/carte?c=-1.551375,47.212028&z=18&l0=GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2::GEOPORTAIL:OGC:WMTS(1)&l1=CADASTRALPARCELS.PARCELLAIRE_EXPRESS::GEOPORTAIL:OGC:WMTS(1)&permalink=yes"
+			}
+		},
+		"meta": {
+			"source": [
+				{
+					"nom": "Base Adresse Nationale",
+					"url": "https://adresse.data.gouv.fr"
+				}
+			]
+		}
+	},
+	"documents": {
+		"statut": "ok",
+		"donnees": {
+			"etat": "value",
+			"motif": null,
+			"source": {
+				"cle": "dpe",
+				"nom": "Diagnostics de performance énergétique (DPE)",
+				"producteur": "ADEME",
+				"url": "https://data.ademe.fr/datasets/dpe03existant"
+			},
+			"total": 11,
+			"page": 1,
+			"pages": 2,
+			"par_page": 10,
+			"generation": "b3a4645adede2e24",
+			"distribution": {
+				"A": 0,
+				"B": 1,
+				"C": 7,
+				"D": 2,
+				"E": 1,
+				"F": 0,
+				"G": 0,
+				"unknown": 0
+			},
+			"date_import": "2026-10-19",
+			"documents": [
+				{
+					"numero": "2644E8000001X",
+					"etiquette_dpe": "C",
+					"etiquette_ges": "B",
+					"type_batiment": "appartement",
+					"surface_habitable": 49.5,
+					"date_etablissement": "2026-08-26",
+					"date_fin_validite": "2036-08-25",
+					"badges": [
+						"plus_recent"
+					],
+					"adresse_declaree": null
+				},
+				{
+					"numero": "2544E8000002X",
+					"etiquette_dpe": "B",
+					"etiquette_ges": "A",
+					"type_batiment": "appartement",
+					"surface_habitable": 57.5,
+					"date_etablissement": "2025-10-31",
+					"date_fin_validite": "2035-10-30",
+					"badges": [],
+					"adresse_declaree": null
+				},
+				{
+					"numero": "2544E8000003X",
+					"etiquette_dpe": "C",
+					"etiquette_ges": "A",
+					"type_batiment": "appartement",
+					"surface_habitable": 56.3,
+					"date_etablissement": "2025-09-11",
+					"date_fin_validite": "2035-09-10",
+					"badges": [],
+					"adresse_declaree": null
+				},
+				{
+					"numero": "2544E8000004X",
+					"etiquette_dpe": "D",
+					"etiquette_ges": "B",
+					"type_batiment": "appartement",
+					"surface_habitable": 49.5,
+					"date_etablissement": "2025-07-08",
+					"date_fin_validite": "2035-07-07",
+					"badges": [
+						"remplacement_incertain"
+					],
+					"adresse_declaree": null
+				},
+				{
+					"numero": "2544E8000005X",
+					"etiquette_dpe": "C",
+					"etiquette_ges": "A",
+					"type_batiment": "appartement",
+					"surface_habitable": 29.2,
+					"date_etablissement": "2025-06-20",
+					"date_fin_validite": "2035-06-19",
+					"badges": [],
+					"adresse_declaree": null
+				},
+				{
+					"numero": "2544E8000006X",
+					"etiquette_dpe": "C",
+					"etiquette_ges": "A",
+					"type_batiment": "appartement",
+					"surface_habitable": 40.7,
+					"date_etablissement": "2025-01-15",
+					"date_fin_validite": "2035-01-14",
+					"badges": [],
+					"adresse_declaree": null
+				},
+				{
+					"numero": "2444E8000007X",
+					"etiquette_dpe": "E",
+					"etiquette_ges": "B",
+					"type_batiment": "appartement",
+					"surface_habitable": 50,
+					"date_etablissement": "2024-06-13",
+					"date_fin_validite": "2034-06-12",
+					"badges": [],
+					"adresse_declaree": null
+				},
+				{
+					"numero": "2344E8000008X",
+					"etiquette_dpe": "C",
+					"etiquette_ges": "A",
+					"type_batiment": "appartement",
+					"surface_habitable": 39.1,
+					"date_etablissement": "2023-12-01",
+					"date_fin_validite": "2033-11-30",
+					"badges": [],
+					"adresse_declaree": null
+				},
+				{
+					"numero": "2244E8000009X",
+					"etiquette_dpe": "C",
+					"etiquette_ges": "A",
+					"type_batiment": "appartement",
+					"surface_habitable": 39,
+					"date_etablissement": "2022-08-08",
+					"date_fin_validite": "2032-08-07",
+					"badges": [],
+					"adresse_declaree": null
+				},
+				{
+					"numero": "2244E8000010X",
+					"etiquette_dpe": "C",
+					"etiquette_ges": "A",
+					"type_batiment": "appartement",
+					"surface_habitable": 31.7,
+					"date_etablissement": "2022-05-30",
+					"date_fin_validite": "2032-05-29",
+					"badges": [],
+					"adresse_declaree": null
+				}
+			],
+			"selection": {
+				"etat": "unique",
+				"motif": "document_valide",
+				"date": "2026-08-26",
+				"document": {
+					"numero": "2644E8000001X",
+					"etiquette_dpe": "C",
+					"etiquette_ges": "B",
+					"date_etablissement": "2026-08-26"
+				},
+				"documents_ex_aequo": []
+			},
+			"signal_plusieurs_logements": null,
+			"constat_d110": null,
+			"adresseBrute": {
+				"etat": "value",
+				"total": 0,
+				"documents": []
+			},
+			"rattachement": "adresse_saisie_diagnostiqueur"
+		}
+	},
+	"ventes": {
+		"statut": "ok",
+		"donnees": {
+			"etat": "not_available",
+			"motif": "point_hors_parcelle",
+			"nombre_parcelles": null,
+			"source": {
+				"cle": "dvf",
+				"nom": "Demandes de valeurs foncières (DVF)",
+				"producteur": "DGFiP / Etalab",
+				"url": "https://www.data.gouv.fr/datasets/demandes-de-valeurs-foncieres-geolocalisees"
+			},
+			"periode": null,
+			"total": null,
+			"page": 1,
+			"pages": null,
+			"par_page": 10,
+			"generation": null,
+			"ventes": [],
+			"rattachement": "parcelle_du_point"
+		}
+	},
+	"ventesAdresse": {
+		"statut": "ok",
+		"donnees": {
+			"etat": "value",
+			"motif": null,
+			"source": {
+				"cle": "dvf",
+				"nom": "Demandes de valeurs foncières (DVF)",
+				"producteur": "DGFiP / Etalab",
+				"url": "https://www.data.gouv.fr/datasets/demandes-de-valeurs-foncieres-geolocalisees"
+			},
+			"periode": "2021-01-02 → 2025-12-31",
+			"total": 3,
+			"nombre_vefa": 0,
+			"page": 1,
+			"pages": 1,
+			"par_page": 10,
+			"generation": "1c907f8e28d01115",
+			"ventes": [
+				{
+					"date": "2025-07-28",
+					"nature": "Vente",
+					"composition": {
+						"maisons": 0,
+						"appartements": 1,
+						"dependances": 1,
+						"locaux_activite": 0
+					},
+					"surface_batie": 47,
+					"prix": 247000,
+					"prix_m2": 5255,
+					"prix_affiche": true,
+					"minimisation": null,
+					"distance_m": null,
+					"hors_stats_vefa": false
+				},
+				{
+					"date": "2022-05-12",
+					"nature": "Vente",
+					"composition": {
+						"maisons": 0,
+						"appartements": 1,
+						"dependances": 1,
+						"locaux_activite": 0
+					},
+					"surface_batie": 77,
+					"prix": 444530,
+					"prix_m2": 5773,
+					"prix_affiche": true,
+					"minimisation": null,
+					"distance_m": null,
+					"hors_stats_vefa": false
+				},
+				{
+					"date": "2021-06-07",
+					"nature": "Vente",
+					"composition": {
+						"maisons": 0,
+						"appartements": 1,
+						"dependances": 1,
+						"locaux_activite": 0
+					},
+					"surface_batie": 39,
+					"prix": 225000,
+					"prix_m2": 5769,
+					"prix_affiche": true,
+					"minimisation": null,
+					"distance_m": null,
+					"hors_stats_vefa": false
+				}
+			],
+			"rattachement": "adresse_declaree_vente"
+		}
+	}
+}

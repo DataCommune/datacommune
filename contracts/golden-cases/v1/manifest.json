@@ -1,0 +1,484 @@
+{
+  "schema_version": "1",
+  "description": "Live-selected minimized golden corpus; private inputs remain gitignored.",
+  "cases": [
+    {
+      "case_id": "golden-address-001",
+      "type": "address",
+      "departement": "44",
+      "code_insee": "44001",
+      "category": "complete",
+      "frozen_at": "2026-08-21",
+      "source_millesimes": {
+        "recensement": "2022",
+        "revenus": "2021",
+        "fiscalite": "2025",
+        "loyers": "2025"
+      },
+      "invariants": {
+        "db": {
+          "has_commune_row": true,
+          "superficie_present": true,
+          "parcelle_present": true,
+          "copro_row_present": false,
+          "dpe_appartements_multiples": false,
+          "dvf_appartements_present": false,
+          "dpe_rattachement_ok": true
+        },
+        "api": {
+          "dpe_state": "value",
+          "risques_state": "value",
+          "urbanisme_state": "value",
+          "cadastre_state": "value",
+          "dvf_state": "value",
+          "commune_state": "value"
+        },
+        "mapper": {
+          "prix_m2_unit": "euro_per_m2"
+        },
+        "dpe": {
+          "dpe_inventory_presence": "present",
+          "dpe_attribution_status": "unassigned",
+          "dpe_primary_diagnostic_present": false,
+          "dpe_truncated": false,
+          "dpe_nearby_diagnostic_present": false,
+          "dpe_candidate_count": 0,
+          "dpe_building_count": 0
+        }
+      },
+      "private_ref": "golden-address-001",
+      "carrier_for": [
+        "dpe_unassigned"
+      ]
+    },
+    {
+      "case_id": "golden-address-002",
+      "type": "address",
+      "departement": "44",
+      "code_insee": "44001",
+      "category": "no_dpe",
+      "frozen_at": "2026-08-21",
+      "source_millesimes": {
+        "recensement": "2022",
+        "revenus": "2021",
+        "fiscalite": "2025",
+        "loyers": "2025"
+      },
+      "invariants": {
+        "db": {
+          "has_commune_row": true,
+          "superficie_present": true,
+          "parcelle_present": true,
+          "copro_row_present": false,
+          "dpe_appartements_multiples": false,
+          "dvf_appartements_present": false,
+          "dpe_rattachement_ok": true
+        },
+        "api": {
+          "dpe_state": "not_reported",
+          "risques_state": "value",
+          "urbanisme_state": "value",
+          "cadastre_state": "value",
+          "dvf_state": "value",
+          "commune_state": "value"
+        },
+        "mapper": {
+          "prix_m2_unit": "euro_per_m2"
+        },
+        "dpe": {
+          "dpe_inventory_presence": "absent",
+          "dpe_attribution_status": "absent",
+          "dpe_primary_diagnostic_present": false,
+          "dpe_truncated": false,
+          "dpe_nearby_diagnostic_present": false,
+          "dpe_candidate_count": 0,
+          "dpe_building_count": 0
+        }
+      },
+      "private_ref": "golden-address-002",
+      "carrier_for": [
+        "dpe_absent"
+      ]
+    },
+    {
+      "case_id": "golden-address-003",
+      "type": "address",
+      "departement": "44",
+      "code_insee": "44001",
+      "category": "dataset_out_of_coverage",
+      "frozen_at": "2026-08-21",
+      "source_millesimes": {
+        "recensement": "2022",
+        "revenus": "2021",
+        "fiscalite": "2025",
+        "loyers": "2025"
+      },
+      "invariants": {
+        "db": {
+          "has_commune_row": true,
+          "superficie_present": true,
+          "parcelle_present": true,
+          "copro_row_present": false,
+          "dpe_appartements_multiples": false,
+          "dvf_appartements_present": false,
+          "dpe_rattachement_ok": true
+        },
+        "api": {
+          "dpe_state": "not_reported",
+          "risques_state": "value",
+          "urbanisme_state": "value",
+          "cadastre_state": "value",
+          "dvf_state": "not_reported",
+          "commune_state": "value"
+        },
+        "mapper": {
+          "prix_m2_unit": "euro_per_m2"
+        },
+        "dpe": {
+          "dpe_inventory_presence": "absent",
+          "dpe_attribution_status": "absent",
+          "dpe_primary_diagnostic_present": false,
+          "dpe_truncated": false,
+          "dpe_nearby_diagnostic_present": true,
+          "dpe_candidate_count": 0,
+          "dpe_building_count": 0
+        }
+      },
+      "private_ref": "golden-address-003",
+      "carrier_for": [
+        "dpe_nearer_neighbor_negative",
+        "dpe_absent"
+      ]
+    },
+    {
+      "case_id": "golden-address-004",
+      "type": "address",
+      "departement": "44",
+      "code_insee": "44001",
+      "category": "dataset_out_of_coverage",
+      "frozen_at": "2026-08-21",
+      "source_millesimes": {
+        "recensement": "2022",
+        "revenus": "2021",
+        "fiscalite": "2025",
+        "loyers": "2025"
+      },
+      "invariants": {
+        "db": {
+          "has_commune_row": true,
+          "superficie_present": true,
+          "parcelle_present": true,
+          "copro_row_present": false,
+          "dpe_appartements_multiples": false,
+          "dvf_appartements_present": false,
+          "dpe_rattachement_ok": true
+        },
+        "api": {
+          "dpe_state": "not_reported",
+          "risques_state": "value",
+          "urbanisme_state": "value",
+          "cadastre_state": "value",
+          "dvf_state": "not_reported",
+          "commune_state": "value"
+        },
+        "mapper": {
+          "prix_m2_unit": "euro_per_m2"
+        },
+        "dpe": {
+          "dpe_inventory_presence": "absent",
+          "dpe_attribution_status": "absent",
+          "dpe_primary_diagnostic_present": false,
+          "dpe_truncated": false,
+          "dpe_nearby_diagnostic_present": false,
+          "dpe_candidate_count": 0,
+          "dpe_building_count": 0
+        }
+      },
+      "private_ref": "golden-address-004",
+      "carrier_for": [
+        "dpe_absent"
+      ]
+    },
+    {
+      "case_id": "golden-address-005",
+      "type": "address",
+      "departement": "44",
+      "code_insee": "44109",
+      "category": "no_dpe",
+      "frozen_at": "2026-08-21",
+      "source_millesimes": {
+        "recensement": "2022",
+        "revenus": "2021",
+        "fiscalite": "2025",
+        "loyers": "2025"
+      },
+      "invariants": {
+        "db": {
+          "has_commune_row": true,
+          "superficie_present": true,
+          "parcelle_present": true,
+          "copro_row_present": true,
+          "dpe_appartements_multiples": true,
+          "dvf_appartements_present": true,
+          "dpe_rattachement_ok": true
+        },
+        "api": {
+          "dpe_state": "not_reported",
+          "risques_state": "value",
+          "urbanisme_state": "value",
+          "cadastre_state": "value",
+          "dvf_state": "value",
+          "commune_state": "value"
+        },
+        "mapper": {
+          "prix_m2_unit": "euro_per_m2"
+        },
+        "dpe": {
+          "dpe_inventory_presence": "absent",
+          "dpe_attribution_status": "absent",
+          "dpe_primary_diagnostic_present": false,
+          "dpe_truncated": false,
+          "dpe_nearby_diagnostic_present": true,
+          "dpe_candidate_count": 0,
+          "dpe_building_count": 0
+        }
+      },
+      "private_ref": "golden-address-005",
+      "carrier_for": [
+        "dpe_nearer_neighbor_negative",
+        "dpe_absent"
+      ]
+    },
+    {
+      "case_id": "golden-address-007",
+      "type": "address",
+      "departement": "44",
+      "code_insee": "44184",
+      "category": "complete",
+      "frozen_at": "2026-09-05",
+      "source_millesimes": {
+        "recensement": "2022",
+        "revenus": "2021",
+        "fiscalite": "2025",
+        "loyers": "2025"
+      },
+      "invariants": {
+        "db": {
+          "has_commune_row": true,
+          "superficie_present": true,
+          "parcelle_present": true,
+          "copro_row_present": false,
+          "dpe_appartements_multiples": true,
+          "dvf_appartements_present": true,
+          "dpe_rattachement_ok": true
+        },
+        "api": {
+          "dpe_state": "value",
+          "risques_state": "value",
+          "urbanisme_state": "value",
+          "cadastre_state": "value",
+          "dvf_state": "value",
+          "commune_state": "value"
+        },
+        "mapper": {
+          "prix_m2_unit": "euro_per_m2"
+        },
+        "dpe": {
+          "dpe_inventory_presence": "present",
+          "dpe_attribution_status": "unassigned",
+          "dpe_primary_diagnostic_present": false,
+          "dpe_truncated": false,
+          "dpe_nearby_diagnostic_present": false,
+          "dpe_candidate_count": 0,
+          "dpe_building_count": 0
+        }
+      },
+      "private_ref": "golden-address-007",
+      "carrier_for": [
+        "dpe_unassigned"
+      ]
+    },
+    {
+      "case_id": "golden-address-009",
+      "type": "address",
+      "departement": "85",
+      "code_insee": "85001",
+      "category": "no_dpe",
+      "frozen_at": "2026-08-21",
+      "source_millesimes": {
+        "recensement": "2022",
+        "revenus": "2021",
+        "fiscalite": "2025",
+        "loyers": "2025"
+      },
+      "invariants": {
+        "db": {
+          "has_commune_row": true,
+          "superficie_present": true,
+          "parcelle_present": true,
+          "copro_row_present": false,
+          "dpe_appartements_multiples": false,
+          "dvf_appartements_present": false,
+          "dpe_rattachement_ok": true
+        },
+        "api": {
+          "dpe_state": "not_reported",
+          "risques_state": "value",
+          "urbanisme_state": "value",
+          "cadastre_state": "value",
+          "dvf_state": "value",
+          "commune_state": "value"
+        },
+        "mapper": {
+          "prix_m2_unit": "euro_per_m2"
+        },
+        "dpe": {
+          "dpe_inventory_presence": "absent",
+          "dpe_attribution_status": "absent",
+          "dpe_primary_diagnostic_present": false,
+          "dpe_truncated": false,
+          "dpe_nearby_diagnostic_present": true,
+          "dpe_candidate_count": 0,
+          "dpe_building_count": 0
+        }
+      },
+      "private_ref": "golden-address-009",
+      "carrier_for": [
+        "dpe_nearer_neighbor_negative",
+        "dpe_absent"
+      ]
+    },
+    {
+      "case_id": "golden-commune-001",
+      "type": "commune",
+      "departement": "44",
+      "code_insee": "44109",
+      "category": "complete",
+      "frozen_at": "2026-08-21",
+      "source_millesimes": {
+        "recensement": "2022",
+        "revenus": "2021",
+        "fiscalite": "2025",
+        "loyers": "2025"
+      },
+      "invariants": {
+        "db": {
+          "has_commune_row": true,
+          "superficie_present": true
+        },
+        "api": {
+          "dpe_state": "value",
+          "dvf_state": "value"
+        },
+        "mapper": {
+          "densite_unit": "density"
+        }
+      },
+      "private_ref": "golden-commune-001"
+    },
+    {
+      "case_id": "golden-commune-002",
+      "type": "commune",
+      "departement": "85",
+      "code_insee": "85047",
+      "category": "complete",
+      "frozen_at": "2026-08-21",
+      "source_millesimes": {
+        "recensement": "2022",
+        "revenus": "2021",
+        "fiscalite": "2025",
+        "loyers": "2025"
+      },
+      "invariants": {
+        "db": {
+          "has_commune_row": true,
+          "superficie_present": true
+        },
+        "api": {
+          "dpe_state": "value",
+          "dvf_state": "value"
+        },
+        "mapper": {
+          "densite_unit": "density"
+        }
+      },
+      "private_ref": "golden-commune-002"
+    },
+    {
+      "case_id": "golden-commune-003",
+      "type": "commune",
+      "departement": "85",
+      "code_insee": "85165",
+      "category": "no_dvf",
+      "frozen_at": "2026-09-25",
+      "source_millesimes": {
+        "recensement": "2022",
+        "fiscalite": "2025",
+        "loyers": "2025"
+      },
+      "invariants": {
+        "db": {
+          "has_commune_row": true,
+          "superficie_present": true
+        },
+        "api": {
+          "dpe_state": "value",
+          "dvf_state": "not_reported"
+        },
+        "mapper": {
+          "densite_unit": "density"
+        }
+      },
+      "private_ref": "golden-commune-003"
+    },
+    {
+      "case_id": "golden-address-011",
+      "type": "address",
+      "departement": "44",
+      "code_insee": "44001",
+      "category": "no_dvf",
+      "frozen_at": "2026-08-21",
+      "source_millesimes": {
+        "recensement": "2022",
+        "revenus": "2021",
+        "fiscalite": "2025",
+        "loyers": "2025"
+      },
+      "invariants": {
+        "db": {
+          "has_commune_row": true,
+          "superficie_present": true,
+          "parcelle_present": true,
+          "copro_row_present": false,
+          "dpe_appartements_multiples": false,
+          "dvf_appartements_present": false,
+          "dpe_rattachement_ok": true
+        },
+        "api": {
+          "dpe_state": "value",
+          "risques_state": "value",
+          "urbanisme_state": "value",
+          "cadastre_state": "value",
+          "dvf_state": "not_reported",
+          "commune_state": "value"
+        },
+        "mapper": {
+          "prix_m2_unit": "euro_per_m2"
+        },
+        "dpe": {
+          "dpe_inventory_presence": "present",
+          "dpe_attribution_status": "unassigned",
+          "dpe_primary_diagnostic_present": false,
+          "dpe_truncated": false,
+          "dpe_nearby_diagnostic_present": false,
+          "dpe_candidate_count": 0,
+          "dpe_building_count": 0
+        }
+      },
+      "private_ref": "golden-address-011",
+      "carrier_for": [
+        "dpe_unassigned"
+      ]
+    }
+  ]
+}

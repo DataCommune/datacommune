@@ -1,0 +1,177 @@
+{
+  "captured_at": "2026-09-10T20:40:44.128430+00:00",
+  "case": {
+    "case_id": "R09",
+    "address": "111 Rue des Carterons, 44400 Rezé",
+    "ban_id": "44143_0580_00113",
+    "stratum": "adresse brute du même diagnostic que R08; BAN source est la référence comparée, pas la vérité terrain"
+  },
+  "sources": {
+    "dpe03existant": {
+      "http": 200,
+      "body": {
+        "total": 1,
+        "results": [
+          {
+            "code_insee_ban": "44143",
+            "score_ban": 0.97,
+            "type_batiment": "maison",
+            "numero_dpe": "2644E0031728F",
+            "date_fin_validite_dpe": "2036-01-06",
+            "adresse_brut": "111 rue des Carterons",
+            "adresse_ban": "113 Rue des Carterons 44400 Rezé",
+            "identifiant_ban": "44143_0580_00113",
+            "id_rnb": "6WZCK8XWYAGS",
+            "numero_dpe_remplace": "2544E3418414I",
+            "date_etablissement_dpe": "2026-01-07",
+            "surface_habitable_logement": 164.2,
+            "etiquette_dpe": "C",
+            "_score": null
+          }
+        ]
+      },
+      "url": "https://data.ademe.fr/data-fair/api/v1/datasets/dpe03existant/lines?qs=identifiant_ban%3A%2244143_0580_00113%22&size=100&select=numero_dpe%2Cidentifiant_ban%2Cadresse_ban%2Cadresse_brut%2Ccode_insee_ban%2Ctype_batiment%2Csurface_habitable_logement%2Cetiquette_dpe%2Cdate_etablissement_dpe%2Cdate_fin_validite_dpe%2Cnumero_dpe_remplace%2Cid_rnb%2Cscore_ban%2Cnumero_etage_appartement"
+    },
+    "dpe02neuf": {
+      "http": 200,
+      "body": {
+        "total": 0,
+        "results": []
+      },
+      "url": "https://data.ademe.fr/data-fair/api/v1/datasets/dpe02neuf/lines?qs=identifiant_ban%3A%2244143_0580_00113%22&size=100&select=numero_dpe%2Cidentifiant_ban%2Cadresse_ban%2Cadresse_brut%2Ccode_insee_ban%2Ctype_batiment%2Csurface_habitable_logement%2Cetiquette_dpe%2Cdate_etablissement_dpe%2Cdate_fin_validite_dpe%2Cnumero_dpe_remplace%2Cid_rnb%2Cscore_ban%2Cnumero_etage_appartement"
+    }
+  },
+  "datacommune": {
+    "http": 200,
+    "body": {
+      "statut": "ok",
+      "donnees": [
+        {
+          "type_detecte": "adresse",
+          "latitude": 47.172863,
+          "longitude": -1.529182,
+          "adresse": "111 Rue des Carterons, 44400 Rezé",
+          "id_parcelle": "44143000BE0496",
+          "commune": "Rezé",
+          "code_postal": "44400",
+          "score": 0.75,
+          "code_insee": "44143",
+          "resolution": "exact",
+          "parcelles_candidates": null,
+          "ban_id": "44143_0580_00111",
+          "datasets": {
+            "dpe": null
+          },
+          "erreurs": null,
+          "avertissements": [],
+          "dataset_states": {
+            "dpe": {
+              "dataset": "dpe",
+              "presence": "absent",
+              "absence_reason": "not_reported",
+              "raison": "Aucune donnee rapportee pour ce point."
+            }
+          },
+          "dpe_attribution": {
+            "version": 2,
+            "status": "absent",
+            "reason": "not_reported",
+            "diagnostic": null,
+            "candidates": [],
+            "building_context": null,
+            "graph_state": "not_checked"
+          },
+          "dpe_inventory": {
+            "association": "source_ban_equality",
+            "address_check": "unverified",
+            "source": "ADEME",
+            "source_coverage": "unknown",
+            "graph_state": "not_checked",
+            "imported_at": null,
+            "version": 2,
+            "as_of_date": "2026-09-10",
+            "state": "absent",
+            "items": [],
+            "total": 0,
+            "distribution": {
+              "A": 0,
+              "B": 0,
+              "C": 0,
+              "D": 0,
+              "E": 0,
+              "F": 0,
+              "G": 0,
+              "unknown": 0
+            },
+            "page_size": 20,
+            "has_more": false,
+            "read_state": "complete"
+          },
+          "dvf_attribution": null
+        }
+      ],
+      "meta": {
+        "source": [
+          {
+            "nom": "Base Adresse Nationale (BAN)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://adresse.data.gouv.fr",
+            "producteur": "DINUM / IGN",
+            "dataset": "ban",
+            "periode": {
+              "statut": "inconnue",
+              "label": null,
+              "debut": null,
+              "fin": null
+            },
+            "derniere_importation_reussie": null,
+            "couverture": {
+              "type": "inconnue",
+              "departements": null
+            },
+            "cadence": {
+              "statut": "official",
+              "label": "Hebdomadaire",
+              "evidence_url": "https://cartes.gouv.fr/aide/fr/guides-utilisateur/utiliser-les-services-de-la-geoplateforme/geocodage/",
+              "intervalle_jours": 7
+            },
+            "etat": "inconnu"
+          },
+          {
+            "nom": "Diagnostics de Performance Energetique (DPE)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://data.ademe.fr/datasets/dpe03existant",
+            "producteur": "ADEME",
+            "dataset": "dpe",
+            "periode": {
+              "statut": "inconnue",
+              "label": null,
+              "debut": null,
+              "fin": null
+            },
+            "derniere_importation_reussie": null,
+            "couverture": {
+              "type": "departements",
+              "departements": [
+                "44",
+                "85"
+              ]
+            },
+            "cadence": {
+              "statut": "official",
+              "label": "Hebdomadaire",
+              "evidence_url": "https://data.ademe.fr/datasets/dpe03existant",
+              "intervalle_jours": 7
+            },
+            "etat": "inconnu"
+          }
+        ],
+        "resolution": {
+          "issue": "exact",
+          "raison": null,
+          "parcelles_candidates": null
+        }
+      }
+    }
+  }
+}

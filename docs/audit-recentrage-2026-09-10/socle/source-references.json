@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "scope": "Two official source references only; no DataCommune HTTP retest or physical dwelling identification.",
+  "entries": [
+    {
+      "case": "R06",
+      "dataset": "dpe03existant",
+      "reference": "2644E0008262R",
+      "catalog_url": "https://data.ademe.fr/datasets/dpe03existant",
+      "query_url": "https://data.ademe.fr/data-fair/api/v1/datasets/dpe03existant/lines?qs=numero_dpe%3A%222644E0008262R%22&size=2&select=numero_dpe%2Ctype_batiment%2Csurface_habitable_logement%2Cetiquette_dpe%2Cdate_etablissement_dpe%2Cdate_fin_validite_dpe",
+      "captured_at": "2026-09-10T21:43:29.839055+00:00",
+      "http": 200,
+      "body": {
+        "total": 1,
+        "results": [
+          {
+            "type_batiment": "maison",
+            "numero_dpe": "2644E0008262R",
+            "date_fin_validite_dpe": "2036-01-04",
+            "date_etablissement_dpe": "2026-01-05",
+            "surface_habitable_logement": 79,
+            "etiquette_dpe": "D",
+            "_score": null
+          }
+        ]
+      },
+      "raw_response_sha256": "36c392d2b319b90a96914bd14b5dd1fb24d4867d12cd932b954c609d8c0f1c56"
+    },
+    {
+      "case": "R04",
+      "dataset": "dpe02neuf",
+      "reference": "2685N1020238T",
+      "catalog_url": "https://data.ademe.fr/datasets/dpe02neuf",
+      "query_url": "https://data.ademe.fr/data-fair/api/v1/datasets/dpe02neuf/lines?qs=numero_dpe%3A%222685N1020238T%22&size=2&select=numero_dpe%2Ctype_batiment%2Csurface_habitable_logement%2Cetiquette_dpe%2Cdate_etablissement_dpe%2Cdate_fin_validite_dpe",
+      "captured_at": "2026-09-10T21:43:29.924494+00:00",
+      "http": 200,
+      "body": {
+        "total": 1,
+        "results": [
+          {
+            "type_batiment": "maison",
+            "numero_dpe": "2685N1020238T",
+            "date_fin_validite_dpe": "2036-04-12",
+            "date_etablissement_dpe": "2026-04-13",
+            "surface_habitable_logement": 81.9,
+            "etiquette_dpe": "C",
+            "_score": null
+          }
+        ]
+      },
+      "raw_response_sha256": "cb1c9cb05806ae2c87f5c858ee4d93fef03de08be63e190ef667fe55b48a142c"
+    }
+  ]
+}

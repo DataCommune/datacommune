@@ -1,0 +1,80 @@
+{
+  "id": "ecoles",
+  "section": "vivre",
+  "titre": "Écoles publiques",
+  "etat": "ok",
+  "ton": "neutre",
+  "granularite": {
+    "niveau": "rayon",
+    "rayon_m": 10000
+  },
+  "verdict": "Publics les plus proches : école élémentaire à 431 m, collège à 558 m, lycée général à 189 m.",
+  "chiffres": [
+    {
+      "id": "ecole_elementaire",
+      "libelle": "École élémentaire publique la plus proche",
+      "valeur": 431,
+      "unite": "metre",
+      "millesime": "2026-10-30"
+    }
+  ],
+  "details": {
+    "elementaire": {
+      "uai": "0440684E",
+      "nom": "Ecole élémentaire publique Stalingrad",
+      "distance_m": 431,
+      "ips": 124.4,
+      "ips_rentree": "2024-2025",
+      "ips_national_public": 103.1,
+      "taux_reussite": null,
+      "valeur_ajoutee": null,
+      "session": null
+    },
+    "college": {
+      "uai": "0440536U",
+      "nom": "Collège Sophie Germain",
+      "distance_m": 558,
+      "ips": 92.1,
+      "ips_rentree": "2025-2026",
+      "ips_national_public": 100.8,
+      "taux_reussite": 73.0,
+      "valeur_ajoutee": -9.0,
+      "session": "2025"
+    },
+    "lycee": {
+      "uai": "0440021J",
+      "nom": "Lycée Clemenceau",
+      "distance_m": 189,
+      "ips": 136.1,
+      "ips_rentree": "2025-2026",
+      "ips_national_public": 115.2,
+      "taux_reussite": 98.0,
+      "valeur_ajoutee": -1.0,
+      "session": "2025"
+    },
+    "college_de_secteur": null
+  },
+  "rattachement": null,
+  "sources": [
+    {
+      "cle": "annuaire_education",
+      "nom": "Annuaire de l'éducation, indices de position sociale et indicateurs de valeur ajoutée",
+      "producteur": "Ministère de l'Éducation nationale (DEPP)",
+      "url": "https://data.education.gouv.fr/explore/dataset/fr-en-annuaire-education/",
+      "licence": "Licence Ouverte 2.0",
+      "millesime": "2026-10-30",
+      "mode": "direct"
+    },
+    {
+      "cle": "scolaire",
+      "nom": "Carte scolaire des collèges",
+      "producteur": "DGESCO / MEN",
+      "url": "https://www.data.gouv.fr/datasets/carte-scolaire-des-colleges-publics",
+      "licence": "Licence Ouverte 2.0",
+      "millesime": null,
+      "mode": "import"
+    }
+  ],
+  "motif": null,
+  "pannes_partielles": []
+}

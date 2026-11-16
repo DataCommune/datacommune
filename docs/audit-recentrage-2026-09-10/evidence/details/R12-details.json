@@ -1,0 +1,132 @@
+{
+  "case_id": "R12",
+  "captured_at": "2026-09-10T20:42:50.074161+00:00",
+  "document": {
+    "http": 200,
+    "body": {
+      "association": "source_ban_equality",
+      "address_check": "unverified",
+      "source": "ADEME",
+      "source_coverage": "unknown",
+      "graph_state": "not_checked",
+      "imported_at": null,
+      "version": 2,
+      "type_batiment": "maison",
+      "surface_habitable": 120.0,
+      "etiquette_dpe": "C",
+      "etiquette_ges": "A",
+      "date_etablissement_dpe": "2025-10-27",
+      "date_fin_validite_dpe": "2035-10-26",
+      "annee_construction": null,
+      "periode_construction": "1948-1974",
+      "type_installation_chauffage": null,
+      "type_energie_principale_chauffage": "Bois – Granulés (pellets) ou briquettes",
+      "qualite_isolation_enveloppe": "insuffisante",
+      "conso_5_usages_ep": 20498.2,
+      "emission_ges_5_usages": 705.1,
+      "cout_total_5_usages": 2196.3,
+      "validity_by_date": "not_expired_by_date",
+      "lifecycle": {
+        "source_state": "present",
+        "source_snapshot_date": "2026-09-05",
+        "source_scope": "44/85",
+        "regimes": [
+          "existant"
+        ],
+        "replacement_state": "no_successor_known",
+        "graph_issues": [
+          "missing_target"
+        ],
+        "validity": "not_expired_by_date",
+        "as_of_date": "2026-09-10",
+        "revision_status": "unverified",
+        "revision_kind": null,
+        "revision_date": null,
+        "detail_availability": "available"
+      }
+    }
+  },
+  "pages": [
+    {
+      "association": "source_ban_equality",
+      "address_check": "unverified",
+      "source": "ADEME",
+      "source_coverage": "unknown",
+      "graph_state": "not_checked",
+      "imported_at": null,
+      "version": 2,
+      "as_of_date": "2026-09-10",
+      "state": "ready",
+      "items": [
+        {
+          "type_batiment": "maison",
+          "surface_habitable": 120.0,
+          "etiquette_dpe": "C",
+          "etiquette_ges": "A",
+          "date_etablissement_dpe": "2025-10-27",
+          "date_fin_validite_dpe": "2035-10-26",
+          "lifecycle": {
+            "source_state": "present",
+            "source_snapshot_date": "2026-09-05",
+            "source_scope": "44/85",
+            "regimes": [
+              "existant"
+            ],
+            "replacement_state": "no_successor_known",
+            "graph_issues": [
+              "missing_target"
+            ],
+            "validity": "not_expired_by_date",
+            "as_of_date": "2026-09-10",
+            "revision_status": "unverified",
+            "revision_kind": null,
+            "revision_date": null,
+            "detail_availability": "available"
+          }
+        }
+      ],
+      "total": 1,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "E": 0,
+        "F": 0,
+        "G": 0,
+        "unknown": 0
+      },
+      "page_size": 20,
+      "has_more": false,
+      "read_state": "complete"
+    }
+  ],
+  "source_existant": {
+    "http": 200,
+    "body": {
+      "total": 1,
+      "results": [
+        {
+          "code_insee_ban": "44109",
+          "score_ban": 0.79,
+          "type_batiment": "maison",
+          "numero_dpe": "2544E3389719R",
+          "date_fin_validite_dpe": "2035-10-26",
+          "adresse_brut": "41 Rue Stendhal",
+          "adresse_ban": "41 Rue Stendhal 44300 Nantes",
+          "identifiant_ban": "44109_7969_00041",
+          "numero_etage_appartement": 0,
+          "numero_dpe_remplace": "2544E3369721N",
+          "date_etablissement_dpe": "2025-10-27",
+          "surface_habitable_logement": 120,
+          "etiquette_dpe": "C",
+          "_score": null
+        }
+      ]
+    },
+    "url": "https://data.ademe.fr/data-fair/api/v1/datasets/dpe03existant/lines?qs=identifiant_ban%3A%2244109_7969_00041%22&size=200&select=numero_dpe%2Cidentifiant_ban%2Cadresse_ban%2Cadresse_brut%2Ccode_insee_ban%2Ctype_batiment%2Csurface_habitable_logement%2Cetiquette_dpe%2Cdate_etablissement_dpe%2Cdate_fin_validite_dpe%2Cnumero_dpe_remplace%2Cid_rnb%2Cscore_ban%2Cnumero_etage_appartement"
+  },
+  "items_read": 1,
+  "unique_refs": 1,
+  "last_has_more": false
+}

@@ -1,0 +1,854 @@
+{
+  "baseRevision": "da75dbc7a15539f0a94c77c75363601f61221ab1",
+  "capturedAt": "2026-09-08",
+  "scope": "Bounded historical mapper parity, not COR23 or production certification",
+  "officialFrozen": {
+    "evidence": "internal tracking sketch 59-grille-2026-09-08 source-manifest.json -> docs/audit-stabilisation-2026-09-08/lot-08/oracles-http.json",
+    "sourceSha256": "425672ebae169a1a3fdd25d6e2116e9e39a61f3d8020a663e56e4d16db730440",
+    "observations": [
+      { "id": "revenus:44109", "fieldId": "revenus.revenu_median", "raw": 24380, "display": "24 380 €/UC/an", "unit": "€/UC/an", "grain": "Commune", "year": "2021", "source": "Filosofi (Revenus et Pauvrete)" },
+      { "id": "vacance-longue:44109", "raw": 1.54, "display": "1,54 %", "unit": "%", "grain": "Parc privé communal", "year": "2026", "source": "Logements Vacants (LOVAC)", "reservation": "Vacance de plus de deux ans ; observation distincte du KPI taux de vacance actuel", "numerator": 2399, "denominator": 155375 }
+    ]
+  },
+  "synthetic": {
+    "evidence": "commune-85.ts and resolve-85.ts: illustrative reconstructed fixtures, not live observations",
+    "commune": {
+      "kpi": [
+        {
+          "label": "Loyer d'annonce prédit (appartement)",
+          "value": "n.d.",
+          "unit": "€/m²/mois",
+          "verdict": "info",
+          "fieldId": "loyers.loyer_m2_appartement",
+          "primary": true
+        },
+        {
+          "label": "Tension de marché",
+          "value": "B2",
+          "verdict": "info",
+          "verdictLabel": "Marché intermédiaire (zone B2)",
+          "ecartTexte": "Classement officiel des communes en zones A bis, A, B1, B2 et C selon le déséquilibre entre offre et demande de logements (Ministère chargé du logement, dernière révision : arrêté du 23 juin 2026). Source : Zonage A/B/C — Ministère chargé du logement (2026).",
+          "fieldId": "zonage_abc.zone",
+          "primary": true
+        },
+        {
+          "label": "Taux de vacance",
+          "value": "9,4",
+          "unit": "%",
+          "verdict": "info",
+          "fieldId": "vacance.taux_vacance"
+        },
+        {
+          "label": "Revenu déclaré médian",
+          "value": "21 340",
+          "unit": "€/UC/an",
+          "verdict": "watch",
+          "verdictLabel": "En dessous de la médiane",
+          "ecartTexte": "Revenu déclaré médian — France métropolitaine 2021 : 22 900 € — cette commune est à 21 340 €, soit 6,8 % en dessous. Source : INSEE — Filosofi 2021, revenus déclarés, France métropolitaine (DEC_METROPOLE, Q221).",
+          "fieldId": "revenus.revenu_median"
+        }
+      ],
+      "themes": [
+        {
+          "key": "marche",
+          "emoji": "💶",
+          "name": "Marché & prix",
+          "hint": "Prix DVF, loyers, zonage ABC",
+          "rows": [
+            {
+              "label": "Prix médian de vente (hors ventes sur plan)",
+              "value": "2 650 €/m²",
+              "fieldId": "dvf.prix_m2_median",
+              "state": "value"
+            },
+            {
+              "label": "Prix médian maison (hors ventes sur plan)",
+              "value": "non disponible",
+              "available": false,
+              "fieldId": "dvf.prix_m2_median_maison",
+              "state": "out_of_coverage"
+            },
+            {
+              "label": "Ventes de maisons sur 12 mois",
+              "value": "non disponible",
+              "available": false,
+              "fieldId": "dvf.nb_mutations_12m_maison",
+              "state": "out_of_coverage"
+            },
+            {
+              "label": "Prix médian appartement (hors ventes sur plan)",
+              "value": "non disponible",
+              "available": false,
+              "fieldId": "dvf.prix_m2_median_appartement",
+              "state": "out_of_coverage"
+            },
+            {
+              "label": "Ventes d'appartements sur 12 mois",
+              "value": "non disponible",
+              "available": false,
+              "fieldId": "dvf.nb_mutations_12m_appartement",
+              "state": "out_of_coverage"
+            },
+            {
+              "label": "Mutations sur 12 mois",
+              "value": "184",
+              "fieldId": "dvf.nb_mutations_12m",
+              "state": "value"
+            },
+            {
+              "label": "Loyer d'annonce prédit appartement",
+              "value": "non disponible",
+              "available": false,
+              "fieldId": "loyers.loyer_m2_appartement",
+              "state": "out_of_coverage"
+            },
+            {
+              "label": "Loyer d'annonce prédit maison",
+              "value": "9,8 €/m²/mois",
+              "fieldId": "loyers.loyer_m2_maison",
+              "state": "value"
+            },
+            {
+              "kind": "context",
+              "state": "not_reported",
+              "label": "Contexte loyer maison",
+              "value": "Précisions inconnues : charges, bien type, trimestre, maille et qualité. Ces précisions ne sont pas disponibles pour cette donnée.",
+              "muted": true
+            },
+            {
+              "label": "Zone ABC (tension)",
+              "value": "B2",
+              "fieldId": "zonage_abc.zone",
+              "state": "value"
+            },
+            {
+              "label": "Année de référence (loyers)",
+              "value": "2023",
+              "fieldId": "loyers.annee",
+              "state": "value"
+            }
+          ],
+          "sources": "DVF, Carte des loyers (estimations ANIL), Zonage ABC"
+        },
+        {
+          "key": "energie",
+          "emoji": "⚡",
+          "name": "Énergie & bâti",
+          "hint": "DPE, logements recensés",
+          "rows": [
+            {
+              "label": "Part des classes F et G",
+              "value": "7,2 %",
+              "fieldId": "dpe.dpe_passoires_pct",
+              "state": "value"
+            },
+            {
+              "label": "Classe DPE médiane",
+              "value": "D",
+              "fieldId": "dpe.dpe_median",
+              "state": "value"
+            },
+            {
+              "label": "Logements recensés",
+              "value": "11 240",
+              "fieldId": "demographie.nb_logements",
+              "state": "value"
+            },
+            {
+              "label": "Logements vacants (recensement)",
+              "value": "842",
+              "fieldId": "demographie.nb_logements_vacants_recensement",
+              "state": "value"
+            },
+            {
+              "label": "Année de construction (médiane)",
+              "value": "1990",
+              "fieldId": "dpe.annee_construction_mediane",
+              "state": "value"
+            }
+          ],
+          "sources": "DPE (ADEME), Démographie (logements)"
+        },
+        {
+          "key": "risques",
+          "emoji": "⚠️",
+          "name": "Risques",
+          "hint": "Zonage ABC, monuments",
+          "rows": [
+            {
+              "label": "Zonage ABC",
+              "value": "B2",
+              "fieldId": "zonage_abc.zone",
+              "state": "value"
+            },
+            {
+              "label": "Reclassement ABC",
+              "value": "Non",
+              "fieldId": "zonage_abc.reclassement",
+              "state": "value"
+            },
+            {
+              "label": "Risques naturels (inondation, RGA, radon)",
+              "value": "non disponible",
+              "available": false,
+              "fieldId": "commune.risques.risques_naturels",
+              "state": "out_of_coverage"
+            },
+            {
+              "label": "Notices de monuments historiques",
+              "value": "2",
+              "fieldId": "monuments.nb_monuments",
+              "state": "value"
+            }
+          ],
+          "sources": "Zonage ABC, Monuments historiques"
+        },
+        {
+          "key": "environnement",
+          "emoji": "🏘️",
+          "name": "Environnement",
+          "hint": "Démographie, revenus",
+          "rows": [
+            {
+              "label": "Population",
+              "value": "21 179 hab.",
+              "fieldId": "demographie.population",
+              "state": "value"
+            },
+            {
+              "label": "Densité",
+              "value": "281,4 hab./km²",
+              "fieldId": "demographie.densite",
+              "state": "value"
+            },
+            {
+              "label": "Superficie",
+              "value": "75,27 km²",
+              "fieldId": "demographie.superficie",
+              "state": "value"
+            },
+            {
+              "label": "Nombre de ménages",
+              "value": "9 876",
+              "fieldId": "demographie.nb_menages",
+              "state": "value"
+            },
+            {
+              "label": "Revenu déclaré médian",
+              "value": "21 340 €/UC/an",
+              "fieldId": "revenus.revenu_median",
+              "state": "value"
+            },
+            {
+              "label": "Taux de pauvreté",
+              "value": "12,8 %",
+              "fieldId": "revenus.taux_pauvrete",
+              "state": "value"
+            },
+            {
+              "label": "Gini (revenu déclaré)",
+              "value": "0,27",
+              "fieldId": "revenus.indice_gini",
+              "state": "value"
+            },
+            {
+              "label": "Part des ménages fiscaux imposés",
+              "value": "54,2 %",
+              "fieldId": "revenus.part_imposee",
+              "state": "value"
+            },
+            {
+              "label": "Effectif d’équipements observé",
+              "value": "1 124",
+              "fieldId": "equipements.nb_equipements",
+              "state": "value"
+            },
+            {
+              "label": "Établissements référencés par la carte scolaire",
+              "value": "4",
+              "fieldId": "scolaire.nb_etablissements_scolaires",
+              "state": "value"
+            },
+            {
+              "label": "Fibre (immeubles observés)",
+              "value": "86,4 %",
+              "fieldId": "connectivite.fibre_pct",
+              "state": "value"
+            },
+            {
+              "kind": "context",
+              "state": "value",
+              "label": "Portée des dénombrements",
+              "value": "Millésime des équipements inconnu. Ces nombres décrivent le stock observé dans les sources disponibles, sans garantie d’exhaustivité. Une donnée absente ne vaut pas zéro."
+            }
+          ],
+          "sources": "Démographie, Revenus (Filosofi), Équipements (BPE), Carte scolaire, Arcep"
+        },
+        {
+          "key": "propriete",
+          "emoji": "📋",
+          "name": "Propriété",
+          "hint": "Vacance, fiscalité, foncier PM",
+          "rows": [
+            {
+              "label": "Taux de vacance",
+              "value": "9,4 %",
+              "fieldId": "vacance.taux_vacance",
+              "state": "value"
+            },
+            {
+              "label": "Logements vacants > 2 ans",
+              "value": "311",
+              "fieldId": "vacance.nb_vacants_plus_2ans",
+              "state": "value"
+            },
+            {
+              "label": "Taux TFPB",
+              "value": "41,85 %",
+              "fieldId": "fiscalite.taux_tfpb",
+              "state": "value"
+            },
+            {
+              "label": "Taux TH résidences secondaires",
+              "value": "18,2 %",
+              "fieldId": "fiscalite.taux_th_rs",
+              "state": "value"
+            },
+            {
+              "label": "Taux TEOM",
+              "value": "11,5 %",
+              "fieldId": "fiscalite.taux_teom",
+              "state": "value"
+            },
+            {
+              "label": "EPCI",
+              "value": "CC Challans Gois Communauté",
+              "fieldId": "fiscalite.nom_epci",
+              "state": "value"
+            },
+            {
+              "label": "Copropriétés",
+              "value": "non disponible",
+              "available": false,
+              "fieldId": "commune.propriete.coproprietes",
+              "state": "out_of_coverage"
+            },
+            {
+              "label": "Personnes morales référencées",
+              "value": "1 187",
+              "fieldId": "foncier_pm.nb_proprietaires_pm",
+              "state": "value"
+            },
+            {
+              "label": "Foncier personnes morales",
+              "value": "932,5 ha",
+              "fieldId": "foncier_pm.surface_pm_ha",
+              "state": "value"
+            },
+            {
+              "kind": "context",
+              "state": "value",
+              "label": "Portée du foncier observé",
+              "value": "Personnes morales et parcelles présentes dans les droits fonciers disponibles, sans garantie d’exhaustivité. Une surface incomplète ou contradictoire reste indisponible."
+            }
+          ],
+          "sources": "Vacance, Fiscalité locale, Foncier PM (MAJIC)"
+        }
+      ]
+    },
+    "bien": {
+      "kpi": [
+        {
+          "label": "Étiquette DPE",
+          "value": "n.d.",
+          "verdict": "info",
+          "fieldId": "bien.dpe.etiquette_dpe",
+          "primary": true
+        },
+        {
+          "label": "Prix au m² sur la parcelle",
+          "value": "n.d.",
+          "unit": "€/m²",
+          "verdict": "info",
+          "verdictLabel": "Données de vente momentanément indisponibles",
+          "ecartTexte": "Les données de vente sont momentanément indisponibles. Réessayez plus tard ; les autres informations de la fiche restent disponibles.",
+          "fieldId": "bien.dvf.prix_m2",
+          "primary": true
+        },
+        {
+          "label": "Parcelle cadastrale",
+          "value": "85047000AB0042",
+          "verdict": "info"
+        }
+      ],
+      "themes": [
+        {
+          "key": "marche",
+          "emoji": "💶",
+          "name": "Marché & prix",
+          "hint": "Ventes récentes (DVF)",
+          "rows": [],
+          "rowsBien": [
+            {
+              "label": "Nature de la transaction",
+              "value": "Nature de la transaction non qualifiée",
+              "fieldId": "bien.dvf.classe_mutation",
+              "state": "value"
+            },
+            {
+              "label": "Valeur foncière de la transaction",
+              "value": "168 000 €",
+              "fieldId": "bien.dvf.valeur_fonciere",
+              "state": "value"
+            },
+            {
+              "label": "Prix au m²",
+              "value": "2 154 €/m²",
+              "fieldId": "bien.dvf.prix_m2",
+              "state": "value"
+            },
+            {
+              "label": "Date de mutation",
+              "value": "12/09/2023",
+              "fieldId": "bien.dvf.date_mutation",
+              "state": "value"
+            },
+            {
+              "label": "Type de local",
+              "value": "Appartement",
+              "fieldId": "bien.dvf.type_local",
+              "state": "value"
+            },
+            {
+              "label": "Surface bâtie totale de la mutation",
+              "value": "non disponible",
+              "available": false,
+              "fieldId": "bien.dvf.surface_bati_totale",
+              "state": "out_of_coverage"
+            },
+            {
+              "label": "Surface réelle bâtie totale de la mutation",
+              "value": "78 m²",
+              "fieldId": "bien.dvf.surface_reelle_bati",
+              "state": "value"
+            },
+            {
+              "label": "Nombre total de pièces de la mutation",
+              "value": "3",
+              "fieldId": "bien.dvf.nombre_pieces_principales",
+              "state": "value"
+            },
+            {
+              "id": "dvf-perimeter:2023-123456",
+              "kind": "context",
+              "state": "value",
+              "label": "Périmètre de la mutation · 12/09/2023",
+              "value": "Détail par local indisponible : les données décrivent l’ensemble de la vente et ne permettent pas d’identifier chaque local."
+            }
+          ],
+          "rowsCommune": [
+            {
+              "label": "Prix médian de vente (hors ventes sur plan)",
+              "value": "2 650 €/m²",
+              "fieldId": "dvf.prix_m2_median",
+              "state": "value"
+            },
+            {
+              "label": "Prix médian maison (hors ventes sur plan)",
+              "value": "non disponible",
+              "available": false,
+              "fieldId": "dvf.prix_m2_median_maison",
+              "state": "out_of_coverage"
+            },
+            {
+              "label": "Ventes de maisons sur 12 mois",
+              "value": "non disponible",
+              "available": false,
+              "fieldId": "dvf.nb_mutations_12m_maison",
+              "state": "out_of_coverage"
+            },
+            {
+              "label": "Prix médian appartement (hors ventes sur plan)",
+              "value": "non disponible",
+              "available": false,
+              "fieldId": "dvf.prix_m2_median_appartement",
+              "state": "out_of_coverage"
+            },
+            {
+              "label": "Ventes d'appartements sur 12 mois",
+              "value": "non disponible",
+              "available": false,
+              "fieldId": "dvf.nb_mutations_12m_appartement",
+              "state": "out_of_coverage"
+            },
+            {
+              "label": "Mutations sur 12 mois",
+              "value": "184",
+              "fieldId": "dvf.nb_mutations_12m",
+              "state": "value"
+            },
+            {
+              "label": "Loyer d'annonce prédit appartement",
+              "value": "non disponible",
+              "available": false,
+              "fieldId": "loyers.loyer_m2_appartement",
+              "state": "out_of_coverage"
+            },
+            {
+              "label": "Loyer d'annonce prédit maison",
+              "value": "9,8 €/m²/mois",
+              "fieldId": "loyers.loyer_m2_maison",
+              "state": "value"
+            },
+            {
+              "kind": "context",
+              "state": "not_reported",
+              "label": "Contexte loyer maison",
+              "value": "Précisions inconnues : charges, bien type, trimestre, maille et qualité. Ces précisions ne sont pas disponibles pour cette donnée.",
+              "muted": true
+            },
+            {
+              "label": "Zone ABC (tension)",
+              "value": "B2",
+              "fieldId": "zonage_abc.zone",
+              "state": "value"
+            },
+            {
+              "label": "Année de référence (loyers)",
+              "value": "2023",
+              "fieldId": "loyers.annee",
+              "state": "value"
+            }
+          ],
+          "sources": "DVF, Loyers de référence, Zonage ABC"
+        },
+        {
+          "key": "energie",
+          "emoji": "⚡",
+          "name": "Énergie & bâti",
+          "hint": "DPE du bien",
+          "rows": [],
+          "rowsBien": [
+            {
+              "label": "Étiquette DPE",
+              "value": "non disponible",
+              "available": false,
+              "fieldId": "bien.dpe.etiquette_dpe",
+              "state": "out_of_coverage"
+            },
+            {
+              "label": "Étiquette GES",
+              "value": "non disponible",
+              "available": false,
+              "fieldId": "bien.dpe.etiquette_ges",
+              "state": "out_of_coverage"
+            },
+            {
+              "label": "Surface habitable",
+              "value": "non disponible",
+              "available": false,
+              "fieldId": "bien.dpe.surface_habitable",
+              "state": "out_of_coverage"
+            }
+          ],
+          "rowsCommune": [
+            {
+              "label": "Part des classes F et G",
+              "value": "7,2 %",
+              "fieldId": "dpe.dpe_passoires_pct",
+              "state": "value"
+            },
+            {
+              "label": "Classe DPE médiane",
+              "value": "D",
+              "fieldId": "dpe.dpe_median",
+              "state": "value"
+            },
+            {
+              "label": "Logements recensés",
+              "value": "11 240",
+              "fieldId": "demographie.nb_logements",
+              "state": "value"
+            },
+            {
+              "label": "Logements vacants (recensement)",
+              "value": "842",
+              "fieldId": "demographie.nb_logements_vacants_recensement",
+              "state": "value"
+            },
+            {
+              "label": "Année de construction (médiane)",
+              "value": "1990",
+              "fieldId": "dpe.annee_construction_mediane",
+              "state": "value"
+            }
+          ],
+          "sources": "DPE (ADEME), Démographie (logements)"
+        },
+        {
+          "key": "risques",
+          "emoji": "⚠️",
+          "name": "Risques",
+          "hint": "Argiles au point, risques communaux",
+          "rows": [],
+          "rowsBien": [
+            {
+              "label": "Retrait-gonflement argiles (au point)",
+              "value": "Exposition moyenne",
+              "fieldId": "bien.risques.expo_argiles",
+              "state": "value"
+            }
+          ],
+          "rowsCommune": [
+            {
+              "label": "Zonage ABC",
+              "value": "B2",
+              "fieldId": "zonage_abc.zone",
+              "state": "value"
+            },
+            {
+              "label": "Reclassement ABC",
+              "value": "Non",
+              "fieldId": "zonage_abc.reclassement",
+              "state": "value"
+            },
+            {
+              "label": "Notices de monuments historiques",
+              "value": "2",
+              "fieldId": "monuments.nb_monuments",
+              "state": "value"
+            },
+            {
+              "label": "Inondation recensée (commune)",
+              "value": "Oui",
+              "fieldId": "bien.risques.inondation",
+              "state": "value"
+            },
+            {
+              "label": "Séisme recensé (commune)",
+              "value": "Oui",
+              "fieldId": "bien.risques.sismique",
+              "state": "value"
+            },
+            {
+              "kind": "context",
+              "state": "not_reported",
+              "label": "Couverture GASPAR",
+              "value": "Nombre inconnu de résultats lus ; total inconnu. Première page, exhaustivité non établie.",
+              "muted": true
+            }
+          ],
+          "sources": "Géorisques, Zonage ABC"
+        },
+        {
+          "key": "environnement",
+          "emoji": "🏘️",
+          "name": "Environnement",
+          "hint": "Urbanisme du bien, démographie",
+          "rows": [],
+          "rowsBien": [
+            {
+              "label": "Zonage PLU (au point)",
+              "value": "Ua",
+              "fieldId": "bien.urbanisme.zonage_libelle",
+              "state": "value"
+            },
+            {
+              "label": "Type de zone (au point)",
+              "value": "U",
+              "fieldId": "bien.urbanisme.type_zone",
+              "state": "value"
+            },
+            {
+              "kind": "context",
+              "label": "Lecture GPU",
+              "value": "Première page ; exhaustivité des zones ou prescriptions non établie",
+              "muted": true,
+              "state": "not_reported"
+            }
+          ],
+          "rowsCommune": [
+            {
+              "label": "Population",
+              "value": "21 179 hab.",
+              "fieldId": "demographie.population",
+              "state": "value"
+            },
+            {
+              "label": "Densité",
+              "value": "281,4 hab./km²",
+              "fieldId": "demographie.densite",
+              "state": "value"
+            },
+            {
+              "label": "Superficie",
+              "value": "75,27 km²",
+              "fieldId": "demographie.superficie",
+              "state": "value"
+            },
+            {
+              "label": "Nombre de ménages",
+              "value": "9 876",
+              "fieldId": "demographie.nb_menages",
+              "state": "value"
+            },
+            {
+              "label": "Revenu déclaré médian",
+              "value": "21 340 €/UC/an",
+              "fieldId": "revenus.revenu_median",
+              "state": "value"
+            },
+            {
+              "label": "Taux de pauvreté",
+              "value": "12,8 %",
+              "fieldId": "revenus.taux_pauvrete",
+              "state": "value"
+            },
+            {
+              "label": "Gini (revenu déclaré)",
+              "value": "0,27",
+              "fieldId": "revenus.indice_gini",
+              "state": "value"
+            },
+            {
+              "label": "Part des ménages fiscaux imposés",
+              "value": "54,2 %",
+              "fieldId": "revenus.part_imposee",
+              "state": "value"
+            },
+            {
+              "label": "Effectif d’équipements observé",
+              "value": "1 124",
+              "fieldId": "equipements.nb_equipements",
+              "state": "value"
+            },
+            {
+              "label": "Établissements référencés par la carte scolaire",
+              "value": "4",
+              "fieldId": "scolaire.nb_etablissements_scolaires",
+              "state": "value"
+            },
+            {
+              "label": "Fibre (immeubles observés)",
+              "value": "86,4 %",
+              "fieldId": "connectivite.fibre_pct",
+              "state": "value"
+            },
+            {
+              "kind": "context",
+              "state": "value",
+              "label": "Portée des dénombrements",
+              "value": "Millésime des équipements inconnu. Ces nombres décrivent le stock observé dans les sources disponibles, sans garantie d’exhaustivité. Une donnée absente ne vaut pas zéro."
+            }
+          ],
+          "sources": "Urbanisme (GPU), Démographie, Revenus"
+        },
+        {
+          "key": "propriete",
+          "emoji": "📋",
+          "name": "Propriété",
+          "hint": "Parcelle cadastrale",
+          "rows": [],
+          "rowsBien": [
+            {
+              "label": "Parcelle cadastrale",
+              "value": "85047000AB0042",
+              "fieldId": "bien.cadastre.id_parcelle",
+              "state": "value"
+            },
+            {
+              "label": "Section",
+              "value": "AB",
+              "fieldId": "bien.cadastre.section",
+              "state": "value"
+            },
+            {
+              "label": "Numéro",
+              "value": "0042",
+              "fieldId": "bien.cadastre.numero",
+              "state": "value"
+            },
+            {
+              "label": "Contenance",
+              "value": "520 m²",
+              "fieldId": "bien.cadastre.contenance",
+              "state": "value"
+            }
+          ],
+          "rowsCommune": [
+            {
+              "label": "Taux de vacance",
+              "value": "9,4 %",
+              "fieldId": "vacance.taux_vacance",
+              "state": "value"
+            },
+            {
+              "label": "Logements vacants > 2 ans",
+              "value": "311",
+              "fieldId": "vacance.nb_vacants_plus_2ans",
+              "state": "value"
+            },
+            {
+              "label": "Taux TFPB",
+              "value": "41,85 %",
+              "fieldId": "fiscalite.taux_tfpb",
+              "state": "value"
+            },
+            {
+              "label": "Taux TH résidences secondaires",
+              "value": "18,2 %",
+              "fieldId": "fiscalite.taux_th_rs",
+              "state": "value"
+            },
+            {
+              "label": "Taux TEOM",
+              "value": "11,5 %",
+              "fieldId": "fiscalite.taux_teom",
+              "state": "value"
+            },
+            {
+              "label": "EPCI",
+              "value": "CC Challans Gois Communauté",
+              "fieldId": "fiscalite.nom_epci",
+              "state": "value"
+            },
+            {
+              "label": "Copropriétés",
+              "value": "non disponible",
+              "available": false,
+              "fieldId": "commune.propriete.coproprietes",
+              "state": "out_of_coverage"
+            },
+            {
+              "label": "Personnes morales référencées",
+              "value": "1 187",
+              "fieldId": "foncier_pm.nb_proprietaires_pm",
+              "state": "value"
+            },
+            {
+              "label": "Foncier personnes morales",
+              "value": "932,5 ha",
+              "fieldId": "foncier_pm.surface_pm_ha",
+              "state": "value"
+            },
+            {
+              "kind": "context",
+              "state": "value",
+              "label": "Portée du foncier observé",
+              "value": "Personnes morales et parcelles présentes dans les droits fonciers disponibles, sans garantie d’exhaustivité. Une surface incomplète ou contradictoire reste indisponible."
+            }
+          ],
+          "sources": "Cadastre, Vacance, Fiscalité locale"
+        }
+      ]
+    },
+    "millesimes": {
+      "demographie": "2021",
+      "revenus": "2021",
+      "vacance": "2023",
+      "fiscalite": "2024",
+      "loyers": "2023",
+      "equipements": null
+    }
+  }
+}

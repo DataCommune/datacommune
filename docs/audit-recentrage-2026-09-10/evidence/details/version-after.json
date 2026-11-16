@@ -1,0 +1,9 @@
+{
+  "http": 200,
+  "body": {
+    "environment": "preproduction",
+    "deployment_sha": "41f140a686de23ada10bcc5d5e0ce8d5e8510fc4",
+    "schema_actual": "096_commune_indicator_build_activation",
+    "schema_expected": "096_commune_indicator_build_activation"
+  }
+}

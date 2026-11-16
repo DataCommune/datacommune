@@ -1,0 +1,144 @@
+# VPS permanent-mode overlay — active after ETL ingestion is certified.
+#
+# Usage:
+#   docker compose -p datacommune-api \
+#     -f docker-compose.yml -f docker-compose.vps.yml up -d
+#
+# Switch from docker-compose.vps-etl.yml (DEBUG=true, ETL window) to this file
+# once `data_quality.run` exits 0 / 0 ERROR.
+#
+# Key differences vs vps-etl.yml:
+#   - DEBUG=false (production gate — config.py:139-158)
+#   - Department scope var absent (config.py:133-136 forbids it with DEBUG=false)
+#   - Stripe/Resend fake values pass the boot gate without activating billing (D-13)
+#   - caddy + cloudflared present (public HTTPS exposure via Cloudflare Tunnel)
+#
+# Does NOT expose PostgreSQL port externally (DEPLOY-05).
+
+services:
+  db:
+    restart: unless-stopped
+    shm_size: '2gb'
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    # Loopback-only publish: the self-hosted runner (host process on the CT)
+    # needs a stable DSN for the read-only golden replay; the docker bridge IP
+    # changes on recreate and nothing outside the CT can reach 127.0.0.1.
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    command:
+      - "postgres"
+      - "-c"
+      - "shared_buffers=1GB"
+      - "-c"
+      - "effective_cache_size=2GB"
+      - "-c"
+      - "random_page_cost=1.1"
+      - "-c"
+      - "effective_io_concurrency=200"
+      - "-c"
+      - "work_mem=16MB"
+      - "-c"
+      - "maintenance_work_mem=256MB"
+      - "-c"
+      - "max_wal_size=1GB"
+      - "-c"
+      - "wal_buffers=32MB"
+      # Query-level statistics (migration 086 creates the extension). Preload
+      # only takes effect when the container is recreated — `up -d` does that
+      # automatically because this command line changed. Keep in sync with
+      # docker-compose.vps-etl.yml (same db, ETL-window overlay).
+      - "-c"
+      - "shared_preload_libraries=pg_stat_statements"
+
+  api:
+    image: datacommune-api:${IMAGE_TAG:-dev}
+    restart: unless-stopped
+    depends_on:
+      init-volumes:
+        condition: service_completed_successfully
+    environment:
+      DATABASE_URL: postgresql+asyncpg://${POSTGRES_USER:-datacommune}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-datacommune}
+      API_BASE_URL: https://api.datacommune.fr
+      ETL_TEMP_DIR: /etl_tmp
+      DPE_VALIDATION_MANIFEST: ${DPE_VALIDATION_MANIFEST:-/opt/datacommune/data/dpe/current/import-manifest.json}
+      DEBUG: "false"
+      LOG_FORMAT: "json"
+      ADMIN_USERNAME: ${ADMIN_USERNAME:-admin}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD}
+      SMOKE_TEST_API_KEY: ${SMOKE_TEST_API_KEY:-}
+      # Stripe/Resend: fake non-empty values pass the boot gate (config.py:149-150)
+      # without activating billing functionality (D-13, ADR-0002 commercial freeze).
+      STRIPE_SECRET_KEY: ${STRIPE_SECRET_KEY:-sk_disabled_demo}
+      STRIPE_WEBHOOK_SECRET: ${STRIPE_WEBHOOK_SECRET:-stripe-disabled-demo}
+      RESEND_API_KEY: ${RESEND_API_KEY:-resend-disabled-demo}
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY}
+      API_KEY_HMAC_SECRET: ${API_KEY_HMAC_SECRET}
+      INTERNAL_UNLIMITED_KEY_HASH: ${INTERNAL_UNLIMITED_KEY_HASH:-}
+      CORS_ORIGINS: '["https://datacommune.fr","https://www.datacommune.fr","https://dev.datacommune.fr"]'
+      TRUST_PROXY_HEADERS: "true"
+      # Hosted scope: configured in the database (`python -m app.scope set`),
+      # never through an environment variable (D-23).
+      # Synthetic golden probe (HEALTH-02, Plan 46-01). The fixture with the
+      # exact private inputs lives OUTSIDE Git on the host and is mounted
+      # read-only below; only its in-container path + the probe API key/base URL
+      # are passed here (D-01/D-02). Empty key = probe disabled until 46-01-03.
+      SYNTHETIC_PROBE_FIXTURE_PATH: ${SYNTHETIC_PROBE_FIXTURE_PATH:-/run/secrets/datacommune-probe/cases.json}
+      SYNTHETIC_PROBE_API_KEY: ${SYNTHETIC_PROBE_API_KEY:-}
+      SYNTHETIC_PROBE_BASE_URL: ${SYNTHETIC_PROBE_BASE_URL:-https://api.datacommune.fr}
+    volumes:
+      - etl_tmp:/etl_tmp
+      # Durable DPE evidence is provisioned privately before the scoped import.
+      - /opt/datacommune/data/dpe:/opt/datacommune/data/dpe:ro
+      # Reviewed communal CSV generations; provision the host directory before CD.
+      - type: bind
+        source: /opt/datacommune/data/sources
+        target: /opt/datacommune/data/sources
+        read_only: true
+        bind:
+          create_host_path: false
+      # Private golden fixture, host-managed, mounted read-only (T46-01-TM).
+      # Host dir installed 0700 with a 0400 cases.json under supervision in
+      # 46-01-03 — never committed to Git.
+      - ${SYNTHETIC_PROBE_DIR:-/opt/datacommune/private/synthetic-probe}:/run/secrets/datacommune-probe:ro
+
+  caddy:
+    # T8 (46-04): pinned by digest for supply-chain immutability. Tag kept for
+    # readability; the digest is authoritative. Re-pin deliberately on upgrade.
+    image: caddy:2@sha256:af5fdcd76f2db5e4e974ee92f96ee8c0fc3edb55bd4ba5032547cbf3f65e486d
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:80:80"
+    volumes:
+      - ./Caddyfile.vps:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      api:
+        condition: service_started
+
+  cloudflared:
+    # T8 (46-04): pinned by digest (see caddy note). Re-pin deliberately on upgrade.
+    image: cloudflare/cloudflared:latest@sha256:6d91c121b803126f7a5344005d17a9324788fc09d305b6e2560ec6040a7ae283
+    restart: unless-stopped
+    command: tunnel --no-autoupdate run --token ${CF_TUNNEL_TOKEN}
+    depends_on:
+      caddy:
+        condition: service_started
+
+  # One-shot init: fix volume ownership for non-root containers (uid 1000)
+  init-volumes:
+    # T8 (46-04): pinned by digest (see caddy note). Re-pin deliberately on upgrade.
+    image: busybox:latest@sha256:fd8d9aa63ba2f0982b5304e1ee8d3b90a210bc1ffb5314d980eb6962f1a9715d
+    restart: "no"
+    volumes:
+      - etl_tmp:/etl_tmp
+    command: ["sh", "-c", "chown 1000:1000 /etl_tmp"]
+
+volumes:
+  pgdata:
+  etl_tmp:
+  caddy_data:
+  caddy_config:

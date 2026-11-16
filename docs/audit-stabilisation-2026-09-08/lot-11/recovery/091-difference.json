@@ -1,0 +1,61 @@
+{
+  "tables": {},
+  "objects": {
+    "views": {
+      "total_before": 10,
+      "total_after": 10,
+      "changed_entries": [
+        {
+          "before": [
+            "scoring_renov_target",
+            " WITH dpe_fg AS (\n         SELECT diagnostics_dpe.numero_dpe,\n            diagnostics_dpe.date_etablissement_dpe,\n            diagnostics_dpe.annee_construction,\n            diagnostics_dpe.surface_habitable,\n            diagnostics_dpe.etiquette_dpe,\n            diagnostics_dpe.type_installation_chauffage,\n            diagnostics_dpe.code_postal,\n            diagnostics_dpe.code_departement,\n            diagnostics_dpe.\"position\"\n           FROM diagnostics_dpe\n          WHERE ((diagnostics_dpe.etiquette_dpe = ANY (ARRAY['F'::bpchar, 'G'::bpchar])) AND (diagnostics_dpe.\"position\" IS NOT NULL) AND ((diagnostics_dpe.code_departement)::text = ANY ((ARRAY['44'::character varying, '33'::character varying])::text[])) AND (diagnostics_dpe.surface_habitable > (0)::numeric) AND (diagnostics_dpe.surface_habitable < (10000)::numeric))\n        ), dpe_with_parcelle AS (\n         SELECT DISTINCT ON (d.numero_dpe) d.numero_dpe,\n            d.date_etablissement_dpe,\n            d.annee_construction,\n            d.surface_habitable,\n            d.etiquette_dpe,\n            d.type_installation_chauffage,\n            d.code_postal,\n            d.code_departement,\n            p.id_parcelle,\n            p.commune,\n            p.contenance,\n            d.\"position\"\n           FROM (dpe_fg d\n             JOIN parcelles p ON (st_intersects(p.geometrie, d.\"position\")))\n          ORDER BY d.numero_dpe, p.contenance DESC\n        ), last_mutation AS (\n         SELECT DISTINCT ON (mutations.id_parcelle) mutations.id_parcelle,\n            mutations.date_mutation AS date_derniere_vente,\n            mutations.valeur_fonciere AS prix_derniere_vente,\n            mutations.adresse_numero,\n            mutations.adresse_nom_voie\n           FROM mutations\n          WHERE (mutations.id_parcelle IS NOT NULL)\n          ORDER BY mutations.id_parcelle, mutations.date_mutation DESC\n        )\n SELECT dp.numero_dpe,\n    dp.date_etablissement_dpe AS date_dpe,\n    dp.annee_construction,\n    dp.surface_habitable,\n    dp.etiquette_dpe,\n    dp.type_installation_chauffage AS type_chauffage,\n    dp.code_postal,\n    dp.code_departement,\n    dp.commune,\n    dp.id_parcelle,\n    dp.contenance,\n    lm.date_derniere_vente,\n    lm.prix_derniere_vente,\n    concat_ws(' '::text, lm.adresse_numero, lm.adresse_nom_voie) AS adresse,\n    dp.\"position\"\n   FROM (dpe_with_parcelle dp\n     LEFT JOIN last_mutation lm ON (((dp.id_parcelle)::text = (lm.id_parcelle)::text)));"
+          ],
+          "after": [
+            "scoring_renov_target",
+            " WITH dpe_fg AS (\n         SELECT diagnostics_dpe.numero_dpe,\n            diagnostics_dpe.date_etablissement_dpe,\n            diagnostics_dpe.annee_construction,\n            diagnostics_dpe.surface_habitable,\n            diagnostics_dpe.etiquette_dpe,\n            diagnostics_dpe.type_installation_chauffage,\n            diagnostics_dpe.code_postal,\n            diagnostics_dpe.code_departement,\n            diagnostics_dpe.\"position\"\n           FROM diagnostics_dpe\n          WHERE ((diagnostics_dpe.etiquette_dpe = ANY (ARRAY['F'::bpchar, 'G'::bpchar])) AND (diagnostics_dpe.\"position\" IS NOT NULL) AND ((diagnostics_dpe.code_departement)::text = ANY (ARRAY[('44'::character varying)::text, ('33'::character varying)::text])) AND (diagnostics_dpe.surface_habitable > (0)::numeric) AND (diagnostics_dpe.surface_habitable < (10000)::numeric))\n        ), dpe_with_parcelle AS (\n         SELECT DISTINCT ON (d.numero_dpe) d.numero_dpe,\n            d.date_etablissement_dpe,\n            d.annee_construction,\n            d.surface_habitable,\n            d.etiquette_dpe,\n            d.type_installation_chauffage,\n            d.code_postal,\n            d.code_departement,\n            p.id_parcelle,\n            p.commune,\n            p.contenance,\n            d.\"position\"\n           FROM (dpe_fg d\n             JOIN parcelles p ON (st_intersects(p.geometrie, d.\"position\")))\n          ORDER BY d.numero_dpe, p.contenance DESC\n        ), last_mutation AS (\n         SELECT DISTINCT ON (mutations.id_parcelle) mutations.id_parcelle,\n            mutations.date_mutation AS date_derniere_vente,\n            mutations.valeur_fonciere AS prix_derniere_vente,\n            mutations.adresse_numero,\n            mutations.adresse_nom_voie\n           FROM mutations\n          WHERE (mutations.id_parcelle IS NOT NULL)\n          ORDER BY mutations.id_parcelle, mutations.date_mutation DESC\n        )\n SELECT dp.numero_dpe,\n    dp.date_etablissement_dpe AS date_dpe,\n    dp.annee_construction,\n    dp.surface_habitable,\n    dp.etiquette_dpe,\n    dp.type_installation_chauffage AS type_chauffage,\n    dp.code_postal,\n    dp.code_departement,\n    dp.commune,\n    dp.id_parcelle,\n    dp.contenance,\n    lm.date_derniere_vente,\n    lm.prix_derniere_vente,\n    concat_ws(' '::text, lm.adresse_numero, lm.adresse_nom_voie) AS adresse,\n    dp.\"position\"\n   FROM (dpe_with_parcelle dp\n     LEFT JOIN last_mutation lm ON (((dp.id_parcelle)::text = (lm.id_parcelle)::text)));"
+          ]
+        },
+        {
+          "before": [
+            "v_commune_dvf",
+            " SELECT code_commune AS code_insee,\n        CASE\n            WHEN (count(*) >= 5) THEN (round((percentile_cont((0.5)::double precision) WITHIN GROUP (ORDER BY (((valeur_fonciere / (surface_bati_totale)::numeric))::double precision)))::numeric, 0))::integer\n            ELSE NULL::integer\n        END AS prix_m2_median,\n    (count(*))::integer AS nb_mutations_12m,\n        CASE\n            WHEN (count(*) FILTER (WHERE ((classe_mutation)::text = 'residentiel_maison'::text)) >= 5) THEN (round((percentile_cont((0.5)::double precision) WITHIN GROUP (ORDER BY (((valeur_fonciere / (surface_bati_totale)::numeric))::double precision)) FILTER (WHERE ((classe_mutation)::text = 'residentiel_maison'::text)))::numeric, 0))::integer\n            ELSE NULL::integer\n        END AS prix_m2_median_maison,\n    (count(*) FILTER (WHERE ((classe_mutation)::text = 'residentiel_maison'::text)))::integer AS nb_mutations_12m_maison,\n        CASE\n            WHEN (count(*) FILTER (WHERE ((classe_mutation)::text = 'residentiel_appartement'::text)) >= 5) THEN (round((percentile_cont((0.5)::double precision) WITHIN GROUP (ORDER BY (((valeur_fonciere / (surface_bati_totale)::numeric))::double precision)) FILTER (WHERE ((classe_mutation)::text = 'residentiel_appartement'::text)))::numeric, 0))::integer\n            ELSE NULL::integer\n        END AS prix_m2_median_appartement,\n    (count(*) FILTER (WHERE ((classe_mutation)::text = 'residentiel_appartement'::text)))::integer AS nb_mutations_12m_appartement\n   FROM mutations_grain\n  WHERE ((date_mutation >= (( SELECT max(mutations_grain_1.date_mutation) AS max\n           FROM mutations_grain mutations_grain_1) - '1 year'::interval)) AND ((classe_mutation)::text = ANY ((ARRAY['residentiel_maison'::character varying, 'residentiel_appartement'::character varying])::text[])) AND (est_vente = true) AND (hors_stats_vefa = false) AND (nb_communes = 1) AND (surface_bati_totale > 0) AND (valeur_fonciere > (0)::numeric))\n  GROUP BY code_commune;"
+          ],
+          "after": [
+            "v_commune_dvf",
+            " SELECT code_commune AS code_insee,\n        CASE\n            WHEN (count(*) >= 5) THEN (round((percentile_cont((0.5)::double precision) WITHIN GROUP (ORDER BY (((valeur_fonciere / (surface_bati_totale)::numeric))::double precision)))::numeric, 0))::integer\n            ELSE NULL::integer\n        END AS prix_m2_median,\n    (count(*))::integer AS nb_mutations_12m,\n        CASE\n            WHEN (count(*) FILTER (WHERE ((classe_mutation)::text = 'residentiel_maison'::text)) >= 5) THEN (round((percentile_cont((0.5)::double precision) WITHIN GROUP (ORDER BY (((valeur_fonciere / (surface_bati_totale)::numeric))::double precision)) FILTER (WHERE ((classe_mutation)::text = 'residentiel_maison'::text)))::numeric, 0))::integer\n            ELSE NULL::integer\n        END AS prix_m2_median_maison,\n    (count(*) FILTER (WHERE ((classe_mutation)::text = 'residentiel_maison'::text)))::integer AS nb_mutations_12m_maison,\n        CASE\n            WHEN (count(*) FILTER (WHERE ((classe_mutation)::text = 'residentiel_appartement'::text)) >= 5) THEN (round((percentile_cont((0.5)::double precision) WITHIN GROUP (ORDER BY (((valeur_fonciere / (surface_bati_totale)::numeric))::double precision)) FILTER (WHERE ((classe_mutation)::text = 'residentiel_appartement'::text)))::numeric, 0))::integer\n            ELSE NULL::integer\n        END AS prix_m2_median_appartement,\n    (count(*) FILTER (WHERE ((classe_mutation)::text = 'residentiel_appartement'::text)))::integer AS nb_mutations_12m_appartement\n   FROM mutations_grain\n  WHERE ((date_mutation >= (( SELECT max(mutations_grain_1.date_mutation) AS max\n           FROM mutations_grain mutations_grain_1) - '1 year'::interval)) AND ((classe_mutation)::text = ANY (ARRAY[('residentiel_maison'::character varying)::text, ('residentiel_appartement'::character varying)::text])) AND (est_vente = true) AND (hors_stats_vefa = false) AND (nb_communes = 1) AND (surface_bati_totale > 0) AND (valeur_fonciere > (0)::numeric))\n  GROUP BY code_commune;"
+          ]
+        }
+      ]
+    },
+    "constraints": {
+      "total_before": 799,
+      "total_after": 799,
+      "changed_entries": [
+        {
+          "before": [
+            "api_keys",
+            "api_keys_status_check",
+            "CHECK (((status)::text = ANY ((ARRAY['pending'::character varying, 'active'::character varying, 'revoked'::character varying])::text[])))"
+          ],
+          "after": [
+            "api_keys",
+            "api_keys_status_check",
+            "CHECK (((status)::text = ANY (ARRAY[('pending'::character varying)::text, ('active'::character varying)::text, ('revoked'::character varying)::text])))"
+          ]
+        },
+        {
+          "before": [
+            "matview_metadata",
+            "matview_metadata_last_refresh_status_check",
+            "CHECK (((last_refresh_status)::text = ANY ((ARRAY['success'::character varying, 'failed'::character varying])::text[])))"
+          ],
+          "after": [
+            "matview_metadata",
+            "matview_metadata_last_refresh_status_check",
+            "CHECK (((last_refresh_status)::text = ANY (ARRAY[('success'::character varying)::text, ('failed'::character varying)::text])))"
+          ]
+        }
+      ]
+    }
+  }
+}

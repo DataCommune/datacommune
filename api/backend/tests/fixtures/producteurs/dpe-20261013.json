@@ -1,0 +1,702 @@
+{
+ "absent": {},
+ "captured_at": "2026-10-13T10:14:49Z",
+ "counts": {
+  "01": {
+   "diagnostics_dpe": 135900,
+   "diagnostics_dpe:existant": 120907,
+   "diagnostics_dpe:neuf": 14993
+  },
+  "02": {
+   "diagnostics_dpe": 101482,
+   "diagnostics_dpe:existant": 98748,
+   "diagnostics_dpe:neuf": 2734
+  },
+  "03": {
+   "diagnostics_dpe": 74373,
+   "diagnostics_dpe:existant": 72570,
+   "diagnostics_dpe:neuf": 1803
+  },
+  "04": {
+   "diagnostics_dpe": 42081,
+   "diagnostics_dpe:existant": 39737,
+   "diagnostics_dpe:neuf": 2344
+  },
+  "05": {
+   "diagnostics_dpe": 43952,
+   "diagnostics_dpe:existant": 41568,
+   "diagnostics_dpe:neuf": 2384
+  },
+  "06": {
+   "diagnostics_dpe": 325445,
+   "diagnostics_dpe:existant": 300819,
+   "diagnostics_dpe:neuf": 24626
+  },
+  "07": {
+   "diagnostics_dpe": 62520,
+   "diagnostics_dpe:existant": 58317,
+   "diagnostics_dpe:neuf": 4203
+  },
+  "08": {
+   "diagnostics_dpe": 61601,
+   "diagnostics_dpe:existant": 60476,
+   "diagnostics_dpe:neuf": 1125
+  },
+  "09": {
+   "diagnostics_dpe": 32073,
+   "diagnostics_dpe:existant": 31565,
+   "diagnostics_dpe:neuf": 508
+  },
+  "10": {
+   "diagnostics_dpe": 68457,
+   "diagnostics_dpe:existant": 65283,
+   "diagnostics_dpe:neuf": 3174
+  },
+  "11": {
+   "diagnostics_dpe": 87828,
+   "diagnostics_dpe:existant": 83292,
+   "diagnostics_dpe:neuf": 4536
+  },
+  "12": {
+   "diagnostics_dpe": 52666,
+   "diagnostics_dpe:existant": 50048,
+   "diagnostics_dpe:neuf": 2618
+  },
+  "13": {
+   "diagnostics_dpe": 525956,
+   "diagnostics_dpe:existant": 484916,
+   "diagnostics_dpe:neuf": 41040
+  },
+  "14": {
+   "diagnostics_dpe": 199114,
+   "diagnostics_dpe:existant": 183071,
+   "diagnostics_dpe:neuf": 16043
+  },
+  "15": {
+   "diagnostics_dpe": 25391,
+   "diagnostics_dpe:existant": 24556,
+   "diagnostics_dpe:neuf": 835
+  },
+  "16": {
+   "diagnostics_dpe": 73234,
+   "diagnostics_dpe:existant": 69810,
+   "diagnostics_dpe:neuf": 3424
+  },
+  "17": {
+   "diagnostics_dpe": 171342,
+   "diagnostics_dpe:existant": 152868,
+   "diagnostics_dpe:neuf": 18474
+  },
+  "18": {
+   "diagnostics_dpe": 70696,
+   "diagnostics_dpe:existant": 68176,
+   "diagnostics_dpe:neuf": 2520
+  },
+  "19": {
+   "diagnostics_dpe": 45875,
+   "diagnostics_dpe:existant": 44328,
+   "diagnostics_dpe:neuf": 1547
+  },
+  "21": {
+   "diagnostics_dpe": 143974,
+   "diagnostics_dpe:existant": 132551,
+   "diagnostics_dpe:neuf": 11423
+  },
+  "22": {
+   "diagnostics_dpe": 119048,
+   "diagnostics_dpe:existant": 108452,
+   "diagnostics_dpe:neuf": 10596
+  },
+  "23": {
+   "diagnostics_dpe": 23109,
+   "diagnostics_dpe:existant": 22839,
+   "diagnostics_dpe:neuf": 270
+  },
+  "24": {
+   "diagnostics_dpe": 81257,
+   "diagnostics_dpe:existant": 76214,
+   "diagnostics_dpe:neuf": 5043
+  },
+  "25": {
+   "diagnostics_dpe": 117901,
+   "diagnostics_dpe:existant": 110695,
+   "diagnostics_dpe:neuf": 7206
+  },
+  "26": {
+   "diagnostics_dpe": 105195,
+   "diagnostics_dpe:existant": 96190,
+   "diagnostics_dpe:neuf": 9005
+  },
+  "27": {
+   "diagnostics_dpe": 123189,
+   "diagnostics_dpe:existant": 116366,
+   "diagnostics_dpe:neuf": 6823
+  },
+  "28": {
+   "diagnostics_dpe": 97355,
+   "diagnostics_dpe:existant": 90009,
+   "diagnostics_dpe:neuf": 7346
+  },
+  "29": {
+   "diagnostics_dpe": 201248,
+   "diagnostics_dpe:existant": 181349,
+   "diagnostics_dpe:neuf": 19899
+  },
+  "2A": {
+   "diagnostics_dpe": 30230,
+   "diagnostics_dpe:existant": 27179,
+   "diagnostics_dpe:neuf": 3051
+  },
+  "2B": {
+   "diagnostics_dpe": 28520,
+   "diagnostics_dpe:existant": 26270,
+   "diagnostics_dpe:neuf": 2250
+  },
+  "30": {
+   "diagnostics_dpe": 171191,
+   "diagnostics_dpe:existant": 159324,
+   "diagnostics_dpe:neuf": 11867
+  },
+  "31": {
+   "diagnostics_dpe": 401949,
+   "diagnostics_dpe:existant": 349182,
+   "diagnostics_dpe:neuf": 52767
+  },
+  "32": {
+   "diagnostics_dpe": 34854,
+   "diagnostics_dpe:existant": 33414,
+   "diagnostics_dpe:neuf": 1440
+  },
+  "33": {
+   "diagnostics_dpe": 450808,
+   "diagnostics_dpe:existant": 396131,
+   "diagnostics_dpe:neuf": 54677
+  },
+  "34": {
+   "diagnostics_dpe": 321074,
+   "diagnostics_dpe:existant": 286162,
+   "diagnostics_dpe:neuf": 34912
+  },
+  "35": {
+   "diagnostics_dpe": 273817,
+   "diagnostics_dpe:existant": 233981,
+   "diagnostics_dpe:neuf": 39836
+  },
+  "36": {
+   "diagnostics_dpe": 56585,
+   "diagnostics_dpe:existant": 55202,
+   "diagnostics_dpe:neuf": 1383
+  },
+  "37": {
+   "diagnostics_dpe": 175624,
+   "diagnostics_dpe:existant": 162164,
+   "diagnostics_dpe:neuf": 13460
+  },
+  "38": {
+   "diagnostics_dpe": 282587,
+   "diagnostics_dpe:existant": 252495,
+   "diagnostics_dpe:neuf": 30092
+  },
+  "39": {
+   "diagnostics_dpe": 51192,
+   "diagnostics_dpe:existant": 49334,
+   "diagnostics_dpe:neuf": 1858
+  },
+  "40": {
+   "diagnostics_dpe": 102652,
+   "diagnostics_dpe:existant": 86375,
+   "diagnostics_dpe:neuf": 16277
+  },
+  "41": {
+   "diagnostics_dpe": 64243,
+   "diagnostics_dpe:existant": 60796,
+   "diagnostics_dpe:neuf": 3447
+  },
+  "42": {
+   "diagnostics_dpe": 189338,
+   "diagnostics_dpe:existant": 180454,
+   "diagnostics_dpe:neuf": 8884
+  },
+  "43": {
+   "diagnostics_dpe": 39933,
+   "diagnostics_dpe:existant": 38426,
+   "diagnostics_dpe:neuf": 1507
+  },
+  "44": {
+   "diagnostics_dpe": 395458,
+   "diagnostics_dpe:existant": 353690,
+   "diagnostics_dpe:neuf": 41768
+  },
+  "45": {
+   "diagnostics_dpe": 160540,
+   "diagnostics_dpe:existant": 148393,
+   "diagnostics_dpe:neuf": 12147
+  },
+  "46": {
+   "diagnostics_dpe": 32278,
+   "diagnostics_dpe:existant": 30876,
+   "diagnostics_dpe:neuf": 1402
+  },
+  "47": {
+   "diagnostics_dpe": 67291,
+   "diagnostics_dpe:existant": 64131,
+   "diagnostics_dpe:neuf": 3160
+  },
+  "48": {
+   "diagnostics_dpe": 10989,
+   "diagnostics_dpe:existant": 10824,
+   "diagnostics_dpe:neuf": 165
+  },
+  "49": {
+   "diagnostics_dpe": 206222,
+   "diagnostics_dpe:existant": 186008,
+   "diagnostics_dpe:neuf": 20214
+  },
+  "50": {
+   "diagnostics_dpe": 122475,
+   "diagnostics_dpe:existant": 117287,
+   "diagnostics_dpe:neuf": 5188
+  },
+  "51": {
+   "diagnostics_dpe": 205204,
+   "diagnostics_dpe:existant": 196117,
+   "diagnostics_dpe:neuf": 9087
+  },
+  "52": {
+   "diagnostics_dpe": 39365,
+   "diagnostics_dpe:existant": 38757,
+   "diagnostics_dpe:neuf": 608
+  },
+  "53": {
+   "diagnostics_dpe": 58520,
+   "diagnostics_dpe:existant": 53497,
+   "diagnostics_dpe:neuf": 5023
+  },
+  "54": {
+   "diagnostics_dpe": 189864,
+   "diagnostics_dpe:existant": 181964,
+   "diagnostics_dpe:neuf": 7900
+  },
+  "55": {
+   "diagnostics_dpe": 32888,
+   "diagnostics_dpe:existant": 32333,
+   "diagnostics_dpe:neuf": 555
+  },
+  "56": {
+   "diagnostics_dpe": 179699,
+   "diagnostics_dpe:existant": 159899,
+   "diagnostics_dpe:neuf": 19800
+  },
+  "57": {
+   "diagnostics_dpe": 265647,
+   "diagnostics_dpe:existant": 252147,
+   "diagnostics_dpe:neuf": 13500
+  },
+  "58": {
+   "diagnostics_dpe": 45964,
+   "diagnostics_dpe:existant": 44886,
+   "diagnostics_dpe:neuf": 1078
+  },
+  "59": {
+   "diagnostics_dpe": 643222,
+   "diagnostics_dpe:existant": 602878,
+   "diagnostics_dpe:neuf": 40344
+  },
+  "60": {
+   "diagnostics_dpe": 163029,
+   "diagnostics_dpe:existant": 152290,
+   "diagnostics_dpe:neuf": 10739
+  },
+  "61": {
+   "diagnostics_dpe": 57142,
+   "diagnostics_dpe:existant": 56345,
+   "diagnostics_dpe:neuf": 797
+  },
+  "62": {
+   "diagnostics_dpe": 340292,
+   "diagnostics_dpe:existant": 322664,
+   "diagnostics_dpe:neuf": 17628
+  },
+  "63": {
+   "diagnostics_dpe": 156499,
+   "diagnostics_dpe:existant": 142949,
+   "diagnostics_dpe:neuf": 13550
+  },
+  "64": {
+   "diagnostics_dpe": 171542,
+   "diagnostics_dpe:existant": 156232,
+   "diagnostics_dpe:neuf": 15310
+  },
+  "65": {
+   "diagnostics_dpe": 53702,
+   "diagnostics_dpe:existant": 51840,
+   "diagnostics_dpe:neuf": 1862
+  },
+  "66": {
+   "diagnostics_dpe": 117331,
+   "diagnostics_dpe:existant": 109691,
+   "diagnostics_dpe:neuf": 7640
+  },
+  "67": {
+   "diagnostics_dpe": 272630,
+   "diagnostics_dpe:existant": 246694,
+   "diagnostics_dpe:neuf": 25936
+  },
+  "68": {
+   "diagnostics_dpe": 155669,
+   "diagnostics_dpe:existant": 143092,
+   "diagnostics_dpe:neuf": 12577
+  },
+  "69": {
+   "diagnostics_dpe": 555466,
+   "diagnostics_dpe:existant": 510502,
+   "diagnostics_dpe:neuf": 44964
+  },
+  "70": {
+   "diagnostics_dpe": 36823,
+   "diagnostics_dpe:existant": 35434,
+   "diagnostics_dpe:neuf": 1389
+  },
+  "71": {
+   "diagnostics_dpe": 105809,
+   "diagnostics_dpe:existant": 101708,
+   "diagnostics_dpe:neuf": 4101
+  },
+  "72": {
+   "diagnostics_dpe": 114612,
+   "diagnostics_dpe:existant": 109180,
+   "diagnostics_dpe:neuf": 5432
+  },
+  "73": {
+   "diagnostics_dpe": 142071,
+   "diagnostics_dpe:existant": 129488,
+   "diagnostics_dpe:neuf": 12583
+  },
+  "74": {
+   "diagnostics_dpe": 240122,
+   "diagnostics_dpe:existant": 202039,
+   "diagnostics_dpe:neuf": 38083
+  },
+  "75": {
+   "diagnostics_dpe": 860822,
+   "diagnostics_dpe:existant": 852178,
+   "diagnostics_dpe:neuf": 8644
+  },
+  "76": {
+   "diagnostics_dpe": 371672,
+   "diagnostics_dpe:existant": 349778,
+   "diagnostics_dpe:neuf": 21894
+  },
+  "77": {
+   "diagnostics_dpe": 319704,
+   "diagnostics_dpe:existant": 277541,
+   "diagnostics_dpe:neuf": 42163
+  },
+  "78": {
+   "diagnostics_dpe": 374779,
+   "diagnostics_dpe:existant": 341277,
+   "diagnostics_dpe:neuf": 33502
+  },
+  "79": {
+   "diagnostics_dpe": 70039,
+   "diagnostics_dpe:existant": 66460,
+   "diagnostics_dpe:neuf": 3579
+  },
+  "80": {
+   "diagnostics_dpe": 121024,
+   "diagnostics_dpe:existant": 112527,
+   "diagnostics_dpe:neuf": 8497
+  },
+  "81": {
+   "diagnostics_dpe": 77492,
+   "diagnostics_dpe:existant": 71193,
+   "diagnostics_dpe:neuf": 6299
+  },
+  "82": {
+   "diagnostics_dpe": 48500,
+   "diagnostics_dpe:existant": 45098,
+   "diagnostics_dpe:neuf": 3402
+  },
+  "83": {
+   "diagnostics_dpe": 288470,
+   "diagnostics_dpe:existant": 262919,
+   "diagnostics_dpe:neuf": 25551
+  },
+  "84": {
+   "diagnostics_dpe": 128365,
+   "diagnostics_dpe:existant": 118613,
+   "diagnostics_dpe:neuf": 9752
+  },
+  "85": {
+   "diagnostics_dpe": 152465,
+   "diagnostics_dpe:existant": 130108,
+   "diagnostics_dpe:neuf": 22357
+  },
+  "86": {
+   "diagnostics_dpe": 100308,
+   "diagnostics_dpe:existant": 94246,
+   "diagnostics_dpe:neuf": 6062
+  },
+  "87": {
+   "diagnostics_dpe": 98711,
+   "diagnostics_dpe:existant": 94448,
+   "diagnostics_dpe:neuf": 4263
+  },
+  "88": {
+   "diagnostics_dpe": 73369,
+   "diagnostics_dpe:existant": 71511,
+   "diagnostics_dpe:neuf": 1858
+  },
+  "89": {
+   "diagnostics_dpe": 68252,
+   "diagnostics_dpe:existant": 66443,
+   "diagnostics_dpe:neuf": 1809
+  },
+  "90": {
+   "diagnostics_dpe": 37450,
+   "diagnostics_dpe:existant": 36576,
+   "diagnostics_dpe:neuf": 874
+  },
+  "91": {
+   "diagnostics_dpe": 331300,
+   "diagnostics_dpe:existant": 300642,
+   "diagnostics_dpe:neuf": 30658
+  },
+  "92": {
+   "diagnostics_dpe": 557409,
+   "diagnostics_dpe:existant": 497431,
+   "diagnostics_dpe:neuf": 59978
+  },
+  "93": {
+   "diagnostics_dpe": 474107,
+   "diagnostics_dpe:existant": 413231,
+   "diagnostics_dpe:neuf": 60876
+  },
+  "94": {
+   "diagnostics_dpe": 444570,
+   "diagnostics_dpe:existant": 403515,
+   "diagnostics_dpe:neuf": 41055
+  },
+  "95": {
+   "diagnostics_dpe": 297674,
+   "diagnostics_dpe:existant": 269258,
+   "diagnostics_dpe:neuf": 28416
+  },
+  "971": {
+   "diagnostics_dpe": 742,
+   "diagnostics_dpe:existant": 647,
+   "diagnostics_dpe:neuf": 95
+  },
+  "972": {
+   "diagnostics_dpe": 7276,
+   "diagnostics_dpe:existant": 7100,
+   "diagnostics_dpe:neuf": 176
+  },
+  "973": {
+   "diagnostics_dpe": 111,
+   "diagnostics_dpe:existant": 103,
+   "diagnostics_dpe:neuf": 8
+  },
+  "974": {
+   "diagnostics_dpe": 1094,
+   "diagnostics_dpe:existant": 915,
+   "diagnostics_dpe:neuf": 179
+  },
+  "975": {
+   "diagnostics_dpe": 56,
+   "diagnostics_dpe:existant": 2,
+   "diagnostics_dpe:neuf": 54
+  },
+  "976": {
+   "diagnostics_dpe": 45,
+   "diagnostics_dpe:existant": 37,
+   "diagnostics_dpe:neuf": 8
+  }
+ },
+ "departements_demandes": [
+  "01",
+  "02",
+  "03",
+  "04",
+  "05",
+  "06",
+  "07",
+  "08",
+  "09",
+  "10",
+  "11",
+  "12",
+  "13",
+  "14",
+  "15",
+  "16",
+  "17",
+  "18",
+  "19",
+  "2A",
+  "2B",
+  "21",
+  "22",
+  "23",
+  "24",
+  "25",
+  "26",
+  "27",
+  "28",
+  "29",
+  "30",
+  "31",
+  "32",
+  "33",
+  "34",
+  "35",
+  "36",
+  "37",
+  "38",
+  "39",
+  "40",
+  "41",
+  "42",
+  "43",
+  "44",
+  "45",
+  "46",
+  "47",
+  "48",
+  "49",
+  "50",
+  "51",
+  "52",
+  "53",
+  "54",
+  "55",
+  "56",
+  "57",
+  "58",
+  "59",
+  "60",
+  "61",
+  "62",
+  "63",
+  "64",
+  "65",
+  "66",
+  "67",
+  "68",
+  "69",
+  "70",
+  "71",
+  "72",
+  "73",
+  "74",
+  "75",
+  "76",
+  "77",
+  "78",
+  "79",
+  "80",
+  "81",
+  "82",
+  "83",
+  "84",
+  "85",
+  "86",
+  "87",
+  "88",
+  "89",
+  "90",
+  "91",
+  "92",
+  "93",
+  "94",
+  "95",
+  "971",
+  "972",
+  "973",
+  "974",
+  "975",
+  "976"
+ ],
+ "details": {
+  "departements_hors_liste": {
+   "978": {
+    "diagnostics_dpe": 21,
+    "diagnostics_dpe:existant": 4,
+    "diagnostics_dpe:neuf": 17
+   },
+   "988": {
+    "diagnostics_dpe": 22,
+    "diagnostics_dpe:existant": 22
+   }
+  },
+  "sources": {
+   "dpe02neuf": {
+    "dataUpdatedAt": "2026-10-07T21:16:20.260Z",
+    "dataset_id": "g3cgx7jb3cmys5voxz1mrm22",
+    "regime": "neuf",
+    "sans_departement": 121919,
+    "total": 1442725
+   },
+   "dpe03existant": {
+    "dataUpdatedAt": "2026-10-07T19:15:36.671Z",
+    "dataset_id": "meg-83tjwtg8dyz4vv7h1dqe",
+    "regime": "existant",
+    "sans_departement": 546275,
+    "total": 15756542
+   }
+  }
+ },
+ "filter": "app/etl_dpe/sources.py DpeSourceDescriptor.filter_for(): one query per (source, departement) on code_departement_ban; rows without departement never requested (counted apart: sans_departement); loaded = rows is_tombstone false (app/etl_dpe/pipeline.py)",
+ "headers": {
+  "https://data.ademe.fr/data-fair/api/v1/datasets/dpe02neuf": {
+   "content_length": "67077",
+   "etag": "W/\"10605-avvMczvES5iFao/r0Tbb+q1aRc0\"",
+   "final_url": "https://data.ademe.fr/data-fair/api/v1/datasets/dpe02neuf",
+   "last_modified": null,
+   "status": 200
+  },
+  "https://data.ademe.fr/data-fair/api/v1/datasets/dpe02neuf/values_agg?field=code_departement_ban&agg_size=1000&size=0": {
+   "content_length": "4310",
+   "etag": "W/\"10d6-agzVkRDUoQXKyT4dfpH0uOtAyoA\"",
+   "final_url": "https://data.ademe.fr/data-fair/api/v1/datasets/dpe02neuf/values_agg?field=code_departement_ban&agg_size=1000&size=0",
+   "last_modified": "Wed, 07 Oct 2026 21:19:18 GMT",
+   "status": 200
+  },
+  "https://data.ademe.fr/data-fair/api/v1/datasets/dpe03existant": {
+   "content_length": "89314",
+   "etag": "W/\"15ce2-2qcQq/iI39DWTTz/9y0co/e1SHA\"",
+   "final_url": "https://data.ademe.fr/data-fair/api/v1/datasets/dpe03existant",
+   "last_modified": null,
+   "status": 200
+  },
+  "https://data.ademe.fr/data-fair/api/v1/datasets/dpe03existant/values_agg?field=code_departement_ban&agg_size=1000&size=0": {
+   "content_length": "4469",
+   "etag": "W/\"1175-bj/+WQnufH2hThPF30SRVGjspbY\"",
+   "final_url": "https://data.ademe.fr/data-fair/api/v1/datasets/dpe03existant/values_agg?field=code_departement_ban&agg_size=1000&size=0",
+   "last_modified": "Wed, 07 Oct 2026 19:24:24 GMT",
+   "status": 200
+  }
+ },
+ "millesime": {
+  "dpe02neuf": "2026-10-07T21:16:20.260Z",
+  "dpe03existant": "2026-10-07T19:15:36.671Z"
+ },
+ "mode": "producteur",
+ "pannes": {},
+ "primary_metric": "diagnostics_dpe",
+ "script_sha256": "960d3b0b3bf138081e7a161842e7c3a708287fe6ea337ddbe0df0c0b0a1a201a",
+ "script_sha256_origin": "file",
+ "source": "dpe",
+ "started_at": "2026-10-13T10:14:47Z",
+ "totals": {
+  "diagnostics_dpe": 16531030,
+  "diagnostics_dpe:existant": 15210241,
+  "diagnostics_dpe:neuf": 1320789
+ },
+ "urls": [
+  "https://data.ademe.fr/data-fair/api/v1/datasets/dpe03existant",
+  "https://data.ademe.fr/data-fair/api/v1/datasets/dpe03existant/values_agg?field=code_departement_ban&agg_size=1000&size=0",
+  "https://data.ademe.fr/data-fair/api/v1/datasets/dpe02neuf",
+  "https://data.ademe.fr/data-fair/api/v1/datasets/dpe02neuf/values_agg?field=code_departement_ban&agg_size=1000&size=0"
+ ]
+}

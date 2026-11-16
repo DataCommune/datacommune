@@ -1,0 +1,321 @@
+---
+# Provision the preproduction container only. Application sources are deployed separately by the CD runner.
+- name: Provision isolated DataCommune preproduction container
+  hosts: preproduction_hypervisors
+  gather_facts: false
+  become: false
+  vars:
+    preprod_deploy_dir: /opt/datacommune-preprod
+    preprod_secrets_dir: /opt/datacommune-preprod/private
+    deployment_sha: "{{ lookup('ansible.builtin.env', 'DEPLOYMENT_SHA') }}"
+    preprod_ssh_public_key: "{{ lookup('ansible.builtin.env', 'PREPROD_SSH_PUBLIC_KEY') }}"
+    preprod_min_storage_free_bytes: 64424509440
+    preprod_min_memory_available_bytes: 10737418240
+
+  tasks:
+    - name: Validate immutable preproduction container contract
+      ansible.builtin.assert:
+        that:
+          - preprod_ct_id | int == 277
+          - preprod_ct_id | int not in [275, 9275, 9276]
+          - preprod_cores | int == 4
+          - preprod_memory_mb | int == 8192
+          - preprod_disk_gb | int == 100
+          - preprod_bridge | length > 0
+          - deployment_sha is match('^[0-9a-f]{40}$')
+        fail_msg: "Refusing provisioning outside the reviewed preproduction contract."
+
+    - name: Check whether the preproduction CT already exists
+      ansible.builtin.command:
+        argv: [pct, status, "{{ preprod_ct_id }}"]
+      register: preprod_ct_status
+      changed_when: false
+      failed_when: preprod_ct_status.rc not in [0, 2]
+
+    - name: Read thin-pool capacity before provisioning
+      ansible.builtin.command:
+        argv:
+          - pvesh
+          - get
+          - "/nodes/{{ inventory_hostname }}/storage/{{ preprod_storage }}/status"
+          - --output-format
+          - json
+      register: preprod_storage_status
+      changed_when: false
+
+    - name: Read hypervisor available memory before provisioning
+      ansible.builtin.command:
+        argv:
+          - awk
+          - "/MemAvailable/ {print $2 * 1024}"
+          - /proc/meminfo
+      register: preprod_memory_available
+      changed_when: false
+
+    - name: Refuse provisioning without restoration headroom
+      ansible.builtin.assert:
+        that:
+          - (preprod_storage_status.stdout | from_json).avail | int >= preprod_min_storage_free_bytes
+          - preprod_memory_available.stdout | int >= preprod_min_memory_available_bytes
+        fail_msg: "Refusing CT creation: less than 60 GiB storage or 10 GiB host memory remains available."
+      when: preprod_ct_status.rc == 2
+
+    - name: Require the workstation public SSH key for initial administration
+      ansible.builtin.assert:
+        that:
+          - preprod_ssh_public_key is match('^ssh-ed25519 [A-Za-z0-9+/=]+( |$)')
+      when: preprod_ct_status.rc == 2
+
+    - name: Prepare the public SSH key on the hypervisor
+      ansible.builtin.copy:
+        content: "{{ preprod_ssh_public_key }}\n"
+        dest: /tmp/datacommune-preproduction.pub
+        mode: "0600"
+      when: preprod_ct_status.rc == 2
+
+    - name: Create the unprivileged Debian 12 preproduction CT with DHCP
+      ansible.builtin.command:
+        argv:
+          - pct
+          - create
+          - "{{ preprod_ct_id }}"
+          - "{{ preprod_template }}"
+          - --hostname
+          - "{{ preprod_hostname }}"
+          - --ssh-public-keys
+          - /tmp/datacommune-preproduction.pub
+          - --unprivileged
+          - "1"
+          - --features
+          - nesting=1,keyctl=1
+          - --cores
+          - "{{ preprod_cores }}"
+          - --memory
+          - "{{ preprod_memory_mb }}"
+          - --swap
+          - "{{ preprod_swap_mb }}"
+          - --rootfs
+          - "{{ preprod_storage }}:{{ preprod_disk_gb }}"
+          - --net0
+          - "name=eth0,bridge={{ preprod_bridge }},ip=dhcp,type=veth"
+          - --onboot
+          - "1"
+          - --start
+          - "1"
+      when: preprod_ct_status.rc == 2
+      changed_when: true
+
+    - name: Read the preproduction CT configuration
+      ansible.builtin.command:
+        argv: [pct, config, "{{ preprod_ct_id }}"]
+      register: preprod_ct_config
+      changed_when: false
+
+    - name: Parse the feature components of the preproduction CT independently of their order
+      ansible.builtin.set_fact:
+        preprod_ct_features: >-
+          {{ (preprod_ct_config.stdout_lines
+              | select('match', '^features: ')
+              | first
+              | default('features: ')
+              | regex_replace('^features: ', ''))
+             | split(',') }}
+
+    - name: Verify isolation and sizing of the preproduction CT
+      ansible.builtin.assert:
+        that:
+          - "'unprivileged: 1' in preprod_ct_config.stdout"
+          - "'nesting=1' in preprod_ct_features"
+          - "'keyctl=1' in preprod_ct_features"
+          - "'cores: 4' in preprod_ct_config.stdout"
+          - "'memory: 8192' in preprod_ct_config.stdout"
+          - "'ip=dhcp' in preprod_ct_config.stdout"
+
+    - name: Wait for DHCP and container startup
+      ansible.builtin.command:
+        argv: [pct, exec, "{{ preprod_ct_id }}", --, ip, -4, -j, addr, show, dev, eth0]
+      register: preprod_ip
+      changed_when: false
+      retries: 20
+      delay: 3
+      until: "'inet' in preprod_ip.stdout"
+
+    - name: Install Docker Engine and Compose from the official Docker repository
+      ansible.builtin.command:
+        argv:
+          - pct
+          - exec
+          - "{{ preprod_ct_id }}"
+          - --
+          - sh
+          - -ceu
+          - >-
+            apt-get update &&
+            DEBIAN_FRONTEND=noninteractive apt-get install -y ca-certificates curl git gh python3 openssl &&
+            install -m 0755 -d /etc/apt/keyrings &&
+            curl -fsSL https://download.docker.com/linux/debian/gpg -o /etc/apt/keyrings/docker.asc &&
+            chmod a+r /etc/apt/keyrings/docker.asc &&
+            . /etc/os-release &&
+            printf '%s\n' 'Types: deb'
+            'URIs: https://download.docker.com/linux/debian'
+            "Suites: $VERSION_CODENAME" 'Components: stable'
+            "Architectures: $(dpkg --print-architecture)"
+            'Signed-By: /etc/apt/keyrings/docker.asc'
+            > /etc/apt/sources.list.d/docker.sources &&
+            apt-get update &&
+            DEBIAN_FRONTEND=noninteractive apt-get install -y
+            docker-ce docker-ce-cli containerd.io
+            docker-buildx-plugin docker-compose-plugin &&
+            systemctl enable --now docker &&
+            docker version --format '{{ '{{' }}.Server.Version{{ '}}' }}' &&
+            docker compose version
+      register: runtime_install
+      changed_when: "'0 upgraded, 0 newly installed' not in runtime_install.stdout"
+
+    - name: Create dedicated runner identity with Docker access
+      ansible.builtin.command:
+        argv:
+          - pct
+          - exec
+          - "{{ preprod_ct_id }}"
+          - --
+          - sh
+          - -ceu
+          - >-
+            getent group datacommune-preprod >/dev/null ||
+            groupadd --system datacommune-preprod;
+            id "{{ preprod_runner_user }}" >/dev/null 2>&1 ||
+            useradd --system --create-home --shell /bin/bash
+            "{{ preprod_runner_user }}";
+            usermod -aG docker,datacommune-preprod "{{ preprod_runner_user }}"
+      changed_when: false
+
+    - name: Create runner-accessible deployment directories
+      ansible.builtin.command:
+        argv:
+          - pct
+          - exec
+          - "{{ preprod_ct_id }}"
+          - --
+          - install
+          - -d
+          - -o
+          - "{{ preprod_runner_user }}"
+          - -g
+          - datacommune-preprod
+          - -m
+          - "0750"
+          - "{{ item }}"
+      loop:
+        - "{{ preprod_deploy_dir }}"
+        - "{{ preprod_deploy_dir }}/api"
+      changed_when: false
+
+    - name: Create host-private secret directory
+      ansible.builtin.command:
+        argv:
+          - pct
+          - exec
+          - "{{ preprod_ct_id }}"
+          - --
+          - install
+          - -d
+          - -o
+          - root
+          - -g
+          - datacommune-preprod
+          - -m
+          - "0750"
+          - "{{ preprod_secrets_dir }}"
+      changed_when: false
+
+    - name: Generate independent application secrets once inside the preproduction CT
+      ansible.builtin.command:
+        argv:
+          - pct
+          - exec
+          - "{{ preprod_ct_id }}"
+          - --
+          - sh
+          - -ceu
+          - |
+            umask 077;
+            secrets_dir="{{ preprod_secrets_dir }}";
+            changed=0;
+            for item in postgres_password jwt_secret_key api_key_hmac_secret admin_password; do
+              if ! test -s "$secrets_dir/$item"; then
+                openssl rand -hex 32 > "$secrets_dir/$item";
+                changed=1;
+              fi;
+            done;
+            if ! test -s "$secrets_dir/database_url"; then
+              password=$(cat "$secrets_dir/postgres_password");
+              printf \
+                'postgresql+asyncpg://datacommune_preprod:%s@db:5432/datacommune_preprod\n' \
+                "$password" > "$secrets_dir/database_url";
+              changed=1;
+            fi;
+            chmod 0600 "$secrets_dir/postgres_password";
+            chmod 0444 \
+              "$secrets_dir/database_url" \
+              "$secrets_dir/jwt_secret_key" \
+              "$secrets_dir/api_key_hmac_secret" \
+              "$secrets_dir/admin_password";
+            printf 'changed=%s\n' "$changed"
+      register: preprod_secret_generation
+      changed_when: "'changed=1' in preprod_secret_generation.stdout"
+      no_log: true
+
+    - name: Restrict optional tunnel token for container-only consumption
+      ansible.builtin.command:
+        argv:
+          - pct
+          - exec
+          - "{{ preprod_ct_id }}"
+          - --
+          - sh
+          - -ceu
+          - >-
+            if test -e "{{ preprod_secrets_dir }}/cf_tunnel_token";
+            then chmod 0444 "{{ preprod_secrets_dir }}/cf_tunnel_token"; fi
+      changed_when: false
+      no_log: true
+
+    - name: Verify required local secret files without reading values
+      ansible.builtin.command:
+        argv: [pct, exec, "{{ preprod_ct_id }}", --, test, -s, "{{ preprod_secrets_dir }}/{{ item }}"]
+      loop:
+        - postgres_password
+        - database_url
+        - jwt_secret_key
+        - api_key_hmac_secret
+        - admin_password
+      changed_when: false
+      no_log: true
+
+    - name: Render non-secret preproduction environment file on the hypervisor
+      ansible.builtin.template:
+        src: templates/preproduction.env.j2
+        dest: /tmp/datacommune-preproduction.env
+        mode: "0600"
+    - name: Push non-secret environment file into the preproduction CT
+      ansible.builtin.command:
+        argv: [pct, push, "{{ preprod_ct_id }}", /tmp/datacommune-preproduction.env, "{{ preprod_deploy_dir }}/api/.env", --perms, "0600"]
+      changed_when: true
+
+    - name: Allow the dedicated runner to update the non-secret revision pointer
+      ansible.builtin.command:
+        argv:
+          - pct
+          - exec
+          - "{{ preprod_ct_id }}"
+          - --
+          - chown
+          - "{{ preprod_runner_user }}:datacommune-preprod"
+          - "{{ preprod_deploy_dir }}/api/.env"
+      changed_when: false
+
+    - name: Verify no production scheduler timers are active
+      ansible.builtin.command:
+        argv: [pct, exec, "{{ preprod_ct_id }}", --, sh, -ceu, "! systemctl list-timers --all --no-legend | grep -Ei 'datacommune|etl|scheduler'"]
+      changed_when: false

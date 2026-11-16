@@ -1,0 +1,1713 @@
+{
+  "statut": "ok",
+  "donnees": [
+    {
+      "nom": "antennes",
+      "statut": "hors_couverture",
+      "derniere_maj": null,
+      "nombre_lignes": null,
+      "duree_import_secondes": null,
+      "cron_schedule": null,
+      "fraicheur": null,
+      "etat_pipeline": "sain",
+      "prochaine_maj_prevue": null,
+      "derniere_run": null,
+      "provenance": {
+        "nom": "Antennes relais (ANFR)",
+        "licence": "Licence Ouverte 2.0",
+        "url": "https://data.anfr.fr/explore/dataset/observatoire_2g_3g_4g",
+        "producteur": "ANFR",
+        "dataset": "antennes",
+        "periode": {
+          "statut": "inconnue",
+          "label": null,
+          "debut": null,
+          "fin": null
+        },
+        "derniere_importation_reussie": null,
+        "couverture": {
+          "type": "inconnue",
+          "departements": null
+        },
+        "cadence": {
+          "statut": "non_publiee_ou_irreguliere",
+          "label": null,
+          "evidence_url": null,
+          "intervalle_jours": null
+        },
+        "etat": "inconnu"
+      },
+      "hebergement": {
+        "etat": "hors_couverture",
+        "motif": "dataset_non_heberge",
+        "departements": []
+      },
+      "reutilisation": {
+        "licence": "Licence Ouverte 2.0",
+        "licence_url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+        "conditions": "Réutilisation libre, y compris commerciale, sous réserve de mentionner la paternité de l'information : sa source (a minima le nom du producteur) et la date de sa dernière mise à jour ; la mention ne doit ni conférer un caractère officiel à la réutilisation ni suggérer une caution du producteur.",
+        "restrictions": [],
+        "verifiee_le": "2026-09-21"
+      },
+      "quarantaine": null,
+      "limites_source": null
+    },
+    {
+      "nom": "ban",
+      "statut": "disponible",
+      "derniere_maj": "2026-09-22T03:00:00Z",
+      "nombre_lignes": 1000,
+      "duree_import_secondes": 60.0,
+      "cron_schedule": null,
+      "fraicheur": null,
+      "etat_pipeline": "sain",
+      "prochaine_maj_prevue": null,
+      "derniere_run": {
+        "statut": "success",
+        "debut": "2026-09-22T03:00:00Z",
+        "fin": "2026-09-22T03:00:00Z",
+        "duree_secondes": 60.0,
+        "lignes_chargees": 1000,
+        "erreur": null
+      },
+      "provenance": {
+        "nom": "Base Adresse Nationale (BAN)",
+        "licence": "Licence Ouverte 2.0",
+        "url": "https://adresse.data.gouv.fr",
+        "producteur": "DINUM / IGN",
+        "dataset": "ban",
+        "periode": {
+          "statut": "inconnue",
+          "label": null,
+          "debut": null,
+          "fin": null
+        },
+        "derniere_importation_reussie": "2026-09-22T03:00:00Z",
+        "couverture": {
+          "type": "departements",
+          "departements": [
+            "44",
+            "85"
+          ]
+        },
+        "cadence": {
+          "statut": "official",
+          "label": "Hebdomadaire",
+          "evidence_url": "https://cartes.gouv.fr/aide/fr/guides-utilisateur/utiliser-les-services-de-la-geoplateforme/geocodage/",
+          "intervalle_jours": 7
+        },
+        "etat": "inconnu"
+      },
+      "hebergement": {
+        "etat": "heberge",
+        "motif": null,
+        "departements": [
+          "44",
+          "85"
+        ]
+      },
+      "reutilisation": {
+        "licence": "Licence Ouverte 2.0",
+        "licence_url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+        "conditions": "Réutilisation libre, y compris commerciale, sous réserve de mentionner la paternité de l'information : sa source (a minima le nom du producteur) et la date de sa dernière mise à jour ; la mention ne doit ni conférer un caractère officiel à la réutilisation ni suggérer une caution du producteur. Licence relevée sur : https://www.data.gouv.fr/datasets/base-adresse-nationale",
+        "restrictions": [],
+        "verifiee_le": "2026-09-21"
+      },
+      "quarantaine": null,
+      "limites_source": null
+    },
+    {
+      "nom": "batiments",
+      "statut": "non_importe",
+      "derniere_maj": null,
+      "nombre_lignes": null,
+      "duree_import_secondes": null,
+      "cron_schedule": null,
+      "fraicheur": null,
+      "etat_pipeline": "sain",
+      "prochaine_maj_prevue": null,
+      "derniere_run": null,
+      "provenance": {
+        "nom": "BD TOPO – Bâtiments",
+        "licence": "Licence Ouverte 2.0",
+        "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-TOPO",
+        "producteur": "IGN",
+        "dataset": "batiments",
+        "periode": {
+          "statut": "inconnue",
+          "label": null,
+          "debut": null,
+          "fin": null
+        },
+        "derniere_importation_reussie": null,
+        "couverture": {
+          "type": "inconnue",
+          "departements": null
+        },
+        "cadence": {
+          "statut": "non_publiee_ou_irreguliere",
+          "label": null,
+          "evidence_url": null,
+          "intervalle_jours": null
+        },
+        "etat": "inconnu"
+      },
+      "hebergement": {
+        "etat": "heberge",
+        "motif": null,
+        "departements": [
+          "44",
+          "85"
+        ]
+      },
+      "reutilisation": {
+        "licence": "Licence Ouverte 2.0",
+        "licence_url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+        "conditions": "Réutilisation libre, y compris commerciale, sous réserve de mentionner la paternité de l'information : sa source (a minima le nom du producteur) et la date de sa dernière mise à jour ; la mention ne doit ni conférer un caractère officiel à la réutilisation ni suggérer une caution du producteur. Notice de métadonnées IGN IGNF_BD-TOPO (catalogue data.geopf.fr) : Licence Ouverte / Open Licence 2.0.",
+        "restrictions": [],
+        "verifiee_le": "2026-09-21"
+      },
+      "quarantaine": null,
+      "limites_source": null
+    },
+    {
+      "nom": "bdnb",
+      "statut": "proxy_amont",
+      "derniere_maj": null,
+      "nombre_lignes": null,
+      "duree_import_secondes": null,
+      "cron_schedule": null,
+      "fraicheur": null,
+      "etat_pipeline": "sain",
+      "prochaine_maj_prevue": null,
+      "derniere_run": null,
+      "provenance": {
+        "nom": "Base de données nationale des bâtiments (BDNB)",
+        "licence": "Licence Ouverte 2.0",
+        "url": "https://bdnb.io",
+        "producteur": "CSTB",
+        "dataset": "bdnb",
+        "periode": {
+          "statut": "glissante",
+          "label": null,
+          "debut": null,
+          "fin": null
+        },
+        "derniere_importation_reussie": null,
+        "couverture": {
+          "type": "amont",
+          "departements": null
+        },
+        "cadence": {
+          "statut": "non_publiee_ou_irreguliere",
+          "label": null,
+          "evidence_url": null,
+          "intervalle_jours": null
+        },
+        "etat": "inconnu"
+      },
+      "hebergement": {
+        "etat": "heberge",
+        "motif": null,
+        "departements": [
+          "44",
+          "85"
+        ]
+      },
+      "reutilisation": {
+        "licence": "Licence Ouverte 2.0",
+        "licence_url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+        "conditions": "Réutilisation libre, y compris commerciale, sous réserve de mentionner la paternité de l'information : sa source (a minima le nom du producteur) et la date de sa dernière mise à jour ; la mention ne doit ni conférer un caractère officiel à la réutilisation ni suggérer une caution du producteur. Citation demandée par le CSTB (bdnb.io/faq) : « Base de Données Nationale des Bâtiments (BDNB) - Millésime <code> - CSTB ». Les conditions propres au service API ne sont pas publiées sur cette fiche. Licence relevée sur : https://www.data.gouv.fr/datasets/base-de-donnees-nationale-des-batiments",
+        "restrictions": [],
+        "verifiee_le": "2026-09-21"
+      },
+      "quarantaine": null,
+      "limites_source": null
+    },
+    {
+      "nom": "cadastre",
+      "statut": "disponible",
+      "derniere_maj": "2026-09-22T03:01:00Z",
+      "nombre_lignes": 2000,
+      "duree_import_secondes": 61.0,
+      "cron_schedule": null,
+      "fraicheur": null,
+      "etat_pipeline": "sain",
+      "prochaine_maj_prevue": null,
+      "derniere_run": {
+        "statut": "success",
+        "debut": "2026-09-22T03:01:00Z",
+        "fin": "2026-09-22T03:01:00Z",
+        "duree_secondes": 61.0,
+        "lignes_chargees": 2000,
+        "erreur": null
+      },
+      "provenance": {
+        "nom": "Cadastre Etalab",
+        "licence": "Licence Ouverte 1.0",
+        "url": "https://cadastre.data.gouv.fr",
+        "producteur": "DGFiP / Etalab",
+        "dataset": "cadastre",
+        "periode": {
+          "statut": "inconnue",
+          "label": null,
+          "debut": null,
+          "fin": null
+        },
+        "derniere_importation_reussie": "2026-09-22T03:01:00Z",
+        "couverture": {
+          "type": "departements",
+          "departements": [
+            "44",
+            "85"
+          ]
+        },
+        "cadence": {
+          "statut": "non_publiee_ou_irreguliere",
+          "label": null,
+          "evidence_url": null,
+          "intervalle_jours": null
+        },
+        "etat": "inconnu"
+      },
+      "hebergement": {
+        "etat": "heberge",
+        "motif": null,
+        "departements": [
+          "44",
+          "85"
+        ]
+      },
+      "reutilisation": {
+        "licence": "Licence Ouverte 1.0",
+        "licence_url": "https://www.data.gouv.fr/pages/legal/licences/etalab-1.0",
+        "conditions": "Réutilisation libre, y compris commerciale, sous réserve de mentionner la paternité de l'information : sa source (a minima le nom du producteur) et la date de sa dernière mise à jour ; la mention ne doit ni conférer un caractère officiel à la réutilisation ni suggérer une caution du producteur. La fiche data.gouv.fr du jeu Etalab déclare la licence fr-lo, que le registre des licences de data.gouv.fr associe au document Licence_Ouverte.pdf de 2014, soit la Licence Ouverte version 1.0 ; le Plan Cadastral Informatisé dont il dérive est publié sous Licence Ouverte 2.0. Licence relevée sur : https://www.data.gouv.fr/datasets/cadastre",
+        "restrictions": [],
+        "verifiee_le": "2026-09-21"
+      },
+      "quarantaine": null,
+      "limites_source": null
+    },
+    {
+      "nom": "connectivite",
+      "statut": "disponible",
+      "derniere_maj": "2026-09-22T03:06:00Z",
+      "nombre_lignes": 7000,
+      "duree_import_secondes": 66.0,
+      "cron_schedule": null,
+      "fraicheur": null,
+      "etat_pipeline": "sain",
+      "prochaine_maj_prevue": null,
+      "derniere_run": {
+        "statut": "success",
+        "debut": "2026-09-22T03:06:00Z",
+        "fin": "2026-09-22T03:06:00Z",
+        "duree_secondes": 66.0,
+        "lignes_chargees": 7000,
+        "erreur": null
+      },
+      "provenance": {
+        "nom": "Ma Connexion Internet (Arcep)",
+        "licence": "Licence Ouverte 2.0",
+        "url": "https://www.data.gouv.fr/datasets/ma-connexion-internet",
+        "producteur": "Arcep",
+        "dataset": "connectivite",
+        "periode": {
+          "statut": "inconnue",
+          "label": null,
+          "debut": null,
+          "fin": null
+        },
+        "derniere_importation_reussie": "2026-09-22T03:06:00Z",
+        "couverture": {
+          "type": "departements",
+          "departements": [
+            "44",
+            "85"
+          ]
+        },
+        "cadence": {
+          "statut": "non_publiee_ou_irreguliere",
+          "label": null,
+          "evidence_url": null,
+          "intervalle_jours": null
+        },
+        "etat": "inconnu"
+      },
+      "hebergement": {
+        "etat": "heberge",
+        "motif": null,
+        "departements": [
+          "44",
+          "85"
+        ]
+      },
+      "reutilisation": {
+        "licence": "Licence Ouverte 2.0",
+        "licence_url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+        "conditions": "Réutilisation libre, y compris commerciale, sous réserve de mentionner la paternité de l'information : sa source (a minima le nom du producteur) et la date de sa dernière mise à jour ; la mention ne doit ni conférer un caractère officiel à la réutilisation ni suggérer une caution du producteur.",
+        "restrictions": [],
+        "verifiee_le": "2026-09-21"
+      },
+      "quarantaine": null,
+      "limites_source": null
+    },
+    {
+      "nom": "copropriete",
+      "statut": "hors_couverture",
+      "derniere_maj": null,
+      "nombre_lignes": null,
+      "duree_import_secondes": null,
+      "cron_schedule": null,
+      "fraicheur": null,
+      "etat_pipeline": "sain",
+      "prochaine_maj_prevue": null,
+      "derniere_run": null,
+      "provenance": {
+        "nom": "Registre national des copropriétés (RNIC)",
+        "licence": "Licence Ouverte 2.0",
+        "url": "https://www.data.gouv.fr/datasets/registre-national-dimmatriculation-des-coproprietes",
+        "producteur": "ANAH",
+        "dataset": "copropriete",
+        "periode": {
+          "statut": "inconnue",
+          "label": null,
+          "debut": null,
+          "fin": null
+        },
+        "derniere_importation_reussie": null,
+        "couverture": {
+          "type": "inconnue",
+          "departements": null
+        },
+        "cadence": {
+          "statut": "non_publiee_ou_irreguliere",
+          "label": null,
+          "evidence_url": null,
+          "intervalle_jours": null
+        },
+        "etat": "inconnu"
+      },
+      "hebergement": {
+        "etat": "hors_couverture",
+        "motif": "dataset_non_heberge",
+        "departements": []
+      },
+      "reutilisation": {
+        "licence": "Licence Ouverte 2.0",
+        "licence_url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+        "conditions": "Réutilisation libre, y compris commerciale, sous réserve de mentionner la paternité de l'information : sa source (a minima le nom du producteur) et la date de sa dernière mise à jour ; la mention ne doit ni conférer un caractère officiel à la réutilisation ni suggérer une caution du producteur.",
+        "restrictions": [],
+        "verifiee_le": "2026-09-21"
+      },
+      "quarantaine": null,
+      "limites_source": null
+    },
+    {
+      "nom": "demographie",
+      "statut": "disponible",
+      "derniere_maj": "2026-09-22T03:15:00Z",
+      "nombre_lignes": 16000,
+      "duree_import_secondes": 75.0,
+      "cron_schedule": null,
+      "fraicheur": null,
+      "etat_pipeline": "sain",
+      "prochaine_maj_prevue": null,
+      "derniere_run": {
+        "statut": "success",
+        "debut": "2026-09-22T03:15:00Z",
+        "fin": "2026-09-22T03:15:00Z",
+        "duree_secondes": 75.0,
+        "lignes_chargees": 16000,
+        "erreur": null
+      },
+      "provenance": {
+        "nom": "Recensement de la population",
+        "licence": "Licence Ouverte 2.0",
+        "url": "https://www.insee.fr/fr/statistiques/8290591",
+        "producteur": "INSEE",
+        "dataset": "demographie",
+        "periode": {
+          "statut": "connue",
+          "label": "2022",
+          "debut": null,
+          "fin": null
+        },
+        "derniere_importation_reussie": "2026-09-22T03:15:00Z",
+        "couverture": {
+          "type": "departements",
+          "departements": [
+            "44",
+            "85"
+          ]
+        },
+        "cadence": {
+          "statut": "non_publiee_ou_irreguliere",
+          "label": null,
+          "evidence_url": null,
+          "intervalle_jours": null
+        },
+        "etat": "inconnu"
+      },
+      "hebergement": {
+        "etat": "heberge",
+        "motif": null,
+        "departements": [
+          "44",
+          "85"
+        ]
+      },
+      "reutilisation": {
+        "licence": "Licence Ouverte 2.0",
+        "licence_url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+        "conditions": "Licence Ouverte 2.0 (mentions légales INSEE) : réutilisation libre, y compris commerciale, sous réserve de mentionner la source sous la forme « Source : Insee », la date de dernière mise à jour lorsqu'elle est connue, et de ne pas altérer le sens des informations. Licence relevée sur : https://www.insee.fr/fr/information/2008466",
+        "restrictions": [],
+        "verifiee_le": "2026-09-21"
+      },
+      "quarantaine": null,
+      "limites_source": null
+    },
+    {
+      "nom": "dpe",
+      "statut": "disponible",
+      "derniere_maj": "2026-09-22T03:03:00Z",
+      "nombre_lignes": 4000,
+      "duree_import_secondes": 63.0,
+      "cron_schedule": null,
+      "fraicheur": null,
+      "etat_pipeline": "sain",
+      "prochaine_maj_prevue": null,
+      "derniere_run": {
+        "statut": "success",
+        "debut": "2026-09-22T03:03:00Z",
+        "fin": "2026-09-22T03:03:00Z",
+        "duree_secondes": 63.0,
+        "lignes_chargees": 4000,
+        "erreur": null
+      },
+      "provenance": {
+        "nom": "Diagnostics de performance énergétique (DPE)",
+        "licence": "Licence Ouverte 2.0",
+        "url": "https://data.ademe.fr/datasets/dpe03existant",
+        "producteur": "ADEME",
+        "dataset": "dpe",
+        "periode": {
+          "statut": "connue",
+          "label": "2026-09-20",
+          "debut": null,
+          "fin": null
+        },
+        "derniere_importation_reussie": "2026-09-22T03:03:00Z",
+        "couverture": {
+          "type": "departements",
+          "departements": [
+            "44",
+            "85"
+          ]
+        },
+        "cadence": {
+          "statut": "official",
+          "label": "Hebdomadaire",
+          "evidence_url": "https://data.ademe.fr/datasets/dpe03existant",
+          "intervalle_jours": 7
+        },
+        "etat": "actuel"
+      },
+      "hebergement": {
+        "etat": "heberge",
+        "motif": null,
+        "departements": [
+          "44",
+          "85"
+        ]
+      },
+      "reutilisation": {
+        "licence": "Licence Ouverte 2.0",
+        "licence_url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+        "conditions": "Réutilisation libre, y compris commerciale, sous réserve de mentionner la paternité de l'information : sa source (a minima le nom du producteur) et la date de sa dernière mise à jour ; la mention ne doit ni conférer un caractère officiel à la réutilisation ni suggérer une caution du producteur.",
+        "restrictions": [],
+        "verifiee_le": "2026-09-21"
+      },
+      "quarantaine": null,
+      "limites_source": null
+    },
+    {
+      "nom": "dvf",
+      "statut": "disponible",
+      "derniere_maj": "2026-09-22T03:02:00Z",
+      "nombre_lignes": 3000,
+      "duree_import_secondes": 62.0,
+      "cron_schedule": null,
+      "fraicheur": null,
+      "etat_pipeline": "sain",
+      "prochaine_maj_prevue": null,
+      "derniere_run": {
+        "statut": "success",
+        "debut": "2026-09-22T03:02:00Z",
+        "fin": "2026-09-22T03:02:00Z",
+        "duree_secondes": 62.0,
+        "lignes_chargees": 3000,
+        "erreur": null
+      },
+      "provenance": {
+        "nom": "Demandes de valeurs foncières (DVF)",
+        "licence": "Licence Ouverte 2.0",
+        "url": "https://www.data.gouv.fr/datasets/demandes-de-valeurs-foncieres-geolocalisees",
+        "producteur": "DGFiP / Etalab",
+        "dataset": "dvf",
+        "periode": {
+          "statut": "connue",
+          "label": "2021 à 2025",
+          "debut": null,
+          "fin": null
+        },
+        "derniere_importation_reussie": "2026-09-22T03:02:00Z",
+        "couverture": {
+          "type": "departements",
+          "departements": [
+            "44",
+            "85"
+          ]
+        },
+        "cadence": {
+          "statut": "non_publiee_ou_irreguliere",
+          "label": null,
+          "evidence_url": null,
+          "intervalle_jours": null
+        },
+        "etat": "inconnu"
+      },
+      "hebergement": {
+        "etat": "heberge",
+        "motif": null,
+        "departements": [
+          "44",
+          "85"
+        ]
+      },
+      "reutilisation": {
+        "licence": "Licence Ouverte 2.0",
+        "licence_url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+        "conditions": "Réutilisation libre, y compris commerciale, sous réserve de mentionner la paternité de l'information : sa source (a minima le nom du producteur) et la date de sa dernière mise à jour ; la mention ne doit ni conférer un caractère officiel à la réutilisation ni suggérer une caution du producteur. Conditions générales d'utilisation DGFiP : https://static.data.gouv.fr/resources/demandes-de-valeurs-foncieres/20201026-172435/conditions-generales-dutilisation-20201016.pdf",
+        "restrictions": [
+          "La réutilisation ne peut avoir ni pour objet ni pour effet de permettre la réidentification des personnes concernées (article R*112 A-3 du Livre des procédures fiscales).",
+          "Les informations ne peuvent faire l'objet d'une indexation sur les moteurs de recherche en ligne : le réutilisateur met en place des mesures empêchant l'indexation des données identifiantes par des moteurs de recherche externes (robots.txt, captcha).",
+          "La réutilisation n'est autorisée que pour concourir à la transparence des marchés fonciers et immobiliers, et doit être conforme à la législation sur la protection des données (RGPD, loi Informatique et libertés)."
+        ],
+        "verifiee_le": "2026-09-21"
+      },
+      "quarantaine": null,
+      "limites_source": {
+        "chapeau": "Le fichier des demandes de valeurs foncières (DVF) est publié par la direction générale des finances publiques. Il ne couvre pas tout le territoire ni tout le marché ; ces limites sont celles de la source, et elles ne sont pas comblées.",
+        "puces": [
+          "Bas-Rhin, Haut-Rhin et Moselle ne sont pas couverts : ces départements relèvent du livre foncier, un régime de publicité foncière distinct, et leurs transactions ne figurent pas dans DVF.",
+          "Mayotte n'est pas couverte.",
+          "Les ventes en l'état futur d'achèvement (VEFA) sont présentes dans DVF, mais certaines ne comportent pas de descriptif du local ou de surface exploitable. DataCommune les conserve dans l'historique, les étiquette et les exclut de ses statistiques de prix afin de ne pas mélanger neuf et ancien.",
+          "DVF est actualisé deux fois par an, en avril et en octobre. Une transaction récente ou enregistrée tardivement peut ne pas encore apparaître, et des millésimes antérieurs peuvent être complétés lors d'une mise à jour.",
+          "Les surfaces et le nombre de pièces proviennent d'informations fiscales et cadastrales ; leur définition peut différer de celle utilisée dans un diagnostic énergétique."
+        ]
+      }
+    },
+    {
+      "nom": "encadrement_loyers",
+      "statut": "quarantined",
+      "derniere_maj": "2026-09-22T03:10:00Z",
+      "nombre_lignes": 11000,
+      "duree_import_secondes": 70.0,
+      "cron_schedule": null,
+      "fraicheur": null,
+      "etat_pipeline": "degrade",
+      "prochaine_maj_prevue": null,
+      "derniere_run": {
+        "statut": "success",
+        "debut": "2026-09-22T03:10:00Z",
+        "fin": "2026-09-22T03:10:00Z",
+        "duree_secondes": 70.0,
+        "lignes_chargees": 11000,
+        "erreur": null
+      },
+      "provenance": {
+        "nom": "Encadrement des loyers",
+        "licence": "ODbL 1.0",
+        "url": "https://www.data.gouv.fr/datasets/logement-encadrement-des-loyers",
+        "producteur": "DRIHL",
+        "dataset": "encadrement_loyers",
+        "periode": {
+          "statut": "inconnue",
+          "label": null,
+          "debut": null,
+          "fin": null
+        },
+        "derniere_importation_reussie": "2026-09-22T03:10:00Z",
+        "couverture": {
+          "type": "departements",
+          "departements": [
+            "44",
+            "85"
+          ]
+        },
+        "cadence": {
+          "statut": "non_publiee_ou_irreguliere",
+          "label": null,
+          "evidence_url": null,
+          "intervalle_jours": null
+        },
+        "etat": "inconnu"
+      },
+      "hebergement": {
+        "etat": "heberge",
+        "motif": null,
+        "departements": [
+          "44",
+          "85"
+        ]
+      },
+      "reutilisation": {
+        "licence": "ODbL 1.0",
+        "licence_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+        "conditions": "Réutilisation libre sous ODbL 1.0 : attribuer toute utilisation publique de la base ou des œuvres produites à partir d'elle et indiquer sa licence ; partage à l'identique : toute base adaptée utilisée publiquement doit être offerte sous ODbL ; en cas de redistribution avec des mesures techniques restrictives, une version sans ces mesures doit aussi être redistribuée. Jeu publié sur data.gouv.fr par la Ville de Paris.",
+        "restrictions": [],
+        "verifiee_le": "2026-09-21"
+      },
+      "quarantaine": "Service indisponible. Cette indisponibilité ne signifie pas absence d'encadrement des loyers. Réponse HTTP 503, y compris avec une sélection manuelle de quartier. La proximité du centroïde ne démontre pas le périmètre réglementaire applicable à une adresse. La publication reprendra après qualification des périmètres, des catégories de logement et du millésime de référence.",
+      "limites_source": null
+    },
+    {
+      "nom": "equipements",
+      "statut": "disponible",
+      "derniere_maj": "2026-09-22T03:17:00Z",
+      "nombre_lignes": 18000,
+      "duree_import_secondes": 77.0,
+      "cron_schedule": null,
+      "fraicheur": null,
+      "etat_pipeline": "sain",
+      "prochaine_maj_prevue": null,
+      "derniere_run": {
+        "statut": "success",
+        "debut": "2026-09-22T03:17:00Z",
+        "fin": "2026-09-22T03:17:00Z",
+        "duree_secondes": 77.0,
+        "lignes_chargees": 18000,
+        "erreur": null
+      },
+      "provenance": {
+        "nom": "Base permanente des équipements (BPE)",
+        "licence": "Licence Ouverte 2.0",
+        "url": "https://www.insee.fr/fr/statistiques/8217537",
+        "producteur": "INSEE",
+        "dataset": "equipements",
+        "periode": {
+          "statut": "connue",
+          "label": "2024",
+          "debut": null,
+          "fin": null
+        },
+        "derniere_importation_reussie": "2026-09-22T03:17:00Z",
+        "couverture": {
+          "type": "departements",
+          "departements": [
+            "44",
+            "85"
+          ]
+        },
+        "cadence": {
+          "statut": "non_publiee_ou_irreguliere",
+          "label": null,
+          "evidence_url": null,
+          "intervalle_jours": null
+        },
+        "etat": "inconnu"
+      },
+      "hebergement": {
+        "etat": "heberge",
+        "motif": null,
+        "departements": [
+          "44",
+          "85"
+        ]
+      },
+      "reutilisation": {
+        "licence": "Licence Ouverte 2.0",
+        "licence_url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+        "conditions": "Licence Ouverte 2.0 (mentions légales INSEE) : réutilisation libre, y compris commerciale, sous réserve de mentionner la source sous la forme « Source : Insee », la date de dernière mise à jour lorsqu'elle est connue, et de ne pas altérer le sens des informations. Licence relevée sur : https://www.insee.fr/fr/information/2008466",
+        "restrictions": [],
+        "verifiee_le": "2026-09-21"
+      },
+      "quarantaine": null,
+      "limites_source": null
+    },
+    {
+      "nom": "errial",
+      "statut": "hors_couverture",
+      "derniere_maj": null,
+      "nombre_lignes": null,
+      "duree_import_secondes": null,
+      "cron_schedule": null,
+      "fraicheur": null,
+      "etat_pipeline": "sain",
+      "prochaine_maj_prevue": null,
+      "derniere_run": null,
+      "provenance": {
+        "nom": "ERRIAL (état des risques réglementaires)",
+        "licence": "Licence Ouverte 2.0",
+        "url": "https://errial.georisques.gouv.fr",
+        "producteur": "BRGM / MTE",
+        "dataset": "errial",
+        "periode": {
+          "statut": "glissante",
+          "label": null,
+          "debut": null,
+          "fin": null
+        },
+        "derniere_importation_reussie": null,
+        "couverture": {
+          "type": "amont",
+          "departements": null
+        },
+        "cadence": {
+          "statut": "non_publiee_ou_irreguliere",
+          "label": null,
+          "evidence_url": null,
+          "intervalle_jours": null
+        },
+        "etat": "inconnu"
+      },
+      "hebergement": {
+        "etat": "hors_couverture",
+        "motif": "dataset_non_heberge",
+        "departements": []
+      },
+      "reutilisation": {
+        "licence": "Licence Ouverte 2.0",
+        "licence_url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+        "conditions": "Réutilisation libre, y compris commerciale, sous réserve de mentionner la paternité de l'information : sa source (a minima le nom du producteur) et la date de sa dernière mise à jour ; la mention ne doit ni conférer un caractère officiel à la réutilisation ni suggérer une caution du producteur. ERRIAL renvoie aux mentions légales de Géorisques. Licence relevée sur : https://www.georisques.gouv.fr/mentions-legales",
+        "restrictions": [
+          "Les données et informations dont l'État ne détient pas la propriété sont signalées et doivent faire l'objet d'une demande d'autorisation auprès de leur propriétaire (mentions légales Géorisques)."
+        ],
+        "verifiee_le": "2026-09-21"
+      },
+      "quarantaine": null,
+      "limites_source": null
+    },
+    {
+      "nom": "fiscalite",
+      "statut": "disponible",
+      "derniere_maj": "2026-09-22T03:12:00Z",
+      "nombre_lignes": 13000,
+      "duree_import_secondes": 72.0,
+      "cron_schedule": null,
+      "fraicheur": null,
+      "etat_pipeline": "sain",
+      "prochaine_maj_prevue": null,
+      "derniere_run": {
+        "statut": "success",
+        "debut": "2026-09-22T03:12:00Z",
+        "fin": "2026-09-22T03:12:00Z",
+        "duree_secondes": 72.0,
+        "lignes_chargees": 13000,
+        "erreur": null
+      },
+      "provenance": {
+        "nom": "Fiscalité locale des particuliers",
+        "licence": "Licence Ouverte 2.0",
+        "url": "https://www.data.gouv.fr/datasets/fiscalite-locale-des-particuliers",
+        "producteur": "DGFiP",
+        "dataset": "fiscalite",
+        "periode": {
+          "statut": "connue",
+          "label": "2024",
+          "debut": null,
+          "fin": null
+        },
+        "derniere_importation_reussie": "2026-09-22T03:12:00Z",
+        "couverture": {
+          "type": "departements",
+          "departements": [
+            "44",
+            "85"
+          ]
+        },
+        "cadence": {
+          "statut": "non_publiee_ou_irreguliere",
+          "label": null,
+          "evidence_url": null,
+          "intervalle_jours": null
+        },
+        "etat": "inconnu"
+      },
+      "hebergement": {
+        "etat": "heberge",
+        "motif": null,
+        "departements": [
+          "44",
+          "85"
+        ]
+      },
+      "reutilisation": {
+        "licence": "Licence Ouverte 2.0",
+        "licence_url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+        "conditions": "Réutilisation libre, y compris commerciale, sous réserve de mentionner la paternité de l'information : sa source (a minima le nom du producteur) et la date de sa dernière mise à jour ; la mention ne doit ni conférer un caractère officiel à la réutilisation ni suggérer une caution du producteur.",
+        "restrictions": [],
+        "verifiee_le": "2026-09-21"
+      },
+      "quarantaine": null,
+      "limites_source": null
+    },
+    {
+      "nom": "foncier_pm",
+      "statut": "disponible",
+      "derniere_maj": "2026-09-22T03:11:00Z",
+      "nombre_lignes": 12000,
+      "duree_import_secondes": 71.0,
+      "cron_schedule": null,
+      "fraicheur": null,
+      "etat_pipeline": "sain",
+      "prochaine_maj_prevue": null,
+      "derniere_run": {
+        "statut": "success",
+        "debut": "2026-09-22T03:11:00Z",
+        "fin": "2026-09-22T03:11:00Z",
+        "duree_secondes": 71.0,
+        "lignes_chargees": 12000,
+        "erreur": null
+      },
+      "provenance": {
+        "nom": "Fichiers des personnes morales (MAJIC)",
+        "licence": "Licence Ouverte 2.0",
+        "url": "https://www.data.gouv.fr/datasets/fichiers-des-locaux-et-des-parcelles-des-personnes-morales",
+        "producteur": "DGFiP / Etalab",
+        "dataset": "foncier_pm",
+        "periode": {
+          "statut": "inconnue",
+          "label": null,
+          "debut": null,
+          "fin": null
+        },
+        "derniere_importation_reussie": "2026-09-22T03:11:00Z",
+        "couverture": {
+          "type": "departements",
+          "departements": [
+            "44",
+            "85"
+          ]
+        },
+        "cadence": {
+          "statut": "non_publiee_ou_irreguliere",
+          "label": null,
+          "evidence_url": null,
+          "intervalle_jours": null
+        },
+        "etat": "inconnu"
+      },
+      "hebergement": {
+        "etat": "heberge",
+        "motif": null,
+        "departements": [
+          "44",
+          "85"
+        ]
+      },
+      "reutilisation": {
+        "licence": "Licence Ouverte 2.0",
+        "licence_url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+        "conditions": "Réutilisation libre, y compris commerciale, sous réserve de mentionner la paternité de l'information : sa source (a minima le nom du producteur) et la date de sa dernière mise à jour ; la mention ne doit ni conférer un caractère officiel à la réutilisation ni suggérer une caution du producteur.",
+        "restrictions": [],
+        "verifiee_le": "2026-09-21"
+      },
+      "quarantaine": null,
+      "limites_source": null
+    },
+    {
+      "nom": "gares",
+      "statut": "disponible",
+      "derniere_maj": "2026-09-22T03:09:00Z",
+      "nombre_lignes": 10000,
+      "duree_import_secondes": 69.0,
+      "cron_schedule": null,
+      "fraicheur": null,
+      "etat_pipeline": "sain",
+      "prochaine_maj_prevue": null,
+      "derniere_run": {
+        "statut": "success",
+        "debut": "2026-09-22T03:09:00Z",
+        "fin": "2026-09-22T03:09:00Z",
+        "duree_secondes": 69.0,
+        "lignes_chargees": 10000,
+        "erreur": null
+      },
+      "provenance": {
+        "nom": "Gares SNCF",
+        "licence": "ODbL 1.0",
+        "url": "https://ressources.data.sncf.com/explore/dataset/liste-des-gares/",
+        "producteur": "SNCF",
+        "dataset": "gares",
+        "periode": {
+          "statut": "inconnue",
+          "label": null,
+          "debut": null,
+          "fin": null
+        },
+        "derniere_importation_reussie": "2026-09-22T03:09:00Z",
+        "couverture": {
+          "type": "departements",
+          "departements": [
+            "44",
+            "85"
+          ]
+        },
+        "cadence": {
+          "statut": "non_publiee_ou_irreguliere",
+          "label": null,
+          "evidence_url": null,
+          "intervalle_jours": null
+        },
+        "etat": "inconnu"
+      },
+      "hebergement": {
+        "etat": "heberge",
+        "motif": null,
+        "departements": [
+          "44",
+          "85"
+        ]
+      },
+      "reutilisation": {
+        "licence": "ODbL 1.0",
+        "licence_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+        "conditions": "Réutilisation libre sous ODbL 1.0 : attribuer toute utilisation publique de la base ou des œuvres produites à partir d'elle et indiquer sa licence ; partage à l'identique : toute base adaptée utilisée publiquement doit être offerte sous ODbL ; en cas de redistribution avec des mesures techniques restrictives, une version sans ces mesures doit aussi être redistribuée. Licence relevée sur : https://ressources.data.sncf.com/explore/dataset/liste-des-gares/ (FAQ ODbL SNCF : https://data.sncf.com/pages/licence/).",
+        "restrictions": [],
+        "verifiee_le": "2026-09-21"
+      },
+      "quarantaine": null,
+      "limites_source": null
+    },
+    {
+      "nom": "georisques",
+      "statut": "proxy_amont",
+      "derniere_maj": null,
+      "nombre_lignes": null,
+      "duree_import_secondes": null,
+      "cron_schedule": null,
+      "fraicheur": null,
+      "etat_pipeline": "sain",
+      "prochaine_maj_prevue": null,
+      "derniere_run": null,
+      "provenance": {
+        "nom": "Géorisques",
+        "licence": "Licence Ouverte 2.0",
+        "url": "https://www.georisques.gouv.fr",
+        "producteur": "BRGM / MTE",
+        "dataset": "georisques",
+        "periode": {
+          "statut": "glissante",
+          "label": null,
+          "debut": null,
+          "fin": null
+        },
+        "derniere_importation_reussie": null,
+        "couverture": {
+          "type": "amont",
+          "departements": null
+        },
+        "cadence": {
+          "statut": "non_publiee_ou_irreguliere",
+          "label": null,
+          "evidence_url": null,
+          "intervalle_jours": null
+        },
+        "etat": "inconnu"
+      },
+      "hebergement": {
+        "etat": "heberge",
+        "motif": null,
+        "departements": [
+          "44",
+          "85"
+        ]
+      },
+      "reutilisation": {
+        "licence": "Licence Ouverte 2.0",
+        "licence_url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+        "conditions": "Réutilisation libre, y compris commerciale, sous réserve de mentionner la paternité de l'information : sa source (a minima le nom du producteur) et la date de sa dernière mise à jour ; la mention ne doit ni conférer un caractère officiel à la réutilisation ni suggérer une caution du producteur. Licence relevée sur : https://www.georisques.gouv.fr/mentions-legales",
+        "restrictions": [
+          "Les données et informations dont l'État ne détient pas la propriété sont signalées et doivent faire l'objet d'une demande d'autorisation auprès de leur propriétaire (mentions légales Géorisques)."
+        ],
+        "verifiee_le": "2026-09-21"
+      },
+      "quarantaine": null,
+      "limites_source": null
+    },
+    {
+      "nom": "loyers",
+      "statut": "disponible",
+      "derniere_maj": "2026-09-22T03:04:00Z",
+      "nombre_lignes": 5000,
+      "duree_import_secondes": 64.0,
+      "cron_schedule": null,
+      "fraicheur": null,
+      "etat_pipeline": "sain",
+      "prochaine_maj_prevue": null,
+      "derniere_run": {
+        "statut": "success",
+        "debut": "2026-09-22T03:04:00Z",
+        "fin": "2026-09-22T03:04:00Z",
+        "duree_secondes": 64.0,
+        "lignes_chargees": 5000,
+        "erreur": null
+      },
+      "provenance": {
+        "nom": "Carte des loyers",
+        "licence": "Licence Ouverte 2.0",
+        "url": "https://www.data.gouv.fr/datasets/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025",
+        "producteur": "ANIL / MTE",
+        "dataset": "loyers",
+        "periode": {
+          "statut": "connue",
+          "label": "2025",
+          "debut": null,
+          "fin": null
+        },
+        "derniere_importation_reussie": "2026-09-22T03:04:00Z",
+        "couverture": {
+          "type": "departements",
+          "departements": [
+            "44",
+            "85"
+          ]
+        },
+        "cadence": {
+          "statut": "non_publiee_ou_irreguliere",
+          "label": null,
+          "evidence_url": null,
+          "intervalle_jours": null
+        },
+        "etat": "inconnu"
+      },
+      "hebergement": {
+        "etat": "heberge",
+        "motif": null,
+        "departements": [
+          "44",
+          "85"
+        ]
+      },
+      "reutilisation": {
+        "licence": "Licence Ouverte 2.0",
+        "licence_url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+        "conditions": "Réutilisation libre, y compris commerciale, sous réserve de mentionner la paternité de l'information : sa source (a minima le nom du producteur) et la date de sa dernière mise à jour ; la mention ne doit ni conférer un caractère officiel à la réutilisation ni suggérer une caution du producteur. Mention imposée par le producteur : « Estimations ANIL, à partir des données du Groupe SeLoger et de leboncoin ».",
+        "restrictions": [],
+        "verifiee_le": "2026-09-21"
+      },
+      "quarantaine": null,
+      "limites_source": null
+    },
+    {
+      "nom": "monuments",
+      "statut": "disponible",
+      "derniere_maj": "2026-09-22T03:05:00Z",
+      "nombre_lignes": 6000,
+      "duree_import_secondes": 65.0,
+      "cron_schedule": null,
+      "fraicheur": null,
+      "etat_pipeline": "sain",
+      "prochaine_maj_prevue": null,
+      "derniere_run": {
+        "statut": "success",
+        "debut": "2026-09-22T03:05:00Z",
+        "fin": "2026-09-22T03:05:00Z",
+        "duree_secondes": 65.0,
+        "lignes_chargees": 6000,
+        "erreur": null
+      },
+      "provenance": {
+        "nom": "Monuments historiques",
+        "licence": "Licence Ouverte 2.0",
+        "url": "https://www.data.gouv.fr/datasets/immeubles-proteges-au-titre-des-monuments-historiques-2",
+        "producteur": "Ministère de la Culture",
+        "dataset": "monuments",
+        "periode": {
+          "statut": "inconnue",
+          "label": null,
+          "debut": null,
+          "fin": null
+        },
+        "derniere_importation_reussie": "2026-09-22T03:05:00Z",
+        "couverture": {
+          "type": "departements",
+          "departements": [
+            "44",
+            "85"
+          ]
+        },
+        "cadence": {
+          "statut": "non_publiee_ou_irreguliere",
+          "label": null,
+          "evidence_url": null,
+          "intervalle_jours": null
+        },
+        "etat": "inconnu"
+      },
+      "hebergement": {
+        "etat": "heberge",
+        "motif": null,
+        "departements": [
+          "44",
+          "85"
+        ]
+      },
+      "reutilisation": {
+        "licence": "Licence Ouverte 2.0",
+        "licence_url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+        "conditions": "Réutilisation libre, y compris commerciale, sous réserve de mentionner la paternité de l'information : sa source (a minima le nom du producteur) et la date de sa dernière mise à jour ; la mention ne doit ni conférer un caractère officiel à la réutilisation ni suggérer une caution du producteur.",
+        "restrictions": [],
+        "verifiee_le": "2026-09-21"
+      },
+      "quarantaine": null,
+      "limites_source": null
+    },
+    {
+      "nom": "permis",
+      "statut": "quarantined",
+      "derniere_maj": "2026-09-22T03:16:00Z",
+      "nombre_lignes": 17000,
+      "duree_import_secondes": 76.0,
+      "cron_schedule": null,
+      "fraicheur": null,
+      "etat_pipeline": "degrade",
+      "prochaine_maj_prevue": null,
+      "derniere_run": {
+        "statut": "success",
+        "debut": "2026-09-22T03:16:00Z",
+        "fin": "2026-09-22T03:16:00Z",
+        "duree_secondes": 76.0,
+        "lignes_chargees": 17000,
+        "erreur": null
+      },
+      "provenance": {
+        "nom": "Permis de construire (source locale en quarantaine)",
+        "licence": "Licence Ouverte 2.0",
+        "url": "https://www.data.gouv.fr/datasets/base-des-permis-de-construire-et-autres-autorisations-durbanisme",
+        "producteur": "Attribution a requalifier",
+        "dataset": "permis",
+        "periode": {
+          "statut": "inconnue",
+          "label": null,
+          "debut": null,
+          "fin": null
+        },
+        "derniere_importation_reussie": "2026-09-22T03:16:00Z",
+        "couverture": {
+          "type": "inconnue",
+          "departements": null
+        },
+        "cadence": {
+          "statut": "non_publiee_ou_irreguliere",
+          "label": null,
+          "evidence_url": null,
+          "intervalle_jours": null
+        },
+        "etat": "inconnu"
+      },
+      "hebergement": {
+        "etat": "hors_couverture",
+        "motif": "source_sans_couverture",
+        "departements": []
+      },
+      "reutilisation": {
+        "licence": "Licence Ouverte 2.0",
+        "licence_url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+        "conditions": "Réutilisation libre, y compris commerciale, sous réserve de mentionner la paternité de l'information : sa source (a minima le nom du producteur) et la date de sa dernière mise à jour ; la mention ne doit ni conférer un caractère officiel à la réutilisation ni suggérer une caution du producteur. Jeu publié par l'EPT Plaine Commune (fichier local, source en quarantaine).",
+        "restrictions": [],
+        "verifiee_le": "2026-09-21"
+      },
+      "quarantaine": "Source en quarantaine : ressource locale observée uniquement dans le département 93, couverture non qualifiée. Une liste vide ne signifie pas absence de permis. La date de dépôt n’est pas fournie ; la date de commencement ne la remplace pas.",
+      "limites_source": null
+    },
+    {
+      "nom": "revenus",
+      "statut": "disponible",
+      "derniere_maj": "2026-09-22T03:14:00Z",
+      "nombre_lignes": 15000,
+      "duree_import_secondes": 74.0,
+      "cron_schedule": null,
+      "fraicheur": null,
+      "etat_pipeline": "sain",
+      "prochaine_maj_prevue": null,
+      "derniere_run": {
+        "statut": "success",
+        "debut": "2026-09-22T03:14:00Z",
+        "fin": "2026-09-22T03:14:00Z",
+        "duree_secondes": 74.0,
+        "lignes_chargees": 15000,
+        "erreur": null
+      },
+      "provenance": {
+        "nom": "Filosofi (revenus et pauvreté)",
+        "licence": "Licence Ouverte 2.0",
+        "url": "https://www.insee.fr/fr/statistiques/7756855",
+        "producteur": "INSEE",
+        "dataset": "revenus",
+        "periode": {
+          "statut": "connue",
+          "label": "2021",
+          "debut": null,
+          "fin": null
+        },
+        "derniere_importation_reussie": "2026-09-22T03:14:00Z",
+        "couverture": {
+          "type": "departements",
+          "departements": [
+            "44",
+            "85"
+          ]
+        },
+        "cadence": {
+          "statut": "non_publiee_ou_irreguliere",
+          "label": null,
+          "evidence_url": null,
+          "intervalle_jours": null
+        },
+        "etat": "inconnu"
+      },
+      "hebergement": {
+        "etat": "heberge",
+        "motif": null,
+        "departements": [
+          "44",
+          "85"
+        ]
+      },
+      "reutilisation": {
+        "licence": "Licence Ouverte 2.0",
+        "licence_url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+        "conditions": "Licence Ouverte 2.0 (mentions légales INSEE) : réutilisation libre, y compris commerciale, sous réserve de mentionner la source sous la forme « Source : Insee », la date de dernière mise à jour lorsqu'elle est connue, et de ne pas altérer le sens des informations. Licence relevée sur : https://www.insee.fr/fr/information/2008466",
+        "restrictions": [],
+        "verifiee_le": "2026-09-21"
+      },
+      "quarantaine": null,
+      "limites_source": null
+    },
+    {
+      "nom": "rnb",
+      "statut": "proxy_amont",
+      "derniere_maj": null,
+      "nombre_lignes": null,
+      "duree_import_secondes": null,
+      "cron_schedule": null,
+      "fraicheur": null,
+      "etat_pipeline": "sain",
+      "prochaine_maj_prevue": null,
+      "derniere_run": null,
+      "provenance": {
+        "nom": "Référentiel national des bâtiments (RNB)",
+        "licence": "Licence Ouverte 2.0",
+        "url": "https://rnb.beta.gouv.fr",
+        "producteur": "beta.gouv.fr / CSTB",
+        "dataset": "rnb",
+        "periode": {
+          "statut": "glissante",
+          "label": null,
+          "debut": null,
+          "fin": null
+        },
+        "derniere_importation_reussie": null,
+        "couverture": {
+          "type": "amont",
+          "departements": null
+        },
+        "cadence": {
+          "statut": "non_publiee_ou_irreguliere",
+          "label": null,
+          "evidence_url": null,
+          "intervalle_jours": null
+        },
+        "etat": "inconnu"
+      },
+      "hebergement": {
+        "etat": "heberge",
+        "motif": null,
+        "departements": [
+          "44",
+          "85"
+        ]
+      },
+      "reutilisation": {
+        "licence": "Licence Ouverte 2.0",
+        "licence_url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+        "conditions": "Réutilisation libre, y compris commerciale, sous réserve de mentionner la paternité de l'information : sa source (a minima le nom du producteur) et la date de sa dernière mise à jour ; la mention ne doit ni conférer un caractère officiel à la réutilisation ni suggérer une caution du producteur. Licence relevée sur : https://www.data.gouv.fr/datasets/referentiel-national-des-batiments",
+        "restrictions": [],
+        "verifiee_le": "2026-09-21"
+      },
+      "quarantaine": null,
+      "limites_source": null
+    },
+    {
+      "nom": "scolaire",
+      "statut": "disponible",
+      "derniere_maj": "2026-09-22T03:07:00Z",
+      "nombre_lignes": 8000,
+      "duree_import_secondes": 67.0,
+      "cron_schedule": null,
+      "fraicheur": null,
+      "etat_pipeline": "sain",
+      "prochaine_maj_prevue": null,
+      "derniere_run": {
+        "statut": "success",
+        "debut": "2026-09-22T03:07:00Z",
+        "fin": "2026-09-22T03:07:00Z",
+        "duree_secondes": 67.0,
+        "lignes_chargees": 8000,
+        "erreur": null
+      },
+      "provenance": {
+        "nom": "Carte scolaire des collèges",
+        "licence": "Licence Ouverte 2.0",
+        "url": "https://www.data.gouv.fr/datasets/carte-scolaire-des-colleges-publics",
+        "producteur": "DGESCO / MEN",
+        "dataset": "scolaire",
+        "periode": {
+          "statut": "inconnue",
+          "label": null,
+          "debut": null,
+          "fin": null
+        },
+        "derniere_importation_reussie": "2026-09-22T03:07:00Z",
+        "couverture": {
+          "type": "departements",
+          "departements": [
+            "44",
+            "85"
+          ]
+        },
+        "cadence": {
+          "statut": "non_publiee_ou_irreguliere",
+          "label": null,
+          "evidence_url": null,
+          "intervalle_jours": null
+        },
+        "etat": "inconnu"
+      },
+      "hebergement": {
+        "etat": "heberge",
+        "motif": null,
+        "departements": [
+          "44",
+          "85"
+        ]
+      },
+      "reutilisation": {
+        "licence": "Licence Ouverte 2.0",
+        "licence_url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+        "conditions": "Réutilisation libre, y compris commerciale, sous réserve de mentionner la paternité de l'information : sa source (a minima le nom du producteur) et la date de sa dernière mise à jour ; la mention ne doit ni conférer un caractère officiel à la réutilisation ni suggérer une caution du producteur.",
+        "restrictions": [],
+        "verifiee_le": "2026-09-21"
+      },
+      "quarantaine": null,
+      "limites_source": null
+    },
+    {
+      "nom": "sirene",
+      "statut": "proxy_amont",
+      "derniere_maj": null,
+      "nombre_lignes": null,
+      "duree_import_secondes": null,
+      "cron_schedule": null,
+      "fraicheur": null,
+      "etat_pipeline": "sain",
+      "prochaine_maj_prevue": null,
+      "derniere_run": null,
+      "provenance": {
+        "nom": "API Sirene (Recherche Entreprises)",
+        "licence": "Licence Ouverte 2.0",
+        "url": "https://www.data.gouv.fr/dataservices/api-recherche-dentreprises",
+        "producteur": "INSEE / Etalab",
+        "dataset": "sirene",
+        "periode": {
+          "statut": "glissante",
+          "label": null,
+          "debut": null,
+          "fin": null
+        },
+        "derniere_importation_reussie": null,
+        "couverture": {
+          "type": "amont",
+          "departements": null
+        },
+        "cadence": {
+          "statut": "non_publiee_ou_irreguliere",
+          "label": null,
+          "evidence_url": null,
+          "intervalle_jours": null
+        },
+        "etat": "inconnu"
+      },
+      "hebergement": {
+        "etat": "heberge",
+        "motif": null,
+        "departements": [
+          "44",
+          "85"
+        ]
+      },
+      "reutilisation": {
+        "licence": "Licence Ouverte 2.0",
+        "licence_url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+        "conditions": "Réutilisation libre, y compris commerciale, sous réserve de mentionner la paternité de l'information : sa source (a minima le nom du producteur) et la date de sa dernière mise à jour ; la mention ne doit ni conférer un caractère officiel à la réutilisation ni suggérer une caution du producteur. Licence de la base Sirene (INSEE) ; la fiche de l'API Recherche d'entreprises (DINUM) ne déclare pas de licence propre. Licence relevée sur : https://www.data.gouv.fr/datasets/base-sirene-des-entreprises-et-de-leurs-etablissements-siren-siret",
+        "restrictions": [
+          "La base Sirene contient des données à caractère personnel (RGPD, loi Informatique et libertés) : le réutilisateur tient compte du statut de diffusion le plus récent de chaque personne physique, qui intègre les oppositions à l'utilisation de leurs données par des tiers.",
+          "Les unités à diffusion partielle (statut « P ») ont leur identité, leur adresse dans la commune et leur géolocalisation masquées ; les entreprises non diffusibles ne sont pas accessibles dans l'API."
+        ],
+        "verifiee_le": "2026-09-21"
+      },
+      "quarantaine": null,
+      "limites_source": null
+    },
+    {
+      "nom": "transports",
+      "statut": "disponible",
+      "derniere_maj": "2026-09-22T03:08:00Z",
+      "nombre_lignes": 9000,
+      "duree_import_secondes": 68.0,
+      "cron_schedule": null,
+      "fraicheur": null,
+      "etat_pipeline": "sain",
+      "prochaine_maj_prevue": null,
+      "derniere_run": {
+        "statut": "success",
+        "debut": "2026-09-22T03:08:00Z",
+        "fin": "2026-09-22T03:08:00Z",
+        "duree_secondes": 68.0,
+        "lignes_chargees": 9000,
+        "erreur": null
+      },
+      "provenance": {
+        "nom": "Arrêts de transport",
+        "licence": "Licence Ouverte 2.0",
+        "url": "https://transport.data.gouv.fr/datasets/arrets-de-transport-en-france",
+        "producteur": "PAN transport",
+        "dataset": "transports",
+        "periode": {
+          "statut": "inconnue",
+          "label": null,
+          "debut": null,
+          "fin": null
+        },
+        "derniere_importation_reussie": "2026-09-22T03:08:00Z",
+        "couverture": {
+          "type": "departements",
+          "departements": [
+            "44",
+            "85"
+          ]
+        },
+        "cadence": {
+          "statut": "non_publiee_ou_irreguliere",
+          "label": null,
+          "evidence_url": null,
+          "intervalle_jours": null
+        },
+        "etat": "inconnu"
+      },
+      "hebergement": {
+        "etat": "heberge",
+        "motif": null,
+        "departements": [
+          "44",
+          "85"
+        ]
+      },
+      "reutilisation": {
+        "licence": "Licence Ouverte 2.0",
+        "licence_url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+        "conditions": "Réutilisation libre, y compris commerciale, sous réserve de mentionner la paternité de l'information : sa source (a minima le nom du producteur) et la date de sa dernière mise à jour ; la mention ne doit ni conférer un caractère officiel à la réutilisation ni suggérer une caution du producteur.",
+        "restrictions": [],
+        "verifiee_le": "2026-09-21"
+      },
+      "quarantaine": null,
+      "limites_source": null
+    },
+    {
+      "nom": "urbanisme",
+      "statut": "proxy_amont",
+      "derniere_maj": null,
+      "nombre_lignes": null,
+      "duree_import_secondes": null,
+      "cron_schedule": null,
+      "fraicheur": null,
+      "etat_pipeline": "sain",
+      "prochaine_maj_prevue": null,
+      "derniere_run": null,
+      "provenance": {
+        "nom": "API Carto GPU",
+        "licence": "Licence Ouverte 1.0",
+        "url": "https://apicarto.ign.fr",
+        "producteur": "IGN",
+        "dataset": "urbanisme",
+        "periode": {
+          "statut": "glissante",
+          "label": null,
+          "debut": null,
+          "fin": null
+        },
+        "derniere_importation_reussie": null,
+        "couverture": {
+          "type": "amont",
+          "departements": null
+        },
+        "cadence": {
+          "statut": "non_publiee_ou_irreguliere",
+          "label": null,
+          "evidence_url": null,
+          "intervalle_jours": null
+        },
+        "etat": "inconnu"
+      },
+      "hebergement": {
+        "etat": "heberge",
+        "motif": null,
+        "departements": [
+          "44",
+          "85"
+        ]
+      },
+      "reutilisation": {
+        "licence": "Licence Ouverte 1.0",
+        "licence_url": "https://www.data.gouv.fr/pages/legal/licences/etalab-1.0",
+        "conditions": "Réutilisation libre, y compris commerciale, sous réserve de mentionner la paternité de l'information : sa source (a minima le nom du producteur) et la date de sa dernière mise à jour ; la mention ne doit ni conférer un caractère officiel à la réutilisation ni suggérer une caution du producteur. API Carto conserve la licence des sources ; les CGU du Géoportail de l'urbanisme soumettent les données d'urbanisme à la licence ouverte consultable à l'adresse etalab.gouv.fr/wp-content/uploads/2014/05/Licence_Ouverte.pdf, document de 2014, soit la Licence Ouverte version 1.0 (la version n'est pas écrite dans les CGU). Licence relevée sur : https://www.geoportail-urbanisme.gouv.fr/cgu/",
+        "restrictions": [],
+        "verifiee_le": "2026-09-21"
+      },
+      "quarantaine": null,
+      "limites_source": null
+    },
+    {
+      "nom": "vacance",
+      "statut": "disponible",
+      "derniere_maj": "2026-09-22T03:18:00Z",
+      "nombre_lignes": 19000,
+      "duree_import_secondes": 78.0,
+      "cron_schedule": null,
+      "fraicheur": null,
+      "etat_pipeline": "sain",
+      "prochaine_maj_prevue": null,
+      "derniere_run": {
+        "statut": "success",
+        "debut": "2026-09-22T03:18:00Z",
+        "fin": "2026-09-22T03:18:00Z",
+        "duree_secondes": 78.0,
+        "lignes_chargees": 19000,
+        "erreur": null
+      },
+      "provenance": {
+        "nom": "Logements vacants (LOVAC)",
+        "licence": "Licence Ouverte 2.0",
+        "url": "https://www.data.gouv.fr/datasets/logements-vacants-du-parc-prive-par-commune-departement-region-france-de-2020-a-2026",
+        "producteur": "CEREMA",
+        "dataset": "vacance",
+        "periode": {
+          "statut": "connue",
+          "label": "2025",
+          "debut": null,
+          "fin": null
+        },
+        "derniere_importation_reussie": "2026-09-22T03:18:00Z",
+        "couverture": {
+          "type": "departements",
+          "departements": [
+            "44",
+            "85"
+          ]
+        },
+        "cadence": {
+          "statut": "non_publiee_ou_irreguliere",
+          "label": null,
+          "evidence_url": null,
+          "intervalle_jours": null
+        },
+        "etat": "inconnu"
+      },
+      "hebergement": {
+        "etat": "heberge",
+        "motif": null,
+        "departements": [
+          "44",
+          "85"
+        ]
+      },
+      "reutilisation": {
+        "licence": "Licence Ouverte 2.0",
+        "licence_url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+        "conditions": "Réutilisation libre, y compris commerciale, sous réserve de mentionner la paternité de l'information : sa source (a minima le nom du producteur) et la date de sa dernière mise à jour ; la mention ne doit ni conférer un caractère officiel à la réutilisation ni suggérer une caution du producteur.",
+        "restrictions": [],
+        "verifiee_le": "2026-09-21"
+      },
+      "quarantaine": null,
+      "limites_source": null
+    },
+    {
+      "nom": "zonage_abc",
+      "statut": "disponible",
+      "derniere_maj": "2026-09-22T03:13:00Z",
+      "nombre_lignes": 14000,
+      "duree_import_secondes": 73.0,
+      "cron_schedule": null,
+      "fraicheur": null,
+      "etat_pipeline": "sain",
+      "prochaine_maj_prevue": null,
+      "derniere_run": {
+        "statut": "success",
+        "debut": "2026-09-22T03:13:00Z",
+        "fin": "2026-09-22T03:13:00Z",
+        "duree_secondes": 73.0,
+        "lignes_chargees": 14000,
+        "erreur": null
+      },
+      "provenance": {
+        "nom": "Zonage ABC (tension immobilière)",
+        "licence": "Licence Ouverte 2.0",
+        "url": "https://www.data.gouv.fr/datasets/liste-des-communes-selon-le-zonage-abc",
+        "producteur": "Ministère de la Transition écologique",
+        "dataset": "zonage_abc",
+        "periode": {
+          "statut": "inconnue",
+          "label": null,
+          "debut": null,
+          "fin": null
+        },
+        "derniere_importation_reussie": "2026-09-22T03:13:00Z",
+        "couverture": {
+          "type": "departements",
+          "departements": [
+            "44",
+            "85"
+          ]
+        },
+        "cadence": {
+          "statut": "non_publiee_ou_irreguliere",
+          "label": null,
+          "evidence_url": null,
+          "intervalle_jours": null
+        },
+        "etat": "inconnu"
+      },
+      "hebergement": {
+        "etat": "heberge",
+        "motif": null,
+        "departements": [
+          "44",
+          "85"
+        ]
+      },
+      "reutilisation": {
+        "licence": "Licence Ouverte 2.0",
+        "licence_url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+        "conditions": "Réutilisation libre, y compris commerciale, sous réserve de mentionner la paternité de l'information : sa source (a minima le nom du producteur) et la date de sa dernière mise à jour ; la mention ne doit ni conférer un caractère officiel à la réutilisation ni suggérer une caution du producteur.",
+        "restrictions": [],
+        "verifiee_le": "2026-09-21"
+      },
+      "quarantaine": null,
+      "limites_source": null
+    }
+  ],
+  "meta": null
+}

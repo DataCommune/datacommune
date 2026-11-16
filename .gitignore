@@ -1,0 +1,104 @@
+# Fusion des règles de ce dépôt et de celles de `3394395a` (ancien dépôt),
+# sans doublon. Aucune règle n'a été retirée de part et d'autre.
+
+# --- Secrets et environnement ---
+.env
+.env.*
+!.env.example
+
+# --- Python ---
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# --- Node / SvelteKit ---
+node_modules/
+.svelte-kit/
+dist/
+build/
+.astro/
+
+# --- Sorties de test et de couverture ---
+coverage/
+test-results/
+playwright-report/
+*.log
+
+# --- Système ---
+.DS_Store
+Thumbs.db
+
+# --- Suivi GSD (privé, retiré avant tout distant public — D-07) ---
+.planning/.cache/
+.planning/milestone.lock
+.gsd/
+
+# Review artifacts (local only)
+reviews/
+
+# Isolated reliability campaign traces; concise evidence is kept in the internal tracking.
+/reports/reliability-*/
+
+# Browser inspection artifacts can contain individual addresses and page data.
+.playwright-mcp/
+
+# Prospection LinkedIn (données personnelles de tiers -- jamais committé, RGPD)
+# Anchored to repo root (56-10) : le motif non ancré masquait aussi
+# frontend/src/routes/(app)/prospection/ (fonctionnalité produit, sans rapport).
+/prospection/
+
+# Parallel-session local caches (npm/uv redirected LOCALAPPDATA)
+.tmp-localappdata/
+
+# LAN addresses of the homelab, kept out of the repository (publication audit PUB-04):
+# templates are the hypervisor's local.env.example and inventory/host_vars/*.yml.example.
+infra/pve02/pve02.local.env
+infra/inventory/host_vars/*.yml
+
+# Golden-case private inputs (Phase 43, D-11): exact geocoding entries indexed
+# by case_id -- never committed, never logged in clear.
+contracts/golden-cases/v1/private/
+
+# Generated live-golden report (uploaded explicitly by the manual workflow)
+api/backend/reports/golden-live-report.redacted.json
+
+# Generated live exact-resolution report (uploaded explicitly by the manual workflow)
+api/backend/reports/exact-resolution-report.redacted.json
+
+# Balayage rattachement DPE (Lot 0, PLAN-RATTACHEMENT-DPE-2026-08-05): real
+# addresses stay local, same RGPD posture as the golden-case private inputs
+# above. Snapshots are keyed by address on purpose (0.4) so they stay local
+# too -- only the redacted Markdown summary/diff is meant to be shared.
+tools/balayage_rattachement/corpus.private.json
+tools/balayage_rattachement/snapshots/
+
+# Machine-local agent config. `.mcp.json` carries a plaintext local Postgres
+# DSN, and neither file describes the project -- they describe one workstation.
+# The repo is a candidate for open-sourcing, and a DSN committed once stays in
+# the history forever.
+.claude/
+.mcp.json
+
+# Grilles UAT temoins (adresses reelles de biens) -- jamais versionnees (plans 51-11, 57-17 ; T-57-66)
+.planning/**/*-UAT-TEMOINS.md
+
+# Echantillon stratifie D-04 (cle BAN, numero de DPE) -- jamais versionne (plan 58-03, T-58-10)
+.planning/**/58-ECHANTILLON*
+
+# Real BAN keys chosen for the acceptance replay of phase 4 (plan 04-09, read-only on the work
+# base): never versioned, like the golden-case private inputs.
+frontend/tests/recette/private/
+
+# Raw review-run traces (local only; reviews kept as *-REVIEWS.md)
+.planning/**/.review-diagnostics/
+
+# Commercial work (prospection lists with organisation names and contacts, competitor captures):
+# local only, never versioned.
+/commercial/
+
+# Host-local settings (production host, VPS alias): never versioned; the .example is (D-08).
+*.local.env
+# Settings of the production host, copied from infra/prod/prod.env.example (D-140).
+infra/prod/prod.env

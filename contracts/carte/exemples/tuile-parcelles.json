@@ -1,0 +1,206 @@
+{
+  "statut": "ok",
+  "donnees": {
+    "parcelles": {
+      "etat": "value",
+      "motif": null
+    },
+    "ventes": {
+      "etat": "value",
+      "motif": null,
+      "periode": "2021-2025",
+      "annee_debut": 2021
+    },
+    "cadastre_millesime": "2026-07",
+    "collection": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "id": "00000000ZA0001",
+          "geometry": {
+            "type": "MultiPolygon",
+            "coordinates": [
+              [
+                [
+                  [
+                    -3.5002,
+                    46.49986
+                  ],
+                  [
+                    -3.4998,
+                    46.49986
+                  ],
+                  [
+                    -3.4998,
+                    46.50014
+                  ],
+                  [
+                    -3.5002,
+                    46.50014
+                  ],
+                  [
+                    -3.5002,
+                    46.49986
+                  ]
+                ]
+              ]
+            ]
+          },
+          "properties": {
+            "id_parcelle": "00000000ZA0001",
+            "contenance": 450,
+            "etiquette": [
+              -3.5,
+              46.5
+            ],
+            "ventes": 4
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "00000000ZA0002",
+          "geometry": {
+            "type": "MultiPolygon",
+            "coordinates": [
+              [
+                [
+                  [
+                    -3.4998,
+                    46.49986
+                  ],
+                  [
+                    -3.4993,
+                    46.49986
+                  ],
+                  [
+                    -3.4993,
+                    46.50014
+                  ],
+                  [
+                    -3.4998,
+                    46.50014
+                  ],
+                  [
+                    -3.4998,
+                    46.49986
+                  ]
+                ]
+              ]
+            ]
+          },
+          "properties": {
+            "id_parcelle": "00000000ZA0002",
+            "contenance": 612,
+            "etiquette": [
+              -3.49955,
+              46.5
+            ],
+            "ventes": 0
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "00000000ZA0003",
+          "geometry": {
+            "type": "MultiPolygon",
+            "coordinates": [
+              [
+                [
+                  [
+                    -3.5002,
+                    46.50014
+                  ],
+                  [
+                    -3.4998,
+                    46.50014
+                  ],
+                  [
+                    -3.4998,
+                    46.50042
+                  ],
+                  [
+                    -3.5002,
+                    46.50042
+                  ],
+                  [
+                    -3.5002,
+                    46.50014
+                  ]
+                ]
+              ]
+            ]
+          },
+          "properties": {
+            "id_parcelle": "00000000ZA0003",
+            "contenance": null,
+            "etiquette": [
+              -3.5,
+              46.50028
+            ],
+            "ventes": 1
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "00000000ZA0004",
+          "geometry": {
+            "type": "MultiPolygon",
+            "coordinates": [
+              [
+                [
+                  [
+                    -3.5007,
+                    46.49986
+                  ],
+                  [
+                    -3.5002,
+                    46.49986
+                  ],
+                  [
+                    -3.5002,
+                    46.50014
+                  ],
+                  [
+                    -3.5007,
+                    46.50014
+                  ],
+                  [
+                    -3.5007,
+                    46.49986
+                  ]
+                ]
+              ]
+            ]
+          },
+          "properties": {
+            "id_parcelle": "00000000ZA0004",
+            "contenance": 380,
+            "etiquette": [
+              -3.50045,
+              46.5
+            ],
+            "ventes": 1
+          }
+        }
+      ]
+    }
+  },
+  "meta": {
+    "source": [
+      {
+        "nom": "Cadastre Etalab",
+        "licence": "Licence Ouverte 1.0",
+        "url": "https://cadastre.data.gouv.fr",
+        "producteur": "DGFiP / Etalab"
+      },
+      {
+        "nom": "Demandes de valeurs foncières (DVF)",
+        "licence": "Licence Ouverte 2.0",
+        "url": "https://www.data.gouv.fr/datasets/demandes-de-valeurs-foncieres-geolocalisees",
+        "producteur": "DGFiP / Etalab"
+      }
+    ],
+    "resolution": null
+  }
+}

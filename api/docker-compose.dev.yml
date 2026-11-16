@@ -1,0 +1,32 @@
+# Development override -- exposes ports for local access.
+#
+# Usage:
+#   docker compose -f docker-compose.yml -f docker-compose.dev.yml up
+#
+# Imports follow the hosted scope stored in the database: set it with
+# `python -m app.scope set --datasets … --departements …` before any import.
+services:
+  db:
+    ports:
+      - "127.0.0.1:${DB_PORT:-5432}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  api:
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      ETL_TEMP_DIR: /data/etl
+      DEBUG: "true"
+      LOG_FORMAT: text
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-dev-admin-password}
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY:-dev-secret-key-not-for-production}
+      RESEND_API_KEY: ${RESEND_API_KEY:-}
+      STRIPE_WEBHOOK_SECRET: ${STRIPE_WEBHOOK_SECRET:-}
+    volumes:
+      - etl_tmp:/data/etl
+
+
+volumes:
+  pgdata:
+  etl_tmp:

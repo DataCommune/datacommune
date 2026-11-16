@@ -1,0 +1,80 @@
+# Work base overlay — CT datacommune-work on the hypervisor (plan 02-10, D-16, D-19, D-20).
+#
+# Usage (inside the CT, from /opt/datacommune/repo; wb.sh, a private hypervisor script, wraps it
+# as `dc`):
+#   WORKBASE_SHA=$(git rev-parse HEAD) docker compose -p datacommune-work \
+#     --env-file /opt/datacommune/.env \
+#     -f api/docker-compose.yml -f api/docker-compose.workbase.yml up -d db api
+#
+# - db: image pinned by digest (the one the test harness uses), no `ports`:
+#   PostgreSQL is reachable only on the compose network of the CT.
+#   PostgreSQL settings = the template validated by Ianis on 2026-09-21
+#   (02-DATASETS.md, "Gabarit CT"); shared_preload_libraries is functional,
+#   not a tuning (migration 086, pg_stat_statements).
+# - api: listens on the CT loopback only. Secrets come from
+#   /opt/datacommune/.env (generated in the CT, never versioned); DATABASE_URL
+#   is built here from POSTGRES_PASSWORD and never written to a file.
+# - api: SOURCE_ARCHIVE_DIR (plan 02-14, D-29/D-30 amended): every import
+#   archives its source files there before any transformation. The CT path
+#   /mnt/source-archive is mount point mp0 of /mnt/usb-8tb/datacommune-sources,
+#   the USB disk of the hypervisor (its private source-archive-host.sh), never the SSD.
+#   It holds source files only, never the database.
+# The work base is never a test target (D-16).
+
+name: datacommune-work
+
+services:
+  db:
+    image: postgis/postgis:17-3.5@sha256:09e171a1b5604d8ff22528eab3429b6d1237af4b629c239123a31b2deedff8dd
+    restart: unless-stopped
+    shm_size: "2gb"
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?POSTGRES_PASSWORD missing from /opt/datacommune/.env}
+    command:
+      - "postgres"
+      - "-c"
+      - "shared_buffers=4GB"
+      - "-c"
+      - "effective_cache_size=10GB"
+      - "-c"
+      - "maintenance_work_mem=1GB"
+      - "-c"
+      - "work_mem=32MB"
+      - "-c"
+      - "max_wal_size=8GB"
+      - "-c"
+      - "shared_preload_libraries=pg_stat_statements"
+      # PGDATA is on ZFS (dcpool/work/pg, 04.2-01, D-130): ZFS writes records atomically,
+      # so torn pages cannot happen and full-page images only inflate the WAL.
+      # Never copy this setting to a stack whose PGDATA is on ext4.
+      - "-c"
+      - "full_page_writes=off"
+      - "-c"
+      - "wal_compression=zstd"
+      - "-c"
+      - "default_toast_compression=lz4"
+
+  api:
+    image: datacommune-work-api:${WORKBASE_SHA:?WORKBASE_SHA must be the checked-out commit}
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8000:8000"
+    env_file:
+      - /opt/datacommune/.env
+    environment:
+      DATABASE_URL: postgresql+asyncpg://${POSTGRES_USER:-datacommune}:${POSTGRES_PASSWORD:?POSTGRES_PASSWORD missing}@db:5432/${POSTGRES_DB:-datacommune}
+      ETL_TEMP_DIR: /etl_tmp
+      # The DPE presence registry (SQLite, ~13 KB per document) and every other tempfile go
+      # to the compressed ZFS dataset (dcpool/work/tmp), not to the container layer on the
+      # CT root: measured 7.1 GB on ext4 for the 44/85 replay of run 49 (04.2-01).
+      TMPDIR: /etl_tmp
+      DEPLOYMENT_SHA: ${WORKBASE_SHA:?WORKBASE_SHA must be the checked-out commit}
+      SOURCE_ARCHIVE_DIR: /source-archive
+      # Free bytes the archive leaves on the USB disk (which also holds the PBS
+      # datastore pbs-main and the photos): 10 % of its measured total,
+      # 7937302376448 // 10, measured on 2026-09-24 by `ssh <hypervisor> df -B1
+      # /mnt/usb-8tb` (plan 02-14, 02-ARCHIVE-SOURCES.md, ARCHIVE_SPACE).
+      SOURCE_ARCHIVE_MIN_FREE_BYTES: "793730237644"
+    volumes:
+      - /var/lib/datacommune/etl_tmp:/etl_tmp
+      - /mnt/source-archive:/source-archive

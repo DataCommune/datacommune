@@ -1,0 +1,113 @@
+name: CI API
+
+# Runner: `ubuntu-latest`, GitHub-hosted. The private runner on the hypervisor is
+# stopped and is not coming back -- plan 01-07 ported every kept workflow off it
+# (REPO-04; D-13: the hypervisor is not the test machine). A runner you host yourself is
+# also what must never survive a repository going public: any fork could then
+# execute arbitrary code on it through a pull request. No workflow here names a
+# private runner label, deliberately -- `docs/REPO-STATE.md` holds the history.
+#
+# Cost, since this repository is PRIVATE: runs bill the account's 2 000 free
+# monthly minutes -- about 60 to 70 per push across the five kept workflows.
+# `timeout-minutes` on every job plus the concurrency group below bound that
+# budget; D-15 (one active lot, no commit storms) is what makes it sufficient.
+#
+# `docker` and `pwsh` are preinstalled on `ubuntu-latest`, so the disposable
+# PostGIS harness runs the same command developers run locally. Returning to a
+# local runner is one `runs-on:` line.
+
+on:
+  push:
+    branches: [master]
+    # Skip a push that only touches docs/ or the internal tracking: 7 of 27 pushes from
+    # 2026-09-24 to 2026-10-22 re-ran the whole CI for prose. Patterns apply in
+    # order, the last match decides: everything (dotfiles named explicitly,
+    # since GitHub does not document whether `**` matches them), minus the two
+    # prose trees, plus back the docs/ fixtures tests read.
+    paths:
+      - "**"
+      - "**/.*"
+      - ".github/**"
+      - "!docs/**"
+      - "!.planning/**"
+      - "docs/audit-stabilisation-2026-09-08/**"
+  pull_request:
+    paths:
+      - "api/**"
+      - "docs/audit-stabilisation-2026-09-08/lot-02/cor06-sources/**"
+      - ".github/workflows/ci-api.yml"
+      # Same mirror guard as the push trigger - keep both lists in parity.
+      - "frontend/src/lib/data/explications.ts"
+      # The /v1/datasets fixture of « Données & méthode » is pinned to the
+      # catalogue by tests/test_datasets_reutilisation.py (D-40).
+      - "frontend/src/lib/data/__fixtures__/datasets-api.json"
+      # Same snapshot guard as the push trigger (OWD-03 C1) - keep both lists
+      # in parity.
+      - "contracts/openapi.v1.json"
+      # tests/test_workbase_deploy_doubles.py runs the deploy script and the
+      # rollback block it extracts from infra/pve02/README.md.
+      - "infra/pve02/**"
+      # tests/test_public_{deploy,national_switch}_doubles.py run the scripts of
+      # infra/public/ on doubles.
+      - "infra/public/**"
+
+concurrency:
+  # A superseded run proves nothing about the new head, so cancel it: a rush of
+  # commits then costs one run instead of one per push. The 19/08 spike on the
+  # old account burned 773 min (39% of a monthly quota) exactly this way. Never
+  # cancel on master -- `master` is the only branch here (strategy `none`), so
+  # in practice every run completes and the cap is `timeout-minutes`.
+  group: ci-api-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/master' }}
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: api/backend
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - uses: astral-sh/setup-uv@cec208311dfd045dd5311c1add060b2062131d57 # v8.0.0
+      - run: uv sync --locked --group dev
+      # EXACTLY the surface scripts/test-backend.ps1 lints, so CI and the local
+      # gate cannot disagree. Two entries left this list at plan 01-07:
+      # `../../tools/` (the balayage harness was never transferred -- ruff would
+      # exit on a missing path) and the four `../../scripts/*preproduction*.py`
+      # (root-level scripts the local gate does not lint; they are orphaned since
+      # the CD workflows that called them were removed -- see
+      # docs/KNOWN-ISSUES.md KI-P5). Keep these two commands and
+      # scripts/test-backend.ps1 in parity.
+      - run: uv run ruff check app/ tests/ scripts/
+      - run: uv run ruff format --check app/ tests/ scripts/
+      # Fails on any mypy error absent from mypy-baseline.txt (ratchet).
+      - run: uv run python scripts/mypy_ratchet.py
+
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    defaults:
+      run:
+        working-directory: api/backend
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          # tests/test_compare_fidelity.py signs a receipt with HEAD~1: a real
+          # commit of the history, other than HEAD, is what that test needs.
+          fetch-depth: 2
+      - uses: astral-sh/setup-uv@cec208311dfd045dd5311c1add060b2062131d57 # v8.0.0
+      - run: uv sync --locked --group dev
+      # Excluded files require a live DB / live API, unavailable in CI.
+      # tests/integration requires the disposable PostGIS harness (Phase 43,
+      # scripts/run_contract_integration.ps1) — not provisioned by this job.
+      - run: >-
+          uv run pytest tests/ -v --tb=short
+          --ignore=tests/test_integration_v6.py
+          --ignore=tests/test_all_datasets.py
+          --ignore=tests/test_foncier_pm.py
+          --ignore=tests/data_quality/test_dq_proxy_live.py
+          --ignore=tests/integration
+          -m "not live"
+        env:
+          DEBUG: "true"

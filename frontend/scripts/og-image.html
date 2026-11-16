@@ -1,0 +1,44 @@
+<!doctype html>
+<!--
+  Source of static/og-image.png (link preview, 1200 x 630), in the charter of 06/11: the solid green head,
+  the rings of scale, the title and the chapo of the home page. No count, no promise (D-16, D-34).
+  Regenerate from frontend/:  node scripts/og-image.mjs
+-->
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<style>
+  @font-face { font-family: "Inter"; src: url("../static/fonts/inter-latin.woff2") format("woff2"); font-weight: 100 900; }
+  @font-face { font-family: "Newsreader"; src: url("../static/fonts/newsreader-latin.woff2") format("woff2"); font-weight: 200 800; }
+  html, body { margin: 0; }
+  body { width: 1200px; height: 630px; overflow: hidden; background: #1f3d33; color: #f4f6f2; font-family: "Inter", sans-serif; position: relative; }
+  svg { position: absolute; left: 600px; top: 315px; width: 1900px; height: 1900px; transform: translate(-50%, -50%); }
+  svg text { fill: #cfd8d4; font: 500 26px "Inter", sans-serif; }
+  .contenu { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0 60px; }
+  .marque { display: flex; align-items: center; gap: 14px; font-size: 30px; font-weight: 600; letter-spacing: -.01em; margin-bottom: 44px; }
+  .marque i { display: grid; grid-template-columns: 14px 14px; gap: 4px; }
+  .marque i b { width: 14px; height: 14px; background: #d8ecdb; }
+  .marque i b:last-child { background: #798b82; }
+  h1 { margin: 0; font-family: "Newsreader", Georgia, serif; font-weight: 500; font-size: 96px; line-height: 1; letter-spacing: -.015em; }
+  p { margin: 30px 0 0; max-width: 900px; font-size: 28px; line-height: 1.4; color: #cfd8d4; }
+  .site { position: absolute; left: 0; right: 0; bottom: 40px; text-align: center; font-size: 24px; color: #e6eadb; }
+</style>
+</head>
+<body>
+  <svg viewBox="-950 -950 1900 1900" aria-hidden="true">
+    <circle r="860" fill="#27453c" opacity=".55" />
+    <circle r="620" fill="#27453c" />
+    <circle r="410" fill="#2f4d44" />
+    <circle r="860" fill="none" stroke="#798b82" stroke-width="1.6" stroke-dasharray="2 7" stroke-linecap="round" />
+    <circle r="620" fill="none" stroke="#798b82" stroke-width="1.6" stroke-dasharray="2 7" stroke-linecap="round" />
+    <circle r="410" fill="none" stroke="#798b82" stroke-width="1.6" stroke-dasharray="2 7" stroke-linecap="round" />
+    <text x="-410" y="-150" text-anchor="middle">500 m</text>
+  </svg>
+  <div class="contenu">
+    <div class="marque"><i><b></b><b></b><b></b><b></b></i>DataCommune</div>
+    <h1>Une adresse, en clair</h1>
+    <p>Chaque chiffre vient d’une source publique et dit jusqu’où il vaut&nbsp;: le point de l’adresse, le quartier ou toute la commune.</p>
+  </div>
+  <div class="site">datacommune.fr</div>
+</body>
+</html>

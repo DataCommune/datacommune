@@ -1,0 +1,190 @@
+name: CI Frontend
+
+# Runner: `ubuntu-latest`, GitHub-hosted. The private runner on the hypervisor is
+# stopped and is not coming back -- plan 01-07 ported every kept workflow off it
+# (REPO-04; D-13: the hypervisor is not the test machine). A runner you host yourself is
+# also what must never survive a repository going public: any fork could then
+# execute arbitrary code on it through a pull request. No workflow here names a
+# private runner label, deliberately -- `docs/REPO-STATE.md` holds the history.
+#
+# Cost, since this repository is PRIVATE: runs bill the account's 2 000 free
+# monthly minutes -- about 60 to 70 per push across the five kept workflows.
+# `timeout-minutes` on every job plus the concurrency group below bound that
+# budget; D-15 (one active lot, no commit storms) is what makes it sufficient.
+#
+# `docker` and `pwsh` are preinstalled on `ubuntu-latest`, so the disposable
+# PostGIS harness runs the same command developers run locally. Returning to a
+# local runner is one `runs-on:` line.
+
+on:
+  push:
+    branches: [master]
+    # Skip a push that only touches docs/ or the internal tracking: 7 of 27 pushes from
+    # 2026-09-24 to 2026-10-22 re-ran the whole CI for prose. Patterns apply in
+    # order, the last match decides: everything (dotfiles named explicitly,
+    # since GitHub does not document whether `**` matches them), minus the two
+    # prose trees, plus back the docs/ fixtures the L02 tests read.
+    paths:
+      - "**"
+      - "**/.*"
+      - ".github/**"
+      - "!docs/**"
+      - "!.planning/**"
+      - "docs/audit-stabilisation-2026-09-08/**"
+  pull_request:
+    paths:
+      - "frontend/**"
+      # L02 browser/mapper tests consume these real local SQL-to-HTTP captures.
+      - "docs/audit-stabilisation-2026-09-08/lot-02/cor05-api-fixture.json"
+      - "docs/audit-stabilisation-2026-09-08/lot-02/cor06-api-fixture.json"
+      - "docs/audit-stabilisation-2026-09-08/lot-08/mrr-api-fixture.json"
+      - ".github/workflows/ci-frontend.yml"
+
+concurrency:
+  # A superseded run proves nothing about the new head, so cancel it: a rush of
+  # commits then costs one run instead of one per push. The 19/08 spike on the
+  # old account burned 773 min (39% of a monthly quota) exactly this way. Never
+  # cancel on master -- `master` is the only branch here (strategy `none`), so
+  # in practice every run completes and the cap is `timeout-minutes`.
+  group: ci-frontend-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/master' }}
+
+jobs:
+  ci:
+    name: Build, Check & Test
+    # The JOB-level `ci-frontend-e2e-serial` group that used to sit here was a
+    # property of the removed runner, not of the suite: the CI box ran 3 runner
+    # instances on ONE machine, so two runs of the same commit fought over the
+    # port 5173 that playwright.config.ts hardcodes. Each `ubuntu-latest` job
+    # gets its own VM, so that collision cannot occur and serialising the jobs
+    # would only lengthen the queue. Restore the group before ever pointing this
+    # workflow back at a shared runner.
+    runs-on: ubuntu-latest
+    # Hard cap well under GitHub's 6h default: a hung browser download (apt mirror
+    # outage, 2026-08-19) otherwise burns a full runner-day before being killed.
+    timeout-minutes: 30
+    defaults:
+      run:
+        working-directory: frontend
+
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          # Full history: the debt ratchet of the design gate (qa:gates, 04.8-01, D-29) reads its
+          # reference from git (base branch, SHA before the push) and fails on a shallow clone.
+          fetch-depth: 0
+
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      # --- Node-only gates (no browser, no build artifact needed) ---------------------
+
+      - name: Security gates (public key prefix + bundle scan sentinels)
+        run: npm run security:gates
+
+      - name: QA gates (E2E manifest + build-strict + quality-fixture sentinels, Phase 46-05)
+        run: npm run qa:gates
+        env:
+          # Reference of the debt ratchet on a push: the SHA before it. Empty on a pull request,
+          # where the ratchet reads origin/$GITHUB_BASE_REF.
+          DESIGN_GATE_PUSH_BEFORE: ${{ github.event_name == 'push' && github.event.before || '' }}
+
+      - name: Design gate (D-08 — tokens, police, couleur, plancher typo)
+        run: npm run qa:design
+
+      - name: E2E manifest — exhaustive classification (Phase 46-05)
+        run: npm run test:e2e:manifest
+
+      - name: Playwright no-sleeps guard (Phase 20-02)
+        run: npm run test:e2e:no-sleeps
+
+      # --- Type-check + unit tests -----------------------------------------------------
+
+      # PUBLIC_DC_API_KEY is public by construction (D-10: the frontend prefix
+      # MUST be `dc_anon_`; it is shipped in the browser bundle and checked by
+      # scripts/validate-public-api-key.mjs). It is the same literal
+      # `dc_anon_e2e_fixture` that playwright.config.ts and scripts/test-*.ps1
+      # use, so CI and the local gate run on identical input. Declaring it as a
+      # repository secret would have made a non-secret unauditable and required
+      # configuring a secret on the remote -- neither is wanted.
+      - name: Svelte check (type-check)
+        run: npm run check
+        env:
+          VITE_API_URL: http://127.0.0.1:8000
+          PUBLIC_DC_API_KEY: dc_anon_e2e_fixture
+
+      - name: Vitest
+        run: npm run test
+        env:
+          VITE_API_URL: http://127.0.0.1:8000
+          PUBLIC_DC_API_KEY: dc_anon_e2e_fixture
+
+      # --- Build (strict, Phase 46-05) + prerender proof -------------------------------
+
+      - name: Build (strict — fails on exit!=0 or any Svelte/Vite/Rollup/SvelteKit warning)
+        run: npm run build
+        env:
+          VITE_API_URL: http://127.0.0.1:8000
+          PUBLIC_DC_API_KEY: dc_anon_e2e_fixture
+
+      - name: Verify marketing prerender
+        run: npm run test:prerender
+
+      # KI-P3 / KI-P12: starts server.js (the image entry) on the build and checks the
+      # headers of static, prerendered and /bien answers over HTTP.
+      - name: Served headers (S4 on static and prerendered, noindex on /bien)
+        run: npm run test:served
+
+      # --- Chromium critical E2E gate (Phase 46-05, D-12/D-13) -------------------------
+      # Runs ONLY the `critical`-classified specs from e2e-manifest.json — a fully mocked,
+      # deterministic, no-live-network set (v35-critical.spec.ts's contractual mock +
+      # sibling hermetic specs). `manual`/`legacy` specs (env-gated live smokes, superseded
+      # UAT phases) are intentionally excluded — see e2e-manifest.json and the
+      # deferred items of plan 46-05 (internal tracking).
+
+      # The 2026-08-19 apt-mirror workaround (rewriting the runner's mirrorlist
+      # away from a then-unreachable azure.archive.ubuntu.com) was removed with
+      # the runner port: it patched a one-day outage that is long over, and it
+      # ran `sudo sed` on the runner image on every single run. If a mirror
+      # stalls again, the two `timeout-minutes: 10` below fail the job in
+      # minutes instead of hanging it.
+
+      - name: Install Playwright Chromium
+        run: npx playwright install --with-deps chromium
+        timeout-minutes: 10
+
+      - name: Chromium critical E2E gate
+        run: |
+          set -euo pipefail
+          CRITICAL_SPECS=$(node -e "const manifest = JSON.parse(require('node:fs').readFileSync('e2e-manifest.json', 'utf8')); const specs = Object.entries(manifest.specs).filter(([, entry]) => entry.classification === 'critical').map(([name]) => 'tests/e2e/' + name); if (specs.length === 0) { console.error('no critical spec found'); process.exit(1); } console.log(specs.join(' '));")
+          echo "Critical specs: ${CRITICAL_SPECS}"
+          npx playwright test ${CRITICAL_SPECS} --project=chromium --reporter=line
+        env:
+          VITE_API_URL: http://127.0.0.1:8000
+          PUBLIC_DC_API_KEY: dc_anon_e2e_fixture
+
+      # --- Cross-browser quality matrix (Phase 50, plan 50-08, D-01) --------------------
+      # The ×3 browser coverage is SCOPED to the single quality-matrix spec: the `firefox` and
+      # `webkit` projects of playwright.config.ts carry `testMatch: /matrix-qualite\.spec\.ts/`,
+      # so the rest of the suite stays Chromium-only (D-01 rejects a blanket 3× fan-out on cost
+      # grounds). Declaring those projects is NOT enough to run them — without the two steps
+      # below, `--project=chromium` above would remain the only invocation and the matrix would
+      # never see a second engine (50-RESEARCH.md, Pitfall 1). The Chromium gate above is
+      # untouched: it already runs the matrix spec via the manifest, and these two engines come
+      # IN ADDITION.
+
+      - name: Install Playwright Firefox + WebKit (matrix spec only)
+        run: npx playwright install --with-deps firefox webkit
+        timeout-minutes: 10
+
+      - name: Cross-browser quality matrix (Firefox + WebKit)
+        run: npx playwright test tests/e2e/matrix-qualite.spec.ts --project=firefox --project=webkit --reporter=line
+        env:
+          VITE_API_URL: http://127.0.0.1:8000
+          PUBLIC_DC_API_KEY: dc_anon_e2e_fixture

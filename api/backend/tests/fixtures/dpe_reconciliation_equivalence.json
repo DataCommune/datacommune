@@ -1,0 +1,64 @@
+{
+ "rows": [
+  "{'numero_dpe': 'kept-1', 'code_departement': '44', 'code_insee': '44109', 'identifiant_ban': 'fixture-ban', 'regime_dpe': 'existant', 'etiquette_dpe': 'B', 'surface_habitable': Decimal('90.1'), 'date_etablissement_dpe': None, 'date_fin_validite_dpe': None, 'numero_dpe_remplace': None, 'geom': 'fixture-position', 'source_observations': [{'source_slug': 'dpe03existant', 'department': '44', 'source_version': '254b45594f0a42e657f2087b8f41fa491c03087735d8548130312c8669a27e44', 'observed_at': '2026-09-06T11:00:00Z', 'last_seen_at': '2026-09-06T11:00:00Z', 'state': 'present', 'import_id': 'second'}], 'source_state': 'present', 'source_snapshot_at': '2026-09-06T11:00:00Z', 'is_tombstone': False, 'lifecycle_facts': {'replacement_state': 'not_checked', 'graph_issues': [], 'date_issues': []}, 'revision_evidence': {'status': 'unverified', 'kind': None, 'revision_date': None, 'verified_at': None, 'evidence_sha256': None, 'official_source': None}}",
+  "{'numero_dpe': 'new-1', 'code_departement': '44', 'code_insee': '44109', 'identifiant_ban': 'fixture-ban', 'regime_dpe': 'existant', 'etiquette_dpe': 'C', 'surface_habitable': Decimal('90.1'), 'date_etablissement_dpe': datetime.date(2026, 1, 2), 'date_fin_validite_dpe': None, 'numero_dpe_remplace': None, 'geom': 'fixture-position', 'source_observations': [{'source_slug': 'dpe03existant', 'department': '44', 'source_version': '254b45594f0a42e657f2087b8f41fa491c03087735d8548130312c8669a27e44', 'observed_at': '2026-09-06T11:00:00Z', 'last_seen_at': '2026-09-06T11:00:00Z', 'state': 'present', 'import_id': 'second'}], 'source_state': 'present', 'source_snapshot_at': '2026-09-06T11:00:00Z', 'is_tombstone': False, 'lifecycle_facts': {'replacement_state': 'not_checked', 'graph_issues': [], 'date_issues': []}, 'revision_evidence': {'status': 'unverified', 'kind': None, 'revision_date': None, 'verified_at': None, 'evidence_sha256': None, 'official_source': None}}",
+  "{'numero_dpe': 'dup-1', 'code_departement': '44', 'code_insee': '44109', 'identifiant_ban': 'fixture-ban', 'regime_dpe': None, 'etiquette_dpe': 'C', 'surface_habitable': Decimal('90.1'), 'date_etablissement_dpe': None, 'date_fin_validite_dpe': None, 'numero_dpe_remplace': None, 'geom': 'fixture-position', 'source_observations': [{'source_slug': 'dpe02neuf', 'department': '44', 'source_version': '1d490a9443ba0b69b0e943b064c9091b65e177bc5ff73addbe03fbfa60bf4919', 'observed_at': '2026-09-06T11:00:00Z', 'last_seen_at': '2026-09-06T11:00:00Z', 'state': 'present', 'import_id': 'second'}, {'source_slug': 'dpe03existant', 'department': '44', 'source_version': '254b45594f0a42e657f2087b8f41fa491c03087735d8548130312c8669a27e44', 'observed_at': '2026-09-06T11:00:00Z', 'last_seen_at': '2026-09-06T11:00:00Z', 'state': 'present', 'import_id': 'second'}], 'source_state': 'present', 'source_snapshot_at': '2026-09-06T11:00:00Z', 'is_tombstone': False, 'lifecycle_facts': {'replacement_state': 'not_checked', 'graph_issues': [], 'date_issues': []}, 'revision_evidence': {'status': 'unverified', 'kind': None, 'revision_date': None, 'verified_at': None, 'evidence_sha256': None, 'official_source': None}}",
+  "{'numero_dpe': 'dates-1', 'code_departement': '44', 'code_insee': '44109', 'identifiant_ban': 'fixture-ban', 'regime_dpe': 'existant', 'etiquette_dpe': 'C', 'surface_habitable': Decimal('90.1'), 'date_etablissement_dpe': None, 'date_fin_validite_dpe': None, 'numero_dpe_remplace': None, 'geom': 'fixture-position', 'source_observations': [{'source_slug': 'dpe03existant', 'department': '44', 'source_version': '254b45594f0a42e657f2087b8f41fa491c03087735d8548130312c8669a27e44', 'observed_at': '2026-09-06T11:00:00Z', 'last_seen_at': '2026-09-06T11:00:00Z', 'state': 'present', 'import_id': 'second'}], 'source_state': 'present', 'source_snapshot_at': '2026-09-06T11:00:00Z', 'is_tombstone': False, 'lifecycle_facts': {'replacement_state': 'not_checked', 'graph_issues': [], 'date_issues': ['invalid_establishment_date']}, 'revision_evidence': {'status': 'unverified', 'kind': None, 'revision_date': None, 'verified_at': None, 'evidence_sha256': None, 'official_source': None}}",
+  "{'numero_dpe': 'kept-2', 'code_departement': '44', 'code_insee': '44109', 'identifiant_ban': 'fixture-ban', 'regime_dpe': None, 'etiquette_dpe': 'C', 'surface_habitable': Decimal('90.1'), 'date_etablissement_dpe': None, 'date_fin_validite_dpe': None, 'numero_dpe_remplace': None, 'geom': 'fixture-position', 'source_observations': [{'source_slug': 'dpe02neuf', 'department': '44', 'source_version': '1d490a9443ba0b69b0e943b064c9091b65e177bc5ff73addbe03fbfa60bf4919', 'observed_at': '2026-09-06T11:00:00Z', 'last_seen_at': '2026-09-06T11:00:00Z', 'state': 'present', 'import_id': 'second'}, {'source_slug': 'dpe03existant', 'department': '44', 'source_version': '254b45594f0a42e657f2087b8f41fa491c03087735d8548130312c8669a27e44', 'observed_at': '2026-09-06T11:00:00Z', 'last_seen_at': '2026-09-01T08:00:00Z', 'state': 'absent_from_complete_scope', 'import_id': 'second'}], 'source_state': 'present', 'source_snapshot_at': '2026-09-06T11:00:00Z', 'is_tombstone': False, 'lifecycle_facts': {'replacement_state': 'not_checked', 'graph_issues': [], 'date_issues': []}, 'revision_evidence': {'status': 'unverified', 'kind': None, 'revision_date': None, 'verified_at': None, 'evidence_sha256': None, 'official_source': None}}",
+  "{'numero_dpe': 'moved-1', 'code_departement': '85', 'code_insee': '85109', 'identifiant_ban': 'fixture-ban', 'regime_dpe': 'existant', 'etiquette_dpe': 'C', 'surface_habitable': Decimal('90.1'), 'date_etablissement_dpe': None, 'date_fin_validite_dpe': None, 'numero_dpe_remplace': None, 'geom': 'fixture-position', 'source_observations': [{'source_slug': 'dpe03existant', 'department': '44', 'source_version': '254b45594f0a42e657f2087b8f41fa491c03087735d8548130312c8669a27e44', 'observed_at': '2026-09-06T11:00:00Z', 'last_seen_at': '2026-09-01T08:00:00Z', 'state': 'absent_from_complete_scope', 'import_id': 'second'}, {'source_slug': 'dpe03existant', 'department': '85', 'source_version': '254b45594f0a42e657f2087b8f41fa491c03087735d8548130312c8669a27e44', 'observed_at': '2026-09-06T11:00:00Z', 'last_seen_at': '2026-09-06T11:00:00Z', 'state': 'present', 'import_id': 'second'}], 'source_state': 'present', 'source_snapshot_at': '2026-09-06T11:00:00Z', 'is_tombstone': False, 'lifecycle_facts': {'replacement_state': 'not_checked', 'graph_issues': [], 'date_issues': []}, 'revision_evidence': {'status': 'unverified', 'kind': None, 'revision_date': None, 'verified_at': None, 'evidence_sha256': None, 'official_source': None}}",
+  "{'numero_dpe': 'tomb-1', 'code_departement': '85', 'code_insee': '85109', 'identifiant_ban': 'fixture-ban', 'regime_dpe': None, 'etiquette_dpe': 'C', 'surface_habitable': Decimal('90.1'), 'date_etablissement_dpe': None, 'date_fin_validite_dpe': None, 'numero_dpe_remplace': None, 'geom': 'fixture-position', 'source_observations': [{'source_slug': 'dpe02neuf', 'department': '85', 'source_version': '1d490a9443ba0b69b0e943b064c9091b65e177bc5ff73addbe03fbfa60bf4919', 'observed_at': '2026-09-06T11:00:00Z', 'last_seen_at': '2026-09-06T11:00:00Z', 'state': 'present', 'import_id': 'second'}, {'source_slug': 'dpe03existant', 'department': '85', 'source_version': '254b45594f0a42e657f2087b8f41fa491c03087735d8548130312c8669a27e44', 'observed_at': '2026-09-06T11:00:00Z', 'last_seen_at': '2026-09-01T08:00:00Z', 'state': 'absent_from_complete_scope', 'import_id': 'second'}], 'source_state': 'present', 'source_snapshot_at': '2026-09-06T11:00:00Z', 'is_tombstone': False, 'lifecycle_facts': {'replacement_state': 'not_checked', 'graph_issues': [], 'date_issues': []}, 'revision_evidence': {'status': 'unverified', 'kind': None, 'revision_date': None, 'verified_at': None, 'evidence_sha256': None, 'official_source': None}}",
+  "{'id': 519, 'numero_dpe': 'gone-1', 'code_departement': '44', 'code_insee': '44109', 'identifiant_ban': 'ban-gone-1', 'regime_dpe': 'existant', 'etiquette_dpe': None, 'surface_habitable': None, 'date_etablissement_dpe': None, 'date_fin_validite_dpe': None, 'numero_dpe_remplace': 'gone-0', 'adresse_brut': None, 'geom': None, 'source_observations': [{'source_slug': 'dpe03existant', 'department': '44', 'source_version': '254b45594f0a42e657f2087b8f41fa491c03087735d8548130312c8669a27e44', 'observed_at': '2026-09-06T11:00:00Z', 'last_seen_at': '2026-09-01T08:00:00Z', 'state': 'absent_from_complete_scope', 'import_id': 'second'}], 'source_state': 'absent_from_complete_scope', 'source_snapshot_at': '2026-09-06T11:00:00Z', 'is_tombstone': True, 'lifecycle_facts': {'replacement_state': 'not_checked', 'graph_issues': [], 'date_issues': []}, 'revision_evidence': {'status': 'unverified', 'kind': None, 'revision_date': None, 'verified_at': None, 'evidence_sha256': None, 'official_source': None}}",
+  "{'id': 723, 'numero_dpe': 'legacy-1', 'code_departement': '44', 'code_insee': '44109', 'identifiant_ban': 'ban-legacy-1', 'regime_dpe': 'neuf', 'etiquette_dpe': None, 'surface_habitable': None, 'date_etablissement_dpe': None, 'date_fin_validite_dpe': None, 'numero_dpe_remplace': None, 'adresse_brut': None, 'geom': None, 'source_observations': [], 'source_state': 'absent_from_complete_scope', 'source_snapshot_at': '2026-09-06T11:00:00Z', 'is_tombstone': True, 'lifecycle_facts': {'replacement_state': 'not_checked', 'graph_issues': [], 'date_issues': []}, 'revision_evidence': {'status': 'unverified', 'kind': None, 'revision_date': None, 'verified_at': None, 'evidence_sha256': None, 'official_source': None}}",
+  "{'id': 520, 'numero_dpe': 'gone-2', 'code_departement': '85', 'code_insee': '85109', 'identifiant_ban': 'ban-gone-2', 'regime_dpe': 'existant', 'etiquette_dpe': None, 'surface_habitable': None, 'date_etablissement_dpe': None, 'date_fin_validite_dpe': None, 'numero_dpe_remplace': None, 'adresse_brut': None, 'geom': None, 'source_observations': [{'source_slug': 'dpe03existant', 'department': '85', 'source_version': '254b45594f0a42e657f2087b8f41fa491c03087735d8548130312c8669a27e44', 'observed_at': '2026-09-06T11:00:00Z', 'last_seen_at': '2026-09-01T08:00:00Z', 'state': 'absent_from_complete_scope', 'import_id': 'second'}], 'source_state': 'absent_from_complete_scope', 'source_snapshot_at': '2026-09-06T11:00:00Z', 'is_tombstone': True, 'lifecycle_facts': {'replacement_state': 'not_checked', 'graph_issues': [], 'date_issues': []}, 'revision_evidence': {'status': 'unverified', 'kind': None, 'revision_date': None, 'verified_at': None, 'evidence_sha256': None, 'official_source': None}}"
+ ],
+ "errors": {
+  "duplicate_previous": [
+   "ValueError",
+   "Invalid or duplicate DPE previous identity"
+  ],
+  "blank_previous": [
+   "ValueError",
+   "Invalid or duplicate DPE previous identity"
+  ],
+  "non_text_previous": [
+   "ValueError",
+   "Invalid or duplicate DPE previous identity"
+  ],
+  "previous_outside_scope": [
+   "ValueError",
+   "DPE previous row outside complete scope"
+  ],
+  "previous_snapshot_later": [
+   "ValueError",
+   "DPE snapshot predates previous observation"
+  ],
+  "previous_observation_later": [
+   "ValueError",
+   "DPE snapshot predates previous observation"
+  ],
+  "malformed_previous_provenance": [
+   "ValueError",
+   "Invalid DPE previous provenance"
+  ],
+  "incoming_outside_raw_scope": [
+   "ValueError",
+   "DPE transformed row outside raw scope"
+  ],
+  "historical_not_transformed": [
+   "ValueError",
+   "Historical DPE present but not transformed"
+  ],
+  "coverage_incomplete": [
+   "ValueError",
+   "DPE transformation coverage is incomplete"
+  ],
+  "incoming_unknown": [
+   "ValueError",
+   "DPE transformed row absent from raw registry"
+  ],
+  "first_error_wins": [
+   "ValueError",
+   "DPE previous row outside complete scope"
+  ]
+ }
+}

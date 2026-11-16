@@ -1,0 +1,10 @@
+# allow crawling everything by default
+User-agent: *
+Disallow:
+# /bien/ is deliberately NOT disallowed (KI-P12). DVF sales may not be indexed, and the way to
+# forbid that is a noindex that crawlers can read: /bien/* answers with `x-robots-tag: noindex,
+# nofollow` (hooks.server.ts), and /adresse/* (which shows the sales) carries the same header and
+# a robots meta. A Disallow here would stop crawlers from fetching the URL, so they would never
+# see the noindex and could still list the bare URL.
+
+Sitemap: https://datacommune.fr/sitemap.xml

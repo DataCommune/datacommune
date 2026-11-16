@@ -1,0 +1,59 @@
+{
+	"name": "datacommune-frontend",
+	"private": true,
+	"version": "0.0.1",
+	"license": "AGPL-3.0-or-later",
+	"type": "module",
+	"scripts": {
+		"dev": "vite dev",
+		"build:app": "vite build",
+		"build": "node scripts/run-build-strict.mjs && node scripts/strip-source-maps.mjs",
+		"preview": "vite preview",
+		"prepare": "svelte-kit sync || echo ''",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"test": "vitest run",
+		"test:watch": "vitest",
+		"test:e2e:no-sleeps": "node scripts/check-no-playwright-sleeps.mjs",
+		"test:e2e:manifest": "node scripts/check-e2e-manifest.mjs",
+		"test:prerender": "node scripts/check-marketing-prerender.mjs",
+		"test:served": "node --test scripts/served-headers.test.mjs scripts/served-titles.test.mjs scripts/served-redirections.test.mjs",
+		"qa:gates": "node --test scripts/qa-gates.test.mjs",
+		"qa:design": "node scripts/check-design-gate.mjs",
+		"security:gates": "node --test scripts/security-gates.test.mjs",
+		"security:validate-key": "node scripts/validate-public-api-key.mjs",
+		"security:scan-bundle": "node scripts/scan-public-bundle.mjs build",
+		"release:guard": "node --env-file-if-exists=.env scripts/validate-public-api-key.mjs && npm run build && npm run security:scan-bundle"
+	},
+	"devDependencies": {
+		"@axe-core/playwright": "^4.12.1",
+		"@playwright/test": "^1.58.2",
+		"@resvg/resvg-wasm": "2.6.2",
+		"@sveltejs/adapter-node": "5.5.7",
+		"@sveltejs/kit": "^2.60.1",
+		"@sveltejs/vite-plugin-svelte": "^6.2.4",
+		"@tailwindcss/vite": "^4.2.2",
+		"@testing-library/jest-dom": "^6.9.1",
+		"@testing-library/svelte": "^5.3.1",
+		"@types/leaflet": "1.9.22",
+		"@types/node": "^25.5.0",
+		"jsdom": "^29.0.1",
+		"svelte": "^5.56.6",
+		"svelte-check": "^4.4.2",
+		"tailwindcss": "^4.2.2",
+		"typescript": "^5.9.3",
+		"vite": "^7.3.7",
+		"vitest": "^4.1.11"
+	},
+	"packageManager": "npm@10.9.2",
+	"overrides": {
+		"@sveltejs/kit": {
+			"cookie": "^0.7.2"
+		},
+		"undici": "^7.29.1",
+		"sharp": "0.35.4"
+	},
+	"dependencies": {
+		"leaflet": "1.9.4"
+	}
+}

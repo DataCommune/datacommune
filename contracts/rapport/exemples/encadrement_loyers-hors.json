@@ -1,0 +1,31 @@
+{
+  "id": "encadrement_loyers",
+  "section": "marche",
+  "titre": "Encadrement des loyers",
+  "etat": "non_concerne",
+  "ton": "neutre",
+  "granularite": {
+    "niveau": "commune",
+    "rayon_m": null
+  },
+  "verdict": "La commune n'est pas dans la liste des communes à loyers encadrés.",
+  "chiffres": [],
+  "details": {
+    "commune": "44109",
+    "liste_verifiee_le": "2026-10-29"
+  },
+  "rattachement": null,
+  "sources": [
+    {
+      "cle": "encadrement_communes",
+      "nom": "Communes à encadrement du niveau des loyers (loi ELAN, article 140)",
+      "producteur": "Naistor, d'après les décrets et arrêtés préfectoraux",
+      "url": "https://www.data.gouv.fr/datasets/6ae3c8c1252503d60d5c00df",
+      "licence": "Licence Ouverte 2.0",
+      "millesime": "2026-10-29",
+      "mode": "direct"
+    }
+  ],
+  "motif": null,
+  "pannes_partielles": []
+}

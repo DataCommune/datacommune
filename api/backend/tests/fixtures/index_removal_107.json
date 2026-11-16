@@ -1,0 +1,53 @@
+{
+  "source": {
+    "registre": "internal tracking, phase 4.1: 04.1-INDEX-EXPLAIN.md",
+    "catalogue": "internal tracking, phase 4.1: mesures/index/catalogue-index-23.json",
+    "catalogue_sha256": "3b373e8b0b3ee0082697e29c8b30d1ebae29f6064a60c6605c4dab644e3f5f1c",
+    "explain": "internal tracking, phase 4.1: mesures/index/explain-23.json",
+    "commit": "4844f202"
+  },
+  "retires": [
+    {
+      "index": "idx_mutations_position",
+      "table": "mutations",
+      "partitionne": true,
+      "definition_ct102": "CREATE INDEX idx_mutations_position ON ONLY public.mutations USING gist (\"position\")",
+      "forme": "USING gist (\"position\")"
+    },
+    {
+      "index": "idx_mutations_position_geog",
+      "table": "mutations",
+      "partitionne": true,
+      "definition_ct102": "CREATE INDEX idx_mutations_position_geog ON ONLY public.mutations USING gist (geography(\"position\"))",
+      "forme": "USING gist (geography(\"position\"))"
+    },
+    {
+      "index": "idx_mutations_grain_position",
+      "table": "mutations_grain",
+      "partitionne": true,
+      "definition_ct102": "CREATE INDEX idx_mutations_grain_position ON ONLY public.mutations_grain USING gist (\"position\")",
+      "forme": "USING gist (\"position\")"
+    },
+    {
+      "index": "idx_mutation_parcelles_id_mutation",
+      "table": "mutation_parcelles",
+      "partitionne": false,
+      "definition_ct102": "CREATE INDEX idx_mutation_parcelles_id_mutation ON public.mutation_parcelles USING btree (id_mutation)",
+      "forme": "USING btree (id_mutation)"
+    },
+    {
+      "index": "idx_dpe_position",
+      "table": "diagnostics_dpe",
+      "partitionne": false,
+      "definition_ct102": "CREATE INDEX idx_dpe_position ON public.diagnostics_dpe USING gist (\"position\")",
+      "forme": "USING gist (\"position\")"
+    }
+  ],
+  "gardes": [
+    {"index": "idx_dpe_etiquette_dpe", "table": "diagnostics_dpe"},
+    {"index": "idx_dpe_code_insee", "table": "diagnostics_dpe"},
+    {"index": "idx_foncier_pm_denomination", "table": "foncier_pm"},
+    {"index": "idx_foncier_pm_code_parcelle", "table": "foncier_pm"},
+    {"index": "idx_foncier_pm_numero_siren", "table": "foncier_pm"}
+  ]
+}

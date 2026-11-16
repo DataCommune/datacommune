@@ -1,0 +1,59 @@
+{
+  "statut": "ok",
+  "donnees": {
+    "centre": {
+      "lon": -3.5,
+      "lat": 46.5
+    },
+    "emprise": {
+      "ouest": -3.513733,
+      "sud": 46.490546,
+      "est": -3.486267,
+      "nord": 46.509452
+    },
+    "parcelle_adresse": {
+      "etat": "value",
+      "id_parcelle": "00000000ZA0001",
+      "motif": null,
+      "nombre_parcelles": null
+    },
+    "parcelles": {
+      "etat": "value",
+      "motif": null
+    },
+    "ventes": {
+      "etat": "value",
+      "motif": null,
+      "periode": "2021-2025",
+      "annee_debut": 2021
+    },
+    "cadastre_millesime": "2026-07",
+    "fond": {
+      "attribution": "© IGN (Plan IGN)",
+      "licence": "Licence Ouverte 2.0"
+    }
+  },
+  "meta": {
+    "source": [
+      {
+        "nom": "Base Adresse Nationale (BAN)",
+        "licence": "Licence Ouverte 2.0",
+        "url": "https://adresse.data.gouv.fr",
+        "producteur": "DINUM / IGN"
+      },
+      {
+        "nom": "Cadastre Etalab",
+        "licence": "Licence Ouverte 1.0",
+        "url": "https://cadastre.data.gouv.fr",
+        "producteur": "DGFiP / Etalab"
+      },
+      {
+        "nom": "Demandes de valeurs foncières (DVF)",
+        "licence": "Licence Ouverte 2.0",
+        "url": "https://www.data.gouv.fr/datasets/demandes-de-valeurs-foncieres-geolocalisees",
+        "producteur": "DGFiP / Etalab"
+      }
+    ],
+    "resolution": null
+  }
+}

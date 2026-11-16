@@ -1,0 +1,18 @@
+# Owner acceptance overlay — work base CT on the hypervisor (plan 03-13, option A of the
+# gate decided by Ianis on 2026-09-24).
+#
+# Temporary: applied by `workbase-recette.sh up` (private hypervisor script), withdrawn by
+# `workbase-recette.sh down`, which recreates `api` with the work
+# base overlay alone (loopback only) and proves that no LAN listener is left.
+# Never used by any other command.
+#
+# Adds ONE publication of the API port, on the CT's own LAN address only
+# (RECETTE_BIND_IP = WORKBASE_IP of the hypervisor's local settings, checked against the
+# CT's addresses by the script), next to the loopback one of
+# docker-compose.workbase.yml. Never 0.0.0.0. Nothing else changes: same
+# image, same environment, key required by the API on every data route.
+
+services:
+  api:
+    ports:
+      - "${RECETTE_BIND_IP:?RECETTE_BIND_IP must be the CT LAN address}:8000:8000"

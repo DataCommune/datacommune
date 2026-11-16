@@ -1,0 +1,53 @@
+{
+  "id": "seveso",
+  "section": "risques",
+  "titre": "Sites Seveso",
+  "etat": "ok",
+  "ton": "neutre",
+  "granularite": {
+    "niveau": "rayon",
+    "rayon_m": 5000
+  },
+  "verdict": "Site Seveso seuil bas le plus proche : THE VALSPAR (FRANCE) CORP S.A., à 4,1 km.",
+  "chiffres": [
+    {
+      "id": "sites",
+      "libelle": "Sites Seveso à 5 km",
+      "valeur": 1,
+      "unite": "count",
+      "millesime": "2026-10-30"
+    },
+    {
+      "id": "distance",
+      "libelle": "Site le plus proche",
+      "valeur": 4081,
+      "unite": "metre",
+      "millesime": "2026-10-30"
+    }
+  ],
+  "details": {
+    "sites": [
+      {
+        "nom": "THE VALSPAR (FRANCE) CORP S.A.",
+        "seuil": "bas",
+        "distance_m": 4081,
+        "activite": "En exploitation avec titre"
+      }
+    ],
+    "liste_incomplete": false
+  },
+  "rattachement": null,
+  "sources": [
+    {
+      "cle": "georisques",
+      "nom": "Géorisques",
+      "producteur": "BRGM / MTE",
+      "url": "https://www.georisques.gouv.fr",
+      "licence": "Licence Ouverte 2.0",
+      "millesime": "2026-10-30",
+      "mode": "direct"
+    }
+  ],
+  "motif": null,
+  "pannes_partielles": []
+}

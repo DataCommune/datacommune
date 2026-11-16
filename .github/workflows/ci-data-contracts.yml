@@ -1,0 +1,447 @@
+name: CI Data Contracts
+
+# Runner: `ubuntu-latest`, GitHub-hosted. The private runner on the hypervisor is
+# stopped and is not coming back -- plan 01-07 ported every kept workflow off it
+# (REPO-04; D-13: the hypervisor is not the test machine). A runner you host yourself is
+# also what must never survive a repository going public: any fork could then
+# execute arbitrary code on it through a pull request. No workflow here names a
+# private runner label, deliberately -- `docs/REPO-STATE.md` holds the history.
+#
+# Cost, since this repository is PRIVATE: runs bill the account's 2 000 free
+# monthly minutes -- about 60 to 70 per push across the five kept workflows.
+# `timeout-minutes` on every job plus the concurrency group below bound that
+# budget; D-15 (one active lot, no commit storms) is what makes it sufficient.
+#
+# `docker` and `pwsh` are preinstalled on `ubuntu-latest`, so the disposable
+# PostGIS harness runs the same command developers run locally. Returning to a
+# local runner is one `runs-on:` line.
+
+# Phase 43 (contrats semantiques & golden cases) gate: offline suites run
+# first (backend pytest + frontend vitest, no DB/network), then the
+# disposable PostGIS harness from Plan 43-01 reuses the same local command
+# (scripts/run_contract_integration.ps1) that developers run locally. No
+# live secret, no protected environment — everything here is either fully
+# offline or a fresh throwaway container destroyed at the end of the job.
+
+on:
+  push:
+    branches: [master]
+    # Skip a push that only touches docs/ or the internal tracking: 7 of 27 pushes from
+    # 2026-09-24 to 2026-10-22 re-ran the whole CI for prose. Patterns apply in
+    # order, the last match decides: everything (dotfiles named explicitly,
+    # since GitHub does not document whether `**` matches them), minus the two
+    # prose trees, plus back the files tests read there -- the docs/ fixtures
+    # and the V1 key list of tests/integration/test_route_scope_conformity.py.
+    # Every source still reaches the PostGIS gate (test_stabilisation_ci_gate.py).
+    paths:
+      - "**"
+      - "**/.*"
+      - ".github/**"
+      - "!docs/**"
+      - "!.planning/**"
+      - "docs/audit-stabilisation-2026-09-08/**"
+      - ".planning/phases/02-donnees-reparees-rejouables/02-DATASETS.md"
+  pull_request:
+    paths:
+      - "api/backend/**"
+      - "api/docker/Dockerfile"
+      - "docs/audit-stabilisation-2026-09-08/lot-11/recovery/probe.py"
+      - "docs/audit-stabilisation-2026-09-08/lot-02/cor06-sources/**"
+      - "docs/audit-stabilisation-2026-09-08/lot-08/mrr-api-fixture.json"
+      - "contracts/fiche-fields.v1.json"
+      - "contracts/golden-cases/v1/manifest.json"
+      - "contracts/golden-cases/v1/schema.json"
+      - "api/backend/app/common/fiche-fields.v1.json"
+      - "api/backend/app/etl_fiscalite/pipeline.py"
+      - "api/backend/app/etl_dpe/**"
+      - "api/backend/app/dpe/**"
+      - "api/backend/app/commune/**"
+      - "api/backend/app/resolve/multi.py"
+      - "api/backend/migrations/versions/091_dpe_source_lifecycle.py"
+      - "api/backend/app/logements/queries.py"
+      - "api/backend/migrations/versions/073_semantic_contracts.py"
+      - "api/backend/scripts/preflight_semantic_contracts.py"
+      - "api/backend/scripts/select_golden_cases.py"
+      - "api/backend/scripts/sync_semantic_contract.py"
+      - "api/backend/scripts/verify_golden_cases.py"
+      - "api/backend/tests/etl/**"
+      - "api/backend/tests/conftest.py"
+      - "api/backend/tests/test_offline_database_guard.py"
+      - "api/backend/tests/test_recovery_resource_ownership.py"
+      - "api/backend/tests/test_resource_owner_contract.py"
+      - "api/backend/tests/test_semantic_contract.py"
+      - "api/backend/tests/test_golden_cases_contract.py"
+      - "api/backend/tests/integration/**"
+      # test_public_national_reset.py plays these SQL files and reads the table and
+      # role lists of public-db-restore.sh.
+      - "infra/public/*.sql"
+      - "infra/public/public-db-restore.sh"
+      # test_accounts_backup_restore.py reads the table list of accounts-dump.sh.
+      - "infra/public/accounts-dump.sh"
+      # test_purge_unverified_accounts.py plays the purge script on a migrated base.
+      - "api/backend/scripts/purge_unverified_accounts.py"
+      - "api/docker-compose.contract-tests.yml"
+      - "api/backend/scripts/run_contract_integration.ps1"
+      # Invocation ownership is shared by the DB harness and local web runners.
+      - "scripts/test-*.ps1"
+      - "scripts/start-test-web.ps1"
+      - "scripts/stop-resources.ps1"
+      - "scripts/serve-recette.ps1"
+      - "scripts/tests/**"
+      - "frontend/playwright*.ts"
+      - "frontend/tests/e2e/fixtures/ports.ts"
+      - "frontend/tests/e2e/fixtures/dpe-source-server.ts"
+      - "frontend/src/lib/data/__fixtures__/golden-cases.ts"
+      - "frontend/src/lib/data/semantic-contract.test.ts"
+      - "frontend/src/lib/data/golden-cases.test.ts"
+      - "frontend/src/lib/data/fiche-fields.v1.json"
+      - ".github/workflows/ci-data-contracts.yml"
+
+concurrency:
+  # A superseded run proves nothing about the new head, so cancel it: a rush of
+  # commits then costs one run instead of one per push. The 19/08 spike on the
+  # old account burned 773 min (39% of a monthly quota) exactly this way. Never
+  # cancel on master -- `master` is the only branch here (strategy `none`), so
+  # in practice every run completes and the cap is `timeout-minutes`.
+  group: ci-data-contracts-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/master' }}
+
+jobs:
+  resource-ownership:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      # Every Docker/process/network command is intercepted by the test workers.
+      # This checks the same ownership scripts without starting any service.
+      - name: Verify invocation ownership with intercepted commands
+        shell: pwsh
+        run: ./scripts/tests/test-resource-isolation.ps1
+      - name: Preserve ownership simulation results
+        if: ${{ always() }}
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: resource-ownership-${{ github.run_id }}-${{ github.run_attempt }}
+          if-no-files-found: error
+          path: reports/reliability-lot0/
+
+  offline-backend:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: api/backend
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - uses: astral-sh/setup-uv@cec208311dfd045dd5311c1add060b2062131d57 # v8.0.0
+      - run: uv sync --locked --group dev
+      - run: uv run python -m scripts.sync_semantic_contract --check
+      - run: >-
+          uv run pytest
+          tests/etl/test_fiscalite_transform.py
+          tests/etl/test_checkpoint.py
+          tests/etl/test_runner.py
+          tests/etl/test_resume_contract.py
+          tests/etl/test_dpe_archive_generation.py
+          tests/test_semantic_contract.py
+          tests/test_golden_cases_contract.py
+          tests/test_stabilisation_ci_gate.py
+          tests/test_recovery_image_ci_contract.py
+          tests/test_resource_owner_contract.py
+          tests/test_offline_database_guard.py
+          tests/test_recovery_resource_ownership.py
+          tests/test_commune_indicator_activation_wiring.py
+          tests/test_commune_indicator_adoption.py
+          tests/test_commune_indicator_evidence.py
+          tests/test_commune_indicator_real_comparison.py
+          tests/test_commune_indicator_policy.py
+          tests/test_commune_indicator_query_wiring.py
+          -v --tb=short
+        env:
+          DEBUG: "true"
+
+  offline-frontend:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci
+      - run: >-
+          npx vitest run
+          src/lib/data/semantic-contract.test.ts
+          src/lib/data/golden-cases.test.ts
+
+  # CR-02 (Phase 48 review): the generated artifacts produced under the anti-PII
+  # constraint had no automatic trigger at all — a hand-edit reintroducing a real
+  # address, a coordinate or a cadastral reference would merge without any scanner
+  # running. This job scans both of them: the golden manifest and the frontend
+  # golden fixture. (A third one, the landing's public snapshot, was removed with
+  # the landing in plan 03-05, D-38, together with its two validators.)
+  # Secret-free by construction: the --audit-artifacts-only mode of
+  # verify_golden_cases.py is fully offline (no DSN, no key, no network) and
+  # refuses every live option itself. No `needs:` on purpose — this is a leak
+  # gate, it must run even when another suite fails.
+  audit-artifacts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: api/backend
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - uses: astral-sh/setup-uv@cec208311dfd045dd5311c1add060b2062131d57 # v8.0.0
+      - run: uv sync --locked --group dev
+      - run: >-
+          uv run python scripts/verify_golden_cases.py
+          --audit-artifacts-only
+          --manifest ../../contracts/golden-cases/v1/manifest.json
+          --frontend-fixture ../../frontend/src/lib/data/__fixtures__/golden-cases.ts
+
+  postgis-integration:
+    needs: [resource-ownership, offline-backend, offline-frontend]
+    runs-on: ubuntu-latest
+    # 45, not 30: this job provisions a disposable PostGIS container and replays
+    # 46 integration files plus two golden SQL probes through it. Measured at
+    # ~20 min locally; the extra margin covers a cold image pull on the runner.
+    timeout-minutes: 45
+    defaults:
+      run:
+        working-directory: api/backend
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          # test_migration_100_rollback.py extracts the previous deployed SHA
+          # (git archive) to run the old application: full history needed.
+          fetch-depth: 0
+      - uses: astral-sh/setup-uv@cec208311dfd045dd5311c1add060b2062131d57 # v8.0.0
+      - run: uv sync --locked --group dev
+      # Same local command developers run (scripts/run_contract_integration.ps1,
+      # Phase 43-01): provisions a disposable PostGIS container, runs the given
+      # test paths, and always tears the container down afterwards.
+      #
+      # test_rnb_liens_elargissement.py guards the "widening unit is the
+      # BUILDING, never the parcel" doctrine (Guerande regression, 2026-08-04).
+      # It only holds against a real PostgreSQL: the partition is decided by
+      # TEXT[] containment inside the SQL, so a fabricated result set would
+      # merely replay the rows the test wrote itself. Keep it listed here --
+      # ci-api.yml ignores tests/integration entirely.
+      #
+      # This list is reconciled against the tests/integration/ directory by
+      # tests/test_integration_collection_contract.py (run by ci-api.yml): a
+      # file added there but missing here turns CI red on the same push.
+      # test_ban_rep_ordering.py guards the resolve repetition ranking
+      # (2026-08-07 measurement: 9/14 corpus repetitions got a wrong ban_id):
+      # the tiebreak lives in the SQL ORDER BY, only a real PostGIS can tie
+      # word_similarity scores and break them on `rep`.
+      - shell: pwsh
+        run: >-
+          ./scripts/run_contract_integration.ps1
+          tests/integration/test_postgis_harness.py
+          tests/integration/test_cadastre_makevalid.py
+          tests/integration/test_recovery_partial_start.py
+          tests/integration/test_fiscalite_migration.py
+          tests/integration/test_demographie_backfill.py
+          tests/integration/test_rnb_liens_elargissement.py
+          tests/integration/test_bdnb_pipeline.py
+          tests/integration/test_bdnb_fidelite.py
+          tests/integration/test_ban_rep_ordering.py
+          tests/integration/test_adresse_contract.py
+          tests/integration/test_dpe_inventory_generation.py
+          tests/integration/test_dpe_document_publication_routes.py
+          tests/integration/test_dpe_source_staging.py
+          tests/integration/test_dpe_archive_generation.py
+          tests/integration/test_dpe_without_geometry.py
+          tests/integration/test_dpe_rattachement_adresse_brute.py
+          tests/integration/test_dpe_consumer_population.py
+          tests/integration/test_cor01_validation.py
+          tests/integration/test_etl_dry_run.py
+          tests/integration/test_etl_resume_contract.py
+          tests/integration/test_etl_runs_orphelins.py
+          tests/integration/test_flat_publication.py
+          tests/integration/test_cor05_revenus.py
+          tests/integration/test_loyers_source_contract.py
+          tests/integration/test_permis_source_contract.py
+          tests/integration/test_cor08_lovac.py
+          tests/integration/test_commune_coverage_contract.py
+          tests/integration/test_cor21_commune_slo.py
+          tests/integration/test_password_reset_contract.py
+          tests/integration/test_quota_admission_contract.py
+          tests/integration/test_quota_month_contract.py
+          tests/integration/test_billing_reconciliation_contract.py
+          tests/integration/test_cor20_publication.py
+          tests/integration/test_cor20_admission.py
+          tests/integration/test_maintenance_publication.py
+          tests/integration/test_publication_owned_work.py
+          tests/integration/test_swap_without_rewrite.py
+          tests/integration/test_flat_dropped_before_indexes.py
+          tests/integration/test_commune_indicator_migration.py
+          tests/integration/test_commune_indicator_activation.py
+          tests/integration/test_commune_indicator_adoption.py
+          tests/integration/test_commune_indicator_http.py
+          tests/integration/test_commune_indicator_storage.py
+          tests/integration/test_commune_indicator_sql.py
+          tests/integration/test_dvf_numeric_chain.py
+          tests/integration/test_commune_indicator_context.py
+          tests/integration/test_commune_indicator_projector.py
+          tests/integration/test_commune_indicator_results.py
+          tests/integration/test_commune_indicator_binding.py
+          tests/integration/test_commune_indicator_national_read.py
+          tests/integration/test_commune_indicator_national_qualification.py
+          tests/integration/test_l08_communal_oracles.py
+          tests/integration/test_publication_restore.py
+          tests/integration/test_public_national_reset.py
+          tests/integration/test_accounts_backup_restore.py
+          tests/integration/test_purge_unverified_accounts.py
+          tests/integration/test_signalements_migration.py
+          tests/integration/test_admin_overview_revenue_contract.py
+          tests/integration/test_communal_latest_year.py
+          tests/integration/test_l09_demographie_fiscalite_years.py
+          tests/integration/test_l09_commune_oracle.py
+          tests/integration/test_l09_lovac_full_replay.py
+          tests/integration/test_frozen_source_cli.py
+          tests/integration/test_synthetic_probe_key_cli.py
+          tests/integration/test_stabilisation_l10_oracle_matrix.py
+          tests/integration/test_fidelity_tools_harness.py
+          tests/integration/test_instance_scope.py
+          tests/integration/test_departmental_scope.py
+          tests/integration/test_outre_mer_couverture.py
+          tests/integration/test_api_coverage_states.py
+          tests/integration/test_datasets_statuts_migres.py
+          tests/integration/test_route_scope_conformity.py
+          tests/integration/test_commune_search_contract.py
+          tests/integration/test_commune_list_population_contract.py
+          tests/integration/test_commune_annuaire_contract.py
+          tests/integration/test_commune_absences_http.py
+          tests/integration/test_commune_comparison_contract.py
+          tests/integration/test_commune_at_point.py
+          tests/integration/test_millesime_metadata.py
+          tests/integration/test_geo_referential_national.py
+          tests/integration/test_mesure_dpe_documents_sql.py
+          tests/integration/test_dpe_concordance_parity.py
+          tests/integration/test_dpe_document_public_contract.py
+          tests/integration/test_adresse_ventes_contract.py
+          tests/integration/test_dvf_adresse_suffixe.py
+          tests/integration/test_adresse_lieu_contract.py
+          tests/integration/test_fiche_adresse_cout.py
+          tests/integration/test_detection_commune.py
+          tests/integration/test_rapport_contract.py
+          tests/integration/test_plm_arrondissements.py
+          tests/integration/test_commune_autre_maille.py
+          tests/integration/test_departement_synthese.py
+          tests/integration/test_communes_voisines.py
+          tests/integration/test_commune_dvf_annuel.py
+          tests/integration/test_comparaisons_lieux_contract.py
+          tests/integration/test_migration_100_rollback.py
+          tests/integration/test_dpe_scope_national.py
+          tests/integration/test_scoring_scope_national.py
+          tests/integration/test_eligibilite_par_immeuble.py
+          tests/integration/test_arcep_par_immeuble_pipeline.py
+          tests/integration/test_explain_statements_sql.py
+          tests/integration/test_index_removal.py
+          tests/integration/test_dvf_reconstruction_fidelite.py
+          tests/integration/test_migration_108_dvf_grain_valeur_fonciere.py
+          tests/integration/test_migration_109_permis_dossier_destination_key.py
+          tests/integration/test_dvf_position_absente.py
+          tests/integration/test_dvf_archive_replay.py
+          tests/integration/test_mesure_dvf_fidelite_sql.py
+          tests/integration/test_dvf_ordre_source.py
+          tests/integration/test_validator_dvf.py
+          tests/integration/test_carte_densite_tuiles.py
+          tests/integration/test_carte_parcelles_contract.py
+          tests/integration/test_carte_fond_territoire.py
+          tests/integration/test_carte_ventes_contract.py
+      # Independently compare public DPE fields inside real PostgreSQL. Use a
+      # separate disposable database because this probe owns its source table.
+      - name: Verify documentary source comparison SQL
+        shell: pwsh
+        run: >-
+          ./scripts/run_contract_integration.ps1
+          tests/test_golden_cases_contract.py::test_documentary_source_sql_executes_with_dates_and_numerics
+          tests/test_golden_cases_contract.py::test_lifecycle_source_sql_executes_independently_on_091_facts
+
+  recovery-image:
+    needs: [resource-ownership, offline-backend]
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    defaults:
+      run:
+        working-directory: api/backend
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      # test_l11_recovery_image.py refuses to restore with less than 10 GB free
+      # in its pytest tmp dir, and ubuntu-latest leaves 9.9-10.0 GB once the
+      # image is built: the job failed on that margin alone (runs 38248006422,
+      # 38281713777, 39661032124, 39663854668). This job uses uv, docker and a
+      # self-contained pwsh only, so the preinstalled .NET, Android, Haskell and
+      # CodeQL trees can go; pwsh is called once after the removal so a broken
+      # shell fails here, under its own name, instead of inside the restore.
+      - name: Free runner disk space for the restore
+        shell: bash
+        working-directory: .
+        run: |
+          set -euo pipefail
+          df -h /
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /usr/local/.ghcup /opt/hostedtoolcache/CodeQL
+          df -h /
+          pwsh -NoProfile -Command '$PSVersionTable.PSVersion.ToString()'
+      - uses: astral-sh/setup-uv@cec208311dfd045dd5311c1add060b2062131d57 # v8.0.0
+      - run: uv sync --locked --group dev
+      - name: Build the candidate recovery image by immutable ID
+        id: build_recovery_image
+        shell: bash
+        working-directory: .
+        run: |
+          set -euo pipefail
+          docker info >/dev/null
+          docker compose version
+          image_record="$RUNNER_TEMP/recovery-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}.iid"
+          docker build --iidfile "$image_record" -f api/docker/Dockerfile api/backend
+          image_id=$(docker image inspect --format '{{.Id}}' "$(cat "$image_record")")
+          [[ "$image_id" =~ ^sha256:[0-9a-f]{64}$ ]]
+          printf 'image_id=%s\n' "$image_id" >> "$GITHUB_OUTPUT"
+      - name: Restore and recover through the candidate image
+        id: recovery
+        shell: pwsh
+        env:
+          L11_RECOVERY_IMAGE: ${{ steps.build_recovery_image.outputs.image_id }}
+          L11_RECOVERY_EVIDENCE_DIR: ${{ runner.temp }}/l11-recovery-${{ github.run_id }}-${{ github.run_attempt }}
+        # The existing wrapper owns its loopback PostGIS and tears it down.
+        # No incoming DATABASE_URL or production environment is accepted.
+        run: >-
+          ./scripts/run_contract_integration.ps1
+          tests/integration/test_l11_recovery_image.py
+          "--junitxml=$env:L11_RECOVERY_EVIDENCE_DIR/recovery.xml"
+          --tb=short
+      - name: Preserve only the successful current-run recovery proof
+        if: ${{ success() && steps.recovery.outcome == 'success' }}
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: recovery-image-${{ github.run_id }}-${{ github.run_attempt }}
+          if-no-files-found: error
+          path: |
+            ${{ runner.temp }}/l11-recovery-${{ github.run_id }}-${{ github.run_attempt }}/verification.json
+            ${{ runner.temp }}/l11-recovery-${{ github.run_id }}-${{ github.run_attempt }}/recovery.xml
+
+  required-contracts:
+    if: ${{ always() }}
+    needs: [resource-ownership, offline-backend, offline-frontend, audit-artifacts, postgis-integration, recovery-image]
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Require every contract job on this candidate
+        shell: bash
+        run: |
+          for result in "${{ needs.resource-ownership.result }}" "${{ needs.offline-backend.result }}" "${{ needs.offline-frontend.result }}" "${{ needs.audit-artifacts.result }}" "${{ needs.postgis-integration.result }}" "${{ needs.recovery-image.result }}"; do
+            if [ "$result" != "success" ]; then
+              echo "Required contract job did not succeed: $result"
+              exit 1
+            fi
+          done

@@ -1,0 +1,103 @@
+# Production overlay of the rented server (phase 04.2, plan 04.2-01), loaded AFTER the
+# public stack:
+#
+#   cd /opt/datacommune/releases/<sha12>
+#   IMAGE_TAG=<sha12> DEPLOYMENT_SHA=<sha> docker compose -p datacommune-prod \
+#     --env-file /opt/datacommune/.env \
+#     -f api/docker-compose.public.yml -f api/docker-compose.prod.yml up -d
+#
+# infra/prod/deploy.sh does this (procedure: infra/prod/README.md).
+#
+# REPLACED IN PLACE on 2026-10-24: this path used to hold the overlay of the decommissioned
+# OVH prod01 (~2026-06, "LEGACY" header; docker-compose.yml + init-volumes + caddy on
+# 127.0.0.1:80 + Stripe variables). Plans 04.2-03 to 04.2-05 load this exact path, so it
+# was replaced rather than renamed: keeping the old content here would have composed the
+# prod01 stack silently. The legacy callers (up-prod.sh, scripts/deploy*.sh, rollback.sh,
+# backup-pg.sh, bootstrap-prod.sh, audit-prod.sh, restore-pg.sh, phase-10-02-check.sh, dev.sh,
+# docker-compose.tunnel.yml, docs/etl-runbook.md) are not edited: they refuse to run, are
+# deprecated, or target prod01 paths that no longer exist. Inventory and status of each:
+# the delivery note of phase 4.2 (internal tracking).
+#
+# What this overlay changes, and nothing else (no service duplicated without need):
+#   - db: PostgreSQL settings for 32 GB of RAM; no durability option is turned off;
+#   - api: the source archive (/opt/datacommune/sources, written by every import before it
+#     transforms anything) and CORS for both browser origins;
+#   - frontend: the PRE-PRODUCTION frontend (prod.datacommune.fr -> api-prod.datacommune.fr);
+#   - frontend-prod: the apex frontend (datacommune.fr -> api.datacommune.fr), built and run
+#     here, published only by plan 04.2-05;
+#   - caddy: api/Caddyfile.prod (five hosts) instead of api/Caddyfile.public.
+# Both frontends call the API server-side through API_INTERNAL_URL=http://api:8000 (set by
+# the base file), never through the public host of the other tunnel route.
+
+name: datacommune-prod
+
+services:
+  db:
+    shm_size: "2gb"
+    command:
+      - "postgres"
+      - "-c"
+      - "shared_buffers=8GB"
+      - "-c"
+      - "effective_cache_size=20GB"
+      - "-c"
+      - "work_mem=32MB"
+      - "-c"
+      - "maintenance_work_mem=2GB"
+      - "-c"
+      - "max_wal_size=16GB"
+      - "-c"
+      - "min_wal_size=2GB"
+      - "-c"
+      - "checkpoint_timeout=15min"
+      - "-c"
+      - "random_page_cost=1.1"
+      - "-c"
+      - "max_parallel_maintenance_workers=4"
+      # Functional, not tuning: migration 086 creates pg_stat_statements.
+      - "-c"
+      - "shared_preload_libraries=pg_stat_statements"
+
+  api:
+    image: datacommune-prod-api:${IMAGE_TAG:?IMAGE_TAG must be the release tag}
+    environment:
+      # Every import archives its sources here before transforming them, and fails if it
+      # cannot (sentinel `.datacommune-source-archive`, written by provision.sh/deploy.sh).
+      SOURCE_ARCHIVE_DIR: /sources
+      # 350 GiB kept free: the DPE transient is ~360 GB (deduced from 04.1-DIMENSIONNEMENT.md § 3).
+      SOURCE_ARCHIVE_MIN_FREE_BYTES: "375809638400"
+      CORS_ORIGINS: '["https://datacommune.fr","https://prod.datacommune.fr"]'
+    volumes:
+      # Read-write on purpose: the import writes the archive.
+      - /opt/datacommune/sources:/sources
+
+  frontend:
+    # Pre-production frontend: https://prod.datacommune.fr, browser calls to api-prod.
+    image: datacommune-prod-frontend-preprod:${IMAGE_TAG:?IMAGE_TAG must be the release tag}
+    build:
+      args:
+        VITE_API_URL: https://api-prod.datacommune.fr
+    environment:
+      ORIGIN: https://prod.datacommune.fr
+
+  frontend-prod:
+    # Apex frontend: same build and runtime as the base `frontend` service (extends keeps
+    # ADDRESS_HEADER, HOST, PORT, API_INTERNAL_URL, FICHE_QUOTA_WEEKLY identical), its own
+    # image; the values that make it the apex are written out below.
+    extends:
+      file: docker-compose.public.yml
+      service: frontend
+    image: datacommune-prod-frontend:${IMAGE_TAG:?IMAGE_TAG must be the release tag}
+    build:
+      args:
+        VITE_API_URL: https://api.datacommune.fr
+    environment:
+      ORIGIN: https://datacommune.fr
+
+  caddy:
+    depends_on:
+      frontend-prod:
+        condition: service_started
+    volumes:
+      # Same target as the base file: this mount replaces ./Caddyfile.public.
+      - ./Caddyfile.prod:/etc/caddy/Caddyfile:ro

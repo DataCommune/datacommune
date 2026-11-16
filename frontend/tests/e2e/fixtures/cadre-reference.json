@@ -1,0 +1,2315 @@
+{
+	"regle": "Relevés du cadre pris avant le portage du plan 04.8-02 : boîte calculée de l’en-tête d’une route (app) et texte des JSON-LD BreadcrumbList. Une section existante ne se réécrit jamais ; un changement voulu se déclare dans cadre-site.spec.ts.",
+	"baseRevision": "bfb4441d5f0753c917f6a6ea3ac2106afa3bc089",
+	"capturedAt": "2026-11-03T17:50:42.102Z",
+	"sections": {
+		"en-tete-app-1440": {
+			"baseRevision": "bfb4441d5f0753c917f6a6ea3ac2106afa3bc089",
+			"capturedAt": "2026-11-03T17:50:42.102Z",
+			"page": "/settings",
+			"releve": [
+				{
+					"selecteur": "header.site-header",
+					"elements": [
+						{
+							"boite": [
+								0,
+								0,
+								1440,
+								73
+							],
+							"style": {
+								"display": "block",
+								"position": "sticky",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "0px",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgb(255, 255, 255)",
+								"border-bottom-width": "1px",
+								"border-bottom-color": "rgb(220, 225, 219)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-header-inner",
+					"elements": [
+						{
+							"boite": [
+								80,
+								0,
+								1280,
+								72
+							],
+							"style": {
+								"display": "flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "32px",
+								"padding-bottom": "0px",
+								"padding-left": "32px",
+								"margin-left": "80px",
+								"column-gap": "24px",
+								"row-gap": "normal",
+								"min-height": "72px",
+								"max-width": "1280px",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-brand",
+					"elements": [
+						{
+							"texte": "DataCommune",
+							"boite": [
+								112,
+								14,
+								175.8,
+								44
+							],
+							"style": {
+								"display": "flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "0px",
+								"column-gap": "12px",
+								"row-gap": "12px",
+								"min-height": "44px",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "20px",
+								"font-weight": "600",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-brand-label",
+					"elements": [
+						{
+							"boite": [
+								144,
+								24,
+								143.8,
+								24
+							],
+							"style": {
+								"display": "block",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "auto",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "20px",
+								"font-weight": "600",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-nav",
+					"elements": [
+						{
+							"boite": [
+								311.8,
+								0,
+								395.6,
+								72
+							],
+							"style": {
+								"display": "flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "0px",
+								"column-gap": "4px",
+								"row-gap": "4px",
+								"min-height": "auto",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-nav-link",
+					"elements": [
+						{
+							"texte": "Rechercher",
+							"boite": [
+								311.8,
+								0,
+								111,
+								72
+							],
+							"style": {
+								"display": "flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "12px",
+								"padding-bottom": "0px",
+								"padding-left": "12px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "44px",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "19.2px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "2px",
+								"border-bottom-color": "rgba(0, 0, 0, 0)"
+							}
+						},
+						{
+							"texte": "Comparer",
+							"boite": [
+								426.8,
+								0,
+								99.3,
+								72
+							],
+							"style": {
+								"display": "flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "12px",
+								"padding-bottom": "0px",
+								"padding-left": "12px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "44px",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "19.2px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "2px",
+								"border-bottom-color": "rgba(0, 0, 0, 0)"
+							}
+						},
+						{
+							"texte": "Données & méthode",
+							"boite": [
+								530.2,
+								0,
+								177.2,
+								72
+							],
+							"style": {
+								"display": "flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "12px",
+								"padding-bottom": "0px",
+								"padding-left": "12px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "44px",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "19.2px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "2px",
+								"border-bottom-color": "rgba(0, 0, 0, 0)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": "form.recherche-en-tete",
+					"elements": [
+						{
+							"boite": [
+								731.4,
+								14,
+								232,
+								44
+							],
+							"style": {
+								"display": "flex",
+								"position": "relative",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "auto",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-end",
+					"elements": [
+						{
+							"boite": [
+								1079.1,
+								14,
+								248.9,
+								44
+							],
+							"style": {
+								"display": "flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "91.7031px",
+								"column-gap": "16px",
+								"row-gap": "16px",
+								"min-height": "auto",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-dev-link",
+					"elements": [
+						{
+							"texte": "Développeurs",
+							"boite": [
+								1079.1,
+								14,
+								104.9,
+								44
+							],
+							"style": {
+								"display": "flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "44px",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-account",
+					"elements": [
+						{
+							"boite": [
+								1200,
+								14,
+								128,
+								44
+							],
+							"style": {
+								"display": "flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "auto",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-account-button",
+					"elements": [
+						{
+							"texte": "Mon espace",
+							"boite": [
+								1200.8,
+								14,
+								127.2,
+								44
+							],
+							"style": {
+								"display": "inline-flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "16px",
+								"padding-bottom": "0px",
+								"padding-left": "16px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "44px",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "19.2px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgb(255, 255, 255)",
+								"border-bottom-width": "1px",
+								"border-bottom-color": "rgb(125, 138, 128)"
+							}
+						}
+					]
+				}
+			]
+		},
+		"en-tete-app-999": {
+			"baseRevision": "bfb4441d5f0753c917f6a6ea3ac2106afa3bc089",
+			"capturedAt": "2026-11-03T17:50:42.245Z",
+			"page": "/settings",
+			"releve": [
+				{
+					"selecteur": "header.site-header",
+					"elements": [
+						{
+							"boite": [
+								0,
+								0,
+								999,
+								73
+							],
+							"style": {
+								"display": "block",
+								"position": "sticky",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "0px",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgb(255, 255, 255)",
+								"border-bottom-width": "1px",
+								"border-bottom-color": "rgb(220, 225, 219)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-header-inner",
+					"elements": [
+						{
+							"boite": [
+								0,
+								0,
+								999,
+								72
+							],
+							"style": {
+								"display": "flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "16px",
+								"padding-bottom": "0px",
+								"padding-left": "16px",
+								"margin-left": "0px",
+								"column-gap": "4px",
+								"row-gap": "normal",
+								"min-height": "72px",
+								"max-width": "1280px",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-brand",
+					"elements": [
+						{
+							"texte": "DataCommune",
+							"boite": [
+								16,
+								14,
+								171.8,
+								44
+							],
+							"style": {
+								"display": "flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "0px",
+								"column-gap": "8px",
+								"row-gap": "8px",
+								"min-height": "44px",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "20px",
+								"font-weight": "600",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-brand-label",
+					"elements": [
+						{
+							"boite": [
+								44,
+								24,
+								143.8,
+								24
+							],
+							"style": {
+								"display": "block",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "auto",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "20px",
+								"font-weight": "600",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-nav",
+					"elements": [
+						{
+							"boite": [
+								191.8,
+								0,
+								339.6,
+								72
+							],
+							"style": {
+								"display": "flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "0px",
+								"column-gap": "0px",
+								"row-gap": "0px",
+								"min-height": "auto",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-nav-link",
+					"elements": [
+						{
+							"texte": "Rechercher",
+							"boite": [
+								191.8,
+								0,
+								95,
+								72
+							],
+							"style": {
+								"display": "flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "4px",
+								"padding-bottom": "0px",
+								"padding-left": "4px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "44px",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "19.2px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "2px",
+								"border-bottom-color": "rgba(0, 0, 0, 0)"
+							}
+						},
+						{
+							"texte": "Comparer",
+							"boite": [
+								286.8,
+								0,
+								83.3,
+								72
+							],
+							"style": {
+								"display": "flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "4px",
+								"padding-bottom": "0px",
+								"padding-left": "4px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "44px",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "19.2px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "2px",
+								"border-bottom-color": "rgba(0, 0, 0, 0)"
+							}
+						},
+						{
+							"texte": "Données & méthode",
+							"boite": [
+								370.2,
+								0,
+								161.2,
+								72
+							],
+							"style": {
+								"display": "flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "4px",
+								"padding-bottom": "0px",
+								"padding-left": "4px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "44px",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "19.2px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "2px",
+								"border-bottom-color": "rgba(0, 0, 0, 0)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": "form.recherche-en-tete",
+					"elements": [
+						{
+							"boite": [
+								0,
+								0,
+								0,
+								0
+							],
+							"style": {
+								"display": "none",
+								"position": "relative",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "0px",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-end",
+					"elements": [
+						{
+							"boite": [
+								855,
+								14,
+								128,
+								44
+							],
+							"style": {
+								"display": "flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "319.594px",
+								"column-gap": "8px",
+								"row-gap": "8px",
+								"min-height": "auto",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-dev-link",
+					"elements": [
+						{
+							"texte": "Développeurs",
+							"boite": [
+								0,
+								0,
+								0,
+								0
+							],
+							"style": {
+								"display": "none",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "44px",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-account",
+					"elements": [
+						{
+							"boite": [
+								855,
+								14,
+								128,
+								44
+							],
+							"style": {
+								"display": "flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "auto",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-account-button",
+					"elements": [
+						{
+							"texte": "Mon espace",
+							"boite": [
+								855.8,
+								14,
+								127.2,
+								44
+							],
+							"style": {
+								"display": "inline-flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "16px",
+								"padding-bottom": "0px",
+								"padding-left": "16px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "44px",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "19.2px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgb(255, 255, 255)",
+								"border-bottom-width": "1px",
+								"border-bottom-color": "rgb(125, 138, 128)"
+							}
+						}
+					]
+				}
+			]
+		},
+		"en-tete-app-721": {
+			"baseRevision": "bfb4441d5f0753c917f6a6ea3ac2106afa3bc089",
+			"capturedAt": "2026-11-03T17:50:42.361Z",
+			"page": "/settings",
+			"releve": [
+				{
+					"selecteur": "header.site-header",
+					"elements": [
+						{
+							"boite": [
+								0,
+								0,
+								721,
+								73
+							],
+							"style": {
+								"display": "block",
+								"position": "sticky",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "0px",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgb(255, 255, 255)",
+								"border-bottom-width": "1px",
+								"border-bottom-color": "rgb(220, 225, 219)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-header-inner",
+					"elements": [
+						{
+							"boite": [
+								0,
+								0,
+								721,
+								72
+							],
+							"style": {
+								"display": "flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "16px",
+								"padding-bottom": "0px",
+								"padding-left": "16px",
+								"margin-left": "0px",
+								"column-gap": "4px",
+								"row-gap": "normal",
+								"min-height": "72px",
+								"max-width": "1280px",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-brand",
+					"elements": [
+						{
+							"texte": "DataCommune",
+							"boite": [
+								16,
+								14,
+								171.8,
+								44
+							],
+							"style": {
+								"display": "flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "0px",
+								"column-gap": "8px",
+								"row-gap": "8px",
+								"min-height": "44px",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "20px",
+								"font-weight": "600",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-brand-label",
+					"elements": [
+						{
+							"boite": [
+								44,
+								24,
+								143.8,
+								24
+							],
+							"style": {
+								"display": "block",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "auto",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "20px",
+								"font-weight": "600",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-nav",
+					"elements": [
+						{
+							"boite": [
+								191.8,
+								0,
+								339.6,
+								72
+							],
+							"style": {
+								"display": "flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "0px",
+								"column-gap": "0px",
+								"row-gap": "0px",
+								"min-height": "auto",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-nav-link",
+					"elements": [
+						{
+							"texte": "Rechercher",
+							"boite": [
+								191.8,
+								0,
+								95,
+								72
+							],
+							"style": {
+								"display": "flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "4px",
+								"padding-bottom": "0px",
+								"padding-left": "4px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "44px",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "19.2px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "2px",
+								"border-bottom-color": "rgba(0, 0, 0, 0)"
+							}
+						},
+						{
+							"texte": "Comparer",
+							"boite": [
+								286.8,
+								0,
+								83.3,
+								72
+							],
+							"style": {
+								"display": "flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "4px",
+								"padding-bottom": "0px",
+								"padding-left": "4px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "44px",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "19.2px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "2px",
+								"border-bottom-color": "rgba(0, 0, 0, 0)"
+							}
+						},
+						{
+							"texte": "Données & méthode",
+							"boite": [
+								370.2,
+								0,
+								161.2,
+								72
+							],
+							"style": {
+								"display": "flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "4px",
+								"padding-bottom": "0px",
+								"padding-left": "4px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "44px",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "19.2px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "2px",
+								"border-bottom-color": "rgba(0, 0, 0, 0)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": "form.recherche-en-tete",
+					"elements": [
+						{
+							"boite": [
+								0,
+								0,
+								0,
+								0
+							],
+							"style": {
+								"display": "none",
+								"position": "relative",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "0px",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-end",
+					"elements": [
+						{
+							"boite": [
+								577,
+								14,
+								128,
+								44
+							],
+							"style": {
+								"display": "flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "41.5938px",
+								"column-gap": "8px",
+								"row-gap": "8px",
+								"min-height": "auto",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-dev-link",
+					"elements": [
+						{
+							"texte": "Développeurs",
+							"boite": [
+								0,
+								0,
+								0,
+								0
+							],
+							"style": {
+								"display": "none",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "44px",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-account",
+					"elements": [
+						{
+							"boite": [
+								577,
+								14,
+								128,
+								44
+							],
+							"style": {
+								"display": "flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "auto",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-account-button",
+					"elements": [
+						{
+							"texte": "Mon espace",
+							"boite": [
+								577.8,
+								14,
+								127.2,
+								44
+							],
+							"style": {
+								"display": "inline-flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "16px",
+								"padding-bottom": "0px",
+								"padding-left": "16px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "44px",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "19.2px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgb(255, 255, 255)",
+								"border-bottom-width": "1px",
+								"border-bottom-color": "rgb(125, 138, 128)"
+							}
+						}
+					]
+				}
+			]
+		},
+		"en-tete-app-375": {
+			"baseRevision": "bfb4441d5f0753c917f6a6ea3ac2106afa3bc089",
+			"capturedAt": "2026-11-03T17:50:42.471Z",
+			"page": "/settings",
+			"releve": [
+				{
+					"selecteur": "header.site-header",
+					"elements": [
+						{
+							"boite": [
+								0,
+								0,
+								375,
+								101
+							],
+							"style": {
+								"display": "block",
+								"position": "sticky",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "0px",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgb(255, 255, 255)",
+								"border-bottom-width": "1px",
+								"border-bottom-color": "rgb(220, 225, 219)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-header-inner",
+					"elements": [
+						{
+							"boite": [
+								0,
+								0,
+								375,
+								100
+							],
+							"style": {
+								"display": "flex",
+								"position": "static",
+								"padding-top": "8px",
+								"padding-right": "16px",
+								"padding-bottom": "0px",
+								"padding-left": "16px",
+								"margin-left": "0px",
+								"column-gap": "8px",
+								"row-gap": "4px",
+								"min-height": "0px",
+								"max-width": "1280px",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-brand",
+					"elements": [
+						{
+							"texte": "DataCommune",
+							"boite": [
+								16,
+								8,
+								175.8,
+								44
+							],
+							"style": {
+								"display": "flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "0px",
+								"column-gap": "12px",
+								"row-gap": "12px",
+								"min-height": "44px",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "20px",
+								"font-weight": "600",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-brand-label",
+					"elements": [
+						{
+							"boite": [
+								48,
+								18,
+								143.8,
+								24
+							],
+							"style": {
+								"display": "block",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "auto",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "20px",
+								"font-weight": "600",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-nav",
+					"elements": [
+						{
+							"boite": [
+								16,
+								56,
+								343,
+								44
+							],
+							"style": {
+								"display": "grid",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "0px",
+								"column-gap": "0px",
+								"row-gap": "0px",
+								"min-height": "auto",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-nav-link",
+					"elements": [
+						{
+							"texte": "Rechercher",
+							"boite": [
+								16,
+								56,
+								114.3,
+								44
+							],
+							"style": {
+								"display": "flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "4px",
+								"padding-bottom": "0px",
+								"padding-left": "4px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "44px",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "19.2px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "2px",
+								"border-bottom-color": "rgba(0, 0, 0, 0)"
+							}
+						},
+						{
+							"texte": "Comparer",
+							"boite": [
+								130.3,
+								56,
+								114.3,
+								44
+							],
+							"style": {
+								"display": "flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "4px",
+								"padding-bottom": "0px",
+								"padding-left": "4px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "44px",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "19.2px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "2px",
+								"border-bottom-color": "rgba(0, 0, 0, 0)"
+							}
+						},
+						{
+							"texte": "Données & méthode",
+							"boite": [
+								244.7,
+								56,
+								114.3,
+								44
+							],
+							"style": {
+								"display": "flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "4px",
+								"padding-bottom": "0px",
+								"padding-left": "4px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "44px",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "19.2px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "2px",
+								"border-bottom-color": "rgba(0, 0, 0, 0)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": "form.recherche-en-tete",
+					"elements": [
+						{
+							"boite": [
+								0,
+								0,
+								0,
+								0
+							],
+							"style": {
+								"display": "none",
+								"position": "relative",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "0px",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-end",
+					"elements": [
+						{
+							"boite": [
+								231,
+								8,
+								128,
+								44
+							],
+							"style": {
+								"display": "flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "31.1875px",
+								"column-gap": "16px",
+								"row-gap": "16px",
+								"min-height": "auto",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-dev-link",
+					"elements": [
+						{
+							"texte": "Développeurs",
+							"boite": [
+								0,
+								0,
+								0,
+								0
+							],
+							"style": {
+								"display": "none",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "44px",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-account",
+					"elements": [
+						{
+							"boite": [
+								231,
+								8,
+								128,
+								44
+							],
+							"style": {
+								"display": "flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "auto",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-account-button",
+					"elements": [
+						{
+							"texte": "Mon espace",
+							"boite": [
+								231.8,
+								8,
+								127.2,
+								44
+							],
+							"style": {
+								"display": "inline-flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "16px",
+								"padding-bottom": "0px",
+								"padding-left": "16px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "44px",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "19.2px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgb(255, 255, 255)",
+								"border-bottom-width": "1px",
+								"border-bottom-color": "rgb(125, 138, 128)"
+							}
+						}
+					]
+				}
+			]
+		},
+		"en-tete-app-320": {
+			"baseRevision": "bfb4441d5f0753c917f6a6ea3ac2106afa3bc089",
+			"capturedAt": "2026-11-03T17:50:42.586Z",
+			"page": "/settings",
+			"releve": [
+				{
+					"selecteur": "header.site-header",
+					"elements": [
+						{
+							"boite": [
+								0,
+								0,
+								320,
+								149
+							],
+							"style": {
+								"display": "block",
+								"position": "sticky",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "0px",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgb(255, 255, 255)",
+								"border-bottom-width": "1px",
+								"border-bottom-color": "rgb(220, 225, 219)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-header-inner",
+					"elements": [
+						{
+							"boite": [
+								0,
+								0,
+								320,
+								148
+							],
+							"style": {
+								"display": "flex",
+								"position": "static",
+								"padding-top": "8px",
+								"padding-right": "16px",
+								"padding-bottom": "0px",
+								"padding-left": "16px",
+								"margin-left": "0px",
+								"column-gap": "8px",
+								"row-gap": "4px",
+								"min-height": "0px",
+								"max-width": "1280px",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-brand",
+					"elements": [
+						{
+							"texte": "DataCommune",
+							"boite": [
+								16,
+								8,
+								175.8,
+								44
+							],
+							"style": {
+								"display": "flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "0px",
+								"column-gap": "12px",
+								"row-gap": "12px",
+								"min-height": "44px",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "20px",
+								"font-weight": "600",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-brand-label",
+					"elements": [
+						{
+							"boite": [
+								48,
+								18,
+								143.8,
+								24
+							],
+							"style": {
+								"display": "block",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "auto",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "20px",
+								"font-weight": "600",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-nav",
+					"elements": [
+						{
+							"boite": [
+								16,
+								104,
+								288,
+								44
+							],
+							"style": {
+								"display": "grid",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "0px",
+								"column-gap": "0px",
+								"row-gap": "0px",
+								"min-height": "auto",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-nav-link",
+					"elements": [
+						{
+							"texte": "Rechercher",
+							"boite": [
+								16,
+								104,
+								96,
+								44
+							],
+							"style": {
+								"display": "flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "4px",
+								"padding-bottom": "0px",
+								"padding-left": "4px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "44px",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "19.2px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "2px",
+								"border-bottom-color": "rgba(0, 0, 0, 0)"
+							}
+						},
+						{
+							"texte": "Comparer",
+							"boite": [
+								112,
+								104,
+								96,
+								44
+							],
+							"style": {
+								"display": "flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "4px",
+								"padding-bottom": "0px",
+								"padding-left": "4px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "44px",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "19.2px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "2px",
+								"border-bottom-color": "rgba(0, 0, 0, 0)"
+							}
+						},
+						{
+							"texte": "Données & méthode",
+							"boite": [
+								208,
+								104,
+								96,
+								44
+							],
+							"style": {
+								"display": "flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "4px",
+								"padding-bottom": "0px",
+								"padding-left": "4px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "44px",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "19.2px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "2px",
+								"border-bottom-color": "rgba(0, 0, 0, 0)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": "form.recherche-en-tete",
+					"elements": [
+						{
+							"boite": [
+								0,
+								0,
+								0,
+								0
+							],
+							"style": {
+								"display": "none",
+								"position": "relative",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "0px",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-end",
+					"elements": [
+						{
+							"boite": [
+								176,
+								56,
+								128,
+								44
+							],
+							"style": {
+								"display": "flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "160px",
+								"column-gap": "16px",
+								"row-gap": "16px",
+								"min-height": "auto",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-dev-link",
+					"elements": [
+						{
+							"texte": "Développeurs",
+							"boite": [
+								0,
+								0,
+								0,
+								0
+							],
+							"style": {
+								"display": "none",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "44px",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-account",
+					"elements": [
+						{
+							"boite": [
+								176,
+								56,
+								128,
+								44
+							],
+							"style": {
+								"display": "flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "0px",
+								"padding-bottom": "0px",
+								"padding-left": "0px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "auto",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "24px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgba(0, 0, 0, 0)",
+								"border-bottom-width": "0px",
+								"border-bottom-color": "rgb(37, 41, 39)"
+							}
+						}
+					]
+				},
+				{
+					"selecteur": ".site-account-button",
+					"elements": [
+						{
+							"texte": "Mon espace",
+							"boite": [
+								176.8,
+								56,
+								127.2,
+								44
+							],
+							"style": {
+								"display": "inline-flex",
+								"position": "static",
+								"padding-top": "0px",
+								"padding-right": "16px",
+								"padding-bottom": "0px",
+								"padding-left": "16px",
+								"margin-left": "0px",
+								"column-gap": "normal",
+								"row-gap": "normal",
+								"min-height": "44px",
+								"max-width": "none",
+								"font-family": "Inter, system-ui, sans-serif",
+								"font-size": "16px",
+								"font-weight": "400",
+								"line-height": "19.2px",
+								"color": "rgb(37, 41, 39)",
+								"background-color": "rgb(255, 255, 255)",
+								"border-bottom-width": "1px",
+								"border-bottom-color": "rgb(125, 138, 128)"
+							}
+						}
+					]
+				}
+			]
+		},
+		"fil-ariane-departement": {
+			"baseRevision": "bfb4441d5f0753c917f6a6ea3ac2106afa3bc089",
+			"capturedAt": "2026-11-03T17:50:44.494Z",
+			"page": "/departement/44",
+			"releve": "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https://datacommune.fr/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Départements\",\"item\":\"https://datacommune.fr/departements\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Loire-Atlantique\",\"item\":\"https://datacommune.fr/departement/44\"}]}"
+		},
+		"fil-ariane-commune": {
+			"baseRevision": "bfb4441d5f0753c917f6a6ea3ac2106afa3bc089",
+			"capturedAt": "2026-11-03T17:50:45.346Z",
+			"page": "/commune/85047",
+			"releve": "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https://datacommune.fr/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Vendée\",\"item\":\"https://datacommune.fr/departement/85\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Challans\",\"item\":\"https://datacommune.fr/commune/85047\"}]}"
+		},
+		"fil-ariane-arrondissement": {
+			"baseRevision": "bfb4441d5f0753c917f6a6ea3ac2106afa3bc089",
+			"capturedAt": "2026-11-03T17:50:45.775Z",
+			"page": "/commune/75112",
+			"releve": "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https://datacommune.fr/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Paris (département)\",\"item\":\"https://datacommune.fr/departement/75\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Paris\",\"item\":\"https://datacommune.fr/commune/75056\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"12e arrondissement\",\"item\":\"https://datacommune.fr/commune/75112\"}]}"
+		},
+		"recherche-app-1440": {
+			"baseRevision": "bfb4441d5f0753c917f6a6ea3ac2106afa3bc089",
+			"capturedAt": "2026-11-04T12:17:57.721Z",
+			"page": "/settings",
+			"releve": {
+				"nom": "Rechercher une commune ou une adresse",
+				"aide": "Commune ou adresse",
+				"indice": "Ctrl K",
+				"bouton": "Rechercher",
+				"loupe": true,
+				"champ": {
+					"boite": [
+						731.4,
+						14,
+						232,
+						44
+					],
+					"style": {
+						"padding-left": "12px",
+						"font-size": "16px",
+						"color": "rgb(37, 41, 39)",
+						"background-color": "rgb(255, 255, 255)",
+						"border-top-width": "1px",
+						"border-top-color": "rgb(125, 138, 128)",
+						"border-top-left-radius": "4px"
+					}
+				},
+				"raccourci": {
+					"boite": [
+						868.4,
+						25.2,
+						47,
+						21.6
+					],
+					"style": {
+						"padding-left": "4px",
+						"padding-right": "4px",
+						"font-size": "14px",
+						"color": "rgb(102, 110, 104)",
+						"border-top-color": "rgb(220, 225, 219)",
+						"border-top-left-radius": "4px"
+					}
+				},
+				"envoi": {
+					"boite": [
+						919.4,
+						14,
+						44,
+						44
+					],
+					"style": {
+						"width": "44px",
+						"height": "44px",
+						"color": "rgb(37, 41, 39)",
+						"background-color": "rgba(0, 0, 0, 0)"
+					}
+				}
+			}
+		},
+		"fil-ariane-departements": {
+			"baseRevision": "bfb4441d5f0753c917f6a6ea3ac2106afa3bc089",
+			"capturedAt": "2026-11-04T12:19:28.550Z",
+			"page": "/departements",
+			"releve": "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https://datacommune.fr/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Départements\",\"item\":\"https://datacommune.fr/departements\"}]}"
+		}
+	}
+}

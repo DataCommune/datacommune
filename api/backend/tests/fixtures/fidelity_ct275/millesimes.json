@@ -1,0 +1,637 @@
+{
+  "dataset_metadata": {
+    "rows": [
+      {
+        "cron_schedule": "0 3 5 * *",
+        "dataset_name": "antennes",
+        "effective_departments": null,
+        "freshness_threshold_days": 45,
+        "last_import_duration_seconds": 24.450227856010315,
+        "last_updated_at": "2026-06-30 08:17:22.547999+00:00",
+        "row_count": 825079,
+        "source_period_label": null,
+        "source_updated_at": null,
+        "status": "disponible"
+      },
+      {
+        "cron_schedule": "0 2 * * 0",
+        "dataset_name": "ban",
+        "effective_departments": null,
+        "freshness_threshold_days": 10,
+        "last_import_duration_seconds": 29.59001454799727,
+        "last_updated_at": "2026-06-30 08:30:37.574058+00:00",
+        "row_count": 1019793,
+        "source_period_label": null,
+        "source_updated_at": null,
+        "status": "disponible"
+      },
+      {
+        "cron_schedule": "0 2 1 1,4,7,10 *",
+        "dataset_name": "batiments",
+        "effective_departments": null,
+        "freshness_threshold_days": 135,
+        "last_import_duration_seconds": 199.42480681499,
+        "last_updated_at": "2026-06-30 08:39:26.331700+00:00",
+        "row_count": 2319238,
+        "source_period_label": null,
+        "source_updated_at": null,
+        "status": "disponible"
+      },
+      {
+        "cron_schedule": null,
+        "dataset_name": "bdnb",
+        "effective_departments": null,
+        "freshness_threshold_days": null,
+        "last_import_duration_seconds": null,
+        "last_updated_at": null,
+        "row_count": null,
+        "source_period_label": null,
+        "source_updated_at": null,
+        "status": "proxy"
+      },
+      {
+        "cron_schedule": "0 2 15 1,4,7,10 *",
+        "dataset_name": "cadastre",
+        "effective_departments": null,
+        "freshness_threshold_days": 135,
+        "last_import_duration_seconds": 140.7673839739873,
+        "last_updated_at": "2026-06-30 08:33:00.586335+00:00",
+        "row_count": 2850109,
+        "source_period_label": null,
+        "source_updated_at": null,
+        "status": "disponible"
+      },
+      {
+        "cron_schedule": "0 3 1 1,4,7,10 *",
+        "dataset_name": "connectivite",
+        "effective_departments": null,
+        "freshness_threshold_days": 135,
+        "last_import_duration_seconds": 227.6265516100102,
+        "last_updated_at": "2026-06-30 08:43:14.281980+00:00",
+        "row_count": 14357591,
+        "source_period_label": null,
+        "source_updated_at": null,
+        "status": "disponible"
+      },
+      {
+        "cron_schedule": "0 4 1 1,4,7,10 *",
+        "dataset_name": "copropriete",
+        "effective_departments": null,
+        "freshness_threshold_days": 135,
+        "last_import_duration_seconds": 204.12660525400133,
+        "last_updated_at": "2026-07-27 14:32:47.645363+00:00",
+        "row_count": 649263,
+        "source_period_label": null,
+        "source_updated_at": null,
+        "status": "disponible"
+      },
+      {
+        "cron_schedule": "0 3 15 1 *",
+        "dataset_name": "demographie",
+        "effective_departments": null,
+        "freshness_threshold_days": 545,
+        "last_import_duration_seconds": 14.017855822996353,
+        "last_updated_at": "2026-06-30 08:16:27.164314+00:00",
+        "row_count": 34960,
+        "source_period_label": null,
+        "source_updated_at": null,
+        "status": "disponible"
+      },
+      {
+        "cron_schedule": "0 3 1,15 * *",
+        "dataset_name": "dpe",
+        "effective_departments": [
+          "44",
+          "85"
+        ],
+        "freshness_threshold_days": 21,
+        "last_import_duration_seconds": 553.3864230589825,
+        "last_updated_at": "2026-09-08 22:36:45.420348+00:00",
+        "row_count": 540717,
+        "source_period_label": null,
+        "source_updated_at": null,
+        "status": "disponible"
+      },
+      {
+        "cron_schedule": "0 2 1 5,11 *",
+        "dataset_name": "dvf",
+        "effective_departments": [
+          "44",
+          "85"
+        ],
+        "freshness_threshold_days": 270,
+        "last_import_duration_seconds": 32.28352913912386,
+        "last_updated_at": "2026-08-24 21:25:52.770240+00:00",
+        "row_count": 698299,
+        "source_period_label": null,
+        "source_updated_at": null,
+        "status": "disponible"
+      },
+      {
+        "cron_schedule": "0 2 1 2 *",
+        "dataset_name": "encadrement_loyers",
+        "effective_departments": null,
+        "freshness_threshold_days": 545,
+        "last_import_duration_seconds": 15.731837270999677,
+        "last_updated_at": "2026-06-30 08:16:07.146634+00:00",
+        "row_count": 17920,
+        "source_period_label": null,
+        "source_updated_at": null,
+        "status": "disponible"
+      },
+      {
+        "cron_schedule": "0 4 15 2 *",
+        "dataset_name": "equipements",
+        "effective_departments": null,
+        "freshness_threshold_days": 545,
+        "last_import_duration_seconds": 131.9563676270045,
+        "last_updated_at": "2026-06-30 08:22:26.203755+00:00",
+        "row_count": 2827407,
+        "source_period_label": null,
+        "source_updated_at": null,
+        "status": "disponible"
+      },
+      {
+        "cron_schedule": null,
+        "dataset_name": "errial",
+        "effective_departments": null,
+        "freshness_threshold_days": null,
+        "last_import_duration_seconds": null,
+        "last_updated_at": null,
+        "row_count": null,
+        "source_period_label": null,
+        "source_updated_at": null,
+        "status": "proxy"
+      },
+      {
+        "cron_schedule": "0 3 1 2 *",
+        "dataset_name": "fiscalite",
+        "effective_departments": null,
+        "freshness_threshold_days": 545,
+        "last_import_duration_seconds": 22.46632765600225,
+        "last_updated_at": "2026-06-30 08:15:51.207329+00:00",
+        "row_count": 174668,
+        "source_period_label": null,
+        "source_updated_at": null,
+        "status": "disponible"
+      },
+      {
+        "cron_schedule": "0 3 1 7 *",
+        "dataset_name": "foncier_pm",
+        "effective_departments": null,
+        "freshness_threshold_days": 545,
+        "last_import_duration_seconds": 441.23976444000436,
+        "last_updated_at": "2026-06-30 08:29:48.726472+00:00",
+        "row_count": 21074593,
+        "source_period_label": null,
+        "source_updated_at": null,
+        "status": "disponible"
+      },
+      {
+        "cron_schedule": null,
+        "dataset_name": "georisques",
+        "effective_departments": null,
+        "freshness_threshold_days": null,
+        "last_import_duration_seconds": null,
+        "last_updated_at": null,
+        "row_count": null,
+        "source_period_label": null,
+        "source_updated_at": null,
+        "status": "proxy"
+      },
+      {
+        "cron_schedule": "0 2 15 3 *",
+        "dataset_name": "loyers",
+        "effective_departments": null,
+        "freshness_threshold_days": 545,
+        "last_import_duration_seconds": 4.484900287003256,
+        "last_updated_at": "2026-06-30 08:14:37.210339+00:00",
+        "row_count": 139600,
+        "source_period_label": null,
+        "source_updated_at": null,
+        "status": "disponible"
+      },
+      {
+        "cron_schedule": "0 2 15 1 *",
+        "dataset_name": "monuments",
+        "effective_departments": null,
+        "freshness_threshold_days": 545,
+        "last_import_duration_seconds": 11.331229276998783,
+        "last_updated_at": "2026-06-30 08:14:32.568793+00:00",
+        "row_count": 44310,
+        "source_period_label": null,
+        "source_updated_at": null,
+        "status": "disponible"
+      },
+      {
+        "cron_schedule": "0 2 5 * *",
+        "dataset_name": "permis",
+        "effective_departments": null,
+        "freshness_threshold_days": 45,
+        "last_import_duration_seconds": 0.3958204139926238,
+        "last_updated_at": "2026-06-30 08:16:58.070256+00:00",
+        "row_count": 727,
+        "source_period_label": null,
+        "source_updated_at": null,
+        "status": "disponible"
+      },
+      {
+        "cron_schedule": "0 2 15 6 *",
+        "dataset_name": "revenus",
+        "effective_departments": null,
+        "freshness_threshold_days": 545,
+        "last_import_duration_seconds": 5.763805959999445,
+        "last_updated_at": "2026-06-30 08:16:12.946926+00:00",
+        "row_count": 34929,
+        "source_period_label": null,
+        "source_updated_at": null,
+        "status": "disponible"
+      },
+      {
+        "cron_schedule": null,
+        "dataset_name": "rnb",
+        "effective_departments": null,
+        "freshness_threshold_days": null,
+        "last_import_duration_seconds": null,
+        "last_updated_at": null,
+        "row_count": null,
+        "source_period_label": null,
+        "source_updated_at": null,
+        "status": "proxy"
+      },
+      {
+        "cron_schedule": null,
+        "dataset_name": "rnb_liens",
+        "effective_departments": [
+          "44",
+          "85"
+        ],
+        "freshness_threshold_days": null,
+        "last_import_duration_seconds": 91.2869609639747,
+        "last_updated_at": "2026-08-05 14:06:47.713696+00:00",
+        "row_count": 1575388,
+        "source_period_label": "Export RNB 2026-08",
+        "source_updated_at": "2026-08-01 00:00:00+00:00",
+        "status": "disponible"
+      },
+      {
+        "cron_schedule": "0 3 15 10 *",
+        "dataset_name": "scolaire",
+        "effective_departments": null,
+        "freshness_threshold_days": 545,
+        "last_import_duration_seconds": 8.13920002800296,
+        "last_updated_at": "2026-06-30 08:15:27.454667+00:00",
+        "row_count": 520675,
+        "source_period_label": null,
+        "source_updated_at": null,
+        "status": "disponible"
+      },
+      {
+        "cron_schedule": null,
+        "dataset_name": "scoring",
+        "effective_departments": null,
+        "freshness_threshold_days": null,
+        "last_import_duration_seconds": null,
+        "last_updated_at": null,
+        "row_count": null,
+        "source_period_label": null,
+        "source_updated_at": null,
+        "status": "proxy"
+      },
+      {
+        "cron_schedule": null,
+        "dataset_name": "sirene",
+        "effective_departments": null,
+        "freshness_threshold_days": null,
+        "last_import_duration_seconds": null,
+        "last_updated_at": null,
+        "row_count": null,
+        "source_period_label": null,
+        "source_updated_at": null,
+        "status": "proxy"
+      },
+      {
+        "cron_schedule": "0 4 1 * *",
+        "dataset_name": "transports",
+        "effective_departments": null,
+        "freshness_threshold_days": 45,
+        "last_import_duration_seconds": 41.90162051199877,
+        "last_updated_at": "2026-06-30 08:15:19.256876+00:00",
+        "row_count": 369428,
+        "source_period_label": null,
+        "source_updated_at": null,
+        "status": "disponible"
+      },
+      {
+        "cron_schedule": null,
+        "dataset_name": "urbanisme",
+        "effective_departments": null,
+        "freshness_threshold_days": null,
+        "last_import_duration_seconds": null,
+        "last_updated_at": null,
+        "row_count": null,
+        "source_period_label": null,
+        "source_updated_at": null,
+        "status": "proxy"
+      },
+      {
+        "cron_schedule": "0 2 15 2 *",
+        "dataset_name": "vacance",
+        "effective_departments": null,
+        "freshness_threshold_days": 545,
+        "last_import_duration_seconds": 1.5113110859965673,
+        "last_updated_at": "2026-06-30 08:19:46.184733+00:00",
+        "row_count": 34912,
+        "source_period_label": null,
+        "source_updated_at": null,
+        "status": "disponible"
+      },
+      {
+        "cron_schedule": "0 4 1 1 *",
+        "dataset_name": "zonage_abc",
+        "effective_departments": null,
+        "freshness_threshold_days": 545,
+        "last_import_duration_seconds": 0.7555448689963669,
+        "last_updated_at": "2026-06-30 08:15:28.499554+00:00",
+        "row_count": 34875,
+        "source_period_label": null,
+        "source_updated_at": null,
+        "status": "disponible"
+      }
+    ],
+    "status": "ok"
+  },
+  "dvf_history_extract": {
+    "before": "2021-01-01",
+    "tables": {
+      "mutation_parcelles": {
+        "file": "mutation_parcelles_44_85_before_2021-01-01.csv.gz",
+        "rows": 0,
+        "status": "ok"
+      },
+      "mutations": {
+        "file": "mutations_44_85_before_2021-01-01.csv.gz",
+        "rows": 0,
+        "status": "ok"
+      },
+      "mutations_grain": {
+        "file": "mutations_grain_44_85_before_2021-01-01.csv.gz",
+        "rows": 0,
+        "status": "ok"
+      }
+    }
+  },
+  "dvf_years_by_departement": {
+    "mutations": {
+      "status": "ok",
+      "years": {
+        "44": {
+          "2021": 98952,
+          "2022": 96488,
+          "2023": 78182,
+          "2024": 72136,
+          "2025": 78975
+        },
+        "85": {
+          "2021": 60635,
+          "2022": 61878,
+          "2023": 52072,
+          "2024": 48077,
+          "2025": 50904
+        }
+      }
+    },
+    "mutations_grain": {
+      "status": "ok",
+      "years": {
+        "44": {
+          "2021": 42666,
+          "2022": 39857,
+          "2023": 31415,
+          "2024": 28296,
+          "2025": 31494
+        },
+        "85": {
+          "2021": 26582,
+          "2022": 25555,
+          "2023": 21096,
+          "2024": 19517,
+          "2025": 20783
+        }
+      }
+    }
+  },
+  "etl_runs_last_success": {
+    "absent_columns": [],
+    "columns": [
+      "id",
+      "dataset_name",
+      "started_at",
+      "completed_at",
+      "status",
+      "total_rows_loaded",
+      "total_duration_seconds"
+    ],
+    "rows": [
+      {
+        "completed_at": "2026-06-30 08:17:22.575053+00:00",
+        "dataset_name": "antennes",
+        "id": 13,
+        "started_at": "2026-06-30 08:16:58.103434+00:00",
+        "status": "success",
+        "total_duration_seconds": 24.450227856010315,
+        "total_rows_loaded": 825079
+      },
+      {
+        "completed_at": "2026-06-30 08:30:37.602169+00:00",
+        "dataset_name": "ban",
+        "id": 17,
+        "started_at": "2026-06-30 08:30:07.998532+00:00",
+        "status": "success",
+        "total_duration_seconds": 29.59001454799727,
+        "total_rows_loaded": 1019793
+      },
+      {
+        "completed_at": "2026-06-30 08:39:26.355170+00:00",
+        "dataset_name": "batiments",
+        "id": 21,
+        "started_at": "2026-06-30 08:36:06.914920+00:00",
+        "status": "success",
+        "total_duration_seconds": 199.42480681499,
+        "total_rows_loaded": 2319238
+      },
+      {
+        "completed_at": "2026-06-30 08:33:00.600701+00:00",
+        "dataset_name": "cadastre",
+        "id": 18,
+        "started_at": "2026-06-30 08:30:39.829817+00:00",
+        "status": "success",
+        "total_duration_seconds": 140.7673839739873,
+        "total_rows_loaded": 2850109
+      },
+      {
+        "completed_at": "2026-06-30 08:43:14.318883+00:00",
+        "dataset_name": "connectivite",
+        "id": 22,
+        "started_at": "2026-06-30 08:39:26.667078+00:00",
+        "status": "success",
+        "total_duration_seconds": 227.6265516100102,
+        "total_rows_loaded": 14357591
+      },
+      {
+        "completed_at": "2026-07-27 14:32:47.683540+00:00",
+        "dataset_name": "copropriete",
+        "id": 26,
+        "started_at": "2026-07-27 14:29:23.531045+00:00",
+        "status": "success",
+        "total_duration_seconds": 204.12660525400133,
+        "total_rows_loaded": 649263
+      },
+      {
+        "completed_at": "2026-06-30 08:16:27.185122+00:00",
+        "dataset_name": "demographie",
+        "id": 9,
+        "started_at": "2026-06-30 08:16:13.151815+00:00",
+        "status": "success",
+        "total_duration_seconds": 14.017855822996353,
+        "total_rows_loaded": 34960
+      },
+      {
+        "completed_at": "2026-09-08 22:36:45.430598+00:00",
+        "dataset_name": "dpe",
+        "id": 32,
+        "started_at": "2026-09-08 22:27:32.047159+00:00",
+        "status": "success",
+        "total_duration_seconds": 553.3900982979685,
+        "total_rows_loaded": 540654
+      },
+      {
+        "completed_at": "2026-08-24 21:25:52.786731+00:00",
+        "dataset_name": "dvf",
+        "id": 30,
+        "started_at": "2026-08-24 21:25:20.506829+00:00",
+        "status": "success",
+        "total_duration_seconds": 32.28352913912386,
+        "total_rows_loaded": 698299
+      },
+      {
+        "completed_at": "2026-06-30 08:16:07.156828+00:00",
+        "dataset_name": "encadrement_loyers",
+        "id": 7,
+        "started_at": "2026-06-30 08:15:51.419663+00:00",
+        "status": "success",
+        "total_duration_seconds": 15.731837270999677,
+        "total_rows_loaded": 17920
+      },
+      {
+        "completed_at": "2026-06-30 08:22:26.253692+00:00",
+        "dataset_name": "equipements",
+        "id": 15,
+        "started_at": "2026-06-30 08:20:14.256772+00:00",
+        "status": "success",
+        "total_duration_seconds": 131.9563676270045,
+        "total_rows_loaded": 2827407
+      },
+      {
+        "completed_at": "2026-06-30 08:15:51.218108+00:00",
+        "dataset_name": "fiscalite",
+        "id": 6,
+        "started_at": "2026-06-30 08:15:28.746158+00:00",
+        "status": "success",
+        "total_duration_seconds": 22.46632765600225,
+        "total_rows_loaded": 174668
+      },
+      {
+        "completed_at": "2026-06-30 08:29:48.751752+00:00",
+        "dataset_name": "foncier_pm",
+        "id": 16,
+        "started_at": "2026-06-30 08:22:27.489367+00:00",
+        "status": "success",
+        "total_duration_seconds": 441.23976444000436,
+        "total_rows_loaded": 21074593
+      },
+      {
+        "completed_at": "2026-06-30 08:14:37.221572+00:00",
+        "dataset_name": "loyers",
+        "id": 2,
+        "started_at": "2026-06-30 08:14:32.731474+00:00",
+        "status": "success",
+        "total_duration_seconds": 4.484900287003256,
+        "total_rows_loaded": 139600
+      },
+      {
+        "completed_at": "2026-06-30 08:14:32.580279+00:00",
+        "dataset_name": "monuments",
+        "id": 1,
+        "started_at": "2026-06-30 08:14:21.248634+00:00",
+        "status": "success",
+        "total_duration_seconds": 11.331229276998783,
+        "total_rows_loaded": 44310
+      },
+      {
+        "completed_at": "2026-06-30 08:16:58.076615+00:00",
+        "dataset_name": "permis",
+        "id": 12,
+        "started_at": "2026-06-30 08:16:57.680003+00:00",
+        "status": "success",
+        "total_duration_seconds": 0.3958204139926238,
+        "total_rows_loaded": 727
+      },
+      {
+        "completed_at": "2026-06-30 08:16:12.957445+00:00",
+        "dataset_name": "revenus",
+        "id": 8,
+        "started_at": "2026-06-30 08:16:07.190417+00:00",
+        "status": "success",
+        "total_duration_seconds": 5.763805959999445,
+        "total_rows_loaded": 34929
+      },
+      {
+        "completed_at": "2026-08-05 14:06:47.751914+00:00",
+        "dataset_name": "rnb_liens",
+        "id": 28,
+        "started_at": "2026-08-05 14:05:16.440592+00:00",
+        "status": "success",
+        "total_duration_seconds": 91.2869609639747,
+        "total_rows_loaded": 1575388
+      },
+      {
+        "completed_at": "2026-06-30 08:15:27.468569+00:00",
+        "dataset_name": "scolaire",
+        "id": 4,
+        "started_at": "2026-06-30 08:15:19.321560+00:00",
+        "status": "success",
+        "total_duration_seconds": 8.13920002800296,
+        "total_rows_loaded": 520675
+      },
+      {
+        "completed_at": "2026-06-30 08:15:19.262558+00:00",
+        "dataset_name": "transports",
+        "id": 3,
+        "started_at": "2026-06-30 08:14:37.362486+00:00",
+        "status": "success",
+        "total_duration_seconds": 41.90162051199877,
+        "total_rows_loaded": 369428
+      },
+      {
+        "completed_at": "2026-06-30 08:19:46.190675+00:00",
+        "dataset_name": "vacance",
+        "id": 14,
+        "started_at": "2026-06-30 08:19:44.685868+00:00",
+        "status": "success",
+        "total_duration_seconds": 1.5113110859965673,
+        "total_rows_loaded": 34912
+      },
+      {
+        "completed_at": "2026-06-30 08:15:28.505413+00:00",
+        "dataset_name": "zonage_abc",
+        "id": 5,
+        "started_at": "2026-06-30 08:15:27.749107+00:00",
+        "status": "success",
+        "total_duration_seconds": 0.7555448689963669,
+        "total_rows_loaded": 34875
+      }
+    ],
+    "status": "ok"
+  }
+}

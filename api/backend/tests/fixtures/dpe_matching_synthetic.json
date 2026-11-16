@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {"id":"surface_only","provenance":"synthetic","partition":"calibration","address_group":"syn-a","chain_group":"syn-a1","target_origin":"synthetic_invariant","truth":"unknown","archetype":"surface_only_unique"},
+    {"id":"contradictory_reference","provenance":"synthetic","partition":"control","address_group":"syn-b","chain_group":"syn-b1","target_origin":"synthetic_invariant","truth":"unknown","archetype":"contradictory_reference"},
+    {"id":"shared_floor_door","provenance":"synthetic","partition":"control","address_group":"syn-c","chain_group":"syn-c1","target_origin":"synthetic_invariant","truth":"unknown","archetype":"shared_floor_or_door"},
+    {"id":"divided_house","provenance":"synthetic","partition":"calibration","address_group":"syn-d","chain_group":"syn-d1","target_origin":"synthetic_invariant","truth":"unknown","archetype":"divided_house"},
+    {"id":"mixed_set","provenance":"synthetic","partition":"control","address_group":"syn-e","chain_group":"syn-e1","target_origin":"synthetic_invariant","truth":"unknown","archetype":"mixed_set"},
+    {"id":"other_ban","provenance":"synthetic","partition":"control","address_group":"syn-f","chain_group":"syn-f1","target_origin":"synthetic_invariant","truth":"unknown","archetype":"other_ban"},
+    {"id":"missing_data","provenance":"synthetic","partition":"calibration","address_group":"syn-g","chain_group":"syn-g1","target_origin":"synthetic_invariant","truth":"unknown","archetype":"missing_data"},
+    {"id":"incomplete_graph","provenance":"synthetic","partition":"control","address_group":"syn-h","chain_group":"syn-h1","target_origin":"synthetic_invariant","truth":"unknown","archetype":"incomplete_graph_or_error"}
+  ]
+}

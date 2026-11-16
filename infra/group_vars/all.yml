@@ -1,0 +1,46 @@
+---
+# Public (non-secret) variables for all VPS hosts.
+# Secrets live in vault.yml (Ansible Vault AES256 encrypted — D-11).
+
+# --- Repository ---
+# Upstream remote kept as documentation. The playbook archives the local branch
+# and extracts it on the target to avoid requiring GitHub credentials there.
+repo_url: "https://github.com/DataCommune/datacommune.git"
+
+# Branch to deploy from on the VPS. dev is used during phase 33 (D-07).
+# The PR dev→master is sequenced in phase 34.
+repo_branch: dev
+
+# --- Deployment directory ---
+# Root directory on the VPS where the repo is cloned.
+deploy_dir: /opt/datacommune
+
+# --- Compose project name ---
+# Must match the -p flag used in the runbook (docs/etl-runbook.md) to avoid
+# creating orphan volumes with a different project name.
+compose_project: datacommune-api
+
+# --- Docker Compose overlays (relative to deploy_dir/api/) ---
+# ETL ingestion overlay — DEBUG=true; imports follow the scope stored in the
+# database (`python -m app.scope set`), no environment variable (plan 01 artefact)
+compose_etl_overlay: docker-compose.vps-etl.yml
+
+# Permanent-mode overlay — DEBUG=false, caddy+cloudflared (plan 01 artefact)
+compose_steady_overlay: docker-compose.vps.yml
+
+# --- Public API domains ---
+api_domain: api.datacommune.fr
+dev_api_domain: dev-api.datacommune.fr
+
+# --- DB credentials (non-secret part) ---
+# These values are NOT sensitive, but the password is in vault.yml.
+postgres_user: datacommune
+postgres_db: datacommune
+
+# --- Compose base file (relative to deploy_dir/api/) ---
+compose_base_file: docker-compose.yml
+
+# --- Hosted scope ---
+# Datasets and departements hosted by the instance live in the database
+# (instance_scope_* tables), set with `python -m app.scope set --datasets …
+# --departements …` from api/backend. No inventory variable carries it (D-23).

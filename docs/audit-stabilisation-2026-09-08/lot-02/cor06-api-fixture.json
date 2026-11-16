@@ -1,0 +1,910 @@
+{
+  "loyers": {
+    "05066": {
+      "statut": "ok",
+      "donnees": [
+        {
+          "code_insee": "05066",
+          "nom_commune": "La Haute-Beaume",
+          "type_habitat": "appartement",
+          "loyer_m2": 9.76,
+          "loyer_m2_bas": 7.58,
+          "loyer_m2_haut": 12.56,
+          "r2": 0.777,
+          "nb_observations": 0,
+          "annee": 2025,
+          "id_zone": "1",
+          "type_prediction": "maille",
+          "nb_observations_commune": 0,
+          "nb_observations_maille": 484,
+          "r2_ajuste": 0.77697857231704,
+          "trimestre_reference": 3,
+          "charges_comprises": true,
+          "meuble": false,
+          "surface_reference_m2": 52.0,
+          "surface_piece_reference_m2": 22.2
+        }
+      ],
+      "meta": {
+        "source": {
+          "nom": "Carte des Loyers",
+          "licence": "Non specifiee (mention source obligatoire)",
+          "url": "https://www.data.gouv.fr/datasets/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025",
+          "producteur": "ANIL / MTE"
+        },
+        "resolution": null
+      }
+    },
+    "26113": {
+      "statut": "ok",
+      "donnees": [
+        {
+          "code_insee": "26113",
+          "nom_commune": "Die",
+          "type_habitat": "appartement",
+          "loyer_m2": 11.75,
+          "loyer_m2_bas": 9.09,
+          "loyer_m2_haut": 15.19,
+          "r2": 0.777,
+          "nb_observations": 356,
+          "annee": 2025,
+          "id_zone": "1",
+          "type_prediction": "commune",
+          "nb_observations_commune": 356,
+          "nb_observations_maille": 484,
+          "r2_ajuste": 0.77697857231704,
+          "trimestre_reference": 3,
+          "charges_comprises": true,
+          "meuble": false,
+          "surface_reference_m2": 52.0,
+          "surface_piece_reference_m2": 22.2
+        }
+      ],
+      "meta": {
+        "source": {
+          "nom": "Carte des Loyers",
+          "licence": "Non specifiee (mention source obligatoire)",
+          "url": "https://www.data.gouv.fr/datasets/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025",
+          "producteur": "ANIL / MTE"
+        },
+        "resolution": null
+      }
+    },
+    "37099": {
+      "statut": "ok",
+      "donnees": [
+        {
+          "code_insee": "37099",
+          "nom_commune": "Druye",
+          "type_habitat": "maison",
+          "loyer_m2": 8.96,
+          "loyer_m2_bas": 6.95,
+          "loyer_m2_haut": 11.55,
+          "r2": 0.755,
+          "nb_observations": 54,
+          "annee": 2025,
+          "id_zone": "1",
+          "type_prediction": "maille",
+          "nb_observations_commune": 54,
+          "nb_observations_maille": 494,
+          "r2_ajuste": 0.75527981050117,
+          "trimestre_reference": 3,
+          "charges_comprises": true,
+          "meuble": false,
+          "surface_reference_m2": 92.0,
+          "surface_piece_reference_m2": 22.4
+        }
+      ],
+      "meta": {
+        "source": {
+          "nom": "Carte des Loyers",
+          "licence": "Non specifiee (mention source obligatoire)",
+          "url": "https://www.data.gouv.fr/datasets/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025",
+          "producteur": "ANIL / MTE"
+        },
+        "resolution": null
+      }
+    },
+    "37014": {
+      "statut": "ok",
+      "donnees": [
+        {
+          "code_insee": "37014",
+          "nom_commune": "Azay-le-Rideau",
+          "type_habitat": "maison",
+          "loyer_m2": 9.24,
+          "loyer_m2_bas": 7.18,
+          "loyer_m2_haut": 11.89,
+          "r2": 0.755,
+          "nb_observations": 177,
+          "annee": 2025,
+          "id_zone": "1",
+          "type_prediction": "commune",
+          "nb_observations_commune": 177,
+          "nb_observations_maille": 494,
+          "r2_ajuste": 0.75527981050117,
+          "trimestre_reference": 3,
+          "charges_comprises": true,
+          "meuble": false,
+          "surface_reference_m2": 92.0,
+          "surface_piece_reference_m2": 22.4
+        }
+      ],
+      "meta": {
+        "source": {
+          "nom": "Carte des Loyers",
+          "licence": "Non specifiee (mention source obligatoire)",
+          "url": "https://www.data.gouv.fr/datasets/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025",
+          "producteur": "ANIL / MTE"
+        },
+        "resolution": null
+      }
+    },
+    "28198": {
+      "statut": "ok",
+      "donnees": [
+        {
+          "code_insee": "28198",
+          "nom_commune": "Jallans",
+          "type_habitat": "1-2_pieces",
+          "loyer_m2": 11.37,
+          "loyer_m2_bas": 9.36,
+          "loyer_m2_haut": 13.82,
+          "r2": 0.701,
+          "nb_observations": 4,
+          "annee": 2025,
+          "id_zone": "1",
+          "type_prediction": "maille",
+          "nb_observations_commune": 4,
+          "nb_observations_maille": 1281,
+          "r2_ajuste": 0.700824619954554,
+          "trimestre_reference": 3,
+          "charges_comprises": true,
+          "meuble": false,
+          "surface_reference_m2": 37.0,
+          "surface_piece_reference_m2": 22.9
+        }
+      ],
+      "meta": {
+        "source": {
+          "nom": "Carte des Loyers",
+          "licence": "Non specifiee (mention source obligatoire)",
+          "url": "https://www.data.gouv.fr/datasets/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025",
+          "producteur": "ANIL / MTE"
+        },
+        "resolution": null
+      }
+    },
+    "28088": {
+      "statut": "ok",
+      "donnees": [
+        {
+          "code_insee": "28088",
+          "nom_commune": "Châteaudun",
+          "type_habitat": "1-2_pieces",
+          "loyer_m2": 12.38,
+          "loyer_m2_bas": 10.19,
+          "loyer_m2_haut": 15.05,
+          "r2": 0.701,
+          "nb_observations": 1022,
+          "annee": 2025,
+          "id_zone": "1",
+          "type_prediction": "commune",
+          "nb_observations_commune": 1022,
+          "nb_observations_maille": 1281,
+          "r2_ajuste": 0.700824619954554,
+          "trimestre_reference": 3,
+          "charges_comprises": true,
+          "meuble": false,
+          "surface_reference_m2": 37.0,
+          "surface_piece_reference_m2": 22.9
+        }
+      ],
+      "meta": {
+        "source": {
+          "nom": "Carte des Loyers",
+          "licence": "Non specifiee (mention source obligatoire)",
+          "url": "https://www.data.gouv.fr/datasets/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025",
+          "producteur": "ANIL / MTE"
+        },
+        "resolution": null
+      }
+    },
+    "60666": {
+      "statut": "ok",
+      "donnees": [
+        {
+          "code_insee": "60666",
+          "nom_commune": "Ver-sur-Launette",
+          "type_habitat": "3+_pieces",
+          "loyer_m2": 13.53,
+          "loyer_m2_bas": 11.67,
+          "loyer_m2_haut": 15.67,
+          "r2": 0.605,
+          "nb_observations": 64,
+          "annee": 2025,
+          "id_zone": "1",
+          "type_prediction": "maille",
+          "nb_observations_commune": 64,
+          "nb_observations_maille": 481,
+          "r2_ajuste": 0.60519837244384,
+          "trimestre_reference": 3,
+          "charges_comprises": true,
+          "meuble": false,
+          "surface_reference_m2": 72.0,
+          "surface_piece_reference_m2": 21.3
+        }
+      ],
+      "meta": {
+        "source": {
+          "nom": "Carte des Loyers",
+          "licence": "Non specifiee (mention source obligatoire)",
+          "url": "https://www.data.gouv.fr/datasets/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025",
+          "producteur": "ANIL / MTE"
+        },
+        "resolution": null
+      }
+    },
+    "60500": {
+      "statut": "ok",
+      "donnees": [
+        {
+          "code_insee": "60500",
+          "nom_commune": "Le Plessis-Belleville",
+          "type_habitat": "3+_pieces",
+          "loyer_m2": 14.48,
+          "loyer_m2_bas": 12.5,
+          "loyer_m2_haut": 16.77,
+          "r2": 0.605,
+          "nb_observations": 149,
+          "annee": 2025,
+          "id_zone": "1",
+          "type_prediction": "commune",
+          "nb_observations_commune": 149,
+          "nb_observations_maille": 481,
+          "r2_ajuste": 0.60519837244384,
+          "trimestre_reference": 3,
+          "charges_comprises": true,
+          "meuble": false,
+          "surface_reference_m2": 72.0,
+          "surface_piece_reference_m2": 21.3
+        }
+      ],
+      "meta": {
+        "source": {
+          "nom": "Carte des Loyers",
+          "licence": "Non specifiee (mention source obligatoire)",
+          "url": "https://www.data.gouv.fr/datasets/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025",
+          "producteur": "ANIL / MTE"
+        },
+        "resolution": null
+      }
+    }
+  },
+  "communes": {
+    "05066": {
+      "statut": "ok",
+      "donnees": [
+        {
+          "code_insee": "05066",
+          "nom_commune": "La Haute-Beaume",
+          "code_departement": "05",
+          "code_region": null,
+          "population": 100,
+          "nb_menages": null,
+          "nb_logements": null,
+          "nb_logements_vacants_recensement": null,
+          "densite": null,
+          "superficie": null,
+          "annee_demographie": 2025,
+          "revenu_median": null,
+          "taux_pauvrete": null,
+          "indice_gini": null,
+          "part_imposee": null,
+          "annee_revenus": null,
+          "zone_abc": null,
+          "zone_abc_reclassement": null,
+          "taux_vacance": null,
+          "nb_vacants_plus_2ans": null,
+          "annee_vacance": null,
+          "taux_tfpb": null,
+          "taux_th_rs": null,
+          "taux_teom": null,
+          "nom_epci": null,
+          "annee_fiscalite": null,
+          "loyer_m2_appartement": 9.76,
+          "loyer_m2_maison": null,
+          "annee_loyers": 2025,
+          "loyers_appartement": {
+            "code_insee": "05066",
+            "nom_commune": "La Haute-Beaume",
+            "type_habitat": "appartement",
+            "loyer_m2": 9.76,
+            "loyer_m2_bas": 7.58,
+            "loyer_m2_haut": 12.56,
+            "r2": 0.777,
+            "nb_observations": 0,
+            "annee": 2025,
+            "id_zone": "1",
+            "type_prediction": "maille",
+            "nb_observations_commune": 0,
+            "nb_observations_maille": 484,
+            "r2_ajuste": 0.77697857231704,
+            "trimestre_reference": 3,
+            "charges_comprises": true,
+            "meuble": false,
+            "surface_reference_m2": 52.0,
+            "surface_piece_reference_m2": 22.2
+          },
+          "loyers_maison": null,
+          "prix_m2_median": null,
+          "nb_mutations_12m": null,
+          "prix_m2_median_maison": null,
+          "nb_mutations_12m_maison": null,
+          "prix_m2_median_appartement": null,
+          "nb_mutations_12m_appartement": null,
+          "dpe_passoires_pct": null,
+          "dpe_median": null,
+          "annee_construction_mediane": null,
+          "nb_equipements": 0,
+          "nb_etablissements_scolaires": 0,
+          "nb_monuments": 0,
+          "nb_proprietaires_pm": 0,
+          "surface_pm_ha": null,
+          "fibre_pct": null
+        }
+      ],
+      "meta": {
+        "source": [
+          {
+            "nom": "Recensement de la Population",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.insee.fr/fr/statistiques/8290591",
+            "producteur": "INSEE"
+          },
+          {
+            "nom": "Filosofi (Revenus et Pauvrete)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.insee.fr/fr/statistiques/7756855",
+            "producteur": "INSEE"
+          },
+          {
+            "nom": "Zonage ABC (Tension Immobiliere)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.data.gouv.fr/datasets/liste-des-communes-selon-le-zonage-abc",
+            "producteur": "Ministere de la Transition Ecologique"
+          },
+          {
+            "nom": "Logements Vacants (LOVAC)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.data.gouv.fr/datasets/logements-vacants-du-parc-prive-par-commune-departement-region-france",
+            "producteur": "CEREMA"
+          },
+          {
+            "nom": "Fiscalite Locale des Particuliers",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.data.gouv.fr/datasets/fiscalite-locale-des-particuliers",
+            "producteur": "DGFiP"
+          },
+          {
+            "nom": "Carte des Loyers",
+            "licence": "Non specifiee (mention source obligatoire)",
+            "url": "https://www.data.gouv.fr/datasets/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025",
+            "producteur": "ANIL / MTE"
+          },
+          {
+            "nom": "Demandes de Valeurs Foncieres (DVF)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.data.gouv.fr/datasets/demandes-de-valeurs-foncieres-geolocalisees",
+            "producteur": "DGFiP / Etalab"
+          },
+          {
+            "nom": "Diagnostics de Performance Energetique (DPE)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://data.ademe.fr/datasets/dpe03existant",
+            "producteur": "ADEME"
+          },
+          {
+            "nom": "Base Permanente des Equipements (BPE)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.insee.fr/fr/statistiques/8217537",
+            "producteur": "INSEE"
+          },
+          {
+            "nom": "Carte Scolaire des Colleges",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.data.gouv.fr/datasets/carte-scolaire-des-colleges-publics",
+            "producteur": "DGESCO / MEN"
+          },
+          {
+            "nom": "Monuments Historiques",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://data.culture.gouv.fr/explore/dataset/liste-des-immeubles-proteges-au-titre-des-monuments-historiques/",
+            "producteur": "Ministere de la Culture"
+          },
+          {
+            "nom": "Fichiers des personnes morales (MAJIC)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.data.gouv.fr/datasets/fichiers-des-locaux-et-des-parcelles-des-personnes-morales",
+            "producteur": "DGFiP / Etalab"
+          },
+          {
+            "nom": "Ma Connexion Internet (Arcep)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.data.gouv.fr/datasets/ma-connexion-internet",
+            "producteur": "Arcep"
+          }
+        ],
+        "resolution": null
+      }
+    },
+    "26113": {
+      "statut": "ok",
+      "donnees": [
+        {
+          "code_insee": "26113",
+          "nom_commune": "Die",
+          "code_departement": "26",
+          "code_region": null,
+          "population": 100,
+          "nb_menages": null,
+          "nb_logements": null,
+          "nb_logements_vacants_recensement": null,
+          "densite": null,
+          "superficie": null,
+          "annee_demographie": 2025,
+          "revenu_median": null,
+          "taux_pauvrete": null,
+          "indice_gini": null,
+          "part_imposee": null,
+          "annee_revenus": null,
+          "zone_abc": null,
+          "zone_abc_reclassement": null,
+          "taux_vacance": null,
+          "nb_vacants_plus_2ans": null,
+          "annee_vacance": null,
+          "taux_tfpb": null,
+          "taux_th_rs": null,
+          "taux_teom": null,
+          "nom_epci": null,
+          "annee_fiscalite": null,
+          "loyer_m2_appartement": 11.75,
+          "loyer_m2_maison": null,
+          "annee_loyers": 2025,
+          "loyers_appartement": {
+            "code_insee": "26113",
+            "nom_commune": "Die",
+            "type_habitat": "appartement",
+            "loyer_m2": 11.75,
+            "loyer_m2_bas": 9.09,
+            "loyer_m2_haut": 15.19,
+            "r2": 0.777,
+            "nb_observations": 356,
+            "annee": 2025,
+            "id_zone": "1",
+            "type_prediction": "commune",
+            "nb_observations_commune": 356,
+            "nb_observations_maille": 484,
+            "r2_ajuste": 0.77697857231704,
+            "trimestre_reference": 3,
+            "charges_comprises": true,
+            "meuble": false,
+            "surface_reference_m2": 52.0,
+            "surface_piece_reference_m2": 22.2
+          },
+          "loyers_maison": null,
+          "prix_m2_median": null,
+          "nb_mutations_12m": null,
+          "prix_m2_median_maison": null,
+          "nb_mutations_12m_maison": null,
+          "prix_m2_median_appartement": null,
+          "nb_mutations_12m_appartement": null,
+          "dpe_passoires_pct": null,
+          "dpe_median": null,
+          "annee_construction_mediane": null,
+          "nb_equipements": 0,
+          "nb_etablissements_scolaires": 0,
+          "nb_monuments": 0,
+          "nb_proprietaires_pm": 0,
+          "surface_pm_ha": null,
+          "fibre_pct": null
+        }
+      ],
+      "meta": {
+        "source": [
+          {
+            "nom": "Recensement de la Population",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.insee.fr/fr/statistiques/8290591",
+            "producteur": "INSEE"
+          },
+          {
+            "nom": "Filosofi (Revenus et Pauvrete)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.insee.fr/fr/statistiques/7756855",
+            "producteur": "INSEE"
+          },
+          {
+            "nom": "Zonage ABC (Tension Immobiliere)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.data.gouv.fr/datasets/liste-des-communes-selon-le-zonage-abc",
+            "producteur": "Ministere de la Transition Ecologique"
+          },
+          {
+            "nom": "Logements Vacants (LOVAC)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.data.gouv.fr/datasets/logements-vacants-du-parc-prive-par-commune-departement-region-france",
+            "producteur": "CEREMA"
+          },
+          {
+            "nom": "Fiscalite Locale des Particuliers",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.data.gouv.fr/datasets/fiscalite-locale-des-particuliers",
+            "producteur": "DGFiP"
+          },
+          {
+            "nom": "Carte des Loyers",
+            "licence": "Non specifiee (mention source obligatoire)",
+            "url": "https://www.data.gouv.fr/datasets/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025",
+            "producteur": "ANIL / MTE"
+          },
+          {
+            "nom": "Demandes de Valeurs Foncieres (DVF)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.data.gouv.fr/datasets/demandes-de-valeurs-foncieres-geolocalisees",
+            "producteur": "DGFiP / Etalab"
+          },
+          {
+            "nom": "Diagnostics de Performance Energetique (DPE)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://data.ademe.fr/datasets/dpe03existant",
+            "producteur": "ADEME"
+          },
+          {
+            "nom": "Base Permanente des Equipements (BPE)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.insee.fr/fr/statistiques/8217537",
+            "producteur": "INSEE"
+          },
+          {
+            "nom": "Carte Scolaire des Colleges",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.data.gouv.fr/datasets/carte-scolaire-des-colleges-publics",
+            "producteur": "DGESCO / MEN"
+          },
+          {
+            "nom": "Monuments Historiques",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://data.culture.gouv.fr/explore/dataset/liste-des-immeubles-proteges-au-titre-des-monuments-historiques/",
+            "producteur": "Ministere de la Culture"
+          },
+          {
+            "nom": "Fichiers des personnes morales (MAJIC)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.data.gouv.fr/datasets/fichiers-des-locaux-et-des-parcelles-des-personnes-morales",
+            "producteur": "DGFiP / Etalab"
+          },
+          {
+            "nom": "Ma Connexion Internet (Arcep)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.data.gouv.fr/datasets/ma-connexion-internet",
+            "producteur": "Arcep"
+          }
+        ],
+        "resolution": null
+      }
+    },
+    "37099": {
+      "statut": "ok",
+      "donnees": [
+        {
+          "code_insee": "37099",
+          "nom_commune": "Druye",
+          "code_departement": "37",
+          "code_region": null,
+          "population": 100,
+          "nb_menages": null,
+          "nb_logements": null,
+          "nb_logements_vacants_recensement": null,
+          "densite": null,
+          "superficie": null,
+          "annee_demographie": 2025,
+          "revenu_median": null,
+          "taux_pauvrete": null,
+          "indice_gini": null,
+          "part_imposee": null,
+          "annee_revenus": null,
+          "zone_abc": null,
+          "zone_abc_reclassement": null,
+          "taux_vacance": null,
+          "nb_vacants_plus_2ans": null,
+          "annee_vacance": null,
+          "taux_tfpb": null,
+          "taux_th_rs": null,
+          "taux_teom": null,
+          "nom_epci": null,
+          "annee_fiscalite": null,
+          "loyer_m2_appartement": null,
+          "loyer_m2_maison": 8.96,
+          "annee_loyers": 2025,
+          "loyers_appartement": null,
+          "loyers_maison": {
+            "code_insee": "37099",
+            "nom_commune": "Druye",
+            "type_habitat": "maison",
+            "loyer_m2": 8.96,
+            "loyer_m2_bas": 6.95,
+            "loyer_m2_haut": 11.55,
+            "r2": 0.755,
+            "nb_observations": 54,
+            "annee": 2025,
+            "id_zone": "1",
+            "type_prediction": "maille",
+            "nb_observations_commune": 54,
+            "nb_observations_maille": 494,
+            "r2_ajuste": 0.75527981050117,
+            "trimestre_reference": 3,
+            "charges_comprises": true,
+            "meuble": false,
+            "surface_reference_m2": 92.0,
+            "surface_piece_reference_m2": 22.4
+          },
+          "prix_m2_median": null,
+          "nb_mutations_12m": null,
+          "prix_m2_median_maison": null,
+          "nb_mutations_12m_maison": null,
+          "prix_m2_median_appartement": null,
+          "nb_mutations_12m_appartement": null,
+          "dpe_passoires_pct": null,
+          "dpe_median": null,
+          "annee_construction_mediane": null,
+          "nb_equipements": 0,
+          "nb_etablissements_scolaires": 0,
+          "nb_monuments": 0,
+          "nb_proprietaires_pm": 0,
+          "surface_pm_ha": null,
+          "fibre_pct": null
+        }
+      ],
+      "meta": {
+        "source": [
+          {
+            "nom": "Recensement de la Population",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.insee.fr/fr/statistiques/8290591",
+            "producteur": "INSEE"
+          },
+          {
+            "nom": "Filosofi (Revenus et Pauvrete)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.insee.fr/fr/statistiques/7756855",
+            "producteur": "INSEE"
+          },
+          {
+            "nom": "Zonage ABC (Tension Immobiliere)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.data.gouv.fr/datasets/liste-des-communes-selon-le-zonage-abc",
+            "producteur": "Ministere de la Transition Ecologique"
+          },
+          {
+            "nom": "Logements Vacants (LOVAC)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.data.gouv.fr/datasets/logements-vacants-du-parc-prive-par-commune-departement-region-france",
+            "producteur": "CEREMA"
+          },
+          {
+            "nom": "Fiscalite Locale des Particuliers",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.data.gouv.fr/datasets/fiscalite-locale-des-particuliers",
+            "producteur": "DGFiP"
+          },
+          {
+            "nom": "Carte des Loyers",
+            "licence": "Non specifiee (mention source obligatoire)",
+            "url": "https://www.data.gouv.fr/datasets/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025",
+            "producteur": "ANIL / MTE"
+          },
+          {
+            "nom": "Demandes de Valeurs Foncieres (DVF)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.data.gouv.fr/datasets/demandes-de-valeurs-foncieres-geolocalisees",
+            "producteur": "DGFiP / Etalab"
+          },
+          {
+            "nom": "Diagnostics de Performance Energetique (DPE)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://data.ademe.fr/datasets/dpe03existant",
+            "producteur": "ADEME"
+          },
+          {
+            "nom": "Base Permanente des Equipements (BPE)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.insee.fr/fr/statistiques/8217537",
+            "producteur": "INSEE"
+          },
+          {
+            "nom": "Carte Scolaire des Colleges",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.data.gouv.fr/datasets/carte-scolaire-des-colleges-publics",
+            "producteur": "DGESCO / MEN"
+          },
+          {
+            "nom": "Monuments Historiques",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://data.culture.gouv.fr/explore/dataset/liste-des-immeubles-proteges-au-titre-des-monuments-historiques/",
+            "producteur": "Ministere de la Culture"
+          },
+          {
+            "nom": "Fichiers des personnes morales (MAJIC)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.data.gouv.fr/datasets/fichiers-des-locaux-et-des-parcelles-des-personnes-morales",
+            "producteur": "DGFiP / Etalab"
+          },
+          {
+            "nom": "Ma Connexion Internet (Arcep)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.data.gouv.fr/datasets/ma-connexion-internet",
+            "producteur": "Arcep"
+          }
+        ],
+        "resolution": null
+      }
+    },
+    "37014": {
+      "statut": "ok",
+      "donnees": [
+        {
+          "code_insee": "37014",
+          "nom_commune": "Azay-le-Rideau",
+          "code_departement": "37",
+          "code_region": null,
+          "population": 100,
+          "nb_menages": null,
+          "nb_logements": null,
+          "nb_logements_vacants_recensement": null,
+          "densite": null,
+          "superficie": null,
+          "annee_demographie": 2025,
+          "revenu_median": null,
+          "taux_pauvrete": null,
+          "indice_gini": null,
+          "part_imposee": null,
+          "annee_revenus": null,
+          "zone_abc": null,
+          "zone_abc_reclassement": null,
+          "taux_vacance": null,
+          "nb_vacants_plus_2ans": null,
+          "annee_vacance": null,
+          "taux_tfpb": null,
+          "taux_th_rs": null,
+          "taux_teom": null,
+          "nom_epci": null,
+          "annee_fiscalite": null,
+          "loyer_m2_appartement": null,
+          "loyer_m2_maison": 9.24,
+          "annee_loyers": 2025,
+          "loyers_appartement": null,
+          "loyers_maison": {
+            "code_insee": "37014",
+            "nom_commune": "Azay-le-Rideau",
+            "type_habitat": "maison",
+            "loyer_m2": 9.24,
+            "loyer_m2_bas": 7.18,
+            "loyer_m2_haut": 11.89,
+            "r2": 0.755,
+            "nb_observations": 177,
+            "annee": 2025,
+            "id_zone": "1",
+            "type_prediction": "commune",
+            "nb_observations_commune": 177,
+            "nb_observations_maille": 494,
+            "r2_ajuste": 0.75527981050117,
+            "trimestre_reference": 3,
+            "charges_comprises": true,
+            "meuble": false,
+            "surface_reference_m2": 92.0,
+            "surface_piece_reference_m2": 22.4
+          },
+          "prix_m2_median": null,
+          "nb_mutations_12m": null,
+          "prix_m2_median_maison": null,
+          "nb_mutations_12m_maison": null,
+          "prix_m2_median_appartement": null,
+          "nb_mutations_12m_appartement": null,
+          "dpe_passoires_pct": null,
+          "dpe_median": null,
+          "annee_construction_mediane": null,
+          "nb_equipements": 0,
+          "nb_etablissements_scolaires": 0,
+          "nb_monuments": 0,
+          "nb_proprietaires_pm": 0,
+          "surface_pm_ha": null,
+          "fibre_pct": null
+        }
+      ],
+      "meta": {
+        "source": [
+          {
+            "nom": "Recensement de la Population",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.insee.fr/fr/statistiques/8290591",
+            "producteur": "INSEE"
+          },
+          {
+            "nom": "Filosofi (Revenus et Pauvrete)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.insee.fr/fr/statistiques/7756855",
+            "producteur": "INSEE"
+          },
+          {
+            "nom": "Zonage ABC (Tension Immobiliere)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.data.gouv.fr/datasets/liste-des-communes-selon-le-zonage-abc",
+            "producteur": "Ministere de la Transition Ecologique"
+          },
+          {
+            "nom": "Logements Vacants (LOVAC)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.data.gouv.fr/datasets/logements-vacants-du-parc-prive-par-commune-departement-region-france",
+            "producteur": "CEREMA"
+          },
+          {
+            "nom": "Fiscalite Locale des Particuliers",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.data.gouv.fr/datasets/fiscalite-locale-des-particuliers",
+            "producteur": "DGFiP"
+          },
+          {
+            "nom": "Carte des Loyers",
+            "licence": "Non specifiee (mention source obligatoire)",
+            "url": "https://www.data.gouv.fr/datasets/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025",
+            "producteur": "ANIL / MTE"
+          },
+          {
+            "nom": "Demandes de Valeurs Foncieres (DVF)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.data.gouv.fr/datasets/demandes-de-valeurs-foncieres-geolocalisees",
+            "producteur": "DGFiP / Etalab"
+          },
+          {
+            "nom": "Diagnostics de Performance Energetique (DPE)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://data.ademe.fr/datasets/dpe03existant",
+            "producteur": "ADEME"
+          },
+          {
+            "nom": "Base Permanente des Equipements (BPE)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.insee.fr/fr/statistiques/8217537",
+            "producteur": "INSEE"
+          },
+          {
+            "nom": "Carte Scolaire des Colleges",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.data.gouv.fr/datasets/carte-scolaire-des-colleges-publics",
+            "producteur": "DGESCO / MEN"
+          },
+          {
+            "nom": "Monuments Historiques",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://data.culture.gouv.fr/explore/dataset/liste-des-immeubles-proteges-au-titre-des-monuments-historiques/",
+            "producteur": "Ministere de la Culture"
+          },
+          {
+            "nom": "Fichiers des personnes morales (MAJIC)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.data.gouv.fr/datasets/fichiers-des-locaux-et-des-parcelles-des-personnes-morales",
+            "producteur": "DGFiP / Etalab"
+          },
+          {
+            "nom": "Ma Connexion Internet (Arcep)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://www.data.gouv.fr/datasets/ma-connexion-internet",
+            "producteur": "Arcep"
+          }
+        ],
+        "resolution": null
+      }
+    }
+  }
+}

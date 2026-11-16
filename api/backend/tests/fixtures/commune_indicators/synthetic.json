@@ -1,0 +1,26 @@
+{
+  "evidence_kind": "synthetic-test-only",
+  "real_publication_authorized": false,
+  "policy": {"median_n": 5, "quantiles": "test-only", "trend": "test-only"},
+  "prices": [
+    {"name": "four", "values": [100, 200, 300, 400], "expected": {"n": 4, "p10": "130", "p50": "250", "p90": "370", "median_public": null}},
+    {"name": "five", "values": [100, 200, 300, 400, 500], "expected": {"n": 5, "p10": "140", "p50": "300", "p90": "460", "median_public": "300"}},
+    {"name": "equal", "values": [2000, 2000, 2000, 2000, 2000], "expected": {"n": 5, "p10": "2000", "p50": "2000", "p90": "2000", "median_public": "2000"}},
+    {"name": "zero", "values": [], "expected": {"n": 0, "p10": null, "p50": null, "p90": null, "median_public": null}}
+  ],
+  "energy": [
+    {"name": "mode-not-median", "classes": ["A", "A", "A", "A", "D", "D", "D", "G", "G", null], "expected": {"total": 10, "known": 9, "unknown": 1, "modes": ["A"], "median": "D", "fg_numerator": 2}},
+    {"name": "ties", "classes": ["G", "A", "G", "A"], "expected": {"total": 4, "known": 4, "unknown": 0, "modes": ["A", "G"], "median": "A", "fg_numerator": 2}},
+    {"name": "unknown", "classes": [null, null], "expected": {"total": 2, "known": 0, "unknown": 2, "modes": [], "median": null, "fg_numerator": 0}}
+  ],
+  "windows": [
+    {"anchor": "2024-02-29", "dates": ["2022-02-27", "2022-02-28", "2023-02-27", "2023-02-28", "2024-02-28", "2024-02-29"], "expected_previous": ["2022-02-28", "2023-02-27"], "expected_current": ["2023-02-28", "2024-02-28"]}
+  ],
+  "rounded_medians": {"previous": "2000.1", "current": "2000.2", "display_previous": 2000, "display_current": 2000, "expected_variation": "0.004999750012499375031248400"},
+  "source_duplicates": [
+    {"id": "synthetic-1", "source": "existant", "class": "A"},
+    {"id": "synthetic-1", "source": "neuf", "class": "A"},
+    {"id": "synthetic-2", "source": "existant", "class": "G"}
+  ],
+  "expected_distinct_diagnostics": 2
+}

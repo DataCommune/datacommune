@@ -1,0 +1,478 @@
+{
+  "boundary": "Real /v1/revenus and /v1/commune ASGI after official frozen CSV import. Commune uses minimal SQL projection, not full production synthesis rebuild. Real dependency guard enabled; DPE content, authentication and GPS excluded.",
+  "payload": {
+    "statut": "ok",
+    "donnees": [
+      {
+        "code_insee": "44109",
+        "nom_commune": null,
+        "code_departement": "44",
+        "code_region": null,
+        "population": null,
+        "nb_menages": null,
+        "nb_logements": null,
+        "nb_logements_vacants_recensement": null,
+        "densite": null,
+        "superficie": null,
+        "annee_demographie": null,
+        "revenu_median": 24380.0,
+        "taux_pauvrete": 17.0,
+        "indice_gini": 0.412,
+        "part_imposee": 57.0,
+        "annee_revenus": 2021,
+        "zone_abc": null,
+        "zone_abc_reclassement": null,
+        "taux_vacance": null,
+        "nb_vacants_plus_2ans": null,
+        "annee_vacance": null,
+        "taux_tfpb": null,
+        "taux_th_rs": null,
+        "taux_teom": null,
+        "nom_epci": null,
+        "annee_fiscalite": null,
+        "loyer_m2_appartement": null,
+        "loyer_m2_maison": null,
+        "annee_loyers": null,
+        "prix_m2_median": null,
+        "nb_mutations_12m": null,
+        "prix_m2_median_maison": null,
+        "nb_mutations_12m_maison": null,
+        "prix_m2_median_appartement": null,
+        "nb_mutations_12m_appartement": null,
+        "dpe_passoires_pct": null,
+        "dpe_median": null,
+        "annee_construction_mediane": null,
+        "nb_equipements": null,
+        "nb_etablissements_scolaires": null,
+        "nb_monuments": null,
+        "nb_proprietaires_pm": null,
+        "surface_pm_ha": null,
+        "fibre_pct": null
+      }
+    ],
+    "meta": {
+      "source": [
+        {
+          "nom": "Recensement de la Population",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://www.insee.fr/fr/statistiques/8290591",
+          "producteur": "INSEE"
+        },
+        {
+          "nom": "Filosofi (Revenus et Pauvrete)",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://www.insee.fr/fr/statistiques/7756855",
+          "producteur": "INSEE"
+        },
+        {
+          "nom": "Zonage ABC (Tension Immobiliere)",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://www.data.gouv.fr/datasets/liste-des-communes-selon-le-zonage-abc",
+          "producteur": "Ministere de la Transition Ecologique"
+        },
+        {
+          "nom": "Logements Vacants (LOVAC)",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://www.data.gouv.fr/datasets/logements-vacants-du-parc-prive-par-commune-departement-region-france",
+          "producteur": "CEREMA"
+        },
+        {
+          "nom": "Fiscalite Locale des Particuliers",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://www.data.gouv.fr/datasets/fiscalite-locale-des-particuliers",
+          "producteur": "DGFiP"
+        },
+        {
+          "nom": "Carte des Loyers",
+          "licence": "Non specifiee (mention source obligatoire)",
+          "url": "https://www.data.gouv.fr/datasets/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025",
+          "producteur": "ANIL / MTE"
+        },
+        {
+          "nom": "Demandes de Valeurs Foncieres (DVF)",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://www.data.gouv.fr/datasets/demandes-de-valeurs-foncieres-geolocalisees",
+          "producteur": "DGFiP / Etalab"
+        },
+        {
+          "nom": "Diagnostics de Performance Energetique (DPE)",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://data.ademe.fr/datasets/dpe03existant",
+          "producteur": "ADEME"
+        },
+        {
+          "nom": "Base Permanente des Equipements (BPE)",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://www.insee.fr/fr/statistiques/8217537",
+          "producteur": "INSEE"
+        },
+        {
+          "nom": "Carte Scolaire des Colleges",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://www.data.gouv.fr/datasets/carte-scolaire-des-colleges-publics",
+          "producteur": "DGESCO / MEN"
+        },
+        {
+          "nom": "Monuments Historiques",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://data.culture.gouv.fr/explore/dataset/liste-des-immeubles-proteges-au-titre-des-monuments-historiques/",
+          "producteur": "Ministere de la Culture"
+        },
+        {
+          "nom": "Fichiers des personnes morales (MAJIC)",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://www.data.gouv.fr/datasets/fichiers-des-locaux-et-des-parcelles-des-personnes-morales",
+          "producteur": "DGFiP / Etalab"
+        },
+        {
+          "nom": "Ma Connexion Internet (Arcep)",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://www.data.gouv.fr/datasets/ma-connexion-internet",
+          "producteur": "Arcep"
+        }
+      ],
+      "resolution": null
+    }
+  },
+  "oracle": {
+    "code_insee": "44109",
+    "revenu_median": 24380,
+    "indice_gini": 0.412,
+    "taux_pauvrete": 17.0,
+    "annee_revenus": 2021,
+    "benchmark_dec_metropole": 22900,
+    "counterexample_disp_metropole": 23080
+  },
+  "responses": {
+    "01019": {
+      "statut": "ok",
+      "donnees": [
+        {
+          "code_insee": "01019",
+          "nom_commune": null,
+          "code_departement": "01",
+          "nom_departement": null,
+          "nom_region": null,
+          "nb_menages_fiscaux": null,
+          "revenu_median": null,
+          "revenu_q1": null,
+          "revenu_q3": null,
+          "revenu_d1": null,
+          "revenu_d9": null,
+          "indice_gini": null,
+          "taux_pauvrete": null,
+          "part_imposee": null,
+          "annee": 2021
+        }
+      ],
+      "meta": {
+        "source": {
+          "nom": "Filosofi (Revenus et Pauvrete)",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://www.insee.fr/fr/statistiques/7756855",
+          "producteur": "INSEE"
+        },
+        "resolution": null
+      }
+    },
+    "13055": {
+      "statut": "ok",
+      "donnees": [
+        {
+          "code_insee": "13055",
+          "nom_commune": null,
+          "code_departement": "13",
+          "nom_departement": null,
+          "nom_region": null,
+          "nb_menages_fiscaux": 363394,
+          "revenu_median": 19710,
+          "revenu_q1": 9610,
+          "revenu_q3": 30670,
+          "revenu_d1": 2350,
+          "revenu_d9": 44900,
+          "indice_gini": 0.457,
+          "taux_pauvrete": 26.0,
+          "part_imposee": 48.0,
+          "annee": 2021
+        },
+        {
+          "code_insee": "13201",
+          "nom_commune": null,
+          "code_departement": "13",
+          "nom_departement": null,
+          "nom_region": null,
+          "nb_menages_fiscaux": 15618,
+          "revenu_median": 14250,
+          "revenu_q1": 5080,
+          "revenu_q3": 26350,
+          "revenu_d1": 150,
+          "revenu_d9": 39950,
+          "indice_gini": 0.503,
+          "taux_pauvrete": 38.0,
+          "part_imposee": 39.0,
+          "annee": 2021
+        }
+      ],
+      "meta": {
+        "source": {
+          "nom": "Filosofi (Revenus et Pauvrete)",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://www.insee.fr/fr/statistiques/7756855",
+          "producteur": "INSEE"
+        },
+        "resolution": null
+      }
+    },
+    "13201": {
+      "statut": "ok",
+      "donnees": [
+        {
+          "code_insee": "13201",
+          "nom_commune": null,
+          "code_departement": "13",
+          "nom_departement": null,
+          "nom_region": null,
+          "nb_menages_fiscaux": 15618,
+          "revenu_median": 14250,
+          "revenu_q1": 5080,
+          "revenu_q3": 26350,
+          "revenu_d1": 150,
+          "revenu_d9": 39950,
+          "indice_gini": 0.503,
+          "taux_pauvrete": 38.0,
+          "part_imposee": 39.0,
+          "annee": 2021
+        }
+      ],
+      "meta": {
+        "source": {
+          "nom": "Filosofi (Revenus et Pauvrete)",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://www.insee.fr/fr/statistiques/7756855",
+          "producteur": "INSEE"
+        },
+        "resolution": null
+      }
+    },
+    "44109": {
+      "statut": "ok",
+      "donnees": [
+        {
+          "code_insee": "44109",
+          "nom_commune": null,
+          "code_departement": "44",
+          "nom_departement": null,
+          "nom_region": null,
+          "nb_menages_fiscaux": 141375,
+          "revenu_median": 24380,
+          "revenu_q1": 14440,
+          "revenu_q3": 36290,
+          "revenu_d1": 6050,
+          "revenu_d9": 52030,
+          "indice_gini": 0.412,
+          "taux_pauvrete": 17.0,
+          "part_imposee": 57.0,
+          "annee": 2021
+        }
+      ],
+      "meta": {
+        "source": {
+          "nom": "Filosofi (Revenus et Pauvrete)",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://www.insee.fr/fr/statistiques/7756855",
+          "producteur": "INSEE"
+        },
+        "resolution": null
+      }
+    },
+    "69123": {
+      "statut": "ok",
+      "donnees": [
+        {
+          "code_insee": "69123",
+          "nom_commune": null,
+          "code_departement": "69",
+          "nom_departement": null,
+          "nom_region": null,
+          "nb_menages_fiscaux": 230486,
+          "revenu_median": 25860,
+          "revenu_q1": 15260,
+          "revenu_q3": 39230,
+          "revenu_d1": 6990,
+          "revenu_d9": 56770,
+          "indice_gini": 0.419,
+          "taux_pauvrete": 16.0,
+          "part_imposee": 61.0,
+          "annee": 2021
+        },
+        {
+          "code_insee": "69381",
+          "nom_commune": null,
+          "code_departement": "69",
+          "nom_departement": null,
+          "nom_region": null,
+          "nb_menages_fiscaux": 13371,
+          "revenu_median": 26800,
+          "revenu_q1": 16020,
+          "revenu_q3": 40920,
+          "revenu_d1": 7610,
+          "revenu_d9": 59720,
+          "indice_gini": 0.408,
+          "taux_pauvrete": 15.0,
+          "part_imposee": 60.0,
+          "annee": 2021
+        }
+      ],
+      "meta": {
+        "source": {
+          "nom": "Filosofi (Revenus et Pauvrete)",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://www.insee.fr/fr/statistiques/7756855",
+          "producteur": "INSEE"
+        },
+        "resolution": null
+      }
+    },
+    "69381": {
+      "statut": "ok",
+      "donnees": [
+        {
+          "code_insee": "69381",
+          "nom_commune": null,
+          "code_departement": "69",
+          "nom_departement": null,
+          "nom_region": null,
+          "nb_menages_fiscaux": 13371,
+          "revenu_median": 26800,
+          "revenu_q1": 16020,
+          "revenu_q3": 40920,
+          "revenu_d1": 7610,
+          "revenu_d9": 59720,
+          "indice_gini": 0.408,
+          "taux_pauvrete": 15.0,
+          "part_imposee": 60.0,
+          "annee": 2021
+        }
+      ],
+      "meta": {
+        "source": {
+          "nom": "Filosofi (Revenus et Pauvrete)",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://www.insee.fr/fr/statistiques/7756855",
+          "producteur": "INSEE"
+        },
+        "resolution": null
+      }
+    },
+    "75056": {
+      "statut": "ok",
+      "donnees": [
+        {
+          "code_insee": "75056",
+          "nom_commune": null,
+          "code_departement": "75",
+          "nom_departement": null,
+          "nom_region": null,
+          "nb_menages_fiscaux": 1010678,
+          "revenu_median": 31670,
+          "revenu_q1": 16630,
+          "revenu_q3": 53500,
+          "revenu_d1": 7370,
+          "revenu_d9": 87450,
+          "indice_gini": 0.526,
+          "taux_pauvrete": 16.0,
+          "part_imposee": 69.0,
+          "annee": 2021
+        },
+        {
+          "code_insee": "75101",
+          "nom_commune": null,
+          "code_departement": "75",
+          "nom_departement": null,
+          "nom_region": null,
+          "nb_menages_fiscaux": 8462,
+          "revenu_median": 38950,
+          "revenu_q1": 20700,
+          "revenu_q3": 67470,
+          "revenu_d1": 9510,
+          "revenu_d9": 121760,
+          "indice_gini": 0.586,
+          "taux_pauvrete": 12.0,
+          "part_imposee": 71.0,
+          "annee": 2021
+        }
+      ],
+      "meta": {
+        "source": {
+          "nom": "Filosofi (Revenus et Pauvrete)",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://www.insee.fr/fr/statistiques/7756855",
+          "producteur": "INSEE"
+        },
+        "resolution": null
+      }
+    },
+    "75101": {
+      "statut": "ok",
+      "donnees": [
+        {
+          "code_insee": "75101",
+          "nom_commune": null,
+          "code_departement": "75",
+          "nom_departement": null,
+          "nom_region": null,
+          "nb_menages_fiscaux": 8462,
+          "revenu_median": 38950,
+          "revenu_q1": 20700,
+          "revenu_q3": 67470,
+          "revenu_d1": 9510,
+          "revenu_d9": 121760,
+          "indice_gini": 0.586,
+          "taux_pauvrete": 12.0,
+          "part_imposee": 71.0,
+          "annee": 2021
+        }
+      ],
+      "meta": {
+        "source": {
+          "nom": "Filosofi (Revenus et Pauvrete)",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://www.insee.fr/fr/statistiques/7756855",
+          "producteur": "INSEE"
+        },
+        "resolution": null
+      }
+    },
+    "85191": {
+      "statut": "ok",
+      "donnees": [
+        {
+          "code_insee": "85191",
+          "nom_commune": null,
+          "code_departement": "85",
+          "nom_departement": null,
+          "nom_region": null,
+          "nb_menages_fiscaux": 25644,
+          "revenu_median": 21940,
+          "revenu_q1": 14670,
+          "revenu_q3": 30030,
+          "revenu_d1": 7470,
+          "revenu_d9": 40300,
+          "indice_gini": 0.361,
+          "taux_pauvrete": 15.0,
+          "part_imposee": 49.0,
+          "annee": 2021
+        }
+      ],
+      "meta": {
+        "source": {
+          "nom": "Filosofi (Revenus et Pauvrete)",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://www.insee.fr/fr/statistiques/7756855",
+          "producteur": "INSEE"
+        },
+        "resolution": null
+      }
+    }
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "schema_version": "1",
+  "description": "100% synthetic golden manifest fixture (Phase 43, Plan 07). Reserved high-range 44/85 placeholders are deliberately outside the real commune corpus; invariants are synthetic booleans/enums, with no address, coordinate, key or live identifier. Real corpus selection is a later blocking human checkpoint (D-10). Phase 48 (Plan 11): three address cases now also carry the required_observations values (copro_row_present, dpe_appartements_multiples, cadastre_state=not_reported) so the selector coverage test on this fixture stays representative. Phase 48 (Plan 14): golden-address-001 also carries dvf_appartements_present, and golden-address-003 plays the composite 'maison divisee' archetype -- dpe_appartements_multiples true AND copro_row_present explicitly FALSE, an absent key being a non-measurement, never a measured negative (D-04). Both are needed before Plan 48-16 amends the schema: this fixture is validated against the REAL schema, so a fixture that stopped covering the requirements would turn the offline gate red on that push.",
+  "cases": [
+    {
+      "case_id": "golden-commune-001",
+      "type": "commune",
+      "departement": "44",
+      "code_insee": "44991",
+      "category": "complete",
+      "frozen_at": "2026-07-15",
+      "source_millesimes": { "dvf": "2024", "dpe": "2024", "recensement": "2021" },
+      "invariants": {
+        "db": { "has_commune_row": true, "superficie_present": true },
+        "api": { "dvf_state": "value", "dpe_state": "value" },
+        "mapper": { "densite_unit": "density" }
+      },
+      "private_ref": "golden-commune-001"
+    },
+    {
+      "case_id": "golden-commune-002",
+      "type": "commune",
+      "departement": "85",
+      "code_insee": "85991",
+      "category": "partial",
+      "frozen_at": "2026-07-15",
+      "source_millesimes": { "dvf": "2024", "recensement": "2021" },
+      "invariants": {
+        "db": { "has_commune_row": true, "superficie_present": true },
+        "api": { "dvf_state": "value", "dpe_state": "not_reported" },
+        "mapper": { "densite_unit": "density" }
+      },
+      "private_ref": "golden-commune-002"
+    },
+    {
+      "case_id": "golden-commune-003",
+      "type": "commune",
+      "departement": "85",
+      "code_insee": "85992",
+      "category": "dataset_out_of_coverage",
+      "frozen_at": "2026-07-15",
+      "source_millesimes": { "recensement": "2021" },
+      "invariants": {
+        "db": { "has_commune_row": true, "superficie_present": true },
+        "api": { "dvf_state": "out_of_coverage", "dpe_state": "out_of_coverage" },
+        "mapper": { "densite_unit": "density" }
+      },
+      "private_ref": "golden-commune-003"
+    },
+    {
+      "case_id": "golden-address-001",
+      "type": "address",
+      "departement": "44",
+      "code_insee": "44991",
+      "category": "complete",
+      "frozen_at": "2026-07-15",
+      "source_millesimes": { "dvf": "2024", "dpe": "2024" },
+      "invariants": {
+        "db": {
+          "parcelle_present": true,
+          "copro_row_present": true,
+          "dpe_appartements_multiples": true,
+          "dvf_appartements_present": true
+        },
+        "api": { "cadastre_state": "value", "dvf_state": "value", "dpe_state": "value" },
+        "mapper": { "prix_m2_unit": "euro_per_m2" }
+      },
+      "private_ref": "golden-address-001"
+    },
+    {
+      "case_id": "golden-address-002",
+      "type": "address",
+      "departement": "85",
+      "code_insee": "85991",
+      "category": "partial",
+      "frozen_at": "2026-07-15",
+      "source_millesimes": { "dvf": "2024" },
+      "invariants": {
+        "db": { "parcelle_present": true },
+        "api": { "cadastre_state": "not_reported", "dvf_state": "value", "dpe_state": "not_reported" },
+        "mapper": { "prix_m2_unit": "euro_per_m2" }
+      },
+      "private_ref": "golden-address-002"
+    },
+    {
+      "case_id": "golden-address-003",
+      "type": "address",
+      "departement": "44",
+      "code_insee": "44992",
+      "category": "no_dvf",
+      "frozen_at": "2026-07-15",
+      "source_millesimes": { "dpe": "2024" },
+      "invariants": {
+        "db": {
+          "parcelle_present": true,
+          "dpe_appartements_multiples": true,
+          "copro_row_present": false
+        },
+        "api": { "cadastre_state": "value", "dvf_state": "out_of_coverage", "dpe_state": "value" },
+        "mapper": { "prix_m2_unit": "euro_per_m2" }
+      },
+      "private_ref": "golden-address-003"
+    },
+    {
+      "case_id": "golden-address-004",
+      "type": "address",
+      "departement": "85",
+      "code_insee": "85992",
+      "category": "no_dpe",
+      "frozen_at": "2026-07-15",
+      "source_millesimes": { "dvf": "2024" },
+      "invariants": {
+        "db": { "parcelle_present": true },
+        "api": { "cadastre_state": "value", "dvf_state": "value", "dpe_state": "out_of_coverage" },
+        "mapper": { "prix_m2_unit": "euro_per_m2" }
+      },
+      "private_ref": "golden-address-004"
+    },
+    {
+      "case_id": "golden-address-005",
+      "type": "address",
+      "departement": "44",
+      "code_insee": "44991",
+      "category": "dataset_out_of_coverage",
+      "frozen_at": "2026-07-15",
+      "source_millesimes": { "dvf": "2024" },
+      "invariants": {
+        "db": { "parcelle_present": true },
+        "api": { "cadastre_state": "value", "urbanisme_state": "out_of_coverage" },
+        "mapper": { "prix_m2_unit": "euro_per_m2" }
+      },
+      "private_ref": "golden-address-005"
+    }
+  ]
+}

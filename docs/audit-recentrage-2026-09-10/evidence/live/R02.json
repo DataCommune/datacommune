@@ -1,0 +1,240 @@
+{
+  "captured_at": "2026-09-10T20:40:19.251184+00:00",
+  "case": {
+    "case_id": "R02",
+    "address": "16 Rue des Clos Mâts, 44830 Brains",
+    "ban_id": "44024_0035_00016",
+    "stratum": "maison neuve 44"
+  },
+  "sources": {
+    "dpe03existant": {
+      "http": 200,
+      "body": {
+        "total": 0,
+        "results": []
+      },
+      "url": "https://data.ademe.fr/data-fair/api/v1/datasets/dpe03existant/lines?qs=identifiant_ban%3A%2244024_0035_00016%22&size=100&select=numero_dpe%2Cidentifiant_ban%2Cadresse_ban%2Cadresse_brut%2Ccode_insee_ban%2Ctype_batiment%2Csurface_habitable_logement%2Cetiquette_dpe%2Cdate_etablissement_dpe%2Cdate_fin_validite_dpe%2Cnumero_dpe_remplace%2Cid_rnb%2Cscore_ban%2Cnumero_etage_appartement"
+    },
+    "dpe02neuf": {
+      "http": 200,
+      "body": {
+        "total": 2,
+        "results": [
+          {
+            "adresse_brut": "16 rue des Clos du Mats",
+            "adresse_ban": "16 Rue des Clos Mâts 44830 Brains",
+            "identifiant_ban": "44024_0035_00016",
+            "code_insee_ban": "44024",
+            "score_ban": 0.49,
+            "type_batiment": "maison",
+            "numero_etage_appartement": 0,
+            "numero_dpe": "2244N2891837P",
+            "date_fin_validite_dpe": "2032-11-30",
+            "date_etablissement_dpe": "2022-12-01",
+            "etiquette_dpe": "A",
+            "surface_habitable_logement": 90,
+            "_score": null
+          },
+          {
+            "adresse_brut": "16. rue des Clos Mâts",
+            "adresse_ban": "16 Rue des Clos Mâts 44830 Brains",
+            "identifiant_ban": "44024_0035_00016",
+            "code_insee_ban": "44024",
+            "score_ban": 0.49,
+            "type_batiment": "maison",
+            "numero_etage_appartement": 0,
+            "numero_dpe": "2244N2775865D",
+            "date_fin_validite_dpe": "2032-11-21",
+            "date_etablissement_dpe": "2022-11-22",
+            "etiquette_dpe": "A",
+            "surface_habitable_logement": 84.5,
+            "_score": null
+          }
+        ]
+      },
+      "url": "https://data.ademe.fr/data-fair/api/v1/datasets/dpe02neuf/lines?qs=identifiant_ban%3A%2244024_0035_00016%22&size=100&select=numero_dpe%2Cidentifiant_ban%2Cadresse_ban%2Cadresse_brut%2Ccode_insee_ban%2Ctype_batiment%2Csurface_habitable_logement%2Cetiquette_dpe%2Cdate_etablissement_dpe%2Cdate_fin_validite_dpe%2Cnumero_dpe_remplace%2Cid_rnb%2Cscore_ban%2Cnumero_etage_appartement"
+    }
+  },
+  "datacommune": {
+    "http": 200,
+    "body": {
+      "statut": "ok",
+      "donnees": [
+        {
+          "type_detecte": "adresse",
+          "latitude": 47.168269,
+          "longitude": -1.720886,
+          "adresse": "16 Rue des Clos Mâts, 44830 Brains",
+          "id_parcelle": "44024000AH0264",
+          "commune": "Brains",
+          "code_postal": "44830",
+          "score": 0.6756756901741028,
+          "code_insee": "44024",
+          "resolution": "exact",
+          "parcelles_candidates": null,
+          "ban_id": "44024_0035_00016",
+          "datasets": {
+            "dpe": null
+          },
+          "erreurs": null,
+          "avertissements": [],
+          "dataset_states": {
+            "dpe": {
+              "dataset": "dpe",
+              "presence": "value",
+              "absence_reason": null,
+              "raison": null
+            }
+          },
+          "dpe_attribution": {
+            "version": 2,
+            "status": "unassigned",
+            "reason": "dwelling_identity_unproven",
+            "diagnostic": null,
+            "candidates": [],
+            "building_context": null,
+            "graph_state": "not_checked"
+          },
+          "dpe_inventory": {
+            "association": "source_ban_equality",
+            "address_check": "unverified",
+            "source": "ADEME",
+            "source_coverage": "unknown",
+            "graph_state": "not_checked",
+            "imported_at": null,
+            "version": 2,
+            "as_of_date": "2026-09-10",
+            "state": "ready",
+            "items": [
+              {
+                "type_batiment": "maison",
+                "surface_habitable": 84.5,
+                "etiquette_dpe": "A",
+                "etiquette_ges": "A",
+                "date_etablissement_dpe": "2022-11-22",
+                "date_fin_validite_dpe": "2032-11-21",
+                "lifecycle": {
+                  "source_state": "present",
+                  "source_snapshot_date": "2026-09-05",
+                  "source_scope": "44/85",
+                  "regimes": [
+                    "neuf"
+                  ],
+                  "replacement_state": "no_successor_known",
+                  "graph_issues": [],
+                  "validity": "not_expired_by_date",
+                  "as_of_date": "2026-09-10",
+                  "revision_status": "unverified",
+                  "revision_kind": null,
+                  "revision_date": null,
+                  "detail_availability": "available"
+                }
+              },
+              {
+                "type_batiment": "maison",
+                "surface_habitable": 90.0,
+                "etiquette_dpe": "A",
+                "etiquette_ges": "A",
+                "date_etablissement_dpe": "2022-12-01",
+                "date_fin_validite_dpe": "2032-11-30",
+                "lifecycle": {
+                  "source_state": "present",
+                  "source_snapshot_date": "2026-09-05",
+                  "source_scope": "44/85",
+                  "regimes": [
+                    "neuf"
+                  ],
+                  "replacement_state": "no_successor_known",
+                  "graph_issues": [],
+                  "validity": "not_expired_by_date",
+                  "as_of_date": "2026-09-10",
+                  "revision_status": "unverified",
+                  "revision_kind": null,
+                  "revision_date": null,
+                  "detail_availability": "available"
+                }
+              }
+            ],
+            "total": 2,
+            "distribution": {
+              "A": 2,
+              "B": 0,
+              "C": 0,
+              "D": 0,
+              "E": 0,
+              "F": 0,
+              "G": 0,
+              "unknown": 0
+            },
+            "page_size": 20,
+            "has_more": false,
+            "read_state": "complete"
+          },
+          "dvf_attribution": null
+        }
+      ],
+      "meta": {
+        "source": [
+          {
+            "nom": "Base Adresse Nationale (BAN)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://adresse.data.gouv.fr",
+            "producteur": "DINUM / IGN",
+            "dataset": "ban",
+            "periode": {
+              "statut": "inconnue",
+              "label": null,
+              "debut": null,
+              "fin": null
+            },
+            "derniere_importation_reussie": null,
+            "couverture": {
+              "type": "inconnue",
+              "departements": null
+            },
+            "cadence": {
+              "statut": "official",
+              "label": "Hebdomadaire",
+              "evidence_url": "https://cartes.gouv.fr/aide/fr/guides-utilisateur/utiliser-les-services-de-la-geoplateforme/geocodage/",
+              "intervalle_jours": 7
+            },
+            "etat": "inconnu"
+          },
+          {
+            "nom": "Diagnostics de Performance Energetique (DPE)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://data.ademe.fr/datasets/dpe03existant",
+            "producteur": "ADEME",
+            "dataset": "dpe",
+            "periode": {
+              "statut": "inconnue",
+              "label": null,
+              "debut": null,
+              "fin": null
+            },
+            "derniere_importation_reussie": null,
+            "couverture": {
+              "type": "departements",
+              "departements": [
+                "44",
+                "85"
+              ]
+            },
+            "cadence": {
+              "statut": "official",
+              "label": "Hebdomadaire",
+              "evidence_url": "https://data.ademe.fr/datasets/dpe03existant",
+              "intervalle_jours": 7
+            },
+            "etat": "inconnu"
+          }
+        ],
+        "resolution": {
+          "issue": "exact",
+          "raison": null,
+          "parcelles_candidates": null
+        }
+      }
+    }
+  }
+}

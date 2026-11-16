@@ -1,0 +1,80 @@
+{
+  "id": "voie_ferree",
+  "section": "vivre",
+  "titre": "Voies ferrées",
+  "etat": "ok",
+  "ton": "vigilance",
+  "granularite": {
+    "niveau": "rayon",
+    "rayon_m": 500
+  },
+  "verdict": "Voie ferrée proche : voie ferrée principale à 33 m.",
+  "chiffres": [
+    {
+      "id": "distance",
+      "libelle": "Voie ferrée principale la plus proche",
+      "valeur": 33,
+      "unite": "metre",
+      "millesime": "2026-10-30"
+    }
+  ],
+  "details": {
+    "voies": [
+      {
+        "nature": "Voie ferrée principale",
+        "nom": null,
+        "nombre_de_voies": 2,
+        "electrifiee": true,
+        "vitesse_maximale_kmh": null,
+        "distance_m": 33
+      },
+      {
+        "nature": "Voie ferrée principale",
+        "nom": null,
+        "nombre_de_voies": 2,
+        "electrifiee": true,
+        "vitesse_maximale_kmh": null,
+        "distance_m": 53
+      },
+      {
+        "nature": "Voie ferrée principale",
+        "nom": null,
+        "nombre_de_voies": 2,
+        "electrifiee": true,
+        "vitesse_maximale_kmh": null,
+        "distance_m": 74
+      },
+      {
+        "nature": "Voie ferrée principale",
+        "nom": null,
+        "nombre_de_voies": 2,
+        "electrifiee": true,
+        "vitesse_maximale_kmh": null,
+        "distance_m": 88
+      },
+      {
+        "nature": "Voie ferrée principale",
+        "nom": null,
+        "nombre_de_voies": 2,
+        "electrifiee": true,
+        "vitesse_maximale_kmh": null,
+        "distance_m": 100
+      }
+    ],
+    "liste_incomplete": false
+  },
+  "rattachement": null,
+  "sources": [
+    {
+      "cle": "axes_transport",
+      "nom": "BD TOPO – Réseaux routier et ferré (WFS de la Géoplateforme)",
+      "producteur": "IGN",
+      "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-TOPO",
+      "licence": "Licence Ouverte 2.0",
+      "millesime": "2026-10-30",
+      "mode": "direct"
+    }
+  ],
+  "motif": null,
+  "pannes_partielles": []
+}

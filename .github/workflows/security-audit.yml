@@ -1,0 +1,161 @@
+name: Security Audit
+
+# Runner: `ubuntu-latest`, GitHub-hosted. The private runner on the hypervisor is
+# stopped and is not coming back -- plan 01-07 ported every kept workflow off it
+# (REPO-04; D-13: the hypervisor is not the test machine). A runner you host yourself is
+# also what must never survive a repository going public: any fork could then
+# execute arbitrary code on it through a pull request. No workflow here names a
+# private runner label, deliberately -- `docs/REPO-STATE.md` holds the history.
+#
+# Cost, since this repository is PRIVATE: runs bill the account's 2 000 free
+# monthly minutes -- about 60 to 70 per push across the five kept workflows.
+# `timeout-minutes` on every job plus the concurrency group below bound that
+# budget; D-15 (one active lot, no commit storms) is what makes it sufficient.
+#
+# `docker` and `pwsh` are preinstalled on `ubuntu-latest`, so the disposable
+# PostGIS harness runs the same command developers run locally. Returning to a
+# local runner is one `runs-on:` line.
+
+# Reproducible supply-chain gate (SEC-01, D-08/D-09). Runs on any change to the
+# manifests, lockfiles, exception registry, the validator, or this workflow,
+# and once a week against the unchanged tree.
+# The repo secret scan (gitleaks, T46-03-LEAK) lives in secret-scan.yml, which
+# carries NO paths filter so a leaked credential in ANY file is still caught.
+#
+# Fail-closed contract:
+#   - locked resolution (uv sync --locked / npm ci), pinned actions (no floating
+#     tag);
+#   - a missing tool output or malformed JSON is a FAIL (never "zero finding");
+#   - a single validation step renders the dependency verdict.
+
+on:
+  # Manual trigger, added at plan 01-07. Every other workflow here runs on every
+  # push that touches code; this one is paths-filtered (by design -- re-auditing
+  # a locked dependency tree that did not change proves nothing on a push and
+  # costs runner minutes), so without a dispatch there is no way to demand a
+  # fresh supply-chain verdict. No input, no secret: it runs exactly the job
+  # below.
+  workflow_dispatch:
+  # Weekly re-audit (quick 261024-f9r): an advisory published against an
+  # unchanged lockfile is otherwise never seen, since the push and pull_request
+  # triggers below only fire when a manifest moves. Monday 05:17 UTC, off the
+  # full hour that GitHub delays under load; a red scheduled run notifies the
+  # last person who edited this cron line.
+  schedule:
+    - cron: "17 5 * * 1"
+  push:
+    branches: [master]
+    paths:
+      - "api/backend/pyproject.toml"
+      - "api/backend/uv.lock"
+      - "api/backend/scripts/validate_dependency_audit.py"
+      - "frontend/package.json"
+      - "frontend/package-lock.json"
+      - "security/dependency-exceptions.json"
+      - ".github/workflows/security-audit.yml"
+  pull_request:
+    paths:
+      - "api/backend/pyproject.toml"
+      - "api/backend/uv.lock"
+      - "api/backend/scripts/validate_dependency_audit.py"
+      - "frontend/package.json"
+      - "frontend/package-lock.json"
+      - "security/dependency-exceptions.json"
+      - ".github/workflows/security-audit.yml"
+
+concurrency:
+  # A superseded run proves nothing about the new head, so cancel it: a rush of
+  # commits then costs one run instead of one per push. The 19/08 spike on the
+  # old account burned 773 min (39% of a monthly quota) exactly this way. Never
+  # cancel on master -- `master` is the only branch here (strategy `none`), so
+  # in practice every run completes and the cap is `timeout-minutes`.
+  group: security-audit-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/master' }}
+
+permissions:
+  contents: read
+
+jobs:
+  dependency-audit:
+    name: Dependency audit (pip-audit + npm audit)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      - uses: astral-sh/setup-uv@cec208311dfd045dd5311c1add060b2062131d57 # v8.0.0
+
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Sync backend (locked)
+        working-directory: api/backend
+        run: uv sync --locked --group dev
+
+      - name: pip-audit on the locked Python resolution (JSON)
+        working-directory: api/backend
+        run: |
+          set -euo pipefail
+          uv export --locked --no-dev --no-emit-project --format requirements.txt > req-runtime.txt
+          uv export --locked --no-emit-project --format requirements.txt > req-full.txt
+          # pip-audit exits non-zero when it FINDS vulnerabilities; that is not a
+          # tool failure. Distinguish "found vulns" (rc=1, JSON present -> let the
+          # validator decide) from a real tool error (empty/absent JSON -> FAIL).
+          run_audit() {
+            local req="$1" out="$2"
+            set +e
+            uv run --with pip-audit pip-audit -r "$req" --format json --output "$out"
+            local rc=$?
+            set -e
+            if [ ! -s "$out" ]; then
+              echo "FAIL: pip-audit produced no JSON for $req (rc=$rc)"
+              exit 1
+            fi
+          }
+          run_audit req-runtime.txt pip-audit-runtime.json
+          run_audit req-full.txt pip-audit-full.json
+
+      - name: npm audit on the locked frontend tree (JSON)
+        working-directory: frontend
+        run: |
+          set -euo pipefail
+          npm ci --ignore-scripts
+          run_audit() {
+            local out="$1"; shift
+            set +e
+            npm audit "$@" --json > "$out"
+            local rc=$?
+            set -e
+            if [ ! -s "$out" ]; then
+              echo "FAIL: npm audit produced no JSON ($* rc=$rc)"
+              exit 1
+            fi
+          }
+          run_audit npm-audit-runtime.json --omit=dev --audit-level=high
+          run_audit npm-audit-full.json
+
+      - name: Validate audits (single fail-closed verdict)
+        working-directory: api/backend
+        run: |
+          set -euo pipefail
+          uv run python scripts/validate_dependency_audit.py \
+            --pip-audit-runtime pip-audit-runtime.json \
+            --pip-audit-full pip-audit-full.json \
+            --npm-audit-runtime ../../frontend/npm-audit-runtime.json \
+            --npm-audit-full ../../frontend/npm-audit-full.json \
+            --exceptions ../../security/dependency-exceptions.json
+
+      - name: Upload raw audit JSON (short retention)
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: dependency-audit-json
+          path: |
+            api/backend/pip-audit-runtime.json
+            api/backend/pip-audit-full.json
+            frontend/npm-audit-runtime.json
+            frontend/npm-audit-full.json
+          retention-days: 7

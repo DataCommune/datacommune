@@ -1,0 +1,550 @@
+[
+  {
+    "case_id": "R01",
+    "address": "2 Rue Rio, 44400 Rezé",
+    "ban_id": "44143_3270_00002",
+    "stratum": "absence signalée par utilisateur",
+    "captured_at": "2026-09-10T20:40:15.700312+00:00",
+    "http": 200,
+    "resolved_ban": "44143_3270_00002",
+    "resolved_address": "2 Rue Rio, 44400 Rezé",
+    "source_counts": {
+      "dpe03existant": 0,
+      "dpe02neuf": 0
+    },
+    "source_http": {
+      "dpe03existant": 200,
+      "dpe02neuf": 200
+    },
+    "inventory_total": 0,
+    "inventory_state": "absent",
+    "read_state": "complete",
+    "has_more": false,
+    "attribution": {
+      "version": 2,
+      "status": "absent",
+      "reason": "not_reported",
+      "diagnostic": null,
+      "candidates": [],
+      "building_context": null,
+      "graph_state": "not_checked"
+    },
+    "parcels": [
+      "44143000AC0092",
+      "44143000AC0093",
+      "44143000AC0141",
+      "44143000AC0282",
+      "44143000AC0304"
+    ],
+    "evidence_sha256": "c6b67c0753fd6ae81311abe4c322935116d14c80f3274534dea25aa93ff41038"
+  },
+  {
+    "case_id": "R02",
+    "address": "16 Rue des Clos Mâts, 44830 Brains",
+    "ban_id": "44024_0035_00016",
+    "stratum": "maison neuve 44",
+    "captured_at": "2026-09-10T20:40:19.251184+00:00",
+    "http": 200,
+    "resolved_ban": "44024_0035_00016",
+    "resolved_address": "16 Rue des Clos Mâts, 44830 Brains",
+    "source_counts": {
+      "dpe03existant": 0,
+      "dpe02neuf": 2
+    },
+    "source_http": {
+      "dpe03existant": 200,
+      "dpe02neuf": 200
+    },
+    "inventory_total": 2,
+    "inventory_state": "ready",
+    "read_state": "complete",
+    "has_more": false,
+    "attribution": {
+      "version": 2,
+      "status": "unassigned",
+      "reason": "dwelling_identity_unproven",
+      "diagnostic": null,
+      "candidates": [],
+      "building_context": null,
+      "graph_state": "not_checked"
+    },
+    "parcels": null,
+    "evidence_sha256": "506a41b496ccc1056b19ca2572a83ea730a5894544bbb84b1719060b90b166b3"
+  },
+  {
+    "case_id": "R03",
+    "address": "5 Allée du Tertre, 44610 Indre",
+    "ban_id": "44074_rbwmiz_00005",
+    "stratum": "appartement neuf 44",
+    "captured_at": "2026-09-10T20:40:22.822734+00:00",
+    "http": 200,
+    "resolved_ban": "44074_rbwmiz_00005",
+    "resolved_address": "5 Allée du Tertre, 44610 Indre",
+    "source_counts": {
+      "dpe03existant": 0,
+      "dpe02neuf": 1
+    },
+    "source_http": {
+      "dpe03existant": 200,
+      "dpe02neuf": 200
+    },
+    "inventory_total": 1,
+    "inventory_state": "ready",
+    "read_state": "complete",
+    "has_more": false,
+    "attribution": {
+      "version": 2,
+      "status": "unassigned",
+      "reason": "dwelling_identity_unproven",
+      "diagnostic": null,
+      "candidates": [],
+      "building_context": {
+        "count": 6,
+        "distribution": {
+          "A": 3,
+          "B": 3
+        },
+        "truncated": false
+      },
+      "graph_state": "not_checked"
+    },
+    "parcels": null,
+    "evidence_sha256": "582a0c8fbfd638a70a3468b1818f90702bc18b2dacdd806af2c10efa7d82be6d"
+  },
+  {
+    "case_id": "R04",
+    "address": "2b Rue du Martin Pêcheur, 85800 Le Fenouiller",
+    "ban_id": "85088_vf3i1i_00002_b",
+    "stratum": "maison neuve 85, suffixe",
+    "captured_at": "2026-09-10T20:40:26.429716+00:00",
+    "http": 200,
+    "resolved_ban": "85088_vf3i1i_00002_b",
+    "resolved_address": "2b Rue du Martin Pêcheur, 85800 Le Fenouiller",
+    "source_counts": {
+      "dpe03existant": 0,
+      "dpe02neuf": 1
+    },
+    "source_http": {
+      "dpe03existant": 200,
+      "dpe02neuf": 200
+    },
+    "inventory_total": 1,
+    "inventory_state": "ready",
+    "read_state": "complete",
+    "has_more": false,
+    "attribution": {
+      "version": 2,
+      "status": "unassigned",
+      "reason": "dwelling_identity_unproven",
+      "diagnostic": null,
+      "candidates": [],
+      "building_context": null,
+      "graph_state": "not_checked"
+    },
+    "parcels": null,
+    "evidence_sha256": "8eb3211270d887c7769532654cce5bb9b7297bbd3666b2cd6ad847e2b7ed851f"
+  },
+  {
+    "case_id": "R05",
+    "address": "39 Rue Blanchet, 44400 Rezé",
+    "ban_id": "44143_0400_00039",
+    "stratum": "maison, historique source neuve",
+    "captured_at": "2026-09-10T20:40:29.994081+00:00",
+    "http": 200,
+    "resolved_ban": "44143_0400_00039",
+    "resolved_address": "39 Rue Blanchet, 44400 Rezé",
+    "source_counts": {
+      "dpe03existant": 1,
+      "dpe02neuf": 1
+    },
+    "source_http": {
+      "dpe03existant": 200,
+      "dpe02neuf": 200
+    },
+    "inventory_total": 2,
+    "inventory_state": "ready",
+    "read_state": "complete",
+    "has_more": false,
+    "attribution": {
+      "version": 2,
+      "status": "unassigned",
+      "reason": "dwelling_identity_unproven",
+      "diagnostic": null,
+      "candidates": [],
+      "building_context": null,
+      "graph_state": "not_checked"
+    },
+    "parcels": null,
+    "evidence_sha256": "07fcb2c6a3f973004726c056d939a5f5cbd4aff30ceaf0a08774be971def9ce8"
+  },
+  {
+    "case_id": "R06",
+    "address": "105 Rue Aristide Briand, 44400 Rezé",
+    "ban_id": "44143_0160_00105",
+    "stratum": "maison existante 44",
+    "captured_at": "2026-09-10T20:40:33.824639+00:00",
+    "http": 200,
+    "resolved_ban": "44143_0160_00105",
+    "resolved_address": "105 Rue Aristide Briand, 44400 Rezé",
+    "source_counts": {
+      "dpe03existant": 1,
+      "dpe02neuf": 0
+    },
+    "source_http": {
+      "dpe03existant": 200,
+      "dpe02neuf": 200
+    },
+    "inventory_total": 1,
+    "inventory_state": "ready",
+    "read_state": "complete",
+    "has_more": false,
+    "attribution": {
+      "version": 2,
+      "status": "unassigned",
+      "reason": "dwelling_identity_unproven",
+      "diagnostic": null,
+      "candidates": [],
+      "building_context": null,
+      "graph_state": "not_checked"
+    },
+    "parcels": null,
+    "evidence_sha256": "17df9998692f9425432a3fc1fce4bbe224875f1901a4fe524b16cdf8115a8898"
+  },
+  {
+    "case_id": "R07",
+    "address": "14 Rue des Bouleaux, 44400 Rezé",
+    "ban_id": "44143_0465_00014",
+    "stratum": "maison existante avec RNB",
+    "captured_at": "2026-09-10T20:40:37.230368+00:00",
+    "http": 200,
+    "resolved_ban": "44143_0465_00014",
+    "resolved_address": "14 Rue des Bouleaux, 44400 Rezé",
+    "source_counts": {
+      "dpe03existant": 1,
+      "dpe02neuf": 0
+    },
+    "source_http": {
+      "dpe03existant": 200,
+      "dpe02neuf": 200
+    },
+    "inventory_total": 1,
+    "inventory_state": "ready",
+    "read_state": "complete",
+    "has_more": false,
+    "attribution": {
+      "version": 2,
+      "status": "unassigned",
+      "reason": "dwelling_identity_unproven",
+      "diagnostic": null,
+      "candidates": [],
+      "building_context": null,
+      "graph_state": "not_checked"
+    },
+    "parcels": null,
+    "evidence_sha256": "ba1fa5a7c042d2e34557e330106d2e24c85b068492a1f27e6e05bc46bdbefd30"
+  },
+  {
+    "case_id": "R08",
+    "address": "113 Rue des Carterons, 44400 Rezé",
+    "ban_id": "44143_0580_00113",
+    "stratum": "adresse BAN source différente du numéro brut 111",
+    "captured_at": "2026-09-10T20:40:40.669776+00:00",
+    "http": 200,
+    "resolved_ban": "44143_0580_00113",
+    "resolved_address": "113 Rue des Carterons, 44400 Rezé",
+    "source_counts": {
+      "dpe03existant": 1,
+      "dpe02neuf": 0
+    },
+    "source_http": {
+      "dpe03existant": 200,
+      "dpe02neuf": 200
+    },
+    "inventory_total": 1,
+    "inventory_state": "ready",
+    "read_state": "complete",
+    "has_more": false,
+    "attribution": {
+      "version": 2,
+      "status": "unassigned",
+      "reason": "dwelling_identity_unproven",
+      "diagnostic": null,
+      "candidates": [],
+      "building_context": null,
+      "graph_state": "not_checked"
+    },
+    "parcels": null,
+    "evidence_sha256": "407fa45cf160c97d189afbadd7c09a22b4ef9fbce6119b31e85960177ee56891"
+  },
+  {
+    "case_id": "R09",
+    "address": "111 Rue des Carterons, 44400 Rezé",
+    "ban_id": "44143_0580_00113",
+    "stratum": "adresse brute du même diagnostic que R08; BAN source est la référence comparée, pas la vérité terrain",
+    "captured_at": "2026-09-10T20:40:44.128430+00:00",
+    "http": 200,
+    "resolved_ban": "44143_0580_00111",
+    "resolved_address": "111 Rue des Carterons, 44400 Rezé",
+    "source_counts": {
+      "dpe03existant": 1,
+      "dpe02neuf": 0
+    },
+    "source_http": {
+      "dpe03existant": 200,
+      "dpe02neuf": 200
+    },
+    "inventory_total": 0,
+    "inventory_state": "absent",
+    "read_state": "complete",
+    "has_more": false,
+    "attribution": {
+      "version": 2,
+      "status": "absent",
+      "reason": "not_reported",
+      "diagnostic": null,
+      "candidates": [],
+      "building_context": null,
+      "graph_state": "not_checked"
+    },
+    "parcels": null,
+    "evidence_sha256": "ebf12fc409cfc640e2c192b2a3ceda343f161773ed672f1822b08c5b35d0d0a8"
+  },
+  {
+    "case_id": "R10",
+    "address": "21 Rue Benoît Chupiet, 44400 Rezé",
+    "ban_id": "44143_0890_00021",
+    "stratum": "appartements, adresse source mal encodée",
+    "captured_at": "2026-09-10T20:40:47.536913+00:00",
+    "http": 200,
+    "resolved_ban": "44143_0890_00021",
+    "resolved_address": "21 Rue Benoît Chupiet, 44400 Rezé",
+    "source_counts": {
+      "dpe03existant": 19,
+      "dpe02neuf": 0
+    },
+    "source_http": {
+      "dpe03existant": 200,
+      "dpe02neuf": 200
+    },
+    "inventory_total": 19,
+    "inventory_state": "ready",
+    "read_state": "complete",
+    "has_more": false,
+    "attribution": {
+      "version": 2,
+      "status": "unassigned",
+      "reason": "dwelling_identity_unproven",
+      "diagnostic": null,
+      "candidates": [],
+      "building_context": null,
+      "graph_state": "not_checked"
+    },
+    "parcels": null,
+    "evidence_sha256": "8e8fb83a2ea5628b0d9c075b4951da2609b65b600d3e1543041c9d0fe48753a2"
+  },
+  {
+    "case_id": "R11",
+    "address": "38 Rue Alexandre Huchon, 44400 Rezé",
+    "ban_id": "44143_0890_00021",
+    "stratum": "adresse brute différente de BAN source 21 Chupiet; pas une vérité terrain",
+    "captured_at": "2026-09-10T20:40:51.049952+00:00",
+    "http": 200,
+    "resolved_ban": "44143_0080_00038",
+    "resolved_address": "38 Rue Alexandre Huchon, 44400 Rezé",
+    "source_counts": {
+      "dpe03existant": 19,
+      "dpe02neuf": 0
+    },
+    "source_http": {
+      "dpe03existant": 200,
+      "dpe02neuf": 200
+    },
+    "inventory_total": 0,
+    "inventory_state": "absent",
+    "read_state": "complete",
+    "has_more": false,
+    "attribution": {
+      "version": 2,
+      "status": "absent",
+      "reason": "not_reported",
+      "diagnostic": null,
+      "candidates": [],
+      "building_context": null,
+      "graph_state": "not_checked"
+    },
+    "parcels": null,
+    "evidence_sha256": "896a7ea429ad1317774f32f005bec3e80ea446e644c5bbed6ff690c05be80706"
+  },
+  {
+    "case_id": "R12",
+    "address": "41 Rue Stendhal, 44300 Nantes",
+    "ban_id": "44109_7969_00041",
+    "stratum": "maison avec diagnostic remplaçant",
+    "captured_at": "2026-09-10T20:40:54.436939+00:00",
+    "http": 200,
+    "resolved_ban": "44109_7969_00041",
+    "resolved_address": "41 Rue Stendhal, 44300 Nantes",
+    "source_counts": {
+      "dpe03existant": 1,
+      "dpe02neuf": 0
+    },
+    "source_http": {
+      "dpe03existant": 200,
+      "dpe02neuf": 200
+    },
+    "inventory_total": 1,
+    "inventory_state": "ready",
+    "read_state": "complete",
+    "has_more": false,
+    "attribution": {
+      "version": 2,
+      "status": "unassigned",
+      "reason": "dwelling_identity_unproven",
+      "diagnostic": null,
+      "candidates": [],
+      "building_context": null,
+      "graph_state": "not_checked"
+    },
+    "parcels": null,
+    "evidence_sha256": "65c3267329bddb89e2c2c44d1122f147a6daa56d07cc9197a0b10d279e820b68"
+  },
+  {
+    "case_id": "R13",
+    "address": "5 Avenue des Coucous, 44300 Nantes",
+    "ban_id": "44109_2222_00005",
+    "stratum": "maison avec RNB",
+    "captured_at": "2026-09-10T20:40:57.859057+00:00",
+    "http": 200,
+    "resolved_ban": "44109_2222_00005",
+    "resolved_address": "5 Avenue des Coucous, 44300 Nantes",
+    "source_counts": {
+      "dpe03existant": 2,
+      "dpe02neuf": 0
+    },
+    "source_http": {
+      "dpe03existant": 200,
+      "dpe02neuf": 200
+    },
+    "inventory_total": 2,
+    "inventory_state": "ready",
+    "read_state": "complete",
+    "has_more": false,
+    "attribution": {
+      "version": 2,
+      "status": "unassigned",
+      "reason": "dwelling_identity_unproven",
+      "diagnostic": null,
+      "candidates": [],
+      "building_context": null,
+      "graph_state": "not_checked"
+    },
+    "parcels": null,
+    "evidence_sha256": "c00c04e2aae36bc7f9a72f728a1b060441f86c620b448640cde40a9876a732ed"
+  },
+  {
+    "case_id": "R14",
+    "address": "20 Route de Carquefou, 44300 Nantes",
+    "ban_id": "44109_1452_00020",
+    "stratum": "collectif, pagination et compléments de logement",
+    "captured_at": "2026-09-10T20:41:01.225222+00:00",
+    "http": 200,
+    "resolved_ban": "44109_1452_00020",
+    "resolved_address": "20 Route de Carquefou, 44300 Nantes",
+    "source_counts": {
+      "dpe03existant": 114,
+      "dpe02neuf": 0
+    },
+    "source_http": {
+      "dpe03existant": 200,
+      "dpe02neuf": 200
+    },
+    "inventory_total": 114,
+    "inventory_state": "ready",
+    "read_state": "complete",
+    "has_more": true,
+    "attribution": {
+      "version": 2,
+      "status": "unassigned",
+      "reason": "dwelling_identity_unproven",
+      "diagnostic": null,
+      "candidates": [],
+      "building_context": null,
+      "graph_state": "not_checked"
+    },
+    "parcels": null,
+    "evidence_sha256": "0e9928bbc5138ed1c04c207f0651fd06af1df4f2b1cd0b93df61fbaa4f715032"
+  },
+  {
+    "case_id": "R15",
+    "address": "7 Rue Gaston Tessier, 85000 La Roche-sur-Yon",
+    "ban_id": "85191_0889_00007",
+    "stratum": "maison existante 85",
+    "captured_at": "2026-09-10T20:41:04.708075+00:00",
+    "http": 200,
+    "resolved_ban": "85191_0889_00007",
+    "resolved_address": "7 Rue gaston tessier, 85000 La Roche-sur-Yon",
+    "source_counts": {
+      "dpe03existant": 1,
+      "dpe02neuf": 0
+    },
+    "source_http": {
+      "dpe03existant": 200,
+      "dpe02neuf": 200
+    },
+    "inventory_total": 1,
+    "inventory_state": "ready",
+    "read_state": "complete",
+    "has_more": false,
+    "attribution": {
+      "version": 2,
+      "status": "unassigned",
+      "reason": "dwelling_identity_unproven",
+      "diagnostic": null,
+      "candidates": [],
+      "building_context": null,
+      "graph_state": "not_checked"
+    },
+    "parcels": null,
+    "evidence_sha256": "560e3e467687b0827af74040e2ad967d1fccabaa6ddc267b1fffdc24ff6e542a"
+  },
+  {
+    "case_id": "R16",
+    "address": "16 Rue Pierre Bérégovoy, 85000 La Roche-sur-Yon",
+    "ban_id": "85191_2006_00016",
+    "stratum": "appartement existant 85",
+    "captured_at": "2026-09-10T20:41:08.229631+00:00",
+    "http": 200,
+    "resolved_ban": "85191_2006_00016",
+    "resolved_address": "16 Rue Pierre Bérégovoy, 85000 La Roche-sur-Yon",
+    "source_counts": {
+      "dpe03existant": 11,
+      "dpe02neuf": 0
+    },
+    "source_http": {
+      "dpe03existant": 200,
+      "dpe02neuf": 200
+    },
+    "inventory_total": 11,
+    "inventory_state": "ready",
+    "read_state": "complete",
+    "has_more": false,
+    "attribution": {
+      "version": 2,
+      "status": "unassigned",
+      "reason": "dwelling_identity_unproven",
+      "diagnostic": null,
+      "candidates": [],
+      "building_context": {
+        "count": 8,
+        "distribution": {
+          "C": 6,
+          "D": 2
+        },
+        "truncated": false
+      },
+      "graph_state": "not_checked"
+    },
+    "parcels": null,
+    "evidence_sha256": "377434b549d69f56de81b10b9eb34675abd2343fbd87fa10bc14154f244647fd"
+  }
+]

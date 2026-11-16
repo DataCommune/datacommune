@@ -1,0 +1,42 @@
+{
+  "scoring": {
+    "path": "/v1/scoring/renov",
+    "params": {
+      "code_departement": "44"
+    },
+    "status": 503,
+    "payload": {
+      "statut": "indisponible",
+      "surface": "scoring_renov",
+      "raison": "Scoring rénovation indisponible : les rapprochements DPE, parcelles et ventes, leur couverture et leurs générations ne sont pas qualifiés. Aucun prix ni cible de logement n'est diffusé. Cette indisponibilité ne signifie pas absence de biens à rénover.",
+      "donnees": []
+    }
+  },
+  "csv": {
+    "path": "/v1/scoring/renov-target",
+    "params": {
+      "code_departement": "85"
+    },
+    "status": 503,
+    "payload": {
+      "statut": "indisponible",
+      "surface": "scoring_renov",
+      "raison": "Scoring rénovation indisponible : les rapprochements DPE, parcelles et ventes, leur couverture et leurs générations ne sont pas qualifiés. Aucun prix ni cible de logement n'est diffusé. Cette indisponibilité ne signifie pas absence de biens à rénover.",
+      "donnees": []
+    }
+  },
+  "encadrement": {
+    "path": "/v1/encadrement-loyers",
+    "params": {
+      "ville": "PARIS",
+      "numero_quartier": 1
+    },
+    "status": 503,
+    "payload": {
+      "statut": "indisponible",
+      "surface": "encadrement_loyers",
+      "raison": "Encadrement des loyers indisponible : la proximité d'un centroïde ne prouve pas l'appartenance à un quartier réglementaire. Aucun montant applicable à une adresse n'est diffusé. Cette indisponibilité ne signifie pas absence d'encadrement.",
+      "donnees": []
+    }
+  }
+}

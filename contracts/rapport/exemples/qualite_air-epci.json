@@ -1,0 +1,59 @@
+{
+  "id": "qualite_air",
+  "section": "vivre",
+  "titre": "Qualité de l'air",
+  "etat": "ok",
+  "ton": "neutre",
+  "granularite": {
+    "niveau": "epci",
+    "rayon_m": null
+  },
+  "verdict": "Qualité de l'air prévue le 31 octobre 2026 : moyen (2 sur 6), pour l'intercommunalité (CC Sud Vendée Littoral).",
+  "chiffres": [
+    {
+      "id": "indice_atmo",
+      "libelle": "Indice ATMO du jour",
+      "valeur": 2,
+      "unite": "indice_sur_6",
+      "millesime": "2026-10-31"
+    }
+  ],
+  "details": {
+    "indice": {
+      "code": 2,
+      "libelle": "moyen",
+      "date": "2026-10-31",
+      "sous_indices": {
+        "no2": 1,
+        "o3": 2,
+        "pm10": 1,
+        "pm25": 1,
+        "so2": 1
+      }
+    },
+    "zone": {
+      "type": "epci",
+      "code": "200073260",
+      "nom": "CC Sud Vendée Littoral"
+    },
+    "aasqa": "Air Pays de la Loire",
+    "moyennes_annuelles": {
+      "etat": "hors_couverture",
+      "motif": "moyennes_geodair_non_importees"
+    }
+  },
+  "rattachement": null,
+  "sources": [
+    {
+      "cle": "qualite_air",
+      "nom": "Indice ATMO de la qualité de l'air (prévision du jour)",
+      "producteur": "Atmo France et les AASQA",
+      "url": "https://www.data.gouv.fr/datasets/indice-de-la-qualite-de-lair-quotidien-par-commune-indice-atmo",
+      "licence": "ODbL 1.0",
+      "millesime": "2026-10-31",
+      "mode": "direct"
+    }
+  ],
+  "motif": null,
+  "pannes_partielles": []
+}

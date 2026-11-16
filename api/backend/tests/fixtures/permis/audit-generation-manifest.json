@@ -1,0 +1,68 @@
+{
+  "original_sha256": "9bcda940fa5b9449932a00ecec5308822144d57547e6e679722c01d3833e4881",
+  "original_bytes": 199354,
+  "redacted_sha256": "893cc1c34c153a10a5c042da04733e5ff1a0624f3661df0ebc1447500f138fac",
+  "redacted_bytes": 126533,
+  "rows": 753,
+  "distinct_dossiers": 752,
+  "departments": {
+    "93": 753
+  },
+  "preserved_columns": [
+    "departement",
+    "date_commencement",
+    "date_decision",
+    "annee",
+    "nb_logements",
+    "sdp_creee"
+  ],
+  "preserved_values_sha256": "872d5c10e4f8dfa22479e1f1264c9523b62e8c907528243a688013de5aed4aaf",
+  "tokenized_columns": [
+    "nom_dossier",
+    "type_dossier",
+    "n_commune",
+    "nom_commune",
+    "nature_construction",
+    "designation"
+  ],
+  "removed_columns": [
+    "co_type_dossier",
+    "date_achevement",
+    "code_postal",
+    "commune",
+    "architecte_non_obligatoire",
+    "adresse_terrain",
+    "code_postal_terrain",
+    "sections",
+    "parcelles",
+    "s_terrain",
+    "terrain_lotissement",
+    "terrain_afu",
+    "terrain_zac",
+    "tvx_construction_existante",
+    "nb_niveaux_au_dessus_sol",
+    "nb_logements_individuels",
+    "nb_logements_collectifs",
+    "nb_logements_demolition",
+    "nature_demolition",
+    "nb_1_piece",
+    "nb_2_pieces",
+    "nb_3_pieces",
+    "nb_4_pieces",
+    "nb_5_pieces",
+    "nb_6_pieces",
+    "sdp_existante",
+    "sdp_demolie",
+    "sdp_supprimee_destination",
+    "sdp_creee_destination"
+  ],
+  "method": "v1: source order unchanged; first-occurrence tokens per column; UTF-8/LF; only allow-listed columns emitted",
+  "expected_duplicate_groups": 1,
+  "expected_differing_transformed_columns": [
+    "surface_plancher",
+    "destination"
+  ],
+  "expected_outcome": "published",
+  "raw_identities_versioned": false,
+  "scope": "Complete bounded audit witness, not national coverage; dates/counts preserved, all identities removed"
+}

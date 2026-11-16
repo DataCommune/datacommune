@@ -1,0 +1,75 @@
+{
+  "id": "eau_potable",
+  "section": "vivre",
+  "titre": "Eau du robinet",
+  "etat": "ok",
+  "ton": "rassurant",
+  "granularite": {
+    "niveau": "commune",
+    "rayon_m": null
+  },
+  "verdict": "Eau conforme aux limites de qualité : 418 contrôles bactériologiques en 12 mois.",
+  "chiffres": [
+    {
+      "id": "durete",
+      "libelle": "Dureté (titre hydrotimétrique)",
+      "valeur": 12.3,
+      "unite": "degre_francais",
+      "millesime": "2025-12-30"
+    }
+  ],
+  "details": {
+    "reseaux": [
+      {
+        "code": "044000115",
+        "nom": "SECTEUR-REZE"
+      },
+      {
+        "code": "044000138",
+        "nom": "SECTEUR-NANTES"
+      }
+    ],
+    "reseaux_complets": true,
+    "annee_reseaux": "2026",
+    "bacteriologique": {
+      "prelevements": 418,
+      "non_conformes": 0,
+      "sans_conclusion": 0,
+      "dates_non_conformes": [],
+      "taux_conformite": 100.0,
+      "dernier_prelevement": "2026-08-31",
+      "dernier_controle_conclu": "2026-08-31",
+      "dernier_conforme": true,
+      "lecture_complete": true
+    },
+    "physico_chimique": {
+      "prelevements": 420,
+      "non_conformes": 0,
+      "sans_conclusion": 0,
+      "dates_non_conformes": [],
+      "taux_conformite": 100.0,
+      "dernier_prelevement": "2026-08-31",
+      "dernier_controle_conclu": "2026-08-31",
+      "dernier_conforme": true,
+      "lecture_complete": true
+    },
+    "durete_f": 12.3,
+    "durete": "douce",
+    "durete_date": "2025-12-30",
+    "prelevements": 420
+  },
+  "rattachement": null,
+  "sources": [
+    {
+      "cle": "eau_potable",
+      "nom": "Qualité de l'eau potable (API Hub'Eau, contrôle sanitaire des ARS)",
+      "producteur": "Ministère chargé de la santé (ARS), diffusé par Hub'Eau",
+      "url": "https://hubeau.eaufrance.fr/page/api-qualite-eau-potable",
+      "licence": "Licence Ouverte (version non précisée par les CGU Hub'Eau)",
+      "millesime": "2026-10-30",
+      "mode": "direct"
+    }
+  ],
+  "motif": null,
+  "pannes_partielles": []
+}

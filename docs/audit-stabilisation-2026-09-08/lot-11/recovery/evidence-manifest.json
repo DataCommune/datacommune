@@ -1,0 +1,26 @@
+{
+  "source_commit": "6b3e0aa54bc831c53a756ea5b2d2014411bc5264",
+  "recorded_at_utc": "2026-09-08T18:17:06.963099+00:00",
+  "hash_method": "SHA256 normalized LF",
+  "hash_timing": "Recorded after PASS; subsequent test edit split an equivalent Python string literal for lint only",
+  "artifacts": {
+    "091-difference.json": "f81720188f9c9db0362a4b33a640191d879f1e7e8d7b8c39d74b9c7d8d34016e",
+    "attempt1.log": "81965b768358e9b9e71b6693a5380470470dbc0f74af96669c2ddd0e9c1ac5a6",
+    "attempt1.xml": "ae97b3b668a6232299378e9fae6d058bd8f8f4c6c00f11c940c065e5060a9780",
+    "attempt2.log": "0abf400930f0f53576cff83ff76c9411022c3a9859a40afbd66cc4c8431c1a16",
+    "attempt2.xml": "c50f74b2355748e719475f39225700359978cc3375601cb8c67b8e77d086ee04",
+    "attempt3.log": "9a2d681082d405db7b06c64fb1c98eb103e54637b7da3c22a62b6d06cf0dae8f",
+    "attempt3.xml": "d460bba773ee79ce561ba8f7aaa6597b9dee309b82e85fb88419a8a31e294aa2",
+    "image-build.log": "8a0188bc8db1a3c65e1d470bcc90a22818877c7df6c76f46a86290d7266c2e76",
+    "intermediate-pass.log": "749a43225a19951a863b0cec5943367175971bf96481578d22a6daf1c483bf93",
+    "probe.py": "35ef88e629c4c015a384932b5d993577a48c402258f7375fff9a9aa0821d3d7b",
+    "README.md": "8df73414b5e1c693789d40bc7a12be0bb3a65e060dd23c545736d5c22afcbd2c",
+    "recovery.log": "8b73843d01b29064004ffe0354523b3dcd508a1b530f8397b50b04a766c59c16",
+    "recovery.xml": "3581c08df4a6acb0b1557a3f43d9a239a8bbb43d83c5a9de96358e3ee7a9071b",
+    "ruff-check.log": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+    "ruff-format.log": "fd2299c9f1c6dc869070883e281051bfe93aacf66c1a3b0069f45b4aa410ca50",
+    "verification.json": "9cf1bb0334b86e79282467668658eb192fdfb7805f6d2eea5364b8103b6e797e"
+  },
+  "test_sha256_lf": "8bad5f44493bbba0e6eee50bff247e9c75a18c7fe8b28d40fb3ee6ac7bda2b33",
+  "dockerfile_sha256_lf": "fb992061b6c61df93fe442b2b704e91823a8857b534d812cba5383fe1f4aa63e"
+}

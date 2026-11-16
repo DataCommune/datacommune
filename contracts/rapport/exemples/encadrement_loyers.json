@@ -1,0 +1,48 @@
+{
+  "id": "encadrement_loyers",
+  "section": "marche",
+  "titre": "Encadrement des loyers",
+  "etat": "ok",
+  "ton": "neutre",
+  "granularite": {
+    "niveau": "commune",
+    "rayon_m": null
+  },
+  "verdict": "Loyers encadrés jusqu'au 24 novembre 2026.",
+  "chiffres": [],
+  "details": {
+    "commune": "75056",
+    "statut": "en_vigueur",
+    "perimetre": "commune",
+    "territoire": "Paris",
+    "decret": "Décret n° 2019-315 du 12 avril 2019",
+    "arrete": {
+      "numero": "IDF-2026-06-12-00003",
+      "date": "2026-06-12",
+      "source": "Préfecture de la région d'Île-de-France, recueil des actes administratifs spécial n° IDF-039-2026-06",
+      "url": "https://cdn.paris.fr/paris/2026/06/17/arrete-prefectoral-encadrement-des-loyers-12-06-2026-publie-n4wk.pdf"
+    },
+    "en_vigueur_du": "2026-07-01",
+    "en_vigueur_au": "2026-11-24",
+    "arrete_precedent": null,
+    "liste_verifiee_le": "2026-10-29",
+    "loyers_reference": {
+      "etat": "hors_couverture",
+      "motif": "loyers_reference_non_importes"
+    }
+  },
+  "rattachement": null,
+  "sources": [
+    {
+      "cle": "encadrement_communes",
+      "nom": "Communes à encadrement du niveau des loyers (loi ELAN, article 140)",
+      "producteur": "Naistor, d'après les décrets et arrêtés préfectoraux",
+      "url": "https://www.data.gouv.fr/datasets/6ae3c8c1252503d60d5c00df",
+      "licence": "Licence Ouverte 2.0",
+      "millesime": "2026-10-29",
+      "mode": "direct"
+    }
+  ],
+  "motif": null,
+  "pannes_partielles": []
+}

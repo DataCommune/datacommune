@@ -1,0 +1,100 @@
+[project]
+name = "datacommune"
+version = "3.0.0"
+description = "API de donnees publiques francaises"
+license = "AGPL-3.0-or-later"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "fastapi>=0.135.3",
+    "uvicorn",
+    "sqlalchemy[asyncio]",
+    "asyncpg",
+    "geoalchemy2",
+    "alembic",
+    "pydantic[email]",
+    "pydantic-settings",
+    "python-dotenv",
+    "psycopg2-binary>=2.9.11",
+    "psycopg[binary]>=3.1",
+    "pandas>=3.0.0",
+    "httpx>=0.28.1",
+    "tenacity>=9.0.0",
+    "apscheduler>=3.11,<4",
+    "structlog>=25.1",
+    "apprise>=1.9",
+    "scalar-fastapi>=1.6",
+    "PyJWT>=2.11",
+    "pwdlib[bcrypt]>=0.3",
+    "resend>=2.23",
+    "itsdangerous>=2.2",
+    "stripe[async]>=14.0",
+    "cachetools>=7.0",
+    "cachetools-async>=0.0.5",
+    "pyarrow>=18.0",
+    "rich>=14.3.3",
+    "respx>=0.23.1",
+]
+
+[dependency-groups]
+dev = [
+    "ruff",
+    "pytest",
+    "pytest-asyncio",
+    "httpx",
+    "mypy>=1.19.1",
+    "mcp==1.30.0",
+]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 88
+
+[tool.ruff.lint]
+select = [
+    "E", "F", "I", "N", "W", "UP", "B", "SIM", "RUF",
+    # Swallowed errors, wasteful loops and branch piles: the review
+    # findings that kept coming back. Existing hits carry an explicit `# noqa`
+    # (ratchet) -- new code gets no such pass.
+    "BLE", "S110", "S112", "TRY", "PERF", "C901",
+]
+# TRY003 (message built at the raise site) flags 1 000+ deliberate French error
+# messages; TRY300/TRY301 are layout preferences, not defects.
+ignore = ["TRY003", "TRY300", "TRY301"]
+
+[tool.ruff.lint.per-file-ignores]
+"migrations/**" = ["E501", "E402"]
+"tests/**" = ["E402"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "session"
+asyncio_default_test_loop_scope = "session"
+testpaths = ["tests"]
+markers = [
+    "unit: Pure logic tests, no DB or network needed",
+    "smoke: HTTP smoke tests via ASGI transport, no DB needed",
+    "live: Live API tests requiring a running server",
+    "destructive: DB tests that require an explicit opt-in and a disposable database",
+]
+addopts = "-q --tb=short -m 'not destructive'"
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.mypy]
+python_version = "3.12"
+ignore_missing_imports = true
+check_untyped_defs = true
+warn_return_any = false
+warn_unused_configs = true
+
+[[tool.mypy.overrides]]
+module = "app.etl.*"
+ignore_errors = true
+
+[[tool.mypy.overrides]]
+module = "app.etl_*.*"
+ignore_errors = true
+
+[tool.uv]
+constraint-dependencies = ["starlette>=1.0.1"]

@@ -1,0 +1,135 @@
+{
+  "absent_from_v_commune_synthese": [],
+  "codes": [
+    "44001",
+    "44005",
+    "44039",
+    "44053",
+    "44078",
+    "44109",
+    "44170",
+    "44184",
+    "85001",
+    "85002",
+    "85028",
+    "85047",
+    "85073",
+    "85074",
+    "85136",
+    "85165",
+    "85191",
+    "85194"
+  ],
+  "rule": "plan 02-03 task 1 step 2; ties broken by INSEE code; fixed from here on",
+  "selected_on": "pbs-main:backup/ct/275/2026-09-18T14:38:24Z (compose project datacommune-api)",
+  "selection": {
+    "44001": {
+      "motifs": [
+        "golden case (contracts/golden-cases/v1/manifest.json)"
+      ],
+      "nom": "Abbaretz"
+    },
+    "44005": {
+      "motifs": [
+        "nb_monuments IS NULL (no commune has nb_monuments = 0 in the old base; KI-D4) (44)"
+      ],
+      "nom": "Chaumes-en-Retz"
+    },
+    "44039": {
+      "motifs": [
+        "LOVAC false zero (KI-D1), first two by code in 44"
+      ],
+      "nom": "Cheix-en-Retz"
+    },
+    "44053": {
+      "motifs": [
+        "LOVAC false zero (KI-D1), first two by code in 44"
+      ],
+      "nom": "Drefféac"
+    },
+    "44078": {
+      "motifs": [
+        "lowest population in v_commune_synthese (44)"
+      ],
+      "nom": "Juigné-des-Moutiers"
+    },
+    "44109": {
+      "motifs": [
+        "golden case (contracts/golden-cases/v1/manifest.json)"
+      ],
+      "nom": "Nantes"
+    },
+    "44170": {
+      "motifs": [
+        "smallest non-zero nb_mutations_12m (44)"
+      ],
+      "nom": "Saint-Julien-de-Vouvantes"
+    },
+    "44184": {
+      "motifs": [
+        "golden case (contracts/golden-cases/v1/manifest.json)"
+      ],
+      "nom": "Saint-Nazaire"
+    },
+    "85001": {
+      "motifs": [
+        "golden case (contracts/golden-cases/v1/manifest.json)"
+      ],
+      "nom": "L'Aiguillon-la-Presqu'île"
+    },
+    "85002": {
+      "motifs": [
+        "nb_monuments IS NULL (no commune has nb_monuments = 0 in the old base; KI-D4) (85)"
+      ],
+      "nom": "L'Aiguillon-sur-Vie"
+    },
+    "85028": {
+      "motifs": [
+        "LOVAC false zero (KI-D1), first two by code in 85"
+      ],
+      "nom": "Bouillé-Courdault"
+    },
+    "85047": {
+      "motifs": [
+        "golden case (contracts/golden-cases/v1/manifest.json)"
+      ],
+      "nom": "Challans"
+    },
+    "85073": {
+      "motifs": [
+        "LOVAC false zero (KI-D1), first two by code in 85"
+      ],
+      "nom": "Corpe"
+    },
+    "85074": {
+      "motifs": [
+        "smallest non-zero nb_mutations_12m (85)"
+      ],
+      "nom": "La Couture"
+    },
+    "85136": {
+      "motifs": [
+        "lowest population in v_commune_synthese (85)"
+      ],
+      "nom": "Marillet"
+    },
+    "85165": {
+      "motifs": [
+        "golden case (contracts/golden-cases/v1/manifest.json)"
+      ],
+      "nom": "L'Oie"
+    },
+    "85191": {
+      "motifs": [
+        "La Roche-sur-Yon (prefecture 85)"
+      ],
+      "nom": "La Roche-sur-Yon"
+    },
+    "85194": {
+      "motifs": [
+        "Les Sables-d'Olonne"
+      ],
+      "nom": "Les Sables-d'Olonne"
+    }
+  }
+}

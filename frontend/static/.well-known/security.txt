@@ -1,0 +1,7 @@
+# Report a security vulnerability of datacommune.fr or of its source code (RFC 9116).
+Contact: mailto:security@datacommune.fr
+Contact: https://github.com/DataCommune/datacommune/security/advisories/new
+Expires: 2027-11-12T00:00:00.000Z
+Preferred-Languages: fr, en
+Canonical: https://datacommune.fr/.well-known/security.txt
+Policy: https://github.com/DataCommune/datacommune/security/policy

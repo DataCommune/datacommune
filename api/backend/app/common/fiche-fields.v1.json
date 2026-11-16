@@ -1,0 +1,3595 @@
+{
+  "contract_version": "1",
+  "description": "Autorite semantique unique des champs Fiche (D-03): identifiant canonique, type, unite, precision, plage plausible, semantique du zero, formatter et etats autorises. Verrouille par la Phase 43 (D-06): aucune cle de provenance/fraicheur (Phase 44) ne doit apparaitre ici.",
+  "allowed_value_types": [
+    "string",
+    "integer",
+    "decimal",
+    "boolean"
+  ],
+  "allowed_formatters": [
+    "number",
+    "percent_points",
+    "currency",
+    "area_km2",
+    "density",
+    "date",
+    "year",
+    "boolean",
+    "text"
+  ],
+  "allowed_states": [
+    "value",
+    "not_reported",
+    "out_of_coverage",
+    "temporary_error",
+    "not_applicable",
+    "insufficient_sample",
+    "not_available",
+    "zero_denominator",
+    "suppressed",
+    "not_qualified"
+  ],
+  "allowed_out_of_coverage_reasons": [
+    "dataset_non_heberge",
+    "territoire_hors_perimetre",
+    "source_sans_couverture"
+  ],
+  "allowed_zero_semantics": [
+    "measured_zero",
+    "implausible_zero",
+    "not_applicable"
+  ],
+  "allowed_rattachements": [
+    "adresse_saisie_diagnostiqueur",
+    "parcelle_du_point",
+    "batiment_du_point",
+    "batiment_rnb_de_l_adresse",
+    "au_point",
+    "rayon_du_point",
+    "commune_de_l_adresse",
+    "eligibilite_adresse",
+    "commune_reference",
+    "adresse_declaree_vente",
+    "adresse_brute_exacte",
+    "departement"
+  ],
+  "fields": [
+    {
+      "field_id": "dvf.indicateurs.maison.mediane_courante", "value_type": "decimal", "unit": "EUR/m2",
+      "precision": { "fraction_digits": 0 }, "plausible_range": { "min": 0, "max": null },
+      "zero_semantics": "implausible_zero", "formatter": "currency", "allowed_states": ["value", "not_reported", "out_of_coverage", "insufficient_sample", "not_qualified"],
+      "description": "Médiane communale du prix au mètre carré des mutations résidentielles de maisons retenues dans la fenêtre courante."
+    },
+    {
+      "field_id": "dvf.indicateurs.maison.mediane_precedente", "value_type": "decimal", "unit": "EUR/m2",
+      "precision": { "fraction_digits": 0 }, "plausible_range": { "min": 0, "max": null },
+      "zero_semantics": "implausible_zero", "formatter": "currency", "allowed_states": ["value", "not_reported", "out_of_coverage", "insufficient_sample", "not_qualified"],
+      "description": "Médiane communale du prix au mètre carré des mutations résidentielles de maisons retenues dans la fenêtre précédente."
+    },
+    {
+      "field_id": "dvf.indicateurs.appartement.mediane_courante", "value_type": "decimal", "unit": "EUR/m2",
+      "precision": { "fraction_digits": 0 }, "plausible_range": { "min": 0, "max": null },
+      "zero_semantics": "implausible_zero", "formatter": "currency", "allowed_states": ["value", "not_reported", "out_of_coverage", "insufficient_sample", "not_qualified"],
+      "description": "Médiane communale du prix au mètre carré des mutations résidentielles d'appartements retenues dans la fenêtre courante."
+    },
+    {
+      "field_id": "dvf.indicateurs.appartement.mediane_precedente", "value_type": "decimal", "unit": "EUR/m2",
+      "precision": { "fraction_digits": 0 }, "plausible_range": { "min": 0, "max": null },
+      "zero_semantics": "implausible_zero", "formatter": "currency", "allowed_states": ["value", "not_reported", "out_of_coverage", "insufficient_sample", "not_qualified"],
+      "description": "Médiane communale du prix au mètre carré des mutations résidentielles d'appartements retenues dans la fenêtre précédente."
+    },
+    {
+      "field_id": "dvf.indicateurs.maison.variation_pct", "value_type": "decimal", "unit": "percent",
+      "precision": { "fraction_digits": 1 }, "plausible_range": { "min": null, "max": null },
+      "zero_semantics": "measured_zero", "formatter": "percent_points", "allowed_states": ["value", "not_reported", "out_of_coverage", "not_applicable", "insufficient_sample", "not_qualified"],
+      "description": "Variation en pourcentage entre les médianes des fenêtres précédente et courante pour les maisons."
+    },
+    {
+      "field_id": "dvf.indicateurs.appartement.variation_pct", "value_type": "decimal", "unit": "percent",
+      "precision": { "fraction_digits": 1 }, "plausible_range": { "min": null, "max": null },
+      "zero_semantics": "measured_zero", "formatter": "percent_points", "allowed_states": ["value", "not_reported", "out_of_coverage", "not_applicable", "insufficient_sample", "not_qualified"],
+      "description": "Variation en pourcentage entre les médianes des fenêtres précédente et courante pour les appartements."
+    },
+    {
+      "field_id": "dpe.indicateurs.part_fg_pct", "value_type": "decimal", "unit": "percent_points",
+      "precision": { "fraction_digits": 1 }, "plausible_range": { "min": 0, "max": 100 },
+      "zero_semantics": "measured_zero", "formatter": "percent_points", "allowed_states": ["value", "not_reported", "out_of_coverage", "not_applicable", "zero_denominator"],
+      "description": "Part des diagnostics disponibles classés F ou G parmi les classes connues."
+    },
+    {
+      "field_id": "commune.code_insee",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value"
+      ],
+      "description": "Code INSEE de la commune (cle de jointure)."
+    },
+    {
+      "field_id": "commune.nom_commune",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value"
+      ],
+      "description": "Nom de la commune."
+    },
+    {
+      "field_id": "commune.code_departement",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value"
+      ],
+      "description": "Code du departement (2 ou 3 caracteres)."
+    },
+    {
+      "field_id": "commune.code_region",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value"
+      ],
+      "description": "Code de la region."
+    },
+    {
+      "field_id": "commune.nom_departement",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value",
+        "not_reported"
+      ],
+      "description": "Nom du departement (referentiel)."
+    },
+    {
+      "field_id": "commune.nom_region",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value",
+        "not_reported"
+      ],
+      "description": "Nom de la region (referentiel)."
+    },
+    {
+      "field_id": "demographie.population",
+      "value_type": "integer",
+      "unit": "person",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 3000000
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error",
+        "not_available"
+      ],
+      "description": "Population totale (recensement)."
+    },
+    {
+      "field_id": "demographie.nb_menages",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 2000000
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error",
+        "not_available"
+      ],
+      "description": "Nombre de menages."
+    },
+    {
+      "field_id": "demographie.nb_logements",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 2000000
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error",
+        "not_available"
+      ],
+      "description": "Nombre total de logements."
+    },
+    {
+      "field_id": "demographie.nb_logements_vacants_recensement",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 500000
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error",
+        "not_available"
+      ],
+      "description": "Logements vacants au sens du recensement (distinct du dataset vacance)."
+    },
+    {
+      "field_id": "demographie.densite",
+      "value_type": "decimal",
+      "unit": "person_per_km2",
+      "precision": {
+        "fraction_digits": 1
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 30000
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "density",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error",
+        "not_available"
+      ],
+      "description": "Densite de population (D-07: derivee de la geometrie administrative)."
+    },
+    {
+      "field_id": "demographie.superficie",
+      "value_type": "decimal",
+      "unit": "km2",
+      "precision": {
+        "fraction_digits": 2
+      },
+      "plausible_range": {
+        "min": 0.01,
+        "max": 20000
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "area_km2",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error",
+        "not_available"
+      ],
+      "description": "Superficie communale (D-07: ST_Area(geo_communes.geometry::geography), pas une somme cadastrale)."
+    },
+    {
+      "field_id": "demographie.annee",
+      "value_type": "integer",
+      "unit": "year",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 1900,
+        "max": 2100
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "year",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Millesime du recensement demographique."
+    },
+    {
+      "field_id": "revenus.revenu_median",
+      "value_type": "decimal",
+      "unit": "euro_per_uc_year",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 200000
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "currency",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error",
+        "not_available"
+      ],
+      "description": "Revenu declare median annuel par unite de consommation, avant redistribution (Filosofi DEC)."
+    },
+    {
+      "field_id": "revenus.taux_pauvrete",
+      "value_type": "decimal",
+      "unit": "percent_point",
+      "precision": {
+        "fraction_digits": 2
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 100
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "percent_points",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error",
+        "not_available"
+      ],
+      "description": "Taux de pauvrete selon le revenu disponible, en points de pourcentage (Filosofi DISP, D-01)."
+    },
+    {
+      "field_id": "revenus.indice_gini",
+      "value_type": "decimal",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": 2
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 1
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error",
+        "not_available"
+      ],
+      "description": "Indice de Gini (0 = egalite parfaite, 1 = inegalite maximale)."
+    },
+    {
+      "field_id": "revenus.part_imposee",
+      "value_type": "decimal",
+      "unit": "percent_point",
+      "precision": {
+        "fraction_digits": 2
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 100
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "percent_points",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error",
+        "not_available"
+      ],
+      "description": "Part des foyers imposes, en points de pourcentage (D-01)."
+    },
+    {
+      "field_id": "revenus.annee",
+      "value_type": "integer",
+      "unit": "year",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 1900,
+        "max": 2100
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "year",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Millesime des donnees de revenus."
+    },
+    {
+      "field_id": "zonage_abc.zone",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error",
+        "not_available"
+      ],
+      "description": "Zone ABC (A, Abis, B1, B2, C) — tension du marche locatif."
+    },
+    {
+      "field_id": "zonage_abc.reclassement",
+      "value_type": "boolean",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "boolean",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error",
+        "not_available"
+      ],
+      "description": "Reclassement de zone ABC demande."
+    },
+    {
+      "field_id": "vacance.taux_vacance",
+      "value_type": "decimal",
+      "unit": "percent_point",
+      "precision": {
+        "fraction_digits": 2
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 100
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "percent_points",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error",
+        "not_available"
+      ],
+      "description": "Taux de vacance des logements, en points de pourcentage (D-01)."
+    },
+    {
+      "field_id": "vacance.nb_vacants_plus_2ans",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 500000
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error",
+        "not_available"
+      ],
+      "description": "Logements vacants depuis plus de 2 ans."
+    },
+    {
+      "field_id": "vacance.annee",
+      "value_type": "integer",
+      "unit": "year",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 1900,
+        "max": 2100
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "year",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Millesime des donnees de vacance."
+    },
+    {
+      "field_id": "fiscalite.taux_tfpb",
+      "value_type": "decimal",
+      "unit": "percent_point",
+      "precision": {
+        "fraction_digits": 2
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "percent_points",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error",
+        "not_available"
+      ],
+      "description": "Taux de taxe fonciere sur le bati, en points de pourcentage (D-01)."
+    },
+    {
+      "field_id": "fiscalite.taux_tfpnb",
+      "value_type": "decimal",
+      "unit": "percent_point",
+      "precision": {
+        "fraction_digits": 2
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "percent_points",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Taux de taxe fonciere sur le non-bati, en points de pourcentage (D-01)."
+    },
+    {
+      "field_id": "fiscalite.taux_th_rs",
+      "value_type": "decimal",
+      "unit": "percent_point",
+      "precision": {
+        "fraction_digits": 2
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 100
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "percent_points",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error",
+        "not_available"
+      ],
+      "description": "Taux de taxe d'habitation sur les residences secondaires, en points (D-01)."
+    },
+    {
+      "field_id": "fiscalite.taux_teom",
+      "value_type": "decimal",
+      "unit": "percent_point",
+      "precision": {
+        "fraction_digits": 2
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 100
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "percent_points",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error",
+        "not_available"
+      ],
+      "description": "Taux de taxe d'enlevement des ordures menageres, en points (D-01)."
+    },
+    {
+      "field_id": "fiscalite.nom_epci",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "not_available"
+      ],
+      "description": "Nom de l'EPCI de rattachement."
+    },
+    {
+      "field_id": "fiscalite.annee",
+      "value_type": "integer",
+      "unit": "year",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 1900,
+        "max": 2100
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "year",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Millesime des donnees fiscales (Fiscalite locale des particuliers, DGFiP)."
+    },
+    {
+      "field_id": "loyers.loyer_m2_appartement",
+      "value_type": "decimal",
+      "unit": "euro_per_m2_month",
+      "precision": {
+        "fraction_digits": 1
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 200
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "currency",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error",
+        "not_available"
+      ],
+      "description": "Loyer d'annonce predit pour un appartement de reference, charges comprises, en euros par m2 et par mois ; maille et periode a qualifier."
+    },
+    {
+      "field_id": "loyers.loyer_m2_maison",
+      "value_type": "decimal",
+      "unit": "euro_per_m2_month",
+      "precision": {
+        "fraction_digits": 1
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 200
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "currency",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error",
+        "not_available"
+      ],
+      "description": "Loyer d'annonce predit pour une maison de reference, charges comprises, en euros par m2 et par mois ; maille et periode a qualifier."
+    },
+    {
+      "field_id": "loyers.annee",
+      "value_type": "integer",
+      "unit": "year",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 1900,
+        "max": 2100
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "year",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error",
+        "not_available"
+      ],
+      "description": "Millesime des donnees de loyers."
+    },
+    {
+      "field_id": "dvf.prix_m2_median",
+      "value_type": "integer",
+      "unit": "euro_per_m2",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 50000
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "currency",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error",
+        "not_available",
+        "insufficient_sample"
+      ],
+      "description": "Prix median au m2 des mutations DVF sur la commune."
+    },
+    {
+      "field_id": "dvf.nb_mutations_12m",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 100000
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Nombre de mutations DVF sur les 12 derniers mois."
+    },
+    {
+      "field_id": "dvf.prix_m2_median_maison",
+      "value_type": "integer",
+      "unit": "euro_per_m2",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 50000
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "currency",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error",
+        "not_available",
+        "insufficient_sample"
+      ],
+      "description": "Prix median au m2 des ventes de maisons mono-local de la commune sur 12 mois glissants, hors VEFA et hors mutations multi-communes; null sous le seuil de non-divulgation."
+    },
+    {
+      "field_id": "dvf.nb_mutations_12m_maison",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 100000
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Nombre de ventes de maisons mono-local retenues pour la mediane commune sur les 12 derniers mois (hors VEFA, hors mutations multi-communes). Effectif reel, publie meme sous le seuil."
+    },
+    {
+      "field_id": "dvf.prix_m2_median_appartement",
+      "value_type": "integer",
+      "unit": "euro_per_m2",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 50000
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "currency",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error",
+        "insufficient_sample",
+        "not_available"
+      ],
+      "description": "Prix median au m2 des ventes d'appartements mono-local de la commune sur 12 mois glissants, hors VEFA et hors mutations multi-communes; null sous le seuil de non-divulgation."
+    },
+    {
+      "field_id": "dvf.nb_mutations_12m_appartement",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 100000
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Nombre de ventes d'appartements mono-local retenues pour la mediane commune sur les 12 derniers mois (hors VEFA, hors mutations multi-communes). Effectif reel, publie meme sous le seuil."
+    },
+    {
+      "field_id": "dvf.tendance.annee",
+      "value_type": "integer",
+      "unit": "year",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 1900,
+        "max": 2100
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "year",
+      "allowed_states": [
+        "value",
+        "out_of_coverage",
+        "temporary_error",
+        "not_available"
+      ],
+      "description": "Année civile close de la série annuelle des prix (tendance_prix) : bornes de la période et année de chaque point."
+    },
+    {
+      "field_id": "dvf.tendance.seuil",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 1,
+        "max": 1000
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "out_of_coverage",
+        "temporary_error",
+        "not_available"
+      ],
+      "description": "Seuil de ventes retenues de la série annuelle des prix : sur une année pour publier sa médiane (seuil_point), sur la première et la dernière année pour chiffrer une évolution (seuil_evolution)."
+    },
+    {
+      "field_id": "dvf.tendance.nb_ventes",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 1000000
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "out_of_coverage",
+        "temporary_error",
+        "not_available"
+      ],
+      "description": "Ventes retenues d'un type de bien, sur une année civile close ou sur toute la période de la série (vente réelle, hors VEFA, une seule commune, surface et prix positifs). Effectif réel, publié même sous le seuil."
+    },
+    {
+      "field_id": "dvf.tendance.prix_m2_median",
+      "value_type": "integer",
+      "unit": "euro_per_m2",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 50000
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "currency",
+      "allowed_states": [
+        "value",
+        "out_of_coverage",
+        "temporary_error",
+        "not_available",
+        "insufficient_sample"
+      ],
+      "description": "Prix médian au m2 des ventes retenues d'un type de bien sur une année civile close ; null sous le seuil de publication d'une médiane."
+    },
+    {
+      "field_id": "dvf.tendance.evolution_pct",
+      "value_type": "decimal",
+      "unit": "percent",
+      "precision": {
+        "fraction_digits": 1
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "percent_points",
+      "allowed_states": [
+        "value",
+        "out_of_coverage",
+        "temporary_error",
+        "not_available",
+        "insufficient_sample"
+      ],
+      "description": "Évolution en pourcentage entre le prix médian au m2 de la première et de la dernière année close de la période, pour un type de bien ; servie seulement quand ces deux années ont chacune au moins seuil_evolution ventes retenues. Médiane de ce qui s'est vendu chaque année : ni l'évolution d'un bien, ni une prévision."
+    },
+    {
+      "field_id": "dpe.dpe_passoires_pct",
+      "value_type": "decimal",
+      "unit": "percent_point",
+      "precision": {
+        "fraction_digits": 2
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 100
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "percent_points",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error",
+        "zero_denominator"
+      ],
+      "description": "Part des DPE classes F/G (passoires thermiques), en points (D-01)."
+    },
+    {
+      "field_id": "dpe.dpe_median",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error",
+        "not_available"
+      ],
+      "description": "Classe DPE mediane de la commune (A a G)."
+    },
+    {
+      "field_id": "dpe.annee_construction_mediane",
+      "value_type": "integer",
+      "unit": "year",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 1900,
+        "max": 2100
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "year",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error",
+        "not_available"
+      ],
+      "description": "Annee de construction mediane des biens diagnostiques."
+    },
+    {
+      "field_id": "equipements.nb_equipements",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 50000
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error",
+        "not_available"
+      ],
+      "description": "Somme des effectifs des lignes BPE chargées au dernier millésime disponible pour la commune, sans déduplication d'établissements physiques. NULL si population absente ou effectifs incomplets ; zéro seulement si les effectifs source présents valent zéro."
+    },
+    {
+      "field_id": "scolaire.nb_etablissements_scolaires",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 5000
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Codes RNE distincts observés dans la carte des secteurs scolaires de la commune ; pas un recensement de tous ses établissements. NULL si source absente ou identifiants incomplets."
+    },
+    {
+      "field_id": "monuments.nb_monuments",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 5000
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Références de notices Mérimée distinctes chargées pour la commune, pas un dénombrement d'objets physiques. NULL si population absente ou références incomplètes."
+    },
+    {
+      "field_id": "foncier_pm.nb_proprietaires_pm",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 100000
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error",
+        "not_available"
+      ],
+      "description": "SIREN distincts observés dans les droits fonciers chargés de la commune. NULL si population absente ou identifiants incomplets ; ne prouve pas l'exhaustivité des propriétaires."
+    },
+    {
+      "field_id": "foncier_pm.surface_pm_ha",
+      "value_type": "decimal",
+      "unit": "hectare",
+      "precision": {
+        "fraction_digits": 1
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 100000
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error",
+        "not_available"
+      ],
+      "description": "Somme des contenances des parcelles distinctes présentes dans les droits fonciers chargés, en hectares. Les droits répétés ne multiplient pas la surface. NULL si contenance absente, négative ou contradictoire ; le stock observé ne prouve pas son exhaustivité."
+    },
+    {
+      "field_id": "connectivite.fibre_pct",
+      "value_type": "decimal",
+      "unit": "percent_point",
+      "precision": {
+        "fraction_digits": 2
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 100
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "percent_points",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Part en points de pourcentage des id_imb distincts avec une ligne FO parmi les id_imb chargés pour la commune. Population observée d'immeubles source, pas des adresses ou logements. NULL si absente ou si des identifiants/technologies manquent."
+    },
+    {
+      "field_id": "commune.risques.risques_naturels",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "out_of_coverage"
+      ],
+      "description": "Risques naturels (inondation, RGA, radon) au niveau commune — gap structurel permanent (proxy live, non precalcule dans v_commune_synthese, cf 43-PATTERNS landmine 12)."
+    },
+    {
+      "field_id": "commune.propriete.coproprietes",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "out_of_coverage"
+      ],
+      "description": "Coproprietes (RNIC) — gap structurel permanent (table chargee nationalement, 0 ligne frequent par commune)."
+    },
+    {
+      "field_id": "bien.dpe.etiquette_dpe",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Etiquette DPE (A a G) du bien."
+    },
+    {
+      "field_id": "bien.dpe.etiquette_ges",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Etiquette GES (A a G) du bien."
+    },
+    {
+      "field_id": "bien.dpe.surface_habitable",
+      "value_type": "decimal",
+      "unit": "m2",
+      "precision": {
+        "fraction_digits": 2
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 2000
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Surface habitable du bien (DPE)."
+    },
+    {
+      "field_id": "bien.dpe.annee_construction",
+      "value_type": "integer",
+      "unit": "year",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 1700,
+        "max": 2100
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "year",
+      "allowed_states": [
+        "value",
+        "not_reported"
+      ],
+      "description": "Annee de construction exacte du bien (ADEME, exhaustivite ~63%). Fallback : periode_construction."
+    },
+    {
+      "field_id": "bien.dpe.periode_construction",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value"
+      ],
+      "description": "Tranche de periode de construction du bien (ex. 1948-1974), fallback quand annee_construction est absente."
+    },
+    {
+      "field_id": "bien.dpe.type_batiment",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value",
+        "out_of_coverage"
+      ],
+      "description": "Type de batiment (maison, appartement) du bien (DPE)."
+    },
+    {
+      "field_id": "bien.dpe.cout_total_5_usages",
+      "value_type": "integer",
+      "unit": "euro_per_year",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 20000
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "currency",
+      "allowed_states": [
+        "value",
+        "not_reported"
+      ],
+      "description": "Cout total estime des 5 usages DPE (chauffage, ECS, refroidissement, eclairage, auxiliaires)."
+    },
+    {
+      "field_id": "bien.dpe.energie_chauffage",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value",
+        "not_reported"
+      ],
+      "description": "Type d'energie principale de chauffage du bien (DPE)."
+    },
+    {
+      "field_id": "bien.dpe.isolation",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value",
+        "not_reported"
+      ],
+      "description": "Qualite d'isolation de l'enveloppe du bien (DPE)."
+    },
+    {
+      "field_id": "bien.dpe.conso_5_usages_ep",
+      "value_type": "decimal",
+      "unit": "kwh_ep_per_year",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "out_of_coverage"
+      ],
+      "description": "Consommation annuelle totale d'énergie primaire des 5 usages DPE du logement, en kWhEP/an."
+    },
+    {
+      "field_id": "bien.dvf.valeur_fonciere",
+      "value_type": "integer",
+      "unit": "euro",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 50000000
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "currency",
+      "allowed_states": [
+        "value",
+        "out_of_coverage"
+      ],
+      "description": "Valeur fonciere de la derniere vente DVF du bien."
+    },
+    {
+      "field_id": "bien.dvf.prix_m2",
+      "value_type": "integer",
+      "unit": "euro_per_m2",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 50000
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "currency",
+      "allowed_states": [
+        "value",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Prix au m2 de la derniere vente DVF du bien."
+    },
+    {
+      "field_id": "bien.dvf.date_mutation",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "date",
+      "allowed_states": [
+        "value",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Date de la derniere mutation DVF du bien (DATA-05 : jamais future)."
+    },
+    {
+      "field_id": "bien.dvf.type_local",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value",
+        "out_of_coverage"
+      ],
+      "description": "Type de local (appartement, maison, ...) de la derniere mutation DVF."
+    },
+    {
+      "field_id": "bien.dvf.surface_reelle_bati",
+      "value_type": "decimal",
+      "unit": "m2",
+      "precision": {
+        "fraction_digits": 2
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 2000
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "out_of_coverage"
+      ],
+      "description": "Surface reelle batie de la derniere mutation DVF."
+    },
+    {
+      "field_id": "bien.dvf.nombre_pieces_principales",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 50
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "out_of_coverage"
+      ],
+      "description": "Nombre de pieces principales de la derniere mutation DVF."
+    },
+    {
+      "field_id": "bien.dvf.classe_mutation",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value",
+        "out_of_coverage"
+      ],
+      "description": "Classe qualifiee de la mutation au grain id_mutation (vocabulaire ferme app.etl_dvf.qualification.CLASSES_MUTATION), rendue par un libelle lisible."
+    },
+    {
+      "field_id": "bien.dvf.surface_bati_totale",
+      "value_type": "integer",
+      "unit": "m2",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 100000
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "out_of_coverage"
+      ],
+      "description": "Surface batie totale de la mutation, sommee au grain id_mutation - jamais une surface par ligne DVF."
+    },
+    {
+      "field_id": "bien.cadastre.id_parcelle",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Identifiant de parcelle cadastrale du bien."
+    },
+    {
+      "field_id": "bien.cadastre.section",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value",
+        "out_of_coverage"
+      ],
+      "description": "Section cadastrale de la parcelle du bien."
+    },
+    {
+      "field_id": "bien.cadastre.numero",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value",
+        "out_of_coverage"
+      ],
+      "description": "Numero cadastral de la parcelle du bien."
+    },
+    {
+      "field_id": "bien.cadastre.contenance",
+      "value_type": "decimal",
+      "unit": "m2",
+      "precision": {
+        "fraction_digits": 2
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 1000000
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Contenance cadastrale de la parcelle du bien."
+    },
+    {
+      "field_id": "bien.risques.inondation",
+      "value_type": "boolean",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "boolean",
+      "allowed_states": [
+        "value",
+        "out_of_coverage",
+        "temporary_error",
+        "not_reported"
+      ],
+      "description": "Présence du risque inondation dans la liste communale Géorisques, affichée dans le contexte communal de la Fiche Bien ; aucune exposition parcellaire déduite."
+    },
+    {
+      "field_id": "bien.risques.sismique",
+      "value_type": "boolean",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "boolean",
+      "allowed_states": [
+        "value",
+        "out_of_coverage",
+        "temporary_error",
+        "not_reported"
+      ],
+      "description": "Présence du risque séisme dans la liste communale Géorisques, sans déduction du niveau de sismicité ni de l'exposition du bien."
+    },
+    {
+      "field_id": "bien.risques.expo_argiles",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Exposition au retrait-gonflement des argiles au point géographique interrogé (Géorisques)."
+    },
+    {
+      "field_id": "bien.urbanisme.zonage_libelle",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Libellé de la zone PLU (GPU) renvoyée au point géographique interrogé, sans conclusion sur toute la parcelle."
+    },
+    {
+      "field_id": "bien.urbanisme.type_zone",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value",
+        "out_of_coverage"
+      ],
+      "description": "Type de la zone PLU (GPU) renvoyée au point géographique interrogé, sans conclusion sur toute la parcelle."
+    },
+    {
+      "field_id": "equipements.annee",
+      "value_type": "integer",
+      "unit": "year",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 1900,
+        "max": 2100
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "year",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Dernier millésime BPE (Base permanente des équipements, INSEE) chargé pour la commune. null : aucune ligne BPE pour la commune."
+    },
+    {
+      "field_id": "loyers.prediction.loyer_m2",
+      "value_type": "decimal",
+      "unit": "euro_per_m2_month",
+      "precision": {
+        "fraction_digits": 1
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 200
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "currency",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Loyer d'annonce prédit (colonne source loypredm2, Carte des loyers ANIL, millésime donné par loyers.prediction.annee), en euros par m² et par mois, charges comprises, pour le bien type non meublé du type d'habitat de l'objet. Une ligne sans loyer ou à zéro n'est pas importée."
+    },
+    {
+      "field_id": "loyers.prediction.loyer_m2_bas",
+      "value_type": "decimal",
+      "unit": "euro_per_m2_month",
+      "precision": {
+        "fraction_digits": 1
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 200
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "currency",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Borne basse de l'intervalle de prédiction à 95 % du loyer d'annonce (lwr.IPm2, Carte des loyers ANIL, millésime donné par loyers.prediction.annee), en euros par m² et par mois ; pas un quartile. null : borne absente de la source."
+    },
+    {
+      "field_id": "loyers.prediction.loyer_m2_haut",
+      "value_type": "decimal",
+      "unit": "euro_per_m2_month",
+      "precision": {
+        "fraction_digits": 1
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 200
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "currency",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Borne haute de l'intervalle de prédiction à 95 % du loyer d'annonce (upr.IPm2, Carte des loyers ANIL, millésime donné par loyers.prediction.annee), en euros par m² et par mois ; pas un quartile. null : borne absente de la source."
+    },
+    {
+      "field_id": "loyers.prediction.r2_ajuste",
+      "value_type": "decimal",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": 3
+      },
+      "plausible_range": {
+        "min": null,
+        "max": 1
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "R² ajusté du modèle d'estimation du loyer (R2_adj, Carte des loyers ANIL, millésime donné par loyers.prediction.annee) : qualité d'ajustement, sans unité, au plus 1 ; distinct de l'intervalle de prédiction. null : absent de la source."
+    },
+    {
+      "field_id": "loyers.prediction.r2",
+      "value_type": "decimal",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": 3
+      },
+      "plausible_range": {
+        "min": null,
+        "max": 1
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Alias historique de r2_ajuste : même valeur (R2_adj source), conservé pour compatibilité. null : absent de la source."
+    },
+    {
+      "field_id": "loyers.prediction.nb_observations_commune",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Nombre d'annonces observées dans la commune (nbobs_com, Carte des loyers ANIL, millésime donné par loyers.prediction.annee). Zéro : aucune annonce dans la commune, l'estimation vient de la maille. null : absent de la source."
+    },
+    {
+      "field_id": "loyers.prediction.nb_observations_maille",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Nombre d'annonces observées dans la maille d'estimation (nbobs_mail, Carte des loyers ANIL, millésime donné par loyers.prediction.annee), jamais additionné aux observations communales. null : absent de la source."
+    },
+    {
+      "field_id": "loyers.prediction.nb_observations",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Alias historique de nb_observations_commune : même valeur (nbobs_com source), conservé pour compatibilité. null : absent de la source."
+    },
+    {
+      "field_id": "loyers.prediction.annee",
+      "value_type": "integer",
+      "unit": "year",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 1900,
+        "max": 2100
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "year",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Millésime de la Carte des loyers dont provient la prédiction."
+    },
+    {
+      "field_id": "loyers.prediction.trimestre_reference",
+      "value_type": "integer",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 1,
+        "max": 4
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Trimestre de référence des annonces de la carte, fixé à l'import par le contrat de référence du millésime (loyers.prediction.annee), tiré du guide officiel de ce millésime. null : contrat de référence non établi pour ce millésime."
+    },
+    {
+      "field_id": "loyers.prediction.surface_reference_m2",
+      "value_type": "decimal",
+      "unit": "m2",
+      "precision": {
+        "fraction_digits": 1
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Surface habitable du bien type de référence du guide officiel du millésime (loyers.prediction.annee) pour ce type d'habitat, en m². null : contrat de référence non établi pour ce millésime."
+    },
+    {
+      "field_id": "loyers.prediction.surface_piece_reference_m2",
+      "value_type": "decimal",
+      "unit": "m2",
+      "precision": {
+        "fraction_digits": 1
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Surface moyenne par pièce du bien type de référence du guide officiel du millésime (loyers.prediction.annee), en m². null : contrat de référence non établi pour ce millésime."
+    },
+    {
+      "field_id": "dvf.indicateurs.effectif",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Nombre de mutations résidentielles DVF (mono-local, hors VEFA, mono-commune) de la classe (maison ou appartement) retenues dans la fenêtre annuelle de l'objet. null : fenêtre inconnue, avec son motif (motif_periode)."
+    },
+    {
+      "field_id": "dvf.indicateurs.quantiles.p10",
+      "value_type": "decimal",
+      "unit": "EUR/m2",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "currency",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error",
+        "not_qualified"
+      ],
+      "description": "10e centile (percentile_cont) du prix au m² des mutations de la classe dans la fenêtre, en euros par m². Publié seulement quand les quantiles sont qualifiés ; sinon absence typée avec motif."
+    },
+    {
+      "field_id": "dvf.indicateurs.quantiles.p50",
+      "value_type": "decimal",
+      "unit": "EUR/m2",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "currency",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error",
+        "not_qualified"
+      ],
+      "description": "50e centile (percentile_cont) du prix au m² des mutations de la classe dans la fenêtre, en euros par m². Publié seulement quand les quantiles sont qualifiés ; sinon absence typée avec motif."
+    },
+    {
+      "field_id": "dvf.indicateurs.quantiles.p90",
+      "value_type": "decimal",
+      "unit": "EUR/m2",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "currency",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error",
+        "not_qualified"
+      ],
+      "description": "90e centile (percentile_cont) du prix au m² des mutations de la classe dans la fenêtre, en euros par m². Publié seulement quand les quantiles sont qualifiés ; sinon absence typée avec motif."
+    },
+    {
+      "field_id": "dpe.indicateurs.population.total",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Nombre de diagnostics DPE canoniques disponibles pour la commune, hors traces retirées (tombstones, sources retirées ou désactivées)."
+    },
+    {
+      "field_id": "dpe.indicateurs.population.classes_connues",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Nombre de ces diagnostics dont la classe énergie (A à G) est connue."
+    },
+    {
+      "field_id": "dpe.indicateurs.population.types_batiment",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Nombre de diagnostics par type de bâtiment déclaré, la clé nommant le type (maison, appartement, autre — immeuble compris —, inconnu) ; la somme égale le total."
+    },
+    {
+      "field_id": "dpe.indicateurs.population.validite",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Nombre de diagnostics par état de validité à la date d'évaluation, la clé nommant l'état (unknown, expired, not_expired_by_date, inconsistent_dates, future_establishment) ; la somme égale le total."
+    },
+    {
+      "field_id": "dpe.indicateurs.population.remplacement",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Nombre de diagnostics par état de remplacement dans le graphe des DPE, la clé nommant l'état (not_checked, no_successor_known, replaced, ambiguous) ; la somme égale le total."
+    },
+    {
+      "field_id": "dpe.indicateurs.population.regimes",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Nombre de diagnostics rattachés à chaque régime de la source ADEME, la clé nommant le régime (existant, neuf, inconnu) ; un diagnostic des deux régimes compte dans chacun : les marges se recouvrent et ne s'additionnent pas."
+    },
+    {
+      "field_id": "dpe.indicateurs.population.source_inconnue",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Nombre de diagnostics dont l'état dans la source est inconnu."
+    },
+    {
+      "field_id": "dpe.indicateurs.population.revision_non_verifiee",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Nombre de diagnostics dont la révision n'est pas vérifiée ; dans le calcul actuel aucune révision n'est vérifiée, la valeur égale le total."
+    },
+    {
+      "field_id": "dpe.indicateurs.distribution.classes",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Nombre de diagnostics par classe énergie, la clé nommant la classe (A à G)."
+    },
+    {
+      "field_id": "dpe.indicateurs.distribution.inconnue",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Nombre de diagnostics sans classe énergie connue."
+    },
+    {
+      "field_id": "dpe.indicateurs.dates_etablissement_inconnues",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Nombre de diagnostics sans date d'établissement connue."
+    },
+    {
+      "field_id": "dpe.indicateurs.modes",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Classes énergie de fréquence maximale parmi les diagnostics disponibles de la commune dont la classe est connue : toutes les classes ex aequo, dans l'ordre A à G. Liste vide si aucune classe n'est connue."
+    },
+    {
+      "field_id": "dpe.indicateurs.mediane_ordinale",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "description": "Classe énergie médiane ordinale (percentile_disc sur l'ordre A à G) des diagnostics disponibles de la commune dont la classe est connue ; absente si aucune classe n'est connue."
+    },
+    {
+      "field_id": "adresse.dpe.nombre_declares",
+      "value_type": "integer",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "rattachement": "adresse_saisie_diagnostiqueur",
+      "description": "Nombre de documents DPE dont l'adresse saisie par le diagnostiqueur correspond à cette adresse de la BAN ; aucun n'est rattaché à un logement précis."
+    },
+    {
+      "field_id": "adresse.dpe.documents_adresse_brute",
+      "value_type": "integer",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_available",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "rattachement": "adresse_brute_exacte",
+      "description": "Nombre de documents DPE déclarés à cette adresse par leur adresse saisie, rapprochée exactement de la BAN : l'identifiant d'adresse fourni par l'ADEME ne correspond à aucune adresse de la BAN, mais le numéro, le suffixe, la voie et la commune saisis désignent cette adresse et une seule. Un groupe distinct des documents de la clé ADEME, hors de leur nombre ; ce n'est pas une identité de logement."
+    },
+    {
+      "field_id": "adresse.dpe.plus_recent",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "date",
+      "allowed_states": [
+        "value",
+        "not_available",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "rattachement": "adresse_saisie_diagnostiqueur",
+      "description": "Date du document DPE le plus récent parmi ceux dont l'adresse saisie par le diagnostiqueur correspond à cette adresse de la BAN, avec la sélection servie (document unique, égalité de date ou indéterminée) ; ligne du comparateur d'adresses, jamais un document rattaché à un logement."
+    },
+    {
+      "field_id": "adresse.dpe.constat_d110",
+      "value_type": "boolean",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "boolean",
+      "allowed_states": [
+        "value",
+        "not_qualified"
+      ],
+      "rattachement": "parcelle_du_point",
+      "description": "Constat « Une adresse, un bâtiment, un DPE : les éléments concordent », servi seulement quand tous ses critères tiennent : document de type maison, seul document de la clé BAN (documents retirés compris), adresse saisie strictement concordante (numéro, suffixe et voie entière), une seule parcelle contenant le point BAN, un seul bâtiment sur cette parcelle hors annexe déclarée (un usage inconnu compte comme bâtiment). Absent dès qu'un critère est faux, inconnu ou non lisible. Ce constat ne prouve pas l'identité d'un logement."
+    },
+    {
+      "field_id": "dpe.document.etiquette_dpe",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value",
+        "not_reported"
+      ],
+      "rattachement": "adresse_saisie_diagnostiqueur",
+      "description": "Classe énergie (A à G) déclarée par le document DPE ; inconnue si le document n'en porte pas de valide. Le document décrit ce que le diagnostiqueur a déclaré, pas un logement identifié."
+    },
+    {
+      "field_id": "dpe.document.etiquette_ges",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value",
+        "not_reported"
+      ],
+      "rattachement": "adresse_saisie_diagnostiqueur",
+      "description": "Classe climat (émissions de gaz à effet de serre, A à G) déclarée par le document DPE ; inconnue si le document n'en porte pas de valide."
+    },
+    {
+      "field_id": "dpe.document.surface_habitable",
+      "value_type": "decimal",
+      "unit": "m2",
+      "precision": {
+        "fraction_digits": 2
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 2000
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported"
+      ],
+      "rattachement": "adresse_saisie_diagnostiqueur",
+      "description": "Surface habitable déclarée par le document DPE, en mètres carrés."
+    },
+    {
+      "field_id": "dpe.document.adresse_declaree",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value",
+        "suppressed",
+        "not_reported"
+      ],
+      "rattachement": "adresse_saisie_diagnostiqueur",
+      "description": "Adresse saisie par le diagnostiqueur dans le document DPE, servie seulement quand elle n'est pas strictement concordante avec l'adresse BAN. Publiée telle que saisie quand elle est établie sans complément (numéro, suffixe, voie égale à la voie BAN, code postal et commune facultatifs, aucun complément stocké) ; sinon masquée en entier avec son motif (complément présent, ou non vérifiable sans complément). Le texte saisi est conservé par DataCommune et n'est pas publié ; il n'est jamais corrigé ni remplacé par l'adresse BAN."
+    },
+    {
+      "field_id": "dpe.document.conso_ep",
+      "value_type": "decimal",
+      "unit": "kwh_ep_per_year",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported"
+      ],
+      "rattachement": "adresse_saisie_diagnostiqueur",
+      "description": "Consommation annuelle d'énergie primaire des cinq usages déclarée par le document DPE, en kWhEP/an : valeur totale du document (colonne ADEME conso_5_usages_ep), pas une valeur par mètre carré."
+    },
+    {
+      "field_id": "dpe.document.emissions_ges",
+      "value_type": "decimal",
+      "unit": "kg_co2_eq_per_year",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported"
+      ],
+      "rattachement": "adresse_saisie_diagnostiqueur",
+      "description": "Émissions annuelles de gaz à effet de serre des cinq usages déclarées par le document DPE, en kg CO2 équivalent par an : valeur totale du document (colonne ADEME emission_ges_5_usages), pas une valeur par mètre carré."
+    },
+    {
+      "field_id": "dpe.document.conso_ep_m2",
+      "value_type": "decimal",
+      "unit": "kwh_ep_per_m2_per_year",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported"
+      ],
+      "rattachement": "adresse_saisie_diagnostiqueur",
+      "description": "Consommation d'énergie primaire des cinq usages par mètre carré et par an, publiée par l'ADEME pour le document DPE (colonne conso_5_usages_par_m2_ep), en kWhEP/m²/an : c'est la valeur qu'on rapproche de la classe énergie. Elle n'est jamais recalculée à partir du total et de la surface ; absente de la source, elle est non renseignée."
+    },
+    {
+      "field_id": "dpe.document.emissions_ges_m2",
+      "value_type": "decimal",
+      "unit": "kg_co2_eq_per_m2_per_year",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported"
+      ],
+      "rattachement": "adresse_saisie_diagnostiqueur",
+      "description": "Émissions de gaz à effet de serre des cinq usages par mètre carré et par an, publiées par l'ADEME pour le document DPE (colonne emission_ges_5_usages_par_m2), en kg CO2 équivalent par m² et par an : c'est la valeur qu'on rapproche de la classe climat. Elles ne sont jamais recalculées à partir du total et de la surface ; absentes de la source, elles sont non renseignées."
+    },
+    {
+      "field_id": "dpe.document.cout_annuel",
+      "value_type": "decimal",
+      "unit": "euro_per_year",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported"
+      ],
+      "rattachement": "adresse_saisie_diagnostiqueur",
+      "description": "Coût annuel estimé des énergies des cinq usages déclaré par le document DPE, en euros par an, tel que servi par la source (colonne ADEME cout_total_5_usages) : une valeur unique, aucune fourchette n'est calculée."
+    },
+    {
+      "field_id": "dpe.document.type_batiment",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value",
+        "not_reported"
+      ],
+      "rattachement": "adresse_saisie_diagnostiqueur",
+      "description": "Type de bâtiment décrit par le document DPE (maison, appartement, immeuble), tel que déclaré par le diagnostiqueur."
+    },
+    {
+      "field_id": "dpe.document.periode_construction",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value",
+        "not_reported"
+      ],
+      "rattachement": "adresse_saisie_diagnostiqueur",
+      "description": "Période de construction déclarée par le document DPE, telle que servie par la source."
+    },
+    {
+      "field_id": "dpe.document.energie_chauffage",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value",
+        "not_reported"
+      ],
+      "rattachement": "adresse_saisie_diagnostiqueur",
+      "description": "Énergie principale de chauffage déclarée par le document DPE, telle que servie par la source."
+    },
+    {
+      "field_id": "dpe.document.installation_chauffage",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value",
+        "not_reported"
+      ],
+      "rattachement": "adresse_saisie_diagnostiqueur",
+      "description": "Type d'installation de chauffage (individuelle, collective) déclaré par le document DPE, tel que servi par la source."
+    },
+    {
+      "field_id": "dpe.document.isolation",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value",
+        "not_reported"
+      ],
+      "rattachement": "adresse_saisie_diagnostiqueur",
+      "description": "Qualité d'isolation de l'enveloppe déclarée par le document DPE, telle que servie par la source."
+    },
+    {
+      "field_id": "dpe.document.date_etablissement",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "date",
+      "allowed_states": [
+        "value",
+        "not_reported"
+      ],
+      "rattachement": "adresse_saisie_diagnostiqueur",
+      "description": "Date d'établissement déclarée par le document DPE, telle que servie par l'ADEME ; ligne du comparateur de documents, jamais un document rattaché à un logement."
+    },
+    {
+      "field_id": "dpe.document.date_fin_validite",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "date",
+      "allowed_states": [
+        "value",
+        "not_reported"
+      ],
+      "rattachement": "adresse_saisie_diagnostiqueur",
+      "description": "Date de fin de validité déclarée par le document DPE, telle que servie par l'ADEME ; aucune date n'est calculée à partir d'une autre."
+    },
+    {
+      "field_id": "dpe.document.methode",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value",
+        "not_reported"
+      ],
+      "rattachement": "adresse_saisie_diagnostiqueur",
+      "description": "Méthode de calcul du document DPE lue sur sa date d'établissement : ancienne méthode (avant juillet 2021) ou méthode actuelle ; non renseignée sans date d'établissement. Deux documents de méthodes différentes ne se comparent pas sur leurs classes, consommations et émissions."
+    },
+    {
+      "field_id": "dpe.document.adresse_ban",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "not_available",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "rattachement": "adresse_saisie_diagnostiqueur",
+      "description": "Adresse de la BAN dont la clé est déclarée par la source pour le document DPE (égalité de clé, non vérifiée) ; jamais un logement."
+    },
+    {
+      "field_id": "adresse.dvf.ventes_parcelle.nombre",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_available",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "rattachement": "parcelle_du_point",
+      "description": "Nombre de mutations DVF distinctes (ventes et autres mutations à titre onéreux) enregistrées sur la parcelle cadastrale qui contient le point BAN de l'adresse, sur toute la période DVF importée ; une mutation portant sur plusieurs parcelles compte une fois. Non servi quand aucune parcelle ou plusieurs parcelles contiennent le point."
+    },
+    {
+      "field_id": "adresse.dvf.ventes_parcelle.derniere",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "date",
+      "allowed_states": [
+        "value",
+        "not_available",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "rattachement": "parcelle_du_point",
+      "description": "Date de la mutation DVF la plus récente de la parcelle qui contient le point BAN de l'adresse ; non disponible quand la parcelle n'a aucune mutation."
+    },
+    {
+      "field_id": "adresse.dvf.vente.prix",
+      "value_type": "decimal",
+      "unit": "euro",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "currency",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "suppressed"
+      ],
+      "rattachement": "parcelle_du_point",
+      "description": "Valeur foncière déclarée d'une mutation DVF de la parcelle qui contient le point BAN de l'adresse : montant de toute la mutation, rattaché à aucun logement. Non servi (suppressed) pour une vente isolée récente, 24 mois au plus avant la dernière date DVF importée, ou dont l'isolement ne peut être établi."
+    },
+    {
+      "field_id": "adresse.dvf.vente.prix_m2",
+      "value_type": "integer",
+      "unit": "euro_per_m2",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 50000
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "currency",
+      "allowed_states": [
+        "value",
+        "not_available",
+        "suppressed"
+      ],
+      "rattachement": "parcelle_du_point",
+      "description": "Prix au m2 d'une mutation DVF de la parcelle qui contient le point BAN de l'adresse : valeur foncière divisée par la surface réelle bâtie, seulement pour la vente d'un seul local d'habitation. Non servi quand le prix de la mutation n'est pas servi."
+    },
+    {
+      "field_id": "adresse.dvf.vente.surface_batie",
+      "value_type": "integer",
+      "unit": "m2",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported"
+      ],
+      "rattachement": "parcelle_du_point",
+      "description": "Surface réelle bâtie déclarée dans DVF pour une mutation de la parcelle qui contient le point BAN de l'adresse, somme des locaux de la mutation ; ne décrit aucun logement précis."
+    },
+    {
+      "field_id": "adresse.dvf.ventes_ressemblantes.effectif",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_available",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "rattachement": "rayon_du_point",
+      "description": "Nombre de ventes DVF d'un seul local du type choisi (maison ou appartement), dans la tolérance de surface, à moins du rayon choisi du point BAN de l'adresse (ou dans sa commune, rattachement commune_de_l_adresse) et sur les dernières années DVF importées ; critères appliqués servis avec l'effectif. Aucune vente n'est rattachée à un logement."
+    },
+    {
+      "field_id": "adresse.dvf.ventes_adresse.nombre",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_available",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "rattachement": "adresse_declaree_vente",
+      "description": "Nombre de ventes DVF distinctes rattachées à l'adresse BAN par leur adresse déclarée (numéro et suffixe, voie normalisée, commune), sur toute la période DVF importée (C37, C44). Relation distincte des ventes de la parcelle, jamais fusionnée avec elles. Règle servie aux pages et au comparateur depuis 04.5-08 (regle=numero_et_suffixe) : l'adresse 2 ne compte que les ventes déclarées sans suffixe, l'adresse 2 bis celles déclarées 2 B ; un suffixe sans correspondance unique (suffixe_sans_correspondance) ou une génération DVF importée sans le suffixe (suffixe_non_importe) est un état typé, jamais les ventes du numéro nu. La règle par défaut de l'API (regle=numero, C37) ne compare pas le suffixe. Aucune vente rattachée n'est pas un zéro de la source : seule l'adresse de la première ligne d'une vente est gardée, et une partie des ventes ne retrouve aucune adresse BAN (C44). Aucune vente n'est rattachée à un logement. VEFA (04.1-15, 04.5-07) : sous vefa=incluses, les ventes en l'état futur d'achèvement déclarées à l'adresse sont listées et marquées hors_stats_vefa, mais les VEFA ne sont pas comptées (D-12) ; le total de la liste les compte alors, avec nombre_vefa."
+    },
+    {
+      "field_id": "adresse.risques.argiles_au_point",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "not_available",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "rattachement": "au_point",
+      "description": "Exposition au retrait-gonflement des argiles au point BAN de l'adresse, telle que servie par Géorisques (RGA) le jour de la consultation. Ce n'est ni un compte de risques ni une absence de risque : les risques communaux sont hors de ce champ."
+    },
+    {
+      "field_id": "adresse.reference_commune.prix_median_maison",
+      "value_type": "integer",
+      "unit": "euro_per_m2",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 50000
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "currency",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error",
+        "not_available",
+        "insufficient_sample"
+      ],
+      "rattachement": "commune_reference",
+      "description": "Référence communale, pas une donnée de l'adresse : prix médian au m2 des ventes de maisons de la commune de l'adresse, même valeur que dvf.prix_m2_median_maison de la fiche commune."
+    },
+    {
+      "field_id": "adresse.reference_commune.prix_median_appartement",
+      "value_type": "integer",
+      "unit": "euro_per_m2",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 50000
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "currency",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error",
+        "not_available",
+        "insufficient_sample"
+      ],
+      "rattachement": "commune_reference",
+      "description": "Référence communale, pas une donnée de l'adresse : prix médian au m2 des ventes d'appartements de la commune de l'adresse, même valeur que dvf.prix_m2_median_appartement de la fiche commune."
+    },
+    {
+      "field_id": "adresse.batiments.nombre_parcelle",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "rattachement": "parcelle_du_point",
+      "description": "Nombre de bâtiments BD TOPO dont le point de surface est couvert par la parcelle cadastrale qui contient le point BAN de l'adresse, annexes déclarées comprises, compté sans plafond. Ne désigne aucun bâtiment de l'adresse en particulier, ni un logement."
+    },
+    {
+      "field_id": "adresse.batiments.nombre_parcelle_hors_annexe",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "rattachement": "parcelle_du_point",
+      "description": "Nombre de bâtiments BD TOPO de la parcelle qui contient le point BAN de l'adresse, hors bâtiments dont l'usage déclaré est « Annexe » ; un usage inconnu compte comme bâtiment (P-D110-NULL)."
+    },
+    {
+      "field_id": "adresse.batiment.hauteur",
+      "value_type": "decimal",
+      "unit": "metre",
+      "precision": {
+        "fraction_digits": 1
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error",
+        "not_available"
+      ],
+      "rattachement": "batiment_du_point",
+      "description": "Hauteur BD TOPO du bâtiment qui contient le point BAN de l'adresse, servie seulement quand une seule géométrie de bâtiment couvre ce point."
+    },
+    {
+      "field_id": "adresse.batiment.etages",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "temporary_error"
+      ],
+      "rattachement": "batiment_du_point",
+      "description": "Nombre d'étages BD TOPO du bâtiment qui contient le point BAN de l'adresse, servi seulement quand une seule géométrie de bâtiment couvre ce point."
+    },
+    {
+      "field_id": "adresse.batiment.rnb_id",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error",
+        "not_available"
+      ],
+      "rattachement": "batiment_rnb_de_l_adresse",
+      "description": "Identifiant du Référentiel national des bâtiments (RNB) du bâtiment que l'export départemental du RNB rattache à cette clé BAN, servi seulement quand l'export en cite exactement un. Aucun lien pour la clé : non renseigné. Plusieurs liens : non publié, motif batiment_rnb_non_unique, aucun n'est retenu. Jeu non hébergé : hors couverture avec son motif, sans lecture. Identifiant sourcé : il ne prouve ni le bâtiment qui contient le point ni un logement."
+    },
+    {
+      "field_id": "adresse.parcelle.identifiant",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value"
+      ],
+      "rattachement": "parcelle_du_point",
+      "description": "Identifiant cadastral (14 caractères) de la seule parcelle qui contient le point BAN de l'adresse."
+    },
+    {
+      "field_id": "adresse.parcelle.contenance",
+      "value_type": "integer",
+      "unit": "m2",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "temporary_error"
+      ],
+      "rattachement": "parcelle_du_point",
+      "description": "Contenance cadastrale, en mètres carrés, de la parcelle qui contient le point BAN de l'adresse."
+    },
+    {
+      "field_id": "adresse.copropriete.immatriculation",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "rattachement": "parcelle_du_point",
+      "description": "Nombre de copropriétés du Registre national des copropriétés (RNC) dont la première parcelle déclarée est celle qui contient le point BAN de l'adresse (jointure exacte, cinq lues au plus). Aucun lot ni logement n'en est déduit."
+    },
+    {
+      "field_id": "adresse.risques.liste_commune",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 1,
+        "max": null
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "temporary_error"
+      ],
+      "rattachement": "commune_reference",
+      "description": "Référence communale, pas une mesure de l'adresse : risques naturels et technologiques recensés par GASPAR (Géorisques) pour la commune de l'adresse, lus par code INSEE le jour de la consultation (première page, couverture servie). Aucun risque recensé n'est pas servi comme un zéro ; jamais fusionné avec les risques mesurés au point."
+    },
+    {
+      "field_id": "adresse.risques.radon_commune",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "temporary_error"
+      ],
+      "rattachement": "commune_reference",
+      "description": "Référence communale, pas une mesure de l'adresse : catégorie du potentiel radon de la commune de l'adresse (1 à 3) telle que servie par Géorisques, lue par code INSEE le jour de la consultation."
+    },
+    {
+      "field_id": "adresse.risques.icpe_commune",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "temporary_error"
+      ],
+      "rattachement": "commune_reference",
+      "description": "Référence communale, pas une mesure de l'adresse : nombre d'installations classées pour la protection de l'environnement (ICPE) que Géorisques recense dans la commune de l'adresse, total annoncé par la source ; non servi quand la lecture est partielle sans total."
+    },
+    {
+      "field_id": "adresse.urbanisme.zone_plu",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 1,
+        "max": null
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_available",
+        "temporary_error"
+      ],
+      "rattachement": "au_point",
+      "description": "Zones du document d'urbanisme (PLU, PLUi ou carte communale) qui contiennent le point BAN de l'adresse, servies par l'API Carto GPU (IGN) le jour de la consultation ; aucune zone publiée au point est un manque (not_available), jamais un zéro."
+    },
+    {
+      "field_id": "adresse.urbanisme.prescriptions",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_available",
+        "temporary_error"
+      ],
+      "rattachement": "au_point",
+      "description": "Prescriptions surfaciques du document d'urbanisme au point BAN de l'adresse, servies par l'API Carto GPU (IGN) le jour de la consultation ; liste incomplète signalée quand la source ne prouve pas l'exhaustivité."
+    },
+    {
+      "field_id": "adresse.connectivite.eligibilite_fibre",
+      "value_type": "boolean",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "boolean",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "not_available",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "rattachement": "eligibilite_adresse",
+      "description": "Éligibilité à la fibre (technologie FO) publiée par l'Arcep pour cet immeuble, servie seulement quand un seul immeuble porte exactement le numéro, l'indice et la voie de l'adresse BAN dans sa commune ; sinon indéterminée (not_available), jamais déduite d'une voie voisine."
+    },
+    {
+      "field_id": "adresse.connectivite.debit",
+      "value_type": "string",
+      "unit": "none",
+      "precision": {
+        "fraction_digits": null
+      },
+      "plausible_range": {
+        "min": null,
+        "max": null
+      },
+      "zero_semantics": "not_applicable",
+      "formatter": "text",
+      "allowed_states": [
+        "value"
+      ],
+      "rattachement": "eligibilite_adresse",
+      "description": "Classe de débit descendant publiée par l'Arcep pour la fibre de cet immeuble, servie telle quelle seulement quand une seule classe est publiée."
+    },
+    {
+      "field_id": "adresse.transports.arret_proche",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_available",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "rattachement": "rayon_du_point",
+      "description": "Arrêts de transport et gares les plus proches du point BAN de l'adresse (trois au plus, à moins de 1 000 m), avec leur distance géodésique à vol d'oiseau ; ce n'est pas un temps de trajet."
+    },
+    {
+      "field_id": "departement.population.total",
+      "value_type": "integer",
+      "unit": "person",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "rattachement": "departement",
+      "description": "Population des communes du département : somme des populations de recensement de ses communes, chacune à son dernier millésime chargé (la ligne de sa fiche). Paris, Lyon et Marseille comptent une fois, jamais leurs arrondissements. Le millésime est servi seulement s'il est commun à toutes les communes sommées."
+    },
+    {
+      "field_id": "departement.population.communes_comptees",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "rattachement": "departement",
+      "description": "Base de la population du département : nombre de communes dont la population chargée entre dans la somme."
+    },
+    {
+      "field_id": "departement.prix.appartement.mediane_m2",
+      "value_type": "integer",
+      "unit": "euro_per_m2",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 50000
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "currency",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error",
+        "insufficient_sample"
+      ],
+      "rattachement": "departement",
+      "description": "Prix médian au m² des ventes d'appartements du département sur 12 mois glissants : l'ensemble des ventes retenues par les fiches de ses communes (même filtre que la fiche commune : appartement mono-local, vente hors VEFA, une seule commune, surface et prix positifs ; même fenêtre), chaque vente une fois. Une médiane de département, pas une moyenne des médianes communales ; masquée sous 5 ventes."
+    },
+    {
+      "field_id": "departement.prix.appartement.effectif",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "rattachement": "departement",
+      "description": "Base du prix médian des appartements du département : nombre de ventes retenues sur la fenêtre, égal à la somme des ventes des fiches de ses communes. Publié même sous le seuil ; aucune vente retenue est un état, jamais 0."
+    },
+    {
+      "field_id": "departement.prix.maison.mediane_m2",
+      "value_type": "integer",
+      "unit": "euro_per_m2",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 50000
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "currency",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error",
+        "insufficient_sample"
+      ],
+      "rattachement": "departement",
+      "description": "Prix médian au m² des ventes de maisons du département sur 12 mois glissants : l'ensemble des ventes retenues par les fiches de ses communes (même filtre que la fiche commune : maison mono-local, vente hors VEFA, une seule commune, surface et prix positifs ; même fenêtre), chaque vente une fois. Une médiane de département, pas une moyenne des médianes communales ; masquée sous 5 ventes."
+    },
+    {
+      "field_id": "departement.prix.maison.effectif",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "implausible_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "rattachement": "departement",
+      "description": "Base du prix médian des maisons du département : nombre de ventes retenues sur la fenêtre, égal à la somme des ventes des fiches de ses communes. Publié même sous le seuil ; aucune vente retenue est un état, jamais 0."
+    },
+    {
+      "field_id": "departement.dpe.part_fg_pct",
+      "value_type": "decimal",
+      "unit": "percent_point",
+      "precision": {
+        "fraction_digits": 1
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": 100
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "percent_points",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error",
+        "zero_denominator"
+      ],
+      "rattachement": "departement",
+      "description": "Part des documents DPE classés F ou G parmi ceux de classe A à G connue, en points. Population documentaire des fiches commune (documents anciens, périmés et remplacés compris ; supprimés et désactivés exclus), codés à une commune ou un arrondissement du département, chaque document une fois : ce n'est ni une part de logements, ni l'indicateur daté de préproduction."
+    },
+    {
+      "field_id": "departement.dpe.classes_connues",
+      "value_type": "integer",
+      "unit": "count",
+      "precision": {
+        "fraction_digits": 0
+      },
+      "plausible_range": {
+        "min": 0,
+        "max": null
+      },
+      "zero_semantics": "measured_zero",
+      "formatter": "number",
+      "allowed_states": [
+        "value",
+        "not_reported",
+        "out_of_coverage",
+        "temporary_error"
+      ],
+      "rattachement": "departement",
+      "description": "Base de la part F/G du département : nombre de documents DPE retenus de classe A à G connue (somme des classes). Zéro quand tous les documents sont sans classe : la part n'a alors pas de base de calcul."
+    }
+  ]
+}

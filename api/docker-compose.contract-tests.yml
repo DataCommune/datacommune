@@ -1,0 +1,38 @@
+# Disposable PostGIS harness for Phase 43 (contrats semantiques & golden cases).
+#
+# NEVER invoke this file directly with a fixed `-p` project name or in the
+# foreground of a long-lived shell: it has no persistent volume (tmpfs data
+# dir) and no fixed host port (Docker assigns an ephemeral one), so every run
+# must go through the wrapper script that discovers the port, waits for
+# readiness, runs the tests, and ALWAYS tears the stack down afterwards.
+#
+# Usage (do not run `docker compose` on this file by hand):
+#   pwsh -NoProfile -File backend/scripts/run_contract_integration.ps1 tests/integration/test_postgis_harness.py
+#
+# T-43-01: this compose file only ever binds to 127.0.0.1 on a random port
+# and stores data in tmpfs — there is nothing here that could leak into a
+# developer's persistent DB or a fixed port a production tool might guess.
+
+services:
+  db:
+    image: postgis/postgis:17-3.5
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-contract_test}
+      POSTGRES_USER: ${POSTGRES_USER:-contract_test}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-contract_test}
+    volumes:
+      - ./docker/init-db:/docker-entrypoint-initdb.d:ro
+    tmpfs:
+      - /var/lib/postgresql/data
+    ports:
+      - "127.0.0.1::5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

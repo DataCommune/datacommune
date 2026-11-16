@@ -1,0 +1,176 @@
+{
+  "schema_version": "1",
+  "description": "Schema minimise et versionne du corpus golden (Phase 43, D-10/D-11/D-12). Il ne versionne que des identifiants opaques, la categorie du cas, la date de gel, les millesimes source observes et des invariants stables par couche (DB/API/mapper) -- jamais une adresse residentielle en clair, une coordonnee ou une cle. L'entree privee necessaire au replay live (geocodage/resolveur) vit dans un fichier gitignore indexe par case_id (voir private_input). Amendement 43-09 (2026-07-20) : la categorie 'partial' reste autorisee mais n'est plus exigee par la couverture du corpus -- elle est non observable sur la surface live 44/85 (cadastre requis pour l'identite, commune/risques/urbanisme couverts partout ; 33 adresses reelles testees dont les 12 plus petites communes de chaque departement). Amendement Phase 48 (2026-07-27) : allowed_db_invariants etend copro_row_present/dpe_appartements_multiples/dvf_appartements_present pour les trois signaux de detection multi-logements (D1/D2/D3, observes par id_parcelle exact, jamais un rayon) -- extension additive, aucun invariant existant retire. required_observations force en plus le selecteur a garder, dans toute regeneration, au moins un cas selectionne portant chaque { layer, invariant, value } exact -- meme mecanique de couverture que required_categories, generalisee aux invariants ; comme pour 43-09, toute exigence posee ici doit avoir ete constatee observable sur la surface live 44/85 avant d'etre ajoutee, sous peine d'invalider le corpus a la prochaine selection. Amendement Phase 48 Plan 12 (2026-07-27, decision humaine, precedent 43-09) : l'exigence { api, cadastre_state, not_reported } (archetype 'adresse ambigue') est RETIREE de required_observations. Elle n'est pas retiree parce que l'archetype serait absent -- il est bien observable en production (8 adresses reellement ambigues mesurees sur la seule commune 44109, issue de resolution 'ambiguous', bloc cadastre absent) -- mais parce qu'il est NON INSTALLABLE PAR L'OUTILLAGE : verify_golden_cases._db_observation exige une reference de parcelle non nulle pour tout cas de type adresse, et _assert_api_identity exige que la parcelle rendue par l'API soit egale a celle de l'entree privee ; une adresse ambigue n'ayant pas de parcelle canonique, en designer une serait exactement le choix silencieux du premier candidat que D-04 interdit. La levee de GoldenSecurityError qui en resulte remonte hors de _observe_candidates et ferait echouer toute la regeneration (selection: BLOCKED), et _verify_case la rattraperait en live_observation_failed a chaque replay. Rouvrir cette exigence suppose d'abord une branche d'identite dediee (parcelles_candidates au lieu de id_parcelle) dans le contrat golden. cadastre_state reste une valeur autorisee et observable ; seule son EXIGENCE structurelle est levee. Amendement Phase 48 Plan 16 (2026-07-28, Voie A) : (a) { db, dvf_appartements_present, true } devient une exigence UNITAIRE de required_observations. L'invariant etait deja observe et gele sur un cas du corpus mais n'etait pas exige : une regeneration future pouvait donc en perdre la couverture sans qu'aucun gate ne rougisse (risque annexe releve par la verification du 2026-07-27). (b) L'archetype 'maison divisee' devient EXIGIBLE via une entree CONJONCTIVE { all_of: [ { db, dpe_appartements_multiples, true }, { db, copro_row_present, false } ] }. Il se definit par une conjonction negative qu'aucune exigence unitaire ne peut exprimer : un cas d'immeuble en copropriete satisfait a lui seul les deux exigences unitaires, de sorte que le selecteur minimisant n'avait aucune raison de garder un second cas (48-GOLDEN-EVIDENCE 13.1). La forme conjonctive est celle posee au Plan 48-14, evaluee par observation_is_satisfied, unique fonction partagee par le selecteur et par la validation du manifeste : selection et validation ne peuvent pas diverger. (c) pinned_cases gele les 8 case_id du corpus de reference : un gel decide en checkpoint humain doit survivre a la minimisation, ce que l'incident 48-12 9.2 a montre faux (golden-address-009 evince par la seule minimisation, sans decision). golden-address-009 n'y figure PAS -- il a ete LIBERE par la decision humaine datee du 48-GOLDEN-EVIDENCE 10, et le re-epingler contredirait cet arbitrage. Cout nomme parce qu'il est reel : chaque epingle consomme une unite de marge de selection (cardinality.address.max vaut 10). L'archetype 'adresse ambigue' reste RETIRE par l'amendement du Plan 12 ci-dessus : il n'est PAS reintroduit ici, sa reouverture supposant toujours une branche d'identite dediee (parcelles_candidates) dans le contrat golden. Amendement Phase 48 Plan 17 (2026-07-28, apres replay live vert) : golden-address-007 rejoint pinned_cases. Il est le SEUL cas du corpus satisfaisant l'exigence conjonctive, donc le seul porteur de l'archetype 'maison divisee'. Le Plan 16 l'a fait entrer par la couverture, pas par le gel : tant qu'il n'est pas epingle, sa presence depend de la forme du pool prive a la prochaine regeneration -- si un autre candidat satisfaisait la meme conjonction avec un case_id plus petit, le departage lexicographique du selecteur le remplacerait, et l'archetype resterait couvert par un cas different sans qu'aucune decision ne soit prise. L'epinglage transforme une couverture satisfaite en fait gele, exactement comme pour les huit cas du Plan 16. Il est pose APRES le replay live et non avant : le run 30342575152 (verdict 'live replay: OK (9 redacted cases)', couche mapper 51 sur 51, commit 13ed84f3) a rejoue les invariants de ce cas contre la production, de sorte que le gel porte sur une mesure verifiee et non sur une observation supposee. Cout, compte par type comme le code le fait reellement (_pinned_entries compare le nombre d'epingles de chaque type a la borne de CE type) : 6 adresses epinglees sur cardinality.address.max = 10, soit 4 adresses de marge ; 3 communes epinglees sur cardinality.commune.max = 5, soit 2 communes de marge. Le chiffre agrege de 'marge 2' consigne au Plan 16 confondait les deux cardinalites en opposant 8 epingles tous types confondus a la seule borne des adresses. Amendement R3 (2026-08-04, session S6 Lot A) : (1) CONSTAT de couverture B4 -- les deux archetypes multi-logements sont exiges ET geles : 'immeuble copropriete' par les exigences unitaires de required_observations (porte par golden-address-005, epingle) et 'maison divisee' par l'entree conjonctive (porte par golden-address-007, seul porteur, epingle apres le replay vert run 30342575152). Rien a ouvrir : la couverture visee par B4 est acquise. (2) DECISION D8 tranchee option (a) le 2026-08-02 (PLAN-RESTES §0) : l'archetype 'adresse ambigue' RESTE retire et la branche d'identite dediee parcelles_candidates n'est PAS ouverte -- ce constat est acte par ecrit ici, sans modification de required_observations. Sa reouverture (option b) reste un chantier L hors v3.6, qui se disputerait la marge de cardinalite (4 adresses / 2 communes) avec la dette de couverture departementale du corpus (les 5 cas address sont tous du 44). (3) La mesure DPE du verificateur/selecteur est realignee sur la voie de rattachement de PRODUCTION (cle BAN primaire, secours spatial ST_DWithin 12 m sous la regle de non-ambiguite du snap 3 m, repli spatial complet quand la cle attache 0 ligne -- commits 7ddf0055 et 6df68c3d, ADR-0006), remplacant le ST_Intersects strict qui etait exactement le bug L1 ; la cle BAN de chaque cas adresse vit dans l'entree PRIVEE gitignoree (champ ban_id, desormais interdit au manifeste par forbidden_keys) et son absence bloque l'observation (fail closed, motif nommant le rattachement). (4) dpe_rattachement_ok (gate booleanise R3-02 : rattaches/attendus >= 0,90 et cles orphelines <= 5 % par immeuble) entre dans allowed_db_invariants mais n'est NI exige par required_observations NI gele sur un cas : conformement a l'amendement 43-09, il faut d'abord un replay live vert constatant les metrics (rapport redige) sur la surface 44/85 -- ce constat est l'etape restante, documentee dans _rattachement_metrics. Amendement Phase 58.1 Plan 02 (2026-09-04, DPE-INV-01/02/03) : le sous-contrat DPE est migre vers la decision publique V2 non attributive. Le fait ferme dpe_inventory_presence (present, absent ou unknown) conserve separement la presence documentaire mesuree a l'adresse ; il ne prouve jamais l'identite d'un logement. Les statuts sont limites a unassigned, absent et error ; diagnostic reste null, candidates reste vide, et les faits publics bornes ne contiennent aucun identifiant source. Les porteurs distinguent inventaire non attribue, absence mesuree, controle de voisin redige et contexte collectif. Le replay refuse les decisions anterieures ou inconnues sans repli implicite. forbidden_keys, cardinalites, required_categories, required_observations et pinned_cases sont inchanges. Amendement Phase 51 Plan 09 (2026-08-20, OVERRIDE EXPLICITE de 48-GOLDEN-EVIDENCE 10) : golden-address-009 rejoint pinned_cases. Post-Phase 51, golden-address-009 est le seul cas ADRESSE en 85 du corpus ; il est donc le seul porteur possible de required_carrier_departements que le Plan 51-10 armera. La decision de liberation de juillet a ete prise avant que cette contrainte n'existe. Cout : 7 adresses epinglees sur 10. golden-address-011 n'est PAS epingle a ce stade : conformement au precedent du Plan 48-17 pour golden-address-007, son epingle appartient au Plan 51-10, apres le replay live vert qui prouvera son carrier. Amendement Phase 57 Plan 03 (2026-08-24, todo folde du 2026-07-27) : ajout de la cle declarative required_departement_coverage ({ type: address, departements: [44, 85], min_par_departement: 1 }), qui generalise a la dimension departement la mecanique de couverture deja utilisee par required_categories et required_observations -- meme selecteur, meme echec ferme candidate pool cannot satisfy corpus coverage. POURQUOI : l'incident 48-12 (48-GOLDEN-EVIDENCE 9.2) a montre qu'une minimisation seule peut evincer silencieusement la seule adresse d'un departement (golden-address-009, 85) sans qu'aucun gate ne le detecte ; cette exigence rend la couverture 85 STRUCTURELLE, independante de required_carrier_departements (Phase 51, qui porte sur les porteurs DPE, pas sur la geographie du corpus adresse). COUT : cardinality.address.max vaut 10, 8 adresses sont actuellement epinglees dont golden-address-009 (85) -- la contrainte ne consomme donc aucune marge de cardinalite supplementaire aujourd'hui, golden-address-009 satisfaisant deja min_par_departement=1 pour le 85 et l'une des sept adresses 44 satisfaisant le 44 ; elle empeche seulement qu'une regeneration future recupere cette marge en perdant a nouveau la couverture 85.",
+  "allowed_types": [
+    "commune",
+    "address"
+  ],
+  "allowed_categories": [
+    "complete",
+    "partial",
+    "no_dvf",
+    "no_dpe",
+    "dataset_out_of_coverage"
+  ],
+  "required_categories": [
+    "complete",
+    "no_dvf",
+    "no_dpe",
+    "dataset_out_of_coverage"
+  ],
+  "allowed_departements": [
+    "44",
+    "85"
+  ],
+  "allowed_states": [
+    "value",
+    "not_reported",
+    "out_of_coverage",
+    "temporary_error",
+    "not_applicable"
+  ],
+  "allowed_units": [
+    "density",
+    "euro_per_m2"
+  ],
+  "allowed_db_invariants": [
+    "has_commune_row",
+    "superficie_present",
+    "parcelle_present",
+    "copro_row_present",
+    "dpe_appartements_multiples",
+    "dvf_appartements_present",
+    "dpe_rattachement_ok"
+  ],
+  "required_observations": [
+    { "layer": "db", "invariant": "copro_row_present", "value": true },
+    { "layer": "db", "invariant": "dpe_appartements_multiples", "value": true },
+    { "layer": "db", "invariant": "dvf_appartements_present", "value": true },
+    {
+      "all_of": [
+        { "layer": "db", "invariant": "dpe_appartements_multiples", "value": true },
+        { "layer": "db", "invariant": "copro_row_present", "value": false }
+      ]
+    }
+  ],
+  "required_departement_coverage": {
+    "type": "address",
+    "departements": ["44", "85"],
+    "min_par_departement": 1
+  },
+  "pinned_cases": [
+    "golden-address-001",
+    "golden-address-002",
+    "golden-address-003",
+    "golden-address-004",
+    "golden-address-005",
+    "golden-address-007",
+    "golden-address-009",
+    "golden-address-011",
+    "golden-commune-001",
+    "golden-commune-002",
+    "golden-commune-003"
+  ],
+  "required_keys": [
+    "case_id",
+    "type",
+    "departement",
+    "code_insee",
+    "category",
+    "frozen_at",
+    "source_millesimes",
+    "invariants",
+    "private_ref"
+  ],
+  "optional_keys": [
+    "carrier_for"
+  ],
+  "allowed_carriers": [
+    "dpe_unassigned",
+    "dpe_nearer_neighbor_negative",
+    "dpe_absent",
+    "dpe_multiple_or_building"
+  ],
+  "required_carriers": [
+    "dpe_unassigned",
+    "dpe_nearer_neighbor_negative",
+    "dpe_absent"
+  ],
+  "required_carrier_departements": [
+    "44",
+    "85"
+  ],
+  "final_dpe_gate": true,
+  "dpe_attribution_version": 2,
+  "allowed_dpe_inventory_presences": [
+    "present",
+    "absent",
+    "unknown"
+  ],
+  "allowed_dpe_statuses": [
+    "unassigned",
+    "absent",
+    "error"
+  ],
+  "allowed_dpe_invariants": [
+    "dpe_inventory_presence",
+    "dpe_attribution_status",
+    "dpe_primary_diagnostic_present",
+    "dpe_candidate_count",
+    "dpe_building_count",
+    "dpe_truncated",
+    "dpe_nearby_diagnostic_present"
+  ],
+  "dpe_count_max": 120,
+  "forbidden_keys": [
+    "ban_id",
+    "banid",
+    "identifiant_ban",
+    "adresse",
+    "address",
+    "adresse_exacte",
+    "adresse_postale",
+    "voie",
+    "rue",
+    "latitude",
+    "longitude",
+    "lat",
+    "lon",
+    "lng",
+    "gps",
+    "coordinates",
+    "coordonnees",
+    "geocode",
+    "api_key",
+    "apikey",
+    "secret",
+    "token",
+    "password",
+    "credential",
+    "payload",
+    "payload_raw",
+    "response_body"
+  ],
+  "case_id_pattern": "^golden-(commune|address)-[0-9]{3}$",
+  "code_insee_pattern": "^(44|85)[0-9]{3}$",
+  "source_millesime_pattern": "^[0-9]{4}(?:-[0-9]{4})?$",
+  "frozen_at": {
+    "format": "date",
+    "constraint": "non_future"
+  },
+  "cardinality": {
+    "commune": {
+      "min": 3,
+      "max": 5
+    },
+    "address": {
+      "min": 5,
+      "max": 10
+    }
+  },
+  "private_input": {
+    "indexed_by": "case_id",
+    "gitignored_glob": "contracts/golden-cases/v1/private/*.json",
+    "note": "Contient l'entree exacte (adresse/coordonnees) necessaire au geocodage du replay live. Jamais commite, jamais logue en clair."
+  }
+}

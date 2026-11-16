@@ -1,0 +1,25 @@
+name: Bug
+description: Le site, l'API ou un script ne fait pas ce qu'il devrait.
+labels: ["bug"]
+body:
+  - type: textarea
+    id: constat
+    attributes:
+      label: Ce qui se passe
+      description: Ce que vous avez fait, ce que vous avez vu, ce que vous attendiez.
+    validations:
+      required: true
+  - type: input
+    id: ou
+    attributes:
+      label: Où
+      description: URL de la page ou de l'appel d'API, ou commande lancée.
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Le SHA servi (https://datacommune.fr/__version) ou le commit de votre copie.
+  - type: textarea
+    id: environnement
+    attributes:
+      label: Navigateur ou système

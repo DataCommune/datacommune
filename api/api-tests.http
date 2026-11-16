@@ -1,0 +1,401 @@
+### ============================================================
+### DataCommune API — REST Client Test Suite
+### Extension VS Code : "REST Client" (humao.rest-client)
+### Cliquer "Send Request" au-dessus de chaque requete
+### ============================================================
+
+### Variables
+### REST Client lit les secrets depuis les variables d'environnement du processus
+### Definir avant de lancer VS Code :
+###   set DC_API_KEY=dc_live_...          (Windows)
+###   export DC_API_KEY=dc_live_...       (Unix)
+###   set DC_TEST_PASSWORD=...            (pour le bloc LOGIN ci-dessous)
+@baseUrl = http://localhost:8000
+@apiKey = {{$processEnv DC_API_KEY}}
+@testPassword = {{$processEnv DC_TEST_PASSWORD}}
+
+### Instance publique active (couverture initiale 44/85) :
+### @baseUrl = https://api.datacommune.fr
+
+
+### ============================================================
+### HEALTH (pas d'auth requise)
+### ============================================================
+
+### Health check complet
+GET {{baseUrl}}/v1/health
+
+###
+
+### Liveness probe
+GET {{baseUrl}}/v1/health/live
+
+
+### ============================================================
+### AUTH
+### ============================================================
+
+### Login (recuperer JWT)
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "email": "claude-test@datacommune.fr",
+  "password": "{{testPassword}}"
+}
+
+
+### ============================================================
+### GEOCODAGE (BAN)
+### ============================================================
+
+### Geocoder une adresse
+GET {{baseUrl}}/v1/geocode?q=1 rue de la Paix Paris
+X-API-Key: {{apiKey}}
+
+###
+
+### Geocodage reverse (GPS -> adresse)
+GET {{baseUrl}}/v1/reverse?lat=48.8566&lon=2.3522
+X-API-Key: {{apiKey}}
+
+
+### ============================================================
+### RESOLVE — Point d'entree unifie
+### ============================================================
+
+### Resolve par adresse + multi-datasets
+GET {{baseUrl}}/v1/resolve?q=1 rue de la Paix Paris&datasets=dvf,dpe,loyers
+X-API-Key: {{apiKey}}
+
+###
+
+### Resolve par coordonnees GPS
+GET {{baseUrl}}/v1/resolve?q=48.8566,2.3522&datasets=cadastre,dvf,dpe
+X-API-Key: {{apiKey}}
+
+###
+
+### Resolve par reference cadastrale
+GET {{baseUrl}}/v1/resolve?q=75102000AB0064&datasets=cadastre,dvf
+X-API-Key: {{apiKey}}
+
+
+### ============================================================
+### PARCELLE — Endpoints par point GPS
+### ============================================================
+
+### Cadastre — Parcelle sous un point (Paris 2e)
+GET {{baseUrl}}/v1/parcelle?lat=48.8566&lon=2.3522
+X-API-Key: {{apiKey}}
+
+###
+
+### Cadastre — Parcelle par reference
+GET {{baseUrl}}/v1/parcelle/75102000AB0064
+X-API-Key: {{apiKey}}
+
+###
+
+### DVF — Transactions immobilieres (Paris, rayon 500m)
+# Verifier : prix coherents, dates recentes, types de biens
+GET {{baseUrl}}/v1/dvf?lat=48.8566&lon=2.3522&rayon_m=500&limite=10
+X-API-Key: {{apiKey}}
+
+###
+
+### DVF — Filtrer par annee et type
+GET {{baseUrl}}/v1/dvf?lat=48.8566&lon=2.3522&rayon_m=500&annee_min=2023&type_local=Appartement&limite=10
+X-API-Key: {{apiKey}}
+
+###
+
+### DPE — Diagnostics energetiques (Paris)
+# Verifier : etiquettes A-G, surfaces, consommations
+GET {{baseUrl}}/v1/dpe?lat=48.8566&lon=2.3522&rayon_m=300&limite=10
+X-API-Key: {{apiKey}}
+
+###
+
+### DPE — Filtre par classe energetique min
+GET {{baseUrl}}/v1/dpe?lat=48.8566&lon=2.3522&rayon_m=500&etiquette_min=C&limite=10
+X-API-Key: {{apiKey}}
+
+###
+
+### BDNB — Donnees batiments (Paris)
+GET {{baseUrl}}/v1/bdnb?lat=48.8566&lon=2.3522&rayon_m=200&limite=5
+X-API-Key: {{apiKey}}
+
+###
+
+### RNB — Referentiel national batiments
+GET {{baseUrl}}/v1/rnb?lat=48.8566&lon=2.3522&rayon_m=200&limite=5
+X-API-Key: {{apiKey}}
+
+###
+
+### ERRIAL — Risques naturels et technologiques
+GET {{baseUrl}}/v1/errial?lat=48.8566&lon=2.3522
+X-API-Key: {{apiKey}}
+
+###
+
+### Georisques
+GET {{baseUrl}}/v1/georisques?lat=48.8566&lon=2.3522
+X-API-Key: {{apiKey}}
+
+###
+
+### Urbanisme — PLU / zonage
+GET {{baseUrl}}/v1/urbanisme?lat=48.8566&lon=2.3522
+X-API-Key: {{apiKey}}
+
+###
+
+### SIRENE — Entreprises a proximite
+GET {{baseUrl}}/v1/sirene?lat=48.8566&lon=2.3522&rayon_m=200&limite=10
+X-API-Key: {{apiKey}}
+
+###
+
+### Foncier PM — Personnes morales (proprietaires)
+GET {{baseUrl}}/v1/foncier-pm?lat=48.8566&lon=2.3522&rayon_m=200&limite=10
+X-API-Key: {{apiKey}}
+
+###
+
+### Copropriete
+GET {{baseUrl}}/v1/copropriete?lat=48.8566&lon=2.3522&rayon_m=300&limite=10
+X-API-Key: {{apiKey}}
+
+###
+
+### Permis de construire
+GET {{baseUrl}}/v1/permis?lat=48.8566&lon=2.3522&rayon_m=500&limite=10
+X-API-Key: {{apiKey}}
+
+
+### ============================================================
+### COMMUNE — Endpoints par code INSEE ou GPS
+### ============================================================
+
+### Loyers — Indicateurs locatifs (Nantes)
+# Verifier : loyer median, Q1, Q3 en euros/m2
+GET {{baseUrl}}/v1/loyers?lat=47.2184&lon=-1.5536
+X-API-Key: {{apiKey}}
+
+###
+
+### Loyers — Par code INSEE (Paris 1er)
+GET {{baseUrl}}/v1/loyers?code_insee=75101
+X-API-Key: {{apiKey}}
+
+###
+
+### Demographie — Population INSEE (Lyon)
+# Verifier : population, menages, densite coherents
+GET {{baseUrl}}/v1/demographie?lat=45.7640&lon=4.8357
+X-API-Key: {{apiKey}}
+
+###
+
+### Demographie — Par code INSEE (Bordeaux)
+GET {{baseUrl}}/v1/demographie?code_insee=33063
+X-API-Key: {{apiKey}}
+
+###
+
+### Fiscalite — Revenus et impots
+GET {{baseUrl}}/v1/fiscalite?lat=48.8566&lon=2.3522
+X-API-Key: {{apiKey}}
+
+###
+
+### Fiscalite — Par code INSEE
+GET {{baseUrl}}/v1/fiscalite?code_insee=75056
+X-API-Key: {{apiKey}}
+
+###
+
+### Revenus
+GET {{baseUrl}}/v1/revenus?lat=48.8566&lon=2.3522
+X-API-Key: {{apiKey}}
+
+###
+
+### Vacance — Logements vacants
+GET {{baseUrl}}/v1/vacance?lat=48.8566&lon=2.3522
+X-API-Key: {{apiKey}}
+
+###
+
+### Encadrement des loyers
+GET {{baseUrl}}/v1/encadrement-loyers?lat=48.8566&lon=2.3522
+X-API-Key: {{apiKey}}
+
+###
+
+### Zonage ABC
+GET {{baseUrl}}/v1/zonage-abc?lat=48.8566&lon=2.3522
+X-API-Key: {{apiKey}}
+
+###
+
+### Connectivite (couverture reseau)
+GET {{baseUrl}}/v1/connectivite?lat=48.8566&lon=2.3522
+X-API-Key: {{apiKey}}
+
+###
+
+### Commune synthese
+GET {{baseUrl}}/v1/commune?lat=48.8566&lon=2.3522
+X-API-Key: {{apiKey}}
+
+###
+
+### Commune par code INSEE
+GET {{baseUrl}}/v1/commune?code_insee=75056
+X-API-Key: {{apiKey}}
+
+
+### ============================================================
+### PROXIMITE — Recherche spatiale
+### ============================================================
+
+### Transports — Arrets a proximite (Paris)
+GET {{baseUrl}}/v1/transports?lat=48.8566&lon=2.3522&rayon_m=500&limite=10
+X-API-Key: {{apiKey}}
+
+###
+
+### Batiments remarquables
+GET {{baseUrl}}/v1/batiments?lat=48.8566&lon=2.3522&rayon_m=500&limite=10
+X-API-Key: {{apiKey}}
+
+###
+
+### Monuments historiques
+GET {{baseUrl}}/v1/monuments?lat=48.8566&lon=2.3522&rayon_m=1000&limite=10
+X-API-Key: {{apiKey}}
+
+###
+
+### Equipements publics
+GET {{baseUrl}}/v1/equipements?lat=48.8566&lon=2.3522&rayon_m=500&limite=10
+X-API-Key: {{apiKey}}
+
+###
+
+### Etablissements scolaires
+GET {{baseUrl}}/v1/scolaire?lat=48.8566&lon=2.3522&rayon_m=500&limite=10
+X-API-Key: {{apiKey}}
+
+###
+
+### Antennes telecom
+GET {{baseUrl}}/v1/antennes?lat=48.8566&lon=2.3522&rayon_m=500&limite=10
+X-API-Key: {{apiKey}}
+
+
+### ============================================================
+### SCORING
+### ============================================================
+
+### Score global d'un bien
+GET {{baseUrl}}/v1/scoring?lat=48.8566&lon=2.3522
+X-API-Key: {{apiKey}}
+
+
+### ============================================================
+### ZONE — Endpoints v2 (frontend)
+### ============================================================
+
+### Zone overview
+GET {{baseUrl}}/v1/zone/overview?lat=48.8566&lon=2.3522
+X-API-Key: {{apiKey}}
+
+###
+
+### Zone immobilier
+GET {{baseUrl}}/v1/zone/immobilier?lat=48.8566&lon=2.3522
+X-API-Key: {{apiKey}}
+
+###
+
+### Zone environnement
+GET {{baseUrl}}/v1/zone/environnement?lat=48.8566&lon=2.3522
+X-API-Key: {{apiKey}}
+
+###
+
+### Zone services
+GET {{baseUrl}}/v1/zone/services?lat=48.8566&lon=2.3522
+X-API-Key: {{apiKey}}
+
+
+### ============================================================
+### DATASETS — Metadata
+### ============================================================
+
+### Liste de tous les datasets disponibles
+GET {{baseUrl}}/v1/datasets
+X-API-Key: {{apiKey}}
+
+
+### ============================================================
+### VALIDATION CROISEE — Comparer les donnees
+### ============================================================
+
+### Test 1 : Meme adresse, verifier coherence cadastre + DVF
+# La parcelle retournee par /parcelle devrait correspondre
+# aux parcelles des transactions DVF dans le meme perimetre
+GET {{baseUrl}}/v1/parcelle?lat=47.2184&lon=-1.5536
+X-API-Key: {{apiKey}}
+
+###
+
+### Test 1b : DVF au meme endroit (Nantes centre)
+GET {{baseUrl}}/v1/dvf?lat=47.2184&lon=-1.5536&rayon_m=200&limite=5
+X-API-Key: {{apiKey}}
+
+###
+
+### Test 2 : Loyers vs Demographie — Nantes
+# Population de Nantes ~ 320k habitants
+GET {{baseUrl}}/v1/demographie?code_insee=44109
+X-API-Key: {{apiKey}}
+
+###
+
+### Test 2b : Loyers Nantes — verifier coherence avec marche connu
+# Loyer median Nantes ~ 11-13 EUR/m2
+GET {{baseUrl}}/v1/loyers?code_insee=44109
+X-API-Key: {{apiKey}}
+
+###
+
+### Test 3 : Petite commune rurale — Livernon (46)
+# Population ~ 600 hab, verifier que les donnees existent
+GET {{baseUrl}}/v1/demographie?code_insee=46175
+X-API-Key: {{apiKey}}
+
+###
+
+### Test 3b : Loyers commune rurale — peut etre vide
+GET {{baseUrl}}/v1/loyers?code_insee=46175
+X-API-Key: {{apiKey}}
+
+###
+
+### Test 4 : DPE Lyon — verifier distribution etiquettes
+# Lyon devrait avoir un mix A-G, majorite D-E
+GET {{baseUrl}}/v1/dpe?lat=45.7640&lon=4.8357&rayon_m=500&limite=20
+X-API-Key: {{apiKey}}
+
+###
+
+### Test 5 : Resolve complet — Bordeaux centre
+# Validation end-to-end : adresse -> geocode -> multi-dataset
+GET {{baseUrl}}/v1/resolve?q=place de la Bourse Bordeaux&datasets=cadastre,dvf,dpe,loyers,demographie
+X-API-Key: {{apiKey}}

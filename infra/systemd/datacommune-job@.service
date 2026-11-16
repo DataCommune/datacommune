@@ -1,0 +1,19 @@
+# DataCommune maintenance job — parameterized oneshot unit (37-02, D-02/D-03).
+#
+# Invoked by the matching `datacommune-job@<key>.timer`. `%i` is the job key
+# passed straight to the Plan 01 CLI wrapper (`app/scheduler/run_job.py`),
+# which dispatches to the existing `app/scheduler/jobs.py` functions inside
+# the already-running API container — no new secrets, no second container
+# (D-01, T-37-03).
+#
+# Host application (copy to /etc/systemd/system/, daemon-reload, enable) is
+# performed under supervision in Plan 05. This file is IaC only.
+
+[Unit]
+Description=DataCommune maintenance job: %i
+After=docker.service
+Requires=docker.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/docker exec datacommune-api-api-1 python -m app.scheduler.run_job %i

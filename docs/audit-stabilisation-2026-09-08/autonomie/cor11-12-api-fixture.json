@@ -1,0 +1,318 @@
+{
+  "boundary": "Actual /v1/resolve and /v1/urbanisme ASGI, real proxy clients, synthetic mocked upstream bodies. GPS identity and provenance DB calls stubbed; no DB.",
+  "resolve": {
+    "statut": "ok",
+    "donnees": [
+      {
+        "type_detecte": "gps",
+        "latitude": 47.2,
+        "longitude": -1.5,
+        "adresse": null,
+        "id_parcelle": null,
+        "commune": null,
+        "code_postal": null,
+        "score": null,
+        "code_insee": "44109",
+        "resolution": "exact",
+        "parcelles_candidates": null,
+        "ban_id": null,
+        "datasets": {
+          "risques": {
+            "risques_naturels": null,
+            "argiles": {
+              "exposition": "Faible"
+            },
+            "radon": [],
+            "icpe": [],
+            "sources": {
+              "risques_naturels": {
+                "statut": "indisponible",
+                "nombre_retournes": null,
+                "total": null,
+                "complet": null,
+                "limite": null,
+                "pages_lues": 0
+              },
+              "argiles": {
+                "statut": "disponible",
+                "nombre_retournes": 1,
+                "total": null,
+                "complet": true,
+                "limite": null,
+                "pages_lues": 1
+              },
+              "radon": {
+                "statut": "vide",
+                "nombre_retournes": 0,
+                "total": 0,
+                "complet": true,
+                "limite": 50,
+                "pages_lues": 1
+              },
+              "icpe": {
+                "statut": "vide",
+                "nombre_retournes": 0,
+                "total": 0,
+                "complet": true,
+                "limite": 50,
+                "pages_lues": 1
+              }
+            }
+          },
+          "urbanisme": {
+            "zones_plu": [
+              {
+                "properties": {
+                  "libelle": "UA",
+                  "typezone": "U"
+                }
+              },
+              {
+                "properties": {
+                  "libelle": "NB",
+                  "typezone": "N"
+                }
+              }
+            ],
+            "prescriptions": null,
+            "sources": {
+              "zones_plu": {
+                "statut": "disponible",
+                "nombre_retournes": 2,
+                "total": 2,
+                "complet": true,
+                "limite": 100,
+                "pages_lues": 1
+              },
+              "prescriptions": {
+                "statut": "indisponible",
+                "nombre_retournes": null,
+                "total": null,
+                "complet": null,
+                "limite": null,
+                "pages_lues": 0
+              }
+            }
+          }
+        },
+        "erreurs": null,
+        "avertissements": [
+          {
+            "dataset": "risques",
+            "code": "SOURCE_INCOMPLETE",
+            "message": "Sous-sources indisponibles ou première page non exhaustive ; ne pas conclure à une absence."
+          },
+          {
+            "dataset": "urbanisme",
+            "code": "SOURCE_INCOMPLETE",
+            "message": "Sous-sources indisponibles ou première page non exhaustive ; ne pas conclure à une absence."
+          }
+        ],
+        "dataset_states": {
+          "risques": {
+            "dataset": "risques",
+            "sources": {
+              "risques_naturels": {
+                "statut": "indisponible",
+                "nombre_retournes": null,
+                "total": null,
+                "complet": null,
+                "limite": null,
+                "pages_lues": 0
+              },
+              "argiles": {
+                "statut": "disponible",
+                "nombre_retournes": 1,
+                "total": null,
+                "complet": true,
+                "limite": null,
+                "pages_lues": 1
+              },
+              "radon": {
+                "statut": "vide",
+                "nombre_retournes": 0,
+                "total": 0,
+                "complet": true,
+                "limite": 50,
+                "pages_lues": 1
+              },
+              "icpe": {
+                "statut": "vide",
+                "nombre_retournes": 0,
+                "total": 0,
+                "complet": true,
+                "limite": 50,
+                "pages_lues": 1
+              }
+            },
+            "presence": "value",
+            "absence_reason": null,
+            "raison": null
+          },
+          "urbanisme": {
+            "dataset": "urbanisme",
+            "sources": {
+              "zones_plu": {
+                "statut": "disponible",
+                "nombre_retournes": 2,
+                "total": 2,
+                "complet": true,
+                "limite": 100,
+                "pages_lues": 1
+              },
+              "prescriptions": {
+                "statut": "indisponible",
+                "nombre_retournes": null,
+                "total": null,
+                "complet": null,
+                "limite": null,
+                "pages_lues": 0
+              }
+            },
+            "presence": "value",
+            "absence_reason": null,
+            "raison": null
+          }
+        },
+        "dpe_attribution": null,
+        "dpe_inventory": null,
+        "dvf_attribution": null
+      }
+    ],
+    "meta": {
+      "source": [
+        {
+          "nom": "Base Adresse Nationale (BAN)",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://adresse.data.gouv.fr",
+          "producteur": "DINUM / IGN",
+          "dataset": "ban",
+          "periode": {
+            "statut": "inconnue",
+            "label": null,
+            "debut": null,
+            "fin": null
+          },
+          "derniere_importation_reussie": null,
+          "couverture": {
+            "type": "inconnue",
+            "departements": null
+          },
+          "cadence": {
+            "statut": "official",
+            "label": "Hebdomadaire",
+            "evidence_url": "https://cartes.gouv.fr/aide/fr/guides-utilisateur/utiliser-les-services-de-la-geoplateforme/geocodage/",
+            "intervalle_jours": 7
+          },
+          "etat": "inconnu"
+        },
+        {
+          "nom": "Georisques",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://georisques.gouv.fr",
+          "producteur": "BRGM / MTE",
+          "dataset": "georisques",
+          "periode": {
+            "statut": "glissante",
+            "label": null,
+            "debut": null,
+            "fin": null
+          },
+          "derniere_importation_reussie": null,
+          "couverture": {
+            "type": "amont",
+            "departements": null
+          },
+          "cadence": {
+            "statut": "non_publiee_ou_irreguliere",
+            "label": null,
+            "evidence_url": null,
+            "intervalle_jours": null
+          },
+          "etat": "inconnu"
+        },
+        {
+          "nom": "API Carto GPU",
+          "licence": "Licence Ouverte 2.0",
+          "url": "https://apicarto.ign.fr",
+          "producteur": "IGN",
+          "dataset": "urbanisme",
+          "periode": {
+            "statut": "glissante",
+            "label": null,
+            "debut": null,
+            "fin": null
+          },
+          "derniere_importation_reussie": null,
+          "couverture": {
+            "type": "amont",
+            "departements": null
+          },
+          "cadence": {
+            "statut": "non_publiee_ou_irreguliere",
+            "label": null,
+            "evidence_url": null,
+            "intervalle_jours": null
+          },
+          "etat": "inconnu"
+        }
+      ],
+      "resolution": {
+        "issue": "exact",
+        "raison": null,
+        "parcelles_candidates": null
+      }
+    }
+  },
+  "urbanisme": {
+    "statut": "partiel",
+    "donnees": {
+      "sources": {
+        "zones_plu": {
+          "statut": "disponible",
+          "nombre_retournes": 2,
+          "total": 2,
+          "complet": true,
+          "limite": 100,
+          "pages_lues": 1
+        },
+        "prescriptions": {
+          "statut": "indisponible",
+          "nombre_retournes": null,
+          "total": null,
+          "complet": null,
+          "limite": null,
+          "pages_lues": 0
+        }
+      },
+      "zones_plu": [
+        {
+          "libelle": "UA",
+          "libelong": null,
+          "typezone": "U",
+          "destdomi": null,
+          "nomfic": null,
+          "partition": null
+        },
+        {
+          "libelle": "NB",
+          "libelong": null,
+          "typezone": "N",
+          "destdomi": null,
+          "nomfic": null,
+          "partition": null
+        }
+      ],
+      "prescriptions": null
+    },
+    "meta": {
+      "source": {
+        "nom": "API Carto GPU",
+        "licence": "Licence Ouverte 2.0",
+        "url": "https://apicarto.ign.fr",
+        "producteur": "IGN"
+      },
+      "resolution": null
+    }
+  }
+}

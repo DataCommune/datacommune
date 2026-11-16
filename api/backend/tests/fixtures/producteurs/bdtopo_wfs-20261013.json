@@ -1,0 +1,293 @@
+{
+ "absent": {},
+ "captured_at": "2026-10-13T11:18:53Z",
+ "counts": {
+  "971": {
+   "batiments_wfs": 386150
+  },
+  "972": {
+   "batiments_wfs": 378719
+  },
+  "973": {
+   "batiments_wfs": 91687
+  },
+  "974": {
+   "batiments_wfs": 539695
+  },
+  "975": {
+   "batiments_wfs": 6731
+  },
+  "976": {
+   "batiments_wfs": 74103
+  },
+  "977": {
+   "batiments_wfs": 8573
+  },
+  "978": {
+   "batiments_wfs": 16151
+  },
+  "metropole": {
+   "batiments_wfs": 49948635
+  }
+ },
+ "departements_demandes": [
+  "01",
+  "02",
+  "03",
+  "04",
+  "05",
+  "06",
+  "07",
+  "08",
+  "09",
+  "10",
+  "11",
+  "12",
+  "13",
+  "14",
+  "15",
+  "16",
+  "17",
+  "18",
+  "19",
+  "2A",
+  "2B",
+  "21",
+  "22",
+  "23",
+  "24",
+  "25",
+  "26",
+  "27",
+  "28",
+  "29",
+  "30",
+  "31",
+  "32",
+  "33",
+  "34",
+  "35",
+  "36",
+  "37",
+  "38",
+  "39",
+  "40",
+  "41",
+  "42",
+  "43",
+  "44",
+  "45",
+  "46",
+  "47",
+  "48",
+  "49",
+  "50",
+  "51",
+  "52",
+  "53",
+  "54",
+  "55",
+  "56",
+  "57",
+  "58",
+  "59",
+  "60",
+  "61",
+  "62",
+  "63",
+  "64",
+  "65",
+  "66",
+  "67",
+  "68",
+  "69",
+  "70",
+  "71",
+  "72",
+  "73",
+  "74",
+  "75",
+  "76",
+  "77",
+  "78",
+  "79",
+  "80",
+  "81",
+  "82",
+  "83",
+  "84",
+  "85",
+  "86",
+  "87",
+  "88",
+  "89",
+  "90",
+  "91",
+  "92",
+  "93",
+  "94",
+  "95",
+  "971",
+  "972",
+  "973",
+  "974",
+  "975",
+  "976"
+ ],
+ "details": {
+  "territoires": {
+   "971": [
+    15.8,
+    -61.9,
+    16.6,
+    -60.9
+   ],
+   "972": [
+    14.3,
+    -61.3,
+    14.95,
+    -60.75
+   ],
+   "973": [
+    2.0,
+    -54.7,
+    5.9,
+    -51.5
+   ],
+   "974": [
+    -21.45,
+    55.2,
+    -20.85,
+    55.9
+   ],
+   "975": [
+    46.7,
+    -56.5,
+    47.2,
+    -56.1
+   ],
+   "976": [
+    -13.1,
+    44.9,
+    -12.6,
+    45.35
+   ],
+   "977": [
+    17.85,
+    -62.95,
+    17.98,
+    -62.78
+   ],
+   "978": [
+    18.0,
+    -63.17,
+    18.13,
+    -62.96
+   ],
+   "metropole": [
+    41.3,
+    -5.3,
+    51.2,
+    9.6
+   ]
+  },
+  "territoires_moins_total": 0,
+  "total_wfs": 51450444
+ },
+ "filter": "estimate only: WFS BDTOPO_V3:batiment RESULTTYPE=hits per territory envelope; the live WFS is not the edition; the count that is authoritative is the Feature Count of the edition GPKG at import (plan 05)",
+ "headers": {
+  "https://data.geopf.fr/wfs/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=BDTOPO_V3:batiment&RESULTTYPE=hits": {
+   "content_length": null,
+   "etag": null,
+   "final_url": "https://data.geopf.fr/wfs/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=BDTOPO_V3:batiment&RESULTTYPE=hits",
+   "last_modified": null,
+   "status": 200
+  },
+  "https://data.geopf.fr/wfs/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=BDTOPO_V3:batiment&RESULTTYPE=hits&BBOX=-13.1,44.9,-12.6,45.35,urn:ogc:def:crs:EPSG::4326": {
+   "content_length": null,
+   "etag": null,
+   "final_url": "https://data.geopf.fr/wfs/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=BDTOPO_V3:batiment&RESULTTYPE=hits&BBOX=-13.1,44.9,-12.6,45.35,urn:ogc:def:crs:EPSG::4326",
+   "last_modified": null,
+   "status": 200
+  },
+  "https://data.geopf.fr/wfs/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=BDTOPO_V3:batiment&RESULTTYPE=hits&BBOX=-21.45,55.2,-20.85,55.9,urn:ogc:def:crs:EPSG::4326": {
+   "content_length": null,
+   "etag": null,
+   "final_url": "https://data.geopf.fr/wfs/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=BDTOPO_V3:batiment&RESULTTYPE=hits&BBOX=-21.45,55.2,-20.85,55.9,urn:ogc:def:crs:EPSG::4326",
+   "last_modified": null,
+   "status": 200
+  },
+  "https://data.geopf.fr/wfs/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=BDTOPO_V3:batiment&RESULTTYPE=hits&BBOX=14.3,-61.3,14.95,-60.75,urn:ogc:def:crs:EPSG::4326": {
+   "content_length": null,
+   "etag": null,
+   "final_url": "https://data.geopf.fr/wfs/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=BDTOPO_V3:batiment&RESULTTYPE=hits&BBOX=14.3,-61.3,14.95,-60.75,urn:ogc:def:crs:EPSG::4326",
+   "last_modified": null,
+   "status": 200
+  },
+  "https://data.geopf.fr/wfs/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=BDTOPO_V3:batiment&RESULTTYPE=hits&BBOX=15.8,-61.9,16.6,-60.9,urn:ogc:def:crs:EPSG::4326": {
+   "content_length": null,
+   "etag": null,
+   "final_url": "https://data.geopf.fr/wfs/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=BDTOPO_V3:batiment&RESULTTYPE=hits&BBOX=15.8,-61.9,16.6,-60.9,urn:ogc:def:crs:EPSG::4326",
+   "last_modified": null,
+   "status": 200
+  },
+  "https://data.geopf.fr/wfs/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=BDTOPO_V3:batiment&RESULTTYPE=hits&BBOX=17.85,-62.95,17.98,-62.78,urn:ogc:def:crs:EPSG::4326": {
+   "content_length": null,
+   "etag": null,
+   "final_url": "https://data.geopf.fr/wfs/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=BDTOPO_V3:batiment&RESULTTYPE=hits&BBOX=17.85,-62.95,17.98,-62.78,urn:ogc:def:crs:EPSG::4326",
+   "last_modified": null,
+   "status": 200
+  },
+  "https://data.geopf.fr/wfs/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=BDTOPO_V3:batiment&RESULTTYPE=hits&BBOX=18.0,-63.17,18.13,-62.96,urn:ogc:def:crs:EPSG::4326": {
+   "content_length": null,
+   "etag": null,
+   "final_url": "https://data.geopf.fr/wfs/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=BDTOPO_V3:batiment&RESULTTYPE=hits&BBOX=18.0,-63.17,18.13,-62.96,urn:ogc:def:crs:EPSG::4326",
+   "last_modified": null,
+   "status": 200
+  },
+  "https://data.geopf.fr/wfs/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=BDTOPO_V3:batiment&RESULTTYPE=hits&BBOX=2.0,-54.7,5.9,-51.5,urn:ogc:def:crs:EPSG::4326": {
+   "content_length": null,
+   "etag": null,
+   "final_url": "https://data.geopf.fr/wfs/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=BDTOPO_V3:batiment&RESULTTYPE=hits&BBOX=2.0,-54.7,5.9,-51.5,urn:ogc:def:crs:EPSG::4326",
+   "last_modified": null,
+   "status": 200
+  },
+  "https://data.geopf.fr/wfs/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=BDTOPO_V3:batiment&RESULTTYPE=hits&BBOX=41.3,-5.3,51.2,9.6,urn:ogc:def:crs:EPSG::4326": {
+   "content_length": null,
+   "etag": null,
+   "final_url": "https://data.geopf.fr/wfs/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=BDTOPO_V3:batiment&RESULTTYPE=hits&BBOX=41.3,-5.3,51.2,9.6,urn:ogc:def:crs:EPSG::4326",
+   "last_modified": null,
+   "status": 200
+  },
+  "https://data.geopf.fr/wfs/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=BDTOPO_V3:batiment&RESULTTYPE=hits&BBOX=46.7,-56.5,47.2,-56.1,urn:ogc:def:crs:EPSG::4326": {
+   "content_length": null,
+   "etag": null,
+   "final_url": "https://data.geopf.fr/wfs/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=BDTOPO_V3:batiment&RESULTTYPE=hits&BBOX=46.7,-56.5,47.2,-56.1,urn:ogc:def:crs:EPSG::4326",
+   "last_modified": null,
+   "status": 200
+  }
+ },
+ "millesime": null,
+ "mode": "producteur",
+ "pannes": {},
+ "primary_metric": "batiments_wfs",
+ "script_sha256": "fa5442ebfe1d4e0ff061bfb76180a1c7667f62db8af2cab036a766216e1e32f7",
+ "script_sha256_origin": "caller, SHA-256 of the file sent on stdin",
+ "source": "bdtopo_wfs",
+ "started_at": "2026-10-13T11:18:34Z",
+ "totals": {
+  "batiments_wfs": 51450444
+ },
+ "urls": [
+  "https://data.geopf.fr/wfs/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=BDTOPO_V3:batiment&RESULTTYPE=hits",
+  "https://data.geopf.fr/wfs/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=BDTOPO_V3:batiment&RESULTTYPE=hits&BBOX=41.3,-5.3,51.2,9.6,urn:ogc:def:crs:EPSG::4326",
+  "https://data.geopf.fr/wfs/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=BDTOPO_V3:batiment&RESULTTYPE=hits&BBOX=15.8,-61.9,16.6,-60.9,urn:ogc:def:crs:EPSG::4326",
+  "https://data.geopf.fr/wfs/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=BDTOPO_V3:batiment&RESULTTYPE=hits&BBOX=14.3,-61.3,14.95,-60.75,urn:ogc:def:crs:EPSG::4326",
+  "https://data.geopf.fr/wfs/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=BDTOPO_V3:batiment&RESULTTYPE=hits&BBOX=2.0,-54.7,5.9,-51.5,urn:ogc:def:crs:EPSG::4326",
+  "https://data.geopf.fr/wfs/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=BDTOPO_V3:batiment&RESULTTYPE=hits&BBOX=-21.45,55.2,-20.85,55.9,urn:ogc:def:crs:EPSG::4326",
+  "https://data.geopf.fr/wfs/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=BDTOPO_V3:batiment&RESULTTYPE=hits&BBOX=-13.1,44.9,-12.6,45.35,urn:ogc:def:crs:EPSG::4326",
+  "https://data.geopf.fr/wfs/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=BDTOPO_V3:batiment&RESULTTYPE=hits&BBOX=46.7,-56.5,47.2,-56.1,urn:ogc:def:crs:EPSG::4326",
+  "https://data.geopf.fr/wfs/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=BDTOPO_V3:batiment&RESULTTYPE=hits&BBOX=17.85,-62.95,17.98,-62.78,urn:ogc:def:crs:EPSG::4326",
+  "https://data.geopf.fr/wfs/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=BDTOPO_V3:batiment&RESULTTYPE=hits&BBOX=18.0,-63.17,18.13,-62.96,urn:ogc:def:crs:EPSG::4326"
+ ]
+}

@@ -1,0 +1,90 @@
+{
+  "id": "dpe",
+  "section": "batiment",
+  "titre": "DPE",
+  "etat": "ok",
+  "ton": "vigilance",
+  "granularite": {
+    "niveau": "adresse",
+    "rayon_m": null
+  },
+  "verdict": "DPE de plusieurs bâtiments à cette adresse : 11 documents, classes C à G.",
+  "chiffres": [
+    {
+      "id": "effectif",
+      "libelle": "DPE déclarés",
+      "valeur": 11,
+      "unite": "count",
+      "millesime": "2026-10-01"
+    },
+    {
+      "id": "classe_dominante",
+      "libelle": "Classe la plus fréquente",
+      "valeur": "F",
+      "unite": "classe_dpe",
+      "millesime": "2026-10-01"
+    },
+    {
+      "id": "plage",
+      "libelle": "Classes",
+      "valeur": "C–G",
+      "unite": "classe_dpe",
+      "millesime": "2026-10-01"
+    }
+  ],
+  "details": {
+    "repartition": {
+      "A": 0,
+      "B": 0,
+      "C": 1,
+      "D": 2,
+      "E": 2,
+      "F": 4,
+      "G": 2,
+      "unknown": 0
+    },
+    "documents_appartement": 11,
+    "plus_recent": {
+      "etat": "indeterminee",
+      "date": null,
+      "document": null,
+      "documents_ex_aequo": [],
+      "motif": "aucun_document_valide"
+    },
+    "batiments": {
+      "rnb_des_documents": 3,
+      "documents_sans_rnb": 2,
+      "liens_rnb_de_la_cle": 1,
+      "un_seul_batiment_etabli": false
+    }
+  },
+  "rattachement": {
+    "entite": "adresse_saisie_diagnostiqueur",
+    "cle": null,
+    "confiance": "incertaine",
+    "candidats": 3,
+    "motif": "dpe_plusieurs_batiments"
+  },
+  "sources": [
+    {
+      "cle": "dpe",
+      "nom": "Diagnostics de performance énergétique (DPE)",
+      "producteur": "ADEME",
+      "url": "https://data.ademe.fr/datasets/dpe03existant",
+      "licence": "Licence Ouverte 2.0",
+      "millesime": "2026-10-01",
+      "mode": "import"
+    },
+    {
+      "cle": "rnb",
+      "nom": "Référentiel national des bâtiments (RNB)",
+      "producteur": "beta.gouv.fr / CSTB",
+      "url": "https://rnb.beta.gouv.fr",
+      "licence": "Licence Ouverte 2.0",
+      "millesime": null,
+      "mode": "import"
+    }
+  ],
+  "motif": null,
+  "pannes_partielles": []
+}

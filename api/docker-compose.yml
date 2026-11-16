@@ -1,0 +1,42 @@
+services:
+  db:
+    image: postgis/postgis:17-3.5
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-datacommune}
+      POSTGRES_USER: ${POSTGRES_USER:-datacommune}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-devpassword}
+    volumes:
+      - ./docker/init-db:/docker-entrypoint-initdb.d
+      # Durable working database lives on the hypervisor (D-16); this dev volume and the test harness stay disposable.
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  api:
+    build:
+      context: ./backend
+      dockerfile: ../docker/Dockerfile
+    environment:
+      DATABASE_URL: postgresql+asyncpg://${POSTGRES_USER:-datacommune}:${POSTGRES_PASSWORD:-devpassword}@db:5432/${POSTGRES_DB:-datacommune}
+      # Synthetic probe runs inside THIS container (docker exec ...-api-1 run_job
+      # synthetic-probe), so it needs the alert channel too — not just scheduler.
+      ALERT_URLS: ${ALERT_URLS:-[]}
+    depends_on:
+      db:
+        condition: service_healthy
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  pgdata:

@@ -1,0 +1,62 @@
+[
+  {
+    "type_habitat": "appartement",
+    "resource_id": "55b34088-0964-415f-9df7-d87dd98a09be",
+    "requested_url": "https://www.data.gouv.fr/fr/datasets/r/55b34088-0964-415f-9df7-d87dd98a09be",
+    "resolved_url": "https://static.data.gouv.fr/resources/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025/20251211-145010/pred-app-mef-dhup.csv",
+    "status": 200,
+    "content_range": null,
+    "bytes": 131047,
+    "sha256": "865e0078de32cdaad031d8acb20cab3dd5d4f4b1c365fd87a8c63e1eb1411381",
+    "fetched_at_utc": "2026-09-08T13:35:14.461199+00:00",
+    "limit_bytes": 131072,
+    "rows": 960,
+    "local_file": "appartement.prefix.csv",
+    "encoding": "latin-1"
+  },
+  {
+    "type_habitat": "maison",
+    "resource_id": "129f764d-b613-44e4-952c-5ff50a8c9b73",
+    "requested_url": "https://www.data.gouv.fr/fr/datasets/r/129f764d-b613-44e4-952c-5ff50a8c9b73",
+    "resolved_url": "https://static.data.gouv.fr/resources/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025/20251211-145039/pred-mai-mef-dhup.csv",
+    "status": 200,
+    "content_range": null,
+    "bytes": 131023,
+    "sha256": "8586a168ed7b42de2b0e8384d33d648c99a93831d26ea0a8fc8c9ac1cb71ce1c",
+    "fetched_at_utc": "2026-09-08T13:35:14.967631+00:00",
+    "limit_bytes": 131072,
+    "rows": 953,
+    "local_file": "maison.prefix.csv",
+    "encoding": "latin-1"
+  },
+  {
+    "type_habitat": "1-2_pieces",
+    "resource_id": "14a1fe11-b2d1-49b3-9f6b-83d12df9482c",
+    "requested_url": "https://www.data.gouv.fr/fr/datasets/r/14a1fe11-b2d1-49b3-9f6b-83d12df9482c",
+    "resolved_url": "https://static.data.gouv.fr/resources/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025/20251211-144934/pred-app12-mef-dhup.csv",
+    "status": 200,
+    "content_range": null,
+    "bytes": 131061,
+    "sha256": "cf445d2bf36003a54444bf2bfaec20c6acfcc0858aa133462775dd9db106b2e0",
+    "fetched_at_utc": "2026-09-08T13:35:15.400880+00:00",
+    "limit_bytes": 131072,
+    "rows": 958,
+    "local_file": "1-2_pieces.prefix.csv",
+    "encoding": "latin-1"
+  },
+  {
+    "type_habitat": "3+_pieces",
+    "resource_id": "5e3b28a4-cf56-43a3-ae79-43cceeb27f8c",
+    "requested_url": "https://www.data.gouv.fr/fr/datasets/r/5e3b28a4-cf56-43a3-ae79-43cceeb27f8c",
+    "resolved_url": "https://static.data.gouv.fr/resources/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025/20251211-144951/pred-app3-mef-dhup.csv",
+    "status": 200,
+    "content_range": null,
+    "bytes": 130959,
+    "sha256": "3e71343ff4de4afde2eb11108929d984d5b7bab41b622ff0fdcd120354942c35",
+    "fetched_at_utc": "2026-09-08T13:35:15.810654+00:00",
+    "limit_bytes": 131072,
+    "rows": 955,
+    "local_file": "3+_pieces.prefix.csv",
+    "encoding": "latin-1"
+  }
+]

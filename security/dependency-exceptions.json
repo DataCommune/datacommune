@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "_comment": "Machine-readable dependency-audit exception registry (SEC-01, D-08/D-09). Every remaining advisory MUST appear here with advisory, package, scope, reachability, owner, justification, opened_at and expires_at (<=30 days horizon, never past). Reachability claims are DRAFTED here by the automated audit and MUST be confirmed at the human checkpoint 46-03-03 before the SHA is certified. Never store a secret value in this file.",
+  "generated_at": "2026-08-23",
+  "generated_by": "46-03-01 (automated pip-audit + npm audit; runtime AND full trees = 0 findings in both ecosystems)",
+  "_history": "2026-08-23 — the two accept-temporary entries opened on 2026-07-22 (GHSA-f88m-g3jw-g9cj/sharp, high, dev; GHSA-pxg6-pf52-xh8x/cookie, low, dev) were REMOVED, not renewed. Both advisories left the dependency tree with the wrangler and SvelteKit bumps already in the lockfile, so the entries covered nothing: the four CI audit artefacts of run 32632326559 report zero findings, and the blocking verdict of that run listed only the two expirations with no 'untriaged finding' line — had either advisory still been present, its exception being invalid it would have surfaced as untriaged too. Renewing the dates would have asserted an exposure that no longer exists. Decision: Ianis (owner), 2026-08-23. 2026-11-10 — three exceptions opened (GHSA-pfhg-q3qv-9q6r and GHSA-27mw-82g8-phjj on @sveltejs/kit, GHSA-gcqx-w48m-w2h4 on deepmerge, all low, dev scope, 30-day horizon): no fix inside kit 2.x as declared, deepmerge has no fixed release. Reachability proofs in the internal tracking (dependency review of 2026-11-10). Decision: Ianis (owner), 2026-11-10.",
+  "exceptions": [
+    {
+      "ecosystem": "npm",
+      "advisory": "GHSA-pfhg-q3qv-9q6r",
+      "package": "@sveltejs/kit",
+      "scope": "dev",
+      "reachability": "Non atteint : aucun use:enhance, aucune action de formulaire ni import de $app/forms dans frontend/src (grep 0 resultat) ; la seule route catch-all (/__api/[...path]) est un relais de preproduction, 404 en production.",
+      "owner": "Ianis",
+      "justification": "Correctif uniquement en @sveltejs/kit 3.0.0 (migration de pile : vite 8, TypeScript 6, plugin-svelte 7, adapter-node 6), non faite avant le lancement. Chemin vulnerable non utilise. Revue de la montee avec le passage sur le serveur achete. Voir le suivi interne (revue des dependances du 2026-11-10).",
+      "opened_at": "2026-11-10",
+      "expires_at": "2026-12-10",
+      "reviewed_by_human": true
+    },
+    {
+      "ecosystem": "npm",
+      "advisory": "GHSA-27mw-82g8-phjj",
+      "package": "@sveltejs/kit",
+      "scope": "dev",
+      "reachability": "Non atteint : les pages prerendues ((marketing)/+layout.ts, llms.txt) n'appellent pas setHeaders avec un cache-control ; tous les setHeaders du code posent des constantes ('private, no-store') sur des pages prerender = false.",
+      "owner": "Ianis",
+      "justification": "Correctif declare uniquement en @sveltejs/kit 3.0.0 ; l'echappement est deja retroporte dans 2.70.4. Revue de la montee avec le passage sur le serveur achete. Voir le suivi interne (revue des dependances du 2026-11-10).",
+      "opened_at": "2026-11-10",
+      "expires_at": "2026-12-10",
+      "reviewed_by_human": true
+    },
+    {
+      "ecosystem": "npm",
+      "advisory": "GHSA-gcqx-w48m-w2h4",
+      "package": "deepmerge",
+      "scope": "dev",
+      "reachability": "Build seulement : importe par @sveltejs/vite-plugin-svelte (fusion de la configuration du projet) et @rollup/plugin-node-resolve (build adapter-node) ; absent de frontend/build ; aucune donnee d'utilisateur fusionnee.",
+      "owner": "Ianis",
+      "justification": "Aucune version corrigee de deepmerge (4.3.1 = derniere) ; vite-plugin-svelte 7 en depend encore, donc meme une montee majeure n'evite pas l'exception. Surveiller une version corrigee ou un remplacement amont.",
+      "opened_at": "2026-11-10",
+      "expires_at": "2026-12-10",
+      "reviewed_by_human": true
+    }
+  ]
+}

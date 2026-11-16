@@ -1,0 +1,308 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "description": "Seven synthetic raw detail rows. The two mixed-sale lines share one full sale price. Independent eligible prices: 2000, 3000, 4000, 5000, 6000 EUR/m2.",
+  "commune": "44001",
+  "period": {
+    "start_inclusive": "2025-01-01",
+    "end_exclusive": "2026-01-01",
+    "observed_at": "2026-09-09T00:00:00Z"
+  },
+  "raw_rows": [
+    {
+      "code_departement": "44",
+      "id_mutation": "SYN-HOUSE-1",
+      "date_mutation": "2025-07-01",
+      "nature_mutation": "Vente",
+      "valeur_fonciere": "100000",
+      "code_type_local": "1",
+      "code_commune": "44001",
+      "id_parcelle": "44001000AA0001",
+      "surface_reelle_bati": 50,
+      "surface_terrain": 100,
+      "nombre_pieces_principales": 3,
+      "numero_disposition": "1",
+      "nom_commune": "Commune synthetique DVF"
+    },
+    {
+      "code_departement": "44",
+      "id_mutation": "SYN-HOUSE-2",
+      "date_mutation": "2025-07-01",
+      "nature_mutation": "Vente",
+      "valeur_fonciere": "150000",
+      "code_type_local": "1",
+      "code_commune": "44001",
+      "id_parcelle": "44001000AA0002",
+      "surface_reelle_bati": 50,
+      "surface_terrain": 100,
+      "nombre_pieces_principales": 3,
+      "numero_disposition": "1",
+      "nom_commune": "Commune synthetique DVF"
+    },
+    {
+      "code_departement": "44",
+      "id_mutation": "SYN-HOUSE-3",
+      "date_mutation": "2025-07-01",
+      "nature_mutation": "Vente",
+      "valeur_fonciere": "200000",
+      "code_type_local": "1",
+      "code_commune": "44001",
+      "id_parcelle": "44001000AA0003",
+      "surface_reelle_bati": 50,
+      "surface_terrain": 100,
+      "nombre_pieces_principales": 3,
+      "numero_disposition": "1",
+      "nom_commune": "Commune synthetique DVF"
+    },
+    {
+      "code_departement": "44",
+      "id_mutation": "SYN-HOUSE-4",
+      "date_mutation": "2025-07-01",
+      "nature_mutation": "Vente",
+      "valeur_fonciere": "250000",
+      "code_type_local": "1",
+      "code_commune": "44001",
+      "id_parcelle": "44001000AA0004",
+      "surface_reelle_bati": 50,
+      "surface_terrain": 100,
+      "nombre_pieces_principales": 3,
+      "numero_disposition": "1",
+      "nom_commune": "Commune synthetique DVF"
+    },
+    {
+      "code_departement": "44",
+      "id_mutation": "SYN-HOUSE-5",
+      "date_mutation": "2025-07-01",
+      "nature_mutation": "Vente",
+      "valeur_fonciere": "300000",
+      "code_type_local": "1",
+      "code_commune": "44001",
+      "id_parcelle": "44001000AA0005",
+      "surface_reelle_bati": 50,
+      "surface_terrain": 100,
+      "nombre_pieces_principales": 3,
+      "numero_disposition": "1",
+      "nom_commune": "Commune synthetique DVF"
+    },
+    {
+      "code_departement": "44",
+      "id_mutation": "SYN-MIXED",
+      "date_mutation": "2025-07-01",
+      "nature_mutation": "Vente",
+      "valeur_fonciere": "600000",
+      "code_type_local": "1",
+      "code_commune": "44001",
+      "id_parcelle": "44001000AA0006",
+      "surface_reelle_bati": 50,
+      "surface_terrain": 100,
+      "nombre_pieces_principales": 3,
+      "numero_disposition": "1",
+      "nom_commune": "Commune synthetique DVF"
+    },
+    {
+      "code_departement": "44",
+      "id_mutation": "SYN-MIXED",
+      "date_mutation": "2025-07-01",
+      "nature_mutation": "Vente",
+      "valeur_fonciere": "600000",
+      "code_type_local": "4",
+      "code_commune": "44001",
+      "id_parcelle": "44001000AA0006",
+      "surface_reelle_bati": 100,
+      "surface_terrain": 100,
+      "nombre_pieces_principales": 3,
+      "numero_disposition": "1",
+      "nom_commune": "Commune synthetique DVF"
+    }
+  ],
+  "expected": {
+    "raw_rows": 7,
+    "reconstructed_mutations": 6,
+    "eligible_mutations": 5,
+    "median_eur_m2": 4000,
+    "excluded_mutation_id": "SYN-MIXED",
+    "unit": "EUR/m2",
+    "wrong_filter": {
+      "eligible_mutations": 6,
+      "median_eur_m2": 4500
+    }
+  },
+  "http_projection": {
+    "legacy": {
+      "code_insee": "44001",
+      "nom_commune": "Commune synthetique DVF",
+      "code_departement": "44",
+      "code_region": null,
+      "population": 100,
+      "nb_menages": null,
+      "nb_logements": null,
+      "nb_logements_vacants_recensement": null,
+      "densite": null,
+      "superficie": null,
+      "annee_demographie": 2025,
+      "revenu_median": null,
+      "taux_pauvrete": null,
+      "indice_gini": null,
+      "part_imposee": null,
+      "annee_revenus": null,
+      "zone_abc": null,
+      "zone_abc_reclassement": null,
+      "taux_vacance": null,
+      "nb_vacants_plus_2ans": null,
+      "annee_vacance": null,
+      "taux_tfpb": null,
+      "taux_th_rs": null,
+      "taux_teom": null,
+      "nom_epci": null,
+      "annee_fiscalite": null,
+      "loyer_m2_appartement": null,
+      "loyer_m2_maison": null,
+      "annee_loyers": null,
+      "loyers_appartement": null,
+      "loyers_maison": null,
+      "prix_m2_median": 4000,
+      "nb_mutations_12m": 5,
+      "prix_m2_median_maison": 4000,
+      "nb_mutations_12m_maison": 5,
+      "prix_m2_median_appartement": null,
+      "nb_mutations_12m_appartement": 0,
+      "dpe_passoires_pct": null,
+      "dpe_median": null,
+      "annee_construction_mediane": null,
+      "nb_equipements": null,
+      "annee_equipements": null,
+      "nb_etablissements_scolaires": null,
+      "nb_monuments": null,
+      "nb_proprietaires_pm": null,
+      "surface_pm_ha": null,
+      "fibre_pct": null
+    },
+    "indicators": {
+      "code_insee": "44001",
+      "indicateurs_dvf": {
+        "version_contrat": "1.1",
+        "version_population": "dvf-canonical-windows-core.v1",
+        "date_calcul": "2026-09-09T14:01:00Z",
+        "generation": "22222222-2222-4222-8222-222222222222",
+        "provenance": [
+          {
+            "nom": "Demandes de valeurs foncières (DVF)",
+            "producteur": "DGFiP / Etalab",
+            "licence": "Licence Ouverte 2.0",
+            "reference": "https://www.data.gouv.fr/datasets/demandes-de-valeurs-foncieres-geolocalisees",
+            "date_publication_source": null,
+            "date_snapshot": null,
+            "date_import": null,
+            "couverture": "unknown"
+          }
+        ],
+        "ancrage_temporel": {
+          "etat": "delivery_received_and_stock_bound",
+          "version_qualification": "dvf-delivery-qualification.v2",
+          "lot_id": "synthetic-lot",
+          "periode_debut_inclus": "2024-01-01",
+          "periode_fin_exclue": "2026-01-01",
+          "departements": [
+            "44",
+            "85"
+          ],
+          "acquisition_complete": true,
+          "revisions_possibles": true,
+          "exhaustivite_historique": "unknown",
+          "generation_fournisseur": null,
+          "date_observation": "2026-09-09T00:00:00Z",
+          "preuve_qualification_sha256": "0feaab14405954c3bbdc594bee0d0892187c604f9c785806b28db85ae90f3ff9",
+          "preuve_observation_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "preuve_reconstruction_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "snapshot_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "contenu_projete_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "cog_sha256": "6f5a73cf350e68241abae99ec17cb4b7d81a6247a063feaae68228d5356ee2f0",
+          "methode_projection": "sha256-sorted-row-digests-json.v1",
+          "generation_stock": "22222222-2222-4222-8222-222222222222"
+        },
+        "population": "mutations_residentielles_mono_local_hors_vefa_mono_commune",
+        "unite_prix": "EUR/m2",
+        "methode_quantiles": "percentile_cont",
+        "methode_variation": "100*(mediane_courante/mediane_precedente-1)",
+        "residentiel_maison": {
+          "precedente": {
+            "fenetre": {
+              "debut_inclus": "2024-01-01",
+              "fin_exclue": "2025-01-01"
+            },
+            "motif_periode": null,
+            "effectif": 0,
+            "mediane": {
+              "etat": "not_reported",
+              "motif": "empty_sample"
+            },
+            "quantiles": {
+              "etat": "not_qualified",
+              "motif": "indicator_policy_unqualified"
+            }
+          },
+          "courante": {
+            "fenetre": {
+              "debut_inclus": "2025-01-01",
+              "fin_exclue": "2026-01-01"
+            },
+            "motif_periode": null,
+            "effectif": 5,
+            "mediane": {
+              "etat": "value",
+              "valeur": 4000.0
+            },
+            "quantiles": {
+              "etat": "not_qualified",
+              "motif": "indicator_policy_unqualified"
+            }
+          },
+          "variation_pct": {
+            "etat": "not_qualified",
+            "motif": "indicator_policy_unqualified"
+          },
+          "qualification_tendance": null
+        },
+        "residentiel_appartement": {
+          "precedente": {
+            "fenetre": {
+              "debut_inclus": "2024-01-01",
+              "fin_exclue": "2025-01-01"
+            },
+            "motif_periode": null,
+            "effectif": 0,
+            "mediane": {
+              "etat": "not_reported",
+              "motif": "empty_sample"
+            },
+            "quantiles": {
+              "etat": "not_qualified",
+              "motif": "indicator_policy_unqualified"
+            }
+          },
+          "courante": {
+            "fenetre": {
+              "debut_inclus": "2025-01-01",
+              "fin_exclue": "2026-01-01"
+            },
+            "motif_periode": null,
+            "effectif": 0,
+            "mediane": {
+              "etat": "not_reported",
+              "motif": "empty_sample"
+            },
+            "quantiles": {
+              "etat": "not_qualified",
+              "motif": "indicator_policy_unqualified"
+            }
+          },
+          "variation_pct": {
+            "etat": "not_qualified",
+            "motif": "indicator_policy_unqualified"
+          },
+          "qualification_tendance": null
+        }
+      }
+    }
+  }
+}

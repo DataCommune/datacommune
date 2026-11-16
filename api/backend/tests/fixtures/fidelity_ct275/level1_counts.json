@@ -1,0 +1,306 @@
+{
+  "departements": [
+    "44",
+    "85"
+  ],
+  "tables": {
+    "adresses": {
+      "column": null,
+      "counts": {
+        "44": 581861,
+        "85": 437932,
+        "total": 1019793
+      },
+      "method": "partition",
+      "status": "ok"
+    },
+    "antennes": {
+      "column": "code_insee",
+      "counts": {
+        "44": 15156,
+        "85": 9110,
+        "total": 825079
+      },
+      "method": "departement_from_insee",
+      "status": "ok"
+    },
+    "arrets_transport": {
+      "column": null,
+      "counts": {
+        "44": null,
+        "85": null,
+        "total": 365544
+      },
+      "method": "absent",
+      "motif": "aucune colonne de departement ni de code INSEE",
+      "status": "ok"
+    },
+    "batiments": {
+      "column": null,
+      "counts": {
+        "44": 1303263,
+        "85": 1015975,
+        "total": 2319238
+      },
+      "method": "partition",
+      "status": "ok"
+    },
+    "carte_scolaire": {
+      "column": "code_departement",
+      "counts": {
+        "44": 0,
+        "85": 0,
+        "total": 520675
+      },
+      "method": "code_departement",
+      "status": "ok"
+    },
+    "copropriete": {
+      "column": "code_insee",
+      "counts": {
+        "44": 8137,
+        "85": 2822,
+        "total": 641105
+      },
+      "method": "departement_from_insee",
+      "status": "ok"
+    },
+    "demographie": {
+      "column": "code_departement",
+      "counts": {
+        "44": 207,
+        "85": 255,
+        "total": 34963
+      },
+      "method": "code_departement",
+      "status": "ok"
+    },
+    "diagnostics_dpe": {
+      "column": "code_departement",
+      "counts": {
+        "44": 390558,
+        "85": 150159,
+        "total": 540717
+      },
+      "method": "code_departement",
+      "status": "ok"
+    },
+    "eligibilite_fixe": {
+      "column": "code_departement",
+      "counts": {
+        "44": 7541983,
+        "85": 6815608,
+        "total": 14357591
+      },
+      "method": "code_departement",
+      "status": "ok"
+    },
+    "encadrement_loyers": {
+      "column": null,
+      "counts": {
+        "44": null,
+        "85": null,
+        "total": 17920
+      },
+      "method": "absent",
+      "motif": "aucune colonne de departement ni de code INSEE",
+      "status": "ok"
+    },
+    "equipements": {
+      "column": null,
+      "counts": {
+        "44": 49211,
+        "85": 26092,
+        "total": 2722677
+      },
+      "method": "partition",
+      "status": "ok"
+    },
+    "fiscalite_locale": {
+      "column": "code_departement",
+      "counts": {
+        "44": 1035,
+        "85": 1278,
+        "total": 174668
+      },
+      "method": "code_departement",
+      "status": "ok"
+    },
+    "foncier_pm": {
+      "column": null,
+      "counts": {
+        "44": 359855,
+        "85": 273776,
+        "total": 21074593
+      },
+      "method": "partition",
+      "status": "ok"
+    },
+    "gares": {
+      "column": "code_insee",
+      "counts": {
+        "44": 0,
+        "85": 0,
+        "total": 3884
+      },
+      "method": "departement_from_insee",
+      "status": "ok"
+    },
+    "geo_communes": {
+      "column": "departement_code",
+      "counts": {
+        "44": 207,
+        "85": 253,
+        "total": 34875
+      },
+      "method": "code_departement",
+      "status": "ok"
+    },
+    "geo_departements": {
+      "column": "code",
+      "counts": {
+        "44": 1,
+        "85": 1,
+        "total": 96
+      },
+      "method": "code_departement",
+      "status": "ok"
+    },
+    "geo_sections": {
+      "column": "departement_code",
+      "counts": {
+        "44": 0,
+        "85": 0,
+        "total": 0
+      },
+      "method": "code_departement",
+      "status": "ok"
+    },
+    "indicateurs_loyers": {
+      "column": "code_departement",
+      "counts": {
+        "44": 828,
+        "85": 1012,
+        "total": 139600
+      },
+      "method": "code_departement",
+      "status": "ok"
+    },
+    "monuments_historiques": {
+      "column": "code_departement",
+      "counts": {
+        "44": 231,
+        "85": 336,
+        "total": 44310
+      },
+      "method": "code_departement",
+      "status": "ok"
+    },
+    "mutation_parcelles": {
+      "column": "code_departement",
+      "counts": {
+        "44": 276851,
+        "85": 199843,
+        "total": 476694
+      },
+      "method": "code_departement",
+      "status": "ok"
+    },
+    "mutations": {
+      "column": null,
+      "counts": {
+        "44": 424733,
+        "85": 273566,
+        "total": 698299
+      },
+      "method": "partition",
+      "status": "ok"
+    },
+    "mutations_grain": {
+      "column": null,
+      "counts": {
+        "44": 173728,
+        "85": 113533,
+        "total": 287261
+      },
+      "method": "partition",
+      "status": "ok"
+    },
+    "parcelles": {
+      "column": null,
+      "counts": {
+        "44": 1570363,
+        "85": 1279746,
+        "total": 2850109
+      },
+      "method": "partition",
+      "status": "ok"
+    },
+    "permis": {
+      "column": "code_departement",
+      "counts": {
+        "44": 0,
+        "85": 0,
+        "total": 727
+      },
+      "method": "code_departement",
+      "status": "ok"
+    },
+    "revenus": {
+      "column": "code_departement",
+      "counts": {
+        "44": 207,
+        "85": 257,
+        "total": 34929
+      },
+      "method": "code_departement",
+      "status": "ok"
+    },
+    "rnb_liens": {
+      "column": "code_departement",
+      "counts": {
+        "44": 892869,
+        "85": 682519,
+        "total": 1575388
+      },
+      "method": "code_departement",
+      "status": "ok"
+    },
+    "scoring_renov_target": {
+      "column": null,
+      "counts": null,
+      "method": null,
+      "status": "absent"
+    },
+    "v_commune_synthese": {
+      "column": "code_departement",
+      "counts": {
+        "44": 207,
+        "85": 255,
+        "total": 34963
+      },
+      "method": "code_departement",
+      "status": "ok"
+    },
+    "vacance": {
+      "column": "code_departement",
+      "counts": {
+        "44": 207,
+        "85": 253,
+        "total": 34912
+      },
+      "method": "code_departement",
+      "status": "ok"
+    },
+    "zonage_abc": {
+      "column": "code_departement",
+      "counts": {
+        "44": 207,
+        "85": 253,
+        "total": 34875
+      },
+      "method": "code_departement",
+      "status": "ok"
+    }
+  }
+}

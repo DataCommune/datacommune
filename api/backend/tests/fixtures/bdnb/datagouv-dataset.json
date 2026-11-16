@@ -1,0 +1,56 @@
+{
+  "id": "61dc7157488f8cdb4283e3c3",
+  "slug": "base-de-donnees-nationale-des-batiments",
+  "title": "Base de données nationale des bâtiments  ",
+  "license": "lov2",
+  "spatial": {
+    "geom": null,
+    "granularity": "other",
+    "zones": [
+      "country-subset:fr:metro"
+    ]
+  },
+  "last_modified": "2026-10-16T12:12:49.327000+00:00",
+  "_releve": {
+    "url": "https://www.data.gouv.fr/api/1/datasets/base-de-donnees-nationale-des-batiments/",
+    "le": "2026-11-02",
+    "note": "champs utiles conserves (plan 04.7-19, D6, D9)"
+  },
+  "resources": [
+    {
+      "title": "BDNB - Portail d'API",
+      "url": "https://api-portail.bdnb.io/catalog/api/f4905edc-db58-3a3b-a8e5-c5dfc6692ee5",
+      "format": "open-api",
+      "filesize": null,
+      "last_modified": "2026-02-02T21:23:51.459664+00:00"
+    },
+    {
+      "title": "BDNB - Export france - csv",
+      "url": "https://open-data.s3.fr-par.scw.cloud/bdnb_millesime_2026-02-b/millesime_2026-02-b_france/open_data_millesime_2026-02-b_france_csv.tar.gz",
+      "format": "csv.tar.gz",
+      "filesize": 39932914083,
+      "last_modified": "2026-10-05T10:54:56+00:00"
+    },
+    {
+      "title": "BDNB - Export france - gpkg (modèle simplifié)",
+      "url": "https://open-data.s3.fr-par.scw.cloud/bdnb_millesime_2026-02-b/millesime_2026-02-b_france/open_data_millesime_2026-02-b_france_gpkg.tar.gz",
+      "format": "gpkg.tar.gz",
+      "filesize": 51908648305,
+      "last_modified": "2026-10-05T10:59:46+00:00"
+    },
+    {
+      "title": "BDNB - Export france - pgdump",
+      "url": "https://open-data.s3.fr-par.scw.cloud/bdnb_millesime_2026-02-b/millesime_2026-02-b_france/open_data_millesime_2026-02-b_france_pgdump.tar.gz",
+      "format": "pgdump.tar.gz",
+      "filesize": 40960975760,
+      "last_modified": "2026-10-05T11:03:24+00:00"
+    },
+    {
+      "title": "BDNB - Documentation - Dictionnaire de données (v0.7.12)",
+      "url": "https://open-data.s3.fr-par.scw.cloud/bdnb_millesime_2026-02-b/millesime_2026-02-b_doc/documentation.xlsx",
+      "format": "xlsx",
+      "filesize": 243578,
+      "last_modified": "2026-10-05T10:22:24+00:00"
+    }
+  ]
+}

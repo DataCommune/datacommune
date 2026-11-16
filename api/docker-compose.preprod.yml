@@ -1,0 +1,132 @@
+version: "3.8"
+
+services:
+  db:
+    restart: unless-stopped
+    shm_size: "2gb"
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:?POSTGRES_DB must come from the preproduction env file}
+      POSTGRES_USER: ${POSTGRES_USER:?POSTGRES_USER must come from the preproduction env file}
+      POSTGRES_PASSWORD: null
+      POSTGRES_PASSWORD_FILE: /run/secrets/postgres_password
+    secrets:
+      - source: postgres_password
+        target: postgres_password
+        mode: "0444"
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - preprod_pgdata:/var/lib/postgresql/data
+    command:
+      - postgres
+      - -c
+      - shared_buffers=1GB
+      - -c
+      - effective_cache_size=4GB
+      - -c
+      - max_wal_size=4GB
+      - -c
+      - datacommune.environment=preproduction
+      - -c
+      - shared_preload_libraries=pg_stat_statements
+    networks:
+      - preprod_backend
+
+  api:
+    image: datacommune-preprod-api:sha-${DEPLOYMENT_SHA:?DEPLOYMENT_SHA is required}
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: null
+      DATABASE_URL_FILE: /run/secrets/database_url
+      JWT_SECRET_KEY_FILE: /run/secrets/jwt_secret_key
+      API_KEY_HMAC_SECRET_FILE: /run/secrets/api_key_hmac_secret
+      ADMIN_PASSWORD_FILE: /run/secrets/admin_password
+      APP_ENVIRONMENT: preproduction
+      DEPLOYMENT_SHA: ${DEPLOYMENT_SHA}
+      API_BASE_URL: https://dev-api.datacommune.fr
+      SITE_URL: https://dev.datacommune.fr
+      AUTH_COOKIE_NAME: dev_access_token
+      AUTH_COOKIE_DOMAIN: ""
+      DEBUG: "false"
+      LOG_FORMAT: json
+      CORS_ORIGINS: '["https://dev.datacommune.fr"]'
+      TRUST_PROXY_HEADERS: "true"
+      COMMUNE_INDICATORS_ENABLED: ${COMMUNE_INDICATORS_ENABLED:-false}
+      COMMUNE_INDICATOR_POLICY: ${COMMUNE_INDICATOR_POLICY:-}
+      STRIPE_ENABLED: "false"
+      EMAIL_ENABLED: "false"
+    secrets:
+      - source: database_url
+        target: database_url
+        mode: "0444"
+      - source: jwt_secret_key
+        target: jwt_secret_key
+        mode: "0444"
+      - source: api_key_hmac_secret
+        target: api_key_hmac_secret
+        mode: "0444"
+      - source: admin_password
+        target: admin_password
+        mode: "0444"
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - preprod_etl_tmp:/etl_tmp
+      - ${COMMUNE_INDICATOR_EVIDENCE_DIR:-/opt/datacommune-preprod/private/commune-indicators}:/run/commune-indicators:ro
+    networks:
+      - preprod_backend
+
+  caddy:
+    image: caddy:2@sha256:af5fdcd76f2db5e4e974ee92f96ee8c0fc3edb55bd4ba5032547cbf3f65e486d
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:80:80"
+    volumes:
+      - ./Caddyfile.preprod:/etc/caddy/Caddyfile:ro
+      - preprod_caddy_data:/data
+      - preprod_caddy_config:/config
+    networks:
+      - preprod_backend
+
+  cloudflared:
+    image: cloudflare/cloudflared:latest@sha256:6d91c121b803126f7a5344005d17a9324788fc09d305b6e2560ec6040a7ae283
+    restart: unless-stopped
+    command: tunnel --no-autoupdate run --token-file /run/secrets/cf_tunnel_token
+    secrets:
+      - source: cf_tunnel_token
+        target: cf_tunnel_token
+        mode: "0444"
+    networks:
+      - preprod_backend
+    profiles:
+      - tunnel
+
+volumes:
+  preprod_pgdata:
+    name: datacommune-preprod-pgdata
+  preprod_etl_tmp:
+    name: datacommune-preprod-etl-tmp
+  preprod_caddy_data:
+    name: datacommune-preprod-caddy-data
+  preprod_caddy_config:
+    name: datacommune-preprod-caddy-config
+
+networks:
+  preprod_backend:
+    name: datacommune-preprod-backend
+    driver: bridge
+    internal: false
+
+secrets:
+  postgres_password:
+    file: ${PREPROD_SECRETS_DIR:?PREPROD_SECRETS_DIR is required}/postgres_password
+  database_url:
+    file: ${PREPROD_SECRETS_DIR:?PREPROD_SECRETS_DIR is required}/database_url
+  jwt_secret_key:
+    file: ${PREPROD_SECRETS_DIR:?PREPROD_SECRETS_DIR is required}/jwt_secret_key
+  api_key_hmac_secret:
+    file: ${PREPROD_SECRETS_DIR:?PREPROD_SECRETS_DIR is required}/api_key_hmac_secret
+  admin_password:
+    file: ${PREPROD_SECRETS_DIR:?PREPROD_SECRETS_DIR is required}/admin_password
+  cf_tunnel_token:
+    file: ${PREPROD_SECRETS_DIR:?PREPROD_SECRETS_DIR is required}/cf_tunnel_token

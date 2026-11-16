@@ -1,0 +1,548 @@
+{
+	"75112": {
+		"csv": "﻿Thème,Indicateur,Valeur ou motif,État,Maille,\"Période, population, source et réserves\"\nImmobilier,Prix médian des maisons (fenêtre courante),2 000 €/m²,value,Commune,Population statistique : mutations résidentielles mono-local hors ventes sur plan mono-commune · Calcul : 2026-08-03 · Génération : synthetic-g1 · Population : synthetic-e2e · Source(s) : DVF synthétique · Source : DVF synthétique · Producteur : Fixture E2E · Licence : fixture · Référence : synthetic-only · Publication source : non renseignée · Snapshot : 2026-08-01 · Import : 2026-08-02 · Couverture : unknown · Période : 2025-01-01 → 2026-01-01 (fin exclue) · 12 mutations\nImmobilier,Volume des maisons (fenêtre courante),12,value,Commune,Population statistique : mutations résidentielles mono-local hors ventes sur plan mono-commune · Calcul : 2026-08-03 · Génération : synthetic-g1 · Population : synthetic-e2e · Source(s) : DVF synthétique · Source : DVF synthétique · Producteur : Fixture E2E · Licence : fixture · Référence : synthetic-only · Publication source : non renseignée · Snapshot : 2026-08-01 · Import : 2026-08-02 · Couverture : unknown · Période : 2025-01-01 → 2026-01-01 (fin exclue) · 12 mutations\nImmobilier,Intervalle P10–P90 des maisons (fenêtre courante),2 000 €/m² (P10 = P90),value,Commune,Population statistique : mutations résidentielles mono-local hors ventes sur plan mono-commune · Calcul : 2026-08-03 · Génération : synthetic-g1 · Population : synthetic-e2e · Source(s) : DVF synthétique · Source : DVF synthétique · Producteur : Fixture E2E · Licence : fixture · Référence : synthetic-only · Publication source : non renseignée · Snapshot : 2026-08-01 · Import : 2026-08-02 · Couverture : unknown · Période : 2025-01-01 → 2026-01-01 (fin exclue) · 12 mutations\nImmobilier,Prix médian des maisons (fenêtre précédente),2 000 €/m²,value,Commune,Population statistique : mutations résidentielles mono-local hors ventes sur plan mono-commune · Calcul : 2026-08-03 · Génération : synthetic-g1 · Population : synthetic-e2e · Source(s) : DVF synthétique · Source : DVF synthétique · Producteur : Fixture E2E · Licence : fixture · Référence : synthetic-only · Publication source : non renseignée · Snapshot : 2026-08-01 · Import : 2026-08-02 · Couverture : unknown · Période : 2024-01-01 → 2025-01-01 (fin exclue) · 10 mutations\nImmobilier,Volume des maisons (fenêtre précédente),10,value,Commune,Population statistique : mutations résidentielles mono-local hors ventes sur plan mono-commune · Calcul : 2026-08-03 · Génération : synthetic-g1 · Population : synthetic-e2e · Source(s) : DVF synthétique · Source : DVF synthétique · Producteur : Fixture E2E · Licence : fixture · Référence : synthetic-only · Publication source : non renseignée · Snapshot : 2026-08-01 · Import : 2026-08-02 · Couverture : unknown · Période : 2024-01-01 → 2025-01-01 (fin exclue) · 10 mutations\nImmobilier,Variation du prix médian des maisons,0 %,value,Commune,Population statistique : mutations résidentielles mono-local hors ventes sur plan mono-commune · Calcul : 2026-08-03 · Génération : synthetic-g1 · Population : synthetic-e2e · Source(s) : DVF synthétique · Source : DVF synthétique · Producteur : Fixture E2E · Licence : fixture · Référence : synthetic-only · Publication source : non renseignée · Snapshot : 2026-08-01 · Import : 2026-08-02 · Couverture : unknown · Période : 2025-01-01 → 2026-01-01 (fin exclue) · 12 mutations · Fenêtre précédente — Calcul : 2026-08-03 · Fenêtre précédente — Génération : synthetic-g1 · Fenêtre précédente — Population : synthetic-e2e · Fenêtre précédente — Source(s) : DVF synthétique · Fenêtre précédente — Source : DVF synthétique · Fenêtre précédente — Producteur : Fixture E2E · Fenêtre précédente — Licence : fixture · Fenêtre précédente — Référence : synthetic-only · Fenêtre précédente — Publication source : non renseignée · Fenêtre précédente — Snapshot : 2026-08-01 · Fenêtre précédente — Import : 2026-08-02 · Fenêtre précédente — Couverture : unknown · Fenêtre précédente — Période : 2024-01-01 → 2025-01-01 (fin exclue) · Fenêtre précédente — 10 mutations · Qualification : synthetic\nImmobilier,Prix médian des appartements (fenêtre courante),Effectif insuffisant,insufficient_sample,Commune,Motif : Aucune mutation retenue. · Population statistique : mutations résidentielles mono-local hors ventes sur plan mono-commune · État source : insufficient_sample · Motif : Aucune mutation retenue. · Calcul : 2026-08-03 · Génération : synthetic-g1 · Population : synthetic-e2e · Source(s) : DVF synthétique · Source : DVF synthétique · Producteur : Fixture E2E · Licence : fixture · Référence : synthetic-only · Publication source : non renseignée · Snapshot : 2026-08-01 · Import : 2026-08-02 · Couverture : unknown · Période : 2025-01-01 → 2026-01-01 (fin exclue) · 0 mutations\nImmobilier,Volume des appartements (fenêtre courante),0,value,Commune,Population statistique : mutations résidentielles mono-local hors ventes sur plan mono-commune · Calcul : 2026-08-03 · Génération : synthetic-g1 · Population : synthetic-e2e · Source(s) : DVF synthétique · Source : DVF synthétique · Producteur : Fixture E2E · Licence : fixture · Référence : synthetic-only · Publication source : non renseignée · Snapshot : 2026-08-01 · Import : 2026-08-02 · Couverture : unknown · Période : 2025-01-01 → 2026-01-01 (fin exclue) · 0 mutations\nImmobilier,Intervalle P10–P90 des appartements (fenêtre courante),Effectif insuffisant,insufficient_sample,Commune,Motif : Aucune mutation retenue. · Population statistique : mutations résidentielles mono-local hors ventes sur plan mono-commune · État source : insufficient_sample · Motif : Aucune mutation retenue. · Calcul : 2026-08-03 · Génération : synthetic-g1 · Population : synthetic-e2e · Source(s) : DVF synthétique · Source : DVF synthétique · Producteur : Fixture E2E · Licence : fixture · Référence : synthetic-only · Publication source : non renseignée · Snapshot : 2026-08-01 · Import : 2026-08-02 · Couverture : unknown · Période : 2025-01-01 → 2026-01-01 (fin exclue) · 0 mutations\nImmobilier,Prix médian des appartements (fenêtre précédente),Effectif insuffisant,insufficient_sample,Commune,Motif : Échantillon insuffisant. · Population statistique : mutations résidentielles mono-local hors ventes sur plan mono-commune · État source : insufficient_sample · Motif : Échantillon insuffisant. · Calcul : 2026-08-03 · Génération : synthetic-g1 · Population : synthetic-e2e · Source(s) : DVF synthétique · Source : DVF synthétique · Producteur : Fixture E2E · Licence : fixture · Référence : synthetic-only · Publication source : non renseignée · Snapshot : 2026-08-01 · Import : 2026-08-02 · Couverture : unknown · Période : 2024-01-01 → 2025-01-01 (fin exclue) · 3 mutations\nImmobilier,Volume des appartements (fenêtre précédente),3,value,Commune,Population statistique : mutations résidentielles mono-local hors ventes sur plan mono-commune · Calcul : 2026-08-03 · Génération : synthetic-g1 · Population : synthetic-e2e · Source(s) : DVF synthétique · Source : DVF synthétique · Producteur : Fixture E2E · Licence : fixture · Référence : synthetic-only · Publication source : non renseignée · Snapshot : 2026-08-01 · Import : 2026-08-02 · Couverture : unknown · Période : 2024-01-01 → 2025-01-01 (fin exclue) · 3 mutations\nImmobilier,Variation du prix médian des appartements,Effectif insuffisant,insufficient_sample,Commune,Motif : Tendance indisponible. · Population statistique : mutations résidentielles mono-local hors ventes sur plan mono-commune · État source : insufficient_sample · Motif : Tendance indisponible. · Calcul : 2026-08-03 · Génération : synthetic-g1 · Population : synthetic-e2e · Source(s) : DVF synthétique · Source : DVF synthétique · Producteur : Fixture E2E · Licence : fixture · Référence : synthetic-only · Publication source : non renseignée · Snapshot : 2026-08-01 · Import : 2026-08-02 · Couverture : unknown · Période : 2025-01-01 → 2026-01-01 (fin exclue) · 0 mutations · Fenêtre précédente — Calcul : 2026-08-03 · Fenêtre précédente — Génération : synthetic-g1 · Fenêtre précédente — Population : synthetic-e2e · Fenêtre précédente — Source(s) : DVF synthétique · Fenêtre précédente — Source : DVF synthétique · Fenêtre précédente — Producteur : Fixture E2E · Fenêtre précédente — Licence : fixture · Fenêtre précédente — Référence : synthetic-only · Fenêtre précédente — Publication source : non renseignée · Fenêtre précédente — Snapshot : 2026-08-01 · Fenêtre précédente — Import : 2026-08-02 · Fenêtre précédente — Couverture : unknown · Fenêtre précédente — Période : 2024-01-01 → 2025-01-01 (fin exclue) · Fenêtre précédente — 3 mutations\nImmobilier,Prix médian de vente (hors ventes sur plan),2 410 €/m²,value,Commune,2024-12-31 → 2025-12-31\nImmobilier,Prix médian maison (hors ventes sur plan),2 480 €/m²,value,Commune,2024-12-31 → 2025-12-31\nImmobilier,Ventes de maisons sur 12 mois,268,value,Commune,2024-12-31 → 2025-12-31\nImmobilier,Prix médian appartement (hors ventes sur plan),Effectif insuffisant,insufficient_sample,Commune,\"2024-12-31 → 2025-12-31 · Motif : 3 ventes d’appartements sur 12 mois, sous le seuil de publication de 5.\"\nImmobilier,Ventes d'appartements sur 12 mois,3,value,Commune,2024-12-31 → 2025-12-31\nImmobilier,Mutations sur 12 mois,271,value,Commune,2024-12-31 → 2025-12-31\nImmobilier,Loyer d'annonce prédit appartement,\"9,1 €/m²/mois\",value,Maille d’estimation inconnue,\"Millésime 2023 · Précisions inconnues : charges, bien type, trimestre, maille et qualité. Ces précisions ne sont pas disponibles pour cette donnée.\"\nImmobilier,Loyer d'annonce prédit maison,\"8,4 €/m²/mois\",value,Maille d’estimation inconnue,\"Millésime 2023 · Précisions inconnues : charges, bien type, trimestre, maille et qualité. Ces précisions ne sont pas disponibles pour cette donnée.\"\nImmobilier,Année de référence (loyers),2023,value,Commune,Millésime 2023\nImmobilier,Logements recensés,11 200,value,Commune,Millésime 2021\nImmobilier,Logements vacants au recensement,820,value,Commune,Millésime 2021\nImmobilier,Taux de vacance du parc privé,\"9,4 %\",value,Parc privé communal,\"Vacants : 2022 · année du parc privé non renseignée · Taux de vacance du parc privé, toutes durées confondues. Le nombre de logements vacants depuis plus de deux ans est un indicateur distinct ; le dénominateur privé n’est pas fourni par cette fiche.\"\nImmobilier,Logements vacants > 2 ans,410,value,Parc privé communal,Vacants : 2022\nImmobilier,Ancrage temporel DVF,Fixture synthétique : aucune qualification réelle.,context,Maille non renseignée,\nÉnergie & bâti,Population DPE observée,6 diagnostics disponibles,value,Commune,Calcul : 2026-08-03 · Génération : synthetic-g1 · Population : synthetic-e2e · Source(s) : DPE synthétique · Source : DPE synthétique · Producteur : Fixture E2E · Licence : fixture · Référence : synthetic-only · Publication source : non renseignée · Snapshot : 2026-08-01 · Import : 2026-08-02 · Couverture : unknown · Évaluation : 2026-08-01 · Population : diagnostics_canoniques_disponibles_hors_traces_retirees · 6 diagnostics disponibles · 5 classes connues · 1 classe inconnue · Type maison : 2 · Type appartement : 2 · Type autre : 1 · Type inconnu : 1 · Validité — inconnue [Validité unknown : 1] : 1 · Validité — expirée [Validité expired : 1] : 1 · Validité — non expirée à la date d’évaluation [Validité not_expired_by_date : 4] : 4 · Validité — dates incohérentes [Validité inconsistent_dates : 0] : 0 · Validité — date d’établissement future [Validité future_establishment : 0] : 0 · Remplacement — non vérifié [Remplacement not_checked : 5] : 5 · Remplacement — aucun successeur connu [Remplacement no_successor_known : 1] : 1 · Remplacement — remplacé [Remplacement replaced : 0] : 0 · Remplacement — ambigu [Remplacement ambiguous : 0] : 0 · Régime existant : 4 · Régime neuf : 1 · Régime inconnu : 1 · Source inconnue : 0 · Révisions non vérifiées : 5 · Dates d’établissement inconnues : 1 · Traces retirées exclues de la population. · Ces diagnostics ne représentent pas un décompte de logements.\nÉnergie & bâti,Distribution des classes DPE,A : 0 · B : 0 · C : 2 · D : 1 · E : 2 · F : 0 · G : 0 · inconnue : 1,value,Commune,Calcul : 2026-08-03 · Génération : synthetic-g1 · Population : synthetic-e2e · Source(s) : DPE synthétique · Source : DPE synthétique · Producteur : Fixture E2E · Licence : fixture · Référence : synthetic-only · Publication source : non renseignée · Snapshot : 2026-08-01 · Import : 2026-08-02 · Couverture : unknown · Évaluation : 2026-08-01 · Population : diagnostics_canoniques_disponibles_hors_traces_retirees · 6 diagnostics disponibles · 5 classes connues · 1 classe inconnue · Type maison : 2 · Type appartement : 2 · Type autre : 1 · Type inconnu : 1 · Validité — inconnue [Validité unknown : 1] : 1 · Validité — expirée [Validité expired : 1] : 1 · Validité — non expirée à la date d’évaluation [Validité not_expired_by_date : 4] : 4 · Validité — dates incohérentes [Validité inconsistent_dates : 0] : 0 · Validité — date d’établissement future [Validité future_establishment : 0] : 0 · Remplacement — non vérifié [Remplacement not_checked : 5] : 5 · Remplacement — aucun successeur connu [Remplacement no_successor_known : 1] : 1 · Remplacement — remplacé [Remplacement replaced : 0] : 0 · Remplacement — ambigu [Remplacement ambiguous : 0] : 0 · Régime existant : 4 · Régime neuf : 1 · Régime inconnu : 1 · Source inconnue : 0 · Révisions non vérifiées : 5 · Dates d’établissement inconnues : 1 · Traces retirées exclues de la population. · Ces diagnostics ne représentent pas un décompte de logements.\nÉnergie & bâti,Bornes des dates d’établissement,du 1er janvier 2020 au 31 juillet 2026,value,Commune,Calcul : 2026-08-03 · Génération : synthetic-g1 · Population : synthetic-e2e · Source(s) : DPE synthétique · Source : DPE synthétique · Producteur : Fixture E2E · Licence : fixture · Référence : synthetic-only · Publication source : non renseignée · Snapshot : 2026-08-01 · Import : 2026-08-02 · Couverture : unknown · Évaluation : 2026-08-01 · Population : diagnostics_canoniques_disponibles_hors_traces_retirees · 6 diagnostics disponibles · 5 classes connues · 1 classe inconnue · Type maison : 2 · Type appartement : 2 · Type autre : 1 · Type inconnu : 1 · Validité — inconnue [Validité unknown : 1] : 1 · Validité — expirée [Validité expired : 1] : 1 · Validité — non expirée à la date d’évaluation [Validité not_expired_by_date : 4] : 4 · Validité — dates incohérentes [Validité inconsistent_dates : 0] : 0 · Validité — date d’établissement future [Validité future_establishment : 0] : 0 · Remplacement — non vérifié [Remplacement not_checked : 5] : 5 · Remplacement — aucun successeur connu [Remplacement no_successor_known : 1] : 1 · Remplacement — remplacé [Remplacement replaced : 0] : 0 · Remplacement — ambigu [Remplacement ambiguous : 0] : 0 · Régime existant : 4 · Régime neuf : 1 · Régime inconnu : 1 · Source inconnue : 0 · Révisions non vérifiées : 5 · Dates d’établissement inconnues : 1 · Traces retirées exclues de la population. · Ces diagnostics ne représentent pas un décompte de logements.\nÉnergie & bâti,Classe DPE médiane,D,value,Commune,Calcul : 2026-08-03 · Génération : synthetic-g1 · Population : synthetic-e2e · Source(s) : DPE synthétique · Source : DPE synthétique · Producteur : Fixture E2E · Licence : fixture · Référence : synthetic-only · Publication source : non renseignée · Snapshot : 2026-08-01 · Import : 2026-08-02 · Couverture : unknown · Évaluation : 2026-08-01 · Population : diagnostics_canoniques_disponibles_hors_traces_retirees · 6 diagnostics disponibles · 5 classes connues · 1 classe inconnue · Type maison : 2 · Type appartement : 2 · Type autre : 1 · Type inconnu : 1 · Validité — inconnue [Validité unknown : 1] : 1 · Validité — expirée [Validité expired : 1] : 1 · Validité — non expirée à la date d’évaluation [Validité not_expired_by_date : 4] : 4 · Validité — dates incohérentes [Validité inconsistent_dates : 0] : 0 · Validité — date d’établissement future [Validité future_establishment : 0] : 0 · Remplacement — non vérifié [Remplacement not_checked : 5] : 5 · Remplacement — aucun successeur connu [Remplacement no_successor_known : 1] : 1 · Remplacement — remplacé [Remplacement replaced : 0] : 0 · Remplacement — ambigu [Remplacement ambiguous : 0] : 0 · Régime existant : 4 · Régime neuf : 1 · Régime inconnu : 1 · Source inconnue : 0 · Révisions non vérifiées : 5 · Dates d’établissement inconnues : 1 · Traces retirées exclues de la population. · Ces diagnostics ne représentent pas un décompte de logements.\nÉnergie & bâti,\"Classes les plus fréquentes, ex aequo\",\"C, E\",value,Commune,Calcul : 2026-08-03 · Génération : synthetic-g1 · Population : synthetic-e2e · Source(s) : DPE synthétique · Source : DPE synthétique · Producteur : Fixture E2E · Licence : fixture · Référence : synthetic-only · Publication source : non renseignée · Snapshot : 2026-08-01 · Import : 2026-08-02 · Couverture : unknown · Évaluation : 2026-08-01 · Population : diagnostics_canoniques_disponibles_hors_traces_retirees · 6 diagnostics disponibles · 5 classes connues · 1 classe inconnue · Type maison : 2 · Type appartement : 2 · Type autre : 1 · Type inconnu : 1 · Validité — inconnue [Validité unknown : 1] : 1 · Validité — expirée [Validité expired : 1] : 1 · Validité — non expirée à la date d’évaluation [Validité not_expired_by_date : 4] : 4 · Validité — dates incohérentes [Validité inconsistent_dates : 0] : 0 · Validité — date d’établissement future [Validité future_establishment : 0] : 0 · Remplacement — non vérifié [Remplacement not_checked : 5] : 5 · Remplacement — aucun successeur connu [Remplacement no_successor_known : 1] : 1 · Remplacement — remplacé [Remplacement replaced : 0] : 0 · Remplacement — ambigu [Remplacement ambiguous : 0] : 0 · Régime existant : 4 · Régime neuf : 1 · Régime inconnu : 1 · Source inconnue : 0 · Révisions non vérifiées : 5 · Dates d’établissement inconnues : 1 · Traces retirées exclues de la population. · Ces diagnostics ne représentent pas un décompte de logements.\nÉnergie & bâti,Part des classes F et G,0 %,value,Commune,Calcul : 2026-08-03 · Génération : synthetic-g1 · Population : synthetic-e2e · Source(s) : DPE synthétique · Source : DPE synthétique · Producteur : Fixture E2E · Licence : fixture · Référence : synthetic-only · Publication source : non renseignée · Snapshot : 2026-08-01 · Import : 2026-08-02 · Couverture : unknown · Évaluation : 2026-08-01 · Population : diagnostics_canoniques_disponibles_hors_traces_retirees · 6 diagnostics disponibles · 5 classes connues · 1 classe inconnue · Type maison : 2 · Type appartement : 2 · Type autre : 1 · Type inconnu : 1 · Validité — inconnue [Validité unknown : 1] : 1 · Validité — expirée [Validité expired : 1] : 1 · Validité — non expirée à la date d’évaluation [Validité not_expired_by_date : 4] : 4 · Validité — dates incohérentes [Validité inconsistent_dates : 0] : 0 · Validité — date d’établissement future [Validité future_establishment : 0] : 0 · Remplacement — non vérifié [Remplacement not_checked : 5] : 5 · Remplacement — aucun successeur connu [Remplacement no_successor_known : 1] : 1 · Remplacement — remplacé [Remplacement replaced : 0] : 0 · Remplacement — ambigu [Remplacement ambiguous : 0] : 0 · Régime existant : 4 · Régime neuf : 1 · Régime inconnu : 1 · Source inconnue : 0 · Révisions non vérifiées : 5 · Dates d’établissement inconnues : 1 · Traces retirées exclues de la population. · Ces diagnostics ne représentent pas un décompte de logements.\nÉnergie & bâti,Part des classes F et G,\"9,25 %\",value,Commune,Dates des diagnostics non renseignées\nÉnergie & bâti,Classe DPE médiane,D,value,Commune,Dates des diagnostics non renseignées\nÉnergie & bâti,Année de construction (médiane),1985,value,Commune,Dates des diagnostics non renseignées\nServices & transports,Effectif d’équipements observé,1 124,value,Commune,Millésime 2023\nServices & transports,Collèges référencés par la sectorisation,4,value,Commune,Période de la sectorisation non renseignée\nServices & transports,Fibre (immeubles observés),Non renseigné,not_reported,Commune,Période source non renseignée · Motif : Aucune ligne de la source pour cette commune.\nServices & transports,Portée des dénombrements,\"Équipements : millésime 2023. Ces nombres décrivent le stock observé dans les sources disponibles, sans garantie d’exhaustivité. Une donnée absente ne vaut pas zéro.\",context,Maille non renseignée,\nContexte communal,Population,21 516 hab.,value,Commune,Millésime 2021\nContexte communal,Densité,\"287,4 hab./km²\",value,Commune,Millésime 2021\nContexte communal,Superficie,\"74,9 km²\",value,Commune,Millésime 2021\nContexte communal,Nombre de ménages,9 800,value,Commune,Millésime 2021\nContexte communal,Revenu déclaré médian,21 340 €/UC/an,value,Commune,\"Millésime 2021 · Revenu déclaré annuel par unité de consommation, avant redistribution. Ce revenu ne mesure pas le niveau de vie après impôts et prestations.\"\nContexte communal,Taux de pauvreté,\"12,8 %\",value,Commune,Millésime 2021\nContexte communal,Gini (revenu déclaré),\"0,27\",value,Commune,Millésime 2021\nContexte communal,Part des ménages fiscaux imposés,\"58,2 %\",value,Commune,Millésime 2021\nContexte communal,Taux TFPB,\"41,3 %\",value,Commune,Millésime 2023\nContexte communal,Taux TH résidences secondaires,\"18,7 %\",value,Commune,Millésime 2023\nContexte communal,Taux TEOM,\"11,2 %\",value,Commune,Millésime 2023\nContexte communal,EPCI,CC Challans Gois Vie Océan,value,Commune,Millésime 2023\nContexte communal,Personnes morales référencées,1 187,value,Commune,Période source non renseignée\nContexte communal,Foncier personnes morales,\"932,5 ha\",value,Commune,Période source non renseignée\nContexte communal,Portée du foncier observé,\"Personnes morales et parcelles présentes dans les droits fonciers disponibles, sans garantie d’exhaustivité. Une surface incomplète ou contradictoire reste indisponible.\",context,Maille non renseignée,\nRisques & urbanisme,Zone ABC (tension du marché locatif),B2,value,Commune,Période source non renseignée\nRisques & urbanisme,Reclassement de zone ABC demandé,Non,value,Commune,Période source non renseignée\nRisques & urbanisme,Notices de monuments historiques,2,value,Commune,Période source non renseignée",
+		"json": {
+			"format": "datacommune.commune.v1",
+			"code_insee": "75112",
+			"page": "{ORIGINE}/commune/75112",
+			"licence": "Chaque valeur reste sous la licence de son producteur, nommée dans « sources » ; une réutilisation cite la source. Mentionner DataCommune, avec le lien de la page, est bienvenu sans être une condition.",
+			"etat": "fiche",
+			"sources": [
+				{
+					"nom": "Démographie"
+				},
+				{
+					"nom": "Loyers"
+				},
+				{
+					"nom": "Zonage ABC"
+				}
+			],
+			"donnees": {
+				"code_insee": "75112",
+				"indicateurs_dvf": {
+					"version_contrat": "1.1",
+					"version_population": "synthetic-e2e",
+					"date_calcul": "2026-08-03",
+					"generation": "synthetic-g1",
+					"provenance": [
+						{
+							"nom": "DVF synthétique",
+							"producteur": "Fixture E2E",
+							"licence": "fixture",
+							"reference": "synthetic-only",
+							"date_publication_source": null,
+							"date_snapshot": "2026-08-01",
+							"date_import": "2026-08-02",
+							"couverture": "unknown"
+						}
+					],
+					"ancrage_temporel": {
+						"etat": "unknown",
+						"motif": "Fixture synthétique : aucune qualification réelle."
+					},
+					"population": "mutations_residentielles_mono_local_hors_vefa_mono_commune",
+					"unite_prix": "EUR/m2",
+					"methode_quantiles": "percentile_cont",
+					"methode_variation": "100*(mediane_courante/mediane_precedente-1)",
+					"residentiel_maison": {
+						"precedente": {
+							"fenetre": {
+								"debut_inclus": "2024-01-01",
+								"fin_exclue": "2025-01-01"
+							},
+							"effectif": 10,
+							"mediane": {
+								"etat": "value",
+								"valeur": 2000
+							},
+							"quantiles": {
+								"etat": "value",
+								"p10": 1800,
+								"p50": 2000,
+								"p90": 2200,
+								"qualification": "synthetic"
+							}
+						},
+						"courante": {
+							"fenetre": {
+								"debut_inclus": "2025-01-01",
+								"fin_exclue": "2026-01-01"
+							},
+							"effectif": 12,
+							"mediane": {
+								"etat": "value",
+								"valeur": 2000
+							},
+							"quantiles": {
+								"etat": "value",
+								"p10": 2000,
+								"p50": 2000,
+								"p90": 2000,
+								"qualification": "synthetic"
+							}
+						},
+						"variation_pct": {
+							"etat": "value",
+							"valeur": 0
+						},
+						"qualification_tendance": "synthetic"
+					},
+					"residentiel_appartement": {
+						"precedente": {
+							"fenetre": {
+								"debut_inclus": "2024-01-01",
+								"fin_exclue": "2025-01-01"
+							},
+							"effectif": 3,
+							"mediane": {
+								"etat": "insufficient_sample",
+								"motif": "Échantillon insuffisant."
+							},
+							"quantiles": {
+								"etat": "insufficient_sample",
+								"motif": "Échantillon insuffisant."
+							}
+						},
+						"courante": {
+							"fenetre": {
+								"debut_inclus": "2025-01-01",
+								"fin_exclue": "2026-01-01"
+							},
+							"effectif": 0,
+							"mediane": {
+								"etat": "insufficient_sample",
+								"motif": "Aucune mutation retenue."
+							},
+							"quantiles": {
+								"etat": "insufficient_sample",
+								"motif": "Aucune mutation retenue."
+							}
+						},
+						"variation_pct": {
+							"etat": "insufficient_sample",
+							"motif": "Tendance indisponible."
+						},
+						"qualification_tendance": null
+					}
+				},
+				"indicateurs_dpe": {
+					"version_contrat": "1.0",
+					"version_population": "synthetic-e2e",
+					"date_calcul": "2026-08-03",
+					"generation": "synthetic-g1",
+					"provenance": [
+						{
+							"nom": "DPE synthétique",
+							"producteur": "Fixture E2E",
+							"licence": "fixture",
+							"reference": "synthetic-only",
+							"date_publication_source": null,
+							"date_snapshot": "2026-08-01",
+							"date_import": "2026-08-02",
+							"couverture": "unknown"
+						}
+					],
+					"population": "diagnostics_canoniques_disponibles_hors_traces_retirees",
+					"periode": "bornes_etablissement_observees_non_exhaustives",
+					"date_evaluation": "2026-08-01",
+					"methode_mediane": "percentile_disc",
+					"methode_modes": "toutes_classes_frequence_maximale_ordre_A_G",
+					"resultat": {
+						"etat": "value",
+						"population": {
+							"total": 6,
+							"classes_connues": 5,
+							"types_batiment": {
+								"maison": 2,
+								"appartement": 2,
+								"autre": 1,
+								"inconnu": 1
+							},
+							"validite": {
+								"unknown": 1,
+								"expired": 1,
+								"not_expired_by_date": 4,
+								"inconsistent_dates": 0,
+								"future_establishment": 0
+							},
+							"remplacement": {
+								"not_checked": 5,
+								"no_successor_known": 1,
+								"replaced": 0,
+								"ambiguous": 0
+							},
+							"regimes": {
+								"existant": 4,
+								"neuf": 1,
+								"inconnu": 1
+							},
+							"source_inconnue": 0,
+							"revision_non_verifiee": 5
+						},
+						"distribution": {
+							"classes": {
+								"A": 0,
+								"B": 0,
+								"C": 2,
+								"D": 1,
+								"E": 2,
+								"F": 0,
+								"G": 0
+							},
+							"inconnue": 1
+						},
+						"modes": [
+							"C",
+							"E"
+						],
+						"mediane_ordinale": "D",
+						"part_fg_pct": {
+							"etat": "value",
+							"valeur": 0
+						},
+						"date_etablissement_min": "2020-01-01",
+						"date_etablissement_max": "2026-07-31",
+						"dates_etablissement_inconnues": 1
+					}
+				},
+				"nom_commune": "Paris 12e Arrondissement",
+				"code_departement": "75",
+				"code_region": "11",
+				"population": 21516,
+				"nb_menages": 9800,
+				"nb_logements": 11200,
+				"nb_logements_vacants_recensement": 820,
+				"densite": 287.4,
+				"superficie": 74.9,
+				"annee_demographie": 2021,
+				"revenu_median": 21340,
+				"taux_pauvrete": 12.8,
+				"indice_gini": 0.27,
+				"part_imposee": 58.2,
+				"annee_revenus": 2021,
+				"zone_abc": "B2",
+				"zone_abc_reclassement": false,
+				"taux_vacance": 9.4,
+				"nb_vacants_plus_2ans": 410,
+				"annee_vacance": 2022,
+				"taux_tfpb": 41.3,
+				"taux_th_rs": 18.7,
+				"taux_teom": 11.2,
+				"nom_epci": "CC Challans Gois Vie Océan",
+				"annee_fiscalite": 2023,
+				"loyer_m2_appartement": 9.1,
+				"loyer_m2_maison": 8.4,
+				"annee_loyers": 2023,
+				"loyers_appartement": null,
+				"loyers_maison": null,
+				"prix_m2_median": 2410,
+				"nb_mutations_12m": 271,
+				"prix_m2_median_maison": 2480,
+				"nb_mutations_12m_maison": 268,
+				"prix_m2_median_appartement": null,
+				"nb_mutations_12m_appartement": 3,
+				"dpe_passoires_pct": 9.25,
+				"dpe_median": "D",
+				"annee_construction_mediane": 1985,
+				"nb_equipements": 1124,
+				"annee_equipements": 2023,
+				"nb_etablissements_scolaires": 4,
+				"nb_monuments": 2,
+				"nb_proprietaires_pm": 1187,
+				"surface_pm_ha": 932.5,
+				"fibre_pct": null,
+				"etats": {
+					"prix_m2_median_appartement": {
+						"etat": "insufficient_sample",
+						"motif": "3 ventes d’appartements sur 12 mois, sous le seuil de publication de 5."
+					},
+					"fibre_pct": {
+						"etat": "not_reported",
+						"motif": "Aucune ligne de la source pour cette commune."
+					}
+				},
+				"fenetre_mediane_dvf": "2024-12-31 → 2025-12-31",
+				"type_zone": "arrondissement",
+				"commune_parent": "75056"
+			}
+		},
+		"jsonLd": [
+			"{\"@context\":\"https://schema.org\",\"@type\":\"Dataset\",\"name\":\"Données publiques de 12e arrondissement de Paris\",\"description\":\"Fiche publique de 12e arrondissement de Paris : 21 516 habitants (2021, INSEE). Prix, tendance, DPE, loyers, revenus et services, avec leurs sources.\",\"url\":\"https://datacommune.fr/commune/75112\",\"inLanguage\":\"fr\",\"isAccessibleForFree\":true,\"creator\":{\"@type\":\"Organization\",\"name\":\"DataCommune\",\"url\":\"https://datacommune.fr\"},\"spatialCoverage\":{\"@type\":\"Place\",\"name\":\"12e arrondissement de Paris\",\"identifier\":\"75112\",\"containedInPlace\":{\"@type\":\"Place\",\"name\":\"Paris\",\"identifier\":\"75056\",\"url\":\"https://datacommune.fr/commune/75056\",\"containedInPlace\":{\"@type\":\"AdministrativeArea\",\"name\":\"Paris\",\"identifier\":\"75\",\"url\":\"https://datacommune.fr/departement/75\"}}}}",
+			"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https://datacommune.fr/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Paris (département)\",\"item\":\"https://datacommune.fr/departement/75\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Paris\",\"item\":\"https://datacommune.fr/commune/75056\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"12e arrondissement\",\"item\":\"https://datacommune.fr/commune/75112\"}]}",
+			"{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"12e arrondissement de Paris : quel est le prix médian des maisons ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Le prix médian au mètre carré des maisons vendues dans l’arrondissement est de 2 000 €/m² (12 ventes, 2025). Source : DVF synthétique.\"}},{\"@type\":\"Question\",\"name\":\"12e arrondissement de Paris : quelle part des DPE est classée F ou G ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"0 % des 5 diagnostics de performance énergétique de classe connue sont classés F ou G. Un DPE est un document, pas un logement : ce n’est pas une part du parc de logements.\"}},{\"@type\":\"Question\",\"name\":\"12e arrondissement de Paris : quelle est la classe DPE la plus fréquente ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Les classes C et E sont les plus fréquentes, à égalité, parmi les 5 diagnostics de classe connue.\"}},{\"@type\":\"Question\",\"name\":\"12e arrondissement de Paris : combien d’habitants compte l’arrondissement ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"12e arrondissement de Paris compte 21 516 habitants (2021, INSEE).\"}}]}"
+		]
+	},
+	"85047": {
+		"csv": "﻿Thème,Indicateur,Valeur ou motif,État,Maille,\"Période, population, source et réserves\"\nImmobilier,Prix médian des maisons (fenêtre courante),2 000 €/m²,value,Commune,Population statistique : mutations résidentielles mono-local hors ventes sur plan mono-commune · Calcul : 2026-08-03 · Génération : synthetic-g1 · Population : synthetic-e2e · Source(s) : DVF synthétique · Source : DVF synthétique · Producteur : Fixture E2E · Licence : fixture · Référence : synthetic-only · Publication source : non renseignée · Snapshot : 2026-08-01 · Import : 2026-08-02 · Couverture : unknown · Période : 2025-01-01 → 2026-01-01 (fin exclue) · 12 mutations\nImmobilier,Volume des maisons (fenêtre courante),12,value,Commune,Population statistique : mutations résidentielles mono-local hors ventes sur plan mono-commune · Calcul : 2026-08-03 · Génération : synthetic-g1 · Population : synthetic-e2e · Source(s) : DVF synthétique · Source : DVF synthétique · Producteur : Fixture E2E · Licence : fixture · Référence : synthetic-only · Publication source : non renseignée · Snapshot : 2026-08-01 · Import : 2026-08-02 · Couverture : unknown · Période : 2025-01-01 → 2026-01-01 (fin exclue) · 12 mutations\nImmobilier,Intervalle P10–P90 des maisons (fenêtre courante),2 000 €/m² (P10 = P90),value,Commune,Population statistique : mutations résidentielles mono-local hors ventes sur plan mono-commune · Calcul : 2026-08-03 · Génération : synthetic-g1 · Population : synthetic-e2e · Source(s) : DVF synthétique · Source : DVF synthétique · Producteur : Fixture E2E · Licence : fixture · Référence : synthetic-only · Publication source : non renseignée · Snapshot : 2026-08-01 · Import : 2026-08-02 · Couverture : unknown · Période : 2025-01-01 → 2026-01-01 (fin exclue) · 12 mutations\nImmobilier,Prix médian des maisons (fenêtre précédente),2 000 €/m²,value,Commune,Population statistique : mutations résidentielles mono-local hors ventes sur plan mono-commune · Calcul : 2026-08-03 · Génération : synthetic-g1 · Population : synthetic-e2e · Source(s) : DVF synthétique · Source : DVF synthétique · Producteur : Fixture E2E · Licence : fixture · Référence : synthetic-only · Publication source : non renseignée · Snapshot : 2026-08-01 · Import : 2026-08-02 · Couverture : unknown · Période : 2024-01-01 → 2025-01-01 (fin exclue) · 10 mutations\nImmobilier,Volume des maisons (fenêtre précédente),10,value,Commune,Population statistique : mutations résidentielles mono-local hors ventes sur plan mono-commune · Calcul : 2026-08-03 · Génération : synthetic-g1 · Population : synthetic-e2e · Source(s) : DVF synthétique · Source : DVF synthétique · Producteur : Fixture E2E · Licence : fixture · Référence : synthetic-only · Publication source : non renseignée · Snapshot : 2026-08-01 · Import : 2026-08-02 · Couverture : unknown · Période : 2024-01-01 → 2025-01-01 (fin exclue) · 10 mutations\nImmobilier,Variation du prix médian des maisons,0 %,value,Commune,Population statistique : mutations résidentielles mono-local hors ventes sur plan mono-commune · Calcul : 2026-08-03 · Génération : synthetic-g1 · Population : synthetic-e2e · Source(s) : DVF synthétique · Source : DVF synthétique · Producteur : Fixture E2E · Licence : fixture · Référence : synthetic-only · Publication source : non renseignée · Snapshot : 2026-08-01 · Import : 2026-08-02 · Couverture : unknown · Période : 2025-01-01 → 2026-01-01 (fin exclue) · 12 mutations · Fenêtre précédente — Calcul : 2026-08-03 · Fenêtre précédente — Génération : synthetic-g1 · Fenêtre précédente — Population : synthetic-e2e · Fenêtre précédente — Source(s) : DVF synthétique · Fenêtre précédente — Source : DVF synthétique · Fenêtre précédente — Producteur : Fixture E2E · Fenêtre précédente — Licence : fixture · Fenêtre précédente — Référence : synthetic-only · Fenêtre précédente — Publication source : non renseignée · Fenêtre précédente — Snapshot : 2026-08-01 · Fenêtre précédente — Import : 2026-08-02 · Fenêtre précédente — Couverture : unknown · Fenêtre précédente — Période : 2024-01-01 → 2025-01-01 (fin exclue) · Fenêtre précédente — 10 mutations · Qualification : synthetic\nImmobilier,Prix médian des appartements (fenêtre courante),Effectif insuffisant,insufficient_sample,Commune,Motif : Aucune mutation retenue. · Population statistique : mutations résidentielles mono-local hors ventes sur plan mono-commune · État source : insufficient_sample · Motif : Aucune mutation retenue. · Calcul : 2026-08-03 · Génération : synthetic-g1 · Population : synthetic-e2e · Source(s) : DVF synthétique · Source : DVF synthétique · Producteur : Fixture E2E · Licence : fixture · Référence : synthetic-only · Publication source : non renseignée · Snapshot : 2026-08-01 · Import : 2026-08-02 · Couverture : unknown · Période : 2025-01-01 → 2026-01-01 (fin exclue) · 0 mutations\nImmobilier,Volume des appartements (fenêtre courante),0,value,Commune,Population statistique : mutations résidentielles mono-local hors ventes sur plan mono-commune · Calcul : 2026-08-03 · Génération : synthetic-g1 · Population : synthetic-e2e · Source(s) : DVF synthétique · Source : DVF synthétique · Producteur : Fixture E2E · Licence : fixture · Référence : synthetic-only · Publication source : non renseignée · Snapshot : 2026-08-01 · Import : 2026-08-02 · Couverture : unknown · Période : 2025-01-01 → 2026-01-01 (fin exclue) · 0 mutations\nImmobilier,Intervalle P10–P90 des appartements (fenêtre courante),Effectif insuffisant,insufficient_sample,Commune,Motif : Aucune mutation retenue. · Population statistique : mutations résidentielles mono-local hors ventes sur plan mono-commune · État source : insufficient_sample · Motif : Aucune mutation retenue. · Calcul : 2026-08-03 · Génération : synthetic-g1 · Population : synthetic-e2e · Source(s) : DVF synthétique · Source : DVF synthétique · Producteur : Fixture E2E · Licence : fixture · Référence : synthetic-only · Publication source : non renseignée · Snapshot : 2026-08-01 · Import : 2026-08-02 · Couverture : unknown · Période : 2025-01-01 → 2026-01-01 (fin exclue) · 0 mutations\nImmobilier,Prix médian des appartements (fenêtre précédente),Effectif insuffisant,insufficient_sample,Commune,Motif : Échantillon insuffisant. · Population statistique : mutations résidentielles mono-local hors ventes sur plan mono-commune · État source : insufficient_sample · Motif : Échantillon insuffisant. · Calcul : 2026-08-03 · Génération : synthetic-g1 · Population : synthetic-e2e · Source(s) : DVF synthétique · Source : DVF synthétique · Producteur : Fixture E2E · Licence : fixture · Référence : synthetic-only · Publication source : non renseignée · Snapshot : 2026-08-01 · Import : 2026-08-02 · Couverture : unknown · Période : 2024-01-01 → 2025-01-01 (fin exclue) · 3 mutations\nImmobilier,Volume des appartements (fenêtre précédente),3,value,Commune,Population statistique : mutations résidentielles mono-local hors ventes sur plan mono-commune · Calcul : 2026-08-03 · Génération : synthetic-g1 · Population : synthetic-e2e · Source(s) : DVF synthétique · Source : DVF synthétique · Producteur : Fixture E2E · Licence : fixture · Référence : synthetic-only · Publication source : non renseignée · Snapshot : 2026-08-01 · Import : 2026-08-02 · Couverture : unknown · Période : 2024-01-01 → 2025-01-01 (fin exclue) · 3 mutations\nImmobilier,Variation du prix médian des appartements,Effectif insuffisant,insufficient_sample,Commune,Motif : Tendance indisponible. · Population statistique : mutations résidentielles mono-local hors ventes sur plan mono-commune · État source : insufficient_sample · Motif : Tendance indisponible. · Calcul : 2026-08-03 · Génération : synthetic-g1 · Population : synthetic-e2e · Source(s) : DVF synthétique · Source : DVF synthétique · Producteur : Fixture E2E · Licence : fixture · Référence : synthetic-only · Publication source : non renseignée · Snapshot : 2026-08-01 · Import : 2026-08-02 · Couverture : unknown · Période : 2025-01-01 → 2026-01-01 (fin exclue) · 0 mutations · Fenêtre précédente — Calcul : 2026-08-03 · Fenêtre précédente — Génération : synthetic-g1 · Fenêtre précédente — Population : synthetic-e2e · Fenêtre précédente — Source(s) : DVF synthétique · Fenêtre précédente — Source : DVF synthétique · Fenêtre précédente — Producteur : Fixture E2E · Fenêtre précédente — Licence : fixture · Fenêtre précédente — Référence : synthetic-only · Fenêtre précédente — Publication source : non renseignée · Fenêtre précédente — Snapshot : 2026-08-01 · Fenêtre précédente — Import : 2026-08-02 · Fenêtre précédente — Couverture : unknown · Fenêtre précédente — Période : 2024-01-01 → 2025-01-01 (fin exclue) · Fenêtre précédente — 3 mutations\nImmobilier,Prix médian de vente (hors ventes sur plan),2 410 €/m²,value,Commune,2024-12-31 → 2025-12-31\nImmobilier,Prix médian maison (hors ventes sur plan),2 480 €/m²,value,Commune,2024-12-31 → 2025-12-31\nImmobilier,Ventes de maisons sur 12 mois,268,value,Commune,2024-12-31 → 2025-12-31\nImmobilier,Prix médian appartement (hors ventes sur plan),Effectif insuffisant,insufficient_sample,Commune,\"2024-12-31 → 2025-12-31 · Motif : 3 ventes d’appartements sur 12 mois, sous le seuil de publication de 5.\"\nImmobilier,Ventes d'appartements sur 12 mois,3,value,Commune,2024-12-31 → 2025-12-31\nImmobilier,Mutations sur 12 mois,271,value,Commune,2024-12-31 → 2025-12-31\nImmobilier,Loyer d'annonce prédit appartement,\"9,1 €/m²/mois\",value,Maille d’estimation inconnue,\"Millésime 2023 · Précisions inconnues : charges, bien type, trimestre, maille et qualité. Ces précisions ne sont pas disponibles pour cette donnée.\"\nImmobilier,Loyer d'annonce prédit maison,\"8,4 €/m²/mois\",value,Maille d’estimation inconnue,\"Millésime 2023 · Précisions inconnues : charges, bien type, trimestre, maille et qualité. Ces précisions ne sont pas disponibles pour cette donnée.\"\nImmobilier,Année de référence (loyers),2023,value,Commune,Millésime 2023\nImmobilier,Logements recensés,11 200,value,Commune,Millésime 2021\nImmobilier,Logements vacants au recensement,820,value,Commune,Millésime 2021\nImmobilier,Taux de vacance du parc privé,\"9,4 %\",value,Parc privé communal,\"Vacants : 2022 · année du parc privé non renseignée · Taux de vacance du parc privé, toutes durées confondues. Le nombre de logements vacants depuis plus de deux ans est un indicateur distinct ; le dénominateur privé n’est pas fourni par cette fiche.\"\nImmobilier,Logements vacants > 2 ans,410,value,Parc privé communal,Vacants : 2022\nImmobilier,Ancrage temporel DVF,Fixture synthétique : aucune qualification réelle.,context,Maille non renseignée,\nÉnergie & bâti,Population DPE observée,6 diagnostics disponibles,value,Commune,Calcul : 2026-08-03 · Génération : synthetic-g1 · Population : synthetic-e2e · Source(s) : DPE synthétique · Source : DPE synthétique · Producteur : Fixture E2E · Licence : fixture · Référence : synthetic-only · Publication source : non renseignée · Snapshot : 2026-08-01 · Import : 2026-08-02 · Couverture : unknown · Évaluation : 2026-08-01 · Population : diagnostics_canoniques_disponibles_hors_traces_retirees · 6 diagnostics disponibles · 5 classes connues · 1 classe inconnue · Type maison : 2 · Type appartement : 2 · Type autre : 1 · Type inconnu : 1 · Validité — inconnue [Validité unknown : 1] : 1 · Validité — expirée [Validité expired : 1] : 1 · Validité — non expirée à la date d’évaluation [Validité not_expired_by_date : 4] : 4 · Validité — dates incohérentes [Validité inconsistent_dates : 0] : 0 · Validité — date d’établissement future [Validité future_establishment : 0] : 0 · Remplacement — non vérifié [Remplacement not_checked : 5] : 5 · Remplacement — aucun successeur connu [Remplacement no_successor_known : 1] : 1 · Remplacement — remplacé [Remplacement replaced : 0] : 0 · Remplacement — ambigu [Remplacement ambiguous : 0] : 0 · Régime existant : 4 · Régime neuf : 1 · Régime inconnu : 1 · Source inconnue : 0 · Révisions non vérifiées : 5 · Dates d’établissement inconnues : 1 · Traces retirées exclues de la population. · Ces diagnostics ne représentent pas un décompte de logements.\nÉnergie & bâti,Distribution des classes DPE,A : 0 · B : 0 · C : 2 · D : 1 · E : 2 · F : 0 · G : 0 · inconnue : 1,value,Commune,Calcul : 2026-08-03 · Génération : synthetic-g1 · Population : synthetic-e2e · Source(s) : DPE synthétique · Source : DPE synthétique · Producteur : Fixture E2E · Licence : fixture · Référence : synthetic-only · Publication source : non renseignée · Snapshot : 2026-08-01 · Import : 2026-08-02 · Couverture : unknown · Évaluation : 2026-08-01 · Population : diagnostics_canoniques_disponibles_hors_traces_retirees · 6 diagnostics disponibles · 5 classes connues · 1 classe inconnue · Type maison : 2 · Type appartement : 2 · Type autre : 1 · Type inconnu : 1 · Validité — inconnue [Validité unknown : 1] : 1 · Validité — expirée [Validité expired : 1] : 1 · Validité — non expirée à la date d’évaluation [Validité not_expired_by_date : 4] : 4 · Validité — dates incohérentes [Validité inconsistent_dates : 0] : 0 · Validité — date d’établissement future [Validité future_establishment : 0] : 0 · Remplacement — non vérifié [Remplacement not_checked : 5] : 5 · Remplacement — aucun successeur connu [Remplacement no_successor_known : 1] : 1 · Remplacement — remplacé [Remplacement replaced : 0] : 0 · Remplacement — ambigu [Remplacement ambiguous : 0] : 0 · Régime existant : 4 · Régime neuf : 1 · Régime inconnu : 1 · Source inconnue : 0 · Révisions non vérifiées : 5 · Dates d’établissement inconnues : 1 · Traces retirées exclues de la population. · Ces diagnostics ne représentent pas un décompte de logements.\nÉnergie & bâti,Bornes des dates d’établissement,du 1er janvier 2020 au 31 juillet 2026,value,Commune,Calcul : 2026-08-03 · Génération : synthetic-g1 · Population : synthetic-e2e · Source(s) : DPE synthétique · Source : DPE synthétique · Producteur : Fixture E2E · Licence : fixture · Référence : synthetic-only · Publication source : non renseignée · Snapshot : 2026-08-01 · Import : 2026-08-02 · Couverture : unknown · Évaluation : 2026-08-01 · Population : diagnostics_canoniques_disponibles_hors_traces_retirees · 6 diagnostics disponibles · 5 classes connues · 1 classe inconnue · Type maison : 2 · Type appartement : 2 · Type autre : 1 · Type inconnu : 1 · Validité — inconnue [Validité unknown : 1] : 1 · Validité — expirée [Validité expired : 1] : 1 · Validité — non expirée à la date d’évaluation [Validité not_expired_by_date : 4] : 4 · Validité — dates incohérentes [Validité inconsistent_dates : 0] : 0 · Validité — date d’établissement future [Validité future_establishment : 0] : 0 · Remplacement — non vérifié [Remplacement not_checked : 5] : 5 · Remplacement — aucun successeur connu [Remplacement no_successor_known : 1] : 1 · Remplacement — remplacé [Remplacement replaced : 0] : 0 · Remplacement — ambigu [Remplacement ambiguous : 0] : 0 · Régime existant : 4 · Régime neuf : 1 · Régime inconnu : 1 · Source inconnue : 0 · Révisions non vérifiées : 5 · Dates d’établissement inconnues : 1 · Traces retirées exclues de la population. · Ces diagnostics ne représentent pas un décompte de logements.\nÉnergie & bâti,Classe DPE médiane,D,value,Commune,Calcul : 2026-08-03 · Génération : synthetic-g1 · Population : synthetic-e2e · Source(s) : DPE synthétique · Source : DPE synthétique · Producteur : Fixture E2E · Licence : fixture · Référence : synthetic-only · Publication source : non renseignée · Snapshot : 2026-08-01 · Import : 2026-08-02 · Couverture : unknown · Évaluation : 2026-08-01 · Population : diagnostics_canoniques_disponibles_hors_traces_retirees · 6 diagnostics disponibles · 5 classes connues · 1 classe inconnue · Type maison : 2 · Type appartement : 2 · Type autre : 1 · Type inconnu : 1 · Validité — inconnue [Validité unknown : 1] : 1 · Validité — expirée [Validité expired : 1] : 1 · Validité — non expirée à la date d’évaluation [Validité not_expired_by_date : 4] : 4 · Validité — dates incohérentes [Validité inconsistent_dates : 0] : 0 · Validité — date d’établissement future [Validité future_establishment : 0] : 0 · Remplacement — non vérifié [Remplacement not_checked : 5] : 5 · Remplacement — aucun successeur connu [Remplacement no_successor_known : 1] : 1 · Remplacement — remplacé [Remplacement replaced : 0] : 0 · Remplacement — ambigu [Remplacement ambiguous : 0] : 0 · Régime existant : 4 · Régime neuf : 1 · Régime inconnu : 1 · Source inconnue : 0 · Révisions non vérifiées : 5 · Dates d’établissement inconnues : 1 · Traces retirées exclues de la population. · Ces diagnostics ne représentent pas un décompte de logements.\nÉnergie & bâti,\"Classes les plus fréquentes, ex aequo\",\"C, E\",value,Commune,Calcul : 2026-08-03 · Génération : synthetic-g1 · Population : synthetic-e2e · Source(s) : DPE synthétique · Source : DPE synthétique · Producteur : Fixture E2E · Licence : fixture · Référence : synthetic-only · Publication source : non renseignée · Snapshot : 2026-08-01 · Import : 2026-08-02 · Couverture : unknown · Évaluation : 2026-08-01 · Population : diagnostics_canoniques_disponibles_hors_traces_retirees · 6 diagnostics disponibles · 5 classes connues · 1 classe inconnue · Type maison : 2 · Type appartement : 2 · Type autre : 1 · Type inconnu : 1 · Validité — inconnue [Validité unknown : 1] : 1 · Validité — expirée [Validité expired : 1] : 1 · Validité — non expirée à la date d’évaluation [Validité not_expired_by_date : 4] : 4 · Validité — dates incohérentes [Validité inconsistent_dates : 0] : 0 · Validité — date d’établissement future [Validité future_establishment : 0] : 0 · Remplacement — non vérifié [Remplacement not_checked : 5] : 5 · Remplacement — aucun successeur connu [Remplacement no_successor_known : 1] : 1 · Remplacement — remplacé [Remplacement replaced : 0] : 0 · Remplacement — ambigu [Remplacement ambiguous : 0] : 0 · Régime existant : 4 · Régime neuf : 1 · Régime inconnu : 1 · Source inconnue : 0 · Révisions non vérifiées : 5 · Dates d’établissement inconnues : 1 · Traces retirées exclues de la population. · Ces diagnostics ne représentent pas un décompte de logements.\nÉnergie & bâti,Part des classes F et G,0 %,value,Commune,Calcul : 2026-08-03 · Génération : synthetic-g1 · Population : synthetic-e2e · Source(s) : DPE synthétique · Source : DPE synthétique · Producteur : Fixture E2E · Licence : fixture · Référence : synthetic-only · Publication source : non renseignée · Snapshot : 2026-08-01 · Import : 2026-08-02 · Couverture : unknown · Évaluation : 2026-08-01 · Population : diagnostics_canoniques_disponibles_hors_traces_retirees · 6 diagnostics disponibles · 5 classes connues · 1 classe inconnue · Type maison : 2 · Type appartement : 2 · Type autre : 1 · Type inconnu : 1 · Validité — inconnue [Validité unknown : 1] : 1 · Validité — expirée [Validité expired : 1] : 1 · Validité — non expirée à la date d’évaluation [Validité not_expired_by_date : 4] : 4 · Validité — dates incohérentes [Validité inconsistent_dates : 0] : 0 · Validité — date d’établissement future [Validité future_establishment : 0] : 0 · Remplacement — non vérifié [Remplacement not_checked : 5] : 5 · Remplacement — aucun successeur connu [Remplacement no_successor_known : 1] : 1 · Remplacement — remplacé [Remplacement replaced : 0] : 0 · Remplacement — ambigu [Remplacement ambiguous : 0] : 0 · Régime existant : 4 · Régime neuf : 1 · Régime inconnu : 1 · Source inconnue : 0 · Révisions non vérifiées : 5 · Dates d’établissement inconnues : 1 · Traces retirées exclues de la population. · Ces diagnostics ne représentent pas un décompte de logements.\nÉnergie & bâti,Part des classes F et G,\"9,25 %\",value,Commune,Dates des diagnostics non renseignées\nÉnergie & bâti,Classe DPE médiane,D,value,Commune,Dates des diagnostics non renseignées\nÉnergie & bâti,Année de construction (médiane),1985,value,Commune,Dates des diagnostics non renseignées\nServices & transports,Effectif d’équipements observé,1 124,value,Commune,Millésime 2023\nServices & transports,Collèges référencés par la sectorisation,4,value,Commune,Période de la sectorisation non renseignée\nServices & transports,Fibre (immeubles observés),Non renseigné,not_reported,Commune,Période source non renseignée · Motif : Aucune ligne de la source pour cette commune.\nServices & transports,Portée des dénombrements,\"Équipements : millésime 2023. Ces nombres décrivent le stock observé dans les sources disponibles, sans garantie d’exhaustivité. Une donnée absente ne vaut pas zéro.\",context,Maille non renseignée,\nContexte communal,Population,21 516 hab.,value,Commune,Millésime 2021\nContexte communal,Densité,\"287,4 hab./km²\",value,Commune,Millésime 2021\nContexte communal,Superficie,\"74,9 km²\",value,Commune,Millésime 2021\nContexte communal,Nombre de ménages,9 800,value,Commune,Millésime 2021\nContexte communal,Revenu déclaré médian,21 340 €/UC/an,value,Commune,\"Millésime 2021 · Revenu déclaré annuel par unité de consommation, avant redistribution. Ce revenu ne mesure pas le niveau de vie après impôts et prestations.\"\nContexte communal,Taux de pauvreté,\"12,8 %\",value,Commune,Millésime 2021\nContexte communal,Gini (revenu déclaré),\"0,27\",value,Commune,Millésime 2021\nContexte communal,Part des ménages fiscaux imposés,\"58,2 %\",value,Commune,Millésime 2021\nContexte communal,Taux TFPB,\"41,3 %\",value,Commune,Millésime 2023\nContexte communal,Taux TH résidences secondaires,\"18,7 %\",value,Commune,Millésime 2023\nContexte communal,Taux TEOM,\"11,2 %\",value,Commune,Millésime 2023\nContexte communal,EPCI,CC Challans Gois Vie Océan,value,Commune,Millésime 2023\nContexte communal,Personnes morales référencées,1 187,value,Commune,Période source non renseignée\nContexte communal,Foncier personnes morales,\"932,5 ha\",value,Commune,Période source non renseignée\nContexte communal,Portée du foncier observé,\"Personnes morales et parcelles présentes dans les droits fonciers disponibles, sans garantie d’exhaustivité. Une surface incomplète ou contradictoire reste indisponible.\",context,Maille non renseignée,\nRisques & urbanisme,Zone ABC (tension du marché locatif),B2,value,Commune,Période source non renseignée\nRisques & urbanisme,Reclassement de zone ABC demandé,Non,value,Commune,Période source non renseignée\nRisques & urbanisme,Notices de monuments historiques,2,value,Commune,Période source non renseignée",
+		"json": {
+			"format": "datacommune.commune.v1",
+			"code_insee": "85047",
+			"page": "{ORIGINE}/commune/85047",
+			"licence": "Chaque valeur reste sous la licence de son producteur, nommée dans « sources » ; une réutilisation cite la source. Mentionner DataCommune, avec le lien de la page, est bienvenu sans être une condition.",
+			"etat": "fiche",
+			"sources": [
+				{
+					"nom": "Démographie"
+				},
+				{
+					"nom": "Loyers"
+				},
+				{
+					"nom": "Zonage ABC"
+				}
+			],
+			"donnees": {
+				"code_insee": "85047",
+				"indicateurs_dvf": {
+					"version_contrat": "1.1",
+					"version_population": "synthetic-e2e",
+					"date_calcul": "2026-08-03",
+					"generation": "synthetic-g1",
+					"provenance": [
+						{
+							"nom": "DVF synthétique",
+							"producteur": "Fixture E2E",
+							"licence": "fixture",
+							"reference": "synthetic-only",
+							"date_publication_source": null,
+							"date_snapshot": "2026-08-01",
+							"date_import": "2026-08-02",
+							"couverture": "unknown"
+						}
+					],
+					"ancrage_temporel": {
+						"etat": "unknown",
+						"motif": "Fixture synthétique : aucune qualification réelle."
+					},
+					"population": "mutations_residentielles_mono_local_hors_vefa_mono_commune",
+					"unite_prix": "EUR/m2",
+					"methode_quantiles": "percentile_cont",
+					"methode_variation": "100*(mediane_courante/mediane_precedente-1)",
+					"residentiel_maison": {
+						"precedente": {
+							"fenetre": {
+								"debut_inclus": "2024-01-01",
+								"fin_exclue": "2025-01-01"
+							},
+							"effectif": 10,
+							"mediane": {
+								"etat": "value",
+								"valeur": 2000
+							},
+							"quantiles": {
+								"etat": "value",
+								"p10": 1800,
+								"p50": 2000,
+								"p90": 2200,
+								"qualification": "synthetic"
+							}
+						},
+						"courante": {
+							"fenetre": {
+								"debut_inclus": "2025-01-01",
+								"fin_exclue": "2026-01-01"
+							},
+							"effectif": 12,
+							"mediane": {
+								"etat": "value",
+								"valeur": 2000
+							},
+							"quantiles": {
+								"etat": "value",
+								"p10": 2000,
+								"p50": 2000,
+								"p90": 2000,
+								"qualification": "synthetic"
+							}
+						},
+						"variation_pct": {
+							"etat": "value",
+							"valeur": 0
+						},
+						"qualification_tendance": "synthetic"
+					},
+					"residentiel_appartement": {
+						"precedente": {
+							"fenetre": {
+								"debut_inclus": "2024-01-01",
+								"fin_exclue": "2025-01-01"
+							},
+							"effectif": 3,
+							"mediane": {
+								"etat": "insufficient_sample",
+								"motif": "Échantillon insuffisant."
+							},
+							"quantiles": {
+								"etat": "insufficient_sample",
+								"motif": "Échantillon insuffisant."
+							}
+						},
+						"courante": {
+							"fenetre": {
+								"debut_inclus": "2025-01-01",
+								"fin_exclue": "2026-01-01"
+							},
+							"effectif": 0,
+							"mediane": {
+								"etat": "insufficient_sample",
+								"motif": "Aucune mutation retenue."
+							},
+							"quantiles": {
+								"etat": "insufficient_sample",
+								"motif": "Aucune mutation retenue."
+							}
+						},
+						"variation_pct": {
+							"etat": "insufficient_sample",
+							"motif": "Tendance indisponible."
+						},
+						"qualification_tendance": null
+					}
+				},
+				"indicateurs_dpe": {
+					"version_contrat": "1.0",
+					"version_population": "synthetic-e2e",
+					"date_calcul": "2026-08-03",
+					"generation": "synthetic-g1",
+					"provenance": [
+						{
+							"nom": "DPE synthétique",
+							"producteur": "Fixture E2E",
+							"licence": "fixture",
+							"reference": "synthetic-only",
+							"date_publication_source": null,
+							"date_snapshot": "2026-08-01",
+							"date_import": "2026-08-02",
+							"couverture": "unknown"
+						}
+					],
+					"population": "diagnostics_canoniques_disponibles_hors_traces_retirees",
+					"periode": "bornes_etablissement_observees_non_exhaustives",
+					"date_evaluation": "2026-08-01",
+					"methode_mediane": "percentile_disc",
+					"methode_modes": "toutes_classes_frequence_maximale_ordre_A_G",
+					"resultat": {
+						"etat": "value",
+						"population": {
+							"total": 6,
+							"classes_connues": 5,
+							"types_batiment": {
+								"maison": 2,
+								"appartement": 2,
+								"autre": 1,
+								"inconnu": 1
+							},
+							"validite": {
+								"unknown": 1,
+								"expired": 1,
+								"not_expired_by_date": 4,
+								"inconsistent_dates": 0,
+								"future_establishment": 0
+							},
+							"remplacement": {
+								"not_checked": 5,
+								"no_successor_known": 1,
+								"replaced": 0,
+								"ambiguous": 0
+							},
+							"regimes": {
+								"existant": 4,
+								"neuf": 1,
+								"inconnu": 1
+							},
+							"source_inconnue": 0,
+							"revision_non_verifiee": 5
+						},
+						"distribution": {
+							"classes": {
+								"A": 0,
+								"B": 0,
+								"C": 2,
+								"D": 1,
+								"E": 2,
+								"F": 0,
+								"G": 0
+							},
+							"inconnue": 1
+						},
+						"modes": [
+							"C",
+							"E"
+						],
+						"mediane_ordinale": "D",
+						"part_fg_pct": {
+							"etat": "value",
+							"valeur": 0
+						},
+						"date_etablissement_min": "2020-01-01",
+						"date_etablissement_max": "2026-07-31",
+						"dates_etablissement_inconnues": 1
+					}
+				},
+				"nom_commune": "Challans",
+				"code_departement": "85",
+				"code_region": "52",
+				"population": 21516,
+				"nb_menages": 9800,
+				"nb_logements": 11200,
+				"nb_logements_vacants_recensement": 820,
+				"densite": 287.4,
+				"superficie": 74.9,
+				"annee_demographie": 2021,
+				"revenu_median": 21340,
+				"taux_pauvrete": 12.8,
+				"indice_gini": 0.27,
+				"part_imposee": 58.2,
+				"annee_revenus": 2021,
+				"zone_abc": "B2",
+				"zone_abc_reclassement": false,
+				"taux_vacance": 9.4,
+				"nb_vacants_plus_2ans": 410,
+				"annee_vacance": 2022,
+				"taux_tfpb": 41.3,
+				"taux_th_rs": 18.7,
+				"taux_teom": 11.2,
+				"nom_epci": "CC Challans Gois Vie Océan",
+				"annee_fiscalite": 2023,
+				"loyer_m2_appartement": 9.1,
+				"loyer_m2_maison": 8.4,
+				"annee_loyers": 2023,
+				"loyers_appartement": null,
+				"loyers_maison": null,
+				"prix_m2_median": 2410,
+				"nb_mutations_12m": 271,
+				"prix_m2_median_maison": 2480,
+				"nb_mutations_12m_maison": 268,
+				"prix_m2_median_appartement": null,
+				"nb_mutations_12m_appartement": 3,
+				"dpe_passoires_pct": 9.25,
+				"dpe_median": "D",
+				"annee_construction_mediane": 1985,
+				"nb_equipements": 1124,
+				"annee_equipements": 2023,
+				"nb_etablissements_scolaires": 4,
+				"nb_monuments": 2,
+				"nb_proprietaires_pm": 1187,
+				"surface_pm_ha": 932.5,
+				"fibre_pct": null,
+				"etats": {
+					"prix_m2_median_appartement": {
+						"etat": "insufficient_sample",
+						"motif": "3 ventes d’appartements sur 12 mois, sous le seuil de publication de 5."
+					},
+					"fibre_pct": {
+						"etat": "not_reported",
+						"motif": "Aucune ligne de la source pour cette commune."
+					}
+				},
+				"fenetre_mediane_dvf": "2024-12-31 → 2025-12-31"
+			}
+		},
+		"jsonLd": [
+			"{\"@context\":\"https://schema.org\",\"@type\":\"Dataset\",\"name\":\"Données publiques de Challans\",\"description\":\"Fiche publique de Challans : 21 516 habitants (2021, INSEE). Prix, tendance, DPE, loyers, revenus et services, avec leurs sources.\",\"url\":\"https://datacommune.fr/commune/85047\",\"inLanguage\":\"fr\",\"isAccessibleForFree\":true,\"creator\":{\"@type\":\"Organization\",\"name\":\"DataCommune\",\"url\":\"https://datacommune.fr\"},\"spatialCoverage\":{\"@type\":\"Place\",\"name\":\"Challans\",\"identifier\":\"85047\",\"containedInPlace\":{\"@type\":\"AdministrativeArea\",\"name\":\"Vendée\",\"identifier\":\"85\",\"url\":\"https://datacommune.fr/departement/85\"}}}",
+			"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https://datacommune.fr/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Vendée\",\"item\":\"https://datacommune.fr/departement/85\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Challans\",\"item\":\"https://datacommune.fr/commune/85047\"}]}",
+			"{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Challans : quel est le prix médian des maisons ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Le prix médian au mètre carré des maisons vendues dans la commune est de 2 000 €/m² (12 ventes, 2025). Source : DVF synthétique.\"}},{\"@type\":\"Question\",\"name\":\"Challans : quelle part des DPE est classée F ou G ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"0 % des 5 diagnostics de performance énergétique de classe connue sont classés F ou G. Un DPE est un document, pas un logement : ce n’est pas une part du parc de logements.\"}},{\"@type\":\"Question\",\"name\":\"Challans : quelle est la classe DPE la plus fréquente ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Les classes C et E sont les plus fréquentes, à égalité, parmi les 5 diagnostics de classe connue.\"}},{\"@type\":\"Question\",\"name\":\"Challans : combien d’habitants compte la commune ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Challans compte 21 516 habitants (2021, INSEE).\"}}]}"
+		]
+	}
+}

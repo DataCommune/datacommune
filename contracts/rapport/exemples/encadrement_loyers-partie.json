@@ -1,0 +1,48 @@
+{
+  "id": "encadrement_loyers",
+  "section": "marche",
+  "titre": "Encadrement des loyers",
+  "etat": "ok",
+  "ton": "neutre",
+  "granularite": {
+    "niveau": "commune",
+    "rayon_m": null
+  },
+  "verdict": "Loyers encadrés dans une partie de la commune jusqu'au 24 novembre 2026 : l'adresse n'est pas située par rapport au périmètre.",
+  "chiffres": [],
+  "details": {
+    "commune": "38185",
+    "statut": "en_vigueur",
+    "perimetre": "partie",
+    "territoire": "Grenoble-Alpes Métropole (21 communes)",
+    "decret": "Décret n° 2023-1046 du 16 novembre 2023",
+    "arrete": {
+      "numero": "38-2026-01-06-00018",
+      "date": "2026-01-06",
+      "source": "Préfecture de l'Isère : arrêté n° 38-2026-01-06-00018 (loyers de référence de 21 communes de Grenoble-Alpes Métropole)",
+      "url": "https://www.isere.gouv.fr/contenu/telechargement/81348/628581/file/AP_encadr_2026_sign%C3%A9_numero.pdf"
+    },
+    "en_vigueur_du": "2026-01-20",
+    "en_vigueur_au": "2026-11-24",
+    "arrete_precedent": null,
+    "liste_verifiee_le": "2026-10-29",
+    "loyers_reference": {
+      "etat": "hors_couverture",
+      "motif": "loyers_reference_non_importes"
+    }
+  },
+  "rattachement": null,
+  "sources": [
+    {
+      "cle": "encadrement_communes",
+      "nom": "Communes à encadrement du niveau des loyers (loi ELAN, article 140)",
+      "producteur": "Naistor, d'après les décrets et arrêtés préfectoraux",
+      "url": "https://www.data.gouv.fr/datasets/6ae3c8c1252503d60d5c00df",
+      "licence": "Licence Ouverte 2.0",
+      "millesime": "2026-10-29",
+      "mode": "direct"
+    }
+  ],
+  "motif": null,
+  "pannes_partielles": []
+}

@@ -1,0 +1,38 @@
+# ⚠️ LEGACY — le « prod DB » via SSH tunnel = prod01 décommissionnée ~2026-06.
+# Local dev override — hot reload + SSH tunnel to prod DB.
+#
+# Prerequisites:
+#   1. SSH tunnel running: ssh -N -L 15432:localhost:5432 datacommune
+#   2. docker-compose.tunnel.yml deployed on LXC (one-time)
+#   3. PROD_DB_PASSWORD set in .env
+#
+# Usage:
+#   docker compose -f docker-compose.yml -f docker-compose.local.yml up
+#
+# Access:
+#   http://localhost      (via Caddy — with CSP headers)
+#   http://localhost:8000 (direct API — no CSP)
+
+services:
+  api:
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      DATABASE_URL: postgresql+asyncpg://datacommune:${PROD_DB_PASSWORD}@host.docker.internal:15432/datacommune
+      DEBUG: "true"
+      JWT_SECRET_KEY: "dev-secret-local"
+      ADMIN_USERNAME: admin
+      ADMIN_PASSWORD: dev-admin-local
+    volumes:
+      - ./backend/app:/app/app    # Hot reload source (templates, static, Python)
+    command: ["uvicorn", "app.main:app", "--reload", "--host", "0.0.0.0", "--port", "8000", "--no-access-log"]
+
+  caddy:
+    image: caddy:2
+    ports:
+      - "127.0.0.1:80:80"
+    volumes:
+      - ./Caddyfile.dev:/etc/caddy/Caddyfile:ro
+    depends_on:
+      api:
+        condition: service_started

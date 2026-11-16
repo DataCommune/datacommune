@@ -1,0 +1,2068 @@
+{
+	"ancien_et_actuel": {
+		"statut": "ok",
+		"donnees": {
+			"colonnes": [
+				{
+					"numero": "2185E0000001A",
+					"disponibilite": "disponible",
+					"methode": "ancienne",
+					"statut": "ancienne_methode",
+					"validite": "not_expired_by_date",
+					"adresse_declaree": {
+						"etat": "publiee",
+						"texte": "12 rue des Lilas",
+						"motif": null
+					}
+				},
+				{
+					"numero": "2385E0123456A",
+					"disponibilite": "disponible",
+					"methode": "actuelle",
+					"statut": "en_vigueur",
+					"validite": "not_expired_by_date",
+					"adresse_declaree": {
+						"etat": "masquee",
+						"texte": null,
+						"motif": "complement_present"
+					}
+				}
+			],
+			"groupes": [
+				{
+					"cle": "etiquettes",
+					"titre": "Étiquettes",
+					"lignes": [
+						{
+							"cle": "classe_energie",
+							"field_id": "dpe.document.etiquette_dpe",
+							"identiques": false,
+							"cellules": [
+								{
+									"field_id": "dpe.document.etiquette_dpe",
+									"etat": "value",
+									"motif": null,
+									"valeur": "D",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2185E0000001A",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": null
+								},
+								{
+									"field_id": "dpe.document.etiquette_dpe",
+									"etat": "value",
+									"motif": null,
+									"valeur": "D",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2385E0123456A",
+									"ecart": null,
+									"motif_non_calcul": "methodes_differentes",
+									"verdict": null,
+									"identique_a_la_reference": false
+								}
+							]
+						},
+						{
+							"cle": "consommation_m2",
+							"field_id": "dpe.document.conso_ep_m2",
+							"identiques": false,
+							"cellules": [
+								{
+									"field_id": "dpe.document.conso_ep_m2",
+									"etat": "value",
+									"motif": null,
+									"valeur": 231.0,
+									"unite": "kwh_ep_per_m2_per_year",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2185E0000001A",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": null
+								},
+								{
+									"field_id": "dpe.document.conso_ep_m2",
+									"etat": "value",
+									"motif": null,
+									"valeur": 231.0,
+									"unite": "kwh_ep_per_m2_per_year",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2385E0123456A",
+									"ecart": null,
+									"motif_non_calcul": "methodes_differentes",
+									"verdict": null,
+									"identique_a_la_reference": false
+								}
+							]
+						},
+						{
+							"cle": "classe_climat",
+							"field_id": "dpe.document.etiquette_ges",
+							"identiques": false,
+							"cellules": [
+								{
+									"field_id": "dpe.document.etiquette_ges",
+									"etat": "value",
+									"motif": null,
+									"valeur": "C",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2185E0000001A",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": null
+								},
+								{
+									"field_id": "dpe.document.etiquette_ges",
+									"etat": "value",
+									"motif": null,
+									"valeur": "C",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2385E0123456A",
+									"ecart": null,
+									"motif_non_calcul": "methodes_differentes",
+									"verdict": null,
+									"identique_a_la_reference": false
+								}
+							]
+						},
+						{
+							"cle": "emissions_m2",
+							"field_id": "dpe.document.emissions_ges_m2",
+							"identiques": false,
+							"cellules": [
+								{
+									"field_id": "dpe.document.emissions_ges_m2",
+									"etat": "value",
+									"motif": null,
+									"valeur": 47.5,
+									"unite": "kg_co2_eq_per_m2_per_year",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2185E0000001A",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": null
+								},
+								{
+									"field_id": "dpe.document.emissions_ges_m2",
+									"etat": "value",
+									"motif": null,
+									"valeur": 47.5,
+									"unite": "kg_co2_eq_per_m2_per_year",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2385E0123456A",
+									"ecart": null,
+									"motif_non_calcul": "methodes_differentes",
+									"verdict": null,
+									"identique_a_la_reference": false
+								}
+							]
+						},
+						{
+							"cle": "consommation",
+							"field_id": "dpe.document.conso_ep",
+							"identiques": false,
+							"cellules": [
+								{
+									"field_id": "dpe.document.conso_ep",
+									"etat": "value",
+									"motif": null,
+									"valeur": 17830.4,
+									"unite": "kwh_ep_per_year",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2185E0000001A",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": null
+								},
+								{
+									"field_id": "dpe.document.conso_ep",
+									"etat": "value",
+									"motif": null,
+									"valeur": 17830.4,
+									"unite": "kwh_ep_per_year",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2385E0123456A",
+									"ecart": null,
+									"motif_non_calcul": "methodes_differentes",
+									"verdict": null,
+									"identique_a_la_reference": false
+								}
+							]
+						},
+						{
+							"cle": "emissions",
+							"field_id": "dpe.document.emissions_ges",
+							"identiques": false,
+							"cellules": [
+								{
+									"field_id": "dpe.document.emissions_ges",
+									"etat": "value",
+									"motif": null,
+									"valeur": 3433.1,
+									"unite": "kg_co2_eq_per_year",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2185E0000001A",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": null
+								},
+								{
+									"field_id": "dpe.document.emissions_ges",
+									"etat": "value",
+									"motif": null,
+									"valeur": 3433.1,
+									"unite": "kg_co2_eq_per_year",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2385E0123456A",
+									"ecart": null,
+									"motif_non_calcul": "methodes_differentes",
+									"verdict": null,
+									"identique_a_la_reference": false
+								}
+							]
+						}
+					]
+				},
+				{
+					"cle": "logement",
+					"titre": "Logement décrit",
+					"lignes": [
+						{
+							"cle": "type_batiment",
+							"field_id": "dpe.document.type_batiment",
+							"identiques": true,
+							"cellules": [
+								{
+									"field_id": "dpe.document.type_batiment",
+									"etat": "value",
+									"motif": null,
+									"valeur": "maison",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2185E0000001A",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": null
+								},
+								{
+									"field_id": "dpe.document.type_batiment",
+									"etat": "value",
+									"motif": null,
+									"valeur": "maison",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2385E0123456A",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": "identique",
+									"identique_a_la_reference": true
+								}
+							]
+						},
+						{
+							"cle": "surface",
+							"field_id": "dpe.document.surface_habitable",
+							"identiques": true,
+							"cellules": [
+								{
+									"field_id": "dpe.document.surface_habitable",
+									"etat": "value",
+									"motif": null,
+									"valeur": 79.0,
+									"unite": "m2",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2185E0000001A",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": null
+								},
+								{
+									"field_id": "dpe.document.surface_habitable",
+									"etat": "value",
+									"motif": null,
+									"valeur": 79.0,
+									"unite": "m2",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2385E0123456A",
+									"ecart": {
+										"valeur": 0.0,
+										"unite": "m2"
+									},
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": true
+								}
+							]
+						},
+						{
+							"cle": "periode_construction",
+							"field_id": "dpe.document.periode_construction",
+							"identiques": true,
+							"cellules": [
+								{
+									"field_id": "dpe.document.periode_construction",
+									"etat": "value",
+									"motif": null,
+									"valeur": "1948-1974",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2185E0000001A",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": null
+								},
+								{
+									"field_id": "dpe.document.periode_construction",
+									"etat": "value",
+									"motif": null,
+									"valeur": "1948-1974",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2385E0123456A",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": "identique",
+									"identique_a_la_reference": true
+								}
+							]
+						},
+						{
+							"cle": "energie_chauffage",
+							"field_id": "dpe.document.energie_chauffage",
+							"identiques": false,
+							"cellules": [
+								{
+									"field_id": "dpe.document.energie_chauffage",
+									"etat": "value",
+									"motif": null,
+									"valeur": "Gaz naturel",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2185E0000001A",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": null
+								},
+								{
+									"field_id": "dpe.document.energie_chauffage",
+									"etat": "not_reported",
+									"motif": null,
+									"valeur": null,
+									"unite": null,
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2385E0123456A",
+									"ecart": null,
+									"motif_non_calcul": "donnee_absente",
+									"verdict": null,
+									"identique_a_la_reference": false
+								}
+							]
+						}
+					]
+				},
+				{
+					"cle": "cout_validite",
+					"titre": "Coût et validité",
+					"lignes": [
+						{
+							"cle": "cout_annuel",
+							"field_id": "dpe.document.cout_annuel",
+							"identiques": false,
+							"cellules": [
+								{
+									"field_id": "dpe.document.cout_annuel",
+									"etat": "value",
+									"motif": null,
+									"valeur": 1834.2,
+									"unite": "euro_per_year",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2185E0000001A",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": null
+								},
+								{
+									"field_id": "dpe.document.cout_annuel",
+									"etat": "value",
+									"motif": null,
+									"valeur": 2034.2,
+									"unite": "euro_per_year",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2385E0123456A",
+									"ecart": {
+										"valeur": 200,
+										"unite": "euro_per_year"
+									},
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": false
+								}
+							]
+						},
+						{
+							"cle": "etabli_le",
+							"field_id": "dpe.document.date_etablissement",
+							"identiques": false,
+							"cellules": [
+								{
+									"field_id": "dpe.document.date_etablissement",
+									"etat": "value",
+									"motif": null,
+									"valeur": "2020-05-04",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2185E0000001A",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": null
+								},
+								{
+									"field_id": "dpe.document.date_etablissement",
+									"etat": "value",
+									"motif": null,
+									"valeur": "2026-01-05",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2385E0123456A",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": "different",
+									"identique_a_la_reference": false
+								}
+							]
+						},
+						{
+							"cle": "valable_jusqu_au",
+							"field_id": "dpe.document.date_fin_validite",
+							"identiques": false,
+							"cellules": [
+								{
+									"field_id": "dpe.document.date_fin_validite",
+									"etat": "value",
+									"motif": null,
+									"valeur": "2030-05-03",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2185E0000001A",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": null
+								},
+								{
+									"field_id": "dpe.document.date_fin_validite",
+									"etat": "value",
+									"motif": null,
+									"valeur": "2036-01-04",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2385E0123456A",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": "different",
+									"identique_a_la_reference": false
+								}
+							]
+						},
+						{
+							"cle": "methode",
+							"field_id": "dpe.document.methode",
+							"identiques": false,
+							"cellules": [
+								{
+									"field_id": "dpe.document.methode",
+									"etat": "value",
+									"motif": null,
+									"valeur": "ancienne",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2185E0000001A",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": null
+								},
+								{
+									"field_id": "dpe.document.methode",
+									"etat": "value",
+									"motif": null,
+									"valeur": "actuelle",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2385E0123456A",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": "different",
+									"identique_a_la_reference": false
+								}
+							]
+						}
+					]
+				},
+				{
+					"cle": "adresse",
+					"titre": "Adresse",
+					"lignes": [
+						{
+							"cle": "adresse_declaree",
+							"field_id": "dpe.document.adresse_declaree",
+							"identiques": false,
+							"cellules": [
+								{
+									"field_id": "dpe.document.adresse_declaree",
+									"etat": "value",
+									"motif": null,
+									"valeur": "12 rue des Lilas",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2185E0000001A",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": null
+								},
+								{
+									"field_id": "dpe.document.adresse_declaree",
+									"etat": "suppressed",
+									"motif": "complement_present",
+									"valeur": null,
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2385E0123456A",
+									"ecart": null,
+									"motif_non_calcul": "adresse_declaree_non_affichee",
+									"verdict": null,
+									"identique_a_la_reference": false
+								}
+							]
+						},
+						{
+							"cle": "adresse_ban",
+							"field_id": "dpe.document.adresse_ban",
+							"identiques": true,
+							"cellules": [
+								{
+									"field_id": "dpe.document.adresse_ban",
+									"etat": "not_reported",
+									"motif": null,
+									"valeur": null,
+									"unite": null,
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2185E0000001A",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": null
+								},
+								{
+									"field_id": "dpe.document.adresse_ban",
+									"etat": "not_reported",
+									"motif": null,
+									"valeur": null,
+									"unite": null,
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2385E0123456A",
+									"ecart": null,
+									"motif_non_calcul": "donnee_absente",
+									"verdict": null,
+									"identique_a_la_reference": true
+								}
+							]
+						}
+					]
+				}
+			],
+			"numeros_ecartes": []
+		},
+		"meta": null
+	},
+	"meme_methode_trois": {
+		"statut": "ok",
+		"donnees": {
+			"colonnes": [
+				{
+					"numero": "2385E0123456A",
+					"disponibilite": "disponible",
+					"methode": "actuelle",
+					"statut": "en_vigueur",
+					"validite": "not_expired_by_date",
+					"adresse_declaree": {
+						"etat": "publiee",
+						"texte": "12 rue des Lilas",
+						"motif": null
+					}
+				},
+				{
+					"numero": "2485E0000003C",
+					"disponibilite": "disponible",
+					"methode": "actuelle",
+					"statut": "en_vigueur",
+					"validite": "not_expired_by_date",
+					"adresse_declaree": {
+						"etat": "publiee",
+						"texte": "12 rue des Lilas",
+						"motif": null
+					}
+				},
+				{
+					"numero": "2485E0000004C",
+					"disponibilite": "disponible",
+					"methode": "inconnue",
+					"statut": "validite_inconnue",
+					"validite": "unknown",
+					"adresse_declaree": {
+						"etat": "absente",
+						"texte": null,
+						"motif": null
+					}
+				}
+			],
+			"groupes": [
+				{
+					"cle": "etiquettes",
+					"titre": "Étiquettes",
+					"lignes": [
+						{
+							"cle": "classe_energie",
+							"field_id": "dpe.document.etiquette_dpe",
+							"identiques": false,
+							"cellules": [
+								{
+									"field_id": "dpe.document.etiquette_dpe",
+									"etat": "value",
+									"motif": null,
+									"valeur": "D",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2385E0123456A",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": null
+								},
+								{
+									"field_id": "dpe.document.etiquette_dpe",
+									"etat": "value",
+									"motif": null,
+									"valeur": "C",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2485E0000003C",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": "different",
+									"identique_a_la_reference": false
+								},
+								{
+									"field_id": "dpe.document.etiquette_dpe",
+									"etat": "value",
+									"motif": null,
+									"valeur": "D",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2485E0000004C",
+									"ecart": null,
+									"motif_non_calcul": "methode_indeterminee",
+									"verdict": null,
+									"identique_a_la_reference": false
+								}
+							]
+						},
+						{
+							"cle": "consommation_m2",
+							"field_id": "dpe.document.conso_ep_m2",
+							"identiques": false,
+							"cellules": [
+								{
+									"field_id": "dpe.document.conso_ep_m2",
+									"etat": "value",
+									"motif": null,
+									"valeur": 231.0,
+									"unite": "kwh_ep_per_m2_per_year",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2385E0123456A",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": null
+								},
+								{
+									"field_id": "dpe.document.conso_ep_m2",
+									"etat": "value",
+									"motif": null,
+									"valeur": 158.0,
+									"unite": "kwh_ep_per_m2_per_year",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2485E0000003C",
+									"ecart": {
+										"valeur": -73,
+										"unite": "kwh_ep_per_m2_per_year"
+									},
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": false
+								},
+								{
+									"field_id": "dpe.document.conso_ep_m2",
+									"etat": "not_reported",
+									"motif": null,
+									"valeur": null,
+									"unite": null,
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2485E0000004C",
+									"ecart": null,
+									"motif_non_calcul": "donnee_absente",
+									"verdict": null,
+									"identique_a_la_reference": false
+								}
+							]
+						},
+						{
+							"cle": "classe_climat",
+							"field_id": "dpe.document.etiquette_ges",
+							"identiques": false,
+							"cellules": [
+								{
+									"field_id": "dpe.document.etiquette_ges",
+									"etat": "value",
+									"motif": null,
+									"valeur": "C",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2385E0123456A",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": null
+								},
+								{
+									"field_id": "dpe.document.etiquette_ges",
+									"etat": "value",
+									"motif": null,
+									"valeur": "C",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2485E0000003C",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": "identique",
+									"identique_a_la_reference": true
+								},
+								{
+									"field_id": "dpe.document.etiquette_ges",
+									"etat": "value",
+									"motif": null,
+									"valeur": "C",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2485E0000004C",
+									"ecart": null,
+									"motif_non_calcul": "methode_indeterminee",
+									"verdict": null,
+									"identique_a_la_reference": false
+								}
+							]
+						},
+						{
+							"cle": "emissions_m2",
+							"field_id": "dpe.document.emissions_ges_m2",
+							"identiques": false,
+							"cellules": [
+								{
+									"field_id": "dpe.document.emissions_ges_m2",
+									"etat": "value",
+									"motif": null,
+									"valeur": 47.5,
+									"unite": "kg_co2_eq_per_m2_per_year",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2385E0123456A",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": null
+								},
+								{
+									"field_id": "dpe.document.emissions_ges_m2",
+									"etat": "value",
+									"motif": null,
+									"valeur": 12.3,
+									"unite": "kg_co2_eq_per_m2_per_year",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2485E0000003C",
+									"ecart": {
+										"valeur": -35,
+										"unite": "kg_co2_eq_per_m2_per_year"
+									},
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": false
+								},
+								{
+									"field_id": "dpe.document.emissions_ges_m2",
+									"etat": "value",
+									"motif": null,
+									"valeur": 0.0,
+									"unite": "kg_co2_eq_per_m2_per_year",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2485E0000004C",
+									"ecart": null,
+									"motif_non_calcul": "methode_indeterminee",
+									"verdict": null,
+									"identique_a_la_reference": false
+								}
+							]
+						},
+						{
+							"cle": "consommation",
+							"field_id": "dpe.document.conso_ep",
+							"identiques": false,
+							"cellules": [
+								{
+									"field_id": "dpe.document.conso_ep",
+									"etat": "value",
+									"motif": null,
+									"valeur": 17830.4,
+									"unite": "kwh_ep_per_year",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2385E0123456A",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": null
+								},
+								{
+									"field_id": "dpe.document.conso_ep",
+									"etat": "value",
+									"motif": null,
+									"valeur": 12000.4,
+									"unite": "kwh_ep_per_year",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2485E0000003C",
+									"ecart": {
+										"valeur": -5830,
+										"unite": "kwh_ep_per_year"
+									},
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": false
+								},
+								{
+									"field_id": "dpe.document.conso_ep",
+									"etat": "value",
+									"motif": null,
+									"valeur": 17830.4,
+									"unite": "kwh_ep_per_year",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2485E0000004C",
+									"ecart": null,
+									"motif_non_calcul": "methode_indeterminee",
+									"verdict": null,
+									"identique_a_la_reference": false
+								}
+							]
+						},
+						{
+							"cle": "emissions",
+							"field_id": "dpe.document.emissions_ges",
+							"identiques": false,
+							"cellules": [
+								{
+									"field_id": "dpe.document.emissions_ges",
+									"etat": "value",
+									"motif": null,
+									"valeur": 3433.1,
+									"unite": "kg_co2_eq_per_year",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2385E0123456A",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": null
+								},
+								{
+									"field_id": "dpe.document.emissions_ges",
+									"etat": "value",
+									"motif": null,
+									"valeur": 3433.1,
+									"unite": "kg_co2_eq_per_year",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2485E0000003C",
+									"ecart": {
+										"valeur": 0,
+										"unite": "kg_co2_eq_per_year"
+									},
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": true
+								},
+								{
+									"field_id": "dpe.document.emissions_ges",
+									"etat": "value",
+									"motif": null,
+									"valeur": 3433.1,
+									"unite": "kg_co2_eq_per_year",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2485E0000004C",
+									"ecart": null,
+									"motif_non_calcul": "methode_indeterminee",
+									"verdict": null,
+									"identique_a_la_reference": false
+								}
+							]
+						}
+					]
+				},
+				{
+					"cle": "logement",
+					"titre": "Logement décrit",
+					"lignes": [
+						{
+							"cle": "type_batiment",
+							"field_id": "dpe.document.type_batiment",
+							"identiques": true,
+							"cellules": [
+								{
+									"field_id": "dpe.document.type_batiment",
+									"etat": "value",
+									"motif": null,
+									"valeur": "maison",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2385E0123456A",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": null
+								},
+								{
+									"field_id": "dpe.document.type_batiment",
+									"etat": "value",
+									"motif": null,
+									"valeur": "maison",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2485E0000003C",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": "identique",
+									"identique_a_la_reference": true
+								},
+								{
+									"field_id": "dpe.document.type_batiment",
+									"etat": "value",
+									"motif": null,
+									"valeur": "maison",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2485E0000004C",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": "identique",
+									"identique_a_la_reference": true
+								}
+							]
+						},
+						{
+							"cle": "surface",
+							"field_id": "dpe.document.surface_habitable",
+							"identiques": true,
+							"cellules": [
+								{
+									"field_id": "dpe.document.surface_habitable",
+									"etat": "value",
+									"motif": null,
+									"valeur": 79.0,
+									"unite": "m2",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2385E0123456A",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": null
+								},
+								{
+									"field_id": "dpe.document.surface_habitable",
+									"etat": "value",
+									"motif": null,
+									"valeur": 79.0,
+									"unite": "m2",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2485E0000003C",
+									"ecart": {
+										"valeur": 0.0,
+										"unite": "m2"
+									},
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": true
+								},
+								{
+									"field_id": "dpe.document.surface_habitable",
+									"etat": "value",
+									"motif": null,
+									"valeur": 79.0,
+									"unite": "m2",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2485E0000004C",
+									"ecart": {
+										"valeur": 0.0,
+										"unite": "m2"
+									},
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": true
+								}
+							]
+						},
+						{
+							"cle": "periode_construction",
+							"field_id": "dpe.document.periode_construction",
+							"identiques": true,
+							"cellules": [
+								{
+									"field_id": "dpe.document.periode_construction",
+									"etat": "value",
+									"motif": null,
+									"valeur": "1948-1974",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2385E0123456A",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": null
+								},
+								{
+									"field_id": "dpe.document.periode_construction",
+									"etat": "value",
+									"motif": null,
+									"valeur": "1948-1974",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2485E0000003C",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": "identique",
+									"identique_a_la_reference": true
+								},
+								{
+									"field_id": "dpe.document.periode_construction",
+									"etat": "value",
+									"motif": null,
+									"valeur": "1948-1974",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2485E0000004C",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": "identique",
+									"identique_a_la_reference": true
+								}
+							]
+						},
+						{
+							"cle": "energie_chauffage",
+							"field_id": "dpe.document.energie_chauffage",
+							"identiques": true,
+							"cellules": [
+								{
+									"field_id": "dpe.document.energie_chauffage",
+									"etat": "value",
+									"motif": null,
+									"valeur": "Gaz naturel",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2385E0123456A",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": null
+								},
+								{
+									"field_id": "dpe.document.energie_chauffage",
+									"etat": "value",
+									"motif": null,
+									"valeur": "Gaz naturel",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2485E0000003C",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": "identique",
+									"identique_a_la_reference": true
+								},
+								{
+									"field_id": "dpe.document.energie_chauffage",
+									"etat": "value",
+									"motif": null,
+									"valeur": "Gaz naturel",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2485E0000004C",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": "identique",
+									"identique_a_la_reference": true
+								}
+							]
+						}
+					]
+				},
+				{
+					"cle": "cout_validite",
+					"titre": "Coût et validité",
+					"lignes": [
+						{
+							"cle": "cout_annuel",
+							"field_id": "dpe.document.cout_annuel",
+							"identiques": true,
+							"cellules": [
+								{
+									"field_id": "dpe.document.cout_annuel",
+									"etat": "value",
+									"motif": null,
+									"valeur": 1834.2,
+									"unite": "euro_per_year",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2385E0123456A",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": null
+								},
+								{
+									"field_id": "dpe.document.cout_annuel",
+									"etat": "value",
+									"motif": null,
+									"valeur": 1834.2,
+									"unite": "euro_per_year",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2485E0000003C",
+									"ecart": {
+										"valeur": 0,
+										"unite": "euro_per_year"
+									},
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": true
+								},
+								{
+									"field_id": "dpe.document.cout_annuel",
+									"etat": "value",
+									"motif": null,
+									"valeur": 1834.2,
+									"unite": "euro_per_year",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2485E0000004C",
+									"ecart": {
+										"valeur": 0,
+										"unite": "euro_per_year"
+									},
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": true
+								}
+							]
+						},
+						{
+							"cle": "etabli_le",
+							"field_id": "dpe.document.date_etablissement",
+							"identiques": false,
+							"cellules": [
+								{
+									"field_id": "dpe.document.date_etablissement",
+									"etat": "value",
+									"motif": null,
+									"valeur": "2026-01-05",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2385E0123456A",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": null
+								},
+								{
+									"field_id": "dpe.document.date_etablissement",
+									"etat": "value",
+									"motif": null,
+									"valeur": "2026-01-05",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2485E0000003C",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": "identique",
+									"identique_a_la_reference": true
+								},
+								{
+									"field_id": "dpe.document.date_etablissement",
+									"etat": "not_reported",
+									"motif": null,
+									"valeur": null,
+									"unite": null,
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2485E0000004C",
+									"ecart": null,
+									"motif_non_calcul": "donnee_absente",
+									"verdict": null,
+									"identique_a_la_reference": false
+								}
+							]
+						},
+						{
+							"cle": "valable_jusqu_au",
+							"field_id": "dpe.document.date_fin_validite",
+							"identiques": true,
+							"cellules": [
+								{
+									"field_id": "dpe.document.date_fin_validite",
+									"etat": "value",
+									"motif": null,
+									"valeur": "2036-01-04",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2385E0123456A",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": null
+								},
+								{
+									"field_id": "dpe.document.date_fin_validite",
+									"etat": "value",
+									"motif": null,
+									"valeur": "2036-01-04",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2485E0000003C",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": "identique",
+									"identique_a_la_reference": true
+								},
+								{
+									"field_id": "dpe.document.date_fin_validite",
+									"etat": "value",
+									"motif": null,
+									"valeur": "2036-01-04",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2485E0000004C",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": "identique",
+									"identique_a_la_reference": true
+								}
+							]
+						},
+						{
+							"cle": "methode",
+							"field_id": "dpe.document.methode",
+							"identiques": false,
+							"cellules": [
+								{
+									"field_id": "dpe.document.methode",
+									"etat": "value",
+									"motif": null,
+									"valeur": "actuelle",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2385E0123456A",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": null
+								},
+								{
+									"field_id": "dpe.document.methode",
+									"etat": "value",
+									"motif": null,
+									"valeur": "actuelle",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2485E0000003C",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": "identique",
+									"identique_a_la_reference": true
+								},
+								{
+									"field_id": "dpe.document.methode",
+									"etat": "not_reported",
+									"motif": null,
+									"valeur": null,
+									"unite": null,
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2485E0000004C",
+									"ecart": null,
+									"motif_non_calcul": "donnee_absente",
+									"verdict": null,
+									"identique_a_la_reference": false
+								}
+							]
+						}
+					]
+				},
+				{
+					"cle": "adresse",
+					"titre": "Adresse",
+					"lignes": [
+						{
+							"cle": "adresse_declaree",
+							"field_id": "dpe.document.adresse_declaree",
+							"identiques": false,
+							"cellules": [
+								{
+									"field_id": "dpe.document.adresse_declaree",
+									"etat": "value",
+									"motif": null,
+									"valeur": "12 rue des Lilas",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2385E0123456A",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": null
+								},
+								{
+									"field_id": "dpe.document.adresse_declaree",
+									"etat": "value",
+									"motif": null,
+									"valeur": "12 rue des Lilas",
+									"unite": "none",
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2485E0000003C",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": "identique",
+									"identique_a_la_reference": true
+								},
+								{
+									"field_id": "dpe.document.adresse_declaree",
+									"etat": "not_reported",
+									"motif": null,
+									"valeur": null,
+									"unite": null,
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2485E0000004C",
+									"ecart": null,
+									"motif_non_calcul": "donnee_absente",
+									"verdict": null,
+									"identique_a_la_reference": false
+								}
+							]
+						},
+						{
+							"cle": "adresse_ban",
+							"field_id": "dpe.document.adresse_ban",
+							"identiques": true,
+							"cellules": [
+								{
+									"field_id": "dpe.document.adresse_ban",
+									"etat": "not_reported",
+									"motif": null,
+									"valeur": null,
+									"unite": null,
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2385E0123456A",
+									"ecart": null,
+									"motif_non_calcul": null,
+									"verdict": null,
+									"identique_a_la_reference": null
+								},
+								{
+									"field_id": "dpe.document.adresse_ban",
+									"etat": "not_reported",
+									"motif": null,
+									"valeur": null,
+									"unite": null,
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2485E0000003C",
+									"ecart": null,
+									"motif_non_calcul": "donnee_absente",
+									"verdict": null,
+									"identique_a_la_reference": true
+								},
+								{
+									"field_id": "dpe.document.adresse_ban",
+									"etat": "not_reported",
+									"motif": null,
+									"valeur": null,
+									"unite": null,
+									"periode": null,
+									"source": {
+										"cle": "dpe",
+										"nom": "Diagnostics de performance énergétique (DPE)",
+										"producteur": "ADEME",
+										"url": "https://data.ademe.fr/datasets/dpe03existant"
+									},
+									"rattachement": "adresse_saisie_diagnostiqueur",
+									"reference": null,
+									"numero": "2485E0000004C",
+									"ecart": null,
+									"motif_non_calcul": "donnee_absente",
+									"verdict": null,
+									"identique_a_la_reference": true
+								}
+							]
+						}
+					]
+				}
+			],
+			"numeros_ecartes": [
+				"2385E9999999X"
+			]
+		},
+		"meta": null
+	}
+}

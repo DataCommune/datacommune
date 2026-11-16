@@ -1,0 +1,20 @@
+# ansible-lint configuration for DataCommune VPS infra
+#
+# Vault decryption during lint:
+#   export ANSIBLE_VAULT_PASSWORD_FILE=~/.secrets/vault-pass
+#   before running: ansible-lint infra/
+#
+# Profile: basic (idempotence + FQCN + no deprecated modules)
+profile: basic
+
+# Warn only on these — do not fail
+warn_list:
+  - yaml[line-length]
+  - no-changed-when
+
+# Exclude auto-generated or non-playbook files
+exclude_paths:
+  - infra/vault.yml
+
+# Require FQCN for all builtin modules
+use_default_rules: true

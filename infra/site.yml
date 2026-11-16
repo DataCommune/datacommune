@@ -1,0 +1,257 @@
+---
+# DataCommune API host — One-shot idempotent provisioning playbook
+#
+# Purpose: Bootstrap a fresh Debian/Ubuntu host with Docker Engine, cloudflared
+# (via official Cloudflare apt repo — T-33-SUPPLY), the DataCommune source tree
+# from the local dev branch, and the initial compose stack (ETL ingestion overlay).
+#
+# Usage:
+#   ansible-playbook infra/site.yml --vault-password-file ~/.secrets/vault-pass
+#
+# Anti-drift (D-06): all VPS mutations go through this playbook.
+# Never modify the VPS directly via SSH + editor.
+#
+# D-12 guard: the .env generation task uses stat+when to NEVER overwrite an existing
+# .env — prevents the DB wipe incident of 2026-04-03.
+#
+# Idempotence: safe to re-run at any time. Only changed tasks take action.
+
+- name: Provision DataCommune API host
+  hosts: vps-demo
+  become: true
+  vars_files:
+    - vault.yml
+
+  handlers:
+    - name: Restart Docker
+      ansible.builtin.systemd:
+        name: docker
+        state: restarted
+
+  tasks:
+
+    - name: Validate required vault secrets are populated
+      ansible.builtin.assert:
+        that:
+          - vault_postgres_password | length > 0
+          - vault_jwt_secret_key | length >= 32
+          - vault_admin_password | length > 0
+          - vault_api_key_hmac_secret | length >= 32
+          - vault_cf_tunnel_token | length > 0
+        fail_msg: "Required vault secrets are missing or too short; update infra/vault.yml before provisioning."
+        success_msg: "Required vault secrets are populated."
+      no_log: true
+
+    # -------------------------------------------------------------------------
+    # Block A: System prerequisites
+    # -------------------------------------------------------------------------
+
+    - name: Update apt cache
+      ansible.builtin.apt:
+        update_cache: true
+        cache_valid_time: 3600
+
+    - name: Install system packages required by Docker and Ansible
+      ansible.builtin.apt:
+        name:
+          - ca-certificates
+          - curl
+          - gnupg
+          - git
+          - python3-pip
+          - apt-transport-https
+        state: present
+
+    # -------------------------------------------------------------------------
+    # Block B: Docker Engine + Compose plugin (official Docker apt repo)
+    # -------------------------------------------------------------------------
+
+    - name: Create /etc/apt/keyrings directory
+      ansible.builtin.file:
+        path: /etc/apt/keyrings
+        state: directory
+        mode: "0755"
+
+    - name: Download Docker GPG key
+      ansible.builtin.get_url:
+        url: "https://download.docker.com/linux/{{ ansible_distribution | lower }}/gpg"
+        dest: /etc/apt/keyrings/docker.asc
+        mode: "0644"
+        force: false
+
+    - name: Add Docker apt repository (deb822 format)
+      ansible.builtin.deb822_repository:
+        name: docker
+        types: deb
+        uris: "https://download.docker.com/linux/{{ ansible_distribution | lower }}"
+        suites: "{{ ansible_distribution_release }}"
+        components: stable
+        architectures: "{{ ansible_architecture | replace('x86_64', 'amd64') }}"
+        signed_by: /etc/apt/keyrings/docker.asc
+        state: present
+
+    - name: Install Docker Engine + Compose plugin
+      ansible.builtin.apt:
+        name:
+          - docker-ce
+          - docker-ce-cli
+          - containerd.io
+          - docker-buildx-plugin
+          - docker-compose-plugin
+        state: present
+        update_cache: true
+
+    - name: Enable and start Docker service
+      ansible.builtin.systemd:
+        name: docker
+        enabled: true
+        state: started
+
+    # -------------------------------------------------------------------------
+    # Block C: cloudflared (official Cloudflare apt repo — T-33-SUPPLY)
+    # Must use packages.cloudflare.com, never a third-party mirror.
+    # -------------------------------------------------------------------------
+
+    - name: Download Cloudflare GPG key
+      ansible.builtin.get_url:
+        url: https://pkg.cloudflare.com/cloudflare-main.gpg
+        dest: /usr/share/keyrings/cloudflare-main.gpg
+        mode: "0644"
+        force: false
+
+    - name: Add Cloudflare apt repository (packages.cloudflare.com — T-33-SUPPLY)
+      ansible.builtin.deb822_repository:
+        name: cloudflared
+        types: deb
+        uris: https://pkg.cloudflare.com/cloudflared
+        suites: "{{ ansible_distribution_release }}"
+        components: main
+        signed_by: /usr/share/keyrings/cloudflare-main.gpg
+        state: present
+
+    - name: Install cloudflared from official Cloudflare repo
+      ansible.builtin.apt:
+        name: cloudflared
+        state: present
+        update_cache: true
+
+    # -------------------------------------------------------------------------
+    # Block D: Deploy DataCommune source tree (branch dev — D-07)
+    # -------------------------------------------------------------------------
+
+    - name: Ensure deploy directory exists
+      ansible.builtin.file:
+        path: "{{ deploy_dir }}"
+        state: directory
+        mode: "0755"
+        owner: root
+        group: root
+
+    - name: Check local deployment branch
+      ansible.builtin.command:
+        argv:
+          - git
+          - -C
+          - "{{ playbook_dir }}/.."
+          - branch
+          - --show-current
+      register: local_branch
+      changed_when: false
+      failed_when: local_branch.stdout != repo_branch
+      delegate_to: localhost
+      become: false
+
+    - name: Get local deployment commit
+      ansible.builtin.command:
+        argv:
+          - git
+          - -C
+          - "{{ playbook_dir }}/.."
+          - rev-parse
+          - --short
+          - "{{ repo_branch }}"
+      register: local_commit
+      changed_when: false
+      delegate_to: localhost
+      become: false
+
+    - name: Report deployment source
+      ansible.builtin.debug:
+        msg: "Deploying local {{ repo_branch }} commit {{ local_commit.stdout }} tracked working tree to {{ deploy_dir }}"
+
+    - name: Create local deployment archive from tracked working tree
+      ansible.builtin.shell: >-
+        set -o pipefail &&
+        git -C {{ (playbook_dir ~ '/..') | quote }} ls-files -z |
+        tar --null -C {{ (playbook_dir ~ '/..') | quote }}
+        -cf /tmp/datacommune-{{ repo_branch }}.tar -T -
+      args:
+        executable: /bin/bash
+      changed_when: true
+      delegate_to: localhost
+      become: false
+
+    - name: Extract deployment archive on target
+      ansible.builtin.unarchive:
+        src: "/tmp/datacommune-{{ repo_branch }}.tar"
+        dest: "{{ deploy_dir }}"
+        owner: root
+        group: root
+
+    # -------------------------------------------------------------------------
+    # Block E: Generate .env from vault vars (D-11 + D-12 guard)
+    #
+    # CRITICAL: the stat + when guard ensures this task NEVER overwrites an
+    # existing .env file. This encodes the anti-incident D-12 guard directly
+    # in the playbook. Re-running the playbook on an existing VPS is safe.
+    # -------------------------------------------------------------------------
+
+    - name: Check if .env already exists (D-12 guard)
+      ansible.builtin.stat:
+        path: "{{ deploy_dir }}/api/.env"
+      register: env_stat
+
+    - name: Generate .env from vault template (only if .env does not exist — D-12)
+      ansible.builtin.template:
+        src: templates/env.j2
+        dest: "{{ deploy_dir }}/api/.env"
+        mode: "0600"
+        owner: root
+        group: root
+      no_log: true
+      when: not env_stat.stat.exists
+
+    - name: Report .env status
+      ansible.builtin.debug:
+        msg: >-
+          .env {{ 'already exists — skipped (D-12 guard active)' if env_stat.stat.exists
+          else 'generated from vault template' }}
+
+    # -------------------------------------------------------------------------
+    # Block F: Deploy compose stack (ETL ingestion overlay — first run)
+    #
+    # Uses the vps-etl overlay (DEBUG=true; hosted scope configured in the
+    # database with `python -m app.scope set`) for the initial
+    # bootstrap so that alembic migrate + ETL ingestion can proceed.
+    # Switch to vps.yml (permanent-mode) after data_quality.run exits 0.
+    #
+    # The volume pgdata is NEVER recreated or removed here (D-12).
+    # -------------------------------------------------------------------------
+
+    - name: Deploy compose stack with ETL ingestion overlay
+      ansible.builtin.command:
+        cmd: >-
+          docker compose
+          -p {{ compose_project }}
+          -f {{ compose_base_file }}
+          -f {{ compose_etl_overlay }}
+          up -d --build --remove-orphans
+        chdir: "{{ deploy_dir }}/api"
+      changed_when: true
+
+    - name: Remove scheduler container disabled during ETL overlay
+      ansible.builtin.command:
+        cmd: "docker rm -f {{ compose_project }}-scheduler-1"
+      register: remove_scheduler
+      changed_when: remove_scheduler.rc == 0
+      failed_when: remove_scheduler.rc != 0 and 'No such container' not in remove_scheduler.stderr

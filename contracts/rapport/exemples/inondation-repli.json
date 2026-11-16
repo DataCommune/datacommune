@@ -1,0 +1,43 @@
+{
+  "id": "inondation",
+  "section": "risques",
+  "titre": "Inondation",
+  "etat": "ok",
+  "ton": "vigilance",
+  "granularite": {
+    "niveau": "commune",
+    "rayon_m": null
+  },
+  "verdict": "Risque d'inondation recensé dans la commune ; non déterminé à l'adresse.",
+  "chiffres": [],
+  "details": {
+    "atlas_zones_inondables": [
+      "Vallée de la Loire",
+      "Atlas des zones inondables de l'Erdre"
+    ],
+    "territoires_risque_important": [
+      "Nantes"
+    ],
+    "tri_parcelle": null,
+    "risques_gaspar": [
+      "Inondation"
+    ],
+    "statut_adresse": null
+  },
+  "rattachement": null,
+  "sources": [
+    {
+      "cle": "georisques",
+      "nom": "Géorisques",
+      "producteur": "BRGM / MTE",
+      "url": "https://www.georisques.gouv.fr",
+      "licence": "Licence Ouverte 2.0",
+      "millesime": "2026-10-30",
+      "mode": "direct"
+    }
+  ],
+  "motif": null,
+  "pannes_partielles": [
+    "statut_adresse"
+  ]
+}

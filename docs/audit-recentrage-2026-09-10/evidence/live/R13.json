@@ -1,0 +1,242 @@
+{
+  "captured_at": "2026-09-10T20:40:57.859057+00:00",
+  "case": {
+    "case_id": "R13",
+    "address": "5 Avenue des Coucous, 44300 Nantes",
+    "ban_id": "44109_2222_00005",
+    "stratum": "maison avec RNB"
+  },
+  "sources": {
+    "dpe03existant": {
+      "http": 200,
+      "body": {
+        "total": 2,
+        "results": [
+          {
+            "code_insee_ban": "44109",
+            "score_ban": 0.71,
+            "type_batiment": "maison",
+            "numero_dpe": "2644E0080740H",
+            "date_fin_validite_dpe": "2036-01-11",
+            "adresse_brut": "5 Avenue des Coucous,",
+            "adresse_ban": "5 Avenue des Coucous 44300 Nantes",
+            "identifiant_ban": "44109_2222_00005",
+            "id_rnb": "2SCCMTM63Q33",
+            "numero_etage_appartement": 0,
+            "date_etablissement_dpe": "2026-01-12",
+            "surface_habitable_logement": 291.1,
+            "etiquette_dpe": "C",
+            "_score": null
+          },
+          {
+            "code_insee_ban": "44109",
+            "score_ban": 0.71,
+            "type_batiment": "maison",
+            "numero_dpe": "2644E0090084R",
+            "date_fin_validite_dpe": "2036-01-12",
+            "adresse_brut": "5 Avenue des Coucous,",
+            "adresse_ban": "5 Avenue des Coucous 44300 Nantes",
+            "identifiant_ban": "44109_2222_00005",
+            "id_rnb": "2SCCMTM63Q33",
+            "numero_etage_appartement": 0,
+            "date_etablissement_dpe": "2026-01-13",
+            "surface_habitable_logement": 291.1,
+            "etiquette_dpe": "C",
+            "_score": null
+          }
+        ]
+      },
+      "url": "https://data.ademe.fr/data-fair/api/v1/datasets/dpe03existant/lines?qs=identifiant_ban%3A%2244109_2222_00005%22&size=100&select=numero_dpe%2Cidentifiant_ban%2Cadresse_ban%2Cadresse_brut%2Ccode_insee_ban%2Ctype_batiment%2Csurface_habitable_logement%2Cetiquette_dpe%2Cdate_etablissement_dpe%2Cdate_fin_validite_dpe%2Cnumero_dpe_remplace%2Cid_rnb%2Cscore_ban%2Cnumero_etage_appartement"
+    },
+    "dpe02neuf": {
+      "http": 200,
+      "body": {
+        "total": 0,
+        "results": []
+      },
+      "url": "https://data.ademe.fr/data-fair/api/v1/datasets/dpe02neuf/lines?qs=identifiant_ban%3A%2244109_2222_00005%22&size=100&select=numero_dpe%2Cidentifiant_ban%2Cadresse_ban%2Cadresse_brut%2Ccode_insee_ban%2Ctype_batiment%2Csurface_habitable_logement%2Cetiquette_dpe%2Cdate_etablissement_dpe%2Cdate_fin_validite_dpe%2Cnumero_dpe_remplace%2Cid_rnb%2Cscore_ban%2Cnumero_etage_appartement"
+    }
+  },
+  "datacommune": {
+    "http": 200,
+    "body": {
+      "statut": "ok",
+      "donnees": [
+        {
+          "type_detecte": "adresse",
+          "latitude": 47.236088,
+          "longitude": -1.58196,
+          "adresse": "5 Avenue des Coucous, 44300 Nantes",
+          "id_parcelle": "44109000MZ0179",
+          "commune": "Nantes",
+          "code_postal": "44300",
+          "score": 0.8125,
+          "code_insee": "44109",
+          "resolution": "exact",
+          "parcelles_candidates": null,
+          "ban_id": "44109_2222_00005",
+          "datasets": {
+            "dpe": null
+          },
+          "erreurs": null,
+          "avertissements": [],
+          "dataset_states": {
+            "dpe": {
+              "dataset": "dpe",
+              "presence": "value",
+              "absence_reason": null,
+              "raison": null
+            }
+          },
+          "dpe_attribution": {
+            "version": 2,
+            "status": "unassigned",
+            "reason": "dwelling_identity_unproven",
+            "diagnostic": null,
+            "candidates": [],
+            "building_context": null,
+            "graph_state": "not_checked"
+          },
+          "dpe_inventory": {
+            "association": "source_ban_equality",
+            "address_check": "unverified",
+            "source": "ADEME",
+            "source_coverage": "unknown",
+            "graph_state": "not_checked",
+            "imported_at": null,
+            "version": 2,
+            "as_of_date": "2026-09-10",
+            "state": "ready",
+            "items": [
+              {
+                "type_batiment": "maison",
+                "surface_habitable": 291.1,
+                "etiquette_dpe": "C",
+                "etiquette_ges": "C",
+                "date_etablissement_dpe": "2026-01-12",
+                "date_fin_validite_dpe": "2036-01-11",
+                "lifecycle": {
+                  "source_state": "present",
+                  "source_snapshot_date": "2026-09-05",
+                  "source_scope": "44/85",
+                  "regimes": [
+                    "existant"
+                  ],
+                  "replacement_state": "no_successor_known",
+                  "graph_issues": [],
+                  "validity": "not_expired_by_date",
+                  "as_of_date": "2026-09-10",
+                  "revision_status": "unverified",
+                  "revision_kind": null,
+                  "revision_date": null,
+                  "detail_availability": "available"
+                }
+              },
+              {
+                "type_batiment": "maison",
+                "surface_habitable": 291.1,
+                "etiquette_dpe": "C",
+                "etiquette_ges": "C",
+                "date_etablissement_dpe": "2026-01-13",
+                "date_fin_validite_dpe": "2036-01-12",
+                "lifecycle": {
+                  "source_state": "present",
+                  "source_snapshot_date": "2026-09-05",
+                  "source_scope": "44/85",
+                  "regimes": [
+                    "existant"
+                  ],
+                  "replacement_state": "no_successor_known",
+                  "graph_issues": [],
+                  "validity": "not_expired_by_date",
+                  "as_of_date": "2026-09-10",
+                  "revision_status": "unverified",
+                  "revision_kind": null,
+                  "revision_date": null,
+                  "detail_availability": "available"
+                }
+              }
+            ],
+            "total": 2,
+            "distribution": {
+              "A": 0,
+              "B": 0,
+              "C": 2,
+              "D": 0,
+              "E": 0,
+              "F": 0,
+              "G": 0,
+              "unknown": 0
+            },
+            "page_size": 20,
+            "has_more": false,
+            "read_state": "complete"
+          },
+          "dvf_attribution": null
+        }
+      ],
+      "meta": {
+        "source": [
+          {
+            "nom": "Base Adresse Nationale (BAN)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://adresse.data.gouv.fr",
+            "producteur": "DINUM / IGN",
+            "dataset": "ban",
+            "periode": {
+              "statut": "inconnue",
+              "label": null,
+              "debut": null,
+              "fin": null
+            },
+            "derniere_importation_reussie": null,
+            "couverture": {
+              "type": "inconnue",
+              "departements": null
+            },
+            "cadence": {
+              "statut": "official",
+              "label": "Hebdomadaire",
+              "evidence_url": "https://cartes.gouv.fr/aide/fr/guides-utilisateur/utiliser-les-services-de-la-geoplateforme/geocodage/",
+              "intervalle_jours": 7
+            },
+            "etat": "inconnu"
+          },
+          {
+            "nom": "Diagnostics de Performance Energetique (DPE)",
+            "licence": "Licence Ouverte 2.0",
+            "url": "https://data.ademe.fr/datasets/dpe03existant",
+            "producteur": "ADEME",
+            "dataset": "dpe",
+            "periode": {
+              "statut": "inconnue",
+              "label": null,
+              "debut": null,
+              "fin": null
+            },
+            "derniere_importation_reussie": null,
+            "couverture": {
+              "type": "departements",
+              "departements": [
+                "44",
+                "85"
+              ]
+            },
+            "cadence": {
+              "statut": "official",
+              "label": "Hebdomadaire",
+              "evidence_url": "https://data.ademe.fr/datasets/dpe03existant",
+              "intervalle_jours": 7
+            },
+            "etat": "inconnu"
+          }
+        ],
+        "resolution": {
+          "issue": "exact",
+          "raison": null,
+          "parcelles_candidates": null
+        }
+      }
+    }
+  }
+}

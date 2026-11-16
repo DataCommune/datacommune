@@ -1,0 +1,1666 @@
+{
+ "absent": {},
+ "captured_at": "2026-10-13T11:07:54Z",
+ "counts": {
+  "01": {
+   "rnb:batiments": 439377,
+   "rnb:batiments_sans_cle": 77213,
+   "rnb:paires_fichier": 431235,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 431235
+  },
+  "02": {
+   "rnb:batiments": 463205,
+   "rnb:batiments_sans_cle": 88036,
+   "rnb:paires_fichier": 415354,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 415354
+  },
+  "03": {
+   "rnb:batiments": 392683,
+   "rnb:batiments_sans_cle": 93209,
+   "rnb:paires_fichier": 332489,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 332489
+  },
+  "04": {
+   "rnb:batiments": 170692,
+   "rnb:batiments_sans_cle": 44965,
+   "rnb:paires_fichier": 157268,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 157268
+  },
+  "05": {
+   "rnb:batiments": 140997,
+   "rnb:batiments_sans_cle": 38519,
+   "rnb:paires_fichier": 124366,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 124366
+  },
+  "06": {
+   "rnb:batiments": 420664,
+   "rnb:batiments_sans_cle": 95616,
+   "rnb:paires_fichier": 394009,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 394009
+  },
+  "07": {
+   "rnb:batiments": 344062,
+   "rnb:batiments_sans_cle": 72241,
+   "rnb:paires_fichier": 326168,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 326168
+  },
+  "08": {
+   "rnb:batiments": 246124,
+   "rnb:batiments_sans_cle": 64046,
+   "rnb:paires_fichier": 207961,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 207961
+  },
+  "09": {
+   "rnb:batiments": 246526,
+   "rnb:batiments_sans_cle": 73216,
+   "rnb:paires_fichier": 217769,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 217769
+  },
+  "10": {
+   "rnb:batiments": 264572,
+   "rnb:batiments_sans_cle": 45921,
+   "rnb:paires_fichier": 250833,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 250833
+  },
+  "11": {
+   "rnb:batiments": 376886,
+   "rnb:batiments_sans_cle": 82167,
+   "rnb:paires_fichier": 399420,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 399420
+  },
+  "12": {
+   "rnb:batiments": 400787,
+   "rnb:batiments_sans_cle": 175711,
+   "rnb:paires_fichier": 255733,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 255733
+  },
+  "13": {
+   "rnb:batiments": 871430,
+   "rnb:batiments_sans_cle": 208937,
+   "rnb:paires_fichier": 819273,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 819273
+  },
+  "14": {
+   "rnb:batiments": 553667,
+   "rnb:batiments_sans_cle": 106268,
+   "rnb:paires_fichier": 523244,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 523244
+  },
+  "15": {
+   "rnb:batiments": 192287,
+   "rnb:batiments_sans_cle": 52934,
+   "rnb:paires_fichier": 159161,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 159161
+  },
+  "16": {
+   "rnb:batiments": 427049,
+   "rnb:batiments_sans_cle": 64863,
+   "rnb:paires_fichier": 404695,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 404695
+  },
+  "17": {
+   "rnb:batiments": 743345,
+   "rnb:batiments_sans_cle": 136169,
+   "rnb:paires_fichier": 702369,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 702369
+  },
+  "18": {
+   "rnb:batiments": 337446,
+   "rnb:batiments_sans_cle": 55305,
+   "rnb:paires_fichier": 324293,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 324293
+  },
+  "19": {
+   "rnb:batiments": 314013,
+   "rnb:batiments_sans_cle": 57439,
+   "rnb:paires_fichier": 282502,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 282502
+  },
+  "21": {
+   "rnb:batiments": 352402,
+   "rnb:batiments_sans_cle": 52208,
+   "rnb:paires_fichier": 334474,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 334474
+  },
+  "22": {
+   "rnb:batiments": 702235,
+   "rnb:batiments_sans_cle": 140326,
+   "rnb:paires_fichier": 640173,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 640173
+  },
+  "23": {
+   "rnb:batiments": 220429,
+   "rnb:batiments_sans_cle": 39545,
+   "rnb:paires_fichier": 197933,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 197933
+  },
+  "24": {
+   "rnb:batiments": 568953,
+   "rnb:batiments_sans_cle": 106008,
+   "rnb:paires_fichier": 515545,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 515545
+  },
+  "25": {
+   "rnb:batiments": 290645,
+   "rnb:batiments_sans_cle": 51862,
+   "rnb:paires_fichier": 279464,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 279464
+  },
+  "26": {
+   "rnb:batiments": 397729,
+   "rnb:batiments_sans_cle": 61165,
+   "rnb:paires_fichier": 402150,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 402150
+  },
+  "27": {
+   "rnb:batiments": 552412,
+   "rnb:batiments_sans_cle": 93731,
+   "rnb:paires_fichier": 530270,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 530270
+  },
+  "28": {
+   "rnb:batiments": 352352,
+   "rnb:batiments_sans_cle": 55685,
+   "rnb:paires_fichier": 333254,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 333254
+  },
+  "29": {
+   "rnb:batiments": 835601,
+   "rnb:batiments_sans_cle": 139381,
+   "rnb:paires_fichier": 795477,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 795477
+  },
+  "2A": {
+   "rnb:batiments": 141244,
+   "rnb:batiments_sans_cle": 70484,
+   "rnb:paires_fichier": 90081,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 90081
+  },
+  "2B": {
+   "rnb:batiments": 142386,
+   "rnb:batiments_sans_cle": 54989,
+   "rnb:paires_fichier": 120877,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 120877
+  },
+  "30": {
+   "rnb:batiments": 546999,
+   "rnb:batiments_sans_cle": 118893,
+   "rnb:paires_fichier": 511040,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 511040
+  },
+  "31": {
+   "rnb:batiments": 744399,
+   "rnb:batiments_sans_cle": 133400,
+   "rnb:paires_fichier": 722160,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 722160
+  },
+  "32": {
+   "rnb:batiments": 259083,
+   "rnb:batiments_sans_cle": 75860,
+   "rnb:paires_fichier": 205221,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 205221
+  },
+  "33": {
+   "rnb:batiments": 1134680,
+   "rnb:batiments_sans_cle": 210781,
+   "rnb:paires_fichier": 1168317,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 1168317
+  },
+  "34": {
+   "rnb:batiments": 662707,
+   "rnb:batiments_sans_cle": 136183,
+   "rnb:paires_fichier": 639744,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 639744
+  },
+  "35": {
+   "rnb:batiments": 741387,
+   "rnb:batiments_sans_cle": 123886,
+   "rnb:paires_fichier": 704964,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 704964
+  },
+  "36": {
+   "rnb:batiments": 291831,
+   "rnb:batiments_sans_cle": 49009,
+   "rnb:paires_fichier": 272514,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 272514
+  },
+  "37": {
+   "rnb:batiments": 474294,
+   "rnb:batiments_sans_cle": 81253,
+   "rnb:paires_fichier": 456400,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 456400
+  },
+  "38": {
+   "rnb:batiments": 657671,
+   "rnb:batiments_sans_cle": 96144,
+   "rnb:paires_fichier": 690044,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 690044
+  },
+  "39": {
+   "rnb:batiments": 216850,
+   "rnb:batiments_sans_cle": 36915,
+   "rnb:paires_fichier": 206472,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 206472
+  },
+  "40": {
+   "rnb:batiments": 456298,
+   "rnb:batiments_sans_cle": 71434,
+   "rnb:paires_fichier": 446473,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 446473
+  },
+  "41": {
+   "rnb:batiments": 352355,
+   "rnb:batiments_sans_cle": 61815,
+   "rnb:paires_fichier": 333409,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 333409
+  },
+  "42": {
+   "rnb:batiments": 464630,
+   "rnb:batiments_sans_cle": 81004,
+   "rnb:paires_fichier": 438634,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 438634
+  },
+  "43": {
+   "rnb:batiments": 251621,
+   "rnb:batiments_sans_cle": 71175,
+   "rnb:paires_fichier": 208971,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 208971
+  },
+  "44": {
+   "rnb:batiments": 985650,
+   "rnb:batiments_sans_cle": 174690,
+   "rnb:paires_fichier": 893885,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 893885
+  },
+  "45": {
+   "rnb:batiments": 486065,
+   "rnb:batiments_sans_cle": 81015,
+   "rnb:paires_fichier": 452751,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 452751
+  },
+  "46": {
+   "rnb:batiments": 290760,
+   "rnb:batiments_sans_cle": 121630,
+   "rnb:paires_fichier": 196091,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 196091
+  },
+  "47": {
+   "rnb:batiments": 369035,
+   "rnb:batiments_sans_cle": 62759,
+   "rnb:paires_fichier": 364984,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 364984
+  },
+  "48": {
+   "rnb:batiments": 118785,
+   "rnb:batiments_sans_cle": 58666,
+   "rnb:paires_fichier": 71962,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 71962
+  },
+  "49": {
+   "rnb:batiments": 667169,
+   "rnb:batiments_sans_cle": 130208,
+   "rnb:paires_fichier": 619557,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 619557
+  },
+  "50": {
+   "rnb:batiments": 571212,
+   "rnb:batiments_sans_cle": 97389,
+   "rnb:paires_fichier": 586953,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 586953
+  },
+  "51": {
+   "rnb:batiments": 380756,
+   "rnb:batiments_sans_cle": 67402,
+   "rnb:paires_fichier": 349309,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 349309
+  },
+  "52": {
+   "rnb:batiments": 175222,
+   "rnb:batiments_sans_cle": 36506,
+   "rnb:paires_fichier": 153655,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 153655
+  },
+  "53": {
+   "rnb:batiments": 340588,
+   "rnb:batiments_sans_cle": 63886,
+   "rnb:paires_fichier": 310819,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 310819
+  },
+  "54": {
+   "rnb:batiments": 413116,
+   "rnb:batiments_sans_cle": 80892,
+   "rnb:paires_fichier": 373798,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 373798
+  },
+  "55": {
+   "rnb:batiments": 177689,
+   "rnb:batiments_sans_cle": 33416,
+   "rnb:paires_fichier": 158535,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 158535
+  },
+  "56": {
+   "rnb:batiments": 704209,
+   "rnb:batiments_sans_cle": 118331,
+   "rnb:paires_fichier": 682478,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 682478
+  },
+  "57": {
+   "rnb:batiments": 777633,
+   "rnb:batiments_sans_cle": 191503,
+   "rnb:paires_fichier": 646605,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 646605
+  },
+  "58": {
+   "rnb:batiments": 266057,
+   "rnb:batiments_sans_cle": 44202,
+   "rnb:paires_fichier": 266330,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 266330
+  },
+  "59": {
+   "rnb:batiments": 1548837,
+   "rnb:batiments_sans_cle": 350715,
+   "rnb:paires_fichier": 1382383,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 1382383
+  },
+  "60": {
+   "rnb:batiments": 544172,
+   "rnb:batiments_sans_cle": 96916,
+   "rnb:paires_fichier": 498665,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 498665
+  },
+  "61": {
+   "rnb:batiments": 343007,
+   "rnb:batiments_sans_cle": 58552,
+   "rnb:paires_fichier": 360646,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 360646
+  },
+  "62": {
+   "rnb:batiments": 1103682,
+   "rnb:batiments_sans_cle": 217101,
+   "rnb:paires_fichier": 1008070,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 1008070
+  },
+  "63": {
+   "rnb:batiments": 545941,
+   "rnb:batiments_sans_cle": 116856,
+   "rnb:paires_fichier": 499293,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 499293
+  },
+  "64": {
+   "rnb:batiments": 510291,
+   "rnb:batiments_sans_cle": 93608,
+   "rnb:paires_fichier": 482998,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 482998
+  },
+  "65": {
+   "rnb:batiments": 256495,
+   "rnb:batiments_sans_cle": 52054,
+   "rnb:paires_fichier": 232307,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 232307
+  },
+  "66": {
+   "rnb:batiments": 360086,
+   "rnb:batiments_sans_cle": 77500,
+   "rnb:paires_fichier": 348784,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 348784
+  },
+  "67": {
+   "rnb:batiments": 755885,
+   "rnb:batiments_sans_cle": 158792,
+   "rnb:paires_fichier": 639653,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 639653
+  },
+  "68": {
+   "rnb:batiments": 564153,
+   "rnb:batiments_sans_cle": 142001,
+   "rnb:paires_fichier": 455342,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 455342
+  },
+  "69": {
+   "rnb:batiments": 549001,
+   "rnb:batiments_sans_cle": 87341,
+   "rnb:paires_fichier": 537808,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 537808
+  },
+  "70": {
+   "rnb:batiments": 229921,
+   "rnb:batiments_sans_cle": 38839,
+   "rnb:paires_fichier": 212300,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 212300
+  },
+  "71": {
+   "rnb:batiments": 523961,
+   "rnb:batiments_sans_cle": 85169,
+   "rnb:paires_fichier": 489558,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 489558
+  },
+  "72": {
+   "rnb:batiments": 517653,
+   "rnb:batiments_sans_cle": 111834,
+   "rnb:paires_fichier": 452338,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 452338
+  },
+  "73": {
+   "rnb:batiments": 308229,
+   "rnb:batiments_sans_cle": 68847,
+   "rnb:paires_fichier": 281580,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 281580
+  },
+  "74": {
+   "rnb:batiments": 452032,
+   "rnb:batiments_sans_cle": 83074,
+   "rnb:paires_fichier": 426908,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 426908
+  },
+  "75": {
+   "rnb:batiments": 114088,
+   "rnb:batiments_sans_cle": 9380,
+   "rnb:paires_fichier": 178668,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 178668
+  },
+  "76": {
+   "rnb:batiments": 837035,
+   "rnb:batiments_sans_cle": 169006,
+   "rnb:paires_fichier": 764918,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 764918
+  },
+  "77": {
+   "rnb:batiments": 683620,
+   "rnb:batiments_sans_cle": 126233,
+   "rnb:paires_fichier": 644143,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 644143
+  },
+  "78": {
+   "rnb:batiments": 479926,
+   "rnb:batiments_sans_cle": 80076,
+   "rnb:paires_fichier": 467026,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 467026
+  },
+  "79": {
+   "rnb:batiments": 429803,
+   "rnb:batiments_sans_cle": 66323,
+   "rnb:paires_fichier": 405573,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 405573
+  },
+  "80": {
+   "rnb:batiments": 573009,
+   "rnb:batiments_sans_cle": 133478,
+   "rnb:paires_fichier": 496319,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 496319
+  },
+  "81": {
+   "rnb:batiments": 423807,
+   "rnb:batiments_sans_cle": 92578,
+   "rnb:paires_fichier": 367309,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 367309
+  },
+  "82": {
+   "rnb:batiments": 262249,
+   "rnb:batiments_sans_cle": 60197,
+   "rnb:paires_fichier": 226391,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 226391
+  },
+  "83": {
+   "rnb:batiments": 662309,
+   "rnb:batiments_sans_cle": 144968,
+   "rnb:paires_fichier": 647279,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 647279
+  },
+  "84": {
+   "rnb:batiments": 415873,
+   "rnb:batiments_sans_cle": 87882,
+   "rnb:paires_fichier": 415233,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 415233
+  },
+  "85": {
+   "rnb:batiments": 754498,
+   "rnb:batiments_sans_cle": 133268,
+   "rnb:paires_fichier": 681669,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 681669
+  },
+  "86": {
+   "rnb:batiments": 441414,
+   "rnb:batiments_sans_cle": 64406,
+   "rnb:paires_fichier": 421777,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 421777
+  },
+  "87": {
+   "rnb:batiments": 350300,
+   "rnb:batiments_sans_cle": 57081,
+   "rnb:paires_fichier": 327669,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 327669
+  },
+  "88": {
+   "rnb:batiments": 319217,
+   "rnb:batiments_sans_cle": 61299,
+   "rnb:paires_fichier": 294372,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 294372
+  },
+  "89": {
+   "rnb:batiments": 367966,
+   "rnb:batiments_sans_cle": 62871,
+   "rnb:paires_fichier": 343952,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 343952
+  },
+  "90": {
+   "rnb:batiments": 65305,
+   "rnb:batiments_sans_cle": 9152,
+   "rnb:paires_fichier": 62661,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 62661
+  },
+  "91": {
+   "rnb:batiments": 459715,
+   "rnb:batiments_sans_cle": 79518,
+   "rnb:paires_fichier": 442534,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 442534
+  },
+  "92": {
+   "rnb:batiments": 186787,
+   "rnb:batiments_sans_cle": 23879,
+   "rnb:paires_fichier": 204228,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 204228
+  },
+  "93": {
+   "rnb:batiments": 298294,
+   "rnb:batiments_sans_cle": 48045,
+   "rnb:paires_fichier": 298993,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 298993
+  },
+  "94": {
+   "rnb:batiments": 255113,
+   "rnb:batiments_sans_cle": 38813,
+   "rnb:paires_fichier": 258157,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 258157
+  },
+  "95": {
+   "rnb:batiments": 387326,
+   "rnb:batiments_sans_cle": 64706,
+   "rnb:paires_fichier": 378231,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 378231
+  },
+  "971": {
+   "rnb:batiments": 267405,
+   "rnb:batiments_sans_cle": 216248,
+   "rnb:paires_fichier": 56440,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 56440
+  },
+  "972": {
+   "rnb:batiments": 217341,
+   "rnb:batiments_sans_cle": 159776,
+   "rnb:paires_fichier": 63194,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 63194
+  },
+  "973": {
+   "rnb:batiments": 83813,
+   "rnb:batiments_sans_cle": 61950,
+   "rnb:paires_fichier": 28049,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 28049
+  },
+  "974": {
+   "rnb:batiments": 414113,
+   "rnb:batiments_sans_cle": 309178,
+   "rnb:paires_fichier": 127868,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 127868
+  },
+  "975": {
+   "rnb:batiments": 4450,
+   "rnb:batiments_sans_cle": 3631,
+   "rnb:paires_fichier": 826,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 826
+  },
+  "976": {
+   "rnb:batiments": 77826,
+   "rnb:batiments_sans_cle": 47632,
+   "rnb:paires_fichier": 34813,
+   "rnb:sans_rnb_id": 0,
+   "rnb_liens": 34813
+  }
+ },
+ "departements_demandes": [
+  "01",
+  "02",
+  "03",
+  "04",
+  "05",
+  "06",
+  "07",
+  "08",
+  "09",
+  "10",
+  "11",
+  "12",
+  "13",
+  "14",
+  "15",
+  "16",
+  "17",
+  "18",
+  "19",
+  "2A",
+  "2B",
+  "21",
+  "22",
+  "23",
+  "24",
+  "25",
+  "26",
+  "27",
+  "28",
+  "29",
+  "30",
+  "31",
+  "32",
+  "33",
+  "34",
+  "35",
+  "36",
+  "37",
+  "38",
+  "39",
+  "40",
+  "41",
+  "42",
+  "43",
+  "44",
+  "45",
+  "46",
+  "47",
+  "48",
+  "49",
+  "50",
+  "51",
+  "52",
+  "53",
+  "54",
+  "55",
+  "56",
+  "57",
+  "58",
+  "59",
+  "60",
+  "61",
+  "62",
+  "63",
+  "64",
+  "65",
+  "66",
+  "67",
+  "68",
+  "69",
+  "70",
+  "71",
+  "72",
+  "73",
+  "74",
+  "75",
+  "76",
+  "77",
+  "78",
+  "79",
+  "80",
+  "81",
+  "82",
+  "83",
+  "84",
+  "85",
+  "86",
+  "87",
+  "88",
+  "89",
+  "90",
+  "91",
+  "92",
+  "93",
+  "94",
+  "95",
+  "971",
+  "972",
+  "973",
+  "974",
+  "975",
+  "976"
+ ],
+ "details": {
+  "doublons_inter_fichiers": "not measured (more than 4 files)"
+ },
+ "filter": "app/etl_rnb_liens/transform.py iter_link_rows(): rows with rnb_id, one pair per distinct non-empty addresses[].cle_interop_ban, buildings without key dropped; pipeline.py swap(): DISTINCT ON (id_rnb, cle_ban); departement = file. Cross-file duplicates measured only for 4 files or fewer",
+ "headers": {
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_01.csv.zip": {
+   "content_length": "111831628",
+   "etag": "\"9437a5aab54b8fab0c74af5076933bbf-22\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_01.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 03:08:41 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_02.csv.zip": {
+   "content_length": "114368026",
+   "etag": "\"9d798d5a6523e8ad2a38f550f00b5d60-22\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_02.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 03:34:42 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_03.csv.zip": {
+   "content_length": "93180520",
+   "etag": "\"87fbd218609360297a93624ed44fabba-18\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_03.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 03:38:24 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_04.csv.zip": {
+   "content_length": "41754582",
+   "etag": "\"68a7af9addd745593b10a32f82a0a39e-8\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_04.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 03:40:19 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_05.csv.zip": {
+   "content_length": "33712215",
+   "etag": "\"294409668c451e2c85d4ac217fcd7b90-7\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_05.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 03:42:04 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_06.csv.zip": {
+   "content_length": "109532687",
+   "etag": "\"4e29a55d49d8b79e82937a0cb27d97f6-21\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_06.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 03:46:09 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_07.csv.zip": {
+   "content_length": "85731238",
+   "etag": "\"ac66991e89f0e890a99252fe1ae01eee-17\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_07.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 03:50:25 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_08.csv.zip": {
+   "content_length": "57202626",
+   "etag": "\"f0ab965a1d48386460863d59935498ad-11\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_08.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 03:53:35 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_09.csv.zip": {
+   "content_length": "57408477",
+   "etag": "\"d29a26b6abe11286f52918bc3a17c8a5-11\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_09.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 03:56:57 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_10.csv.zip": {
+   "content_length": "65266040",
+   "etag": "\"b111f8ea834673e69cec130bd41e3437-13\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_10.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 04:00:55 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_11.csv.zip": {
+   "content_length": "93834474",
+   "etag": "\"7878a9c1698d5867087a8af84eedd475-18\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_11.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 04:04:35 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_12.csv.zip": {
+   "content_length": "97209933",
+   "etag": "\"592e0bda6a0d61388eb42ba50a4af4c0-19\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_12.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 04:08:34 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_13.csv.zip": {
+   "content_length": "227359165",
+   "etag": "\"fb85af281df27f9386656de9d3b0bf03-44\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_13.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 04:18:19 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_14.csv.zip": {
+   "content_length": "134548313",
+   "etag": "\"1bd8d206c37ab4ed142436f69744e2a8-26\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_14.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 04:44:40 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_15.csv.zip": {
+   "content_length": "45051952",
+   "etag": "\"6990feec4f2a85b9ff13aa826a6626d6-9\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_15.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 05:08:23 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_16.csv.zip": {
+   "content_length": "105613614",
+   "etag": "\"7fd5f155ceb607cab0f5da1a53538b1f-21\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_16.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 05:12:08 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_17.csv.zip": {
+   "content_length": "198133103",
+   "etag": "\"e05687f241baba4da83368050ad8f395-38\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_17.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 05:38:15 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_18.csv.zip": {
+   "content_length": "81572690",
+   "etag": "\"2476e48441a03cd91157879c0a72cccb-16\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_18.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 05:41:56 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_19.csv.zip": {
+   "content_length": "73103948",
+   "etag": "\"7c674347a5018de2a7e697ead6deef62-14\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_19.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 06:05:53 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_21.csv.zip": {
+   "content_length": "89878594",
+   "etag": "\"ea9321b6f847a34e72d5e3f4a31bfd05-18\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_21.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 06:33:41 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_22.csv.zip": {
+   "content_length": "173922565",
+   "etag": "\"50f46515ca3d840d627325381b4dfbb2-34\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_22.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 06:59:12 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_23.csv.zip": {
+   "content_length": "52370079",
+   "etag": "\"83b511a9f5a998cafbbf1d311d48377a-10\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_23.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 07:01:52 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_24.csv.zip": {
+   "content_length": "136456061",
+   "etag": "\"6a8d17f4213327c441dcfbfcdcc809b5-27\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_24.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 07:27:48 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_25.csv.zip": {
+   "content_length": "71513065",
+   "etag": "\"ee95e8471f6522c92497eb63b2e5fd55-14\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_25.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 07:30:58 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_26.csv.zip": {
+   "content_length": "100428933",
+   "etag": "\"9e9784ae43258e5352803afa5a97149e-20\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_26.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 07:34:37 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_27.csv.zip": {
+   "content_length": "126782922",
+   "etag": "\"ef42350c3f05c0efb0c83d0c7f83f196-25\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_27.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 07:39:25 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_28.csv.zip": {
+   "content_length": "86080404",
+   "etag": "\"c05594510edb46b3e82a92db72c317bd-17\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_28.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 07:43:46 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_29.csv.zip": {
+   "content_length": "214069701",
+   "etag": "\"81b1a0695c08149c2940541f5084225d-41\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_29.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 08:11:09 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_2A.csv.zip": {
+   "content_length": "31854206",
+   "etag": "\"5de76d9c9d9932074deaefa18bce23ad-7\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_2A.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 06:07:29 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_2B.csv.zip": {
+   "content_length": "34981176",
+   "etag": "\"71c4cbf7d401542d45107355262253c8-7\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_2B.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 06:09:01 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_30.csv.zip": {
+   "content_length": "140592102",
+   "etag": "\"acc91bcdb2c35e5777dd97373ccce575-27\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_30.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 08:16:19 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_31.csv.zip": {
+   "content_length": "190814830",
+   "etag": "\"53796a36099378dbb5666e7bb527c170-37\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_31.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 08:23:49 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_32.csv.zip": {
+   "content_length": "60432159",
+   "etag": "\"7e2676d1e2c7b070ada757a418f71d4b-12\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_32.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 08:48:35 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_33.csv.zip": {
+   "content_length": "291695627",
+   "etag": "\"4b1ebdc8c04623ed0f353a4c68cd3c5d-56\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_33.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 09:17:39 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_34.csv.zip": {
+   "content_length": "173244700",
+   "etag": "\"0e369d3c088f688f0f6a82f4488aa7d4-34\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_34.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 09:25:02 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_35.csv.zip": {
+   "content_length": "191184641",
+   "etag": "\"ce800ffe0a886fefdcdb808caf740b6c-37\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_35.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 09:51:31 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_36.csv.zip": {
+   "content_length": "69353580",
+   "etag": "\"fe8504bb354e4283b8aed79620c9f9fc-14\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_36.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 09:55:23 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_37.csv.zip": {
+   "content_length": "115556343",
+   "etag": "\"fb0a5d7842a109a8b6b836df51320e31-23\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_37.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 10:00:09 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_38.csv.zip": {
+   "content_length": "170084035",
+   "etag": "\"3fb92572e872921d47f0de19b84dd145-33\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_38.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 10:26:23 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_39.csv.zip": {
+   "content_length": "52895931",
+   "etag": "\"a24a86866a0e469e75d7f6b293cfda19-11\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_39.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 10:29:26 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_40.csv.zip": {
+   "content_length": "111122136",
+   "etag": "\"ad1624f7cf77232004431d2e36e3b40a-22\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_40.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 10:34:56 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_41.csv.zip": {
+   "content_length": "85214336",
+   "etag": "\"b385549e5fdd50bab0079e7a68a5245b-17\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_41.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 10:43:32 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_42.csv.zip": {
+   "content_length": "116116395",
+   "etag": "\"3695b3e0a3a7755ea82c3698aec6b428-23\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_42.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 10:49:06 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_43.csv.zip": {
+   "content_length": "60980562",
+   "etag": "\"3f76a6b4eb2f710abfabe5050603543e-12\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_43.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 10:52:19 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_44.csv.zip": {
+   "content_length": "254624645",
+   "etag": "\"c1d136fc9a061d4b87da133d2636c15e-49\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_44.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 11:03:23 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_45.csv.zip": {
+   "content_length": "119591237",
+   "etag": "\"b81aebb179a9fd5fcf79a6aa934ca2a4-23\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_45.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 11:10:42 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_46.csv.zip": {
+   "content_length": "67352800",
+   "etag": "\"b2d34661cb8a3e49a21804e7628c474e-13\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_46.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 11:15:00 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_47.csv.zip": {
+   "content_length": "89341106",
+   "etag": "\"2e8cb2bddfb80aef1e2de4a7383335da-18\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_47.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 11:18:46 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_48.csv.zip": {
+   "content_length": "27929838",
+   "etag": "\"eb69780b81d2da0a6e1426c405a1744a-6\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_48.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 11:21:27 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_49.csv.zip": {
+   "content_length": "172122020",
+   "etag": "\"cfea1301f6de7aedd052fcd6347adfbf-33\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_49.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 11:29:28 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_50.csv.zip": {
+   "content_length": "140487479",
+   "etag": "\"93dbda87b2e8038b7172d45da9d6c40a-27\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_50.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 11:56:57 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_51.csv.zip": {
+   "content_length": "95910503",
+   "etag": "\"2f311575e31d24eedc9e37f26c986b4a-19\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_51.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 12:02:20 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_52.csv.zip": {
+   "content_length": "45111130",
+   "etag": "\"ee5899cfa76ddf3811891a32e85773f5-9\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_52.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 12:05:35 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_53.csv.zip": {
+   "content_length": "84170762",
+   "etag": "\"fe6507e687ca6fa908a55e2a90638808-17\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_53.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 12:11:27 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_54.csv.zip": {
+   "content_length": "102933275",
+   "etag": "\"a2a2cbb59ae4c5973e4277c264e27243-20\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_54.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 12:16:58 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_55.csv.zip": {
+   "content_length": "43804205",
+   "etag": "\"e5859e217ef4b6466d30d0fd24a99e66-9\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_55.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 12:19:16 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_56.csv.zip": {
+   "content_length": "177872855",
+   "etag": "\"8593526f1ebdae1b7c0c29157bfbfeab-34\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_56.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 12:47:26 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_57.csv.zip": {
+   "content_length": "181532416",
+   "etag": "\"d7d98d9ed030f259660c2f7b9cb7acbf-35\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_57.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 13:14:30 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_58.csv.zip": {
+   "content_length": "64808779",
+   "etag": "\"3bf26ebd37e8dfef6d51c8de54bf007d-13\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_58.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 13:17:58 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_59.csv.zip": {
+   "content_length": "408304061",
+   "etag": "\"b67fefbf6461184d8872ac4c7ae02404-78\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_59.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 13:47:56 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_60.csv.zip": {
+   "content_length": "132389008",
+   "etag": "\"ed27e1269a39da8de5bbc091e5da9fc5-26\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_60.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 13:54:11 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_61.csv.zip": {
+   "content_length": "82605906",
+   "etag": "\"b5989fd5a3d5ffd048755b77ca45b393-16\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_61.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 13:57:33 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_62.csv.zip": {
+   "content_length": "283121187",
+   "etag": "\"456edc77bd807ffc8355969ab6c9eeef-55\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_62.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 14:26:13 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_63.csv.zip": {
+   "content_length": "135859789",
+   "etag": "\"c75165621e0df26376bb02755bfbf527-26\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_63.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 14:51:46 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_64.csv.zip": {
+   "content_length": "127555812",
+   "etag": "\"ebfcca81bf5adc5e7f80e324cd55aafe-25\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_64.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 15:16:39 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_65.csv.zip": {
+   "content_length": "61429953",
+   "etag": "\"ab5a90aaced8729e54595aae99450b65-12\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_65.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 15:19:30 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_66.csv.zip": {
+   "content_length": "90845393",
+   "etag": "\"6bb50a59bd7f01ccd1449c62c7841f13-18\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_66.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 15:22:57 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_67.csv.zip": {
+   "content_length": "177946409",
+   "etag": "\"fb3e5d90cb59bf4ea7aa89b36c69b450-34\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_67.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 15:32:45 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_68.csv.zip": {
+   "content_length": "129196837",
+   "etag": "\"d0d665748326950cf3c4a83c57bc68ca-25\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_68.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 15:38:45 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_69.csv.zip": {
+   "content_length": "152073961",
+   "etag": "\"c453a1375575a8fd56fbbf25be8c6e64-30\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_69.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 15:44:19 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_70.csv.zip": {
+   "content_length": "55946501",
+   "etag": "\"eb3ae656a3d92a671ccfb354c65d53ac-11\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_70.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 15:46:33 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_71.csv.zip": {
+   "content_length": "128826481",
+   "etag": "\"965954207f1e6d68b51e6b667e3cdbcb-25\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_71.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 16:13:04 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_72.csv.zip": {
+   "content_length": "124803568",
+   "etag": "\"417ef2ab5c736dcbb6f11e9e3507cb52-24\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_72.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 16:19:09 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_73.csv.zip": {
+   "content_length": "76989076",
+   "etag": "\"69e428c4f1f306f144d5ecdb63f85ec0-15\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_73.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 16:22:35 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_74.csv.zip": {
+   "content_length": "112413531",
+   "etag": "\"d43767393fad6a03627bc95150bb4817-22\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_74.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 16:29:32 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_75.csv.zip": {
+   "content_length": "42000435",
+   "etag": "\"15bdef2a7e5015c484b99cf49819bc51-9\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_75.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 16:33:33 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_76.csv.zip": {
+   "content_length": "202072176",
+   "etag": "\"7ba7dbb3f62f6db00b88218a45f46703-39\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_76.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 16:41:38 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_77.csv.zip": {
+   "content_length": "172021422",
+   "etag": "\"1766b40240197d4a40f97aa27bf1dc15-33\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_77.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 16:50:31 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_78.csv.zip": {
+   "content_length": "123134541",
+   "etag": "\"5f42b61b2fdbbe26e2a377fae0e33e64-24\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_78.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 16:56:42 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_79.csv.zip": {
+   "content_length": "109676393",
+   "etag": "\"2278b13846159326b964ec7b1439de72-21\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_79.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 17:00:53 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_80.csv.zip": {
+   "content_length": "137220021",
+   "etag": "\"7b627529d1520836486f7294c62337af-27\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_80.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 17:06:26 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_81.csv.zip": {
+   "content_length": "101511616",
+   "etag": "\"417d737dea7dcd623a1b027b91201e05-20\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_81.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 17:10:45 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_82.csv.zip": {
+   "content_length": "61571823",
+   "etag": "\"71e9753591c2ac501481078a1720c0db-12\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_82.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 17:13:19 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_83.csv.zip": {
+   "content_length": "173769192",
+   "etag": "\"ed6f19026c88280d1fe3047dcc1146a4-34\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_83.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 17:18:39 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_84.csv.zip": {
+   "content_length": "107968271",
+   "etag": "\"2cc0750a6b3b631ecfda4171036ac79c-21\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_84.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 17:24:03 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_85.csv.zip": {
+   "content_length": "200618160",
+   "etag": "\"644b25b1cc73e1d3e573e03822906332-39\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_85.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 17:51:10 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_86.csv.zip": {
+   "content_length": "111072199",
+   "etag": "\"5ea36d3395f60167921eea91b5fa1d01-22\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_86.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 17:55:54 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_87.csv.zip": {
+   "content_length": "84158283",
+   "etag": "\"bd732adebdd455e265a53b5acdcad2cf-17\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_87.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 17:59:38 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_88.csv.zip": {
+   "content_length": "76737408",
+   "etag": "\"b1385ba84380ea161c198a8a2dd0ac01-15\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_88.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 18:05:59 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_89.csv.zip": {
+   "content_length": "90387105",
+   "etag": "\"79075aa08d9e3f0e78e3c7ac8806c3fb-18\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_89.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 18:10:04 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_90.csv.zip": {
+   "content_length": "15636485",
+   "etag": "\"3d3af887801e72d5d9a92c0f359a2843-3\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_90.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 18:10:40 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_91.csv.zip": {
+   "content_length": "115834976",
+   "etag": "\"2c31970aad4bf9792e9b8fa973681b51-23\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_91.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 18:15:17 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_92.csv.zip": {
+   "content_length": "58614288",
+   "etag": "\"3fc2a3c6bde36d0ce13c4b075cdeebb1-12\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_92.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 18:17:49 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_93.csv.zip": {
+   "content_length": "80877659",
+   "etag": "\"672950fb003eceeb36f5a9c2f53f9287-16\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_93.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 18:21:46 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_94.csv.zip": {
+   "content_length": "68405748",
+   "etag": "\"93a03a7f3998384609b488e6b5dcbdbb-14\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_94.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 18:23:53 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_95.csv.zip": {
+   "content_length": "99007557",
+   "etag": "\"2cb1d34653d39fd51e6f39c05b1b3d07-19\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_95.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 18:29:03 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_971.csv.zip": {
+   "content_length": "51598611",
+   "etag": "\"b2002908e84a077d4ff1b7292615789b-10\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_971.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 18:32:08 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_972.csv.zip": {
+   "content_length": "42510881",
+   "etag": "\"16d8be35bb7257c3285fd073eeb8f6ac-9\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_972.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 18:33:50 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_973.csv.zip": {
+   "content_length": "15008753",
+   "etag": "\"5d501aef20cc4b5d60eca0bf508ce59b-3\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_973.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 18:35:11 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_974.csv.zip": {
+   "content_length": "81666091",
+   "etag": "\"c5063816ab276ca4adaf7f533f6aba5f-16\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_974.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 18:38:10 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_975.csv.zip": {
+   "content_length": "687841",
+   "etag": "\"a0e1208f31f3808a64c3ed9097e6b911\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_975.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 18:39:07 GMT",
+   "status": 200
+  },
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_976.csv.zip": {
+   "content_length": "14933835",
+   "etag": "\"9c3934feb9e0dbbd4a04a910d093b89a-3\"",
+   "final_url": "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_976.csv.zip",
+   "last_modified": "Sat, 10 Oct 2026 18:39:04 GMT",
+   "status": 200
+  }
+ },
+ "millesime": {
+  "distinct": 102,
+  "last_modified": "Sat, 10 Oct 2026 18:39:07 GMT"
+ },
+ "mode": "producteur",
+ "pannes": {},
+ "primary_metric": "rnb_liens",
+ "script_sha256": "960d3b0b3bf138081e7a161842e7c3a708287fe6ea337ddbe0df0c0b0a1a201a",
+ "script_sha256_origin": "caller, SHA-256 of the file sent on stdin",
+ "source": "rnb",
+ "started_at": "2026-10-13T10:55:56Z",
+ "totals": {
+  "rnb:batiments": 44826899,
+  "rnb:batiments_sans_cle": 9459179,
+  "rnb:paires_fichier": 41046840,
+  "rnb:sans_rnb_id": 0,
+  "rnb_liens": 41046840
+ },
+ "urls": [
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_01.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_02.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_03.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_04.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_05.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_06.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_07.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_08.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_09.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_10.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_11.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_12.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_13.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_14.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_15.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_16.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_17.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_18.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_19.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_2A.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_2B.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_21.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_22.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_23.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_24.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_25.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_26.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_27.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_28.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_29.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_30.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_31.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_32.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_33.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_34.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_35.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_36.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_37.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_38.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_39.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_40.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_41.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_42.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_43.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_44.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_45.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_46.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_47.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_48.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_49.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_50.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_51.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_52.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_53.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_54.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_55.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_56.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_57.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_58.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_59.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_60.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_61.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_62.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_63.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_64.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_65.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_66.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_67.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_68.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_69.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_70.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_71.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_72.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_73.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_74.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_75.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_76.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_77.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_78.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_79.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_80.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_81.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_82.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_83.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_84.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_85.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_86.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_87.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_88.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_89.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_90.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_91.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_92.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_93.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_94.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_95.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_971.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_972.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_973.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_974.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_975.csv.zip",
+  "https://rnb-opendata.s3.fr-par.scw.cloud/files/RNB_976.csv.zip"
+ ]
+}

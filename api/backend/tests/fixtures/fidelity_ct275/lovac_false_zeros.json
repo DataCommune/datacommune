@@ -1,0 +1,152 @@
+{
+  "codes_44_85": [
+    {
+      "annee": 2026,
+      "code_commune": "44039"
+    },
+    {
+      "annee": 2026,
+      "code_commune": "44053"
+    },
+    {
+      "annee": 2026,
+      "code_commune": "44078"
+    },
+    {
+      "annee": 2026,
+      "code_commune": "44092"
+    },
+    {
+      "annee": 2026,
+      "code_commune": "44098"
+    },
+    {
+      "annee": 2026,
+      "code_commune": "44106"
+    },
+    {
+      "annee": 2026,
+      "code_commune": "44119"
+    },
+    {
+      "annee": 2026,
+      "code_commune": "44134"
+    },
+    {
+      "annee": 2026,
+      "code_commune": "44139"
+    },
+    {
+      "annee": 2026,
+      "code_commune": "44159"
+    },
+    {
+      "annee": 2026,
+      "code_commune": "44164"
+    },
+    {
+      "annee": 2026,
+      "code_commune": "44183"
+    },
+    {
+      "annee": 2026,
+      "code_commune": "44220"
+    },
+    {
+      "annee": 2026,
+      "code_commune": "44221"
+    },
+    {
+      "annee": 2026,
+      "code_commune": "44222"
+    },
+    {
+      "annee": 2026,
+      "code_commune": "85028"
+    },
+    {
+      "annee": 2026,
+      "code_commune": "85073"
+    },
+    {
+      "annee": 2026,
+      "code_commune": "85087"
+    },
+    {
+      "annee": 2026,
+      "code_commune": "85104"
+    },
+    {
+      "annee": 2026,
+      "code_commune": "85116"
+    },
+    {
+      "annee": 2026,
+      "code_commune": "85117"
+    },
+    {
+      "annee": 2026,
+      "code_commune": "85125"
+    },
+    {
+      "annee": 2026,
+      "code_commune": "85134"
+    },
+    {
+      "annee": 2026,
+      "code_commune": "85136"
+    },
+    {
+      "annee": 2026,
+      "code_commune": "85137"
+    },
+    {
+      "annee": 2026,
+      "code_commune": "85171"
+    },
+    {
+      "annee": 2026,
+      "code_commune": "85184"
+    },
+    {
+      "annee": 2026,
+      "code_commune": "85189"
+    },
+    {
+      "annee": 2026,
+      "code_commune": "85201"
+    },
+    {
+      "annee": 2026,
+      "code_commune": "85207"
+    },
+    {
+      "annee": 2026,
+      "code_commune": "85245"
+    },
+    {
+      "annee": 2026,
+      "code_commune": "85248"
+    },
+    {
+      "annee": 2026,
+      "code_commune": "85261"
+    },
+    {
+      "annee": 2026,
+      "code_commune": "85269"
+    },
+    {
+      "annee": 2026,
+      "code_commune": "85285"
+    }
+  ],
+  "counts": {
+    "44": 15,
+    "85": 20,
+    "total": 18325
+  },
+  "rule": "taux_vacance = 0 AND (nb_logements_prives IS NULL OR nb_logements_prives <= 0)",
+  "status": "ok",
+  "table": "vacance"
+}
