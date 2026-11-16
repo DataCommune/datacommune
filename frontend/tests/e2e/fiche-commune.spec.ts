@@ -5,6 +5,7 @@ import { LIBELLES_ETATS } from '../../src/lib/data/etats-libelles';
 import { sansDeveloppement } from '../../src/lib/utils/sigles';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { configureSsrSource, type SourceExpectation, type SsrSourceProbe } from './fixtures/bien-ssr-source';
+import { monterVolet } from './fixtures/volets';
 import {
 	COMMUNE_FLAT_85047,
 	COMMUNE_FLAT_85047_WITH_DVF_WINDOW,
@@ -265,6 +266,7 @@ test.describe('Fiche Commune — synthèse et volet source (contrat mocké, dét
 		await expect(kpi.locator('.state-value .value')).toHaveText('2\u202f000');
 		await expect(kpi.locator('.state-value .unit')).toHaveText('€/m²');
 		await expect(kpi.locator('.kpi-line .kpi-meta')).toHaveText('12 ventes · du 31 décembre 2024 au 31 décembre 2025');
+		await monterVolet(kpi);
 		const periode = kpi.locator('dialog .source-panel-entry', { has: page.locator('dt', { hasText: /^Période$/ }) }).locator('dd');
 		await expect(periode).toHaveText('2024-12-31 → 2025-12-31');
 		// On screen the tile reads as its count, the period is behind the « i »; it stays on paper, whole.
@@ -328,6 +330,7 @@ test.describe('Fiche Commune — synthèse et volet source (contrat mocké, dét
 			for (const face of faces) expect(face, `face d'un repère à ${width} px`).not.toMatch(/\d{4}-\d{2}-\d{2}/);
 			await expect(page.locator('[data-kpi="prix-maisons"] .kpi-line .kpi-meta')).toHaveText('460 ventes · du 31 décembre 2024 au 31 décembre 2025');
 			for (const id of ['prix-maisons', 'prix-appartements']) {
+				await monterVolet(page.locator(`[data-kpi="${id}"]`));
 				const periode = page.locator(`[data-kpi="${id}"] dialog .source-panel-entry`, { has: page.locator('dt', { hasText: /^Période$/ }) }).locator('dd');
 				await expect(periode).toHaveText('2024-12-31 → 2025-12-31');
 			}
@@ -511,6 +514,7 @@ test.describe('Fiche Commune — synthèse et volet source (contrat mocké, dét
 		await expect(maisons.locator('.tab-v > .state-value .value')).toHaveText('2 480');
 		await expect(maisons.locator('.tab-v > .state-value .unit')).toHaveText('€/m²');
 		await expect(maisons.locator('.tab-note-texte')).toHaveText('2024-12-31 → 2025-12-31');
+		await monterVolet(maisons);
 		await expect(maisons.locator('.source-panel-entry', { has: page.locator('dt', { hasText: /^Objet$/ }) }).locator('dd')).toHaveText('Commune');
 		const appartements = theme.locator('[data-field-id="dvf.prix_m2_median_appartement"]');
 		await expect(appartements.locator('.tab-v > .state-absence .state-badge')).toHaveText('Effectif insuffisant');
@@ -1083,6 +1087,7 @@ test.describe('Fiche Commune — chiffres définis et lus (04.7-15)', () => {
 			for (const id of KPI_85047) {
 				await expect(page.locator(`[data-kpi="${id}"] .cle-note`)).toHaveCount(0);
 				await expect(page.locator(`[data-kpi="${id}"] .source-button`), `bouton du repère ${id} à ${largeur} px`).toBeVisible();
+				await monterVolet(page.locator(`[data-kpi="${id}"]`));
 				await expect(page.locator(`[data-kpi="${id}"] dialog .source-panel-entry`).filter({ hasText: 'Définition' })).toHaveCount(1);
 			}
 			await expect(page.locator('[data-definitions]')).toHaveCount(0);
@@ -1254,16 +1259,24 @@ test.describe('Fiche Commune — trois niveaux (4.9, lot 3)', () => {
 	test.describe('sans JavaScript', () => {
 		test.use({ javaScriptEnabled: false });
 
-		test('les définitions et les sources restent lisibles', async ({ page }) => {
+		// Search Console of 2026-11-16: the definitions are the same on every fiche, so the fiche links them
+		// (one click) instead of serving them; their page reads the same fiche and is not indexed.
+		test('les définitions et les sources restent lisibles, à un lien de la fiche', async ({ page }) => {
 			await configureSsrSource(page.request, [{
-				method: 'GET', pathname: '/v1/commune', query: { code_insee: '85191' }, minCalls: 1, maxCalls: 2,
-				responses: Array.from({ length: 2 }, () => ({ status: 200, body: { statut: 'ok', donnees: [COMMUNE_85191_OBSERVED], meta: { source: COMMUNE_85191_SOURCES } } }))
+				method: 'GET', pathname: '/v1/commune', query: { code_insee: '85191' }, minCalls: 2, maxCalls: 3,
+				responses: Array.from({ length: 3 }, () => ({ status: 200, body: { statut: 'ok', donnees: [COMMUNE_85191_OBSERVED], meta: { source: COMMUNE_85191_SOURCES } } }))
 			}]);
 			await page.goto('/commune/85191');
-			const bloc = page.locator('.fiche-sans-js');
-			await expect(bloc).toBeVisible();
+			await expect(page.locator('.fiche')).not.toContainText('Prix au m² qui partage en deux moitiés');
+			const lien = page.locator('.fiche-sans-js').getByRole('link', { name: 'Définitions et sources des indicateurs de cette fiche' });
+			await expect(lien).toBeVisible();
+			await lien.click();
+			await expect(page).toHaveURL(/\/commune\/85191\/definitions$/);
+			await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'noindex, follow');
+			const bloc = page.locator('dl.definitions');
 			await expect(bloc).toContainText('Prix au m² qui partage en deux moitiés');
 			await expect(bloc).toContainText("Ce site ne publie pas l'évolution des prix pour cette commune.");
+			await expect(bloc).toContainText(/Source\s: /);
 		});
 	});
 });

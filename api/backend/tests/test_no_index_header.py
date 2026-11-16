@@ -49,3 +49,11 @@ async def test_rate_limit_refusal_is_noindex(raw_client, monkeypatch):
 
     assert refused.status_code == 429
     assert refused.headers["X-Robots-Tag"] == _NO_INDEX
+
+
+async def test_refused_key_is_noindex(raw_client):
+    """Search Console of 2026-11-16: 18 `/v1/...` URLs crawled, answered 401."""
+    refused = await raw_client.get("/v1/commune", params={"code_insee": "06128"})
+
+    assert refused.status_code == 401
+    assert refused.headers["X-Robots-Tag"] == _NO_INDEX

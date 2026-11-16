@@ -1,3 +1,19 @@
+<script lang="ts" module>
+	import { flushSync, getContext, setContext } from 'svelte';
+
+	const VOLETS_DIFFERES = Symbol('volets-differes');
+
+	/**
+	 * Called by a page while it initialises: the panels under it render their content when first opened,
+	 * never in the server HTML. The commune fiche carries some forty panels whose explanations are the same
+	 * on every commune; served, they made two fiches look alike to a search engine (Search Console of
+	 * 2026-11-16). Opening still makes no network call: the content is rendered from what the page read.
+	 */
+	export function differerLesVolets() {
+		setContext(VOLETS_DIFFERES, true);
+	}
+</script>
+
 <script lang="ts">
 	// Source panel of a value (UI-SPEC « Bouton i et volet », E6): a modal <dialog>, never a
 	// floating tooltip. Side panel of at most 552px from 721px, full screen below, scrolled
@@ -30,6 +46,8 @@
 
 	const titreId = $props.id();
 	let dialog = $state<HTMLDialogElement>();
+	// Under `differerLesVolets`, nothing is rendered inside the dialog before its first opening.
+	let rendu = $state(getContext(VOLETS_DIFFERES) !== true);
 	let titreElement = $state<HTMLHeadingElement>();
 	let declencheur: HTMLElement | null = null;
 	// What had the focus when opening: a native close gives it back there, and a click does not
@@ -47,6 +65,11 @@
 	/** Opens the panel; `origine` gets the focus back when it closes. */
 	export function ouvrir(origine: HTMLElement) {
 		if (!dialog || dialog.open) return;
+		if (!rendu) {
+			rendu = true;
+			// The title must exist before the focus goes to it.
+			flushSync();
+		}
 		declencheur = origine;
 		focusAvant = document.activeElement;
 		if (SIGNALEMENT) {
@@ -128,12 +151,12 @@
 <dialog
 	bind:this={dialog}
 	class="source-panel"
-	aria-labelledby={titreId}
+	aria-labelledby={rendu ? titreId : undefined}
 	onclose={surFermeture}
 	onkeydown={surTouche}
 	onclick={surClic}
 >
-	<div class="source-panel-inner">
+	{#if rendu}<div class="source-panel-inner">
 		<div class="source-panel-head">
 			<h2 id={titreId} class="source-panel-title" tabindex="-1" bind:this={titreElement}>{titre}</h2>
 			<button type="button" class="source-panel-close" onclick={fermer}>Fermer</button>
@@ -178,7 +201,7 @@
 			</details>
 		{/if}
 		{#if lienSignaler}<p class="source-panel-signaler"><a href={lienSignaler}>{LIBELLES.volet}</a></p>{/if}
-	</div>
+	</div>{/if}
 </dialog>
 
 <style>

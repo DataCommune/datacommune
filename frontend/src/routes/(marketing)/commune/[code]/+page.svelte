@@ -10,7 +10,7 @@
 	// SourcesPrint; the CSV export keeps the five themes with their served state and caveats.
 	// Data is read by the universal `load` (+page.ts): the first response is server-rendered, a
 	// client navigation re-runs the load. Nothing here computes a value: it renders the model.
-	import { onMount, tick, untrack } from 'svelte';
+	import { flushSync, onMount, tick, untrack } from 'svelte';
 	import { goto, invalidateAll } from '$app/navigation';
 	import { navigating } from '$app/stores'; // Project convention: stores, never the state module.
 	import LienLimites from '$lib/components/fiche/LienLimites.svelte';
@@ -45,6 +45,8 @@
 	import ExportDialog from '$lib/components/fiche/ExportDialog.svelte';
 	import EnTetePrint from '$lib/components/fiche/EnTetePrint.svelte';
 	import SourcesPrint from '$lib/components/fiche/SourcesPrint.svelte';
+	import { differerLesVolets } from '$lib/components/fiche/SourcePanel.svelte';
+	import DefinitionsCommune from '$lib/components/fiche/DefinitionsCommune.svelte';
 	import { recentFiches } from '$lib/stores/recent-fiches.svelte';
 	import { comparisonSelection, confirmationAjout, type ConfirmationAjout } from '$lib/stores/comparison-selection.svelte';
 	import { SITE_URL, OG_IMAGE_URL } from '$lib/config';
@@ -62,6 +64,18 @@
 	import type { LigneTheme } from '$lib/data/commune-grid';
 
 	let { data }: { data: PageData } = $props();
+
+	// What the server sends is what a search engine compares between two fiches (Search Console of
+	// 2026-11-16: 486 fiches seen as duplicates of another one). The texts that are the same on every
+	// commune stay one click away and out of that HTML: the panels render when opened, the blocks of paper
+	// when the page is printed, the definitions without JavaScript on their own page.
+	differerLesVolets();
+	let impression = $state(false);
+	function preparerImpression() {
+		if (impression) return;
+		impression = true;
+		flushSync();
+	}
 
 	// The screen reads unpublished blocks as no block (flat columns); `data` keeps them as served.
 	const synthese = $derived(data.etat === 'fiche' ? blocsPublies(data.synthese) : null);
@@ -403,7 +417,17 @@
 		const lire = () => (deuxColonnes = seuil.matches);
 		lire();
 		seuil.addEventListener('change', lire);
-		return () => seuil.removeEventListener('change', lire);
+		// The print medium without a `beforeprint` (an emulated medium, some print previews).
+		const papier = matchMedia('print');
+		const surPapier = () => {
+			if (papier.matches) preparerImpression();
+		};
+		surPapier();
+		papier.addEventListener('change', surPapier);
+		return () => {
+			seuil.removeEventListener('change', lire);
+			papier.removeEventListener('change', surPapier);
+		};
 	});
 	const liensReservesLus = $derived(
 		liensReserves.map((lien, index) => ({
@@ -417,6 +441,7 @@
 	const IMPRIMES = 'details.cat, [data-faq] details';
 	let avantImpression: boolean[] | null = null;
 	function ouvrirPourImpression() {
+		preparerImpression();
 		// A second `beforeprint` (page.pdf, a print preview) must not record the opened state as the reader's.
 		if (avantImpression) return;
 		const details = [...document.querySelectorAll<HTMLDetailsElement>(IMPRIMES)];
@@ -524,16 +549,6 @@
 	{/if}
 {/snippet}
 
-{#snippet blocDefinitions()}
-	<h3>Définitions</h3>
-	<dl>
-		{#each definitions as entree (entree.id)}
-			<dt>{entree.libelle}</dt>
-			{#each entree.textes as texte (texte)}<dd>{texte}</dd>{/each}
-		{/each}
-	</dl>
-{/snippet}
-
 <!-- svelte-ignore a11y_click_events_have_key_events, a11y_no_static_element_interactions (only links are listened to, and a link reached by the keyboard fires this click too) -->
 <div class="fiche gabarit" onclick={ouvrirDepuisAncre}>
 	<div class="fiche-tete">
@@ -590,7 +605,7 @@
 			{#each CATEGORIES_COMMUNE as categorie (categorie.id)}<div class="panneau-squelette" aria-hidden="true"></div>{/each}
 		</div>
 	{:else if data.etat === 'fiche' && synthese}
-		<EnTetePrint consulteLe={data.consulteLe} />
+		{#if impression}<EnTetePrint consulteLe={data.consulteLe} />{/if}
 
 		<Panneau variante="essentiel" titre="L’essentiel" id="essentiel">
 			<p class="essentiel-chapo">
@@ -659,10 +674,16 @@
 
 		{@render autour()}
 
-		<div id="definitions-impression" class="fiche-impression fiche-definitions">{@render blocDefinitions()}</div>
-		<noscript><div class="fiche-sans-js fiche-definitions">{@render blocDefinitions()}</div></noscript>
-
-		<SourcesPrint {millesimes} sources={sourcesParDataset} />
+		{#if impression}
+			<div id="definitions-impression" class="fiche-impression fiche-definitions">
+				<h3>Définitions</h3>
+				<DefinitionsCommune {definitions} />
+			</div>
+			<SourcesPrint {millesimes} sources={sourcesParDataset} />
+		{/if}
+		<noscript>
+			<p class="fiche-sans-js fiche-definitions"><a href={`/commune/${data.code}/definitions`}>Définitions et sources des indicateurs de cette fiche</a></p>
+		</noscript>
 
 		<ExportDialog
 			open={exportOpen}
@@ -957,19 +978,6 @@
 	.fiche-definitions h3 {
 		margin: var(--s5) 0 var(--s2);
 		font-size: 16px;
-	}
-
-	.fiche-definitions dl {
-		margin: 0;
-	}
-
-	.fiche-definitions dt {
-		margin-top: var(--s2);
-		font-weight: 600;
-	}
-
-	.fiche-definitions dd {
-		margin: 0;
 	}
 
 	@media screen {

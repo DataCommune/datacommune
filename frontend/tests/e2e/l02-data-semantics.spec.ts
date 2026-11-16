@@ -2,6 +2,7 @@ import { readFileSync } from 'node:fs';
 import { test, expect, type Page } from '@playwright/test';
 import { configureSsrSource } from './fixtures/bien-ssr-source';
 import { lireTheme } from './fixtures/themes';
+import { monterVolet } from './fixtures/volets';
 
 // These are HTTP captures from disposable SQL integration tests, not live measurements.
 // Income uses a minimal materialized projection; rents use the actual commune rebuild.
@@ -43,6 +44,7 @@ for (const width of [375, 1280]) {
 		await expect(valeur.locator('.value')).toHaveText(/^24\s380$/);
 		await expect(valeur.locator('.unit')).toContainText('€/UC/an');
 		// The caveat is read in the source panel of the row (« Limites », 03-17 R-1).
+		await monterVolet(row);
 		const limites = row.locator('.source-panel-entry', { has: page.locator('dt', { hasText: /^Limites$/ }) }).locator('dd');
 		await expect(limites).toContainText('déclaré');
 		await expect(limites).toContainText('avant redistribution');

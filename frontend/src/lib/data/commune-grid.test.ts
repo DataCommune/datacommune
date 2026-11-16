@@ -1,6 +1,6 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import { render } from '@testing-library/svelte';
-import { panneauDeTheme } from './__fixtures__/fiche-commune-rendue';
+import { ouvrirVolet, panneauDeTheme } from './__fixtures__/fiche-commune-rendue';
 import { downloadCsv } from '$lib/utils/csv-download';
 import { COMMUNE_THEMES, THEME_DU_CHAMP, mapCommuneToGrid, themesCommune, themesPourExport } from './commune-grid';
 import { mapCommuneToFiche, ficheDepth } from './commune-fiche';
@@ -149,11 +149,12 @@ describe('Commune grid from existing source fields', () => {
 describe('Commune adapter wired to the real grid wrappers and inherited CSV helper', () => {
 	// The summary grid this case used to mount has no page any more; the unit and absence rules it
 	// guarded are read on the theme panel of the commune page.
-	it('renders the Challans vacancy rate with its unit and caveat, and omits an undeclared rent absence', () => {
+	it('renders the Challans vacancy rate with its unit and caveat, and omits an undeclared rent absence', async () => {
 		const container = panneauDeTheme(COMMUNE_85047_CHALLANS, 'immobilier');
 		const vacancy = container.querySelector('[data-field-id="vacance.taux_vacance"]')!;
 		expect(vacancy.querySelector(':scope > dd .state-value .value')?.textContent?.trim()).toBe('9,4');
 		expect(vacancy.querySelector(':scope > dd .state-value .unit')?.textContent?.trim()).toBe('%');
+		await ouvrirVolet(vacancy);
 		const limites = [...vacancy.querySelectorAll('.source-panel-entry')]
 			.find(node => node.querySelector('dt')?.textContent === 'Limites')?.querySelector('dd')?.textContent;
 		expect(limites).toContain('parc privé');
@@ -161,7 +162,7 @@ describe('Commune adapter wired to the real grid wrappers and inherited CSV help
 		// rendered at all, never given a state the API did not declare (D-47).
 		expect(container.querySelector('[data-field-id="loyers.loyer_m2_appartement"]')).toBeNull();
 	});
-	it('renders the rent context and real mesh in its theme without changing the formatted value', () => {
+	it('renders the rent context and real mesh in its theme without changing the formatted value', async () => {
 		const commune = rentFixture.communes['05066'].donnees[0] as CommuneSynthese;
 		const container = panneauDeTheme(commune, 'immobilier');
 		// Since 4.9 the rents are read in « Prix et ventes », in their group.
@@ -171,6 +172,7 @@ describe('Commune adapter wired to the real grid wrappers and inherited CSV help
 		expect(rent.querySelector(':scope > dd .state-value .unit')?.textContent?.trim()).toBe('€/m²/mois');
 		// The object of the row is read in its panel (03-17 R-1).
 		expect(rent.querySelector('.tab-n')?.textContent).not.toContain('Maille');
+		await ouvrirVolet(rent);
 		expect([...rent.querySelectorAll('.source-panel-entry')]
 			.find((node) => node.querySelector('dt')?.textContent === 'Objet')?.querySelector('dd')?.textContent).toBe('Maille');
 		expect(container.textContent).toContain('0 obs. commune / 484 obs. maille');

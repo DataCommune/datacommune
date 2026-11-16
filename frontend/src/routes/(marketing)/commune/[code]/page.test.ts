@@ -53,6 +53,11 @@ async function charger(fetch: typeof globalThis.fetch): Promise<FicheCommuneData
 
 afterEach(() => vi.restoreAllMocks());
 
+/** Opens the panel of a row or a tile: its content is rendered at its first opening (Search Console 2026-11-16). */
+async function ouvrirVolet(porteur: Element) {
+	await fireEvent.click(porteur.querySelector('.source-button')!);
+}
+
 describe('/commune/[code] — an answer without data nor reason (03-17 F1)', () => {
 	it('is titled as an unread page, never with the served sub-state « Non renseigné »', () => {
 		const data = { etat: 'non-renseignee', code: '44109', identite: { nom: 'Nantes', departement: '44', codePostal: '44000' } } as FicheCommuneData;
@@ -227,7 +232,7 @@ describe('/commune/[code] — the rows of a theme keep their rules (03-17, D-47)
 	const entreeDuVolet = (ligne: Element, terme: string) => [...ligne.querySelectorAll('.source-panel-entry')]
 		.find((node) => node.querySelector('dt')?.textContent === terme)?.querySelector('dd')?.textContent ?? null;
 
-	it('renders each row with its label, value or declared state, and its Source button without title', () => {
+	it('renders each row with its label, value or declared state, and its Source button without title', async () => {
 		const panneau = page().querySelector('section.lecture')!;
 		const prix = panneau.querySelector('[data-field-id="dvf.prix_m2_median_appartement"]')!;
 		expect(prix.querySelector('dt')?.textContent).toContain('Prix médian');
@@ -236,6 +241,7 @@ describe('/commune/[code] — the rows of a theme keep their rules (03-17, D-47)
 		const vacance = panneau.querySelector('[data-field-id="vacance.taux_vacance"]')!;
 		expect(vacance.querySelector('.state-value .value')?.textContent).toBe('9,4');
 		expect(vacance.querySelector('.state-value .unit')?.textContent?.trim()).toBe('%');
+		await ouvrirVolet(vacance);
 		expect(entreeDuVolet(vacance, 'Objet')).toBe('Parc privé communal');
 		// Object and caveats are read in the panel, not under the value (03-17 R-1).
 		const horsVolet = vacance.querySelector('dd')!.cloneNode(true) as Element;
@@ -259,10 +265,11 @@ describe('/commune/[code] — the rows of a theme keep their rules (03-17, D-47)
 		expect(revenu.querySelector('.tab-note-texte')?.textContent).toBe('Millésime 2021');
 	});
 
-	it('keeps a declared absence visible with the glossary label, its sentence one click away (A2)', () => {
+	it('keeps a declared absence visible with the glossary label, its sentence one click away (A2)', async () => {
 		const loyer = page().querySelector('#q-prix [data-field-id="loyers.loyer_m2_appartement"]')!;
 		expect(loyer.querySelector('.tab-v .state-badge')?.textContent).toBe('Non publiée');
 		expect(loyer.querySelector('.tab-v .state-help')).toBeNull();
+		await ouvrirVolet(loyer);
 		expect(loyer.querySelector('dialog .state-help')?.textContent).toBe('La source ne publie pas cette valeur pour ce territoire.');
 		expect(loyer.textContent).not.toMatch(/non disponible|not_available/);
 	});
@@ -288,15 +295,28 @@ describe('/commune/[code] — the rows of a theme keep their rules (03-17, D-47)
 
 	const revenu = (container: Element) => container.querySelector('#q-quotidien [data-field-id="revenus.revenu_median"]')!;
 
-	it('omits a source the response does not serve (03-17 R-1)', () => {
+	it('renders a panel at its first opening only, its title then focused (Search Console 2026-11-16)', async () => {
 		const ligne = revenu(page());
+		const volet = ligne.querySelector('dialog.source-panel')!;
+		expect(volet.textContent?.trim()).toBe('');
+		await ouvrirVolet(ligne);
+		expect(volet.hasAttribute('open')).toBe(true);
+		expect(document.activeElement).toBe(volet.querySelector('.source-panel-title'));
+		expect(entreeDuVolet(ligne, 'Définition')).toBe(getExplication('revenus.revenu_median').definition);
+	});
+
+	it('omits a source the response does not serve (03-17 R-1)', async () => {
+		const ligne = revenu(page());
+		await ouvrirVolet(ligne);
+		expect(entreeDuVolet(ligne, 'Définition')).not.toBeNull();
 		expect(entreeDuVolet(ligne, 'Source')).toBeNull();
 		expect(ligne.querySelector('.tab-note-source')).toBeNull();
 	});
 
-	it('names a served source by its dataset in the panel (03-17 R-1)', () => {
+	it('names a served source by its dataset in the panel (03-17 R-1)', async () => {
 		const sources = COMMUNE_META_SOURCE_ORDER.map((dataset) => ({ nom: COMMUNE_META_SOURCE_NOMS[dataset] })) as SourceAttribution[];
 		const ligne = revenu(page(sources));
+		await ouvrirVolet(ligne);
 		expect(entreeDuVolet(ligne, 'Source')).toBe(COMMUNE_META_SOURCE_NOMS.revenus);
 		// One explanation per row: the name of the source is not repeated beside its button (lot 3).
 		const horsVolet = ligne.querySelector('dd')!.cloneNode(true) as Element;
@@ -338,7 +358,7 @@ describe('/commune/[code] — L’essentiel en tuiles (UI-SPEC v4 § 6.2)', () =
 		}
 	});
 
-	it('shows no state word in « L’essentiel »: an absence stays in its theme', () => {
+	it('shows no state word in « L’essentiel »: an absence stays in its theme', async () => {
 		const sources = [...COMMUNE_85191_SOURCES] as SourceAttribution[];
 		const synthese = COMMUNE_85191_OBSERVED as CommuneSynthese;
 		const { container } = render(Page, { props: { data: fiche(synthese, sources, '85191') } });
@@ -347,6 +367,7 @@ describe('/commune/[code] — L’essentiel en tuiles (UI-SPEC v4 § 6.2)', () =
 		expect(essentiel.querySelector('[data-kpi="tendance"]')).toBeNull();
 		const ligne = [...container.querySelectorAll('#q-prix .tab-l')].find((item) => item.querySelector('dt')?.textContent === 'Tendance du prix médian')!;
 		expect(ligne.querySelector('.tab-v .state-badge')?.textContent).toBe('Non publiée');
+		await ouvrirVolet(ligne);
 		expect(ligne.querySelector('dialog')?.textContent).toContain(TENDANCE_NON_PUBLIEE);
 	});
 
@@ -362,11 +383,15 @@ describe('/commune/[code] — L’essentiel en tuiles (UI-SPEC v4 § 6.2)', () =
 		expect(essentiel.querySelector('.essentiel-vide')?.textContent).toBe('Prix et DPE sont sans valeur ici : chaque thème ci-dessous dit pourquoi.');
 	});
 
-	it('writes the definitions for paper, hidden on screen', () => {
+	it('writes the definitions for paper when the page is printed, never before (Search Console 2026-11-16)', async () => {
 		const sources = [...COMMUNE_85191_SOURCES] as SourceAttribution[];
 		const synthese = COMMUNE_85191_OBSERVED as CommuneSynthese;
 		const { container } = render(Page, { props: { data: fiche(synthese, sources, '85191') } });
+		expect(container.querySelector('#definitions-impression')).toBeNull();
+		expect(container.querySelector('.bloc-impression')).toBeNull();
+		await fireEvent(window, new Event('beforeprint'));
 		const bloc = container.querySelector('#definitions-impression')!;
+		expect(container.querySelectorAll('.bloc-impression')).toHaveLength(2);
 		const premier = reperesConnus(communeKpis(synthese, sources))[0];
 		expect(bloc.querySelector('h3')?.textContent).toBe('Définitions');
 		expect(bloc.textContent).toContain(premier.definition);

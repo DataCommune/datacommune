@@ -31,6 +31,7 @@ import { expectNoUnexpectedOffLocalRequest, installLocalNetworkGuard } from './f
 import { ANCIEN, DOCUMENT_ANCIEN, DOCUMENT_RECENT, RECENT } from './fixtures/recette-adresses';
 import { E2E_SOURCE_ORIGIN } from './fixtures/ports';
 import { cheminRapport, corpsRapport, REQUETE_RAPPORT } from './fixtures/rapport';
+import { monterVolet } from './fixtures/volets';
 
 // Rendering record of the reading redesign (phase 04.5, plan 01; D45-01). What the visitor sees for
 // each field is frozen at the starting SHA of the phase, before any value moves: on the commune
@@ -373,6 +374,8 @@ async function releveLignesDePresentation(page: Page): Promise<RenduLigne[]> {
 }
 
 async function releveVoletsDesReperes(page: Page): Promise<RenduVolet[]> {
+	// The panels of the commune fiche render at their first opening (Search Console 2026-11-16).
+	for (const repere of await page.locator('dl.kpi-strip [data-kpi]').all()) await monterVolet(repere);
 	return page.locator('dl.kpi-strip dialog').evaluateAll((dialogues, termes) => {
 		const norm = (texte: string | null | undefined) => texte?.replace(/\s+/g, ' ').trim() ?? null;
 		return dialogues.flatMap((dialogue) =>

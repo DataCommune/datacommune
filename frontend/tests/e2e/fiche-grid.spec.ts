@@ -10,6 +10,7 @@ import { COMMUNE_META_SOURCE_NOMS, COMMUNE_META_SOURCE_ORDER } from '../../src/l
 import { COMMUNE_FLAT_85047, COMMUNE_INDICATORS_SYNTHETIC } from './fixtures/commune-indicators';
 import { BAN_ID, sourceAdresse } from './fixtures/surfaces-phase4';
 import { lireTheme } from './fixtures/themes';
+import { monterVolet } from './fixtures/volets';
 
 /** The five theme panels of the commune fiche, in the mock-up order (D-46, UI-SPEC v4 § 6.2). */
 // The categories of the commune fiche since 4.9, in their order: they hold the rows of the five themes.
@@ -38,8 +39,8 @@ async function configure(page: Page, surface: typeof surfaces[number]) {
 }
 
 /** Commune: the KPI strip, as rendered (ids, labels, values, states, metadata). The source of a
- *  KPI is read in its source panel (03-17 R-1), rendered with the page: SSR, hydrated and printed
- *  snapshots must name the same source (03-17 D-15 M3). */
+ *  KPI is read in its source panel (03-17 R-1), rendered at its first opening since the Search Console
+ *  of 2026-11-16: no snapshot holds it, the test reads it in the opened panel (03-17 D-15 M3). */
 async function kpiSnapshot(page: Page) {
 	const strip = page.locator('.kpi-strip');
 	await expect(strip).toBeVisible();
@@ -50,10 +51,7 @@ async function kpiSnapshot(page: Page) {
 			field: line.getAttribute('data-field-id'),
 			state: line.querySelector('[data-state]')?.getAttribute('data-state') ?? null,
 			text: line.textContent?.replace(/\s+/g, ' ').trim()
-		})),
-		source: [...kpi.querySelectorAll('.source-panel-entry')]
-			.find((entry) => entry.querySelector('dt')?.textContent?.trim() === 'Source')
-			?.querySelector('dd')?.textContent?.trim() ?? null
+		}))
 	})));
 }
 
@@ -96,12 +94,12 @@ for (const width of [320, 375, 1280]) {
 
 			if (surface.name === 'commune') {
 				expect(before.map((kpi) => (kpi as { kpi: string }).kpi)).toEqual(['prix-maisons', 'dpe-dominant']);
-				// The compared source is the served one, not a field that is always null (M3).
-				expect((before[0] as { source: string | null }).source).toBe(COMMUNE_META_SOURCE_NOMS.dvf);
 				const maisons = page.locator('[data-kpi="prix-maisons"]');
 				await expect(maisons.locator('.kpi-line .value')).toHaveText('2\u202f480');
 				// The source is read in the panel, not on the card (03-17 R-1).
 				await expect(maisons.locator('.kpi-source')).toHaveCount(0);
+				// The served source, never a field that is always null (M3).
+				await monterVolet(maisons);
 				await expect(maisons.locator('.source-panel-entry', { has: page.locator('dt', { hasText: /^Source$/ }) }).locator('dd'))
 					.toHaveText(COMMUNE_META_SOURCE_NOMS.dvf);
 				// Keyboard: the i button opens the source panel, Escape closes it, focus comes back.
@@ -137,10 +135,10 @@ for (const width of [320, 375, 1280]) {
 					const entree = (terme: string) => [...row.querySelectorAll('.source-panel-entry')]
 						.find((node) => node.querySelector('dt')?.textContent === terme)?.querySelector('dd') ?? null;
 					const lu = (terme: string) => entree(terme)?.textContent?.replace(/\s+/g, ' ').trim();
-					const reserve = entree('Limites')!;
+					const reserve = entree('Limites');
 					return {
 						value: text('.tab-v .state-value'), source: lu('Source'), period: text('.tab-note-texte'),
-						grain: lu('Objet'), reserve: lu('Limites'), reserveVisible: reserve.checkVisibility()
+						grain: lu('Objet'), reserve: lu('Limites'), reserveVisible: reserve?.checkVisibility() ?? false
 					};
 				});
 				const voletRevenu = page.locator('dialog.source-panel[open]');
@@ -265,6 +263,7 @@ test('grid Commune: measured zero, unknown metadata and actual CSV reservations'
 	await expect(vacancy.locator('.tab-note-texte')).toHaveText(
 		'Vacants : année non renseignée · année du parc privé non renseignée'
 	);
+	await monterVolet(vacancy);
 	await expect(vacancy.locator('.source-panel-entry', { has: page.locator('dt', { hasText: /^Source$/ }) }).locator('dd')).not.toHaveText('');
 	// A hostile source URL never becomes a link, in the themes nor in the source panels.
 	await expect(page.locator('a[href^="javascript:"]')).toHaveCount(0);

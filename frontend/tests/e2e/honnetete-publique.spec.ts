@@ -20,6 +20,7 @@ import {
 } from './fixtures/surfaces-phase4';
 import { CONCLUSIONS_INTERDITES } from './fixtures/conclusions-interdites';
 import { lireTheme } from './fixtures/themes';
+import { monterVolet } from './fixtures/volets';
 
 // Phase 49 « synthèse & états honnêtes » — anti-jargon gate (plan 49-07, D-11/D-12).
 //
@@ -408,6 +409,7 @@ test.describe('Honnêteté publique — Fiche Commune (D-11/D-12)', () => {
 		const appartements = page.locator('[data-field-id="dvf.prix_m2_median_appartement"]');
 		await expect(appartements.locator('.tab-v .state-badge')).toHaveText('Effectif insuffisant');
 		await expect(appartements.locator('.tab-v .state-help')).toHaveText("Trop peu d'observations (3) pour publier une valeur.");
+		await monterVolet(appartements);
 		await expect(appartements.locator('dialog .source-panel-entry', { has: page.locator('dt', { hasText: /^État et motif$/ }) }).locator('.state-help'))
 			.toHaveText("Trop peu d'observations (3) pour publier une valeur.");
 
@@ -419,6 +421,7 @@ test.describe('Honnêteté publique — Fiche Commune (D-11/D-12)', () => {
 		await expect(tendance.locator(':scope > dt')).toHaveText('Tendance du prix médian');
 		await expect(tendance.locator('.tab-v .state-badge')).toHaveText('Non publiée');
 		await expect(tendance.locator('.tab-v .state-help')).toHaveCount(0);
+		await monterVolet(tendance);
 		await expect(tendance.locator('dialog .source-panel-entry', { has: page.locator('dt', { hasText: /^État et motif$/ }) }).locator('.state-help')).toHaveText("Ce site ne publie pas l'évolution des prix pour cette commune.");
 		await expect(tendance.getByText('La source ne publie pas cette valeur pour ce territoire.')).toHaveCount(0);
 

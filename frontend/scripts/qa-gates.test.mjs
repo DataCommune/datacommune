@@ -2413,6 +2413,9 @@ const PROPRIETAIRES_048 = {
 	],
 	'04.8-04': [
 		'src/routes/(marketing)/commune/[code]/+page.svelte',
+		// the definitions of the commune fiche, out of its served HTML (SEO duplicates, 2026-11-16)
+		'src/routes/(marketing)/commune/[code]/definitions/+page.svelte',
+		'src/lib/components/fiche/DefinitionsCommune.svelte',
 		'src/routes/(marketing)/dpe/[numero]/+page.svelte',
 		'src/routes/(marketing)/dpe/[numero]/+error.svelte',
 		'src/lib/components/fiche/Kpi.svelte',

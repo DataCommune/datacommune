@@ -1,7 +1,7 @@
 // The real commune page mounted on a served answer: the rules a test reads on a theme are read on the
 // page the reader sees, with the projection of the page, never a copy of it. Since 4.9 the rows of a theme
 // are spread over the categories of the address fiche: a theme is read in the block of the categories.
-import { render } from '@testing-library/svelte';
+import { fireEvent, render } from '@testing-library/svelte';
 import { vi } from 'vitest';
 import type { CommuneSynthese, SourceAttribution } from '$lib/api/commune';
 import { themesCommune } from '$lib/data/commune-grid';
@@ -31,4 +31,9 @@ export function panneauDeTheme(synthese: CommuneSynthese, ancre: string, sources
 	const lecture = renderFicheCommune(synthese, sources).container.querySelector<HTMLElement>('section.lecture');
 	if (!lecture) throw new Error('Missing the categories of the fiche');
 	return lecture;
+}
+
+/** Opens the panel of a row: on the commune page its content is rendered at its first opening. */
+export async function ouvrirVolet(ligne: Element): Promise<void> {
+	await fireEvent.click(ligne.querySelector('.source-button')!);
 }
